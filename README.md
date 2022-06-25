@@ -17,3 +17,10 @@ Set to: 404 in wp.config.php Also gets some speed!
 
 * Protect: wp.contents folder, plugins,themes and uploads.
 * Protect: wp-admin folder.
+
+Core .htaccess for protection and speed.  Set: 444 files rights
+- Updated: 220-06-25
+
+Core .htaccess1 for speed and protection  Set: 444 files rights
+in core. 
+- Updated: 220-06-25
