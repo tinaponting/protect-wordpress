@@ -13,3 +13,6 @@ ob_start();
 ?>
 
 Set to: 404 in wp.config.php Also gets some speed!
+
+
+* Protect:wp.contents folder, plugins,themes and uploads.
