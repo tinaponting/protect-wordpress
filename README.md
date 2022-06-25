@@ -2,7 +2,7 @@
 Protect wordpress with .htacess
 
 
-Protect worpdress with htaccess:)
+Protect wordpress with htaccess:)
 
 require_once(ABSPATH.'wp-settings.php');
 ini_set('display_errors','Off');
