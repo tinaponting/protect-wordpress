@@ -17,6 +17,7 @@ Set to: 404 in wp.config.php Also gets some speed!
 * Protect: wp-admin folder.
 
 Core .htaccess for protection and speed.  Set: 444 files rights
+- Added protecton, wp.-includes/fonts follder (They download font til´you die!:(
 - Updated: Wp.content folder. 
 - Updated: protect plugin folder.
 - Updated 22-0715 wp.content folder
