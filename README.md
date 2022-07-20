@@ -7,6 +7,7 @@ Protect wordpress with htaccess:)
 require_once(ABSPATH.'wp-settings.php');
 error_reporting(0);
 ini_set('display_errors','Off');
+ini_set('error_reporting',E_ALL);
 define('DISALLOW_FILE_EDIT',true);
 define('DISALLOW_FILE_MODS',true);
 
