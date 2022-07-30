@@ -19,6 +19,7 @@ Set to: 404 in wp.config.php Also gets some speed!
 
 Core .htaccess for protection and speed.  Set: 444 files rights
 
+-Updated: 220730: .htacess for more speed and for mobile!
 - Updated 220722: .htacces1for protection of: Js, Css files:)
 - Updated 220719: .htacces1 for more security and doubles.
 - Added protecton, wp.-includes/fonts follder (They download font til´you die!:(
