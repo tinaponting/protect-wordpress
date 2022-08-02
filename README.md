@@ -40,7 +40,7 @@ in core.
 - Updated: 220731  borth are in best Shape!
 
 
-Plugins Irecommend:
+Plugins I recommend:
 * limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
 * disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
 * wp-cron http auth: // Small very good protectin for  rest api:   https://wordpress.org/plugins/wp-cron-http-auth/
