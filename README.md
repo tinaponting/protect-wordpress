@@ -10,8 +10,10 @@ ini_set('display_errors','Off');
 ini_set('error_reporting',E_ALL);
 define('DISALLOW_FILE_EDIT',true);
 define('DISALLOW_FILE_MODS',true);
+ob_start();
+?>
 
-Set to: 404 in wp.config.php Also gets some speed!
+Set to: 404 in wp.config.php Also gets some speed!  //imporrtant!!
 
 
 * Protect: wp.contents folder, plugins,themes and uploads.
@@ -19,7 +21,8 @@ Set to: 404 in wp.config.php Also gets some speed!
 
 Core .htaccess for protection and speed.  Set: 444 files rights
 
-- Uptated 220731 Protection for images, uploads folder, stealers and no way you see what I got!
+-Uppdated ..htaccess1 - false boots protection and extra protection, admin, manifest files:)
+- Updated 220731 Protection for images, uploads folder, stealers and no way you see what I got!
 - Updated: 220730: .htacess for more speed and for mobile!
 - Updated 220722: .htacces1for protection of: Js, Css files:)
 - Updated 220719: .htacces1 for more security and doubles.
