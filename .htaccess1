@@ -140,9 +140,4 @@ RewriteCond%{QUERY_STRING}[a-zA-Z0-9_]=/([a-z0-9_.]//?)+[NC]RewriteCond%{QUERY_S
 RewriteCond%{QUERY_STRING}ftp:[NC,OR]RewriteCond%{QUERY_STRING}http:[NC,OR]RewriteCond%{QUERY_STRING}https:[NC,OR]RewriteCond%{QUERY_STRING}mosConfig[NC,OR]
 RewriteCond%{QUERY_STRING}^.*([|]|(|)||'|"|;|?|*).*[NC,OR]RewriteCond%{QUERY_STRING}^.*(%22|%27|%3C|%3E|%5C|%7B|%7C).*[NC,OR]RewriteCond%{QUERY_STRING}^.*(%0|%A|%B|%C|%D|%E|%F|127.0).*[NC,OR]
 RewriteCond%{QUERY_STRING}^.*(globals|encode|config|localhost|loopback).*[NC,OR]RewriteCond%{QUERY_STRING}REQUEST(=|[|%[0-9A-Z]{0,2})RewriteCond%{QUERY_STRING}^.*(request|select|insert|union|declare|drop).*[NC]RewriteRule^(.*)$-[F,L]RewriteRule^(.*)$-[F,L]
-
-RewriteEngine on RewriteCond  "%{HTTP_USER_AGENT}" "msie3" [OR,NC]
-RewriteCond  "%{HTTP_USER_AGENT}" "msie 3" [OR,NC]RewriteCond  "%{HTTP_USER_AGENT}" "msie5" [OR,NC]RewriteCond  "%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
-RewriteCond  "%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]RewriteCond  "%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]RewriteCond  "%{HTTP_USER_AGENT}" megaindex\.com [OR,NC]
-RewriteCond %{QUERY_STRING} CONCAT [OR,NC]RewriteCond %{QUERY_STRING} union\+all\+select [OR,NC]RewriteCond  "%{HTTP_USER_AGENT}" sqlmap [NC]RewriteRule   "^"  "-"  [F,L]
 #END PREVENT HACKS
