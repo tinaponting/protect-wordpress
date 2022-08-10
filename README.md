@@ -2,7 +2,7 @@
 Protect wordpress with .htacess
 
 
-Wp.config.php file:
+Wp.config.php file:  //Se also my core - single user:)
 require_once(ABSPATH.'wp-settings.php');
 error_reporting(0);
 ini_set('display_errors','Off');
