@@ -59,6 +59,8 @@ BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress aas above:)
 
 404: - so bad: https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
 
+This is beutiful js protection script:  https://domainlockjs.com/   Iuse as -js inside js folder!
+
 None above takes power from your blog!
 
 Happy safe blogging folks:)
