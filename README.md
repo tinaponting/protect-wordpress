@@ -60,7 +60,7 @@ BBQ Pro   // I love the custom - place in protection for strange files!   https:
 
 BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress aas above:)
 
-404: - so bad: https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
+404 controls: - so bad: https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
 
 * None above takes power from your blog!
 
