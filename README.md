@@ -14,11 +14,13 @@ ob_start();
 
 Set to: 444 in wp.config.php Also gets some speed!  //imporrtant!!
 
-
 * Protect: wp.contents folder, plugins,themes and uploads.
 * Protect: wp-admin folder.
 
 Core .htaccess for protection and speed.  Set: 444 files rights
+
+* Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
+
 
 - Updated wp-content folder:)
 - Updated .htaccess1 for more protection, did I cover all? 
