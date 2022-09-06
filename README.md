@@ -12,7 +12,7 @@ define('DISALLOW_FILE_MODS',true);
 ob_start();
 ?>
 
-Set to: 404 in wp.config.php Also gets some speed!  //imporrtant!!
+Set to: 444 in wp.config.php Also gets some speed!  //imporrtant!!
 
 
 * Protect: wp.contents folder, plugins,themes and uploads.
