@@ -1,0 +1,93 @@
+User-agent: *
+Disallow: /*blackhole
+Disallow: /?blackhole
+Disallow: /wp-admin/
+Disallow: /comments/feed/
+Disallow: */comments$
+Disallow: ?comments=*
+Disallow: /comment-subscriptions/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/cache/
+Disallow: /trackback/
+Disallow: /search/ 
+Disallow: /search
+Disallow: *&preview=*
+Disallow: /wp-signup.php
+Disallow: /tmp/
+Disallow: */wp-login.php
+Disallow: /*wp-login.php=*
+Disallow: */wp-register.php
+Disallow: /CHANGELOG.txt
+Disallow: /INSTALL.txt
+Disallow: /LICENSE.txt
+Disallow: /readme.html
+Disallow: /license.txt
+Disallow: /show-error-*
+Disallow: /ErrorPages/
+Disallow: /*/?share=*
+Disallow: /download/
+Disallow: / submit.php
+Disallow: /*.jpg$ 
+Disallow: / robots.txt
+
+Allow: /
+Allow: /images/
+User-agent: applebot Allow: /
+User-agent: ia_archiver Allow: /
+User-agent: archive.org_bot Allow: /
+User-agent: Googlebot Allow: /
+User-agent: AdsBot-Google Allow: /
+User-agent: Googlebot Allow: /
+User-agent: Googlebot-Image Allow: /
+User-agent: Feedly Allow: /
+User-agent: Googlebot Allow: /
+User-agent: Googlebot-Image
+User-agent: googlebot-news Allow: /
+User-agent: Google Allow: /
+User-agent: Googlebot-Mobile Allow: /
+User-agent: Googlebot-Video Allow: /
+User-agent: Feedfetcher-Google Allow: /
+User-agent: Bingbot Allow: /
+User-agent: Yandex Allow: /
+User-agent: YandexMobileBot Allow: /
+User-Agent: Yandex allow: /favicon/
+User-agent: Yandex Robot Allow: /
+User-agent: Baiduspider  Allow: /
+User-agent: Baiduspider-video Allow: /
+User-agent: Baiduspider-image Allow: /
+User-agent: DuckDuckBot Allow: /
+User-agent: msnbot  Allow: /
+User-agent: msnbot-media Allow: /
+User-agent: User-agent: MS Search Allow: /
+User-agent: Naverbot Allow: /
+User-agent: Pinterest Allow: /
+User-agent: Petalboot Allow: /
+User-agent: Twitterbot Allow: /
+User-agent: Yahoo! Slurp Allow: /
+User-agent: SeznamBot Allow: /
+User-agent: MegaIndex.ru Allow: /
+User-agent: MegaIndex.ru/2.0 Allow: /
+User-agent: Sogou Spider Allow: /
+User-agent: YoudaoBot Allow: /
+User-agent: DuckDuckBot Allow: /
+User-agent: Teoma Allow: /
+User-agent: Yeti Allow: /
+
+User-agent: SemrushBot Disallow: /
+User-agent: AhrefsBot Disallow: /
+
+# The year the blog was born Allow: / XXXX
+
+# Feeds:
+# Atom:  
+# Feed:  
+# Feed 2:
+# Author: 
+# Sitemap:
+
+# URL: 
+
+# Site owner: 
+# adress
+# postnr Town   - Country
