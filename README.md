@@ -20,14 +20,13 @@ Set to: 444 in wp.config.php Also gets some speed!  //imporrtant!!
 
 Core .htaccess for protection and speed.  Set: 444 files rights
 
-- Updated .htaccess1 with fake bot protection:)
 - Updated wp-content folder:)
 - Updated .htaccess1 for more protection, did I cover all? 
 - Updated: both .htacess for more security and newest protection, added, block for semruch/ahrefs, who the most bloggers do not need!
 If needed, add more evil bots - just copy one line and ad it!
 
-- Updated: htaccess1 for more security and some dublicates gone:) 
-- Uppdated: htaccess1 - false boots protection and extra protection, admin, manifest files:)
+- Uppdated 220906: htaccess1 - false boots protection and extra protection, admin, manifest files:)
+- Updated 220828 : htaccess1 for more security and some dublicates gone:) 
 - Updated 220731 Protection for images, uploads folder, stealers and no way you see what I got!
 - Updated: 220730: .htacess for more speed and for mobile!
 - Updated 220722: .htacces1for protection of: Js, Css files:)
