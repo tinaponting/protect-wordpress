@@ -29,7 +29,6 @@ Disallow: /*/?share=*
 Disallow: /download/
 Disallow: / submit.php
 Disallow: /*.jpg$ 
-Disallow: / robots.txt
 
 Allow: /
 Allow: /images/
