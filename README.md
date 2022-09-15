@@ -21,10 +21,10 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
-
+- Updated 2200915 .htacces1 for more: No fake bots, only allow real google botsand som on!
 - Updated wp-content folder:)
 - Updated .htaccess1 for more protection, did I cover all? 
-- Updated: both .htacess for more security and newest protection, added, block for semruch/ahrefs, who the most bloggers do not need!
+- Updated: .htacess for more security and newest protection, added, block for semruch/ahrefs, who the most bloggers do not need!
 If needed, add more evil bots - just copy one line and ad it!
 
 - 220914: Js folder / wp-includes that protect js files! Works well!
