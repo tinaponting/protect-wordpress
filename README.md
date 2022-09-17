@@ -21,6 +21,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
+- Updated: 220917 Added Css/Js folder protection - that works! 
 - Updated 2200915 .htacces1 for more: No fake bots, only allow real google botsand som on!
 - Updated wp-content folder:)
 - Updated .htaccess1 for more protection, did I cover all? 
@@ -28,18 +29,18 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 If needed, add more evil bots - just copy one line and ad it!
 
 - 220914: Js folder / wp-includes that protect js files! Works well!
-- Uppdated 220906: htaccess1 - false boots protection and extra protection, admin, manifest files:)
-- Updated 220828 : htaccess1 for more security and some dublicates gone:) 
-- Updated 220731 Protection for images, uploads folder, stealers and no way you see what I got!
+- Uppdated: 220906: htaccess1 - false boots protection and extra protection, admin, manifest files:)
+- Updated: 220828 : htaccess1 for more security and some dublicates gone:) 
+- Updated: 220731 Protection for images, uploads folder, stealers and no way you see what I got!
 - Updated: 220730: .htacess for more speed and for mobile!
-- Updated 220722: .htacces1for protection of: Js, Css files:)
-- Updated 220719: .htacces1 for more security and doubles.
+- Updated: 220722: .htacces1for protection of: Js, Css files:)
+- Updated: 220719: .htacces1 for more security and doubles.
 - Added protecton, wp.-includes/fonts follder (They download font til´you die!:(
 - Updated: Wp.content folder. 
-- Updated 220715: protect plugin folder.
-- Updated 220715 wp.content folder
-- Updated 220709  Works! And added som protection for theme:)
-- Updated 220702 
+- Updated: 220715: protect plugin folder.
+- Updated: 220715 wp.content folder
+- Updated: 220709  Works! And added som protection for theme:)
+- Updated: 220702 
 - Updated:220625
 
 
