@@ -21,8 +21,9 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
-- Updated: wpcontent folder, htaccess with protection, no insert of infected images!
-- Updated: 220917 Added Css/Js folder protection - that works! 
+_ Updated:220922 .htaccess1 for better security.
+- Updated:220922 wpcontent folder, htaccess with protection, no insert of infected images!
+- Updated:220917 Added Css/Js folder protection - that works! 
 - Updated 2200915 .htacces1 for more: No fake bots, only allow real google botsand som on!
 - Updated wp-content folder:)
 - Updated .htaccess1 for more protection, did I cover all? 
