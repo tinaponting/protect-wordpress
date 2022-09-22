@@ -21,6 +21,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
+* (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
+
 - Updated: 200922, wp invludes all is included.
 - Updated:220922 .htaccess1 for better security.
 - Updated:220922 wpcontent folder, htaccess with protection, no insert of infected images!
