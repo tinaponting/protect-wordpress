@@ -23,7 +23,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 
-- Updated: 200922, wp invludes all is included.
+-Updated: 220924, added protection for, wp.load.php file and some more goodies for protection.
+- Updated: 220922, wp includes all is included.
 - Updated:220922 .htaccess1 for better security.
 - Updated:220922 wpcontent folder, htaccess with protection, no insert of infected images!
 - Updated:220917 Added Css/Js folder protection - that works! 
@@ -69,6 +70,8 @@ BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress aas above:)
 
 404 controls: - so bad: https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
 
+Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
+Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Both versions Works very well:) 
 * None above takes power from your blog!
 
 Happy safe blogging folks:)
