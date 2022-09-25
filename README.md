@@ -23,7 +23,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 
--Updated: 220924, added protection for, wp.load.php file and some more goodies for protection.
+_ Updated: 220925 Some not needed in .htaccess1:)
+- Updated: 220924, added protection for, wp.load.php file and some more goodies for protection.
 - Updated: 220922, wp includes all is included.
 - Updated:220922 .htaccess1 for better security.
 - Updated:220922 wpcontent folder, htaccess with protection, no insert of infected images!
