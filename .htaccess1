@@ -41,7 +41,6 @@ php_value docref_ext 0
 php_value error_reporting -1
 php_value log_errors_max_len 0 
 LimitRequestBody 10240000
-<files wp-load.php>order allow,deny deny from all</files>
 <Files *.php>deny from all</Files>
 <Files xmlrpc.php>order deny,allow deny from all</files>
 <files install.php>Order allow,deny Deny from all</files>
