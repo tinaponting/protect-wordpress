@@ -15,7 +15,7 @@ SetEnvIfNoCase ^Cookie$ "(.+)" HTTP_MY_COOKIE=$1
 <IfModule mod_headers.c>Header set X-Frame-Options"SAMEORIGIN"</IfModule>
 <IfModule mod_headers.c>Header set Cache-Control"no-transform"</IfModule>
 <IfModule mod_headers.c>Header set Referrer-Policy "origin-when-cross-origin"</IfModule>
-<IfModule mod_headers.c>Header unset X-Powered-By Header unset X-PingbackHeader unset SERVER</IfModule>>
+<IfModule mod_headers.c>Header unset X-Powered-By Header unset X-PingbackHeader unset SERVER</IfModule>
 Options All -Indexes
 Options -MultiViews
 ServerSignature Off
