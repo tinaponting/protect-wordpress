@@ -23,6 +23,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 
+- Updated: 220927 Wpcontent folder with protection for themes and plugins! 
 - Updated: 220927 .htaccess1 for better security and som wrongs!And changed name to firewall.
 - Updated: 220926 Found a thing to mutch, checked the .htaccess (http://www.htaccesscheck.com)
 - Updated: 220925 Some not needed in .htaccess1:)
