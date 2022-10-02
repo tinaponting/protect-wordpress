@@ -1,5 +1,9 @@
-# protect-wordpress
+# protect-wordpress  For Paranoid bloggers on wordpress.
 Protect wordpress with .htacess
+
+For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
+
+About me: A blogger since 2002, been on blogspot as on wordpress, made all mistages through the years, I learned not only a free firewall can protect med, so I made my own, follow the latest trends in hacking and som on to get it in order:)  
 
 
 Wp.config.php file:  //Se also my core - single user:)
@@ -23,7 +27,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 
-
+- Updated: 221002 wp-content uploads and wp-content for more security!
 - Updated: wp-includesfolder, .htaccess for more security.
 - Updated: 2209928, .htaccess1 - gone google walk for latest threats and made a very good cheking of .htaccess1 checked with lynx htacces checker!
 - Updated: 220927 Wpcontent folder with protection for themes and plugins! 
