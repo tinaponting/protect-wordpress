@@ -7,6 +7,7 @@ About me: A blogger since 2002, been on blogspot as on wordpress, made all mista
 
 
 Wp.config.php file:  //Se also my core - single user:)
+
 require_once(ABSPATH.'wp-settings.php');
 error_reporting(0);
 ini_set('display_errors','Off');
@@ -87,6 +88,9 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 Protect of your JS files: https://domainlockjs.com/     works very well:)
 
 * None above takes power from your blog!
+
+If oy got googleI bing XML files, set them t0 444 0r if it works: 440:) for safety
+Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
 
 Happy safe blogging folks:)
 
