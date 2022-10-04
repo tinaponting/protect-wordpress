@@ -30,6 +30,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 
 Updated files:
+- Updated: 221004  wpincludes/js for better security!
 - Updated: 221004 wpcontent/themes for better security!
 - Updated: 221002 wp-content uploads and wp-content for more security!
 - Updated: wp-includesfolder, .htaccess for more security.
