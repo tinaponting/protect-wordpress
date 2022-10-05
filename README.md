@@ -90,7 +90,7 @@ BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress aas above:)
 Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
 Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Both versions Works very well:) 
 
-Protect of your JS files: https://domainlockjs.com/     works very well:)
+Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
 
 * None above takes power from your blog!
 
