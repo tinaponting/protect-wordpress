@@ -1,0 +1,23 @@
+
+# Pure Trash Requests (brute force attacks, etc)
+RewriteCond %{QUERY_STRING} CONCAT [OR,NC]
+RewriteCond %{QUERY_STRING} union\+all\+select [OR,NC]
+RewriteCond  "%{HTTP_USER_AGENT}" sqlmap [NC]
+
+# Bots Using Fake User-Agents
+RewriteCond "%{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "ltx71" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+
+RewriteEngine On
+RewriteCond %{QUERY_STRING} [^?]*? [OR]
+RewriteCond %{QUERY_STRING} (../|..\) [OR]
+RewriteCond %{QUERY_STRING} (///) [OR]
+RewriteCond %{THE_REQUEST} "^(GET|POST) /?https?:" [OR]
+RewriteCond %{THE_REQUEST} "^(GET|POST|HEAD) //"
+RewriteRule (.*) $1 [F]
