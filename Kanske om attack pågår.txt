@@ -5,6 +5,7 @@ RewriteCond %{QUERY_STRING} union\+all\+select [OR,NC]
 RewriteCond  "%{HTTP_USER_AGENT}" sqlmap [NC]
 
 # Bots Using Fake User-Agents
+Deny from 93.188.2.5
 RewriteCond "%{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
 RewriteCond "%{HTTP_USER_AGENT}" "ltx71" [OR,NC]
 RewriteCond "%{HTTP_USER_AGENT}" "msie3" [OR,NC]
@@ -13,11 +14,13 @@ RewriteCond "%{HTTP_USER_AGENT}" "msie5" [OR,NC]
 RewriteCond "%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
 RewriteCond "%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
 RewriteCond "%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
 
-RewriteEngine On
-RewriteCond %{QUERY_STRING} [^?]*? [OR]
-RewriteCond %{QUERY_STRING} (../|..\) [OR]
-RewriteCond %{QUERY_STRING} (///) [OR]
-RewriteCond %{THE_REQUEST} "^(GET|POST) /?https?:" [OR]
-RewriteCond %{THE_REQUEST} "^(GET|POST|HEAD) //"
-RewriteRule (.*) $1 [F]
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots Deny from env=block_bad_bots
+SetEnvIfNoCase Referer "hetzner.com/hetzner online" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "ovh.com/ovhcloud.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
