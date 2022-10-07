@@ -30,6 +30,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 
 Updated files:
+- Updated: 2201007 wpcontent uploads folder, no you can only download if you are admin/photo, prevents stealers!
 - Updated: 221004  All folders/htacces files checked -checked Lynx checker:)
 - Updated: 221004  wpincludes/js for better security!
 - Updated: 221004 wpcontent/themes for better security!
