@@ -9,10 +9,15 @@ Disallow: /comment-subscriptions/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /wp-content/cache/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
 Disallow: /trackback/
 Disallow: /search/ 
 Disallow: /search
+Disallow: *?s=*
 Disallow: *&preview=*
+Disallow: /404-error/
+Disallow: /wp-json/
 Disallow: /wp-signup.php
 Disallow: /tmp/
 Disallow: */wp-login.php
@@ -22,36 +27,36 @@ Disallow: /CHANGELOG.txt
 Disallow: /INSTALL.txt
 Disallow: /LICENSE.txt
 Disallow: /readme.html
+Disallow: /readme.txt
 Disallow: /license.txt
 Disallow: /show-error-*
 Disallow: /ErrorPages/
 Disallow: /*/?share=*
 Disallow: /download/
 Disallow: / submit.php
-Disallow: /*.jpg$ 
 
 Allow: /
 Allow: /images/
 User-agent: applebot Allow: /
 User-agent: ia_archiver Allow: /
 User-agent: archive.org_bot Allow: /
+User-agent: Exabot Allow: /
+User-agent: Feedly Allow: /
 User-agent: Googlebot Allow: /
 User-agent: AdsBot-Google Allow: /
 User-agent: Googlebot Allow: /
 User-agent: Googlebot-Image Allow: /
-User-agent: Feedly Allow: /
 User-agent: Googlebot Allow: /
 User-agent: Googlebot-Image
 User-agent: googlebot-news Allow: /
 User-agent: Google Allow: /
 User-agent: Googlebot-Mobile Allow: /
 User-agent: Googlebot-Video Allow: /
-User-agent: Feedfetcher-Google Allow: /
+User-agent: Feedfetcher-Google Allow: 
+User-agent: facebookexternalhit/1.0 
+User-agent: facebookexternalhit/1.1 /
 User-agent: Bingbot Allow: /
-User-agent: Yandex Allow: /
-User-agent: YandexMobileBot Allow: /
-User-Agent: Yandex allow: /favicon/
-User-agent: Yandex Robot Allow: /
+User-agent: bingbot/2.0; Allow: /
 User-agent: Baiduspider  Allow: /
 User-agent: Baiduspider-video Allow: /
 User-agent: Baiduspider-image Allow: /
@@ -63,18 +68,21 @@ User-agent: Naverbot Allow: /
 User-agent: Pinterest Allow: /
 User-agent: Petalboot Allow: /
 User-agent: Twitterbot Allow: /
-User-agent: Yahoo! Slurp Allow: /
 User-agent: SeznamBot Allow: /
+User-agent: Sosospider Allow: /
+User-agent: Sosospider/2.0 Allow: /
+User-agent: Sosoimagespider Allow: /
 User-agent: MegaIndex.ru Allow: /
 User-agent: MegaIndex.ru/2.0 Allow: /
 User-agent: Sogou Spider Allow: /
 User-agent: YoudaoBot Allow: /
-User-agent: DuckDuckBot Allow: /
+User-agent: Yahoo! Slurp Allow: /
+User-agent: Yandex Allow: /
+User-agent: YandexMobileBot Allow: /
+User-Agent: Yandex allow: /favicon/
+User-agent: Yandex Robot Allow: /
 User-agent: Teoma Allow: /
 User-agent: Yeti Allow: /
-
-User-agent: SemrushBot Disallow: /
-User-agent: AhrefsBot Disallow: /
 
 # The year the blog was born Allow: / XXXX
 
