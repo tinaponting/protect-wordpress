@@ -27,7 +27,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
-
+* If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
 Updated files:
 - Updated: 2201007 wpcontent uploads folder, no you can only download if you are admin/photo, prevents stealers!
