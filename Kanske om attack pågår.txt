@@ -34,3 +34,13 @@ RewriteCond %{HTTP_REFERER} !.*yourwebsitedomain\.com.* [OR]
 RewriteCond %{HTTP_USER_AGENT} ^$
 RewriteRule ^(.*)$ ^http://%{REMOTE_ADDR}/$ [R=301,L]
 </IfModule>
+
+# Prevent image hotlinking
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?deinedomain.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?instagram.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|svg)$ https://deinedomain.com/hotlink-image.jpg [NC,R,L]
+
