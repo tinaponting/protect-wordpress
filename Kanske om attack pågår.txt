@@ -24,3 +24,13 @@ RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
 SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots Deny from env=block_bad_bots
 SetEnvIfNoCase Referer "hetzner.com/hetzner online" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
 SetEnvIfNoCase Referer "ovh.com/ovhcloud.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+
+# Block spam that targets wp-comments-post.php & wp-login.php by denying access to no-referrer requests
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .(wp-comments-post|wp-login)\.php*
+RewriteCond %{HTTP_REFERER} !.*yourwebsitedomain\.com.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule ^(.*)$ ^http://%{REMOTE_ADDR}/$ [R=301,L]
+</IfModule>
