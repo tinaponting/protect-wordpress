@@ -50,3 +50,10 @@ SetEnvIfNoCase Referer poker spammer=yes
 Order allow,deny
 allow from all
 deny from env=spammer
+
+There are reasons you may want to prevent anyone who are not coming from your site from posting to your site.
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{HTTP_REFERER} !^http://www.urltoyoursite.com [NC]
+RewriteRule .* - [F]
+
