@@ -44,3 +44,9 @@ RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com [NC]
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?instagram.com [NC]
 RewriteRule \.(jpg|jpeg|png|gif|svg)$ https://deinedomain.com/hotlink-image.jpg [NC,R,L]
 
+If problem with Poker and so on:
+SetEnvIfNoCase Referer doobu.com spammer=yes
+SetEnvIfNoCase Referer poker spammer=yes
+Order allow,deny
+allow from all
+deny from env=spammer
