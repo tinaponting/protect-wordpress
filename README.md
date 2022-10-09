@@ -99,6 +99,9 @@ Protect of your JS files: https://domainlockjs.com/     works very well:)  // If
 
 If oy got googleI bing XML files, set them t0 444 0r if it works: 440:) for safety
 Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
+Bloga I Love:
+* Perishable Press: https://perishablepress.com/   Always something new to read about security.
+* Wphacked blog:  https://secure.wphackedhelp.com/blog/
 
 Happy safe blogging folks:)
 
