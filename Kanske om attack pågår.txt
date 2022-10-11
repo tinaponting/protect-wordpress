@@ -85,5 +85,6 @@ RewriteCond %{REMOTE_ADDR} ^$
 RewriteRule (.*) /https://exempel.se / [R=301,L]
 </IfModule>
 
-- Ialwayssends them to the toilet on centralstation.....:)
-I
+- I alwayssends them to the toilet on centralstation.....:)
+::::::::::::::::
+
