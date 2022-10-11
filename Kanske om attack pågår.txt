@@ -37,7 +37,7 @@ SetEnvIfNoCase User-Agent "^Microsoft URL Control" bad_bot
 SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" bad_bot
 <Limit GET POST HEAD>Order Allow,Deny Allow from all Deny from env=bad_bot</Limit>
 
-
+_ usse it only ashort peroid, when you are under ratack!
 # Block spam that targets wp-comments-post.php & wp-login.php by denying access to no-referrer requests
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -48,6 +48,7 @@ RewriteCond %{HTTP_USER_AGENT} ^$
 RewriteRule ^(.*)$ ^http://%{REMOTE_ADDR}/$ [R=301,L]
 </IfModule>
 
+- Not always working, but try it!
 # Prevent image hotlinking
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
