@@ -78,3 +78,12 @@ RewriteCond %{HTTP_REFERER} !.*yourblog.com.* [OR]
 RewriteCond %{HTTP_USER_AGENT} ^$ 
 RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
 
+If you are tired of a hacker who always tryes to get in.....
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REMOTE_ADDR} ^$
+RewriteRule (.*) /https://exempel.se / [R=301,L]
+</IfModule>
+
+- Ialwayssends them to the toilet on centralstation.....:)
+I
