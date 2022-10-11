@@ -71,3 +71,10 @@ RewriteCond %{REQUEST_METHOD} POST
 RewriteCond %{HTTP_REFERER} !^http://www.urltoyoursite.com [NC]
 RewriteRule .* - [F]
 
+STOP SPAM:
+RewriteEngine On RewriteCond %{REQUEST_METHOD} POST 
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php* 
+RewriteCond %{HTTP_REFERER} !.*yourblog.com.* [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^$ 
+RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
+
