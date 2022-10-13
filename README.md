@@ -31,6 +31,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221013, wp-content .htacces so it protect themes js files:)
 - Updated: 2201008  .htacces1 for betrer spam preotect wp.login/register:)
 - Updated: 2201007 wpcontent uploads folder, no you can only download if you are admin/photo, prevents stealers!
 - Updated: 221004  All folders/htacces files checked -checked Lynx checker:)
