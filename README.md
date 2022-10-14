@@ -31,7 +31,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
--Updated: 221014: .htaccess1 for more speed and some files not needed (doubles)
+- Updated: wpcontent folder for more speed and security:)
+- Updated: 221014: .htaccess1 for more speed and some files not needed (doubles)
 - Updated: 221013: wp-content .htacces so it protect themes js files:)
 - Updated: 2201008: .htacces1 for betrer spam preotect wp.login/register:)
 - Updated: 2201007: wpcontent uploads folder, no you can only download if you are admin/photo, prevents stealers!
