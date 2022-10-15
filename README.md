@@ -99,6 +99,8 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
 
+WP CSRF Protector: (mostly in forms, if you use that, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
+
 * None above takes power from your blog!
 
 If oy got googleI bing XML files, set them t0 444 0r if it works: 440:) for safety
