@@ -31,6 +31,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: wpconten/uploads folder for better speed and security.
 - Updated: wpcontent folder for more speed and security:)
 - Updated: 221014: .htaccess1 for more speed and some files not needed (doubles)
 - Updated: 221013: wp-content .htacces so it protect themes js files:)
