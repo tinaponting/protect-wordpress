@@ -147,3 +147,11 @@ RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?semalt\.com [NC]
 RewriteRule ^(.*)$ - [F]
 
 .......................................................
+Very good /sets all css/js only to site!: 
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com/ [NC]
+RewriteRule .*\.(js|css)$ - [NC,F,L]
+
+.....................................................................
+
+
