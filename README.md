@@ -31,6 +31,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221017 -htaccess1 = Ready to work for you! On your blog, look in now and then for updates!
 - Updated: wpconten/uploads folder for better speed and security.
 - Updated: wpcontent folder for more speed and security:)
 - Updated: 221014: .htaccess1 for more speed and some files not needed (doubles)
