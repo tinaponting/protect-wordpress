@@ -32,7 +32,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 Updated files:
 ** Working on updating, BBQ curom codes.
 
-- Updated: 221017 wp-content folder =Ready to work for you!
+-Updated: 221019 wp-includes, works! = Ready to work for you!
+- Updated: 221017 wp-content folder! = Ready to work for you!
 - Updated: 221017 -htaccess1 = Ready to work for you! On your blog, look in now and then for updates!
 - Updated: wpconten/uploads folder for better speed and security.
 - Updated: wpcontent folder for more speed and security:)
