@@ -149,7 +149,6 @@ RewriteCond%{QUERY_STRING}(view=registration) [NC]RewriteRule .* index.php [F]
 RewriteCond%{QUERY_STRING}\=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}[NC]RewriteRule.*-[F,L]
 RewriteCond%{QUERY_STRING}(<script>|%3Cscript%3E)[NC]RewriteRule .-[F ]</IfModule>
 RewriteEngine On RewriteCond %{REQUEST_METHOD} POST RewriteCond %{HTTP_USER_AGENT} ^$ RewriteRule .* - [F]
-RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
 RewriteCond%{QUERY_STRING} author=dRewriteRule ^ /? [L,R=301]
 RewriteCond%{HTTP:Content-Disposition} \.php [NC]RewriteCond %{HTTP:Content-Type} image/.+ [NC]RewriteRule .* - [F,NS,L]
 RewriteCond%{QUERY_STRING} \=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12} [NC]RewriteRule .* - [F,L]
