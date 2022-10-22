@@ -193,3 +193,26 @@ RewriteRule .* - [F,L]
 
 RewriteCond %{HTTP_USER_AGENT} ^.*(CtrlFunc|w00tw00t|Apachebench).*$ [NC]
 RewriteRule .* - [F,L]
+
+...................................................................
+* Block whole country, not always blocing evrrything!
+ 
+Blocking a certain country, e.g. China (CN).
+SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
+Deny from env=BlockedCountry
+Redirecting users from a certain country (Finland) to another domain
+
+* Send the stupid country somewhere else.....
+
+SetEnvIf MM_COUNTRY_CODE ^(FI) FINLAND
+RewriteCond %{ENV:FINLAND} ^1$
+RewriteRule .* http://www.example.fi%{REQUEST_URI} [R=301,L]
+
+.................................................................................................
+
+Om du är rädd för mycket falska Google botar, släpp bara in dom rätta Googble bots en!
+
+RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
+
+...................................................................................................
+
