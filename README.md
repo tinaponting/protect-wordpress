@@ -30,8 +30,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
 Updated files:
-- Updating, BBQ custom codes.
-- Updated: Google bots IP range to days IP Adresses!
+- Updating: 221020 BBQ custom codes.
 - Updated: 221019 wp-includes, works! = Ready to work for you!
 - Updated: 221017 wp-content folder! = Ready to work for you!
 - Updated: 221017 -htaccess1 = Ready to work for you! On your blog, look in now and then for updates!
