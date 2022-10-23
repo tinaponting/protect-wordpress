@@ -220,4 +220,7 @@ If you are afraid of a lot of fake Google bots, just let the real Google bots in
 RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
 
 ...................................................................................................
+If you got comments or shop/getting spam -this might work:
+
+
 
