@@ -245,6 +245,7 @@ RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?wichslos(-|.).*$ [OR]
 RewriteCond %{HTTP_REFERER} ^http://(www\.)?xmaster.*$ [OR]
 RewriteCond %{HTTP_REFERER} ^http://www14\.blogspot.*$ [OR]
 RewriteCond %{HTTP_REFERER} ^http://(www\.)?yahh+oo.*$
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR]
 RewriteCond %{HTTP_USER_AGENT} ^DISCo\ Pump [OR]
 RewriteRule .* - [F,L]
 
