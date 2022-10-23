@@ -49,6 +49,12 @@ SetEnvIfNoCase Referer "hetzner.com" bad_referer Order Allow,Deny Allow from ALL
 SetEnvIfNoCase Referer "ovh.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
 SetEnvIfNoCase Referer "hetzner.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
 
+Alternative if above do not work:
+
+SetEnvIfNoCase Referer "hetzner\.com" bad_referer
+SetEnvIfNoCase Referer "www\.ovh\.com" bad_referer
+Deny from env=bad_referer
+
 ............................................................
 works very well!
 *  Block spam that targets wp-comments-post.php & wp-login.php by denying access to no-referrer requests
@@ -195,7 +201,7 @@ RewriteCond %{HTTP_USER_AGENT} ^.*(CtrlFunc|w00tw00t|Apachebench).*$ [NC]
 RewriteRule .* - [F,L]
 
 ...................................................................
-* Block whole country, not always blocing evrrything!
+* Block whole country, not always blocking evrrything!
  
 Blocking a certain country, e.g. China (CN).
 SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
