@@ -1,0 +1,251 @@
+* Pure Trash Requests (brute force attacks, etc)
+
+RewriteCond %{QUERY_STRING} CONCAT [OR,NC]
+RewriteCond %{QUERY_STRING} union\+all\+select [OR,NC]
+RewriteCond  "%{HTTP_USER_AGENT}" sqlmap [NC]
+
+......................................................
+* Bots Using Fake User-Agents
+
+RewriteCond "%{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "ltx71" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
+
+* If needed:
+RewriteCond %{HTTP_USER_AGENT} ^Python-urllib [NC]
+RewriteCond %{HTTP_REFERER} ^bc.googleusercontent\.com$ [NC]
+
+
+................................................................
+* If foy got to mutch of these: 
+
+SetEnvIfNoCase User-Agent "Anonymouse.org" bad_bot
+SetEnvIfNoCase User-Agent "^Download" bad_bot
+SetEnvIfNoCase User-Agent "^HTTrack" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft.URL" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft URL Control" bad_bot
+SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" bad_bot
+<Limit GET POST HEAD>Order Allow,Deny Allow from all Deny from env=bad_bot</Limit>
+
+...................................................
+Alternative to above:
+* Bad user Agets: 
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots Deny from env=block_bad_bots
+SetEnvIfNoCase User-Agent "^Go-http-client*" block_bad_bots Deny from env=block_bad_bots
+
+Bad webhotels: 
+SetEnvIfNoCase Referer "hetzner.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "ovh.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "hetzner.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+
+Alternative if above do not work:
+
+SetEnvIfNoCase Referer "hetzner\.com" bad_referer
+SetEnvIfNoCase Referer "www\.ovh\.com" bad_referer
+Deny from env=bad_referer
+
+............................................................
+works very well!
+*  Block spam that targets wp-comments-post.php & wp-login.php by denying access to no-referrer requests
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .(wp-comments-post|wp-login)\.php*
+RewriteCond %{HTTP_REFERER} !.*yourwebsitedomain\.com.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule ^(.*)$ ^https://%{REMOTE_ADDR}/$ [R=301,L]
+</IfModule>
+
+.......................................................................
+- Not always working, but try it!
+* Prevent image hotlinking
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?deinedomain.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?instagram.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|svg)$ https://deinedomain.com/hotlink-image.jpg [NC,R,L]
+
+............................................................
+* If problem with Poker and so on:
+
+SetEnvIfNoCase Referer doobu.com spammer=yes
+SetEnvIfNoCase Referer poker spammer=yes
+Order allow,deny
+allow from all
+deny from env=spammer
+
+...................................................................
+* There are reasons you may want to prevent anyone who are not coming from your site from posting to your site:
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{HTTP_REFERER} !^http://www.urltoyoursite.com [NC]
+RewriteRule .* - [F]
+
+...........................................................
+* STOP SPAM:
+
+RewriteEngine On RewriteCond %{REQUEST_METHOD} POST 
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php* 
+RewriteCond %{HTTP_REFERER} !.*yourblog.com.* [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^$ 
+RewriteRule (.*) ^https://%{REMOTE_ADDR}/$ [R=301,L]
+
+............................................................
+* If you are tired of a hacker who always tryes to get in.....
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REMOTE_ADDR} ^$
+RewriteRule (.*) /https://exempel.se / [R=301,L]
+</IfModule>
+
+- I always sends them to the toilet on centralstation.....:)
+...........................................................
+* Deny access to hidden files or directories by using:
+
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule “(^|/)\.” – [F]
+
+........................................................
+* Deny access to source files and backup files:
+
+<FilesMatch> “(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$”>
+Order allow,deny
+Deny from all
+Satisfy All
+
+........................................................
+* Mac spammers:
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} Gecko/20100101 [NC]
+RewriteRule ^ - [F,L]
+....................................................
+* If you got git in your site:
+
+<DirectoryMatch> "^/.*/\.git/">
+  Deny from all
+</Directorymatch>
+
+..............................................
+* Block amazon cloud (if to mutch of them):
+
+RewriteBase /
+RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?amazonaws\.com [NC,OR]
+RewriteCond %{REMOTE_HOST} ^.*\.amazonaws\.com$ [NC,OR]
+RewriteCond %{REMOTE_HOST} ^mail(.*)\. [NC,OR]
+RewriteCond %{REMOTE_HOST} ^smtp(.*)\. [NC]
+
+...........................................................
+* Block Semalt (semalt.com) Referrer Spam:
+
+RewriteBase /
+RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?semalt\.com [NC]
+RewriteRule ^(.*)$ - [F]
+
+.......................................................
+* Locks css/js to domain: (only if you are under atack! Look tinymce but if you don´t use it...) 
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com/ [NC]
+RewriteRule .*\.(js|css)$ - [NC,F,L]
+
+......................................................
+*  There is no user agent at all
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^\s*$
+RewriteRule .* - [F,L]
+
+* There is no host header
+
+RewriteCond %{HTTP_HOST} ^$
+RewriteRule .* - [F,L]
+
+............................................................
+* BLOCK HTTP/1.0   // Uses for hackers(/Spammers!
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} HTTP/1\.0$
+RewriteRule .* - [F,L]
+
+..................................................
+* Automated HTTP libraries  I needed:
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^.*(dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client).*$ [NC]
+RewriteRule .* - [F,L]
+.................................................................
+* Commonly seen in DDoS attacks:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(CtrlFunc|w00tw00t|Apachebench).*$ [NC]
+RewriteRule .* - [F,L]
+
+......................................................................................
+* Block whole country, not always blocking evrrything!
+ 
+Blocking a certain country, e.g. China (CN).
+SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
+Deny from env=BlockedCountry
+Redirecting users from a certain country (Finland) to another domain
+
+* Send the stupid country somewhere else.....
+
+SetEnvIf MM_COUNTRY_CODE ^(FI) FINLAND
+RewriteCond %{ENV:FINLAND} ^1$
+RewriteRule .* http://www.example.fi%{REQUEST_URI} [R=301,L]
+
+.................................................................................................
+
+Om du är rädd för mycket falska Google botar, släpp bara in dom rätta Googble bots en!
+
+RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
+
+...................................................................................................
+If you got comments or shop/getting spam -this might work:
+
+RewriteEngine On 
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?adult(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?anal(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?blow.?job(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?gay(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?cum+shot(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?casino(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?incest(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?mature(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?nude(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?piss(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?porn(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?pus*y(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?sex(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?teen(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?tits(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?titten(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?wichsab(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?wichslos(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?xmaster.*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://www14\.blogspot.*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?yahh+oo.*$
+RewriteCond %{HTTP_USER_AGENT} ^DISCo\ Pump [OR]
+RewriteRule .* - [F,L]
+
+...................................................................................................
