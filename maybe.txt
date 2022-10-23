@@ -215,8 +215,7 @@ RewriteCond %{ENV:FINLAND} ^1$
 RewriteRule .* http://www.example.fi%{REQUEST_URI} [R=301,L]
 
 .................................................................................................
-
-Om du är rädd för mycket falska Google botar, släpp bara in dom rätta Googble bots en!
+If you are afraid of a lot of fake Google bots, just let the real Google bots in!
 
 RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
 
