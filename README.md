@@ -30,6 +30,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
 Updated files:
+
+- Updated: 221024, .htacces1 for more speed and security:)
 - Updating: 221020 BBQ custom codes.
 - Updated: 221019 wp-includes, works! = Ready to work for you!
 - Updated: 221017 wp-content folder! = Ready to work for you!
@@ -102,7 +104,7 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
 
-WP CSRF Protector: (mostly in forms, if you use that, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
+WP CSRF Protector: (mostly in forms, if you use thatMostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
 
 * None above takes power from your blog!
 
