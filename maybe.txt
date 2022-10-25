@@ -28,7 +28,7 @@ RewriteCond %{HTTP_REFERER} ^bc.googleusercontent\.com$ [NC]
 
 
 ................................................................
-* If foy got to mutch of these: 
+* If you got to mutch of these: 
 
 SetEnvIfNoCase User-Agent "Anonymouse.org" bad_bot
 SetEnvIfNoCase User-Agent "^Download" bad_bot
