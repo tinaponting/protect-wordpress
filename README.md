@@ -31,6 +31,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221025 htaccess +.htacces1 for more speed and protection:)
 - Updated: 221024, .htacces1 for more speed and security:)
 - Updating: 221020 BBQ custom codes.
 - Updated: 221019 wp-includes, works! = Ready to work for you!
