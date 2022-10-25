@@ -205,7 +205,8 @@ RewriteRule .* - [F,L]
 Blocking a certain country, e.g. China (CN).
 SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
 Deny from env=BlockedCountry
-Redirecting users from a certain country (Finland) to another domain
+
+* Redirecting users from a certain country (Finland) to another domain
 
 * Send the stupid country somewhere else.....
 
