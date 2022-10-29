@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221029 updated wpcontent for more security!
 - Updated: 221028 .htaccess1 updated for more security and some wrongs! Works perfect on my blogs =Tested!
 - Updated: 221025 htaccess +.htacces1 for more speed and protection:)
 - Updated: 221024, .htacces1 for more speed and security:)
