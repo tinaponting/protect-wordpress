@@ -11,6 +11,7 @@ Header set Connection keep-alive
 # END WordPress
 php_value memory_limit 512M
 ExpiresActive On
+#Default expiration: 1 hour after request
 ExpiresDefault "now plus 1 hour"
 ExpiresByType text/css "access 1 month"
 ExpiresByType text/html "access 1 month"
@@ -98,8 +99,7 @@ AddOutputFilterByType DEFLATE application/x-font-otf
 AddOutputFilterByType DEFLATE application/x-font-truetype
 AddOutputFilterByType DEFLATE application/x-font-ttf
 AddOutputFilterByType DEFLATE image/svg+xml
-AddOutputFilterByType DEFLATE image/x-icon
- </IfModule> 
+AddOutputFilterByType DEFLATE image/x-icon 
 <ifModule mod_headers.c>
 <filesMatch> ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|woff)$">
 Header set Cache-Control "max-age=2592000, public"
@@ -129,7 +129,6 @@ mod_gzip_item_include mime ^application/x-javascript.*
 mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </IfModule>
-<FilesMatch> "\.js$">
 RewriteEngine On
 RewriteCond %{HTTP:Accept-Encoding} gzip
 RewriteCond %{REQUEST_FILENAME}.gz -f
@@ -166,9 +165,8 @@ BrowserMatchNoCase "DataForSeoBot" badbots
 BrowserMatchNoCase "Zoominfobot" badbots
 BrowserMatchNoCase "dotbot" badbots
 BrowserMatchNoCase "CCbot" badbots
-BrowserMatchNoCase "Go-http-client" badbots
+BrowserMatchNoCase "MJ12bot" badbots
 Deny from env=badbots
-SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots Deny from env=block_bad_bots
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} Gecko/20100101 [NC]
-RewriteRule ^ - [F,L]
+SetEnvIfNoCase Referer "hetzner.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "ovh.com/ovhcloud.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "hetzner.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
