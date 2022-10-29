@@ -10,7 +10,9 @@ Header set Connection keep-alive
 </IfModule>
 # END WordPress
 php_value memory_limit 512M
+#START EXPIRES CACHING#
 ExpiresActive On
+#Enable expirations
 #Default expiration: 1 hour after request
 ExpiresDefault "now plus 1 hour"
 ExpiresByType text/css "access 1 month"
@@ -61,7 +63,10 @@ ExpiresByType font/woff "access plus 1 month"
 ExpiresByType application/font-woff2 "access plus 1 month"
 ExpiresByType text/markdown "access plus 0 seconds"
 ExpiresByType text/x-cross-domain-policy "access plus 1 week"
+#END EXPIRES CACHING#
+#BEGIN DEFLATE COMPRESSION
 <IfModule mod_deflate.c>
+# Insert filters / compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
 AddOutputFilterByType DEFLATE text/css
@@ -100,25 +105,29 @@ AddOutputFilterByType DEFLATE application/x-font-truetype
 AddOutputFilterByType DEFLATE application/x-font-ttf
 AddOutputFilterByType DEFLATE image/svg+xml
 AddOutputFilterByType DEFLATE image/x-icon 
+#END DEFLATE COMPRESSION
+#BEGIN Cache-Control Headers
 <ifModule mod_headers.c>
-<filesMatch> ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|woff)$">
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|woff)$">
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
-<filesMatch> "\.(css)$">
+<filesMatch "\.(css)$">
 Header set Cache-Control "public"
 </filesMatch>
-<filesMatch> "\.(js)$">
+<filesMatch "\.(js)$">
 Header set Cache-Control "private"
 </filesMatch>
-<filesMatch> "\.(x?html?|php)$">
+<filesMatch "\.(x?html?|php)$">
 Header set Cache-Control "private, must-revalidate"
 </filesMatch>
 </ifModule>
+#END Cache-Control Headers
 <IfModule mod_headers.c>
-<FilesMatch> "\.(js|css|xml|gz)$">
+<FilesMatch "\.(js|css|xml|gz)$">
 Header append Vary: Accept-Encoding
 </FilesMatch>
 </IfModule>
+#BEGIN GZIP COMPRESSION
 <IfModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
@@ -129,17 +138,20 @@ mod_gzip_item_include mime ^application/x-javascript.*
 mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </IfModule>
+#END GZIP COMPRESSION
+<FilesMatch "\.js$">
 RewriteEngine On
 RewriteCond %{HTTP:Accept-Encoding} gzip
 RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule (.*)\.js$ $1\.js.gz [L]
 ForceType text/javascript
 </FilesMatch>
-<FilesMatch> "\.js\.gz$">
+<FilesMatch "\.js\.gz$">
 ForceType text/javascript
 Header set Content-Encoding gzip
 Header set Vary Accept-Encoding
 </FilesMatch>
+# Mime type for web fonts
 <IfModule mod_mime.c>
 AddType application/vnd.ms-fontobject  eot
 AddType application/x-font-ttf   ttf ttc
@@ -170,3 +182,10 @@ Deny from env=badbots
 SetEnvIfNoCase Referer "hetzner.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
 SetEnvIfNoCase Referer "ovh.com/ovhcloud.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
 SetEnvIfNoCase Referer "hetzner.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .(wp-comments-post|wp-login)\.php*
+RewriteCond %{HTTP_REFERER} !.*exempel\.se.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule ^(.*)$ ^https://%{REMOTE_ADDR}/$ [R=301,L]
+</IfModule>
