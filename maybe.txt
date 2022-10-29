@@ -266,4 +266,20 @@ RedirectMatch 403 ^/install.php$
 RedirectMatch 403 ^/viewtopic.php$
 
 ....................................................................................
+
+*  Rules to block suspicious URIs
+
+RewriteCond %{QUERY_STRING} \.\.\/ [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*\.(bash|git|hg|log|svn|swp|cvs) [NC,OR]
+RewriteCond %{QUERY_STRING} etc/passwd [NC,OR]
+RewriteCond %{QUERY_STRING} boot\.ini [NC,OR]
+RewriteCond %{QUERY_STRING} http\:  [NC,OR]
+RewriteCond %{QUERY_STRING} https\:  [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|%3D) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%24&x).* [NC,OR]
+RewriteCond %{QUERY_STRING} !^loggedout=true
+RewriteRule ^(.*)$ - [F]
+....................................................................................
 ....................................................................................
