@@ -155,7 +155,7 @@ RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?semalt\.com [NC]
 RewriteRule ^(.*)$ - [F]
 
 .......................................................
-* Locks css/js to domain: (only if you are under attack! cannot use tinymce1 but if you don´t use it...) 
+* Locks css/js to domain: (only if you are under attack! cannot use tinymce, but if you don´t use it...) 
 
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com/ [NC]
@@ -281,5 +281,106 @@ RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
 RewriteCond %{QUERY_STRING} ^.*(%24&x).* [NC,OR]
 RewriteCond %{QUERY_STRING} !^loggedout=true
 RewriteRule ^(.*)$ - [F]
+
+.....................................................................................
+# deny access to all .log and .comment files:
+
+<Files> ~ "^.*\.([Ll][Oo][Gg]|[cC][oO][mM][mM][eE][nN][tT])">
+....................................................................................
+# Log in Country code:
+
+<IfModule mod_geoip.c>
+ <FilesMatch "wp-login.php|xmlrpc.php">
+ RewriteEngine on
+ RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(CZ|SK)$
+ RewriteCond %{ENV:GEOIP_COUNTRY_CODE_V6} !^(CZ|SK)$
+ RewriteRule ^(.*)$ - [F,L]
+ </FilesMatch>
+ </IfModule> 
+
+......................................................................................
+#  Disallow access to all other PHP files throughout the site, unless they are explicitly allowed:
+
+RewriteCond %{REQUEST_FILENAME} (\.php)$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule (.*\.php)$ - [F]
+
+............................................................................................
+# Disallow access to all other front-end folders
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !^/
+RewriteRule .* - [F]
+
+# Disallow access to all other front-end files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule !^index.php$ - [F]
+
+
+....................................................................................
+# Blocks-username-harvesting-via-new-rest-api-wp
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^wp-json/(.*)$ / [R=301,NC,L]
+</IfModule>
+
+................................................................................
+## Registration is disabled so...
+## deny access to wp-signup.php and wp-register.php
+
+RewriteCond %{REQUEST_URI} wp-signup\.php [NC,OR]
+RewriteCond %{QUERY_STRING} wp-signup\.php [NC,OR]
+RewriteCond %{THE_REQUEST} wp-signup\.php [NC,OR]
+RewriteCond %{REQUEST_URI} wp-register\.php [NC,OR]
+RewriteCond %{QUERY_STRING} wp-register\.php [NC,OR]
+RewriteCond %{THE_REQUEST} wp-register\.php [NC]
+RewriteRule .* - [F,NS,L]
+
+...............................................................................
+# SUBSTITUTE WEBP IF POSSIBLE
+# IF VISITOR'S BROWSER SUPPORTS WEBP IMAGES, AND A WEBP IMAGE EXISTS NEXT TO THE JPG, SERVE THE WEBP IMAGE INSTEAD.
+OBS! not always working!
+
+<IfModule mod_setenvif.c>
+SetEnvIf Request_URI "\.(jpe?g|png)$" REQUEST_image
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REQUEST_image
+</IfModule>
+<IfModule mod_mime.c>
+AddType image/webp .webp
+</IfModule>
+
+
+# WEBP SUBSTITUTION CODE FOR THE "EWWW IMAGE OPTIMIZER" PLUGIN
+# Used with: https://en-ca.wordpress.org/plugins/ewww-image-optimizer/
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png)$
+RewriteCond %{REQUEST_FILENAME}\.webp -f
+RewriteCond %{QUERY_STRING} !type=original
+RewriteRule (.+)\.(jpe?g|png)$ %{REQUEST_FILENAME}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp
+
+..........................................................................................
+#If reguest for scripts:
+
+RewriteEngine on
+RewriteCond %{QUERY_STRING} "script"
+RewriteRule .* - [F]
+
 ....................................................................................
 ....................................................................................
