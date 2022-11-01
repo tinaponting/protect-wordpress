@@ -1,0 +1,489 @@
+Some .htacces if needed, add thm with notepad++ on your .htacces1 :)
+*
+........................................................
+
+#  Pure Trash Requests (brute force attacks, etc)
+
+RewriteCond %{QUERY_STRING} CONCAT [OR,NC]
+RewriteCond %{QUERY_STRING} union\+all\+select [OR,NC]
+RewriteCond  "%{HTTP_USER_AGENT}" sqlmap [NC]
+
+......................................................
+#  Bots Using Fake User-Agents
+
+RewriteCond "%{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "ltx71" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 3" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
+RewriteCond "%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
+
+#  If needed:
+RewriteCond %{HTTP_USER_AGENT} ^Python-urllib [NC]
+RewriteCond %{HTTP_REFERER} ^bc.googleusercontent\.com$ [NC]
+RewriteCond %{HTTP_USER_AGENT} !facebookexternalhit/[0-9]
+
+
+................................................................
+#  If you got to many of these: 
+
+SetEnvIfNoCase User-Agent "Anonymouse.org" bad_bot
+SetEnvIfNoCase User-Agent "^Download" bad_bot
+SetEnvIfNoCase User-Agent "^HTTrack" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft.URL" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft URL Control" bad_bot
+SetEnvIfNoCase User-Agent "^Mozilla/3.Mozilla/2.01" bad_bot
+<Limit GET POST HEAD>Order Allow,Deny Allow from all Deny from env=bad_bot</Limit>
+
+...
+#  Alternative to above:
+* Bad user Agets: 
+SetEnvIfNoCase User-Agent "^xxxxx*" block_bad_bots Deny from env=block_bad_bots
+SetEnvIfNoCase User-Agent "^xxxxxx*" block_bad_bots Deny from env=block_bad_bots
+
+Bad webhotels /Bad domains: 
+SetEnvIfNoCase Referer "exemple.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "exempel.se" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+
+............................................................
+works very well!
+#   Block spam that targets wp-comments-post.php & wp-login.php by denying access to no-referrer requests
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .(wp-comments-post|wp-login)\.php*
+RewriteCond %{HTTP_REFERER} !.*yourwebsitedomain\.com.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule ^(.*)$ ^https://%{REMOTE_ADDR}/$ [R=301,L]
+</IfModule>
+
+.......................................................................
+- Not always working, but try it!
+#  Prevent image hotlinking
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?deinedomain.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?instagram.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|svg)$ https://deinedomain.com/hotlink-image.jpg [NC,R,L]
+
+............................................................
+#  If problem with Poker and so on:
+
+SetEnvIfNoCase Referer doobu.com spammer=yes
+SetEnvIfNoCase Referer poker spammer=yes
+Order allow,deny
+allow from all
+deny from env=spammer
+
+...................................................................
+#  There are reasons you may want to prevent anyone who are not coming from your site from posting to your site:
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{HTTP_REFERER} !^http://www.urltoyoursite.com [NC]
+RewriteRule .* - [F]
+
+...........................................................
+#  STOP SPAM:
+
+RewriteEngine On RewriteCond %{REQUEST_METHOD} POST 
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php* 
+RewriteCond %{HTTP_REFERER} !.*yourblog.com.* [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^$ 
+RewriteRule (.*) ^https://%{REMOTE_ADDR}/$ [R=301,L]
+
+............................................................
+#  If you are tired of a hacker who always tryes to get in.....
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REMOTE_ADDR} ^$
+RewriteRule (.*) /https://exempel.se / [R=301,L]
+</IfModule>
+
+- I always sends them to the toilet on centralstation.....:)
+................................................................
+#  Tired of one specific  spammer? Send him some else:
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule ^(.*)$ ^http://the-site-where-you-want-to-send-spammers.com/$ [R=301,L]
+...
+* Denies any comment attempt with a blank HTTP_REFERER field, highly indicative of spam. May prevent some visitors from POSTING. [403]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*/wp-comments-post\.php.*\ HTTP/ [NC]
+RewriteCond %{HTTP_REFERER} ^-?$
+RewriteRule .* - [F,NS,L]
+
+...........................................................
+#  Deny access to hidden files or directories by using:
+
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule “(^|/)\.” – [F]
+
+........................................................
+#  Deny access to source files and backup files:
+
+<FilesMatch> “(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$”>
+Order allow,deny
+Deny from all
+Satisfy All
+
+........................................................
+#  If you got git in your site:
+
+<DirectoryMatch> "^/.*/\.git/">
+  Deny from all
+</Directorymatch>
+
+..............................................
+#  Block amazon cloud (if to mutch of them):
+
+RewriteBase /
+RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?amazonaws\.com [NC,OR]
+RewriteCond %{REMOTE_HOST} ^.*\.amazonaws\.com$ [NC,OR]
+RewriteCond %{REMOTE_HOST} ^mail(.*)\. [NC,OR]
+RewriteCond %{REMOTE_HOST} ^smtp(.*)\. [NC]
+
+...........................................................
+#  Block Semalt (semalt.com) Referrer Spam:
+
+RewriteBase /
+RewriteCond %{HTTP_REFERER} ^http://(([^.]+\.)+)?semalt\.com [NC]
+RewriteRule ^(.*)$ - [F]
+
+.......................................................
+#  Locks css/js to domain: (only if you are under attack! cannot use tinymce1 but if you don´t use it...) 
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com/ [NC]
+RewriteRule .*\.(js|css)$ - [NC,F,L]
+
+......................................................
+#   There is no user agent at all
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^\s*$
+RewriteRule .* - [F,L]
+
+............................................................
+#  If you're using cPanel AutoSSL or the Let's Encrypt webroot method to create your 
+SSL certificates, it will fail to validate the certificate if validation 
+requests are redirected to HTTPS. Turn on the condition(s) you need.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+  RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[\w-]+$
+  RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+..................................................
+#  Commonly seen in DDoS attacks:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(CtrlFunc|w00tw00t|Apachebench).*$ [NC]
+RewriteRule .* - [F,L]
+
+......................................................................................
+#  Block whole country, not always blocking evrrything!
+ 
+Blocking a certain country, e.g. China (CN).
+SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
+Deny from env=BlockedCountry
+
+Redirecting users from a certain country (Finland) to another domain
+
+#  Send the stupid country somewhere else.....
+
+SetEnvIf MM_COUNTRY_CODE ^(FI) FINLAND
+RewriteCond %{ENV:FINLAND} ^1$
+RewriteRule .* http://www.example.fi%{REQUEST_URI} [R=301,L]
+
+.................................................................................................
+
+# IF you are afraid false google bots!
+
+RewriteCond%{REMOTE_ADDR} !^64\.249\.RewriteCond %{HTTP_USER_AGENT} Googlebot RewriteRule .* - [F] 
+
+...................................................................................................
+* If you got comments or shop/getting spam -this might work:
+
+RewriteEngine On 
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?adult(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?anal(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?blow.?job(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?gay(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?cum+shot(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?casino(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?incest(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?mature(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?nude(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?piss(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?porn(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?pus*y(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?sex(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?teen(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?tits(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?titten(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?wichsab(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?.*(-|.)?wichslos(-|.).*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?xmaster.*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://www14\.blogspot.*$ [OR]
+RewriteCond %{HTTP_REFERER} ^http://(www\.)?yahh+oo.*$
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR]
+RewriteCond %{HTTP_USER_AGENT} ^DISCo\ Pump [OR]
+RewriteRule .* - [F,L]
+
+...................................................................................................
+# Return 404 if original request is file.php
+
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+</IfModule>
+
+.....................................................................................................
+# Eliminate favion crawling - if tomutch of that!
+
+< IfModule mod_rewrite.c >
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} /favicon?\.?(gif|ico|jpe?g?|png)?$ [NC]
+RewriteRule (.*) https://your-site.com/favicon.ico [R=301,L]
+< /IfModule >
+
+...........................................................................................
+# Throw a 403 forbidden on common brute force URIs
+
+RedirectMatch 403 ^/admin$
+RedirectMatch 403 ^/administrator$
+RedirectMatch 403 ^/wp-admin$
+RedirectMatch 403 ^/wp-login.php$
+RedirectMatch 403 ^/install.php$
+RedirectMatch 403 ^/viewtopic.php$
+
+.........................................................................................
+*  Rules to block suspicious URL:S:
+
+RewriteCond %{QUERY_STRING} \.\.\/ [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*\.(bash|git|hg|log|svn|swp|cvs) [NC,OR]
+RewriteCond %{QUERY_STRING} etc/passwd [NC,OR]
+RewriteCond %{QUERY_STRING} boot\.ini [NC,OR]
+RewriteCond %{QUERY_STRING} http\:  [NC,OR]
+RewriteCond %{QUERY_STRING} https\:  [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|%3D) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%24&x).* [NC,OR]
+RewriteCond %{QUERY_STRING} !^loggedout=true
+RewriteRule ^(.*)$ - [F]
+
+....................................................................................
+# deny access to all .log and .comment files:
+
+<Files> ~ "^.*\.([Ll][Oo][Gg]|[cC][oO][mM][mM][eE][nN][tT])">
+....................................................................................
+# Log in Country code:
+
+<IfModule mod_geoip.c>
+ <FilesMatch "wp-login.php|xmlrpc.php">
+ RewriteEngine on
+ RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(CZ|SK)$
+ RewriteCond %{ENV:GEOIP_COUNTRY_CODE_V6} !^(CZ|SK)$
+ RewriteRule ^(.*)$ - [F,L]
+ </FilesMatch>
+ </IfModule> 
+
+......................................................................................
+#  Disallow access to all other PHP files throughout the site, unless they are explicitly allowed:
+
+RewriteCond %{REQUEST_FILENAME} (\.php)$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule (.*\.php)$ - [F]
+
+............................................................................................
+# Disallow access to all other front-end folders
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !^/
+RewriteRule .* - [F]
+
+# Disallow access to all other front-end files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule !^index.php$ - [F]
+
+
+....................................................................................
+# Blocks-username-harvesting-via-new-rest-api-wp
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^wp-json/(.*)$ / [R=301,NC,L]
+</IfModule>
+
+................................................................................
+## Registration is disabled so...
+## deny access to wp-signup.php and wp-register.php
+
+RewriteCond %{REQUEST_URI} wp-signup\.php [NC,OR]
+RewriteCond %{QUERY_STRING} wp-signup\.php [NC,OR]
+RewriteCond %{THE_REQUEST} wp-signup\.php [NC,OR]
+RewriteCond %{REQUEST_URI} wp-register\.php [NC,OR]
+RewriteCond %{QUERY_STRING} wp-register\.php [NC,OR]
+RewriteCond %{THE_REQUEST} wp-register\.php [NC]
+RewriteRule .* - [F,NS,L]
+
+...............................................................................
+# SUBSTITUTE WEBP IF POSSIBLE
+# IF VISITOR'S BROWSER SUPPORTS WEBP IMAGES, AND A WEBP IMAGE EXISTS NEXT TO THE JPG, SERVE THE WEBP IMAGE INSTEAD.
+OBS! not always working!
+
+<IfModule mod_setenvif.c>
+SetEnvIf Request_URI "\.(jpe?g|png)$" REQUEST_image
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REQUEST_image
+</IfModule>
+<IfModule mod_mime.c>
+AddType image/webp .webp
+</IfModule>
+
+
+# WEBP SUBSTITUTION CODE FOR THE "EWWW IMAGE OPTIMIZER" PLUGIN
+# Used with: https://en-ca.wordpress.org/plugins/ewww-image-optimizer/
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png)$
+RewriteCond %{REQUEST_FILENAME}\.webp -f
+RewriteCond %{QUERY_STRING} !type=original
+RewriteRule (.+)\.(jpe?g|png)$ %{REQUEST_FILENAME}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp
+
+..........................................................................................
+#If reguest for scripts:
+
+RewriteEngine on
+RewriteCond %{QUERY_STRING} "script"
+RewriteRule .* - [F]
+
+..........................................................................................
+Inte inlagt:
+
+..................................................................................................
+# LFI and session hijacking
+RewriteCond %{QUERY_STRING} \=(\.\./\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING} \=(\.\.//\./?)+ [OR]
+RewriteCond %{QUERY_STRING} \=(\.\.\\\.\./?)+ [OR]
+RewriteCond %{QUERY_STRING} \=(\.\.\\\\\./?)+ [OR]
+RewriteCond %{QUERY_STRING} \/tmp\/sess_ [NC,OR]
+RewriteCond %{QUERY_STRING} php:\/\/filter\/read=convert\.base64-(en|de)code\/ [NC,OR]
+
+..........................................................................................
+# SHELLS
+RewriteCond %{REQUEST_URI} .*((php|my)?shell|remview.*|phpremoteview.*|sshphp.*|pcom|nstview.*|c99|r57|webadmin.*|phpget.*|phpwriter.*|fileditor.*|locus7.*|storm7.*)\.(p?s?x?htm?l?|txt|cfml?|cgi|pl|php[3-9]{0,1}|jsp?|sql|xml) [NC,OR]
+RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
+RewriteCond %{QUERY_STRING} ^(.*)=/home(.+)?/(.*)/(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^work_dir=.*$ [OR]
+RewriteCond %{QUERY_STRING} ^command=.*&output.*$ [OR]
+RewriteCond %{QUERY_STRING} ^nts_[a-z0-9_]{0,10}=.*$ [OR]
+RewriteCond %{QUERY_STRING} ^c=(t|setup|codes)$ [OR]
+RewriteCond %{QUERY_STRING} ^act=((about|cmd|selfremove|chbd|trojan|backc|massbrowsersploit|exploits|grablogins|upload.*)|((chmod|f)&f=.*))$ [OR]
+RewriteCond %{QUERY_STRING} ^act=(ls|search|fsbuff|encoder|tools|processes|ftpquickbrute|security|sql|eval|update|feedback|cmd|gofile|mkfile)&d=.*$ [OR]
+RewriteCond %{QUERY_STRING} ^&?c=(l?v?i?&d=|v&fnot=|setup&ref=|l&r=|d&d=|tree&d|t&d=|e&d=|i&d=|codes|md5crack).*$ [OR]
+RewriteCond %{QUERY_STRING} ^(.*)([-_a-z]{1,15})=(ls|cd|cat|rm|mv|vim|chmod|chdir|mkdir|rmdir|pwd|clear|whoami|uname|tar|zip|unzip|tar|gzip|gunzip|grep|more|ln|umask|telnet|ssh|ftp|head|tail|which|mkmode|touch|logname|edit_file|search_text|find_text|php_eval|download_file|ftp_file_down|ftp_file_up|ftp_brute|mail_file|mysql|mysql_dump|db_query)([^a-zA-Z0-9].+)*$ [OR]
+RewriteCond %{QUERY_STRING} ^(.*)(wget|shell_exec|passthru|system|exec|popen|proc_open)(.*)$
+
+...............................................................................................................
+
+# Others
+RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
+RewriteCond %{QUERY_STRING} ^(.*)(%20SELECT%20|%20INSERT%20|CHAR\(|%20UPDATE%20|%20REPLACE%20)(.*)$ [NC]
+RewriteCond %{REQUEST_METHOD} (GET|POST) [NC]
+RewriteCond %{QUERY_STRING} ^(.*)(%3C|<)/?script(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=)?javascript(%3A|:)(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)document\.location\.href(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)http%3a(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)ftp(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)ht%20tp(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)htt%20p(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)http%20(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)h%20ttp(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^(.*)(<|>|'|%0A|%0D|%27|%3C|%3E|).* [NC,OR]
+RewriteCond %{HTTP_COOKIE} ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|).* [NC,OR]
+RewriteCond %{REQUEST_URI} ^/(,|;|:|<|>|">|"<|/|\\\.\.\\).{0,9999}.* [NC,OR]
+
+...........................................................................................
+#  GET
+RewriteCond %{REQUEST_METHOD} (GET) [NC]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)https(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)https%3a(%3A|:)(/|%2F){2}(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%3D|=|%3A|%09)http(%3A|:)(/|%2F){2}(.*)$ [NC]
+RewriteRule .* - [F]
+
+.................................................................................
+
+# Anti XSS protection
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index_error.php [F,L]
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+........................................................................................
+
+# If you are tired of those download everything:  
+add this with in your content folder /Or uploads folder:
+
+
+RewriteEngine On
+RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
+RewriteRule \.(php|xml|json|js|css)$ - [NC,L]
+RewriteCond %{HTTP_REFERER} !.
+RewriteRule \.(php|xml|json|js|css)$ - [F,NC,L] 
+
+In uploads folder:
+
+RewriteEngine On
+RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
+RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [NC,L]
+RewriteCond %{HTTP_REFERER} !.
+RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [F,NC,L]
+ 
+
+IF NEEDED:  ADD WHateaver you have:
+Document: .pdf, .doc, .docx, .ppt, .pptx, .pps, .ppsx, .odt, .xls, .xlsx, .psd
+Images: .jpg, .jpeg, .png, .gif, .webp, .ico
+Video: .mp4, .m4v, .mov, .wmv, .avi, .mpg, .ogv, .3gp, .3g2
+Audio: .mp3, .m4a, .ogg, .wav
+........................................................................................
+........................................................................................
