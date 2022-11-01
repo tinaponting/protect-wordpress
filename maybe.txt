@@ -463,15 +463,7 @@ RewriteRule .* - [F]
 
 # If you are tired of those download everything:  
 add this with in your content folder /Or uploads folder:
-
-
-RewriteEngine On
-RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
-RewriteRule \.(php|xml|json|js|css)$ - [NC,L]
-RewriteCond %{HTTP_REFERER} !.
-RewriteRule \.(php|xml|json|js|css)$ - [F,NC,L] 
-
-In uploads folder:
+In uploads folders .htaccess:
 
 RewriteEngine On
 RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
