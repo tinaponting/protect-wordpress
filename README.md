@@ -114,7 +114,7 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
 
-WP CSRF Protector: (mostly in forms, if you use thatMostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
+WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
 
 * None above takes power from your blog!
 
