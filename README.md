@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated 221101 maybe txt, more if needed:)
 - Updated - .htaccess for more speed.
 - Added protection for thosewho had: Wellknown folder, if needed!
 - Updated: 221029 updated wpcontent for more security!
