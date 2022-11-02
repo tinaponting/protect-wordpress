@@ -3,7 +3,7 @@ Protect wordpress with .htacess
 
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
-About me: A blogger since 2002, been on blogspot as on wordpress, made all mistages through the years, I learned not only a free firewall can protect med, so I made my own, follow the latest trends in hacking and som on to get it in order:)  
+About me: A blogger since 2002, been on blogspot as on wordpress, made all mistakes through the years, I learned not only a free firewall can protect med, so I made my own, follow the latest trends in hacking and som on to get it in order:)  
 I gone throught everithing i could find in google, gibhub and forums for all .htacces security, som didn´t work, som works! 
 
 * If you want something on the maybee text; downloads add it with, noteplus + or what you use:)
