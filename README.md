@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Wpcontent 221102 folder:  2 alternatives to  protect js folder, sometimes the alt.1 doesn´t work if you got js based theme.
 - Updated 221101 wpincludes, if needed folders:)
 - Updated 221101 maybe txt, more if needed:)
 - Updated - .htaccess for more speed.
