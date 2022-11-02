@@ -9,7 +9,7 @@ I gone throught everything  i could find in google, gibhub and forums for all .h
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
 
 
-Wp.config.php file:  //Se also my core - single user:)
+Wp.config.php file:  //Se also my core - single user or wpaddon on here:)
 
 require_once(ABSPATH.'wp-settings.php');  Add this after this:
 error_reporting(0);
