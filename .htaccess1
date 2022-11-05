@@ -54,7 +54,7 @@ php_value log_errors_max_len 0
 LimitRequestBody 10240000
 RewriteRule ^/url /url?
 RewriteRule ^(.*)$ - [F,L]
-RewriteRule "^"  "-"  [F,L]]
+RewriteRule "^"  "-"  [F,L]
 
 <Files>*.php>deny from all</Files>
 <Files>xmlrpc.php>order deny,allow deny from all</files>
