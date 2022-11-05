@@ -34,7 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
-- Updated 221105: wp-content folder.
+- Updated 221105: wp-content folder  + htacces1.
 - Updated 221104: wpincludes, protection for js.
 - Updated 221104: wpcontent with protection for themes:)
 - Wpincludes 221102 folder:  2 alternatives to  protect js folder, sometimes the alt.1 doesn´t work if you got js based theme.
@@ -105,19 +105,21 @@ Plugins I recommend:
 None above takes power fron your blog:)
 
 PAYED Firewall: 
-BBQ Pro   // I love the custom - place in protection for strange files!   https://plugin-planet.com/bbq-pro/
+# BBQ Pro   // I love the custom - place in protection for strange files!   https://plugin-planet.com/bbq-pro/
 
-BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress as above:)
+# BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress as above:)
 *
 
-404 controls: - so bad: https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
+# 404 controls: - so GOOD /Payed version best:): https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
 
-Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
+# Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
 Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Both versions Works very well:) 
 
-Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
+#  Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
 
-WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
+# Simple Login Captcha:  https://wordpress.org/plugins/simple-login-captcha/    Really godd against Autobots, does not take poer from your blog.
+
+# WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
 
 * None above takes power from your blog!
 
