@@ -34,8 +34,9 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
-- Updated: wpincludes, protection for js.
-- Updated: wpcontent with protection for themes:)
+- Updated 221105: wp-content folder.
+- Updated 221104: wpincludes, protection for js.
+- Updated 221104: wpcontent with protection for themes:)
 - Wpincludes 221102 folder:  2 alternatives to  protect js folder, sometimes the alt.1 doesn´t work if you got js based theme.
 - Updated 221101 wpincludes, if needed folders:)
 - Updated 221101 maybe txt, more if needed:)
