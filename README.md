@@ -93,10 +93,8 @@ If needed, add more evil bots - just copy one line and ad it!
 - Updated: 220625
 
 
-Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
-in core. 
-- Updated: 220625
-- Updated: 220731  borth are in best Shape!
+VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
+in core. No one can write to any files!!
 
 
 Plugins I recommend:
