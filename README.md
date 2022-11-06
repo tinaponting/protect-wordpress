@@ -129,5 +129,6 @@ Bloga I Love:
 * Perishable Press: https://perishablepress.com/   Always something new to read about security.
 * Wphacked blog:  https://secure.wphackedhelp.com/blog/
 
+* Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norweian,swedsich words here and there = Very hard to break!
 Happy safe blogging folks:)
 
