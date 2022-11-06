@@ -167,7 +167,7 @@ RewriteCond% {REMOTE_HOST} ^smtp(.*)\. [NC]
 RewriteCond% {HTTP_REFERER} semalt\.semalt\.com [NC]
 
 .......................................................
-# Locks css/js to domain: (only if you are under attack! cannot use tinymce1 but if you don´t use it...) 
+# Locks css/js to domain: (only if you are under attack! cannot use tinymce but if you don´t use it...) 
 
 RewriteEngine On
 RewriteCond% {HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com/ [NC]
