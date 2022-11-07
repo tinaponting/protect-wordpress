@@ -27,7 +27,6 @@ SetEnvIfNoCase User-Agent .*url.* bad_bot
 <IfModule mod_headers.c>Header set X-Frame-Options"SAMEORIGIN"</IfModule>
 <IfModule mod_headers.c>Header set Referrer-Policy "origin-when-cross-origin"</IfModule>
 
-Options All -Indexes  
 Options -MultiViews
 ServerSignature Off
 Options +FollowSymLinks -Indexes
@@ -164,7 +163,6 @@ RewriteCond%{QUERY_STRING}\=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[
 RewriteCond%{REQUEST_METHOD}^(GET|POST|PUT|PATCH|DELETE) [NC]RewriteCond %{REQUEST_URI} ^.*wp-json/wp/[NC]RewriteRule^(.*)$ - [F]
 RewriteCond%{HTTP_REFERER}!^https://www.%{HTTP_HOST}/.*$[NC]RewriteCond%{REQUEST_POST}.*contact.php$ RewriteRule.*-[F]
 RewriteCond%{REQUEST_URI}!^/wp-admin [NC]RewriteCond%{QUERY_STRING} author=\dRewriteRule .* - [R=403,L]
-
 RewriteCond%{REQUEST_METHOD} GETRewriteCond%{QUERY_STRING}[a-zA-Z0-9_]=https://[OR]RewriteCond%{QUERY_STRING}[a-zA-Z0-9_]=(\.\.//?)+ [OR]
 RewriteCond%{QUERY_STRING}[a-zA-Z0-9_]=https%3A%2F%2F [OR]
 RewriteCond %{QUERY_STRING}[a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]RewriteRule .* - [F]
