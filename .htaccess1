@@ -56,6 +56,9 @@ RewriteRule ^/url /url?
 RewriteRule ^(.*)$ - [F,L]
 RewriteRule "^"  "-"  [F,L]
 
+<Files>wp-cron.php>order allow,denydeny from all</Files>
+<Files>wp-links-opml.php>order allow,denydeny from all</Files>
+<files>wp-json>order allow,deny deny from all</files>
 <Files>*.php>deny from all</Files>
 <Files>xmlrpc.php>order deny,allow deny from all</files>
 <files>install.php>Order allow,deny Deny from all</files>
