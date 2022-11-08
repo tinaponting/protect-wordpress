@@ -27,6 +27,7 @@ SetEnvIfNoCase User-Agent .*url.* bad_bot
 <IfModule mod_headers.c>Header set X-Frame-Options"SAMEORIGIN"</IfModule>
 <IfModule mod_headers.c>Header set Referrer-Policy "origin-when-cross-origin"</IfModule>
 
+Options All -Indexes
 Options -MultiViews
 ServerSignature Off
 Options +FollowSymLinks -Indexes
