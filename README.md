@@ -34,7 +34,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
--Updated 221107:Wp- includesm,more js alternatives:)
+-Updated htacces1 with protection, wp-cron/wp-links-opml/wp-json
+- Updated 221107:Wp- includesm,more js alternatives:)
 - Updated 221106: wp-contet for better plugins and themes security:)
 - Updated 221106: wp-includes folder, to protect js/css files, all php in all subfolders.
 - Updated 221105: wp-content folder  + htacces1 + Maybe txt.
