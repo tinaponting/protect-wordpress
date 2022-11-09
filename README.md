@@ -113,7 +113,6 @@ PAYED Firewall:
 * BBQ Pro   // I love the custom - place in protection for strange files!   https://plugin-planet.com/bbq-pro/
 
 * BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress as above:)
-*
 
 * 404 controls: - so GOOD /Payed version best:): https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
 
