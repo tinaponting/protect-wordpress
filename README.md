@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221111: wp-content for better security for themes and plugins:)
 - Updated: 221110 wpincludes core htacces and tried every folder - If I get in:) Every file:) WORKS!!
 - Updated 221109 Wp-includes files with new: style-engine and better protection for files, php/js/css.
 - Updated htacces1 with protection, wp-cron/wp-links-opml/wp-json
