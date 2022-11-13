@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: wpincludes files for better performance.
 - Updated: wp-includes, js folder ALTERNATIVE, if uo got a theme that is sensitive to js.
 - Updated: 221111: wp-content for better security for themes and plugins:)
 - Updated: 221110 wpincludes core htacces and tried every folder - If I get in:) Every file:) WORKS!!
