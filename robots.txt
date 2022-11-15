@@ -36,53 +36,84 @@ Disallow: /download/
 Disallow: / submit.php
 
 Allow: /
+User-agent: * Allow: /
 Allow: /images/
 User-agent: applebot Allow: /
+User-agent: Applebot Allow: /
+User-agent: AppleNewsBot Allow: /
 User-agent: ia_archiver Allow: /
 User-agent: archive.org_bot Allow: /
 User-agent: Exabot Allow: /
 User-agent: Feedly Allow: /
+User-agent: HaoSouSpider Allow: /
 User-agent: Googlebot Allow: /
+User-agent: Google Favicon Allow: /
 User-agent: AdsBot-Google Allow: /
+User-agent: AdsBot-Google-Mobile-Apps Allow: / 
 User-agent: Googlebot Allow: /
 User-agent: Googlebot-Image Allow: /
-User-agent: Googlebot Allow: /
-User-agent: Googlebot-Image
 User-agent: googlebot-news Allow: /
-User-agent: Google Allow: /
 User-agent: Googlebot-Mobile Allow: /
 User-agent: Googlebot-Video Allow: /
-User-agent: Feedfetcher-Google Allow: 
+User-agent: Feedfetcher-Google Allow: /
+User-agent: DuplexWeb-Google Allow: /
+User-Agent: Googlebot Allow: /*.css$ Allow: /*.js$
+User-agent: Facebot Allow: /
 User-agent: facebookexternalhit/1.0 
-User-agent: facebookexternalhit/1.1 /
+User-agent: facebookexternalhit/1.1 
 User-agent: Bingbot Allow: /
 User-agent: bingbot/2.0; Allow: /
+User-agent: BingPreview  Allow: /
 User-agent: Baiduspider  Allow: /
 User-agent: Baiduspider-video Allow: /
 User-agent: Baiduspider-image Allow: /
+User-agent: BaiduSpider-Ads  Allow: /
+User-agent: BaiduSpider-Mobile Allow: /
+User-agent: Baiduspider-News Allow: /
 User-agent: DuckDuckBot Allow: /
+User-agent: DuckDuckGo-Favicons-Bot Allow: /
 User-agent: msnbot  Allow: /
 User-agent: msnbot-media Allow: /
 User-agent: User-agent: MS Search Allow: /
+User-agent: MSNBot-NewsBlogs Allow: /
 User-agent: Naverbot Allow: /
+User-agent: Neevabot Allow: /
 User-agent: Pinterest Allow: /
-User-agent: Petalboot Allow: /
+User-agent: Petalbot Allow: /
 User-agent: Twitterbot Allow: /
+User-agent: Teoma Allow: /
 User-agent: SeznamBot Allow: /
 User-agent: Sosospider Allow: /
 User-agent: Sosospider/2.0 Allow: /
 User-agent: Sosoimagespider Allow: /
+User-agent: Sogou Spider Allow: /
+User-agent: Sogou blog Allow: /
+User-agent: Sogou head spider Allow: /
+User-agent: Sogou inst spider Allow: /
+User-agent: Sogou News Spider Allow: /
+User-agent: Sogou Orion spider Allow: /
+User-agent: Sogou spider2 Allow: /
+User-agent: Sogou web spider Allow: /
+User-agent: Sogou-Test-Spider Allow: /
 User-agent: MegaIndex.ru Allow: /
 User-agent: MegaIndex.ru/2.0 Allow: /
-User-agent: Sogou Spider Allow: /
+User-agent: Yeti Allow: /
 User-agent: YoudaoBot Allow: /
 User-agent: Yahoo! Slurp Allow: /
+User-agent: YioopBot Allow: /
 User-agent: Yandex Allow: /
 User-agent: YandexMobileBot Allow: /
 User-Agent: Yandex allow: /favicon/
 User-agent: Yandex Robot Allow: /
-User-agent: Teoma Allow: /
-User-agent: Yeti Allow: /
+User-agent: YandexAccessibilityBot Allow: /
+User-agent: YaDirectFetcher Allow: /
+User-agent: YandexBlogs Allow: /
+User-agent: YandexFavicons Allow: /
+User-agent: YandexImages Allow: /
+User-agent: YandexMedia Allow: /
+User-agent: YandexNews Allow: /
+User-agent: YandexScreenshotBot Allow: /
+User-agent: YandexVideo Allow: /
 
 # The year the blog was born Allow: / XXXX
 
