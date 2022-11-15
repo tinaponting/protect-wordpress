@@ -115,7 +115,7 @@ User-agent: YandexNews Allow: /
 User-agent: YandexScreenshotBot Allow: /
 User-agent: YandexVideo Allow: /
 
-# The year the blog was born Allow: / XXXX
+# The year the blog was born: / XXXX
 
 # Feeds:
 # Atom:  
