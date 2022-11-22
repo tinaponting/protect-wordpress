@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221122 wp-content aand plugin protection updated:)
 - Updated: 221122 wp-includes protection to more for js protection, 2 ways of doing that!.
 - Updated: 221122 core: .htaccess for latest speed and not wanted bots:)
 - Updated: 221118 wpcontent plugins folder for more alternatives protection.
