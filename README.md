@@ -34,16 +34,17 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221122 wp-includes protection to more for js protection, 2 ways of doing that!.
 - Updated: 221122 core: .htaccess for latest speed and not wanted bots:)
-- Updagted: 221118 wpcontent plugins folder for more alternatives protection.
-- Updated:221117 wpincludes for Better security for js files:)
-- Updated:221117 for better security .htaccess1.
+- Updated: 221118 wpcontent plugins folder for more alternatives protection.
+- Updated: 221117 wpincludes for Better security for js files:)
+- Updated: 221117 for better security .htaccess1.
 - Updated: 221115 Themes folder with morealternatives.
 - Updated: wpincludes files for better performance.
 - Updated: wp-includes, js folder ALTERNATIVE, if uo got a theme that is sensitive to js.
 - Updated: 221111: wp-content for better security for themes and plugins:)
 - Updated: 221110 wpincludes core htacces and tried every folder - If I get in:) Every file:) WORKS!!
-- Updated 221109 Wp-includes files with new: style-engine and better protection for files, php/js/css.
+- Updated: 221109 Wp-includes files with new: style-engine and better protection for files, php/js/css.
 - Updated htacces1 with protection, wp-cron/wp-links-opml/wp-json
 - Updated 221107:Wp- includesm,more js alternatives:)
 - Updated 221106: wp-contet for better plugins and themes security:)
@@ -60,7 +61,7 @@ Updated files:
 - Updated: 221028 .htaccess1 updated for more security and some wrongs! Works perfect on my blogs =Tested!
 - Updated: 221025 htaccess +.htacces1 for more speed and protection:)
 - Updated: 221024, .htacces1 for more speed and security:)
-- Updating: 221020 BBQ custom codes.
+- Updated: 221020 BBQ custom codes.
 - Updated: 221019 wp-includes, works! = Ready to work for you!
 - Updated: 221017 wp-content folder! = Ready to work for you!
 - Updated: 221017 -htaccess1 = Ready to work for you! On your blog, look in now and then for updates!
@@ -83,10 +84,10 @@ Updated files:
 - Updated: 220924: added protection for, wp.load.php file and some more goodies for protection.
 - Updated: 220922: wp includes all is included.
 - Updated: 220922: .htaccess1 for better security.
-- Updated:220922: wpcontent folder, htaccess with protection, no insert of infected images!
-- Updated:220917 Added Css/Js folder protection - that works! 
-- Updated 2200915: .htacces1 for more: No fake bots, only allow real google botsand som on!
-- Updated wp-content folder:)
+- Updated: 220922: wpcontent folder, htaccess with protection, no insert of infected images!
+- Updated: 220917 Added Css/Js folder protection - that works! 
+- Updated: 2200915: .htacces1 for more: No fake bots, only allow real google botsand som on!
+- Updated: wp-content folder:)
 - Updated: .htaccess1 for more protection, did I cover all? 
 - Updated: .htacess for more security and newest protection, added, block for semruch/ahrefs, who the most bloggers do not need!
 If needed, add more evil bots - just copy one line and ad it!
