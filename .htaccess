@@ -219,10 +219,4 @@ BrowserMatchNoCase "dotbot" badbots
 BrowserMatchNoCase "CCbot" badbots
 BrowserMatchNoCase "MJ12bot" badbots
 Deny from env=badbots
-SetEnvIfNoCase Referer "hetzner.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "ovh.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "hetzner.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "vultr.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "scaleway.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "clients.your-server.de" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
-SetEnvIfNoCase Referer "twingly.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
+SetEnvIfNoCase Referer "exempel.se" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
