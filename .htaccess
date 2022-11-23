@@ -181,6 +181,16 @@ RewriteRule "\.js\.gz$" "-" [T=text/javascript,E=no-gzip:1]
 Header append Content-Encoding gzip
 Header append Vary Accept-Encoding
 </FilesMatch>
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+<IfModule mod_setenvif.c>
+<IfModule mod_headers.c>
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+SetEnvIfNoCase Request_URI \
+\.(?:gif|jpe?g|png|rar|zip|exe|flv|mov|wma|mp3|avi|swf|mp?g|mp4|webm|webp)$ no-gzip dont-vary
+</IfModule>
+</IfModule>
 </IfModule>
 # Mime type for web fonts
 <IfModule mod_mime.c>
