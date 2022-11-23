@@ -678,6 +678,20 @@ RewriteRule !^.js|.min.js|json|css|.min.css|.css|xml|.php|js|php\.php$ - [F,L]
 
 <Files> ms-files.php><IfModule !mod_authz_core.c>Allow from all</IfModule><IfModule mod_authz_core.c>Require all granted</IfModule></Files>
 
+........................................................................................
+........................................................................................
+# DENY access to all PHP/CSS files in Some directory - Add ahtaccess in the folder you want it:
+
+<Files> ~ "[^/]\{0,}\.(php|css)$">Order deny,allow Deny from all</Files>
+
+........................................................................................
+........................................................................................
+# If you got a shop/store:
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} !^/themes/stores/(.*)
+RewriteCond %{REQUEST_URI} !^/themes/shop/(.*)
+RewriteRule .? - [L]
 
 ........................................................................................
 ........................................................................................
