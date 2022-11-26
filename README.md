@@ -8,6 +8,8 @@ I gone throught everything  i could find in google, gibhub and forums for all .h
 
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
 
+WORDPRESS - FORT KNOX:)
+
 
 Wp.config.php file:  //Se also my core - single user or wpaddon on here:)
 
@@ -34,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221126 htacess1 for better protection, checked with: Lynx htaccess checker. Works very well:)
 - Updated: 221126 wpincludes/css protection with alternative and correct css protection.
 - Added: 221125 wpincludes, antoher JS folder protection.
 - Updated: 221124 htaccess + htacces1 for more speed and security:)
