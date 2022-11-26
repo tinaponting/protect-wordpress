@@ -34,6 +34,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 221126 wpinxludes/css protection with alternative and correct css protection.
 - Added: 221125 wpincludes, antoher JS folder protection.
 - Updated: 221124 htaccess + htacces1 for more speed and security:)
 - Updated: 221122 Updated, maybe text. 
