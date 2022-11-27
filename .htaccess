@@ -72,9 +72,9 @@ AddOutputFilterByType DEFLATE text/vtt
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/xml 
 AddOutputFilterByType DEFLATE text/javascript
-AddOutputFilterByType DEFLATE php
-AddOutputFilterByType DEFLATE js 
-AddOutputFilterByType DEFLATE css 
+AddOutputFilter DEFLATE php
+AddOutputFilter DEFLATE js 
+AddOutputFilter DEFLATE css 
 AddOutputFilterByType DEFLATE application/x-httpd-php
 AddOutputFilterByType DEFLATE application/x-httpd-fastphp
 AddOutputFilterByType DEFLATE text/x-component
