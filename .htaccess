@@ -71,7 +71,7 @@ AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE text/vtt
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/xml 
-AddOutputFilterByType DEFLATE text/javascript 
+AddOutputFilterByType DEFLATE text/javascript
 AddOutputFilterByType DEFLATE php
 AddOutputFilterByType DEFLATE js 
 AddOutputFilterByType DEFLATE css 
@@ -140,18 +140,6 @@ Header set Cache-Control "private, must-revalidate"
 Header append Vary: Accept-Encoding
 </FilesMatch>
 </IfModule>
-<FilesMatch "\.js$">
-RewriteEngine On
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule (.*)\.js$ $1\.js.gz [L]
-ForceType text/javascript
-</FilesMatch>
-<FilesMatch "\.js\.gz$">
-ForceType text/javascript
-Header set Content-Encoding gzip
-Header set Vary Accept-Encoding
-</FilesMatch>
 # Mime type for web fonts
 <IfModule mod_mime.c>
 AddType application/vnd.ms-fontobject  eot
@@ -180,4 +168,3 @@ BrowserMatchNoCase "dotbot" badbots
 BrowserMatchNoCase "CCbot" badbots
 BrowserMatchNoCase "MJ12bot" badbots
 Deny from env=badbots
-SetEnvIfNoCase Referer "bad.domain.com" bad_referer Order Allow,Deny Allow from ALL Deny from env=bad_referer
