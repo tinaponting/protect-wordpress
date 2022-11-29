@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Added: 221129 - htaccess with gz/sgi scripts compression alternative.
 - Updated: 221126 htacess1 for better protection, checked with: Lynx htaccess checker. Works very well:)
 - Updated: 221126 wpincludes/css protection with alternative and correct css protection.
 - Added: 221125 wpincludes, antoher JS folder protection.
