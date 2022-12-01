@@ -36,11 +36,12 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated .htaccess1 for more securiit and fake google bots, public_html safety:)
 - Added: 221129 - htaccess with gz/sgi scripts compression alternative.
 - Updated: 221126 htacess1 for better protection, checked with: Lynx htaccess checker. Works very well:)
 - Updated: 221126 wpincludes/css protection with alternative and correct css protection.
 - Added: 221125 wpincludes, antoher JS folder protection.
-- Updated: 221124 htaccess + htacces1 for more speed and security:)
+- Updated: 221124 htaccess + htaccess1 for more speed and security:)
 - Updated: 221122 Updated, maybe text. 
 - Updated: 221122 wp-content aand plugin protection updated:)
 - Updated: 221122 wp-includes protection to more for js protection, 2 ways of doing that!.
