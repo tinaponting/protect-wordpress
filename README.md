@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 Updated files:
 
+- Updated: 2211206 BBQ Custom codes with more protection.
 - Updated .htaccess1 for more securiit and fake google bots, public_html safety:)
 - Added: 221129 - htaccess with gz/sgi scripts compression alternative.
 - Updated: 221126 htacess1 for better protection, checked with: Lynx htaccess checker. Works very well:)
