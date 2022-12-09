@@ -33,6 +33,7 @@ RedirectMatch 403 ^/wp-admin$
 RedirectMatch 403 ^/wp-login.php$
 RedirectMatch 403 ^/install.php$
 RedirectMatch 403 ^/viewtopic.php$
+RedirectMatch 404 \.(htaccess)$
 
 
 Options All -Indexes -MultiViews
