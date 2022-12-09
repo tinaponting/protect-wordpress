@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
+- Updated: 221209 .htaccess1 - Better perfomance.
 - Updated: 221207 .htaccess1 checked and controlled.
 - Updated: 2211206 BBQ Custom codes with more protection.
 - Updated .htaccess1 for more securiit and fake google bots, public_html safety:)
