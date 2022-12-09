@@ -162,3 +162,14 @@ Bloga I Love:
 * Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norwegian,swedich,Deuch words here and there = Very hard to break!
 Happy safe blogging folks:)
 
+* Remove unneeded files:
+readme.html
+license.txt
+changelog.txt
+All files .md
+
+Do you need: wlwmanifest.xml  /wp-includes-
+
+Wp-admin:
+/wp-admin/install.php
+wp-config-sample.php
