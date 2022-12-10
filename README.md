@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
+- Updated: 221210 wp-content folder plugins with more alternitives.
 - Updated: 221209 wp-admin Updated.
 - Updated: 221209 wp-content Updated.
 - Updated: 221209 wp-includes updated.
