@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
+- Updated: 221222 .htaccess1 updated with two version. with Registration or No: registration.
 - Updated: 221210 wp-content folder plugins with more alternitives.
 - Updated: 221209 wp-admin Updated.
 - Updated: 221209 wp-content Updated.
@@ -104,26 +105,7 @@ UPDATED fILES AND FOLDERS:
 - Updated: 220922: wpcontent folder, htaccess with protection, no insert of infected images!
 - Updated: 220917 Added Css/Js folder protection - that works! 
 - Updated: 2200915: .htacces1 for more: No fake bots, only allow real google botsand som on!
-- Updated: wp-content folder:)
-- Updated: .htaccess1 for more protection, did I cover all? 
-- Updated: .htacess for more security and newest protection, added, block for semruch/ahrefs, who the most bloggers do not need!
-If needed, add more evil bots - just copy one line and ad it!
-
-- Uppdated: 220914: Js folder / wp-includes that protect js files! Works well!
-- Uppdated: 220906: htaccess1 - false boots protection and extra protection, admin, manifest files:)
-- Updated: 220828 : htaccess1 for more security and some dublicates gone:) 
-- Updated: 220731:  Protection for images, uploads folder, stealers and no way you see what I got!
-- Updated: 220730: .htacess for more speed and for mobile!
-- Updated: 220722: .htacces1for protection of: Js, Css files:)
-- Updated: 220719: .htacces1 for more security and doubles.
-- Added Protection, wp.-includes/fonts follder (They download font til´you die!:(
-- Updated: Wp.content folder. 
-- Updated: 220715: protect plugin folder.
-- Updated: 220715 wp.content folder
-- Updated: 220709  Works! And added som protection for theme:)
-- Updated: 220702 
-- Updated: 220625
-
+- Updated: 21-22 Delated:)
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
