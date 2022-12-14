@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
+- Updated: 221214 maybe text more goodies:)
 - Updated: 221214 maybe updated with more goodies!
 - Updated: 221214 htaccess1 - to mutch js protection:)
 - Updated: 221212 Added my favorite plugns protection, wp-content.
