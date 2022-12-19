@@ -1,5 +1,5 @@
 # protect-wordpress  For Paranoid bloggers on wordpress.
-Protect wordpress with .htacess
+Protect wordpress with .htaccess
 
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
