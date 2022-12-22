@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
+- Updated: 221222. readme.txt, wp-content folder.
 - Updated: 221222  Maybe.txt, some goodies if needed:)
 - Update: 221222 .htaccess1 for more security for themes .js .css
 - Updated: 221220. some redame in wp-content added.
