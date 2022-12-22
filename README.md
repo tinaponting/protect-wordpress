@@ -36,7 +36,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED fILES AND FOLDERS:
 
-- Updated .htaccess1 for more security for themes .js .css
+- Updated: 221222  Maybe.txt, some goodies if needed:)
+- Update: 221222 .htaccess1 for more security for themes .js .css
 - Updated: 221220. some redame in wp-content added.
 - Updated: 221219 wp--content folder, plugins and uploads.
 - Updated: 221214 maybe text more goodies:)
