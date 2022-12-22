@@ -145,7 +145,7 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 * None above takes power from your blog!
 
-If oy got googleI bing XML files, set them t0 444 0r if it works: 440:) for safety
+If you got google / bing XML files, set them t0 444 0r if it works: 440:) for safety
 Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
 Bloga I Love:
 * Perishable Press: https://perishablepress.com/   Always something new to read about security.
