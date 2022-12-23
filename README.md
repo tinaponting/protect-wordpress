@@ -34,9 +34,10 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
-UPDATED fILES AND FOLDERS:
+UPDATED FILES AND FOLDERS:
 
-- Updated: 221222. readme.txt, wp-content folder.
+_Updatted: 221223 wp-includes.
+- Updated: 221222 readme.txt, wp-content folder.
 - Updated: 221222  Maybe.txt, some goodies if needed:)
 - Update: 221222 .htaccess1 for more security for themes .js .css
 - Updated: 221220. some redame in wp-content added.
