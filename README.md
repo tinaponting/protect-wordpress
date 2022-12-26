@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated 221226 wp includes, core/sensitine js protection.
 - Updated:221226 wp-content, fonts protection.Two alternatives to chooe from.
 - Updated: 221225, htacces with or without cgi script.
 - Updated: 221225 Maybe.txt. Some more goodies.
