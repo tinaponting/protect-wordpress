@@ -165,8 +165,7 @@ license.txt
 changelog.txt
 All files .md
 
-Do you need?: wlwmanifest.xml  /wp-includes-
+Do you need?: wlwmanifest.xml + wp-config-sample.php  /wp-includes
 
 Wp-admin:
 /wp-admin/install.php
-wp-config-sample.php
