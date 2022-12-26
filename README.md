@@ -36,7 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- WORKING on a new .htaccess1 for apache 2.2+ Soon ready, but needs to test it on some blogs first, and see if it is OK:)  
+- WORKING on a new .htaccess1 for apache 2.4+ Soon ready, but needs to test it on some blogs first, and see if it is OK:)  
 - Updated 221226 wp includes, core/sensitine js protection.
 - Updated:221226 wp-content, fonts protection.Two alternatives to chooe from.
 - Updated: 221225, htacces with or without cgi script.
