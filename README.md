@@ -37,7 +37,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 UPDATED FILES AND FOLDERS:
 
 - Updated: 230104 Wp-includes folder.
-- Updated: 230104,, wp.content, more secure:)
+- Updated: 230104,, wp.content, more secure + core alternatives:)
 - Updated: 230101, wp-content folder, the core htaccess to a better one, the one who were there, did not work!
 - Updated: 221230 htaccess1 folder with tested version on real blogs, 3 versions to choose from.
 - WORKING on a new .htaccess1 for apache 2.4+ Soon ready, but needs to test it on some blogs first, and see if it is OK:)  
