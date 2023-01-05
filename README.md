@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230105, not allowed folder. htaccess.
 - Updated: 230104 Wp-includes folder.
 - Updated: 230104,, wp.content, more secure + core alternatives:)
 - Updated: 230101, wp-content folder, the core htaccess to a better one, the one who were there, did not work!
