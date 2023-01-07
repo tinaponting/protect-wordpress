@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230106 BBQ Custom codes.
 - Updated: 230105, not allowed folder. htaccess.
 - Updated: 230104 Wp-includes folder.
 - Updated: 230104,, wp.content, more secure + core alternatives:)
