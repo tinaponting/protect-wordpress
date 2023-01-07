@@ -167,6 +167,8 @@ Bloga I Love:
 * Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norwegian,swedich,Deuch words here and there = Very hard to break!
 Happy safe blogging folks:)
 
+* Sitemap Validater: https://www.xml-sitemaps.com/validate-xml-sitemap.html
+
 * Remove unneeded files:
 readme.html
 license.txt
