@@ -177,3 +177,12 @@ Do you need?: wlwmanifest.xml + wp-config-sample.php  /wp-includes
 
 Wp-admin:
 /wp-admin/install.php
+
+VERY IMPORTANT:
+Very important; If you got an older blog!
+On:
+WP-CONFIG.PHP
+define('DB_CHARSET','utf8mb4');
+
+Change it to: 
+define('DB_CHARSET','utf8');
