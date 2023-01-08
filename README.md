@@ -129,7 +129,7 @@ UPDATED FILES AND FOLDERS:
 - Updated: 220922: wpcontent folder, htaccess with protection, no insert of infected images!
 - Updated: 220917 Added Css/Js folder protection - that works! 
 - Updated: 2200915: .htacces1 for more: No fake bots, only allow real google botsand som on!
-- Updated: 2100 Delated:)
+- Updated: 2021 Delated:)
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
