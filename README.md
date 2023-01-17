@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230117 .htacces for better Cache Control.
 - Updated: 230116 IP LIST, swedish hackers list:)
 - Added Limit R body to all verions, htaccess1
 - Updated: 230106 .htacces1 firewall for better security:) Does not take power of your blog!
