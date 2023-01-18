@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230118 .htaccess for better deflate and cashe control.
 - Updated: 230117 .htacces for better Cache Control.
 - Updated: 230116 IP LIST, swedish hackers list:)
 - Added Limit R body to all verions, htaccess1
@@ -71,67 +72,8 @@ UPDATED FILES AND FOLDERS:
 - Updated: 221209 .htaccess1 - Better perfomance.
 - Updated: 221207 .htaccess1 checked and controlled.
 - Updated: 2211206 BBQ Custom codes with more protection.
-- Updated .htaccess1 for more securiit and fake google bots, public_html safety:)
-- Added: 221129 - htaccess with gz/sgi scripts compression alternative.
-- Updated: 221126 htacess1 for better protection, checked with: Lynx htaccess checker. Works very well:)
-- Updated: 221126 wpincludes/css protection with alternative and correct css protection.
-- Added: 221125 wpincludes, antoher JS folder protection.
 - Updated: 221124 htaccess + htaccess1 for more speed and security:)
-- Updated: 221122 Updated, maybe text. 
-- Updated: 221122 wp-content aand plugin protection updated:)
-- Updated: 221122 wp-includes protection to more for js protection, 2 ways of doing that!.
-- Updated: 221122 core: .htaccess for latest speed and not wanted bots:)
-- Updated: 221118 wpcontent plugins folder for more alternatives protection.
-- Updated: 221117 wpincludes for Better security for js files:)
-- Updated: 221117 for better security .htaccess1.
-- Updated: 221115 Themes folder with morealternatives.
-- Updated: wpincludes files for better performance.
-- Updated: wp-includes, js folder ALTERNATIVE, if uo got a theme that is sensitive to js.
-- Updated: 221111: wp-content for better security for themes and plugins:)
-- Updated: 221110 wpincludes core htacces and tried every folder - If I get in:) Every file:) WORKS!!
-- Updated: 221109 Wp-includes files with new: style-engine and better protection for files, php/js/css.
-- Updated htacces1 with protection, wp-cron/wp-links-opml/wp-json
-- Updated 221107:Wp- includesm,more js alternatives:)
-- Updated 221106: wp-contet for better plugins and themes security:)
-- Updated 221106: wp-includes folder, to protect js/css files, all php in all subfolders.
-- Updated 221105: wp-content folder  + htacces1 + Maybe txt.
-- Updated 221104: wpincludes, protection for js.
-- Updated 221104: wpcontent with protection for themes:)
-- Wpincludes 221102 folder:  2 alternatives to  protect js folder, sometimes the alt.1 doesn´t work if you got js based theme.
-- Updated 221101 wpincludes, if needed folders:)
-- Updated 221101 maybe txt, more if needed:)
-- Updated - .htaccess for more speed.
-- Added protection for thos ewho had: Wellknown folder, if needed!
-- Updated: 221029 updated wpcontent for more security!
-- Updated: 221028 .htaccess1 updated for more security and some wrongs! Works perfect on my blogs =Tested!
-- Updated: 221025 htaccess +.htacces1 for more speed and protection:)
-- Updated: 221024, .htacces1 for more speed and security:)
-- Updated: 221020 BBQ custom codes.
-- Updated: 221019 wp-includes, works! = Ready to work for you!
-- Updated: 221017 wp-content folder! = Ready to work for you!
-- Updated: 221017 -htaccess1 = Ready to work for you! On your blog, look in now and then for updates!
-- Updated: wpconten/uploads folder for better speed and security.
-- Updated: wpcontent folder for more speed and security:)
-- Updated: 221014: .htaccess1 for more speed and some files not needed (doubles)
-- Updated: 221013: wp-content .htacces so it protect themes js files:)
-- Updated: 2201008: .htacces1 for betrer spam preotect wp.login/register:)
-- Updated: 2201007: wpcontent uploads folder, no you can only download if you are admin/photo, prevents stealers!
-- Updated: 221004: All folders/htacces files checked -checked Lynx checker:)
-- Updated: 221004: wpincludes/js for better security!
-- Updated: 221004 wpcontent/themes for better security!
-- Updated: 221002 wp-content uploads and wp-content for more security!
-- Updated: wp-includesfolder, .htaccess for more security.
-- Updated: 2209928, .htaccess1 - gone google walk for latest threats and made a very good cheking of .htaccess1 checked with lynx htacces checker!
-- Updated: 220927 Wpcontent folder with protection for themes and plugins! 
-- Updated: 220927 .htaccess1 for better security and som wrongs!And changed name to firewall.
-- Updated: 220926 Found a thing to mutch, checked the .htaccess (http://www.htaccesscheck.com)
-- Updated: 220925 Some not needed in .htaccess1:)
-- Updated: 220924: added protection for, wp.load.php file and some more goodies for protection.
-- Updated: 220922: wp includes all is included.
-- Updated: 220922: .htaccess1 for better security.
-- Updated: 220922: wpcontent folder, htaccess with protection, no insert of infected images!
-- Updated: 220917 Added Css/Js folder protection - that works! 
-- Updated: 2200915: .htacces1 for more: No fake bots, only allow real google botsand som on!
+- Updated: 2200915 -221124: Delated:)
 - Updated: 2021 Delated:)
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
