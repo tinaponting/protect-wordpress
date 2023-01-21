@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated:230121 .htaccess1 with bettter header security.
 - Updated: 230118 .htaccess for better deflate and cashe control.
 - Updated: 230117 .htacces for better Cache Control.
 - Updated: 230116 IP LIST, swedish hackers list:)
@@ -53,28 +54,9 @@ UPDATED FILES AND FOLDERS:
 - Updated:221226 wp-content, fonts protection.Two alternatives to chooe from.
 - Updated: 221225, htacces with or without cgi script.
 - Updated: 221225 Maybe.txt. Some more goodies.
-- Updated: 221225 Updated, wp-includes. 
-- Updated: 221223 wp-includes.
-- Updated: 221222 readme.txt, wp-content folder.
-- Updated: 221222  Maybe.txt, some goodies if needed:)
-- Update: 221222 .htaccess1 for more security for themes .js .css
-- Updated: 221220. some redame in wp-content added.
-- Updated: 221219 wp--content folder, plugins and uploads.
-- Updated: 221214 maybe text more goodies:)
-- Updated: 221214 maybe updated with more goodies!
-- Updated: 221214 htaccess1 - to mutch js protection:)
-- Updated: 221212 Added my favorite plugns protection, wp-content.
-- Updated: 221211 .htaccess1 updated with two version. with Registration or No: registration.
-- Updated: 221210 wp-content folder plugins with more alternitives.
-- Updated: 221209 wp-admin Updated.
-- Updated: 221209 wp-content Updated.
-- Updated: 221209 wp-includes updated.
-- Updated: 221209 .htaccess1 - Better perfomance.
-- Updated: 221207 .htaccess1 checked and controlled.
-- Updated: 2211206 BBQ Custom codes with more protection.
-- Updated: 221124 htaccess + htaccess1 for more speed and security:)
+- Updated: 221225 -  221124:  Delated:)
 - Updated: 2200915 -221124: Delated:)
-- Updated: 2021 Delated:)
+- Updated: 2021: Delated:)
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
