@@ -36,7 +36,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- Updated:230121 .htaccess1 with bettter header security.
+- Updated: 230122 RObots.txt, if you use your own, not wordpress one.
+- Updated: 230121 .htaccess1 with bettter header security.
 - Updated: 230118 .htaccess for better deflate and cashe control.
 - Updated: 230117 .htacces for better Cache Control.
 - Updated: 230116 IP LIST, swedish hackers list:)
