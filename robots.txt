@@ -2,15 +2,20 @@ User-agent: *
 Disallow: /*blackhole
 Disallow: /?blackhole
 Disallow: /wp-admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/themes/
 Disallow: /comments/feed/
 Disallow: */comments$
 Disallow: ?comments=*
 Disallow: /comment-subscriptions/
 Disallow: /wp-admin/
+Disallow: /trackback/
+Disallow: /xmlrpc.php
 Disallow: /wp-includes/
 Disallow: /wp-content/cache/
-Disallow: /wp-content/plugins/
-Disallow: /wp-content/themes/
 Disallow: /trackback/
 Disallow: /search/ 
 Disallow: /search
@@ -31,33 +36,34 @@ Disallow: /readme.txt
 Disallow: /license.txt
 Disallow: /show-error-*
 Disallow: /ErrorPages/
-Disallow: /*/?share=*
 Disallow: /download/
-Disallow: / submit.php
+Disallow: /submit.php
 
-Allow: /
 User-agent: * Allow: /
 Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
 User-agent: applebot Allow: /
 User-agent: Applebot Allow: /
 User-agent: AppleNewsBot Allow: /
 User-agent: ia_archiver Allow: /
 User-agent: archive.org_bot Allow: /
 User-agent: Exabot Allow: /
-User-agent: Feedly Allow: /
 User-agent: HaoSouSpider Allow: /
 User-agent: Googlebot Allow: /
 User-agent: Google Favicon Allow: /
 User-agent: AdsBot-Google Allow: /
 User-agent: AdsBot-Google-Mobile-Apps Allow: / 
 User-agent: Googlebot Allow: /
+User-agent: Googlebot-Mobile Allow: /
 User-agent: Googlebot-Image Allow: /
 User-agent: googlebot-news Allow: /
 User-agent: Googlebot-Mobile Allow: /
+User-agent: AdsBot-Google-Mobile Allow: /
 User-agent: Googlebot-Video Allow: /
 User-agent: Feedfetcher-Google Allow: /
 User-agent: DuplexWeb-Google Allow: /
-User-Agent: Googlebot Allow: /*.css$ Allow: /*.js$
+User-agent: GigablastOpenSource Allow: /
 User-agent: Facebot Allow: /
 User-agent: facebookexternalhit/1.0 
 User-agent: facebookexternalhit/1.1 
