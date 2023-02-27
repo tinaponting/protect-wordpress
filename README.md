@@ -37,6 +37,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- No changes in .htacces -wp-admin, works very well on all my blogs!
 - Updated: 230227, wp-includes, more alternatives to use.
 - Updated: 230227, updated .htaccess1 small fixes!
 - Updated: 230222 wp-content .htaccess updated! all tried and working!
