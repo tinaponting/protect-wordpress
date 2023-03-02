@@ -37,7 +37,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- Updated: 230227, htaccess1 - A small error!
+- Updated: 230302 .htaccess1 small errrors! fixed
+- Updated: 230227, htaccess1 - A small error! fixed
 - No changes in 230227 .htacces -wp-admin, works very well on all my blogs!
 - Updated: 230227, wp-includes, more alternatives to use.
 - Updated: 230227, updated .htaccess1 small fixes!
