@@ -37,7 +37,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- Updated: 230307 wp-admin, htaccess.
+- Updated: 230307: wp-includes minot errors gone!
+- Updated: 230307: wp-admin, htaccess.
 - Updated: 230306: .htaccess1, minor errors gone!
 - Updated: 230306: wp-includes, minor errors gone!
 - Updated: 230306:.htaccess1, minor errors gone!
