@@ -37,6 +37,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: htaccess1 - At last, viewing css,js,php and so on = GONE!
 - Updated: 230313; BBQ Custom codes updated!
 - Updated: 230313: wp-admin, with alternatives:)
 - Updated: 230308: htaccess1, minor errors gone!
