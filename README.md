@@ -37,6 +37,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: htaccess1 - Some old stuff gone, new theats added!, works great, norhing to see on google webmasters tools!
 - Updated: htaccess1 - Some old delated som new on.
 - Updated: htaccess1 - At last, viewing css,js,php and so on = GONE!
 - Updated: 230313; BBQ Custom codes updated!
