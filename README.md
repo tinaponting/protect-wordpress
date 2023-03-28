@@ -37,6 +37,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: BBQ PRO customs codes with protection for, view source code, wget/cur downloading site.
 - Updated:230324 htacces1 updated:) Works great!
 - Updated: 230316 htaccess1 - Some old stuff gone, new theats added!, works great, nothing to see on google webmasters tools!
 - Updated: 230316 htaccess1 - Some old delated som new on.
@@ -81,12 +82,7 @@ UPDATED FILES AND FOLDERS:
 - Updated: 230104 Wp-includes folder.
 - Updated: 230104,, wp.content, more secure + core alternatives:)
 - Updated: 230101, wp-content folder, the core htaccess to a better one, the one who were there, did not work!
-- Updated: 221230 htaccess1 folder with tested version on real blogs, 
-- Updated: 221227 wp-content with more fonts alternatives.
-- Updated 221226 wp includes, core/sensitine js protection.
-- Updated:221226 wp-content, fonts protection.Two alternatives to chooe from.
-- Updated: 221225, htacces with or without cgi script.
-- Updated: 221225 Maybe.txt. Some more goodies.
+- Updated: 221225  - 221230: Delated:)
 - Updated: 221225 -  221124:  Delated:)
 - Updated: 2200915 -221124: Delated:)
 - Updated: 2021: Delated:)
