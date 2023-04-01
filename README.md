@@ -37,7 +37,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- Updated: BBQ PRO customs codes with protection for, view source code, wget/cur downloading site.
+Uppdated: 230401 .htaccess 1 updated with protection, wget/curl/postman download site.
+- Updated: BBQ PRO customs codes with protection.
 - Updated:230324 htacces1 updated:) Works great!
 - Updated: 230316 htaccess1 - Some old stuff gone, new theats added!, works great, nothing to see on google webmasters tools!
 - Updated: 230316 htaccess1 - Some old delated som new on.
