@@ -12,16 +12,15 @@ I gone throught everything  i could find in google, gibhub and forums for all .h
 WORDPRESS - FORT KNOX:)
 
 
-Wp.config.php file:  //Se also my core - single user or wpaddon on here:)
+Wp.config.php file:  //Se also my core - single user or wp addon on here:)
 
 require_once(ABSPATH.'wp-settings.php');  Add this after this:
-error_reporting(0);
-ini_set('display_errors','Off');
+error_reporting(0); 
+ini_set('display_errors','0'); 
 ini_set('error_reporting',E_ALL);
-define('DISALLOW_FILE_EDIT',true);
-define('DISALLOW_FILE_MODS',true);
-ob_start();
-?>
+define('DISALLOW_FILE_EDIT',true); 
+define('DISALLOW_FILE_MODS',true); 
+ob_start();?>
 
 Set to: 444 in wp.config.php Also gets some speed!  //important!!
 
@@ -37,7 +36,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-Uppdated: 230401 .htaccess 1 updated with protection, wget/curl/postman download site.
+- Updated:230415 .htaccess1 with better speed and some moore security, the only thing missing is feed stealers!
+- Uppdated: 230401 .htaccess 1 updated with protection, wget/curl/postman download site.
 - Updated: BBQ PRO customs codes with protection.
 - Updated:230324 htacces1 updated:) Works great!
 - Updated: 230316 htaccess1 - Some old stuff gone, new theats added!, works great, nothing to see on google webmasters tools!
