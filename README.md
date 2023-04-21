@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230421: Folder, wp-includes, core folder and alternatives:)
 - Updated:230415 .htaccess1 with better speed and some moore security, the only thing missing is feed stealers!
 - Uppdated: 230401 .htaccess 1 updated with protection, wget/curl/postman download site.
 - Updated: BBQ PRO customs codes with protection.
