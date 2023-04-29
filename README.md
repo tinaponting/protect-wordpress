@@ -36,7 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-
+- Updated: 230429, wp-content -core folder, minor error.
 - Updated: 230427 wp-content, checked all files for errors, works fine!
 - Updated: 230426 wp-content protection with altiernative and better security.
 - updated: 230425 htaccess1- A small error.
