@@ -36,7 +36,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
--Updated: 200429, wp-includes folder, core files, soms js/css was not protected!
+- Added: 230503 at better index.php/index.html for content/uploads/plugins/themes folder.
+- Updated: 200429, wp-includes folder, core files, soms js/css was not protected!
 - Updated: 230429, wp-content -core folder, minor error.
 - Updated: 230427 wp-content, checked all files for errors, works fine!
 - Updated: 230426 wp-content protection with altiernative and better security.
