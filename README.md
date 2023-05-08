@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Added: 230508 wp-admin, no index!
 - Added: 230507 wp-includes, protection, extra with 3v layers of protection, I use it on all my blogs:)
 - Added: 230503 at better index.php/index.html for content/uploads/plugins/themes folder.
 - Updated: 200429, wp-includes folder, core files, soms js/css was not protected!
