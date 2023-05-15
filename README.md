@@ -7,7 +7,7 @@ About me: A blogger since 2002, been on blogspot as on wordpress, made all mista
 I gone throught everything  i could find in google, gibhub and forums for all .htacces security, some things didn´t work, some did works! Some old htacces tricks that still works.  Use it free but come back time to time to check latest updates.  Love //KP Karlshamn sweden
 
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
-* works best with Apache, 3.0+ wWordpress, 6,1, 6.2+
+* works best with Apache, 3.0+ Wordpress, 6,1, 6.2+
 
 WORDPRESS - FORT KNOX:)
 
