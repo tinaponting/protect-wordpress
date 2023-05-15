@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Added, protection, for wp 6.2 includes folder html.api.
 - Added: 230510, wp-includes, an extra htacces, that I use, more layers of protection.
 - Delated: from .htacces1. Options -Indexes -MultiViews or Option-indexIgnore* it makes no diffrence in 2023, if you got, htacces1 on your blog! If you want it, add it yourself!
 - Added: 230508 alternative plugin protection
