@@ -36,7 +36,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
-- Updated: htaccess1.
+- Updated: 230530 htacces for laatest protection
+- Updated: 230529 htaccess1.
 - Updated: wp-includes, core  folder, some small errors and tested with, 6,2, works well.
 * Delated: IndexIgnore* readme.txt licence.txt changelog.txt README.md CHANGELOG.md .wmv *.mp4 *.avi *.doc DirectoryIndex index.php index.html . Ig you want it, add it yourself! .htaccess1. Options -Indexes -MultiViews
 - Added, protection, for wp 6.2 includes folder html.api.
