@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+_ Updated: 230630 htaccess for better speed:)
 - Updated: 230530 htacces for laatest protection
 - Updated: 230529 htaccess1.
 - Updated: wp-includes, core  folder, some small errors and tested with, 6,2, works well.
