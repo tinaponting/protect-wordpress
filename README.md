@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 2305v31 wp-content to latest protecrion.
 - Updated: 230531 htaccess1 for better protection and speed with the latest threats!
 _ Updated: 230630 htaccess for better speed:)
 - Updated: 230530 htacces for laatest protection
@@ -86,23 +87,7 @@ _ Updated: 230630 htaccess for better speed:)
 - Updated: 2302015 htaccess for better speed.
 - Updated: 230207 .htaccess, for better performance:)
 - Updated: 2302006 .htaccess1 for better performance and protection for ALL .htaccess files:)
-- Updated: 230202 wp-content, a small things not right, in js, sensitive folder!
-- Updated: 230128 wp-contents for more alternative protection.
-- Updated: 230128 htaccess1 for more security.
-- Updated: 230122 wp-includes for better protection.
-- Updated: 230122 .htaccess1, double things!
-- Updated: 230122 Robots.txt, if you use your own, not wordpress one.
-- Updated: 230121 .htaccess1 with bettter header security.
-- Updated: 230118 .htaccess for better deflate and cashe control.
-- Updated: 230117 .htacces for better Cache Control.
-- Updated: 230116 IP LIST, swedish hackers list:)
-- Added Limit R body to all verions, htaccess1
-- Updated: 230106 .htacces1 firewall for better security:) Does not take power of your blog!
-- Updated: 230106 BBQ Custom codes.
-- Updated: 230105, not allowed folder. htaccess.
-- Updated: 230104 Wp-includes folder.
-- Updated: 230104,, wp.content, more secure + core alternatives:)
-- Updated: 230101, wp-content folder, the core htaccess to a better one, the one who were there, did not work!
+- Updated: 230202   - 230101
 - Updated: 221225  - 221230: Delated:)
 - Updated: 221225 -  221124:  Delated:)
 - Updated: 2200915 -221124: Delated:)
