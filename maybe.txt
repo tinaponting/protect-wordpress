@@ -218,7 +218,6 @@ RewriteRule ^(.*)$ ^http://the-site-where-you-want-to-send-spammers.com/$ [R=301
 
 .......................................................................................
 .......................................................................................
-
 # Denies any comment attempt with a blank HTTP_REFERER field, highly indicative of spam. May prevent some visitors from POSTING. [403]
 
 RewriteCond% {THE_REQUEST} ^[A-Z]{3,9}\ /.*/wp-comments-post\.php.*\ HTTP/ [NC]
@@ -323,7 +322,10 @@ Excluding keywords with word boundaries
 # Return 404 if original request is file.php
 // Not always working, may stop everything! Can be useful, if your are under attack for a short period!  // 
 
-RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]</IfModule>
+RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]
+
+Alternitive:
+<IfModule mod_rewrite.c>RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]</IfModule>
 
 ALTERNATIVE: 
 RewriteCond% {REQUEST_FILENAME}\.php$
@@ -519,7 +521,7 @@ Require all denied
 ........................................................................................
 # Deny access to filenames starting with dot(.) 
 
-<FilesMatch "^\.">Order allow,deny Deny from al</FilesMatch>
+<FilesMatch "^\.">Order allow,deny Deny from all</FilesMatch>
 
 ........................................................................................
 ........................................................................................
@@ -529,8 +531,12 @@ RewriteEngine on RewriteRule ^wp-includes/[^/]*\.php$ - [R=403,L]
 
 # Completely disable access to all the files: (may not work but can be uses for a short period if remake things or something)
 
+//note: Not alwys works!
+
 <Files ~".*..*">Order Allow,Deny Deny from all</Files>
 
+Apache + 2,4:
+<Files ~ ".*..*">Require all denied</Files>
 ........................................................................................
 ........................................................................................
 # DENY access to log files:
@@ -673,16 +679,6 @@ ModPagespeedEnableFilters collapse_whitespace,remove_comments
 RewriteRule \.(jpg|jpeg|png|png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff?)$ https://exempel.se/ [NC,R,L]
 
 .
-# Alternative: wp-content/uploads folder: (sometimes it makes photo not visible!)
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_COOKIE} !.*wordpress_logged_in.*$ [NC]
-RewriteCond %{REQUEST_URI} ^(.*?/?)wp-content/uploads/.* [NC]
-RewriteRule . http://%{HTTP_HOST}%1/wp-login.php?redirect_to=%{REQUEST_URI} [L,QSA]
-</IfModule>
-
-.
 #  ALT 2:  Some files only):
 
 <IfModule mod_rewrite.c>
@@ -700,7 +696,7 @@ It is vital to prevent such a malicious action with the line below:
 RewriteRule ^wp-content/uploads/.*\.(php|pl|jsp|shtml|sh|inc|rb|py)$ - [F,L,NC]
 
 .
-ALT 4:  Turn off everything: (uploads)
+ALT 4:  Turn off everything: (uploads) / not recommended, but if you are under atack, a short while!
 
 <Files ~ ".*..*">Order Allow,Deny Deny from all</Files>
 
@@ -708,6 +704,8 @@ ALT 4:  Turn off everything: (uploads)
 ALT 5:
 <FilesMatch>"(?i)\.(php|php3?|phtml)$">Order Deny,Allow Deny from All</FilesMatch>
 
+Apache 2.4+
+<FilesMatch>"(?i)\.(php|php3?|phtml)$">Require all denied</FilesMatch>
 .
 ALT 6: Prevent hotlinking:
 
@@ -716,13 +714,6 @@ RewriteRule \.(gif|jpg|js|css)$ - [F]
 
 ALT 7:
 RewriteRule ^upload/(.*)$ /wp-content/uploads/$1 [L]
-
-
-PROTECT: php/js/CSS: (wp-content/uploads -can also be used in, wp-includes)
-
-<FilesMatch "\.(?i:php)$"><IfModule!mod_authz_core.c>Order allow,deny Deny from all</IfModule><IfModule mod_authz_core.c>Require all denied</IfModule></FilesMatch>
-<FilesMatch "\.(?i:js)$"><IfModule!mod_authz_core.c>Order allow,deny Deny from all</IfModule><IfModule mod_authz_core.c>Require all denied</IfModule></FilesMatch>
-<FilesMatch "\.(?i:css)$"><IfModule!mod_authz_core.c>Order allow,deny Deny from all</IfModule><IfModule mod_authz_core.c>Require all denied</IfModule></FilesMatch>
 
 ........................................................................................
 ........................................................................................
@@ -760,14 +751,14 @@ RewriteRule “(^|/)\.” – [F]
 RewriteRule !^.js|.min.js|json|css|.min.css|.css|xml|.php|js|php\.php$ - [F,L]
 
 ALT2:
-
 <Files ~"\.(js|css|php)$">order allow,deny deny from all</Files>
+Alternative to above:
+<Files ~"\.(js|min.js|css|min.css)$">order allow,deny deny from all</Files>
 
 
 ALT 3:
 RewriteRule ^theme/(.*)$ /wp-content/themes/yourtheme/$1 [L]
-
-Maybe: RewriteRule ^wp-content/themes/mytheme/$ /the/page/not-found [L]
+RewriteRule ^wp-content/themes/mytheme/$ /the/page/not-found [L]
 
 ALT4:
 RewriteCond%{REQUEST_URI}^.*/wp-content/themes/.*[NC,OR]RewriteCond%{THE_REQUEST}^.*/wp-content/themes/.*[NC]RewriteRule.*-[F,L]
@@ -792,22 +783,30 @@ RewriteCond %{REQUEST_URI} !^.*/wp-activate.php [NC]
 # DENY access to all PHP/CSS files in Some directory - Add .htaccess in the folder you want it:
 
 <Files ~ "[^/]\{0,}\.(php|css)$">Order deny,allow Deny from all</Files>
+Apache 2.4+:
+<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
 
 ............
 Alternative: Only php files:
-
 <FilesMatch "\.php$">Order deny,allow Deny from all</FilesMatch>
+Apache 2.4+:
+<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
 
 ..............
 Alternative: Only Js files:
-
 <FilesMatch "\.js$">Order deny,allow Deny from all</FilesMatch>
+Apache 2.4:
+<Files ~"\.(js|min.js|css|min.css)$">Require all denied</Files>
 
+..............
 # Wp-includes: JS:
 RewriteRule^^/wp-includes/js - [L,R=403] 
 
 # JS:
-<FilesMatch "\.(js|min.js)$">Require all denied</FilesMatch>  
+<FilesMatch "\.(js|min.js)$">Require all denied</FilesMatch> 
+
+# Backdoor Protection Apache 2.4+: (uploads)
+<FilesMatch “.+\.php$”>Require all denied</FilesMatch> 
 ........................................................................................
 ........................................................................................
 # If you got a shop/store:
@@ -830,8 +829,8 @@ RewriteRule .? - [L]
 RewriteRule \.(css)$ - [NC,F,L]
 
 # Alternativs with CSS/JS:
-
 RewriteRule \.(css|js)$ - [NC,F,L]
+
 CSS:
 <FilesMatch "\.(css|min.css)$">Require all denied</FilesMatch>
 
@@ -1092,15 +1091,12 @@ RewriteRule ^(.*)$ /tor.php [R,L]
 # Maybe works in some cases:
 
 # Disable PHP in Uploads
-
 RewriteRule ^wp\-content/uploads/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
 
 # Disable PHP in Plugins
-
 RewriteRule ^wp\-content/plugins/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
 
 # Disable PHP in themes
-
 RewriteRule ^wp\-content/themes/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
 
 
@@ -2026,6 +2022,9 @@ RewriteRule (.*)$ /$1/ [R=301,L]
 
 <FilesMatch "\.(po|mo|css|js|phps|xlsx|pdf|txt|xml|zip)$">Order Allow,Deny Deny from all</FilesMatch>
 
+Apache 2,4+
+<FilesMatch "\.(po|mo|css|js|phps|xlsx|pdf|txt|xml|zip)$">Require all denied</FilesMatch>
+
 ........................................................................................
 ........................................................................................
 # Then change the redirect location, /custom.php, to whatever is required.
@@ -2151,7 +2150,6 @@ define('WP_CACHE',true);
 
 Enable automatic WordPress updates:
 define(‘WP_AUTO_UPDATE_CORE’,true);
-
 define('WP_AUTO_UPDATE_CORE',‘minor’);
 
 If no:
@@ -2202,13 +2200,19 @@ RewriteRule ^sites\/default\/files\/(protected_download_dir\/.*)$ index.php?q=sy
 Sometimes you want to force the browser to display some content instead of downloading it.
 Change: myfile here to what it is: Pdf or whatever.
 
-<FilesMatch "\.(my file here|my file here|aux)$">
-    Header set Content-Type text/plain
-</FilesMatch>
+<Filestent should always be UTF-8 encoded, no?  Note: Not always working, but try andse!
+
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+
+# Force UTF-8 for a number of file formats
+AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
+
+Feed UTF-8:
+<IfModule mod_mime.c>AddCharset utf-8 .atom \ .feed \ .rdf \ .rss \.xml</IfModule>
 
 ........................................................................................
 ........................................................................................
-
 # No: Logs:
 
 RedirectMatch 404 \.log$
@@ -2224,5 +2228,57 @@ AddDefaultCharset utf-8
 # Force UTF-8 for a number of file formats
 AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 
+........................................................................................
+........................................................................................
+# Extra Security:  Try which works!
+
+RewriteRule ^/wp-includes/ - [L,R=403]
+RewriteRule ^cache/ - [L,R=403]
+RewriteRule ^uploads/ - [L,R=403]
+RewriteRule ^(?:cache|log)\b.* - [R=403,L]
+RewriteRule ^(?:errors)\b.* - [R=403,L]
+
+Just find above on: .htaccess1  and change it to:
+
+# OR Maybe:
+RewriteRule ^^/wp-content/themes/ -  [F]
+RewriteRule ^/wp-content/plugins/ -  [F]
+RewriteRule ^/wp-content/ -  [F]
+RewriteRule ^uploads/ -  [F]
+
+# Can also works with:
+RewriteRule ^/forbid/(.*)$ - [R=403,L]
+
+# Or
+RewriteRule forbid/(.*)$ - [R=404,L]
+
+Extra Protection: (.htaccess 1 or .htaccess)
+
+RewriteRule ^^/wp-content/themes/ - [L,R=403]
+RewriteRule ^/wp-content/plugins/ - [L,R=403]
+
+RewriteRule ^/wp-content/ - [L,R=403]Match "\.(my file here|my file here|aux)$">
+
+........................................................................................
+
+# Tor DDoS crawler. See SEC-728:
+
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" 
+RewriteRule .* - [R=410,L]
+         
+# Bogus Firefox involved in DoS attacks:
+
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0" 
+RewriteRule .* - [R=410,L]
+
+# Bogus Firefox involved in DoS attacks:
+
+RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" 
+RewriteRule .* - [R=410,L]
+ 
+#  Deny 404 user agent scans:
+ 
+RewriteCond %{HTTP_USER_AGENT} ^(.*)404checker(.*)$ RewriteRule .* - [R=410,L]
+........................................................................................
 ........................................................................................
 ........................................................................................
