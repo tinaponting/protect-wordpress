@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Added 8G [perrush](https://perishablepress.com/)  Firewall without logging. Works well, tested on my blogs!
 - Updated: 2305v31 wp-content to latest protecrion.
 - Updated: 230531 htaccess1 for better protection and speed with the latest threats!
 _ Updated: 230630 htaccess for better speed:)
