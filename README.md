@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230531 htaccess1 for better protection and speed with the latest threats!
 _ Updated: 230630 htaccess for better speed:)
 - Updated: 230530 htacces for laatest protection
 - Updated: 230529 htaccess1.
