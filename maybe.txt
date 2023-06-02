@@ -2260,7 +2260,6 @@ RewriteRule ^/wp-content/plugins/ - [L,R=403]
 RewriteRule ^/wp-content/ - [L,R=403]Match "\.(my file here|my file here|aux)$">
 
 ........................................................................................
-
 # Tor DDoS crawler. See SEC-728:
 
 RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" 
@@ -2276,9 +2275,34 @@ RewriteRule .* - [R=410,L]
 RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" 
 RewriteRule .* - [R=410,L]
  
-#  Deny 404 user agent scans:
+# Deny 404 user agent scans:
  
 RewriteCond %{HTTP_USER_AGENT} ^(.*)404checker(.*)$ RewriteRule .* - [R=410,L]
+........................................................................................
+# Protect your themes style css file:
+
+RewriteRule ^(.*)wp-content/themes/(.*)/style\.css$ - [R=404,L]
+
+........................................................................................
+# Wget: All bots:
+
+SetEnvIfNoCase User-Agent "^Wget.*" bad_bot
+SetEnvIfNoCase User-Agent "^wget.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.4.0.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.5.2.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.5.3.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.6.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.7.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.8.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.8.1.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.8.1+cvs.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.8.2.*" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
+
+........................................................................................
+# PHP Hide:
+
+RewriteCond %{THE_REQUEST} .+\.php [NC]RewriteRule ^ - [F,L]
 ........................................................................................
 ........................................................................................
 ........................................................................................
