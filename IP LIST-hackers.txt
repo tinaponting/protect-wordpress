@@ -7689,31 +7689,197 @@ Deny from 213.66.237.151
 The swedish list been bigger.... Hate hackers, deny them please, if you got problem with them!
 
 ..................................................
-Feed Stelaers:
-
-Deny from 144.76.41.214    
-Deny from 54.39.177.198   
-Deny from 62.210.215.100   
-Deny from 113.197.144.254  
-Deny from 133.218.38.122   
-Deny from 188.143.76.142   
-Deny from 220.210.180.61   
+Feed Stelaers:         
 
 230319:
-Deny from 3.95.61.88      
-Deny from 18.232.139.220   
-Deny from 35.174.0.125     
-Deny from 54.39.177.92     
-Deny from 64.233.172.139   
-Deny from 64.233.172.141   
-Deny from 64.233.172.143  
-Deny from 94.21.204.51    
-Deny from 95.216.153.220   
-Deny from 101.128.129.62   
-Deny from 220.210.180.61   
-Deny from 144.76.41.214    
+Deny from 3.95.61.88       (Feed stealerUSA)
+Deny from 18.232.139.220   (Feed stealerUSA)
+Deny from 35.174.0.125     (Feed stealerUSA)
+Deny from 54.39.177.198    (Feed stealer)
+Deny from 54.39.177.92     (Feed stealerKanada)
+Deny from 62.210.215.100   (Feed stealer)
+Deny from 62.210.215.100   (Feed StealerFrance)
+Deny from 64.233.172.139   (Feed stealerKanada)
+Deny from 64.233.172.141   (Feed stealerKanada)
+Deny from 64.233.172.143   (Feed stealerKanada)
+Deny from 94.21.204.51     (Feed stealerUngern)
+Deny from 95.216.153.220   (Feed stealerFinland)
+Deny from 101.128.129.62   (Feed stealerJapan)
+Deny from 113.197.144.25   (Feed stealer)
+Deny from 133.218.38.122   (Feed stealer)
+Deny from 144.76.41.214    (Feed StealerGermany) 
+Deny from 188.143.76.142   (Feed stealer)
+Deny from 220.210.180.61   (Feed stealerJapan) 
 
 ............................................
+Deny if you want: BQ pro - Refer:
 
+hackers comes from:
+
+https://www.vultr.com	
+https://www.digitalocean.com	
+https://aws.amazon.com	
+https://hetzner.de
+https://www.hetzner.com
+https://www.hetzner.com/de
+https://ovh.com
+
+View source codde/404/301 checkers:
+https://viewsourcepage.com	
+https://codebeautify.org/source-code-viewer
+https://www.view-page-source.com	
+https://neatnik.net/view-source	
+https://view-source.hellafast.digital	
+https://publicwww.com
+https://appzaza.com/webpage-source-viewer
+https://suip.biz/?act=view-source
+https://checkup.tools/en/get-source-code-of-webpage
+https://website-downloader.onrender.com    (danger:Downloader of code and website!)
+
+404/301:
+https://websiteadvantage.com.au/404-Error-Handler-Checker
+https://404checker.com.cutestat.com
+https://301toolbox.com/app.broken-link-checker.php
+https://error404.atomseo.com
+https://website.informer.com/404checker.com
+https://www.lampdocs.com/tag/php-404-checker
+https://excellentwebcheck.com/website-broken-link-checker
+https://dnschecker.org/website-broken-link-checker.php
+
+
+
+Broken linker: (not important but anyway!)
+https://ettvi.com/broken-links-finder
+https://301toolbox.com/app.broken-link-checker.php
+https://sitechecker.pro/broken-links
+https://smallseotools.com/websites-broken-link-checker
+
+URL Checkers:
+https://collaborator.pro/tools/urlcheck
+https://httpstatus.io
+https://snyk.io/code-checker
+https://sitecheck.sucuri.net
+https://quttera.com
+https://webscan.upguard.com
+https://observatory.mozilla.org
+https://termshub.io/cookie-scanner
+https://pentest-tools.com/website-vulnerability-scanning/website-scanner
+https://www.immuniweb.com/websec
+https://serpstat.com	
+https://www.siteimprove.com
+https://www.wappalyzer.com
+https://builtwith.com
+https://linkscan.io
+https://urlscan.io
+https://termshub.io/cookie-scanner
+
+SEO:
+https://teletalk.top/backlink-checker
+https://www.duplichecker.com/page-rank-checker.php
+https://sitechecker.pro/page-rank
+https://searchenginereports.net/google-pagerank-checker
+https://pagerank.tw
+https://www.mypagerank.net
+https://www.digitalsales.ie/pagerank-checker.php
+https://www.scriptgenerator.net/google-pagerank-checker/
+https://www.pagerank.net/pagerank-checker
+https://www.webtoolhub.com/tn561371-pagerank-checker.aspx
+https://teletalk.top/mozrank-checker
+http://pagerank-checker.online-domain-tools.com
+https://www.toolwerk.com/pagerank
+https://www.wmtips.com/tools/pagerank-checker
+https://www.pagerank.net/pagerank-checker
+https://www.mypagerankcheck.com
+http://cleverstat.com
+https://checkpagerank.in
+https://www.dracon.biz/google_pagerank.php
+https://www.pageranksites.com
+https://www.vietiso.com/pagerank
+https://checkpagerank.net.siteindices.com
+https://www.webstudio55.com/tools/google-pr
+https://www.bulkseotools.com/bulk-check-pagerank.php
+https://multipagerank.com
+https://webworkshop.net/seo-tools/google-page-rank-checker
+https://pagerank-checker.com
+https://www.rankapi.net
+http://googlerank.ir/w
+https://www.keyword-tools.org/en/google-ranking-live-check
+http://thinknook.com/pagerank-checker
+https://www.serpandseo.com/page-rank-checker.html
+http://www.yourmaindomain.com/multi_pagerank_checker.asp
+http://www.all-nettools.com/toolbox/pagerank-checker.php
+https://www.thehoth.com/search-engine-rankings
+https://wheregoes.com
+https://www.siteprice.org
+https://www.prepostseo.com/domain-authority-checker
+
+
+Website checkers:
+https://en.ryte.com/website-checker
+https://www.urlvoid.com
+https://www.getsafeonline.org/checkawebsite
+https://www.ssltrust.com.au/ssl-tools/website-security-check
+https://www.rankwatch.com/tools/web-analyzer.html
+https://www.scamadviser.com
+https://gtmetrix.com
+https://www.sensefuel.com/en
+https://sitecheck.sucuri.net
+https://check-host.net
+https://tools.pingdom.com
+https://validator.w3.org
+https://www.isitdownrightnow.com
+https://webparanoid.com/en/check-website#/
+https://who.is  
+https://downforeveryoneorjustme.com
+https://www.duplichecker.com
+https://sitechecker.pro
+https://hostingchecker.com
+https://neilpatel.com/website-traffic-checker
+https://whatcms.org
+https://www.whatsmydns.net
+https://frontenddogma.com/tools/check
+https://www.sslshopper.com/ssl-checker.html
+https://lookup.icann.org/en
+https://www.site24x7.com/link-checker.html
+https://www.onhelpinghand.org
+https://try.powermapper.com/Demo/SortSite
+https://whois.domaintools.com
+https://www.emailveritas.com/url-checker
+https://www.chinafy.com/tools/global-speed-test
+https://www.ssllabs.com/ssltest
+
+Common SEO Cherckers:
+https://www.seositecheckup.com 
+   
+https://semrush.com	
+https://www.semrush.com/analytics/backlinks
+
+https://ahrefs.com
+https://ahrefs.com/sv/site-audit
+https://ahrefs.com/sv/backlink-checker
+
+https://www.woorank.com
+https://majestic.com/reports/site-explorer/top-backlinks
+
+https://moz.com/domain-analysis
+
+https://www.seoptimer.com
+
+https://checkpagerank.net
+https://smallseotools.com/google-pagerank-checker
+
+https://dnschecker.org
+https://smallseotools.com/google-pagerank-checker
+
+https://teletalk.top/page-authority-checker
+
+
+https://checkpagerank.net
+https://smallseotools.com/google-pagerank-checker
+https://dnschecker.org
+
+.......................................................................
+-----------------------------------------------------------------------
 Created: 221225
-Updated: 230319
+Updated: 230630
+.................
