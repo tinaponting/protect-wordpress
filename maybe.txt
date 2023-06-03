@@ -2303,6 +2303,19 @@ SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
 # PHP Hide:
 
 RewriteCond %{THE_REQUEST} .+\.php [NC]RewriteRule ^ - [F,L]
-........................................................................................
+
+	
+php 404.php https://exemple.se	
+php 404.php https://www.exemple.se
+	
+js 404.php https://exemple.se	
+js 404.php https://www.exemple.se
+
+css 404.php https://exemple.se	
+css 404.php https://www.exemple.se
+
+BBQ:
+referrer=https:// 
+referrer=http://
 ........................................................................................
 ........................................................................................
