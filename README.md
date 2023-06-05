@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230605, htaccess1 - removed proxy, added it on maybe if wanted!
 - Updated:230607 IPlist and mabee tzt.
 - My most powerful htaccess1 yet! tested and works well, also added a blank htacces for you who wants your own! Happy wordpress blogging!
 - Added 8G 230601 [perrush](https://perishablepress.com/)  optimized for speed, tested on my blogs!
