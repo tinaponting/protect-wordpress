@@ -2304,7 +2304,8 @@ SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
 
 RewriteCond %{THE_REQUEST} .+\.php [NC]RewriteRule ^ - [F,L]
 
-	
+Hide: JS/php -ON BB PRO:
+		
 php 404.php https://exemple.se	
 php 404.php https://www.exemple.se
 	
@@ -2316,6 +2317,21 @@ css 404.php https://www.exemple.se
 
 BBQ:
 referrer=https:// 
-referrer=http://
+referrer=http://		
+........................................................................................
+........................................................................................
+# Block Proxy Servers via htaccess:
+
+RewriteEngine on
+RewriteCond %{HTTP:VIA}!^$ [OR]
+RewriteCond %{HTTP:FORWARDED}!^$ [OR]
+RewriteCond %{HTTP:USERAGENT_VIA}!^$ [OR]
+RewriteCond %{HTTP:X_FORWARDED_FOR}!^$ [OR]
+RewriteCond %{HTTP:PROXY_CONNECTION}!^$ [OR]
+RewriteCond %{HTTP:XPROXY_CONNECTION}!^$ [OR]
+RewriteCond %{HTTP:HTTP_PC_REMOTE_ADDR}!^$ [OR]
+RewriteCond %{HTTP:HTTP_CLIENT_IP}!^$
+RewriteRule ^(.*)$ - [F]
+
 ........................................................................................
 ........................................................................................
