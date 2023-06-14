@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Added protection for empty refers, htaccess1.
 - Updated 230611  .htacces1 smallchanges for better security!
 - Added: 230605 with Memory/without in core .htaccess.
 - Updated: 230605, htaccess1 - removed proxy, added it on maybe if wanted!
