@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: wp.includes so it works with wp-6.2.2 and keep protection for under 6.1. 
 - Updated: 230616 persishpress G8 for more speed. Delated and double om htaccess1. 
 - Added protection for empty refers, htaccess1.
 - Updated 230611  .htaccess1 smallchanges for better security!
