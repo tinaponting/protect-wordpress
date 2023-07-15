@@ -45,7 +45,7 @@ UPDATED FILES AND FOLDERS:
 - Updated 230611  .htaccess1 smallchanges for better security!
 - Added: 230605 with Memory/without in core .htaccess.
 - Updated: 230605, htaccess1 - removed proxy, added it on maybe if wanted!
-- Updated:230607 IPlist and mabee tzt.
+- Updated:230607 IPlist and mabe tzt.
 - My most powerful htaccess1 yet! tested and works well, also added a blank htacces for you who wants your own! Happy wordpress blogging!
 - Added 8G 230601 [perrush](https://perishablepress.com/)  optimized for speed, tested on my blogs!
 - Added 8G 230530 [perrush](https://perishablepress.com/)  Firewall without logging. Works well, tested on my blogs!
@@ -55,7 +55,6 @@ _ Updated: 230630 htaccess for better speed:)
 - Updated: 230530 htacces for laatest protection
 - Updated: 230529 htaccess1.
 - Updated: wp-includes, core  folder, some small errors and tested with, 6,2, works well.
-* Delated: IndexIgnore* readme.txt licence.txt changelog.txt README.md CHANGELOG.md .wmv *.mp4 *.avi *.doc DirectoryIndex index.php index.html . Ig you want it, add it yourself! .htaccess1. Options -Indexes -MultiViews
 - Added, protection, for wp 6.2 includes folder html.api.
 - Added: 230510, wp-includes, an extra htacces, that I use, more layers of protection.
 - Added: 230508 alternative plugin protection
