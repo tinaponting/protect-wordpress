@@ -36,6 +36,7 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 
 UPDATED FILES AND FOLDERS:
 
+-Updated: 230720, wp content folders with more alternatives, and a error delate! Works fine and tested:)
 - Added 230717 better moemorry leak deny, better error deny:)
 - Added 230706 an alternative htacce core for more speed.
 - Updated 230706 htacces1 for better performance
