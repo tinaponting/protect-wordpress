@@ -34,8 +34,73 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
+Plugins I recommend:
+* limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
+* disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
+* wp-cron http auth: // Small very good protectin for  rest api:   https://wordpress.org/plugins/wp-cron-http-auth/
+
+None above takes power fron your blog:)
+
+PAYED Firewall: 
+* BBQ Pro   // I love the custom - place in protection for strange files!   https://plugin-planet.com/bbq-pro/
+
+* BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress as above:)
+
+* 404 controls: - so GOOD /Payed version best:): https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
+
+*  Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
+Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Both versions Works very well:) 
+
+* Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
+
+* Simple Login Captcha:  https://wordpress.org/plugins/simple-login-captcha/    Really godd against Autobots, does not take poer from your blog.
+
+* WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
+
+* None above takes power from your blog!
+
+If you got google / bing XML files, set them t0 444 0r if it works: 440:) for safety
+Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
+Bloga I Love:
+* Perishable Press: https://perishablepress.com/   Always something new to read about security.
+* Wphacked blog:  https://secure.wphackedhelp.com/blog/
+
+* Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norwegian,swedich,Deuch words here and there = Very hard to break!
+Happy safe blogging folks:)
+
+* Sitemap Validater: https://www.xml-sitemaps.com/validate-xml-sitemap.html
+
+* Remove unneeded files:
+readme.html
+license.txt
+changelog.txt
+All files .md
+
+Do you need?: wlwmanifest.xml /  /wp-includes
+
++ wp-config-sample.php
+
+Wp-admin:
+/wp-admin/install.php
+
+*****VERY IMPORTANT:
+Very important; If you got an older blog!
+On:
+WP-CONFIG.PHP
+define('DB_CHARSET','utf8mb4');
+
+******Change it to: 
+define('DB_CHARSET','utf8');
+
+*' To protect: wp-includes/js and css from curious! eyes and hackers, take wp-content: index.php and put it there!
+
+Love Kristina Sweden
+
+UPDATES:
+
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230721, htaccess for better performance.
 - Updated: 230720, wp content folders with more alternatives, and a error delate! Works fine and tested:)
 - Added 230717 better memorry leak deny, better error deny:)
 - Added 230706 an alternative htacce core for more speed.
@@ -109,66 +174,3 @@ _ Updated: 230630 htaccess for better speed:)
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
-
-
-Plugins I recommend:
-* limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
-* disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
-* wp-cron http auth: // Small very good protectin for  rest api:   https://wordpress.org/plugins/wp-cron-http-auth/
-
-None above takes power fron your blog:)
-
-PAYED Firewall: 
-* BBQ Pro   // I love the custom - place in protection for strange files!   https://plugin-planet.com/bbq-pro/
-
-* BLOCK BAD BOTS  - Blackhole Pro   Works very well:) same adress as above:)
-
-* 404 controls: - so GOOD /Payed version best:): https://www.cminds.com/wordpress-plugins-library/404-console-plugin-wordpress/
-
-*  Login IP  country restriction:  login-ip-country-restriction Payed:https://iuliacazan.ro/login-ip-country-restriction/
-Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Both versions Works very well:) 
-
-* Protect of your JS files: https://domainlockjs.com/     works very well:)  // If your under attack, otherwise not needed!
-
-* Simple Login Captcha:  https://wordpress.org/plugins/simple-login-captcha/    Really godd against Autobots, does not take poer from your blog.
-
-* WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
-
-* None above takes power from your blog!
-
-If you got google / bing XML files, set them t0 444 0r if it works: 440:) for safety
-Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
-Bloga I Love:
-* Perishable Press: https://perishablepress.com/   Always something new to read about security.
-* Wphacked blog:  https://secure.wphackedhelp.com/blog/
-
-* Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norwegian,swedich,Deuch words here and there = Very hard to break!
-Happy safe blogging folks:)
-
-* Sitemap Validater: https://www.xml-sitemaps.com/validate-xml-sitemap.html
-
-* Remove unneeded files:
-readme.html
-license.txt
-changelog.txt
-All files .md
-
-Do you need?: wlwmanifest.xml /  /wp-includes
-
-+ wp-config-sample.php
-
-Wp-admin:
-/wp-admin/install.php
-
-*****VERY IMPORTANT:
-Very important; If you got an older blog!
-On:
-WP-CONFIG.PHP
-define('DB_CHARSET','utf8mb4');
-
-******Change it to: 
-define('DB_CHARSET','utf8');
-
-*' To protect: wp-includes/js and css from curious! eyes and hackers, take wp-content: index.php and put it there!
-
-Love Kristina Sweden
