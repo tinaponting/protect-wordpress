@@ -100,6 +100,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+-Updated: Custom codes BBQ
 - Updated: 230721, htaccess for better performance.
 - Updated: 230720, wp content folders with more alternatives, and a error delate! Works fine and tested:)
 - Added 230717 better memorry leak deny, better error deny:)
