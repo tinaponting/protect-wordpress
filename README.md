@@ -100,6 +100,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230825 htaccess1 folder, missing php in a row
 - Updated:230816 Custom codes BBQ - missed som important files yesterday.
 - Updated:230815 Custom codes BBQ
 - Updated: 230721, htaccess for better performance.
