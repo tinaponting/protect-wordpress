@@ -9,6 +9,7 @@ I gone throught everything  i could find in google, gibhub and forums for all .h
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
 * works best with Apache, 5.0 + Wordpress, 6,1, 6.2+
 
+* You can use both htaccess and Perrish Press firewall at the same time with no impact on speed! Name PR to htaccess2 and it is ready to protect.
 WORDPRESS - FORT KNOX:)
 
 
@@ -100,6 +101,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230827, htaccess1 and Perrish firewall - up to date!
 - Updated: 230825 htaccess1 folder, missing php in a row
 - Updated:230816 Custom codes BBQ - missed som important files yesterday.
 - Updated:230815 Custom codes BBQ
