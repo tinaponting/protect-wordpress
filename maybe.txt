@@ -942,8 +942,6 @@ RewriteRule . /index.php [L]
 
 # ALTERNATIVE ( uses in my .htaccess1):
 
-RewriteEngine On
-RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.jp?g [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
