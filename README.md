@@ -101,6 +101,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230831 IPList. txt to latest IP list range.
 _ Updated: 230828  ALL .htacces1 and checked = working good! Updated maybe list.
 - Updated: 230827, htaccess1 and Perrish firewall - up to date!
 - Updated: 230825 htaccess1 folder, missing php in a row
