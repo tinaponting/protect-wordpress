@@ -35,6 +35,8 @@ Core .htaccess for protection and speed.  Set: 444 files rights
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
 
+**** IF You use. perrrishpress 8G Firewall, name it: .htacces2 if use it with my other .htacess in root.
+
 Plugins I recommend:
 * limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
 * disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
@@ -62,7 +64,7 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 If you got google / bing XML files, set them t0 444 0r if it works: 440:) for safety
 Set you robots.txt to 444. Do not use: humans.txt, it mostly slow down your blog, ads.txt? Set to 444 or 440.
-Bloga I Love:
+Blogs I Love:
 * Perishable Press: https://perishablepress.com/   Always something new to read about security.
 * Wphacked blog:  https://secure.wphackedhelp.com/blog/
 
@@ -101,6 +103,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230901 .htaccess1 with more protection for admin.
 - Updated: 230901 wp-ontent folder all wp-content alternatives updated.
 - Updated: 230901  BBQ custom codes with a "light" version.
 - Updated: 230901 Perrish press 8 g firewall, works well with my htaccess1 and htaccess:) with no interference to speed!
