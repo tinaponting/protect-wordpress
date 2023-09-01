@@ -101,6 +101,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated BBQ custom codes with a "light" version.
 - Updated: 230901 Perrish press 8 g firewall, works well with my htaccess1 and htaccess:) with no interference to speed!
 - Updated: 230831 IPList. txt to latest IP list range.
 _ Updated: 230828  ALL .htacces1 and checked = working good! Updated maybe list.
