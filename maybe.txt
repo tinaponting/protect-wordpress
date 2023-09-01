@@ -222,6 +222,20 @@ RewriteCond% {REQUEST_URI} .wp-comments-post\.php*
 RewriteCond% {HTTP_USER_AGENT} ^$
 RewriteRule ^(.*)$ ^http://the-site-where-you-want-to-send-spammers.com/$ [R=301,L]
 
+
+# 500 Internal Server Error for anyone linking from the target domain:
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} example\.com [NC,OR]
+RewriteRule .* - [F]
+
+# Bad domain:
+
+SetEnvIfNoCase Referer "problemdomain.com" bad_referer
+Order Allow,Deny
+Allow from ALL
+Deny from env=bad_referer
+
 .......................................................................................
 .......................................................................................
 # Denies any comment attempt with a blank HTTP_REFERER field, highly indicative of spam. May prevent some visitors from POSTING. [403]
@@ -1012,6 +1026,8 @@ RewriteRule .? - [F,NS,L]
 
 ........................................................................................
 ........................................................................................
+From: https://perishablepress.com
+
 # During a referrer spam attack, a black-hat marketer will visit your website hundreds or 
 even thousands of times—typically using software or scripts—with forged HTTP headers. 
 Each of these visits sends your website a forged HTTP header containing the marketer’s 
@@ -1030,7 +1046,7 @@ RewriteRule .* - [F]
 
 # ALTERNATIVE:
 
-RewriteEngine on RewriteCond %{HTTP_REFERER} ^$RewriteRule ^ - [F,L]	
+RewriteEngine on RewriteCond %{HTTP_REFERER}^$RewriteRule ^ - [F,L]	
 		
 ........................................................................................
 ........................................................................................
@@ -2312,6 +2328,7 @@ SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
 
 ........................................................................................
 # PHP Hide:
+From: https://perishablepress.com
 
 RewriteCond %{THE_REQUEST} .+\.php [NC]RewriteRule ^ - [F,L]
 
