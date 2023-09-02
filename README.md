@@ -103,6 +103,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated 230902: Perrish press 8g - more speed.
 - Updated: 230901 .htaccess1 with more protection for admin.
 - Updated: 230901 wp-ontent folder all wp-content alternatives updated.
 - Updated: 230901  BBQ custom codes with a "light" version.
