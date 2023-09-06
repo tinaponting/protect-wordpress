@@ -103,7 +103,8 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
--Updated: 230904, htaccess1 and Perrsish press 8G - small errors repaired!
+- Updated: 230906 htacces + htacces1 exended version for m ore power, tested of my blogs - Do not take power from blog!
+- Updated: 230904, htaccess1 and Perrsish press 8G - small errors repaired!
 - Updated 230902: Perrish press 8g - more speed.
 - Updated: 230901 .htaccess1 with more protection for admin.
 - Updated: 230901 wp-ontent folder all wp-content alternatives updated.
