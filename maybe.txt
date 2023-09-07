@@ -14,14 +14,14 @@ RewriteCond"%{HTTP_USER_AGENT}"sqlmap [NC]
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond%{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "ltx71" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "msie3" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "msie 3" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "msie5" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "ltx71" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "msie3" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "msie 3" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "msie5" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
 RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
 RewriteCond%{HTTP_USER_AGENT}!^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
 RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
@@ -56,6 +56,26 @@ RewriteCond %{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 
 RewriteCond %{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"
 RewriteRule ^.* - [F,L]
 </IfModule>
+
+# Alternative
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6} 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+ 
+# Others 
+RewriteCond %{HTTP_USER_AGENT} ^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2} 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
+<IfModule mod_rewrite.c>
+RewriteEngine On
 
 # Anonymousfox
 
