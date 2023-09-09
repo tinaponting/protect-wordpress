@@ -191,6 +191,17 @@ deny from 189.1.160.0/20
 deny from 191.180.0.0/14
 deny from 191.184.0.0/14
 
+# Google Inc. / AS15169 / NetName: GOOGLE-CLOUD (and other cloud customers)
+# Googlebot is not affected, comes from 66.249.0.0/16
+deny from 8.35.192.0/21
+deny from 23.251.128.0/19
+deny from 35.184.0.0/12
+deny from 104.154.0.0/15
+deny from 104.196.0.0/14
+deny from 107.178.192.0/18
+deny from 130.211.0.0/16
+deny from 146.148.0.0/17
+
 # corexchange.com
 deny from 198.154.96.0/19
 
@@ -413,12 +424,6 @@ deny from 198.211.96.0/19
 deny from 207.154.192.0/18
 deny from 208.68.36.0/22
 
-# Digital Ocean
-deny from 198.211.96.0/19
-deny from 198.199.64.0/18
-deny from 162.243.0.0/16
-deny from 192.34.56.0/21
-
 # DreamHost / New Dream Network
 deny from 64.90.32.0/19
 deny from 64.111.96.0/19
@@ -463,6 +468,17 @@ deny from 192.200.96.0/19
 deny from 198.100.96.0/19
 deny from 198.136.24.0/21
 deny from 199.73.120.0/22
+
+# GPTBot IP ranges as of 08-09-2023:
+20.15.240.64/28
+20.15.240.80/28
+20.15.240.96/28
+20.15.240.176/28
+20.15.241.0/28
+20.15.242.128/28
+20.15.242.144/28
+20.15.242.192/28
+40.83.2.64/28
 
 # datashack.net
 deny from 107.150.32.0/19
@@ -552,25 +568,38 @@ deny from 41.190.0.0/19
 deny from 50.62.0.0/15
 deny from 216.69.128.0/18
 
-# Hetzner Online 
+# Hetzner (de) Online 
 deny from 5.9.0.0/16
 deny from 46.4.0.0/16
 deny from 78.46.0.0/15
+deny from 78.46.95.173
 deny from 85.10.192.0/18
 deny from 88.99.0.0/16
 deny from 88.198.0.0/16
 deny from 94.130.0.0/16
+deny from 95.216.0.0 
+deny from 95.216.24.0/125
+deny from 95.216.255.255
+deny from 128.140.0.0/17
+deny from 128.140.48.0/21
+deny from 128.140.52.0/22
+deny from 128.140.54.14/16
+deny from 128.140.54.15
 deny from 129.232.128.0/17
 deny from 136.243.0.0/16
 deny from 138.201.0.0/16
 deny from 144.76.0.0/16
 deny from 148.251.0.0/16
+deny from 162.55.167.61
 deny from 176.9.0.0/16
 deny from 178.63.0.0/16
 deny from 188.40.0.0/16
+deny from 188.34.159.21
 deny from 195.201.0.0/16
+deny from 196.251.116.0/22
 deny from 213.133.96.0/19
 deny from 213.239.192.0/18
+deny from 2a01:4f8::/29
 
 # Heymman Servers
 deny from 162.251.120.0/22
@@ -1068,6 +1097,17 @@ deny from 170.75.160.0/20
 deny from 67.210.96.0/19
 deny from 74.50.0.0/19
 
+# Microsoft Corporation / AS8075
+# bingbot/msnbot are not affected, come from 40.77.167.0/24, 65.55.0.0/16, 131.253.24.0/24, 157.55.39.0/24, 191.232.0.0/16, 199.30.0.0/16 and 207.46.13.0/24
+deny from 13.64.0.0/11
+deny from 40.64.0.0/13
+deny from 40.80.0.0/12
+deny from 40.96.0.0/11
+deny from 52.160.0.0/11
+deny from 104.40.0.0/13
+deny from 104.208.0.0/13
+deny from 138.91.0.0/16
+
 # M247
 deny from 77.243.176.0/20
 deny from 82.102.16.0/20
@@ -1323,6 +1363,17 @@ deny from 185.170.42.0/24
 # One
 deny from 193.202.110.0/24
 
+Open AI:
+20.15.240.64/28
+20.15.240.80/28
+20.15.240.96/28
+20.15.240.176/28
+20.15.241.0/28
+20.15.242.128/28
+20.15.242.144/28
+20.15.242.192/28
+40.83.2.64/28
+
 # ONLINE S.A.S. AS12876
 deny from 51.15.0.0/16
 deny from 62.4.0.0/19
@@ -1353,7 +1404,8 @@ deny from 37.75.235.0/24
 # Osiris Communications
 deny from 208.64.56.0/21
 
-# OVH SAS
+# OVH SAS  (ovh.com)
+deny from 5.135.0.0/16
 deny from 5.39.0.0/17
 deny from 5.135.0.0/16
 deny from 5.196.0.0/16
@@ -1434,7 +1486,11 @@ deny from 91.90.93.0/24
 deny from 91.90.94.0/24	
 deny from 91.90.95.0/24
 deny from 91.121.0.0/16	
+deny from 91.134.0.0
 deny from 91.134.0.0/16	
+deny from 91.134.209.17/20
+deny from 91.134.0.0
+deny from 91.134.255.255
 deny from 92.222.0.0/16
 deny from 92.246.224.0/19
 deny from 94.23.0.0/16
@@ -1453,11 +1509,14 @@ deny from 141.95.0.0/17
 deny from 141.95.128.0/17
 deny from 142.4.192.0/19
 deny from 142.44.128.0/17
+deny from 144.76.255.255
 deny from 144.2.32.0/19	
+deny from 144.76.41.214
 deny from 144.217.0.0/16
 deny from 145.239.0.0/16
 deny from 146.59.0.0/16	
 deny from 146.59.0.0/17
+deny from 144.76.255.255 
 deny from 147.135.0.0/17
 deny from 147.135.128.0/17
 deny from 148.113.0.0/18	
@@ -1478,39 +1537,23 @@ deny from 167.114.224.0/19
 deny from 176.31.0.0/16
 deny from 178.32.0.0/15
 deny from 188.165.0.0/16
+deny from 192.99.0.0/16
 deny from 192.95.0.0/18
 deny from 192.99.0.0/16
 deny from 193.70.0.0/17
 deny from 198.27.64.0/18
 deny from 198.50.128.0/17
-deny from 198.100.144.0/20
-deny from 198.245.48.0/20
-deny from 213.32.0.0/17
-deny from 213.251.128.0/18
-deny from 217.182.0.0/16
-
-# OVH Hosting
-deny from 198.27.64.0/18
-deny from 198.50.128.0/17
 deny from 198.50.175.0/24
 deny from 198.100.144.0/20
 deny from 198.245.48.0/20
-deny from 192.99.0.0/16
-
-# AS16276 OVH SAS ovh.com
-deny from 5.135.0.0/16
-deny from 37.59.0.0/16
-deny from 46.105.0.0/16
-deny from 87.98.128.0/17
-deny from 91.121.0.0/16
-deny from 94.23.0.0/16
-deny from 192.95.0.0/18
-deny from 192.99.0.0/16
-deny from 176.31.0.0/16
-deny from 178.32.0.0/15
-deny from 188.165.0.0/16
+deny from 213.32.0.0/17
 deny from 213.186.32.0/19
 deny from 213.251.128.0/18
+deny from 217.182.0.0/16 
+deny from 213.251.128.0/18
+deny from 2001:41d0::/32
+deny from 2402:1f00::/32
+deny from 2607:5300::/32
 
 # OzServers
 deny from 223.252.0.0/17
