@@ -42,10 +42,10 @@ RewriteRule ^.* http://www.avg.com/?LinkScannerSucks [R=307,L]
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$" OR]
-RewriteCond %{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR]
-RewriteCond %{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR] 
-RewriteCond %{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"
+RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$" OR]
+RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR]
+RewriteCond%{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR] 
+RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"
 RewriteRule ^.* - [F,L]
 </IfModule>
 
@@ -53,19 +53,19 @@ RewriteRule ^.* - [F,L]
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6} 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+ 
-RewriteCond %{HTTP_USER_AGENT} ^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2} 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
-RewriteCond %{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
-RewriteCond %{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6} 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+ 
+RewriteCond%{HTTP_USER_AGENT} ^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2} 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
+RewriteCond%{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
+RewriteCond%{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
 </IfModule>
 
 # Anonymousfox:  
@@ -231,6 +231,7 @@ deny from 76.73.0.0/17 deny from 76.73.0.*deny from 76.73.*.*deny from 76.*.*.*a
 .......................................................................................
 .......................................................................................
 # Not always working, but try it! # Prevent image hotlinking
+
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond% {HTTP_REFERER} !^$
@@ -316,11 +317,11 @@ RewriteRule ^(.*)$ ^http://the-site-where-you-want-to-send-spammers.com/$ [R=301
 </IfModule>
 
 # 500 Internal Server Error for anyone linking from the target domain:
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond% {HTTP_REFERER} example\.com [NC,OR]
 RewriteRule .* - [F]</IfModule>
-
 
 .......................................................................................
 .......................................................................................
@@ -615,6 +616,12 @@ RewriteRule .* - [F]</ifModule>
 
 Deny from xx.xx.xx.xxx
 
+# Apache 2.4+
+
+require all denied require ip
+
+# OR:
+Require not host phishers.example.com moreidiots.example
 ........................................................................................
 ........................................................................................
 # Block HTTP access to all files in a directory?:
@@ -626,6 +633,10 @@ Deny from xx.xx.xx.xxx
 Require all denied
 </IfModule>
 
+# Apache 2.4+
+
+require all denied 
+
 ........................................................................................
 ........................................................................................
 # Deny access to filenames starting with dot(.) (.htaccess)
@@ -636,6 +647,8 @@ Require all denied
 ........................................................................................
 # WordPress – prevent access to: (php files)
 
+<Files *.php>deny from all</Files>
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -644,6 +657,7 @@ RewriteRule ^wp-includes/[^/]*\.php$ - [R=403,L]
 
 
 #  Apache + 2,4:  (be careful -mat break some files!)
+
 <Files ~ ".*..*">Require all denied</Files>
 ........................................................................................
 ........................................................................................
@@ -827,7 +841,6 @@ Apache 2.4+:
 .
 ALT 6: Prevent hotlinking:
 
-
 <IfModule mod_rewrite.c>RewriteRule \.(gif|jpg|js|css)$ - [F]</IfModule>
 
 
@@ -912,6 +925,8 @@ RewriteCond %{REQUEST_URI} !^.*/wp-activate.php [NC]
 ........................................................................................
 # DENY access to all PHP/CSS files in Some directory - Add .htaccess in the folder you want it:
 
+<Files *.php>deny from all</Files>
+
 <Files ~ "[^/]\{0,}\.(php|css)$">Order deny,allow Deny from all</Files>
 
 Apache 2.4+:
@@ -975,7 +990,7 @@ CSS:
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-rewritecond% {REQUEST_FILENAME}! ^ (. +). css $
+rewritecond% {REQUEST_FILENAME}! ^ (. +).css $
 rewritecond% {REQUEST_FILENAME}! ^ (. +).js $
 rewritecond% {REQUEST_FILENAME}! file.php $
 RewriteRule ^ (. +) $ / Deny / [nc]
@@ -994,7 +1009,7 @@ RewriteRule /* https://www.google.com [R,L]
 ........................................................................................
 # Brute Force Login Protection:
 
-<FilesMatch ".*\.(php|html?|css|js|jpe?g|png|gif)$">order deny,allow<FilesMatch ""></FilesMatch>
+<FilesMatch ".*\.(php|html?|css|js|jpe?g|png|gif)$">order deny,allow<FilesMatch""></FilesMatch>
 
 
 # ALTERNATIVE:
@@ -1024,10 +1039,17 @@ BACKDOOR NO WAY:
 
 ........................................................................................
 ........................................................................................
-BLOCK Folder, or private folder:
+# BLOCK Folder, or private folder:
 
 <IfModule mod_rewrite.c>
 RewriteRule ^.*  - [R=404,L]
+</IfModule>
+
+# Alternative:
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^.*(folder name).* [NC]
+RewriteRule ^(.*)$ - [F,L]
 </IfModule>
 
 ........................................................................................
@@ -1037,7 +1059,7 @@ RewriteRule ^.*  - [R=404,L]
 # 1) If NOT the current host:
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://\1/.*
+RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER}!^([^@]*)@@https?://\1/.*
 </ifModule>
 
 # 2) Deny access to these types:
@@ -1147,8 +1169,8 @@ RewriteRule .* - [F,L] </IfModule>
 # Denies any Direct request for files ending in .php with a 403 Forbidden. May break plugins/themes [403]/If you are under attack!
 
 <IfModule mod_rewrite.c>
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /wp-includes/.*$ [NC]
-RewriteCond %{THE_REQUEST} !^[A-Z]{3,9}\ /wp-includes/js/.+/.+\ HTTP/ [NC]
+RewriteCond %{THE_REQUEST}^[A-Z]{3,9}\ /wp-includes/.*$ [NC]
+RewriteCond %{THE_REQUEST}!^[A-Z]{3,9}\ /wp-includes/js/.+/.+\ HTTP/ [NC]
 RewriteCond %{REQUEST_FILENAME} ^.+\.php$
 RewriteRule .? - [F,NS,L]</IfModule>
 
@@ -1157,14 +1179,14 @@ RewriteRule .? - [F,NS,L]</IfModule>
 From: https://perishablepress.com
 			
 <IfModule mod_rewrite.c>
-RewriteCond %HTTP_REFERER example.com [NC,OR]
-RewriteCond %HTTP_REFERER example.com/subpage [NC,OR]
+RewriteCond%HTTP_REFERER example.com [NC,OR]
+RewriteCond%HTTP_REFERER example.com/subpage [NC,OR]
 RewriteRule .* - [F]</IfModule>
 
 # ALTERNATIVE:
 
 <IfModule mod_rewrite.c>
-RewriteEngine on RewriteCond %{HTTP_REFERER}^$RewriteRule ^ - [F,L]	
+RewriteEngine on RewriteCond%{HTTP_REFERER}^$RewriteRule ^ - [F,L]	
 </ifModule>
 		
 ........................................................................................
@@ -1252,8 +1274,8 @@ GET /index.php?inc=http://badsite.com/badscript.txt?
 under atack!
 
 <IfModule mod_rewrite.c>
-RewriteCond %{QUERY_STRING} ^.*=(ht|f)tp\://.*$ [NC]
-#RewriteCond %{REMOTE_ADDR} !^111\.222\.333\.444$ [NC]
+RewriteCond%{QUERY_STRING}^.*=(ht|f)tp\://.*$ [NC]
+#RewriteCond%{REMOTE_ADDR}!^111\.222\.333\.444$ [NC]
 RewriteRule .* - [F,L]</ifModule>
 
 ........................................................................................
@@ -1262,11 +1284,11 @@ RewriteRule .* - [F,L]</ifModule>
 Malicious RFI attempts almost always have a question mark at the end of the query string. Ban any query string that contains a question mark. 
  
  
-RewriteCond %{QUERY_STRING}(\?|%3F) [NC]RewriteRule .* - [F,L]
+RewriteCond%{QUERY_STRING}(\?|%3F) [NC]RewriteRule .* - [F,L]
 
 # ALTERNATIVE:
 
-RewriteCond %{QUERY_STRING} ^(%2d|-)[^=]+$ [NC] RewriteRule ^(.*) $1? [L]
+RewriteCond%{QUERY_STRING} ^(%2d|-)[^=]+$ [NC] RewriteRule ^(.*) $1? [L]
 
 # ALTERNATIVE:
 
@@ -1276,7 +1298,7 @@ RewriteRule ^(.+)$ - [F]
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{QUERY_STRING}(.*)(http|https|ftp)://(.*)
+RewriteCond%{QUERY_STRING}(.*)(http|https|ftp)://(.*)
 RewriteRule ^(.+)$ – [F,L]</ifModule>
 ........................................................................................
 ........................................................................................
@@ -1323,6 +1345,7 @@ RewriteRule ^(.*)$ /my 404 adress.php/ [NC,L]</ifModule>
 ........................................................................................
 ........................................................................................
 # ERROR LOGS:  deny access. 
+
 <IfModule mod_rewrite.c>
 RewriteRule (^|/)error_log$ - [F]
 RewriteRule (^|/)php_errorlog$ - [F] 
@@ -1357,6 +1380,7 @@ RewriteRule ^.* - [F,L]</IfModule>
 # IF they print your page:
 
 RewriteCond%{HTTP_REFERER} ^http://.*myprintscreen.com/ [NC,OR]
+
 ........................................................................................
 ........................................................................................
 # If you don't use the Database Optimizing and Post-by-Email features, turn off the access too:
@@ -1384,7 +1408,7 @@ Options AddHandler cgi-script .php .js .css .html .txt .readme .cgi -ExecCGI
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{QUERY_STRING} (crawl|scanx|httrack) [NC]
+RewriteCon%{QUERY_STRING}(crawl|scanx|scan) [NC]
 RewriteRule (.*) - [F,L]
 </IfModule>
 
@@ -1668,7 +1692,7 @@ RewriteRule ^wp-config\.php\.swp$ index.php?wp_config_enumeration=1 [L]
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond %{REQUEST_METHOD} ^CONNECT
+RewriteCond%{REQUEST_METHOD} ^CONNECT
 RewriteRule .* - [R=405,L]</ifModule>
 
 ........................................................................................
@@ -2608,17 +2632,17 @@ ProxyRequests Off ProxyVia Off<Proxy *>Require all denied</Proxy>
 # File Injection Protection:
 
 <IfModule mod_rewrite.c>
-RewriteCond %{REQUEST_METHOD} GET
-RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=https:// [OR]
-RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
-RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http%3A%2F%2F [OR]
-RewriteCond %{QUERY_STRING} proc\/self\/environ [NC,OR]
-RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteCond%{REQUEST_METHOD} GET
+RewriteCond%{QUERY_STRING} [a-zA-Z0-9_]=https:// [OR]
+RewriteCond%{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond%{QUERY_STRING} [a-zA-Z0-9_]=http%3A%2F%2F [OR]
+RewriteCond%{QUERY_STRING} proc\/self\/environ [NC,OR]
+RewriteCond%{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
 RewriteRule .* - [F]
 </IfModule>
 
 # Research scan bot:  A pain in the ass!
-RewriteCond %{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
+RewriteCond%{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
 
 # Pure Trash Requests (brute force attacks, etc)
 
@@ -2648,6 +2672,12 @@ RewriteBase /
 RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
+
+# Alternative:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER} ^https://.*amazonaws\.com [OR]
+RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]
+RewriteRule ^(.*)$ – [F,L]</IfModule>
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
