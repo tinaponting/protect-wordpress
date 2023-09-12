@@ -418,7 +418,6 @@ RewriteRule .* - [F]</IfModule>
 .......................................................................................
 .......................................................................................
 # Return 404 if original request is file.php
-// Not always working, may stop everything! Can be useful, if your are under attack for a short period!  // 
 
 Put it on your long list of: RewriteCond% list:
 RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]
@@ -629,6 +628,7 @@ Require not host phishers.example.com moreidiots.example
 <Files *>Deny from all</Files>
 
 # ALTERNATIVE:
+
 <IfModule mod_authz_core.c>
 Require all denied
 </IfModule>
@@ -707,7 +707,8 @@ Redirect 301 /oldurl2/ https://www.yoursite.com/newurl2/
 ........................................................................................
 ........................................................................................
 # WordPress uploads folder (YOUR_SITE/wp-content/uploads/), 
-which should only contain media files in order to prevent any .php files from executing. 
+which should only contain media files in order to prevent any .php files from executing.
+Do not always work, tryand se first! 
 
 <FilesMatch "(?i)\.(php|php5?|phtml)$">Order Deny,Allow Deny from All</FilesMatch>
 
@@ -831,20 +832,12 @@ ALT 4:  Turn off everything: (uploads) / not recommended, but if you are under a
 <Files ~ ".*..*">Order Allow,Deny Deny from all</Files>
 
 .
-ALT 5:
-
-<FilesMatch>"(?i)\.(php|php3?|phtml)$">Order Deny,Allow Deny from All</FilesMatch>
-
-Apache 2.4+:
-
-<FilesMatch>"(?i)\.(php|php3?|phtml)$">Require all denied</FilesMatch>
-.
-ALT 6: Prevent hotlinking:
+ALT 5: Prevent hotlinking:
 
 <IfModule mod_rewrite.c>RewriteRule \.(gif|jpg|js|css)$ - [F]</IfModule>
 
 
-ALT 7:
+ALT 76:
 <IfModule mod_rewrite.c> RewriteRule ^upload/(.*)$ /wp-content/uploads/$1 [L]</IfModule>
 
 ........................................................................................
@@ -1046,6 +1039,7 @@ RewriteRule ^.*  - [R=404,L]
 </IfModule>
 
 # Alternative:
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{THE_REQUEST} ^.*(folder name).* [NC]
@@ -1312,7 +1306,6 @@ RewriteRule .* - [F]</ifModule>
 ........................................................................................
 ........................................................................................
 #Redirect Geo Conflict Hotspots by Remote Host to The 404 #
-#Redirect Geo Conflict Hotspots by Remote Host to The 404 #
 
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_URI} !my 404 adress.php/
@@ -1328,6 +1321,13 @@ RewriteCond %{REMOTE_HOST} \.ir$ [NC,OR] #Iran
 RewriteCond %{REMOTE_HOST} \.sy$ [NC,OR] #Syria
 RewriteCond %{REMOTE_HOST} \.ye$ [NC] #Yemen
 RewriteRule ^(.*)$ /my 404 adress.php/ [NC,L]</ifModule> 
+
+#Alternative:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER} ^https://.*exempel\.com [OR]
+RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]  (for example)
+RewriteRule ^(.*)$ – [F,L]</IfModule>
 
 ........................................................................................
 ........................................................................................
@@ -1623,8 +1623,8 @@ SetEnvIfNoCase User-Agent .*zme.* bad_bot
 SetEnvIfNoCase User-Agent zgra.* bad_bot
 SetEnvIfNoCase User-Agent .*zgra.* bad_bot
 
-........................................................................................
-........................................................................................
+.......
+
 # Vulnerability Scanners:
 
 SetEnvIfNoCase User-Agent "Acunetix" bad_bot
@@ -1678,13 +1678,6 @@ RewriteRule ^wp-config\.php\.save$ index.php?wp_config_enumeration=1 [L]
 RewriteRule ^\.wp-config\.php\.swp$ index.php?wp_config_enumeration=1 [L]
 RewriteRule ^wp-config\.php\.swp$ index.php?wp_config_enumeration=1 [L]
 </IfModule>
-
-........................................................................................
-........................................................................................
-
-# DENY: (Can sometimes interfere with writings)
-
-<IfModule mod_alias.c>RedirectMatch 403 (?i)(wp-admin|wp-content|wp-login)
 
 ........................................................................................
 ........................................................................................
@@ -2681,3 +2674,4 @@ RewriteRule ^(.*)$ – [F,L]</IfModule>
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
+Uodated: 230912
