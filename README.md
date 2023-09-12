@@ -103,6 +103,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Udated: 230912, Ip list + Maybe list.
 - Upated: 230907, maybe list -small errors.
 - Updated: 230906 htacces + htacces1 exended version for m ore power, tested of my blogs - Do not take power from blog!
 - Updated: 230904, htaccess1 and Perrsish press 8G - small errors repaired!
