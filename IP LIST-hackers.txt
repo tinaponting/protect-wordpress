@@ -8949,6 +8949,15 @@ https://dnschecker.org/online-traceroute.php
 https://tools.keycdn.com/traceroute
 https://traceroute-online.com
 
+Hackers:
+https://www.onyphe.io
+https://ivre.rocks
+https://www.binaryedge.io
+https://www.shodan.io
+https://www.greynoise.io
+https://www.zoomeye.org
+https://osintframework.com
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -8963,16 +8972,19 @@ babbar.eu
 petalbot	
 bytespider	
 Dotbot		
-NinjaBot	
-serpstatbot.com	
-bot.domainstats.com	
-domainstatsbot	
+serpstatbot
 PagePeeker
+GPTBot
+
+.
+https://domainstats.com
+domainstatsbot
+DomainStatsBot/1.0 
 
 .......................................................................
 -----------------------------------------------------------------------
 Created: 221225
-Updated: 230909
+Updated: 230912
 
 Some of them maybe ? gone!
 .................
