@@ -15,11 +15,18 @@ WORDPRESS - FORT KNOX:)
 
 Wp.config.php file:  //Se also my core - single user or wp addon on here:)
 
-require_once(ABSPATH.'wp-settings.php');  Add this after this:
-error_reporting(0); 
-ini_set('display_errors','0'); 
-ini_set('error_reporting',E_ALL);
-define('DISALLOW_FILE_EDIT',true); 
+require_once(ABSPATH.'wp-settings.php');  
+Add this after this:
+
+define('WP_DEBUG',false);
+Insert: define('WP_DEBUG_DISPLAY',false);
+
+After: require_once(ABSPATH.'wp-settings.php'); 
+
+define('display_errors','off');
+
+define('DISALLOW_FILE_EDIT',true);
+
 define('DISALLOW_FILE_MODS',true); 
 ob_start();?>
 
