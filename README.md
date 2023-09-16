@@ -35,7 +35,7 @@ Set to: 444 in wp.config.php Also gets some speed!  //important!!
 * Protect: wp.contents folder, plugins,themes and uploads.
 * Protect: wp-admin folder.
 
-Core .htaccess for protection and speed.  Set: 444 files rights
+Core .htaccess for protection and speed.  Set: 444 files rights or of it possible: 440
 
 * Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
 
@@ -80,7 +80,7 @@ Happy safe blogging folks:)
 
 * Sitemap Validater: https://www.xml-sitemaps.com/validate-xml-sitemap.html
 
-* Remove unneeded files:
+* Remove not used files:
 readme.html
 license.txt
 changelog.txt
