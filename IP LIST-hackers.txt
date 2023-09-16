@@ -8743,6 +8743,22 @@ Deny from 213.66.237.151
 
 The swedish list been bigger.... Hate hackers, deny them please, if you got problem with them!
 
+https://internetvikings.com
+
+User agent: domaincrawler
+
+Deny from 130.255.166.60/69
+Deny from 130.255.166.80/90
+Deny from 151.252.28.0/24 
+Deny from 185.6.8.0/24
+Deny from 192.121.156.0/22 
+Deny from 192.121.71.0/24
+Deny from 192.71.54.0/23 
+Deny from 193.183.100.0/22 
+1Deny from 93.235.238.0/23 
+Deny from 194.71.208.0/22 
+Deny from 5.133.211.0/24
+
 ..................................................
 Feed Stelaers:         
 
