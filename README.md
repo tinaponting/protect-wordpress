@@ -110,8 +110,9 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
-- Updated:230918 wp.content, small error and .htaccess that do not work!
-- Updated:230918  fuckdevtools -copyproofsto the Latest!
+- Updated: 230918 wp-includes,works with wp,62+
+- Updated: 230918 wp.content, small error and .htaccess that do not work!
+- Updated: 230918  fuckdevtools -copyproofsto the Latest!
 - Updated: 230918 Minor error replaced.
 - Updated: 230917  Minor filesmatch missing.
 - Updated: htacces 1 for better protection for php files.
