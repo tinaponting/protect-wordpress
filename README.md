@@ -110,6 +110,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated:230918  fuckdevtools -copyproofsto the Latest!
 - Updated: 230918: Minor error replaced.
 - Updated: 230917: Minor filesmatch missing.
 - Updated: htacces 1 for better protection for php files.
