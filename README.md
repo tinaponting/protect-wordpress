@@ -110,15 +110,16 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated:230918 wp.content, small error and .htaccess that do not work!
 - Updated:230918  fuckdevtools -copyproofsto the Latest!
-- Updated: 230918: Minor error replaced.
-- Updated: 230917: Minor filesmatch missing.
+- Updated: 230918 Minor error replaced.
+- Updated: 230917  Minor filesmatch missing.
 - Updated: htacces 1 for better protection for php files.
 - Updated: 230912, Ip list + Maybe list.
 - Updated: 230907, maybe list -small errors.
 - Updated: 230906 htacces + htacces1 exended version for m ore power, tested of my blogs - Do not take power from blog!
 - Updated: 230904, htaccess1 and Perrsish press 8G - small errors repaired!
-- Updated 230902: Perrish press 8g - more speed.
+- Updated: 230902: Perrish press 8g - more speed.
 - Updated: 230901 .htaccess1 with more protection for admin.
 - Updated: 230901 wp-ontent folder all wp-content alternatives updated.
 - Updated: 230901  BBQ custom codes with a "light" version.
@@ -179,27 +180,12 @@ _ Updated: 230630 htaccess for better speed:)
 - Updated: 230307: wp-includes minot errors gone!
 - Updated: 230307: wp-admin, htaccess.
 - Updated: 230306: .htaccess1, minor errors gone!
-- Updated: 230306: wp-includes, minor errors gone!
-- Updated: 230306:.htaccess1, minor errors gone!
-- Updated: 230305 .htaccess1, minor errors gone!
-- Updated: 230304: wp-includes updated! better security!
-- Working: 230303 on better security on wp-includes:)
-- Updated: 230302 .htaccess1 small errrors! fixed
-- Updated: 230227, htaccess1 - A small error! fixed
-- No changes in 230227 .htacces -wp-admin, works very well on all my blogs!
-- Updated: 230227, wp-includes, more alternatives to use.
-- Updated: 230227, updated .htaccess1 small fixes!
-- Updated: 230222 wp-content .htaccess updated! all tried and working!
-- Updated: 230219 htacces1 for better protection, gone through all and madesome small changes:)
-- Updated: 230216 htaccess1 - double thing:(
-- Updated: 2302015 htaccess for better speed.
-- Updated: 230207 .htaccess, for better performance:)
-- Updated: 2302006 .htaccess1 for better performance and protection for ALL .htaccess files:)
-- Updated: 230202   - 230101
-- Updated: 221225  - 221230: Delated:)
-- Updated: 221225 -  221124:  Delated:)
-- Updated: 2200915 -221124: Delated:)
-- Updated: 2021: Delated:)
+- Updated: 2302006 - 230505. 
+- Updated: 230202 - 230101.
+- Updated: 221225 - 221230.
+- Updated: 221225 - 221124.
+- Updated: 2200915 - 221124.
+- Updated: 20220 - 2021.
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
