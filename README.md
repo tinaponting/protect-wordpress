@@ -110,6 +110,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 230921: htaccess1 some boubles and a non workigt file:)
 - Updated: 230918 wp-includes,works with wp,62+
 - Updated: 230918 wp.content, small error and .htaccess that do not work!
 - Updated: 230918  fuckdevtools -copyproofsto the Latest!
