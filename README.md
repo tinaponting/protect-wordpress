@@ -78,6 +78,8 @@ Blogs I Love:
 * Strong password generator: https://www.f-secure.com/en/home/free-tools/password-generator   // Choose Password length: 32 and after that use some greek, some russian, some norwegian,swedich,Deuch words here and there = Very hard to break!
 Happy safe blogging folks:)
 
+Block IP by country:  https://www.ip2location.com/free/visitor-blocker   //very good if you got to mutch of for example: Hongkong!
+
 * Sitemap Validater: https://www.xml-sitemaps.com/validate-xml-sitemap.html
 
 * Remove not used files:
