@@ -115,7 +115,8 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
-- Updated: 230919 wp.conteng, biglist:)
+- Updated: 230929 wpincludes.
+- Updated: 230929 wp-content, biglist:)
 - Updated:230927 htaccess1 and tested:)
 - Updated:230916, well known flder with more alternive.
 - Updated:230924 wp-content, with working htacces file!
