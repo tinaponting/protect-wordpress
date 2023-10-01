@@ -30,7 +30,7 @@ RewriteCond%{HTTP_USER_AGENT} ^User-Agent
 RewriteCond %{HTTP_USER_AGENT} Java.*
 RewriteRule ^/(.*)$ /$1 [F]</IfModule>
 
-# Alternative: Justb add it above!
+# Alternative: Just add it above!
 Here we assume certain MSIE 6.0 agents are from linkscanner #redirect these requests back to avg in the hope they’ll see their silliness!
 
 Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR]
@@ -295,6 +295,17 @@ RewriteCond% {HTTP_USER_AGENT} ^$
 RewriteRule ^(.*)$ ^https://%{REMOTE_ADDR}/$ [R=301,L]
 </IfModule>
 
+# This allows GET and POST and disable HTTP/1.0. It also disables proxy requests:
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} !^(POST|GET)\ /.*\ HTTP/1\.1$ 
+RewriteRule .* - [F]
+ 
+ 
+# No WP spam Alternative:
+
+RewriteCond %{REQUEST_URI} ^/wp-login.php$
+RewriteRule .* - [F]
 .......................................................................................
 .......................................................................................
 # If you are tired of a hacker who always tryes to get in.....
@@ -323,6 +334,15 @@ RewriteEngine On
 RewriteCond% {HTTP_REFERER} example\.com [NC,OR]
 RewriteRule .* - [F]</IfModule>
 
+# REDIRECT SPAMMER ATTACKS TO BOGUS SITE:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{QUERY_STRING} q=user/register
+RewriteRule ^/?$ https://iczxmlqar.com/ [R=301,L]
+RewriteCond %{QUERY_STRING} q=node/add
+RewriteRule ^/?$ https://iczxmlqar.com/ [R=301,L]
+</IfModule>
+
 .......................................................................................
 .......................................................................................
 # Denies any comment attempt with a blank HTTP_REFERER field, highly indicative of spam. 
@@ -332,6 +352,17 @@ May prevent some visitors from POSTING. [403]
 RewriteCond% {THE_REQUEST} ^[A-Z]{3,9}\ /.*/wp-comments-post\.php.*\ HTTP/ [NC]
 RewriteCond% {HTTP_REFERER} ^-?$
 RewriteRule .* - [F,NS,L]</IfModule>
+
+.......................................................................................
+.......................................................................................
+# GET head:
+
+RewriteCond %{HTTP_REFERER} ^-?$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^-?$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^bot [OR,NC]
+RewriteCond %{REQUEST_METHOD} !^HEAD$ [OR,NC] 
+RewriteCond %{REQUEST_URI} !^/robots\.txt [NC]
+RewriteRule ^ - [F,L]
 
 .......................................................................................
 .......................................................................................
@@ -462,8 +493,10 @@ RewriteCond%{QUERY_STRING}wp-register\.php[NC,OR]
 RewriteCond%{THE_REQUEST}wp-register\.php[NC]
 RewriteRule.*-[F,NS,L]</IfModule>
 .
-Alternative:
-#BLOCK SPAM REGISTRATION REQUESTS: wp-login.php?action=register
+Alternative (add to BBQ):
+#BLOCK SPAM REGISTRATION REQUESTS: 
+
+wp-login.php?action=register
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -525,9 +558,9 @@ add this with in your content folder /Or uploads folder:
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond% {HTTP:Origin} !^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
+RewriteCond% {HTTP:Origin}!^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
 RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [NC,L]
-RewriteCond% {HTTP_REFERER} !.
+RewriteCond% {HTTP_REFERER}!.
 RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [F,NC,L]
 </IfModule>
  
@@ -543,14 +576,94 @@ Audio: .mp3, .m4a, .ogg, .wav
 
 <FilesMatch "\.(jpg|gif|png|jpeg)$">Order Allow,Deny Deny from all </FilesMatch>
 
-# ALTERNATIVE Protection, uploads foolder:
+
+#block access to image files - files with jpg/gif/png/jpeg extensions
+
+<FilesMatch "\.(jpg|gif|png|jpeg)$">
+Order Allow,Deny 
+Deny from all 
+</FilesMatc>
+
+# To hide some filetypes only, use:
+# Hide files of type .png, .zip, .jpg, .gif and .doc from listing: 
+
+IndexIgnore*.png *.zip *.jpg *.gif *.doc
+
+# Deny listing of:
+
+IndexIgnore* .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+# Can mybe stop your files to be seen on the blog, try and se!
+
+<FilesMatch "\.(gif|jpg|js|txt|mp4)$">
+Require all denied
+</FilesMatch>
+
+# Deny all: .htaccess inside root/uploads/
+
+<FilesMatch ".*">
+    Order Allow,Deny
+    Deny from All
+</FilesMatch>
+
+# maybe this works?:
+
+RewriteCond%{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://1/.*
+RewriteRule .(gif|jpg|jpeg|jpe?g|bmp|png|tif|pdf|wav|wmv|wma|avi|mov|mp4|m4v|mp3|zip?)$ – [F]
+
+# Disallowing blank referrers will means blocking them from accessing these images:
+
+RewriteCond%{HTTP_REFERER}!^$
+
+.......................................................................................
+.......................................................................................
+# ALTERNATIVE Protection, uploads/content folder:
 # FORBID THESE FILE EXTENSIONS FROM BEING ACCESSED OR EXECUTED REMOTELY:
 
-<FilesMatch "\.(7z|as|bat|bin|cgi|chm|chml|class|cmd|com|command|dat|db|db2|db3|dba|dll|DS_Store|exe|gz|hta|htaccess|htc|htx|idc|ini|ins|isp|jar|jav|java|jse|jsfl|json|jsp|jsx|lib|lnk|out|php|phps|php5|php4|php3|phtml|phpt|pl|py|pyd|pyc|pyo|rar|shtm|shtml|sql|sys|tar|taz|tgz|tpl|vb|vbe|vbs|war|ws|wsf|xhtml|xml|z)$">
+<FilesMatch "\.(7z|as|bat|bin|cgi|chm|chml|class|cmd|com|command|dat|db|db2|db3|dba|dll|
+DS_Store|exe|gz|hta|htaccess|htc|htx|idc|ini|ins|isp|jar|jav|java|jse|jsfl|json|jsp|jsx|lib|
+lnk|out|php|phps|php5|php4|php3|phtml|phpt|pl|py|pyd|pyc|pyo|rar|shtm|shtml|sql|sys|tar|taz|tgz|tpl|vb|vbe|vbs|war|ws|wsf|xhtml|xml|z)$">
 Order Deny,Allow Deny from all
+
+
+# Restrict the type of executable files and display
+To protect the security of your site's information and data, some of 
+the extensions can be blocked on the site to prevent them from running. 
+To do this, you can enter the following code in your Htaccess file.
+
+RewriteEngine On
+rewritecond% {REQUEST_FILENAME}! ^ (. +). css $
+rewritecond% {REQUEST_FILENAME}! ^ (. +) .js $
+rewritecond% {REQUEST_FILENAME}! file.php $
+RewriteRule ^ (. +) $ / Deny / [nc]
+
+# Prevent Direct File Download in Apache Server
+
+<filesmatch ".*"="">
+    Order Allow,Deny
+    Deny from All
+</filesmatch>
+
+# Banning the download of dotfiles:
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+
+# Prevent Downloading/ include n your root folder:
+Sometimes you want to force the browser to display some content instead of downloading it.
+
+<FilesMatch "\.(ico|jpg|txt)$">
+Header set Content-Type text/plain
+</FilesMatch>
+
+Just change ico to .... so on to your needs!
 
 .......................................................................................
 .......................................................................................
+
 # PHP info file protect:
 
 <Files  php-info.php>
@@ -623,7 +736,7 @@ require all denied require ip
 Require not host phishers.example.com moreidiots.example
 ........................................................................................
 ........................................................................................
-# Block HTTP access to all files in a directory?:
+# Block HTTP access to all files in a directory?:  // can break site,try and se!
 
 <Files *>Deny from all</Files>
 
@@ -836,8 +949,12 @@ ALT 5: Prevent hotlinking:
 
 <IfModule mod_rewrite.c>RewriteRule \.(gif|jpg|js|css)$ - [F]</IfModule>
 
+# Images Protect: If to mutch of people try to Download your images them: ( Use only temporarily, may stop some user agents) 
 
-ALT 76:
+RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ /Oh no! Not again![L]
+
+
+# ALT 6:
 <IfModule mod_rewrite.c> RewriteRule ^upload/(.*)$ /wp-content/uploads/$1 [L]</IfModule>
 
 ........................................................................................
@@ -847,10 +964,12 @@ ALT 76:
 <files>secretfile.jpg="">order allow,deny Deny from all</files>
 
 .....
-# To hide all of png and jpg images
+# To hide all of png and jpg images:
+
 IndexIgnore *.png *.jpg
 
-# To hide single image
+# To hide single image:
+
 IndexIgnore hidden_image.jpg
 
 ......
@@ -859,10 +978,6 @@ IndexIgnore hidden_image.jpg
 <Files ~".*..*">Order Allow,Deny Deny from all</Files>
 
 .....
-# Images Protect: If to mutch of people try to Download your images them: ( Use only temporarily, may stop some user agents) 
-
-RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ /Oh no! Not again![L]
-
 # If you need hide a script: (Place it under rewrite cond:
 
 RewriteCond %{SCRIPT_FILENAME} -d [OR]
@@ -895,7 +1010,8 @@ RewriteRule ^wp-content/themes/mytheme/$ /the/page/not-found [L]</IfModule>
 ALT4:
 <IfModule mod_rewrite.c>
 RewriteCond%{REQUEST_URI}^.*/wp-content/themes/.*[NC,OR]
-RewriteCond%{THE_REQUEST}^.*/wp-content/themes/.*[NC]RewriteRule.*-[F,L]</IfModule>
+RewriteCond%{THE_REQUEST}^.*/wp-content/themes/.*[NC]
+RewriteRule.*-[F,L]</IfModule>
 
 ........................................................................................
 ........................................................................................
@@ -965,6 +1081,11 @@ RewriteRule .? - [L]
 
 <FilesMatch ".env">Order allow,deny Deny from all</FilesMatch>
 
+
+#BLOCK BROWSER ACCESS TO LOG FILES
+<Files  ~ ".log$">
+  Order allow,deny
+  Deny from 
 ........................................................................................
 ........................................................................................
 # Alternative CSS code protection:
@@ -1023,6 +1144,13 @@ RewriteRule ^(.*)$ - [F,L]
 # Deny on request method:
 
 RewriteCond %{THE_REQUEST}!^(GET|POST)\ /.*\ HTTP/1\.(0|1)$ [NC]RewriteRule ^(.*) - [F]
+
+# No Bruteforce:
+
+RewriteCond %{REQUEST_URI} ^/user$
+RewriteRule .* - [F]
+RewriteCond %{QUERY_STRING} q=user
+RewriteRule .* - [F]
 
 ........................................................................................
 ........................................................................................
@@ -1164,7 +1292,7 @@ RewriteRule .* - [F,L] </IfModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond %{THE_REQUEST}^[A-Z]{3,9}\ /wp-includes/.*$ [NC]
-RewriteCond %{THE_REQUEST}!^[A-Z]{3,9}\ /wp-includes/js/.+/.+\ HTTP/ [NC]
+RewriteCond %{THE_REQUEST}!^[A-Z]{3,9}\ /wp-includes/php/.+/.+\ HTTP/ [NC]
 RewriteCond %{REQUEST_FILENAME} ^.+\.php$
 RewriteRule .? - [F,NS,L]</IfModule>
 
@@ -1189,9 +1317,9 @@ RewriteEngine on RewriteCond%{HTTP_REFERER}^$RewriteRule ^ - [F,L]
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond %{HTTP_REFERER} ^http://.*example\.COM/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*example\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*example\.ru/ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^https://.*example\.COM/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https://.*example\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^https://.*example\.ru/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^https://.*semalt\.com/ [NC,OR]
@@ -1329,6 +1457,48 @@ RewriteCond %{HTTP_REFERER} ^https://.*exempel\.com [OR]
 RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]  (for example)
 RewriteRule ^(.*)$ – [F,L]</IfModule>
 
+#Alternative:
+
+RewriteCond %{HTTP_HOST} !^example\.com [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteRule ^/?(.*)         https://example.com/$1 [L,R,NE]
+
+#Alternative:
+RewriteCond %{HTTP_HOST} ^example.de [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.net$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.de$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.org$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.info$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.at$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.ch$
+RewriteRule (.*) https://example.com/$1 [R=301,L]
+
+THIS WORKS GREAT for me, use it my content folder:  Tired of Kina and Hongkong...
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.hk$ [NC] #Hongkong
+RewriteCond %{HTTP:From} \.hk$ [NC,OR] #Hongkong
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.CN$ [NC] #Kina
+RewriteCond %{HTTP:From} \.CN$ [NC,OR] #KINA
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+Example:  
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.XX$ [NC] #Country
+RewriteCond %{HTTP:From} \.XX$ [NC,OR] #Country
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+
 ........................................................................................
 ........................................................................................
 # From https://perishablepress.com: (if needed, put it in .htacess2)
@@ -1380,6 +1550,18 @@ RewriteRule ^.* - [F,L]</IfModule>
 # IF they print your page:
 
 RewriteCond%{HTTP_REFERER} ^http://.*myprintscreen.com/ [NC,OR]
+
+#IF Needed:
+SetEnvIfNoCase User-Agent ^BackWeb bad_bot
+SetEnvIfNoCase User-Agent ^Black bad_bot
+SetEnvIf User-Agent Grab bad_bot
+SetEnvIfNoCase User-Agent ^Info bad_bot
+SetEnvIfNoCase User-Agent site bad_bot
+SetEnvIfNoCase User-Agent ^Get bad_bot
+SetEnvIfNoCase User-Agent ^Link bad_bot
+SetEnvIfNoCase User-Agent ^Download bad_bot
+SetEnvIfNoCase User-Agent ^Net bad_bot
+SetEnvIfNoCase User-Agent ^Web bad_bot
 
 ........................................................................................
 ........................................................................................
@@ -1706,16 +1888,6 @@ RewriteCond %{HTTP_REFERER} google-proxy-00-000-000-00.google.com\.com
 ADD IP: 000 and so on.
 ........................................................................................
 ........................................................................................
-# Prevent Downloading
-Sometimes you want to force the browser to display some content instead of downloading it.
-
-<FilesMatch "\.(ico|jpg|txt)$">
-Header set Content-Type text/plain
-</FilesMatch>
-
-Just change ico to .... so on to your needs!
-........................................................................................
-........................................................................................
 # BROTOLI COMPRESSION:  Better than GZIP, but not on every webhotell.
 
 <IfModule mod_brotli.c>
@@ -1798,6 +1970,7 @@ SetOutputFilter DEFLATE
 </IfModule>
 
 # More compression, if needed:
+
 <ifModule mod_deflate.c>
 <filesMatch "\.(css|js|x?html?|php)$">
 SetOutputFilter DEFLATE
@@ -1805,11 +1978,13 @@ SetOutputFilter DEFLATE
 </ifModule>
 
 # Try this:
+
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE application/javascript text/css
 </IfModule>
 
 #  COMBINE CSS, COMPRESS IMAGES, REMOVE HTML WHITE SPACE AND COMMENTS
+
 <IfModule pagespeed_module>
 ModPagespeed on
 ModPagespeedEnableFilters rewrite_css,combine_css
@@ -1820,6 +1995,7 @@ ModPagespeedEnableFilters collapse_whitespace,remove_comments
 # TN — ENABLE MOD PAGESPEED END
 
 # FONTS:
+
 <IfModule mod_deflate.c>
 SetOutputFilter DEFLATE
 <IfModule mod_filter.c>
@@ -1828,9 +2004,11 @@ AddOutputFilterByType DEFLATE application/font-otf application/font-ttf applicat
 </IfModule>
 
 # OR:
+
 RewriteRule ^.*.(?:css|js)$ $0.gz [L,QSA]
 
 # Compress js/css:
+
 files *.js.gz>
 AddType "text/javascript" .gz
 AddEncoding gzip .gz
@@ -1841,11 +2019,13 @@ AddEncoding gzip .gz
 </files>
 
 #:
+
 <FilesMatch *.(html|css|jpg|jpeg|png|gif|js|ico)>
 SetOutputFilter DEFLATE
 </FilesMatch>
 
 # OR:
+
 <IfModule mod_headers.c>
 RewriteCond "%{HTTP:Accept-encoding}" "gzip"
 RewriteCond "%{REQUEST_FILENAME}\.gz" -s
@@ -1859,6 +2039,7 @@ Header append Vary Accept-Encoding
 </IfModule>
 
 # OR:
+
 <IfModule mod_headers.c>
 <FilesMatch ".(js|css|xml|gz|html)$">
 Header append Vary: Accept-Encoding
@@ -1866,6 +2047,7 @@ Header append Vary: Accept-Encoding
 </IfModule>
 
 # OR:
+
 <IfModule mod_headers.c>
 <FilesMatch "\.(js|css|xml|gz)$">
 Header append Vary: Accept-Encoding
@@ -1874,6 +2056,7 @@ Header append Vary: Accept-Encoding
 
 
 # OR:
+
 </IfModule>
 <FilesMatch "\.js$">
 RewriteEngine On
@@ -1961,6 +2144,7 @@ RewriteRule ^(.*)$ http://www.canada.com$1 [L]
 :
 FUNKAR INTE ALLTID:
 # Redirect multiple countries to a single page
+
 RewriteEngine on
 RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(CA|US|MX)$
 RewriteRule ^(.*)$ http://www.northamerica.com$1 [L]
@@ -2076,7 +2260,7 @@ RewriteCond %{REQUEST_URI} screenshot(?:\-\d+)?\.(?:jpe?g|png|gif)$ [NC,OR]
 
 ........................................................................................
 ........................................................................................
-# allow documents: pdf, doc, docx, xls, xslx, pps, ppsx, ppt, pptx, psd, odt, key:
+# Allow documents: pdf, doc, docx, xls, xslx, pps, ppsx, ppt, pptx, psd, odt, key:
    
 <FilesMatch "\.(?i:pdf|docx?|xlsx?|pp[st]x?|psd|odt|key)$">
 <IfModule !mod_authz_core.c>
@@ -2088,7 +2272,7 @@ Require all granted
 </IfModule>
 </FilesMatch>
  
-# allow audio video:  mp2, mp3, mp4, mpg, m4a, m4v, ogg, ogv, wav, mov, wma, wmv, avi, 3gp, 3g2 :
+# Allow audio video:  mp2, mp3, mp4, mpg, m4a, m4v, ogg, ogv, wav, mov, wma, wmv, avi, 3gp, 3g2 :
   
 <FilesMatch "\.(?i:mp[2-5g]|m4[av]|og[gv]|wav|mov|wm[av]|avi|3g[p2])$">
 <IfModule !mod_authz_core.c>
@@ -2104,7 +2288,7 @@ Require all granted
 ........................................................................................
 # No User agent . no robots.txt!
 
-RewriteCond "%{ENV:noagent}" "=1"RewriteCond %{REQUEST_URI} !^/robots\.txt$RewriteRule ^.*$ - [R=451,L]
+RewriteCond "%{ENV:noagent}" "=1"RewriteCond %{REQUEST_URI}!^/robots\.txt$RewriteRule ^.*$ - [R=451,L]
 	
 ........................................................................................
 ........................................................................................
@@ -2303,7 +2487,6 @@ RewriteRule ^xmlrpc.php$ "http://0.0.0.0/" [R=301,L]
 RewriteCond%{HTTP_REFERER}!^https://www.%{HTTP_HOST}/.*$[NC]RewriteCond%{REQUEST_POST}.*contact.php$ RewriteRule.*-[F]
 ........................................................................................
 ........................................................................................
-
 # The following lines added to your 
 .htacces file will block any requests coming from IP addresses starting 
 with XXX.23 or XX.1 where the User Agent starts with Java:
@@ -2384,11 +2567,11 @@ In wp-config php file:
 
 define('DISABLE_WP_CRON',true);
 
-Other usefuls:
+# Other usefuls:
 
 define('WP_DISABLE_FATAL_ERROR_HANDLER',true);   
 
-Memory:
+# Memory:
 
 define('WP_MAX_MEMORY_LIMIT','128M'); (or: 512M)
 
@@ -2396,28 +2579,26 @@ Cache:
 
 define('WP_CACHE',true);
 
-Enable automatic WordPress updates:
+# Enable automatic WordPress updates:
 
 define(‘WP_AUTO_UPDATE_CORE’,true);
 define('WP_AUTO_UPDATE_CORE',‘minor’);
 
-If no:
+# If no:
 
 define('AUTOMATIC_UPDATER_DISABLED',true);
 
-To limit the number of revisions, just replace the false value with any integer number. 
+T# o limit the number of revisions, just replace the false value with any integer number. 
 For instance, the following line limits the revisions to just 12.
 
 define('WP_POST_REVISIONS',12);
 
-After settings.php: (if no errors reporting):
-
-@error_reporting(E_NOTICE ^ E_DEPRECATED);
-
 Trash:
+
 define('EMPTY_TRASH_DAYS',3);     
 
 Orher usefull:
+
 define('WP_DEBUG_DISPLAY',false);
 
 define('CONCATENATE_SCRIPTS',false);
@@ -2430,6 +2611,27 @@ define('WP_HTTP_BLOCK_EXTERNAL',true);
 
 define('WP_ACCESSIBLE_HOSTS','test.com');
 
+Do not see my errors:
+define('WP_DEBUG_DISPLAY',false);
+
+#OR (php)(php.ini):
+
+ini_set('display_errors','off');
+error_reporting(E_ALL|E_STRICT);
+
+After settings.php: (if no errors reporting): (php.ini)
+
+@error_reporting(E_NOTICE ^ E_DEPRECATED);
+
+#OR:
+define('display_errors','off');
+
+#Set to 'false' to disable secure session cookies and to allow log-in without HTTPS.
+    define("SECURE_COOKIES",true);
+	
+#Enable GZIP compression for responses
+   define('ENABLE_RESPONSE_COMPRESSION',true);
+   
 ........................................................................................
 ........................................................................................
 #DENY: VPN:  Test it and see?
@@ -2484,18 +2686,21 @@ RewriteRule ^(?:errors)\b.* - [R=403,L]
 Just find above on: .htaccess1  and change it to:
 
 # OR Maybe:
+
 RewriteRule ^^/wp-content/themes/ -  [F]
 RewriteRule ^/wp-content/plugins/ -  [F]
 RewriteRule ^/wp-content/ -  [F]
 RewriteRule ^uploads/ -  [F]
 
 # Can also works with:
+
 RewriteRule ^/forbid/(.*)$ - [R=403,L]
 
 # Or
+
 RewriteRule forbid/(.*)$ - [R=404,L]
 
-Extra Protection: (.htaccess 1 or .htaccess)
+# Extra Protection: (.htaccess 1 or .htaccess)
 
 RewriteRule ^^/wp-content/themes/ - [L,R=403]
 RewriteRule ^/wp-content/plugins/ - [L,R=403]
@@ -2506,19 +2711,19 @@ RewriteRule ^/wp-content/ - [L,R=403]Match "\.(my file here|my file here|aux)$">
 
 RedirectMatch 404 \.log$
 ........................................................................................
-# Tor DDoS crawler. See SEC-728:
+# Tor DDoS crawler:
 
-RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" 
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" 
 RewriteRule .* - [R=410,L]
          
 # Bogus Firefox involved in DoS attacks:
 
-RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0" 
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0" 
 RewriteRule .* - [R=410,L]
 
 # Bogus Firefox involved in DoS attacks:
 
-RewriteCond %{HTTP_USER_AGENT} "=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" 
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" 
 RewriteRule .* - [R=410,L]
  
 ........................................................................................
@@ -2544,7 +2749,7 @@ SetEnvIfNoCase User-Agent "^Wget/1.8.2.*" bad_bot
 SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
 </IfModule>
 
-Alternative:
+# Alternative:
 
 SetEnvIfNoCase User-Agent "^Wget.*" bad_bot
 SetEnvIfNoCase User-Agent "^wget.*" bad_bot
@@ -2569,6 +2774,8 @@ Hide: JS/php -ON BB PRO:
 		
 php 404.php https://exemple.se	
 php 404.php https://www.exemple.se
+
+//ALTENATIVE: 404.php https://www.exemple.se
 	
 js 404.php https://exemple.se	
 js 404.php https://www.exemple.se
@@ -2635,6 +2842,7 @@ RewriteRule .* - [F]
 </IfModule>
 
 # Research scan bot:  A pain in the ass!
+
 RewriteCond%{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
 
 # Pure Trash Requests (brute force attacks, etc)
@@ -2667,11 +2875,63 @@ RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
 
 # Alternative:
+
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_REFERER} ^https://.*amazonaws\.com [OR]
 RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]
 RewriteRule ^(.*)$ – [F,L]</IfModule>
+
+# Block a domainwho makes you crasy!:
+
+SetEnvIfNoCase Referer "blockeddomain.com" blocked_domain
+Order Allow,Deny
+Allow from ALL
+Deny from env=blocked_domain
+.......................................................................................
+.......................................................................................
+### STOP Ai:  
+
+
+# Robots.txt:
+
+User-agent: CCBot
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: 
+User-agent: GPT-2
+Disallow: /
+User-agent: GPT-3 
+Disallow: /
+User-agent: GPT-3.5
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+
+
+# The example for img2dataset, although the default is *None*
+User-agent: img2dataset
+Disallow: /
+
+
+# AI: .htaccess(1) 
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot|Omgilibot|FacebookBot) [NC]
+RewriteRule ^ – [F]
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot) [NC]
+RewriteRule ^ – [F]
+
+
+* There are some image-scraping tools that honor the following directive:
+
+<meta name="robots" content="noai, noimageai">
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 230912
+Uodated: 231001
