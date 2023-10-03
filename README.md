@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231003 htaccess1 for better security:)
 - Updated: 230929 wpincludes.
 - Updated: 230929 wp-content, biglist:)
 - Updated:230927 htaccess1 and tested:)
