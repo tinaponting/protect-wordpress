@@ -37,7 +37,7 @@ Set to: 444 in wp.config.php Also gets some speed!  //important!!
 
 Core .htaccess for protection and speed.  Set: 444 files rights or of it possible: 440
 
-* Exemple 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hete:semrush, ahrefs, add more id you want
+* Example 220906 : Robots.txt - even if the wp sets up robots.txt, it is not enough! To cover all boots and if you hate: semrush, ahrefs, add more id you don not want!
 
 * (220922) BBQ Custom code: Protects your blog:) If bought BBQ!
 * If you got trouble or don´t like folks looking inside your plugins root, this works, set the htaccess in plugins Example: Wpschema root, set 444 .-done!
@@ -102,7 +102,7 @@ Wp-admin:
 Very important; If you got an older blog!
 On:
 WP-CONFIG.PHP
-define('DB_CHARSET','utf8mb4');
+define('DB_CHARSET','utf8mb4');  //works well in sweden, somehoq:)
 
 ******Change it to: 
 define('DB_CHARSET','utf8');
