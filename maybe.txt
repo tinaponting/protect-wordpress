@@ -66,6 +66,36 @@ RewriteCond%{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$
 RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
 RewriteCond%{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
 RewriteCond%{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^.*Firefox/4.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla\/[1-4]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Chrome/10.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Chrome\/[1-9]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Chrome* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Firefox\/[1-9]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Firefox* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*MSIE\s[1-6]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*MSIE* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s[0-4]\\.* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s5\\.[3-9]* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s6\\.[4-9]* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s7\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s8\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s9\\.* [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*Windows\sNT\s[1-9][0-9.][0-9.]* [NC]
+RewriteRule ^.* - [F,L]
 </IfModule>
 
 # Anonymousfox:  
@@ -104,13 +134,6 @@ RewriteRule (wp-content) - [NC,F,L]
 RewriteRule (wp-login.php) - [NC,F,L]
 RewriteRule (wp-admin) - [NC,F,L]
 </IfModule>
-
-# Another metod to stop seo cheking bots, that you don´t want! (if your not using BBQ):
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond% {HTTP_USER_AGENT} ^.*(Ahrefs|MJ12bot|Seznam|SemrushBot|DotBot|spbot).*$ [NC]
-RewriteRule .* - [F,L]</IfModule>
  
 # Alternative method:
 
@@ -202,6 +225,41 @@ RewriteRule (.+)/comment-page /$1 [R=301,L]
 RewriteRule (.+)/comments /$1 [R=301,L]
 RewriteRule (.+)/trackback /$1 [R=301,L]
 RewriteRule ^.* - [F,L]</IfModule>
+
+# Another metod to stop seo cheking bots, that you don´t want! (if your not using BBQ):
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond% {HTTP_USER_AGENT} ^.*(Ahrefs|MJ12bot|Seznam|SemrushBot|DotBot|spbot).*$ [NC]
+RewriteRule .* - [F,L]</IfModule>
+
+
+# Anther  Metood:
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} "^$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^-?$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Maxthon$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Acunetix" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^DISCo" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Download Demon" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Express WebPictures" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^FHscan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Go\-Ahead\-Got\-It" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^HMView" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "check_httpcurl" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Image Stripper" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Image Sucker" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Mobile/9B206 [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^PageGrabber" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Security Scan" [NC]
+RewriteCond %{HTTP_USER_AGENT} "^Web Image Collector" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^WPScan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WordPress [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PHPCrawl" [NC,OR]
+RewriteRule ^.* - [F,L]
+</IfModule>
 
 .......................................................................................
 .......................................................................................
@@ -297,9 +355,10 @@ RewriteRule ^(.*)$ ^https://%{REMOTE_ADDR}/$ [R=301,L]
 
 # This allows GET and POST and disable HTTP/1.0. It also disables proxy requests:
 
-RewriteEngine on
+<IfModule mod_rewrite.c>
+RewriteEngine On
 RewriteCond %{THE_REQUEST} !^(POST|GET)\ /.*\ HTTP/1\.1$ 
-RewriteRule .* - [F]
+RewriteRule .* - [F]</IfModule>
  
  
 # No WP spam Alternative:
@@ -479,6 +538,22 @@ RewriteRule ^wp-admin/maint/repair\.php - [L,R=404]
 RewriteRule ^wp-content/(plugins|themes)/(.+)/$ - [L,R=404]
 </IfModule>
 
+
+#Alternative / ADMIN: (if you use my hhtaccess for admin- you are safe!
+
+<Files admin-ajax.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files
+<Files install.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files
+
+.......................................................................................
+.......................................................................................
+
+#USER INI:
+
+RewriteRule \.user\.ini$ - [F,L,NC]
+
+or:
+
+<Files ".user.ini"><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
 .......................................................................................
 .......................................................................................
 ## Registration is disabled so... If you do not want; sign up/register within´your blog.
@@ -1084,8 +1159,10 @@ RewriteRule .? - [L]
 
 #BLOCK BROWSER ACCESS TO LOG FILES
 <Files  ~ ".log$">
-  Order allow,deny
-  Deny from 
+Order allow,deny
+Deny from all
+</Files>
+
 ........................................................................................
 ........................................................................................
 # Alternative CSS code protection:
@@ -2506,6 +2583,11 @@ RewriteRule .* - [F]
 
 <IfModule mod_rewrite.c>RewriteCond %{QUERY_STRING} http\:\/\/www\.google\.com\/humans\.txt\? [NC]RewriteRule .* - [F,L]</IfModule>
 
+IF. txt, readme/licence still on the wordpress:
+
+<Files license.txt><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+<Files readme.html|readme.txt><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
 ........................................................................................
 ........................................................................................
 # Another way to protect admin. But you need static IP Adress! who never changes!
@@ -2549,12 +2631,37 @@ RewriteRule ^(.*)$ - [R=403,L]
 
 ........................................................................................
 ........................................................................................
-Maybe in htaccess1 if needed:
+# Maybe in htaccess1 if needed:
 
 <Files *.php><IfModule mod_authz_core.c>Require all denied</IfModule></Files>
 <Files *.js><IfModule mod_authz_core.c>Require all denied</IfModule></Files>
 <Files *.css><IfModule mod_authz_core.c>Require all denied</IfModule></Files>
 <Files *.json><IfModule mod_authz_core.c>Require all denied</IfModule></Files>
+
+# Debug: (if it visble on server)
+
+<Files debug.log><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
+# Readme/Licence:
+
+<Files license.txt><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+<Files readme.html|readme.txt><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
+# Config.php: (if you do not use my .htaccess firewalls:
+
+<Files wp-config.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
+# wp-cron:
+
+<Files wp-cron.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
+# wp-links-oplm.php:
+
+<Files wp-links-opml.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
+
+# xmlrpc fie: (if you do not use my firewall):
+
+<Files xmlrpc.php><IfModule mod_authz_core.c>Require all denied</IfModule><IfModule!mod_authz_core.c>Order deny,allow Deny from all</IfModule></Files>
 ........................................................................................
 ........................................................................................
 # Useful in wp-config.php:
@@ -2710,6 +2817,12 @@ RewriteRule ^/wp-content/ - [L,R=403]Match "\.(my file here|my file here|aux)$">
 # No: Logs:
 
 RedirectMatch 404 \.log$
+
+# Protect your themes style css file:
+
+RewriteRule ^(.*)wp-content/themes/(.*)/style\.css$ - [R=404,L]
+
+........................................................................................
 ........................................................................................
 # Tor DDoS crawler:
 
@@ -2727,11 +2840,7 @@ RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/2
 RewriteRule .* - [R=410,L]
  
 ........................................................................................
-# Protect your themes style css file:
 
-RewriteRule ^(.*)wp-content/themes/(.*)/style\.css$ - [R=404,L]
-
-........................................................................................
 # Wget: All bots:
 
 <IfModule mod_setenvif.c>
@@ -2841,10 +2950,13 @@ RewriteCond%{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
 RewriteRule .* - [F]
 </IfModule>
 
+........................................................................................
+
 # Research scan bot:  A pain in the ass!
 
 RewriteCond%{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
 
+........................................................................................
 # Pure Trash Requests (brute force attacks, etc)
 
 RewriteCond%{QUERY_STRING}CONCAT[OR,NC]
@@ -2979,6 +3091,14 @@ RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot) [NC]
 RewriteRule ^ – [F]
 
+# diffbot:
+
+SetEnvIfNoCase User-Agent "^(-?|Asperatusbot|Mozilla(\/.\..)?|QCrawl|robot)$" bad
+SetEnvIfNoCase User-Agent "^('|=|\/|BUFF|Jersey|Mozilla.*Mozilla|Pcore|pshtt|User.?Agent)" bad
+SetEnvIfNoCase User-Agent "(\\x|\"\)|\ \ Safari|\(compatible;?(\ )?\)|\(Mobile;\ rv:|0\ Gecko|Mozilla\/5.*MSIE\ [2-8]|MSIE\ (9|1[01]).*\.NET|Windows(\ (10|NT\)|XP\))|\))|X\ 10_10_0)" bad
+SetEnvIfNoCase User-Agent "(aylienbot|BegunAdvertising|betaBot|Bitvore|BoogleBot|cmscrawler|CommonCrawler|devworx|Diffbot|Digincore|evc-batch|exif-search|Feosey|FOCA|GarlikCrawler|Genieo|Getintent|Headless|HubSpot|HybridBot|Iframely|Indy|ips(-agent|\ Community)|Kemvibot|KomodiaBot|mfibot|MixrankBot|Nutch|Pulsepoint|Scrapy|semantic|SiteTruth|Slackbot|Stratagems|Surdotly|Synapse|TWMBot|Web(Copy|collage|Fuck)|wonderbot)" bad
+SetEnvIf Request_URI "^/robots\.txt$" ok
+
 
 # There are some image-scraping tools that honor the following directive:
 
@@ -3016,4 +3136,4 @@ disallow: /
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231006
+Uodated: 231006  17.49
