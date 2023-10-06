@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231006, wp-includes folder.
 - Updated: 231005 wp-content folders for better performance.
 - Updated: 231003 htaccess1 for better security:)
 - Updated: 230929 wpincludes.
