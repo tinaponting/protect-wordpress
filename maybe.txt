@@ -2893,29 +2893,81 @@ Deny from env=blocked_domain
 
 
 # Robots.txt:
+User-agent: Accoona-AI-Agent/1.1.1 
+Disallow: /
+User-agent: Accoona-AI-Agent/1.1.2 
+Disallow: /
+User-agent: Accoona-AI-Agent
+Disallow: /
+
+User-agent: AgentRunner.ai
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+‍User-agent: Claude-Web
+Disallow: /
 
 User-agent: CCBot
 Disallow: /
+User-agent: ccbot
+Disallow: /
+User-agent: CCBot/2.0
+Disallow: /
+
+user-agent: ChatGPT
+disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
 User-agent: GPTBot
 Disallow: /
-User-agent: Google-Extended
+User-Agent: GPTbot/0.1
 Disallow: /
-User-agent: ChatGPT-User
-Disallow: 
 User-agent: GPT-2
 Disallow: /
 User-agent: GPT-3 
 Disallow: /
 User-agent: GPT-3.5
 Disallow: /
-User-agent: Omgilibot
+User-agent: GPT-4 
 Disallow: /
 
+
+User-agent: Google-Extended   
+Disallow: /
+User-agent: Google Bard AI
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Meta AI
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+
+User-agent: OpenAI GPT
+Disallow: /
+
+User-agent: proximic
+Disallow: /
 
 # The example for img2dataset, although the default is *None*
 User-agent: img2dataset
 Disallow: /
 
+
+User-agent: Owler@ows.eu/1
+Disallow: /
+User-agent: Owler@ows.eu/X
+Disallow: /
+User-agent: Owler@ows.eu/2
+Disallow: /
 
 # AI: .htaccess(1) 
 
@@ -2928,10 +2980,40 @@ RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot) [NC]
 RewriteRule ^ – [F]
 
 
-* There are some image-scraping tools that honor the following directive:
+# There are some image-scraping tools that honor the following directive:
 
 <meta name="robots" content="noai, noimageai">
+
+# Used by by spammers, scanners, bad things:
+
+User-agent: Mozilla/4.0 (compatible; BullsEye; Windows 95)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 95)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 98)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows NT)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows XP)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 2000)
+Disallow:/
+User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows ME)
+Disallow:/
+User-agent: mozilla/5
+Disallow:/
+User-agent: MSIECrawler
+Disallow: /
+
+# you can group all user-agents together in robots.txt, it makes maintenance easier:
+
+user-agent: ua1
+user-agent: ua2
+user-agent: ua3
+user-agent: ua4
+disallow: /
+
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231001
+Uodated: 231006
