@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+-Updated: 231009, htacces - the one I use, small erros + added protection for zombie bots.
 - Updated: 231006 .htaccess1 folders for better performace.
 - Updated: 231006  wp-includes folder.
 - Updated: 231005 wp-content folders for better performance.
