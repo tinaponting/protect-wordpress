@@ -22,9 +22,9 @@ RewriteCond%{HTTP_USER_AGENT}^.*Mozilla* [NC]
 RewriteCond%{HTTP_USER_AGENT}^Python-urllib [NC]
 RewriteCond%{HTTP_REFERER}^bc.googleusercontent\.com$ [NC]
 RewriteCond% HTTP_REFERER}^bc.googleusercontent\.com$ [NC]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”
-RewriteCond%{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$
+Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[NC]
+Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[NC]
+RewriteCond%{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$[NC]
 RewriteCond%{HTTP_USER_AGENT} ^-?$
 RewriteCond%{HTTP_USER_AGENT} ^User-Agent
 RewriteCond %{HTTP_USER_AGENT} Java.*
@@ -98,6 +98,10 @@ RewriteCond %{HTTP_USER_AGENT} !^.*Windows\sNT\s[1-9][0-9.][0-9.]* [NC]
 RewriteRule ^.* - [F,L]
 </IfModule>
 
+#Alternative:  Change if what you need:
+
+RewriteCond %{HTTP_USER_AGENT} Firefox/1(.+) [NC,OR]
+
 # Anonymousfox:  
 
 <IfModule mod_rewrite.c>
@@ -152,6 +156,63 @@ DENY FROM 195.154.122.0/24
 DENY FROM 195.154.123.0/24
 DENY FROM 195.154.126.0/24
 DENY FROM 195.154.127.0/24
+
+
+## I use this on my htaccess1:  (works very well!
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (Android; Mobile; rv:14.0) Gecko/14.0 Firefox/14.0"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-9]\\.* [NC,OR]
+RewriteCond%"{HTTP_USER_AGENT}""gecko/20060728"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""ltx71"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie3"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 3"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie5"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 5.5"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 6.0"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""mozilla/4.76"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""mozilla/Mozilla/5.0"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Chrome\/[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Opera*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozilla*[NC]
+RewriteCond%{HTTP_REFERER}^bc.googleusercontent\.com$[NC]
+Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR,NC]
+Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[OR,NC]
+RewriteCond%{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6[OR,NC]} 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2}[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" RewriteRule .* - [R=410,L]
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36"[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0" RewriteRule .* - [R=410,L]
+RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" RewriteRule .* - [R=410,L]
+RewriteCond%{HTTP_USER_AGENT}^Opera/[5-9]\.[0-9]+[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Python-urllib[NC]
+RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
+RewriteCond%{HTTP_USER_AGENT}^$
+RewriteCond%{HTTP_USER_AGENT}^-?$
+RewriteCon%{HTTP_USER_AGENT}Java.*
+RewriteRule .* - [F]</IfModule>
 
 .......................................................................................
 .......................................................................................
@@ -495,6 +556,19 @@ RewriteCond% {HTTP_USER_AGENT} ^DISCo [OR]
 RewriteCond% {HTTP_USER_AGENT} ^DISCo\ Pump [OR]
 RewriteRule .* - [F,L]</IfModule>
 
+# Alternative:
+RewriteCond %{HTTP_REFERER} (-anal) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (-cock) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (-orgy) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (-porn-) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (-sex-) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (-sex.) [NC,OR]
+
 # Alternative for poker and porn:
 
 <IfModule mod_rewrite.c>
@@ -504,6 +578,12 @@ RewriteCond %{HTTP_REFERER} \bporn\b [NC,OR]
 RewriteCond %{HTTP_REFERER} \bpill\b [NC,OR]
 RewriteCond %{HTTP_REFERER} \bpoker\b [NC]
 RewriteRule .* - [F]</IfModule>
+
+# Alternative:
+RewriteCond %{HTTP_REFERER} (-poker.) [NC,OR]
+
+# Your own:
+RewriteCond %{HTTP_REFERER} (-name.) [NC,OR]
 
 .......................................................................................
 .......................................................................................
@@ -1510,74 +1590,6 @@ RewriteRule .* - [F]</ifModule>
 
 ........................................................................................
 ........................................................................................
-#Redirect Geo Conflict Hotspots by Remote Host to The 404 #
-
-<IfModule mod_rewrite.c>
-RewriteCond %{REQUEST_URI} !my 404 adress.php/
-RewriteCond %{REMOTE_HOST} \.ru$ [NC,OR] #Russia 
-RewriteCond %{REMOTE_HOST} \.am$ [NC,OR] #Armenia
-RewriteCond %{REMOTE_HOST} \.by$ [NC,OR] #Belarus 
-RewriteCond %{REMOTE_HOST} \.kz$ [NC,OR] #Kazakhstan
-RewriteCond %{REMOTE_HOST} \.kg$ [NC,OR] #Kyrgyzstan
-RewriteCond %{REMOTE_HOST} \.tj$ [NC,OR] #Tajikistan
-RewriteCond %{REMOTE_HOST} \.ve$ [NC,OR] #Venezuela
-RewriteCond %{REMOTE_HOST} \.kp$ [NC,OR] #North Korea
-RewriteCond %{REMOTE_HOST} \.ir$ [NC,OR] #Iran 
-RewriteCond %{REMOTE_HOST} \.sy$ [NC,OR] #Syria
-RewriteCond %{REMOTE_HOST} \.ye$ [NC] #Yemen
-RewriteRule ^(.*)$ /my 404 adress.php/ [NC,L]</ifModule> 
-
-#Alternative:
-
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_REFERER} ^https://.*exempel\.com [OR]
-RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]  (for example)
-RewriteRule ^(.*)$ – [F,L]</IfModule>
-
-#Alternative:
-
-RewriteCond %{HTTP_HOST} !^example\.com [NC]
-RewriteCond %{HTTP_HOST}   !^$
-RewriteRule ^/?(.*)         https://example.com/$1 [L,R,NE]
-
-#Alternative:
-RewriteCond %{HTTP_HOST} ^example.de [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.net$ [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.de$ [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.org$ [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.info$ [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.at$ [OR]
-RewriteCond %{HTTP_HOST} ([^.]+)\.example\.ch$
-RewriteRule (.*) https://example.com/$1 [R=301,L]
-
-THIS WORKS GREAT for me, use it my content folder:  Tired of Kina and Hongkong...
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} \.hk$ [NC] #Hongkong
-RewriteCond %{HTTP:From} \.hk$ [NC,OR] #Hongkong
-RewriteRule ^.* - [F,L]
-</IfModule>
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} \.CN$ [NC] #Kina
-RewriteCond %{HTTP:From} \.CN$ [NC,OR] #KINA
-RewriteRule ^.* - [F,L]
-</IfModule>
-
-Example:  
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} \.XX$ [NC] #Country
-RewriteCond %{HTTP:From} \.XX$ [NC,OR] #Country
-RewriteRule ^.* - [F,L]
-</IfModule>
-
-
-........................................................................................
-........................................................................................
 # From https://perishablepress.com: (if needed, put it in .htacess2)
  
 <ifModule mod_rewrite.c>
@@ -1631,7 +1643,7 @@ RewriteCond%{HTTP_REFERER} ^http://.*myprintscreen.com/ [NC,OR]
 #IF Needed:
 SetEnvIfNoCase User-Agent ^BackWeb bad_bot
 SetEnvIfNoCase User-Agent ^Black bad_bot
-SetEnvIf User-Agent Grab bad_bot
+SetEnvIfNoCase User-Agent Grab bad_bot
 SetEnvIfNoCase User-Agent ^Info bad_bot
 SetEnvIfNoCase User-Agent site bad_bot
 SetEnvIfNoCase User-Agent ^Get bad_bot
@@ -1917,6 +1929,9 @@ SetEnvIfNoCase User-Agent "X-Scan" bad_bots
 
 Plugin Errors:
 SetEnvIfNoCase User-Agent "plugin_error_Scan" bad_bots
+
+### STOP Zombie bots:
+SetEnvIfNoCase User-Agent "Zombi" bad_bots
 ........................................................................................
 ........................................................................................
 # Stop WPSCAN: (added htacess2 -extended version:
@@ -2267,6 +2282,77 @@ allow from env=EUROPEANUNION
 SetEnvIf MM_COUNTRY_CODE ^(CN) BlockedCountry
 Deny from env=BlockedCountry
 
+###
+# Redirect Geo Conflict Hotspots by Remote Host to The 404 #
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} !my 404 adress.php/
+RewriteCond %{REMOTE_HOST} \.ru$ [NC,OR] #Russia 
+RewriteCond %{REMOTE_HOST} \.am$ [NC,OR] #Armenia
+RewriteCond %{REMOTE_HOST} \.by$ [NC,OR] #Belarus 
+RewriteCond %{REMOTE_HOST} \.kz$ [NC,OR] #Kazakhstan
+RewriteCond %{REMOTE_HOST} \.kg$ [NC,OR] #Kyrgyzstan
+RewriteCond %{REMOTE_HOST} \.tj$ [NC,OR] #Tajikistan
+RewriteCond %{REMOTE_HOST} \.ve$ [NC,OR] #Venezuela
+RewriteCond %{REMOTE_HOST} \.kp$ [NC,OR] #North Korea
+RewriteCond %{REMOTE_HOST} \.ir$ [NC,OR] #Iran 
+RewriteCond %{REMOTE_HOST} \.sy$ [NC,OR] #Syria
+RewriteCond %{REMOTE_HOST} \.ye$ [NC] #Yemen
+RewriteRule ^(.*)$ /my 404 adress.php/ [NC,L]</ifModule> 
+
+#Alternative:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER} ^https://.*amazonaws\.com [OR]
+RewriteCond %{REMOTE_HOST} ^.*\.compute-1\.amazonaws\.com$ [NC,OR]  
+RewriteRule ^(.*)$ – [F,L]</IfModule>
+
+#Alternative:
+
+RewriteCond %{HTTP_HOST} !^example\.com [NC]
+RewriteCond %{HTTP_HOST} !^$
+RewriteRule ^/?(.*) https://example.com/$1 [L,R,NE]
+
+#Alternative:
+RewriteCond %{HTTP_HOST} ^example.de [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.net$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.de$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.org$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.info$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.at$ [OR]
+RewriteCond %{HTTP_HOST} ([^.]+)\.example\.ch$
+RewriteRule (.*) https://example.com/$1 [R=301,L]
+
+THIS WORKS GREAT for me, use it my content folder:  Tired of Kina and Hongkong...
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.hk$ [NC] #Hongkong
+RewriteCond %{HTTP:From} \.hk$ [NC,OR] #Hongkong
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.CN$ [NC] #Kina
+RewriteCond %{HTTP:From} \.CN$ [NC,OR] #KINA
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+# Example:  
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} \.XX$ [NC] #Country
+RewriteCond %{HTTP:From} \.XX$ [NC,OR] #Country
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+#Alternative:
+RewriteCond %{HTTP_REFERER} (.cc) [NC,OR]
+
+RewriteCond %{HTTP_REFERER} (.ru) [NC,OR]
+
 ........................................................................................
 ........................................................................................
 # Redirect wp-login.php
@@ -2291,11 +2377,9 @@ Deny from all
 ........................................................................................
 ........................................................................................
 # Below They will see any file that is .php as .g file.
-#let them see php as g  
+#let them see php as g  - from:Disguise Script Extensions (https://perishablepress.com)
 
 RewriteRule ^(.*)\.g$ $1.php
-
-Disguise Script Extensions (https://perishablepress.com)
 
 # serve foo files as php files:
 
@@ -2502,6 +2586,10 @@ RedirectMatch 403 admin\.webring\.docs\.
 Redirectmatch 403 Table\/Latest\/index\.
 </IfModule>
 
+If needed:
+RedirectMatch 403 (?i)/+.cache/
+RedirectMatch 403 (?i)/+upload
+
 ***Copy what you need ans add it to your .htaccess1*
 ........................................................................................
 ........................................................................................
@@ -2666,45 +2754,55 @@ RewriteRule ^(.*)$ - [R=403,L]
 ........................................................................................
 # Useful in wp-config.php:
 
-define(‘WP_CRON_LOCK_TIMEOUT’,480);
-define(‘WP_ALLOW_REPAIR’,true);
-
 # IF needed avoid https requests:  If you are under attack! (Use only temporarily, may stop upgrading checking) 
 In wp-config php file:
-
 define('DISABLE_WP_CRON',true);
 
-# Other usefuls:
+# CRON: Time out:
+define(‘WP_CRON_LOCK_TIMEOUT’,480);
 
+# Other usefuls:
 define('WP_DISABLE_FATAL_ERROR_HANDLER',true);   
 
 # Memory:
-
 define('WP_MAX_MEMORY_LIMIT','128M'); (or: 512M)
 
 Cache:
-
 define('WP_CACHE',true);
 
 # Enable automatic WordPress updates:
-
 define(‘WP_AUTO_UPDATE_CORE’,true);
 define('WP_AUTO_UPDATE_CORE',‘minor’);
 
-# If no:
+# Disable all automatic updates
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+# Disable automatic updates for core
+define( 'WP_AUTO_UPDATE_CORE', false );
+# Disable automatic updates for themes
+add_filter( 'auto_update_theme', '__return_false' );
+# Disable automatic updates for plugins
+add_filter( 'auto_update_plugin', '__return_false' );
 
+# If no update:
 define('AUTOMATIC_UPDATER_DISABLED',true);
 
-T# o limit the number of revisions, just replace the false value with any integer number. 
+# To limit the number of revisions, just replace the false value with any integer number. 
 For instance, the following line limits the revisions to just 12.
-
 define('WP_POST_REVISIONS',12);
 
+- OR:
+Disable WP_POST_REVISIONS::
+define( 'WP_POST_REVISIONS', false );:
+
+# Changing the Autosave Interval:
+define( 'AUTOSAVE_INTERVAL', 120 ); // Seconds
 Trash:
+define('EMPTY_TRASH_DAYS',3);   
 
-define('EMPTY_TRASH_DAYS',3);     
+# By default, WP_CACHE is not defined, // Enable caching in WordPress
+define( 'WP_CACHE', true ); 
 
-Orher usefull:
+# # Orher usefull:
 
 define('WP_DEBUG_DISPLAY',false);
 
@@ -2734,11 +2832,41 @@ After settings.php: (if no errors reporting): (php.ini)
 define('display_errors','off');
 
 #Set to 'false' to disable secure session cookies and to allow log-in without HTTPS.
-    define("SECURE_COOKIES",true);
+define("SECURE_COOKIES",true);
 	
 #Enable GZIP compression for responses
-   define('ENABLE_RESPONSE_COMPRESSION',true);
-   
+define('ENABLE_RESPONSE_COMPRESSION',true);
+
+
+#Enforce the Use of ‘FTP’:
+define(‘FS_METHOD’, ‘ft
+
+#Method to ensure that the plugins are being installed by a valid user is to force users to provide ‘FTP’ details:
+define(‘FS_METHOD’, ‘ftpext’);
+
+#If your web host or server supports ‘FTPS’ then add the following lines in the config file:
+define(‘FTP_SSL’, true);
+
+#If your web host or server supports ‘SFTP’ then add the following lines:
+
+define(‘FS_METHOD’, ‘ssh2’);
+
+# I Controlling Script Concatenation and Minification:
+define( 'CONCATENATE_SCRIPTS', true );
+define('COMPRESS_SCRIPTS', true); 
+define('COMPRESS_CSS', true); 
+define('ENFORCE_GZIP', true);      //forces gzip for compression instead of deflate
+
+# Repairing and Optimizing The Database:  Once the process is complete, 
+you should remove the WP_ALLOW_REPAIR line from your wp-config.php file to prevent anyone else from accessing the feature.
+define( 'WP_ALLOW_REPAIR', true );
+
+# Handling memory limitations:
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );
+-OR:
+define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+
+
 ........................................................................................
 ........................................................................................
 #DENY: VPN:  Test it and see?
@@ -2756,10 +2884,18 @@ Change:sites to folder/ wp-content/uploads
 
 RewriteRule ^sites\/default\/files\/(protected_download_dir\/.*)$ index.php?q=system/files/$1 [L,QSA]
 
-#Prevent Downloading
+#  Alternative:
+<IfModule mod_alias.c>
+RedirectMatch 403 ^/wp-content/uploads/
+</IfModule>
+
+# Prevent Downloading
 Sometimes you want to force the browser to display some content instead of downloading it.
 Change: myfile here to what it is: Pdf or whatever.
 
+........................................................................................
+........................................................................................
+# DIV:
 <Files tent should always be UTF-8 encoded, no?  Note: Not always working, but try andse!
 
 # Use UTF-8 encoding for anything served text/plain or text/html
@@ -2892,7 +3028,7 @@ js 404.php https://www.exemple.se
 css 404.php https://exemple.se	
 css 404.php https://www.exemple.se
 
-BBQ:
+BBQ PRO:
 referrer=https:// 
 referrer=http://		
 ........................................................................................
@@ -3046,7 +3182,6 @@ Disallow: /
 User-agent: GPT-4 
 Disallow: /
 
-
 User-agent: Google-Extended   
 Disallow: /
 User-agent: Google Bard AI
@@ -3136,4 +3271,4 @@ disallow: /
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231006  17.49
+Uodated: 231010
