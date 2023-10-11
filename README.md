@@ -115,7 +115,8 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
--Updated: 231010, maybe list some more funktion, if needed:)
+'-Updated: 231011, htaccess1, delateed a post not needed anymore!
+- Updated: 231010, maybe list some more funktion, if needed:)
 - Updated: 231009, htacces - the one I use, small erros + added protection for zombie bots.
 - Updated: 231006 .htaccess1 folders for better performace.
 - Updated: 231006  wp-includes folder.
@@ -123,9 +124,9 @@ UPDATED FILES AND FOLDERS:
 - Updated: 231003 htaccess1 for better security:)
 - Updated: 230929 wpincludes.
 - Updated: 230929 wp-content, biglist:)
-- Updated:230927 htaccess1 and tested:)
-- Updated:230916, well known flder with more alternive.
-- Updated:230924 wp-content, with working htacces file!
+- Updated: 230927 htaccess1 and tested:)
+- Updated: 230916, well known flder with more alternive.
+- Updated: 230924 wp-content, with working htacces file!
 - Updated: 230921: htaccess1 some boubles and a non workigt file:)
 - Updated: 230918 wp-includes,works with wp,62+
 - Updated: 230918 wp.content, small error and .htaccess that do not work!
@@ -146,8 +147,8 @@ UPDATED FILES AND FOLDERS:
 _ Updated: 230828  ALL .htacces1 and checked = working good! Updated maybe list.
 - Updated: 230827, htaccess1 and Perrish firewall - up to date!
 - Updated: 230825 htaccess1 folder, missing php in a row
-- Updated:230816 Custom codes BBQ - missed som important files yesterday.
-- Updated:230815 Custom codes BBQ
+- Updated: 230816 Custom codes BBQ - missed som important files yesterday.
+- Updated: 230815 Custom codes BBQ
 - Updated: 230721, htaccess for better performance.
 - Updated: 230720, wp content folders with more alternatives, and a error delate! Works fine and tested:)
 - Added 230717 better memorry leak deny, better error deny:)
