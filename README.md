@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+-Updated: 231012, if you only want some useragents.
 '-Updated: 231011, htaccess1, delateed a post not needed anymore!
 - Updated: 231010, maybe list some more funktion, if needed:)
 - Updated: 231009, htacces - the one I use, small erros + added protection for zombie bots.
