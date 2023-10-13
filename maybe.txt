@@ -1643,9 +1643,9 @@ RewriteCond%{HTTP_REFERER} ^http://.*myprintscreen.com/ [NC,OR]
 #IF Needed:
 SetEnvIfNoCase User-Agent ^BackWeb bad_bot
 SetEnvIfNoCase User-Agent ^Black bad_bot
-SetEnvIfNoCase User-Agent Grab bad_bot
+SetEnvIfNoCase User-Agent ^Grab bad_bot
 SetEnvIfNoCase User-Agent ^Info bad_bot
-SetEnvIfNoCase User-Agent site bad_bot
+SetEnvIfNoCase User-Agent ^site bad_bot
 SetEnvIfNoCase User-Agent ^Get bad_bot
 SetEnvIfNoCase User-Agent ^Link bad_bot
 SetEnvIfNoCase User-Agent ^Download bad_bot
@@ -2776,10 +2776,13 @@ define('WP_AUTO_UPDATE_CORE',‘minor’);
 
 # Disable all automatic updates
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
 # Disable automatic updates for core
 define( 'WP_AUTO_UPDATE_CORE', false );
+
 # Disable automatic updates for themes
 add_filter( 'auto_update_theme', '__return_false' );
+
 # Disable automatic updates for plugins
 add_filter( 'auto_update_plugin', '__return_false' );
 
@@ -3267,8 +3270,12 @@ user-agent: ua2
 user-agent: ua3
 user-agent: ua4
 disallow: /
+.......................................................................................
+.......................................................................................
+# If needed: https:// on:
+RewriteCond%{HTTPS}!on RewriteRule(.*)https://%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
 
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231010
+Uodated: 231013
