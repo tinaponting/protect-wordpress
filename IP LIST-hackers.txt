@@ -16,3 +16,126 @@ https://hetzner.de
 https://www.hetzner.com
 https://www.hetzner.com/de
 https://ovh.com
+
+::::::::::::::::::::::::::::::::::::::::::
+
+100.92-220-10.customer.lyse.net
+c-2ec2e715-74736162.cust.telenor.se
+crawler-46-246-64-21.twingly.com
+customer-nat.pub.webpod12-cph3.one.com
+crawling-gateway-136-243-228-177.dataforseo.com
+gateway.trafikverket.se
+ns541105.ip-144-217-180.net
+ns5003452.ip-51-222-44.net
+h08.tiss.fun
+host-162-244-144-16.static.sprious.com
+host-138-229-108-29.static.sprious.com
+web02.emnia-web-studio.se)[NC,OR]
+81-233-72-141-no600.tbcn.telia.com
+c188-151-148-131.bredband.tele2.se
+static.41.1.108.65.clients.your-server.de
+static.39.1.108.65.clients.your-server.de
+static.94.2.108.65.clients.your-server.de
+static.214.41.76.144.clients.your-server.de
+static.219.1.108.65.clients.your-server.de
+static.228.0.108.65.clients.your-server.de
+static.214.41.76.144.clients.your-server.de
+static.175.193.203.116.clients.your-server.de
+static.88-198-255-177.clients.your-server.de
+static.93.53.63.178
+static.118.99.46.78
+static.118.133.90.157
+static.124.44.63.178
+static.165.155.109.65
+static.225.44.63.178
+clients.your-server.de
+rch003.net
+linux08.r00tbase.de
+linux13.r00tbase.de
+hzfn1.bvserver.net
+hzfn2.bvserver.net
+hzfn3.bvserver.net
+hzfn4.bvserver.net
+hzfn5.bvserver.net
+hzfn6.bvserver.net
+hzfn7.bvserver.net
+hzfn8.bvserver.net
+hzfn9.bvserver.net
+hzfn10.bvserver.net
+hzfn11.bvserver.net
+hzfn12.bvserver.net
+hzfn13.bvserver.net
+hzfn14.bvserver.net
+hzfn16.bvserver.net
+hzfn17.bvserver.net
+hzfn18.bvserver.net
+hzfn19.bvserver.net
+hzfn20.bvserver.net
+hzfn21.bvserver.net
+hzfn22.bvserver.net
+hzfn23.bvserver.net
+
+
+deny from 5.9.0.0/16
+deny from 23.88.0.0/17
+deny from 23.88.0.0/18
+deny from 37.27.0.0/16
+deny from 44.76.0.0/16
+deny from 46.4.0.0/16
+deny from 49.12.0.0/16
+deny from 49.13.0.0/16
+deny from 65.108.0.0/16
+deny from 65.21.0.0/16
+deny from 65.109.0.0/16
+deny from 78.46.0.0/15
+deny from 78.46.120.0/23
+deny from 78.46.95.173
+deny from 78.46.120.51/255
+deny from 78.46.180.0/255
+deny from 85.10.192.0/18
+deny from 88.99.0.0/16
+deny from 88.198.0.0/16
+deny from 94.130.0.0/16
+deny from 95.216.0.0 
+deny from 95.216.0.0/16	
+deny from 95.216.24.0/125
+deny from 95.216.255.255
+deny from 116.202.0.0/16
+deny from 116.203.0.0/16
+deny from 128.140.0.0/17
+deny from 128.140.48.0/21
+deny from 128.140.52.0/22
+deny from 128.140.54.14/16
+deny from 128.140.54.0/24
+deny from 128.140.54.1/254 
+deny from 128.140.54.16
+deny from 128.140.54.8
+deny from 128.140.54.8
+deny from 129.232.128.0/17
+deny from 135.181.0.0/16
+deny from 136.243.0.0/16
+deny from 138.201.0.0/16
+deny from 142.132.128.0/17
+deny from 138.246.253.24
+deny from 144.76.0.0/16
+deny from 148.251.0.0/16
+deny from 148.251.0.0/16
+deny from 157.90.0.0/16
+deny from157.230.100.151	
+deny from 159.69.0.0/16	1
+deny from 162.55.0.0/16
+deny from 162.55.167.61
+deny from 162.244.144.16
+deny from 167.233.0.0/16
+deny from 167.235.0.0/16
+deny from 168.119.0.0/16
+deny from 176.9.0.0/16
+deny from 178.63.0.0/16
+deny from 188.40.0.0/16
+deny from 188.34.159.21
+deny from 195.201.0.0/16
+deny from 196.251.116.0/22
+deny from 213.133.96.0/19
+deny from 213.239.192.0/18
+deny from 2a01:4f8::/29	
+deny from 2a06:1301:4050::/48
