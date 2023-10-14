@@ -3270,6 +3270,21 @@ user-agent: ua2
 user-agent: ua3
 user-agent: ua4
 disallow: /
+
+# I stoped some of AI scrapers by this:
+
+SetEnvIfNoCase USER_AGENT "python-requests/2.26.0" bad_bot
+SetEnvIfNoCase USER_AGENT "python-requests" bad_bot
+
+RewriteCond%{{HTTP_USER_AGENT}HtmlRequestScraper [NC]
+
+RewriteCond%{{HTTP_USER_AGENT}GoogleScraper [NC]
+
+# Alternative:
+
+SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
+
+SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3278,4 +3293,4 @@ RewriteCond%{HTTPS}!on RewriteRule(.*)https://%{HTTP_HOST}%{REQUEST_URI}[L,R=301
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231013
+Uodated: 231014
