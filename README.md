@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231018, htacces1 better header security.
 - Updated: 231016, htacces1 for a secure site:)
 - Updated: 231012, if you only want some useragents.
 '-Updated: 231011, htaccess1, delateed a post not needed anymore!
