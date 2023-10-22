@@ -21,13 +21,13 @@ RewriteCond%{HTTP_USER_AGENT}^.*Opera* [NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Mozilla* [NC]
 RewriteCond%{HTTP_USER_AGENT}^Python-urllib [NC]
 RewriteCond%{HTTP_REFERER}^bc.googleusercontent\.com$ [NC]
-RewriteCond% HTTP_REFERER}^bc.googleusercontent\.com$ [NC]
 Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[NC]
 Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[NC]
-RewriteCond%{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$[NC]
+RewriteCond%{HTTP_REFERER}^$
+RewriteCond%{HTTP:Accept-Encoding}^$[NC]
 RewriteCond%{HTTP_USER_AGENT} ^-?$
 RewriteCond%{HTTP_USER_AGENT} ^User-Agent
-RewriteCond %{HTTP_USER_AGENT} Java.*
+RewriteCond%{HTTP_USER_AGENT} Java.*
 RewriteRule ^/(.*)$ /$1 [F]</IfModule>
 
 # Alternative: Just add it above!
@@ -3404,7 +3404,10 @@ SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
 # If needed: https:// on:
 RewriteCond%{HTTPS}!on RewriteRule(.*)https://%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
 
+#Don't allow screenshots
+RewriteCond %{REQUEST_URI} screenshot(?:\-\d+)?\.(?:jpe?g|png|gif)$ [NC,OR]
+
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231017
+Uodated: 231022
