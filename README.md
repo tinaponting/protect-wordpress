@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231025 wp-coontent with alternatives.
 - Updated: 231023,htaccess1  for better protection, works very well:)  withon my htaccess1: deny;  bytesdance/petalbot hell!
 - Updated: 231018, htacces1 better header security.
 - Updated: 231016, htacces1 for a secure site:)
