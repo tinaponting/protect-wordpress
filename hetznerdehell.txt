@@ -1,0 +1,212 @@
+ns541105.ip-144-217-180.net
+ns5003452.ip-51-222-44.net
+h08.tiss.fun
+static.41.1.108.65.clients.your-server.de
+static.39.1.108.65.clients.your-server.de
+static.94.2.108.65.clients.your-server.de
+static.107.114.9.176.clients.your-server.de
+static.214.41.76.144.clients.your-server.de
+static.219.1.108.65.clients.your-server.de
+static.228.0.108.65.clients.your-server.de
+static.214.41.76.144.clients.your-server.de
+static.175.193.203.116.clients.your-server.de
+static.88-198-255-177.clients.your-server.de
+static.255.217.217.95.clients.your-server.de
+static.93.53.63.178
+static.118.99.46.78
+static.118.133.90.157
+static.124.44.63.178
+static.165.155.109.65
+static.225.44.63.178
+clients.your-server.de
+rch003.net
+linux08.r00tbase.de
+linux13.r00tbase.de
+hzfn1.bvserver.net
+hzfn2.bvserver.net
+hzfn3.bvserver.net
+hzfn4.bvserver.net
+hzfn5.bvserver.net
+hzfn6.bvserver.net
+hzfn7.bvserver.net
+hzfn8.bvserver.net
+hzfn9.bvserver.net
+hzfn10.bvserver.net
+hzfn11.bvserver.net
+hzfn12.bvserver.net
+hzfn13.bvserver.net
+hzfn14.bvserver.net
+hzfn16.bvserver.net
+hzfn17.bvserver.net
+hzfn18.bvserver.net
+hzfn19.bvserver.net
+hzfn20.bvserver.net
+hzfn21.bvserver.net
+hzfn22.bvserver.net
+hzfn23.bvserver.net
+
+
+
+deny from 5.9.0.0/16
+deny from 5.75.128.0/17					
+deny from 5.161.0.0/21	
+deny from 5.161.25.0/24	
+deny from 5.161.164.0/22		
+deny from 5.161.168.0/21		
+deny from 5.161.232.0/21	
+deny from 5.161.240.0/20
+deny from 23.88.0.0/18
+deny from 37.27.0.0/16
+deny from 44.76.0.0/16
+deny from 45.15.120.0/22
+deny from 45.136.70.0/23	
+deny from 45.148.28.0/22	
+deny from 46.4.0.0/16	
+deny from 46.62.128.0/17	
+deny from 49.12.0.0/1
+deny from 49.12.0.0/15
+deny from 49.12.66.1/24
+deny from 49.12.66.7
+deny from 49.12.66.0/255
+deny from 49.12.215.162
+deny from 49.13.255.255   
+deny from 49.13.0.0/16	
+deny from 65.21.0.0/16
+deny from 65.108.0.0/15	
+deny from 65.108.0.0/16
+deny from 65.109.0.0/16
+deny from 65.109.156.20
+deny from 77.42.0.0/17	
+deny from 78.46.0.0/15
+deny from 78.46.120.0/23
+deny from 78.46.95.173
+deny from 78.46.120.51
+deny from 78.46.120.0/24
+deny from 78.46.120.51/59
+deny from 78.46.180.0/23
+deny from 78.138.62.0/24
+deny from 85.10.192.0/18
+deny from 88.99.0.0/16
+deny from 85.10.192.0/18
+deny from 88.198.0.0/16
+deny from 89.167.0.0/17			
+deny from 91.99.0.0/16	
+deny from 91.107.128.0/17		
+deny from 91.190.240.0/21		
+deny from 91.233.8.0/22
+deny from 94.130.0.0/16
+deny from 95.216.0.0 
+deny from 95.216.0.0/15
+deny from 95.216.0.0/16
+deny from 95.216.24.0/125
+deny from 95.216.255.255
+deny from 95.217.0.0/16
+deny from 116.202.0.0/15
+deny from 116.202.0.0/16
+deny from 116.202.9.0/24
+deny from 116.202.9.194
+deny from 116.203.0.0/1
+deny from 128.140.54.12
+deny from 128.140.0.0/17
+deny from 128.140.48.0/21
+deny from 128.140.52.0/22
+deny from 128.140.54.1/24  
+deny from 128.140.54.24/34
+deny from 128.140.54.1/24
+deny from 128.140.54.8
+deny from 128.140.54.13
+deny from 128.140.54.18
+deny from 128.140.54.1/24
+deny from 128.140.54.0/24
+deny from 128.140.54.0/254
+deny from 128.140.54.13/254
+deny from 128.140.54.14/16
+deny from 128.140.54.0/24
+deny from 128.140.54.1/24
+deny from 128.99.0.0/255
+deny from 129.232.128.0/17
+deny from 135.181.0.0/16
+deny from 136.243.0.0/16
+deny from 138.199.128.0/17	
+deny from 138.201.0.0/16
+deny from 138.246.253.24
+deny from 142.132.128.0/17
+deny from 144.76.0.0/16
+deny from 144.76.41.0/24
+deny from 144.76.41.214
+deny from 144.76.255.255
+deny from 148.251.0.0/16			
+deny from 157.90.0.0/16
+deny from 157.90.153.196
+deny from 157.90.153.196
+deny from 157.180.0.0/17
+deny from 159.69.0.0/16	
+deny from 162.55.0.0/16
+deny from 162.55.167.61
+deny from 162.244.144.16
+deny from 167.233.0.0/16
+deny from 167.235.0.0/16	
+deny from 168.119.0.0/16
+deny from 168.119.242.0/23
+deny from 168.119.243.226
+deny from 171.25.225.0/24	
+deny from 176.9.0.0/16
+deny from 178.63.0.0/16
+deny from 178.212.75.0/24	
+deny from 185.12.64.0/22		
+deny from 185.50.120.0/23
+deny from 185.107.52.0/22		
+deny from 185.126.28.0/22	
+deny from 185.136.140.0/23
+deny from 185.157.83.0/24	
+deny from 185.157.176.0/22	
+deny from 185.171.224.0/22		
+deny from 185.189.228.0/22	
+deny from 185.209.124.0/22	
+deny from 185.213.45.0/24		
+deny from 185.216.237.0/24	
+deny from 185.226.99.0/24		
+deny from 185.228.8.0/23	
+deny from 185.242.76.0/24
+deny from 188.34.128.0/17		
+deny from 188.34.130.0/24
+deny from 188.34.165.0/24
+deny from 188.34.159.21
+deny from 188.40.0.0/16
+deny from 188.34.159.21
+deny from 188.245.0.0/16
+deny from 193.25.170.0/23
+deny from 193.110.6.0/23	
+deny from 193.163.198.0/24
+deny from 194.42.180.0/22		
+deny from 194.42.184.0/22		
+deny from 194.62.106.0/24´
+deny from 195.60.226.0/24		
+deny from 195.201.0.0/16
+deny from 196.251.116.0/22
+deny from 197.242.84.0/22	
+deny from 201.131.3.0/24
+deny from 204.29.146.0/24		
+deny from 213.133.96.0/19
+deny from 213.239.192.0/18	
+deny from 213.232.193.0/24
+deny from 213.239.192.0/18
+deny from 216.55.108.0/22	
+deny from 217.78.237.0/24
+
+
+IP 6:
+deny from 2a01:4f8::/29
+deny from 2a01:4f8::/30	
+deny from 2a01:4fc::/31	
+deny from 2a01:4fe::/32	
+deny from 2a01:4ff:400::/38	
+deny from 2a01:4ff:200::/39	
+deny from 2a01:4ff:800::/37			
+deny from 2a01:4ff:1000::/36		
+deny from 2a01:4ff:2000::/35		
+deny from 2a01:4ff:4000::/34		
+deny from 2a01:4ff:8000::/33
+deny from 2a01:4f8::/29	
+deny from 2a06:1301:4050::/48
+	
