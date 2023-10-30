@@ -115,6 +115,7 @@ UPDATES:
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231030, updated htaccess1 with better header security.
 - Updated: 231027, updated, extra .htacces1.
 - Added: 231027, list of hetzner.de Hell - if you got trouble with them.
 - Updated: 231025 wp-coontent with alternatives.
