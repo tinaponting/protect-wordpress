@@ -107,7 +107,7 @@ RewriteCond %{HTTP_USER_AGENT} Firefox/1(.+) [NC,OR]
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_REFERER} nonymousfox\.co
+RewriteCond %{HTTP_REFERER} anonymousfox\.co
 RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
 
@@ -127,6 +127,15 @@ RewriteBase /
 RewriteCond %{HTTP_REFERER} internetvikings\.com
 RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
+
+# Amazon.com /Hell!
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} amazon\.com
+RewriteRule ^ - [NC,F,L]
+</IfModule>
+
 
 # WordPress URLs You Will See Bots Scan For
 
@@ -297,6 +306,7 @@ RewriteCond %{HTTP_USER_AGENT} "\ IE\d" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "Mozilla\ ([0-9])" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "Mozilla/\d\.\d\(" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "Mozilla/\d\.\d\ \(\ " [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla$[NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "MSIE/" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "MSIE\d" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "User\ Agent" [NC,OR]
@@ -435,6 +445,9 @@ RewriteCond %{HTTP_USER_AGENT} ^WordPress [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "PHPCrawl" [NC,OR]
 RewriteRule ^.* - [F,L]
 </IfModule>
+
+Refer>
+SetEnvIfNoCase Referer "^$bad_user  
 
 .......................................................................................
 .......................................................................................
@@ -2982,7 +2995,12 @@ define( 'WP_ALLOW_REPAIR', true );
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 -OR:
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+........................................................................................
+........................................................................................
+#Admin protect>
 
+RewriteRule ^wp-admin/(install|setup-config|upgrade)\.php - [L,R=404]
+RewriteRule ^wp-admin/maint/repair\.php - [L,R=404]
 
 ........................................................................................
 ........................................................................................
@@ -2997,7 +3015,7 @@ RewriteRule ^(.*)$ - [F]
 ........................................................................................
 ........................................................................................
 #No download please:
-Change:sites to folder/ wp-content/uploads
+Change: sites to folder/ wp-content/uploads
 
 RewriteRule ^sites\/default\/files\/(protected_download_dir\/.*)$ index.php?q=system/files/$1 [L,QSA]
 
@@ -3409,5 +3427,30 @@ RewriteCond %{REQUEST_URI} screenshot(?:\-\d+)?\.(?:jpe?g|png|gif)$ [NC,OR]
 
 .......................................................................................
 .......................................................................................
+# Block tentatives to access Wordpress ressources
+RewriteEngine on
+RewriteRule ^(.*)wp-(.*)$ - [F]
+
+.......................................................................................
+.......................................................................................
+# Add Apache rewrite rules to your .htaccess file. 
+For example, the following will redirect all attempts to access files with names starting with, 
+"phpMyAdmin" to index.php.
+
+
+# Sample Apache Rewrite Rule
+
+RewriteRule ^/phpMyAdmin.*$ /index.php
+
+FOR plugins: //Test it!
+
+RewriteRule ^/wp-content/plugins.*$ /index.php
+
+Troubled Plugins:
+RewriteRule ^/wp-content/plugins/plugin name.*$ /index.php
+
+
+.......................................................................................
+.......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231022
+Uodated: 231103
