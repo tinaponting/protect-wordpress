@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231105 wp-includes,a folder not included anymore! Better protection for RSS.
 - Updated: 231103, Better security with, htaccess1 no slow downs!
 - Updated: 231030, updated htaccess1 with better header security.
 - Updated: 231027, updated, extra .htacces1.
