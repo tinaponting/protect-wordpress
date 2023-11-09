@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231109, htacces for better compression!
 - Updaes: 231106, wp-content folder, my htaccess - i use.
 - Updated:231106 Perrishpress 8G:)
 - Updated: 231105 wp-content folder, my htaccess - I use:)
