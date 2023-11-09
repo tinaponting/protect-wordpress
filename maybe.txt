@@ -511,6 +511,7 @@ RewriteRule .* - [F]</IfModule>
 .......................................................................................
 .......................................................................................
 # STOP SPAM:
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteEngine On 
@@ -897,6 +898,14 @@ RewriteRule .(gif|jpg|jpeg|jpe?g|bmp|png|tif|pdf|wav|wmv|wma|avi|mov|mp4|m4v|mp3
 
 RewriteCond%{HTTP_REFERER}!^$
 
+Images theft:
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !=""
+RewriteCond %{HTTP_REFERER} !example\.com [NC]
+RewriteCond %{REQUEST_URI} !=/images/go_away.png
+RewriteRule \.(jpe?g|gif|png)$ /images/go_away.png [NC,L]
+
 .......................................................................................
 .......................................................................................
 # ALTERNATIVE Protection, uploads/content folder:
@@ -905,7 +914,7 @@ RewriteCond%{HTTP_REFERER}!^$
 <FilesMatch "\.(7z|as|bat|bin|cgi|chm|chml|class|cmd|com|command|dat|db|db2|db3|dba|dll|
 DS_Store|exe|gz|hta|htaccess|htc|htx|idc|ini|ins|isp|jar|jav|java|jse|jsfl|json|jsp|jsx|lib|
 lnk|out|php|phps|php5|php4|php3|phtml|phpt|pl|py|pyd|pyc|pyo|rar|shtm|shtml|sql|sys|tar|taz|tgz|tpl|vb|vbe|vbs|war|ws|wsf|xhtml|xml|z)$">
-Order Deny,Allow Deny from all
+Order Deny,Allow Deny from allRewriteCond%{HTTP_REFERER}!^$
 
 
 # Restrict the type of executable files and display
@@ -1193,6 +1202,243 @@ ModPagespeedEnableFilters recompress_images
 ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
 ModPagespeedEnableFilters collapse_whitespace,remove_comments
 </IfModule>
+
+# BROTOLI COMPRESSION:  Better than GZIP, but not on every webhotell.
+
+<IfModule mod_brotli.c>
+<IfModule mod_filter.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/xml text/plain
+AddOutputFilterByType BROTLI_COMPRESS application/rss+xml application/xml application/xhtml+xml
+AddOutputFilterByType BROTLI_COMPRESS text/css
+AddOutputFilterByType BROTLI_COMPRESS text/javascript application/javascript application/x-javascript
+AddOutputFilterByType BROTLI_COMPRESS image/x-icon image/svg+xml
+AddOutputFilterByType BROTLI_COMPRESS application/rss+xml
+AddOutputFilterByType BROTLI_COMPRESS application/font application/font-truetype application/font-ttf
+AddOutputFilterByType BROTLI_COMPRESS application/font-otf application/font-opentype
+AddOutputFilterByType BROTLI_COMPRESS application/font-woff application/font-woff2
+AddOutputFilterByType BROTLI_COMPRESS application/vnd.ms-fontobject
+AddOutputFilterByType BROTLI_COMPRESS font/ttf font/otf font/opentype font/woff font/woff2
+</IfModule>
+</IfModule>
+<IfModule mod_deflate.c>
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE text/html text/xml text/plain
+AddOutputFilterByType DEFLATE application/rss+xml application/xml application/xhtml+xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+AddOutputFilterByType DEFLATE image/x-icon image/svg+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/font application/font-truetype application/font-ttf
+AddOutputFilterByType DEFLATE application/font-otf application/font-opentype
+AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE font/ttf font/otf font/opentype font/woff font/woff2
+</IfModule>
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteRule "\.(gz|br)$" "-" [E=no-gzip:1,E=no-brotli:1]
+</IfModule>
+<IfModule !mod_rewrite.c>
+<IfModule mod_setenvif.c>
+SetEnvIfNoCase Request_URI \.(gz|br)$ no-gzip no-brotli
+</IfModule>
+</IfModule>
+
+........................................................................................
+........................................................................................ 
+# Alternative GZIP Compression:
+ 
+ <IfModule !mod_filter.c>
+AddOutputFilterByType DEFLATE text/html text/css text/plain
+AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+AddOutputFilterByType DEFLATE application/xhtml+xml application/xslt+xml application/rss+xml application/atom+xml
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/javascript application/json application/x-javascript text/ecmascript text/javascript
+AddOutputFilterByType DEFLATE image/vnd.microsoft.icon image/x-icon image/bmp image/tiff
+AddOutputFilterByType DEFLATE application/pdf
+AddOutputFilterByType DEFLATE font/opentype application/x-font-ttf application/vnd.ms-fontobject
+</IfModule>
+</IfModule>
+
+<IfModule mod_deflate.c>
+<IfModule mod_setenvif.c>
+<IfModule mod_headers.c>
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s,?\s(gzip|deflate)?|X{4,13}|~{4,13}|-{4,13})$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+</IfModule>
+</IfModule>
+<IfModule filter_module>
+FilterDeclare   COMPRESS
+FilterProvider  COMPRESS  DEFLATE resp=Content-Type /text/(html|css|javascript|plain|x(ml|-component))/
+FilterProvider  COMPRESS  DEFLATE resp=Content-Type /application/(javascript|json|xml|x-javascript)/
+FilterChain     COMPRESS
+FilterProtocol  COMPRESS  change=yes;byteranges=no
+</IfModule>
+<IfModule !mod_filter.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/css application/json
+AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript 
+AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+</IfModule>
+<FilesMatch "\.(ttf|otf|eot|svg|php)$" >
+SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+
+# More compression, if needed:
+
+<ifModule mod_deflate.c>
+<filesMatch "\.(css|js|x?html?|php)$">
+SetOutputFilter DEFLATE
+</filesMatch>
+</ifModule>
+
+# Try this:
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE application/javascript text/css
+</IfModule>
+
+#  COMBINE CSS, COMPRESS IMAGES, REMOVE HTML WHITE SPACE AND COMMENTS
+
+<IfModule pagespeed_module>
+ModPagespeed on
+ModPagespeedEnableFilters rewrite_css,combine_css
+ModPagespeedEnableFilters recompress_images
+ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
+ModPagespeedEnableFilters collapse_whitespace,remove_comments
+</IfModule>
+# TN — ENABLE MOD PAGESPEED END
+
+# FONTS:
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE application/font-otf application/font-ttf application/font-woff application/javascript application/json application/manifest+json application/rss+xml application/vnd.ms-fontobject application/xhtml+xml application/xml application/x-javascript image/svg+xml text/css text/csv text/html text/javascript text/plain text/xml
+</IfModule>
+</IfModule>
+
+# OR:
+
+RewriteRule ^.*.(?:css|js)$ $0.gz [L,QSA]
+
+# Compress js/css:
+
+files *.js.gz>
+AddType "text/javascript" .gz
+AddEncoding gzip .gz
+</files>
+<files *.css.gz>
+AddType "text/css" .gz
+AddEncoding gzip .gz
+</files>
+
+#:
+
+<FilesMatch *.(html|css|jpg|jpeg|png|gif|js|ico)>
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+# OR:
+
+<IfModule mod_headers.c>
+RewriteCond "%{HTTP:Accept-encoding}" "gzip"
+RewriteCond "%{REQUEST_FILENAME}\.gz" -s
+RewriteRule "^(.*)\.(css|js)" "$1\.$2\.gz" [QSA]
+RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-gzip:1]
+RewriteRule "\.js\.gz$"  "-" [T=text/javascript,E=no-gzip:1]
+<FilesMatch "(\.js\.gz|\.css\.gz)$">
+Header append Content-Encoding gzip
+Header append Vary Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+# OR:
+
+<IfModule mod_headers.c>
+<FilesMatch ".(js|css|xml|gz|html)$">
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+# OR:
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(js|css|xml|gz)$">
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+
+# OR:
+
+</IfModule>
+<FilesMatch "\.js$">
+RewriteEngine On
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule (.*)\.js$ $1\.js.gz [L]
+ForceType text/javascript
+</FilesMatch>
+<FilesMatch "\.js\.gz$">
+ForceType text/javascript
+Header set Content-Encoding gzip
+Header set Vary Accept-Encoding
+</FilesMatch>
+
+# FONTS:
+<IfModule mod_mime.c>
+AddType application/vnd.ms-fontobject  eot
+AddType application/x-font-ttf   ttf ttc
+AddType font/opentype  otf
+AddType application/x-font-woff  woff woff2
+AddType image/svg+xml  svg svgz
+AddEncoding gzip  svgz
+</IfModule>
+
+# Headers.
+<IfModule mod_headers.c>
+RewriteCond "%{HTTP:Accept-encoding}" "gzip"
+RewriteCond "%{REQUEST_FILENAME}\.gz" -s
+<FilesMatch "(\.js\.gz|\.css\.gz)$">
+Header append Content-Encoding gzip
+Header append Vary Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+
+## Audio files expiration: 1 month after request:
+
+ExpiresByType audio/ogg "now plus 1 month"
+ExpiresByType application/ogg "now plus 1 month"
+ExpiresByType audio/basic "now plus 1 month"
+ExpiresByType audio/mid "now plus 1 month"
+ExpiresByType audio/midi "now plus 1 month"
+ExpiresByType audio/mpeg "now plus 1 month"
+ExpiresByType audio/mp3 "now plus 1 month"
+ExpiresByType audio/x-aiff "now plus 1 month"
+ExpiresByType audio/x-mpegurl "now plus 1 month"
+ExpiresByType audio/x-pn-realaudio "now plus 1 month"
+ExpiresByType audio/x-wav "now plus 1 month"
+
+## Movie files expiration: 1 month after request:
+
+ExpiresByType application/x-shockwave-flash "now plus 1 month"
+ExpiresByType x-world/x-vrml "now plus 1 month"
+ExpiresByType video/x-msvideo "now plus 1 month"
+ExpiresByType video/mpeg "now plus 1 month"
+ExpiresByType video/mp4 "now plus 1 month"
+ExpiresByType video/quicktime "now plus 1 month"
+ExpiresByType video/x-la-asf "now plus 1 month"
+ExpiresByType video/x-ms-asf "now plus 1 month"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+
+# Turn off the Last Modified header except for html docs:
+
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+Header unset Last-Modified
+</FilesMatch>
 
 ........................................................................................
 ........................................................................................
@@ -2061,7 +2307,7 @@ SetEnvIfNoCase User-Agent "plugin_error_Scan" bad_bots
 SetEnvIfNoCase User-Agent "Zombi" bad_bots
 ........................................................................................
 ........................................................................................
-# Stop WPSCAN: (added htacess2 -extended version:
+# Stop WPSCAN: 
 # Detect that someone is accessing those strange files
 
 <IfModule mod_rewrite.c>
@@ -2105,244 +2351,6 @@ DENY google proxy;
 RewriteCond %{HTTP_REFERER} google-proxy-00-000-000-00.google.com\.com
 
 ADD IP: 000 and so on.
-........................................................................................
-........................................................................................
-# BROTOLI COMPRESSION:  Better than GZIP, but not on every webhotell.
-
-<IfModule mod_brotli.c>
-<IfModule mod_filter.c>
-AddOutputFilterByType BROTLI_COMPRESS text/html text/xml text/plain
-AddOutputFilterByType BROTLI_COMPRESS application/rss+xml application/xml application/xhtml+xml
-AddOutputFilterByType BROTLI_COMPRESS text/css
-AddOutputFilterByType BROTLI_COMPRESS text/javascript application/javascript application/x-javascript
-AddOutputFilterByType BROTLI_COMPRESS image/x-icon image/svg+xml
-AddOutputFilterByType BROTLI_COMPRESS application/rss+xml
-AddOutputFilterByType BROTLI_COMPRESS application/font application/font-truetype application/font-ttf
-AddOutputFilterByType BROTLI_COMPRESS application/font-otf application/font-opentype
-AddOutputFilterByType BROTLI_COMPRESS application/font-woff application/font-woff2
-AddOutputFilterByType BROTLI_COMPRESS application/vnd.ms-fontobject
-AddOutputFilterByType BROTLI_COMPRESS font/ttf font/otf font/opentype font/woff font/woff2
-</IfModule>
-</IfModule>
-<IfModule mod_deflate.c>
-<IfModule mod_filter.c>
-AddOutputFilterByType DEFLATE text/html text/xml text/plain
-AddOutputFilterByType DEFLATE application/rss+xml application/xml application/xhtml+xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
-AddOutputFilterByType DEFLATE image/x-icon image/svg+xml
-AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/font application/font-truetype application/font-ttf
-AddOutputFilterByType DEFLATE application/font-otf application/font-opentype
-AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
-AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-AddOutputFilterByType DEFLATE font/ttf font/otf font/opentype font/woff font/woff2
-</IfModule>
-</IfModule>
-<IfModule mod_rewrite.c>
-RewriteRule "\.(gz|br)$" "-" [E=no-gzip:1,E=no-brotli:1]
-</IfModule>
-<IfModule !mod_rewrite.c>
-<IfModule mod_setenvif.c>
-SetEnvIfNoCase Request_URI \.(gz|br)$ no-gzip no-brotli
-</IfModule>
-</IfModule>
-
-........................................................................................
-........................................................................................ 
-# Alternative GZIP Compression:
- 
- <IfModule !mod_filter.c>
-AddOutputFilterByType DEFLATE text/html text/css text/plain
-AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
-AddOutputFilterByType DEFLATE application/xhtml+xml application/xslt+xml application/rss+xml application/atom+xml
-AddOutputFilterByType DEFLATE image/svg+xml
-AddOutputFilterByType DEFLATE application/javascript application/json application/x-javascript text/ecmascript text/javascript
-AddOutputFilterByType DEFLATE image/vnd.microsoft.icon image/x-icon image/bmp image/tiff
-AddOutputFilterByType DEFLATE application/pdf
-AddOutputFilterByType DEFLATE font/opentype application/x-font-ttf application/vnd.ms-fontobject
-</IfModule>
-</IfModule>
-
-<IfModule mod_deflate.c>
-<IfModule mod_setenvif.c>
-<IfModule mod_headers.c>
-SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s,?\s(gzip|deflate)?|X{4,13}|~{4,13}|-{4,13})$ HAVE_Accept-Encoding
-RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-</IfModule>
-</IfModule>
-<IfModule filter_module>
-FilterDeclare   COMPRESS
-FilterProvider  COMPRESS  DEFLATE resp=Content-Type /text/(html|css|javascript|plain|x(ml|-component))/
-FilterProvider  COMPRESS  DEFLATE resp=Content-Type /application/(javascript|json|xml|x-javascript)/
-FilterChain     COMPRESS
-FilterProtocol  COMPRESS  change=yes;byteranges=no
-</IfModule>
-<IfModule !mod_filter.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/css application/json
-AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript 
-AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
-</IfModule>
-<FilesMatch "\.(ttf|otf|eot|svg|php)$" >
-SetOutputFilter DEFLATE
-</FilesMatch>
-</IfModule>
-
-# More compression, if needed:
-
-<ifModule mod_deflate.c>
-<filesMatch "\.(css|js|x?html?|php)$">
-SetOutputFilter DEFLATE
-</filesMatch>
-</ifModule>
-
-# Try this:
-
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE application/javascript text/css
-</IfModule>
-
-#  COMBINE CSS, COMPRESS IMAGES, REMOVE HTML WHITE SPACE AND COMMENTS
-
-<IfModule pagespeed_module>
-ModPagespeed on
-ModPagespeedEnableFilters rewrite_css,combine_css
-ModPagespeedEnableFilters recompress_images
-ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
-ModPagespeedEnableFilters collapse_whitespace,remove_comments
-</IfModule>
-# TN — ENABLE MOD PAGESPEED END
-
-# FONTS:
-
-<IfModule mod_deflate.c>
-SetOutputFilter DEFLATE
-<IfModule mod_filter.c>
-AddOutputFilterByType DEFLATE application/font-otf application/font-ttf application/font-woff application/javascript application/json application/manifest+json application/rss+xml application/vnd.ms-fontobject application/xhtml+xml application/xml application/x-javascript image/svg+xml text/css text/csv text/html text/javascript text/plain text/xml
-</IfModule>
-</IfModule>
-
-# OR:
-
-RewriteRule ^.*.(?:css|js)$ $0.gz [L,QSA]
-
-# Compress js/css:
-
-files *.js.gz>
-AddType "text/javascript" .gz
-AddEncoding gzip .gz
-</files>
-<files *.css.gz>
-AddType "text/css" .gz
-AddEncoding gzip .gz
-</files>
-
-#:
-
-<FilesMatch *.(html|css|jpg|jpeg|png|gif|js|ico)>
-SetOutputFilter DEFLATE
-</FilesMatch>
-
-# OR:
-
-<IfModule mod_headers.c>
-RewriteCond "%{HTTP:Accept-encoding}" "gzip"
-RewriteCond "%{REQUEST_FILENAME}\.gz" -s
-RewriteRule "^(.*)\.(css|js)" "$1\.$2\.gz" [QSA]
-RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-gzip:1]
-RewriteRule "\.js\.gz$"  "-" [T=text/javascript,E=no-gzip:1]
-<FilesMatch "(\.js\.gz|\.css\.gz)$">
-Header append Content-Encoding gzip
-Header append Vary Accept-Encoding
-</FilesMatch>
-</IfModule>
-
-# OR:
-
-<IfModule mod_headers.c>
-<FilesMatch ".(js|css|xml|gz|html)$">
-Header append Vary: Accept-Encoding
-</FilesMatch>
-</IfModule>
-
-# OR:
-
-<IfModule mod_headers.c>
-<FilesMatch "\.(js|css|xml|gz)$">
-Header append Vary: Accept-Encoding
-</FilesMatch>
-</IfModule>
-
-
-# OR:
-
-</IfModule>
-<FilesMatch "\.js$">
-RewriteEngine On
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule (.*)\.js$ $1\.js.gz [L]
-ForceType text/javascript
-</FilesMatch>
-<FilesMatch "\.js\.gz$">
-ForceType text/javascript
-Header set Content-Encoding gzip
-Header set Vary Accept-Encoding
-</FilesMatch>
-
-# FONTS:
-<IfModule mod_mime.c>
-AddType application/vnd.ms-fontobject  eot
-AddType application/x-font-ttf   ttf ttc
-AddType font/opentype  otf
-AddType application/x-font-woff  woff woff2
-AddType image/svg+xml  svg svgz
-AddEncoding gzip  svgz
-</IfModule>
-
-# Headers.
-<IfModule mod_headers.c>
-RewriteCond "%{HTTP:Accept-encoding}" "gzip"
-RewriteCond "%{REQUEST_FILENAME}\.gz" -s
-<FilesMatch "(\.js\.gz|\.css\.gz)$">
-Header append Content-Encoding gzip
-Header append Vary Accept-Encoding
-</FilesMatch>
-</IfModule>
-
-
-## Audio files expiration: 1 month after request:
-
-ExpiresByType audio/ogg "now plus 1 month"
-ExpiresByType application/ogg "now plus 1 month"
-ExpiresByType audio/basic "now plus 1 month"
-ExpiresByType audio/mid "now plus 1 month"
-ExpiresByType audio/midi "now plus 1 month"
-ExpiresByType audio/mpeg "now plus 1 month"
-ExpiresByType audio/mp3 "now plus 1 month"
-ExpiresByType audio/x-aiff "now plus 1 month"
-ExpiresByType audio/x-mpegurl "now plus 1 month"
-ExpiresByType audio/x-pn-realaudio "now plus 1 month"
-ExpiresByType audio/x-wav "now plus 1 month"
-
-## Movie files expiration: 1 month after request:
-
-ExpiresByType application/x-shockwave-flash "now plus 1 month"
-ExpiresByType x-world/x-vrml "now plus 1 month"
-ExpiresByType video/x-msvideo "now plus 1 month"
-ExpiresByType video/mpeg "now plus 1 month"
-ExpiresByType video/mp4 "now plus 1 month"
-ExpiresByType video/quicktime "now plus 1 month"
-ExpiresByType video/x-la-asf "now plus 1 month"
-ExpiresByType video/x-ms-asf "now plus 1 month"
-ExpiresByType video/ogg "access plus 1 month"
-ExpiresByType video/webm "access plus 1 month"
-
-# Turn off the Last Modified header except for html docs:
-
-<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
-Header unset Last-Modified
-</FilesMatch>
 
 ........................................................................................
 ........................................................................................
@@ -2635,10 +2643,12 @@ RedirectMatch 403 (?i)(https?|ftp|php):/
 </IfModule>
 
 <IfModule mod_alias.c>
+<IfModule mod_alias.c>
 RedirectMatch 403 \,
 RedirectMatch 403 \:
 RedirectMatch 403 \;
 RedirectMatch 403 \=
+RedirectMatch 403 \@
 RedirectMatch 403 \[
 RedirectMatch 403 \]
 RedirectMatch 403 \^
@@ -2672,6 +2682,8 @@ RedirectMatch 403 \%5D
 RedirectMatch 403 \%7B
 RedirectMatch 403 \%7C
 RedirectMatch 403 \%7D
+
+# COMMON PATTERNS
 Redirectmatch 403 \_vpi
 RedirectMatch 403 \.inc
 Redirectmatch 403 xAou6
@@ -2695,6 +2707,8 @@ Redirectmatch 403 \/\(null\)\/
 Redirectmatch 403 clientrequest
 Redirectmatch 403 option\_value
 RedirectMatch 403 ref\.outcontrol
+
+# SPECIFIC EXPLOITS
 RedirectMatch 403 errors\.
 RedirectMatch 403 config\.
 RedirectMatch 403 include\.
@@ -3449,8 +3463,49 @@ RewriteRule ^/wp-content/plugins.*$ /index.php
 Troubled Plugins:
 RewriteRule ^/wp-content/plugins/plugin name.*$ /index.php
 
+.......................................................................................
+.......................................................................................
+# Stop aggressive doamin:
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?zurnasohbet.org/.*$ [NC]
+RewriteRule .* - [F,L]
+
+
+# IF put in exting site:
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?evilsite.org/.*$ [NC]
+RewriteRule .* - [F,L]
+
+.......................................................................................
+.......................................................................................
+
+# protect includesrss file!
+RewriteRule^wp-includes/rss\.php$ - [R=404,L,NC] 
+
+# ----------------------------------------------------------------------
+# Prevent SSL cert warnings
+# ----------------------------------------------------------------------
+
+# Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent
+# https://www.example.com when your cert only allows https://secure.example.com
+
+<IfModule mod_rewrite.c>
+RewriteCond %{SERVER_PORT}!^443
+RewriteRule ^ https://example.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+
+# Sometimes: (protection)
+
+RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php [NC,L] 
 
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231103
+Uodated: 231109
