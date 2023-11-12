@@ -3250,14 +3250,13 @@ RewriteCond"%{HTTP_USER_AGENT}"sqlmap [NC]
 
 .......................................................................................
 .......................................................................................
-# Block amazon cloud:
+# Block amazon cloud - HELL:
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_REFERER} ^https://(([^.]+\.)+)?amazonaws\.com [NC,OR]
 RewriteCond %{REMOTE_HOST} ^.*\.amazonaws\.com$ [NC,OR]
-#block remote hosts starting with mail or smtp
 RewriteCond %{REMOTE_HOST} ^mail(.*)\. [NC,OR]
 RewriteCond %{REMOTE_HOST} ^smtp(.*)\. [NC]
 RewriteRule ^(.*)$ - [F]</IfModule>
@@ -3270,6 +3269,18 @@ RewriteBase /
 RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
+
+# Alternative:
+
+RewriteCond%{HTTP_REFERER}^http://.*amazonaws\.com [OR]
+RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [OR]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com$ [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"woriobot"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"heritrix"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"NetSeer"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
+RewriteRule ^(.*)$ - [F]
 
 # Alternative:
 
@@ -3296,12 +3307,20 @@ User-agent: Accoona-AI-Agent/1.1.2
 Disallow: /
 User-agent: Accoona-AI-Agent
 Disallow: /
-
 User-agent: AgentRunner.ai
 Disallow: /
 
+User-agent: AIBOT Disallow:/
+User-agent: AISearchBot Disallow:/
+
 User-agent: anthropic-ai
 Disallow: /
+
+User-agent: AiHitBot
+Disallow:/
+
+User-agent: AIBOT
+Disallow:/
 
 ‍User-agent: Claude-Web
 Disallow: /
@@ -3347,22 +3366,31 @@ Disallow: /
 User-agent: Omgili
 Disallow: /
 
+
 User-agent: OpenAI GPT
 Disallow: /
 
 User-agent: proximic
 Disallow: /
 
-# The example for img2dataset, although the default is *None*
-User-agent: img2dataset
-Disallow: /
-
-
 User-agent: Owler@ows.eu/1
 Disallow: /
 User-agent: Owler@ows.eu/X
 Disallow: /
 User-agent: Owler@ows.eu/2
+Disallow: /
+
+User-agent: openai
+Disallow:/
+User-agent: openai.com
+Disallow:/
+
+# The example for img2dataset, although the default is *None*
+
+User-agent: img2dataset
+Disallow: /
+
+User-Agent: The Knowledge AI 
 Disallow: /
 
 # AI: .htaccess(1) 
@@ -3384,7 +3412,7 @@ SetEnvIfNoCase User-Agent "(aylienbot|BegunAdvertising|betaBot|Bitvore|BoogleBot
 SetEnvIf Request_URI "^/robots\.txt$" ok
 
 
-# There are some image-scraping tools that honor the following directive:
+# There are some image-scraping tools that honor the following directive:  /can sometimes slow dom site!)
 
 <meta name="robots" content="noai, noimageai">
 
@@ -3417,6 +3445,7 @@ user-agent: ua3
 user-agent: ua4
 disallow: /
 
+
 # I stoped some of AI scrapers by this:
 
 SetEnvIfNoCase USER_AGENT "python-requests/2.26.0" bad_bot
@@ -3431,6 +3460,12 @@ RewriteCond%{{HTTP_USER_AGENT}GoogleScraper [NC]
 SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
 
 SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
+
+User-agent: SocialRankIOBot
+Disallow:/
+User-agent: Sociscraper
+Disallow:/
+
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3508,4 +3543,4 @@ RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231109
+Uodated: 231112
