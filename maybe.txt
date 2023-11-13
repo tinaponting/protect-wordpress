@@ -2,90 +2,388 @@ Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own 
 .....................................................................:)
 # Bots Using Fake User-Agents
 
+* If you want to use, place beetwen:
+
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteCond%"{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "ltx71" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "msie3" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "msie 3" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "msie5" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Opera* [NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Mozilla* [NC]
-RewriteCond%{HTTP_USER_AGENT}^Python-urllib [NC]
-RewriteCond%{HTTP_REFERER}^bc.googleusercontent\.com$ [NC]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[NC]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[NC]
-RewriteCond%{HTTP_REFERER}^$
-RewriteCond%{HTTP:Accept-Encoding}^$[NC]
-RewriteCond%{HTTP_USER_AGENT} ^-?$
-RewriteCond%{HTTP_USER_AGENT} ^User-Agent
-RewriteCond%{HTTP_USER_AGENT} Java.*
-RewriteRule ^/(.*)$ /$1 [F]</IfModule>
+
+RewriteRule ^.* - [F,L]
+</IfModule>
+
+..............
+
+OK:
+
+RewriteCond %{HTTP_USER_AGENT} ^-?$ [OR]
+RewriteCond %{HTTP_USER_AGENT} "^\(" [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\' [OR]
+RewriteCond %{HTTP_USER_AGENT} "^\ " [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\" [OR]
+RewriteCond %{HTTP_USER_AGENT} ^- [OR]
+RewriteCond %{HTTP_USER_AGENT} ^= [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\.$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\\$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\d [OR]
+RewriteCond %{HTTP_USER_AGENT} "^Chrome" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Empty" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Firefox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^IE" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Internet\ Explorer" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^MSIE" [NC,OR]
+
+# Non-standard endings:
+
+RewriteCond %{HTTP_USER_AGENT} "Chrome$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Firefox$" [NC,OR]
+
+# Way too short user agent strings:
+
+RewriteCond %{HTTP_USER_AGENT} "^Mozilla$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Mozilla/\d\.\d$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Mozilla\ compatible$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Mozilla/\d\.\d\ \(compatible\)$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Mozilla/\d\.\d\ \(compatible;\)$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Opera$" [NC,OR]
+
+# Repeating same stuff:
+
+RewriteCond %{HTTP_USER_AGENT} "compatible.*compatible" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Gecko.*Gecko" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Mozilla.*Mozilla" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE.*MSIE" [NC,OR]
+
+# Missing space after closing parenthesis:
+
+RewriteCond %{HTTP_USER_AGENT} "\)([a-z|A-Z])" [NC,OR]
+
+# Fake mixtures of browsers:
+
+RewriteCond %{HTTP_USER_AGENT} "Firefox.*Netscape" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Firefox.*Opera" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE.*Chrome/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE.*Firefox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE.*Edge/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE.*rv:" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Opera.*Trident/" [NC,OR]
+
+# Letters instead of version numbers:
+
+RewriteCond %{HTTP_USER_AGENT} "Chrome/([a-z]|[A-Z])\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Firefox/([a-z]|[A-Z])\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Gecko/([a-z]|[A-Z])\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/([a-z]|[A-Z]) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ ([a-z]|[A-Z])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Opera/([a-z]|[A-Z])\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\ rv:([a-z]|[A-Z])\." [NC,OR]
+
+# Impossible Mozilla versions:
+
+RewriteCond %{HTTP_USER_AGENT} "Mozilla/([0-3]|[6-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Mozilla/\d\.([1-9])" [NC,OR]
+
+# Impossible MSIE versions:
+
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ \d\.([1-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ \d\d\.([1-9])" [NC,OR]
+
+# Impossible MSIE versions on certain Windows versions:
+
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 5\..*\ NT\ 6\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 5\..*\ NT\ 10" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 6\..*\ NT\ 6\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 6\..*\ NT\ 10" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 8\..*\ NT\ 6\.2" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 8\..*\ NT\ 6\.3" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 8\..*\ NT\ 10" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 9\..*\ NT\ 6\.2" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 9\..*\ NT\ 6\.3" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 9\..*\ NT\ 10" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 10\..*\ NT\ 6\.3" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 10\..*\ NT\ 10" [NC,OR]
+
+# Impossible MSIE and Trident combinations:
+
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 8\..*\ Trident/([0-3]|[5-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 9\..*\ Trident/([0-4]|[6-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ 10\..*\ Trident/([0-5]|[7-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ".*\ Trident/([0-6]|[8-9]);\ rv:11\.0" [NC,OR]
+
+# Other impossible browser or engine version numbers:
+
+RewriteCond %{HTTP_USER_AGENT} "Chrome/99" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chrome/\d\d\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Firefox/99" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Firefox/\d\d\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\ \d\d\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^Opera/9\.99" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Opera/\d\d\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Presto/9" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Trident/\d\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Trident/([0-3]|[8-9])" [NC,OR]
+
+# Mismatching Firefox and rv versions:
+
+RewriteCond %{HTTP_USER_AGENT} ".*rv:1\..*Firefox/(0|[2-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ".*rv:2\..*Firefox/([0-1]|[2-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ".*rv:3\..*Firefox/([0-2]|[4-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ".*rv:4\..*Firefox/([0-3]|[5-9])" [NC,OR]
+
+# Fake user agents used while testing programs and apps:
+
+RewriteCond %{HTTP_USER_AGENT} "BUILDDATE" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^MyApp$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Synapse\)" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Test\ Certificate\ Info" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Unknown" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WinHTTP" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WinHttpRequest" [NC,OR]
+
+# Other standards-breaking fake user agents:
+
+RewriteCond %{HTTP_USER_AGENT} "\ \(Chrome\)" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\(Win/$" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "compatible\ ;" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CAIMEO\ Artificial\ Intelligence" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Gecko/\ " [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Gecko/20([2-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "-IE\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\ IE\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Mozilla\ ([0-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Mozilla/\d\.\d\(" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Mozilla/\d\.\d\ \(\ " [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MSIE\d" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "^QuickTime/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SuperCleaner" [OR]
+RewriteCond %{HTTP_USER_AGENT} "User\ Agent" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows/" [NC,OR]
+
+# Fake Windows strings and versions:
+
+RewriteCond %{HTTP_USER_AGENT} "Windows/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ ([0-2]|[4-8])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\)" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ 0" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ 1\." [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ ([2-3]|[7-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ 5\.([3-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ 6\.([4-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ 10\.([1-9])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Windows\ NT\ (1[1-9]|4[0-9]|5[0-9]|6[0-9])" [NC,OR]
+
+# Suspicious user agents:
+RewriteCond %{HTTP_USER_AGENT} "TO-Browser/TOB" [NC]
+
+# Redirect during the testing period:
+
+ RewriteRule .* /strangebrowser.html? [R=307,L]
+# Comment out the line above and remove the comment mark below to block fake browsers after the testing period:
+RewriteRule ^.*$ - [F,L]
+
+## Part 2 - additional bad browser rules with conditions:
+
+RewriteCond %{REQUEST_URI} !strangebrowser\.html
+RewriteCond %{REMOTE_ADDR} !^131\.253\.25\.
+RewriteCond %{HTTP_USER_AGENT} "Trident/.*Trident" [NC]
+
+# Redirect during the testing period:
+RewriteRule .* /strangebrowser.html? [R=307,L]
+# Comment out the line above and remove the comment mark below to block fake browsers after the testing period:
+RewriteRule ^.*$ - [F,L]
+
+# 2. Firefox full version numbers are used by WaterFox,
+# Add your informative page to prevent redirection loops:
+
+RewriteCond %{REQUEST_URI} !strangebrowser\.html
+RewriteCond %{HTTP_USER_AGENT} !Waterfox/\d\d\.
+RewriteCond %{HTTP_USER_AGENT} !Waterfox\)
+RewriteCond %{HTTP_USER_AGENT} ".*Firefox/\d\d\.\d\."
+
+# Redirect during the testing period:
+# RewriteRule .* /strangebrowser.html? [R=307,L]
+
+# Comment out the line above and remove the comment mark below to block fake browsers after the testing period:
+RewriteRule ^.*$ - [F,L]
+
+# 3. MSIE user string must also have a Trident version:
+RewriteCond %{REQUEST_URI} !strangebrowser\.html
+
+# Exclusions:
+# VirusTotal Cloud uses MSIE 9.0; Windows NT 9.0 user agent
+
+RewriteCond %{HTTP_USER_AGENT} !virustotalcloud\)$
+## The rule:
+RewriteCond %{HTTP_USER_AGENT} !Trident/
+RewriteCond %{HTTP_USER_AGENT} MSIE\ .*Windows
+
+# Redirect during the testing period:
+RewriteRule .* /strangebrowser.html? [R=307,L]
+
+# Comment out the line above and remove the comment mark below to block fake browsers after the testing period
+RewriteRule ^.*$ - [F,L]
+
+# 4. PaleMoon has higher Gecko version numbers than other browsers:
+
+RewriteCond %{REQUEST_URI} !strangebrowser\.html
+RewriteCond %{HTTP_USER_AGENT} !PaleMoon/
+RewriteCond %{HTTP_USER_AGENT} "Gecko/201([1-9])"
+
+# Redirect during the testing period:
+RewriteCond %{REQUEST_URI} !strangebrowser\.html
+RewriteCond %{REMOTE_ADDR} !^131\.253\.25\.
+
+# Redirect during the testing period:
+RewriteRule .* /strangebrowser.html? [R=307,L]
+RewriteRule ^.*$ - [F,L]
+
+.............
+
+# Bad bots:
+
+RewriteCond %{HTTP_USER_AGENT} ^-?$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (&lt;|%0a|%0d|%27|%3c|%3e|%00|0x00) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ((c99|php|web)shell|remoteview|site((.){0,2})copier) [NC,OR]
+
+# Bots spoofing old browsers or operating systems:
+RewriteCond %{HTTP_USER_AGENT} ^.*(Chrome\/[1-7][0-9]).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(epiphany|Kazehakase).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Firefox\/[1-9]\.|Firefox\/[1-7][1-9]\.|Firefox\/40\.).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Mac\ OS\ X\ 10_[0-6]_[0-9]).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(MSIE\ [1-8]).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(PPC\ Mac).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(SeaMonkey).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Windows\ NT\ [3-5]\[0-9]|Windows\ NT\ 6\.0).*$ [NC,OR]
+
+# User agents of other bad bots:
+RewriteCond %{HTTP_USER_AGENT} ^.*(2345Explorer|360Spider|4147\.135|6899browser).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(acapbot|aiohttp|Adsbot|AHC\alexibot|AliApp|ALittle\ Client).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(AskTb|AspiegelBot|aylienbot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(attackbot|AwarioSmartBot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(backdorbot|BaiduClient|becomebot|BegunAdvertising|betabot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(BIDUBrowser|binlar|bitvore|blackwidow|blowfish).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(BoBrowser|BoogleBot|bsala|burpcollaborator).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Buck|bullseye|bunnys|butterfly|bytespider).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(centurybot|Campaign|clark-crawler|curl).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(datacha|DataForSeoBot|Datanyze|demon|devworx).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(diavol|Diffbot|Digincore|DingTalk|discobot|dittospyder).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(DomainAppender|DOWNLOADED|dotbot|dotnetdotcom|dumbot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Edition|evc-batch|evc-batch).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Framafox).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Go-http-client|GreenBrowser|Gregarius|GRequests).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|HiScan).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(icarus6j).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Java|Jersey|JuziBrowser).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(K-Ninja|Kinza|kmccrew).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(LanaiBot|LieBaoFast|Lightspeed|LMY47V|ltx71).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(MANAGED|Manzama|MauiBot|Mb2345Browser|MetaSr|MegaIndex).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(MicroMessenger|Moreover|MoodleBot|MQQBrowser).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(NameOfAgent|Namoroka|Netscape|newspaper).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(node\-fetch|Nuclei|null|Nutch).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(OcIdWebView|octopus|okhttp|OPPO|orgprobe|OWASMIME).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(PageFreezer|PaperLiBot|Pcore|PetalBot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(PostmanRuntime|PR-CY\.RU|pshtt|Pubmatic|python\-requests).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(QIHU\ 360SE|QQBrowser|queryn|queryseeker|QupZilla).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Re\-re|Readability|Riddler|robots|Ruby|ruby).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(SabsimBot|scpitspi).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Seekport|SeoBotM6|seocharger|SEOkicks|serpstatbot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Shuame|SlimBrowser|Sogou|SonyEricssonW660|spaziodati|splash).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(TencentTraveler|TheWorld|TkBot|ToBeFilledByOEM).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(UBrowser|UCBrowser|UNKNOWN|UserAgent\-Cube).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(vampire|VelenPublicWebCrawler|vikspider|voideye|vuhuvBot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(webleacher|webreaper|webstripper|webvac|webviewer|webwhacker).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Wget|winhttp|wwwoffle|woxbot).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(x\.x\.x|xaldon|xenu|xxxyy).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(YaBrowser|YandexBot|yamanalab|yioopbot|YisouSpider|youda).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(zeus|zgrab|zh\-CN|zh_CN|ZHCN|zmeu|zune|zyborg).*$ [NC]
+RewriteRule ^(.*)$ - [R=403,L]
+
+-------
+
+RewriteCond %"{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "ltx71" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "msie3" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "msie 3" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "msie5" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "msie 5.5" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "msie 6.0" [OR,NC]
+RewriteCond %"{HTTP_USER_AGENT}" "mozilla/4.76" [OR,NC]
+
+# OTHERS:
+RewriteCond %{HTTP_USER_AGENT}!^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT}!^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT}!^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Opera* [NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Mozilla* [NC]
+Rewritecond %{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[NC]
+Rewritecond %{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[NC]
+
+# AND:
+RewriteCond %{HTTP_REFERER}^$
+RewriteCond %{HTTP_USER_AGENT} ^-?$
+RewriteCond %{HTTP_USER_AGENT} ^User-Agent
+RewriteCond %{HTTP_USER_AGENT} Java.*
+
+----
 
 # Alternative: Just add it above!
 Here we assume certain MSIE 6.0 agents are from linkscanner #redirect these requests back to avg in the hope they’ll see their silliness!
 
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”
-RewriteCond%{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$
+Rewritecond %{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR]
+Rewritecond %{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”
+RewriteCond %{HTTP_REFERER}^$RewriteCond %{HTTP:Accept-Encoding}^$
 RewriteRule ^.* http://www.avg.com/?LinkScannerSucks [R=307,L]
+----------------------
 
-# Alternative:
+##Alternative:
 
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$" OR]
-RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR]
-RewriteCond%{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR] 
-RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"
+RewriteCond %{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$" [OR]
+RewriteCond %{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR]
+RewriteCond %{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR] 
+RewriteCond %{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"
 RewriteRule ^.* - [F,L]
 </IfModule>
+_________________
 
-# Alternative:
-
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6} 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+ 
-RewriteCond%{HTTP_USER_AGENT} ^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2} 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
-RewriteCond%{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
-RewriteCond%{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
+RewriteCond %{HTTP_USER_AGENT} ".*MSIE 6.0; Windows NT 5.1; SV1.$" [OR]
+RewriteCond %{HTTP_USER_AGENT} ".*MSIE 6.0; Windows NT 5.1;1813.$" [OR]
+RewriteCond %{HTTP_USER_AGENT} "^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$" [OR] 
+RewriteCond %{HTTP_USER_AGENT} "MSIE 6.0; Windows NT 5.1; SV1"
 RewriteRule ^.* - [F,L]
-</IfModule>
 
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} ^.*Firefox/4.*$ [NC,OR]
+# Alternative: # Mozilla 4/5 Browsers:
+
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6} 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+ 
+# OthersRewriteCond %{HTTP_USER_AGENT} ^Avant\ Browser\ \(http://www\.avantbrowser\.com\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2} 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$ 
+RewriteCond %{HTTP_USER_AGENT} ^Opera/[5-9]\.[0-9]+ 
+
+## works fine! 
+
 RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla\/[1-4]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Chrome\/[1-9]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Firefox\/[1-9]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*MSIE\s[1-6]\\.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
 RewriteCond %{HTTP_USER_AGENT} ^.*Mozilla* [NC]
 RewriteCond %{HTTP_USER_AGENT} !^.*Mozilla\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*Chrome/10.*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*Chrome\/[1-9]\\.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*Chrome* [NC]
 RewriteCond %{HTTP_USER_AGENT} !^.*Chrome\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*Firefox\/[1-9]\\.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*Firefox* [NC]
 RewriteCond %{HTTP_USER_AGENT} !^.*Firefox\/[1-9][0-9.][0-9.]* [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*MSIE\s[1-6]\\.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*MSIE* [NC]
 RewriteCond %{HTTP_USER_AGENT} !^.*MSIE\s[1-9][0-9.][0-9.]* [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*Opera* [NC]
 RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s[0-4]\\.* [NC]
 RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT* [NC]
 RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s5\\.[3-9]* [NC,OR]
@@ -95,12 +393,56 @@ RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s8\\.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT\s9\\.* [NC]
 RewriteCond %{HTTP_USER_AGENT} ^.*Windows\sNT* [NC]
 RewriteCond %{HTTP_USER_AGENT} !^.*Windows\sNT\s[1-9][0-9.][0-9.]* [NC]
-RewriteRule ^.* - [F,L]
-</IfModule>
+
+IF?
+RewriteCond %{HTTP_USER_AGENT} "JDatabaseDriverMysqli" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "JSIMPLEPIEFACTORY" [NC]
+RewriteCond %{HTTP:X-FORWARDED-FOR} "JDatabaseDriverMysqli" [NC,OR]
+RewriteCond %{HTTP:X-FORWARDED-FOR} "JSIMPLEPIEFACTORY" [NC]
+RewriteRule ^.* - [F,L
 
 #Alternative:  Change if what you need:
 
 RewriteCond %{HTTP_USER_AGENT} Firefox/1(.+) [NC,OR]
+
+# must be togeher to work:
+
+RewriteCond %{HTTP_REFERER} ^bc.googleusercontent\.com$ [OR,NC]
+RewriteCond %{REMOTE_HOST} ^bc.googleusercontent\.com$ [NC]
+
+# thers no good:
+RewriteCond %{HTTP_USER_AGENT} ^PycURL [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT}^Python-urllib [NC]
+
+
+#Block Evil robots sites and rippers:
+( RewriteBase / )
+
+RewriteCond %{HTTP_USER_AGENT} ^atraxbot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Azureus [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^geohasher [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PycURL [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Python-urllib [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sosospider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wget [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^xenu [NC,OR]
+
+#Block wellknown and robots.txt:
+
+(RewriteEngine On)
+RewriteCond %{REQUEST_URI} !/robots.txt$
+RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
+
+
+Blocking several USER_AGENTs:
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} BadBot [OR]
+RewriteCond %{HTTP_USER_AGENT} EvilScanner [OR]
+RewriteCond %{HTTP_USER_AGENT} Fake
+RewriteRule .* - [F]
+............................
 
 # Anonymousfox:  
 
@@ -165,64 +507,6 @@ DENY FROM 195.154.122.0/24
 DENY FROM 195.154.123.0/24
 DENY FROM 195.154.126.0/24
 DENY FROM 195.154.127.0/24
-
-
-## I use this on my htaccess1:  (works very well!
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (Android; Mobile; rv:14.0) Gecko/14.0 Firefox/14.0"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-9]\\.* [NC,OR]
-RewriteCond%"{HTTP_USER_AGENT}""gecko/20060728"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""ltx71"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie3"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 3"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie5"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 5.5"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 6.0"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""mozilla/4.76"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""mozilla/Mozilla/5.0"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Chrome\/[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Opera*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Mozilla*[NC]
-RewriteCond%{HTTP_REFERER}^bc.googleusercontent\.com$[NC]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1; SV1.$”[OR,NC]
-Rewritecond%{HTTP_USER_AGENT}“.*MSIE 6.0; Windows NT 5.1;1813.$”[OR,NC]
-RewriteCond%{HTTP_REFERER}^$
-RewriteCond %{HTTP:Accept-Encoding}^$[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1; SV1.$"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;1813.$"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}"^(?:User-Agent: )?Mozilla/4.0 \(compatible; MSIE 6.0; Windows NT 5.1;(?: SV1|1813)\)$"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1; SV1"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ MSIE\ [3-9]\.[0-9.]+[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.]+\ \(KHTML,\ like\ Gecko\)\ \Safari/[0-9]{3,8}$[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(Macintosh;\ I;\ PPC\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\ Gecko/Debian-[1-9]\.[0-9.]+-[0-9]+\ Galeon/[2-9]\.[0-9.]+\ \(Debian\ package\ [2-9]\.[0-9.]+-[0-9]+\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+;\ Linux\)\ \(KHTML,\ like\ Gecko\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6}[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-9]+\ WebTV/([0-9]+\.)+[0-9]+\ \(compatible;\ MSIE\ [5-9]\.[0-9]+[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Microsoft\ Internet\ Explorer/[34]\.[0-9]{1,2}[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/(3\.01¦4\.0)\ \(compatible;\)$ [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[3-4]\.[0-9]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/4\.0\ \(PSP\ \(PlayStation\ Portable\);\ [0-9.]+\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" RewriteRule .* - [R=410,L]
-RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36"[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0" RewriteRule .* - [R=410,L]
-RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" RewriteRule .* - [R=410,L]
-RewriteCond%{HTTP_USER_AGENT}^Opera/[5-9]\.[0-9]+[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Python-urllib[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
-RewriteCond%{HTTP_USER_AGENT}^$
-RewriteCond%{HTTP_USER_AGENT}^-?$
-RewriteCon%{HTTP_USER_AGENT}Java.*
-RewriteRule .* - [F]</IfModule>
 
 
 #ALTERNATIVE:
@@ -338,6 +622,68 @@ My own list here
 
 </IfModule>
 OR: RewriteRule .* - [F]</IfModule>
+
+# BLOCK BAD BOTS START
+(RewriteEngine On)
+
+RewriteCond %{REQUEST_URI} !/robots.txt$
+RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Go\ 1.1\ package.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Go-http-client.*$ [NC,OR]
+
+RewriteCond %{REQUEST_URI} !/robots.txt$
+RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*AppEngine.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Zend_Http_Client.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Nutch.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*larbin.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Nutch.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*CopyRightCheck.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*CCBot.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*libWeb/clsHTTP.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*httplib.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*LinkScan.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*GetRight.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*Flaming\ AttackBot.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*MSIECrawler.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*searchpreview.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*GetRight.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Go!Zilla.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Go-Ahead-Got-It.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*Image\ Stripper.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Image\ Sucker.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*InterGET.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Internet\ Ninja.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*larbin.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*Mass\ Downloader.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*Offline\ Explorer.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Offline\ Navigator.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*PageGrabber.*$ [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} ^.*libwww.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Python.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*perl.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*urllib.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*scan.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Curl.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*PycURL.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Python-urllib.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*Pyth.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*PyQ.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PerlCrawler [NC,OR]
 
 .......................................................................................
 .......................................................................................
@@ -3544,4 +3890,4 @@ RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231112
+Uodated: 231113
