@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+- Updated: 231115, htaccess1 to php8!
 - Updated: 231113  htacces1 - only mys use folder:)
 - Updated: 231110, htaccess1, better protection 
 - Updated: 231109, htacces for better compression!
