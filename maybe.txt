@@ -3888,9 +3888,29 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Sometimes: (protection)
 
-RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php [NC,L] 
+RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+.......................................................................................
+.......................................................................................
+# Headless SCRAPERS: 
+
+RewriteCond %{HTTP_USER_AGENT} (Headless) [NC]
+RewriteCond %{HTTP_USER_AGENT} (HeadlessChrome) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Headless Chromium) [NC]
+RewriteCond %{HTTP_USER_AGENT} (HtmlUnit) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Mozilla Firefox Headless Browser) [NC]
+RewriteCond %{HTTP_USER_AGENT} (PhantomJS Webkit) [NC]
+RewriteCond %{HTTP_USER_AGENT} (SimpleBrowser) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Splash) [NC]
+RewriteCond %{HTTP_USER_AGENT} (SlimerJS) [NC]
+RewriteCond %{HTTP_USER_AGENT} (TrileFejs) [NC]
+RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
+
+# Alternative:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|HiScan).*$ [NC,OR]
 
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231116
+Uodated: 231117
