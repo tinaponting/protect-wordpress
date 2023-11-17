@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+- Updated:231117: wp-content htaccess, workswell php 8, admin, htaccess, checked with php8 works great!
 - Updated: 231115, htaccess1 to php8!
 - Updated: 231113  htacces1 - only mys use folder:)
 - Updated: 231110, htaccess1, better protection 
