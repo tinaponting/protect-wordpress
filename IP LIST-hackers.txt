@@ -385,7 +385,7 @@ deny from 89.252.58.0/24
 # dacentec.com
 deny from 199.241.184.0/21
 
-# Data for seo.com: 
+# Dataforseo.com: 
 136.243.228.177
 136.243.228.178	
 136.243.228.179
@@ -398,6 +398,14 @@ deny from 199.241.184.0/21
 136.243.220.209		
 136.243.220.210	
 136.243.220.211	
+136.243.220.208/29
+136.243.228.176/29
+136.243.228.192/29
+
+IPv6:
+2a01:4f8:271:6283::/64
+2a01:4f8:271:6284::/64
+2a01:4f8:271:6285::/64
 
 # AS19194 DME Hosting dmehosting.com
 deny from 74.221.208.0/23
@@ -592,7 +600,6 @@ deny from 50.62.0.0/15
 deny from 216.69.128.0/18
 
 # Hetzner / AS24940  //germany:
-
 deny from 5.9.0.0/16
 deny from 5.75.128.0/17					
 deny from 5.161.0.0/21	
@@ -753,8 +760,7 @@ deny from 2a01:4ff:2000::/35
 deny from 2a01:4ff:4000::/34		
 deny from 2a01:4ff:8000::/33
 deny from 2a01:4f8::/29	
-deny from 2a06:1301:4050::/48
-							
+deny from 2a06:1301:4050::/48							
 
 Hetzner.de: FINLAND 
 deny from 37.27.0.0/16
@@ -948,6 +954,11 @@ deny from 192.254.128.0/17
 deny from 198.20.224.0/19
 deny from 198.154.192.0/18
 deny from 216.172.160.0/19
+
+Huawei Cloud (petalbot?):
+deny from 114.119.128.0/19
+deny from 114.119.160.0/21
+deny from 114.119.176.0/20
 
 # IBM Deutschland / oBot
 deny from 194.153.113.0/24
@@ -1820,6 +1831,10 @@ deny from 108.171.240.0/20
 deny from 172.106.0.0/15
 deny from 192.184.32.0/19
 deny from 199.71.212.0/22
+
+# Petalbot:
+114.119.0.0/16
+
 
 # Purplestones / HCLC
 deny from 113.30.64.0/18
@@ -8937,7 +8952,27 @@ Kustbandet:
 # InternetBolaget
 deny from 80.248.224.0/20
 
+#sweden
+deny from 192.71.2.57 
+deny from 176.70.52.196  
+deny from 192.71.126.27 
+deny from 192.71.12.181  
+deny from 192.71.12.10 
+deny from 192.71.2.56  
+deny from 192.71.126.53 
 
+231030:
+
+deny from 78.82.161.80 
+deny from 192.71.2.57 
+deny from 176.70.52.196 
+deny from 192.71.126.27  
+deny from 192.71.12.181 
+deny from 192.71.12.10 
+deny from 192.71.2.56  
+deny from 192.71.126.53  
+
+Updates: 231027
 ..................................................
 Feed Stelaers:         
 
@@ -9111,6 +9146,7 @@ https://urlscan.io
 https://termshub.io/cookie-scanner
 
 SEO:
+https://seoceros.com/sv/
 https://www.seobility.net/en/seocheck
 https://teletalk.top/backlink-checker
 https://www.duplichecker.com/page-rank-checker.php
@@ -9154,6 +9190,10 @@ https://www.seoptimer.com
 
 
 Website checkers:
+https://jetoctopus.com
+https://checkphish.ai
+https://checkphish.ai/live-url-scan
+https://sitechecker.pro
 https://en.ryte.com/website-checker
 https://www.urlvoid.com
 https://www.getsafeonline.org/checkawebsite
@@ -9215,6 +9255,8 @@ https://validator.w3.org   (makes me crasy! Not good tool for wp. made by me...)
 https://mobilemoxie.com/tools/mobile-page-test
 https://www.ssllabs.com/ssltest
 https://www.linkgraph.com/free-seo-audit
+https://www.isitwp.com/
+https://seoceros.com/sv/
 
 Others:
 https://megaindex.com
@@ -9312,6 +9354,18 @@ https://www.hetzner.com
 https://www.hetzner.com/de
 https://ovh.com
 
+
+WHO IS:
+https://who.is/
+
+Web Sniffers:
+https://www.ipvoid.com/web-sniffer
+https://websniffer.com
+https://www.1-hit.com/
+https://www.1-hit.com/sniffer.htm
+https://www.toolsvoid.com/url-dump
+https://www.hostseeq.com/web-sniffer.htm
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Bots you do not want:
@@ -9336,7 +9390,7 @@ DomainStatsBot/1.0
 .......................................................................
 -----------------------------------------------------------------------
 Created: 221225
-Updated: 231027
+Updated: 231119
 
 Some of them maybe ? gone!
 .................
