@@ -3700,6 +3700,9 @@ Disallow: /
 User-agent: GPT-4 
 Disallow: /
 
+User-agent: Claudebot
+Disallow: /
+
 User-agent: Google-Extended   
 Disallow: /
 User-agent: Google Bard AI
@@ -3811,6 +3814,8 @@ SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
 
 SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
 
+:
+Robots.ttxt:
 User-agent: SocialRankIOBot
 Disallow:/
 User-agent: Sociscraper
@@ -3908,10 +3913,10 @@ RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
 
 # Alternative:
 
-RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|HiScan).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
 
 
-# THE TEST:.....
+# THE REST:.....
 
 RewriteCond %{HTTP_USER_AGENT} (node js) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Ruby) [NC]
