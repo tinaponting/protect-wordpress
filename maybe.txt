@@ -3910,7 +3910,26 @@ RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
 
 RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|HiScan).*$ [NC,OR]
 
+
+# THE TEST:.....
+
+RewriteCond %{HTTP_USER_AGENT} (node js) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Ruby) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Python) [NC]
+RewriteCond %{HTTP_USER_AGENT} (cURL) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Rust) [NC] 
+RewriteCond %{HTTP_USER_AGENT} (Scrapy) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Java) [NC]
+RewriteCond %{HTTP_USER_AGENT} (R) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Golang Scraper) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Go Web Scraping) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Request-Promise-Native) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Unirest) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Cheerio) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Puppeteer) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
+
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231117
+Uodated: 231119
