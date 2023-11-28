@@ -3711,6 +3711,8 @@ Disallow: /
 
 User-agent: Claudebot
 Disallow: /
+User-agent: Claude 2.1
+Disallow: /
 
 User-agent: Google-Extended   
 Disallow: /
