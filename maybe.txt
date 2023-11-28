@@ -269,7 +269,7 @@ RewriteCond %{HTTP_USER_AGENT} ^.*(DomainAppender|DOWNLOADED|dotbot|dotnetdotcom
 RewriteCond %{HTTP_USER_AGENT} ^.*(Edition|evc-batch|evc-batch).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(Framafox).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(Go-http-client|GreenBrowser|Gregarius|GRequests).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|HiScan).*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(icarus6j).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(Java|Jersey|JuziBrowser).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(K-Ninja|Kinza|kmccrew).*$ [NC,OR]
@@ -3665,6 +3665,15 @@ User-agent: AISearchBot Disallow:/
 
 User-agent: anthropic-ai
 Disallow: /
+User-agent: Claude bot
+Disallow: /
+User-agent: Claude 2.1
+Disallow: /
+
+‍User-agent: anthropic-ai
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
 
 User-agent: AiHitBot
 Disallow:/
@@ -3711,6 +3720,10 @@ Disallow: /
 User-agent: Diffbot
 Disallow: /
 
+User-agent: DialoGPT
+Disallow: /
+
+
 User-agent: Meta AI
 Disallow: /
 
@@ -3718,25 +3731,22 @@ User-agent: Omgilibot
 Disallow: /
 User-agent: Omgili
 Disallow: /
-
-
 User-agent: OpenAI GPT
 Disallow: /
-
-User-agent: proximic
-Disallow: /
-
 User-agent: Owler@ows.eu/1
 Disallow: /
 User-agent: Owler@ows.eu/X
 Disallow: /
 User-agent: Owler@ows.eu/2
 Disallow: /
-
 User-agent: openai
 Disallow:/
 User-agent: openai.com
 Disallow:/
+
+User-agent: proximic
+Disallow: /
+
 
 # The example for img2dataset, although the default is *None*
 
@@ -3749,7 +3759,7 @@ Disallow: /
 # AI: .htaccess(1) 
 
 RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot|Omgilibot|FacebookBot) [NC]
+RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot|Omgilibot|SOME BOT here) [NC]
 RewriteRule ^ – [F]
 
 RewriteEngine On
@@ -3815,12 +3825,22 @@ SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
 SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
 
 :
-Robots.ttxt:
+Robots.txt:
 User-agent: SocialRankIOBot
 Disallow:/
 User-agent: Sociscraper
 Disallow:/
 
+Open AI:  IP Adresses:
+20.15.240.64/28
+20.15.240.80/28
+20.15.240.96/28
+20.15.240.176/28
+20.15.241.0/28
+20.15.242.128/28
+20.15.242.144/28
+20.15.242.192/28
+40.83.2.64/28
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3897,7 +3917,7 @@ RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php
 
 .......................................................................................
 .......................................................................................
-# Headless SCRAPERS: 
+# Headless SCRAPERS/Ai: 
 
 RewriteCond %{HTTP_USER_AGENT} (Headless) [NC]
 RewriteCond %{HTTP_USER_AGENT} (HeadlessChrome) [NC]
