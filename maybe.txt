@@ -3638,6 +3638,11 @@ Disallow: /
 User-agent: Amazonbot/0.1
 Disallow: /
 
+Amazon IP:
+23.22.35.
+3.224.220.
+52.70.240.
+
 # Alternative:
 
 <IfModule mod_rewrite.c>
