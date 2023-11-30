@@ -2947,18 +2947,19 @@ RewriteCond %{QUERY_STRING} ^(%2d|-)[^=]+$ [NC]RewriteRule ^(.*) $1? [L]
 # BLOCK 404 MOBILE REQUESTS
 
 <ifmodule mod_rewrite.c>
- RewriteCond %{REQUEST_URI} /iphone/?$ [NC,OR]
- RewriteCond %{REQUEST_URI} /mobile/?$ [NC,OR]
- RewriteCond %{REQUEST_URI} /mobi/?$ [NC,OR]
- RewriteCond %{REQUEST_URI} /m/?$ [NC]
- RewriteRule (.*) - [F,L]
+RewriteCond %{REQUEST_URI} /iphone/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} /android/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} /mobile/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} /mobi/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} /m/?$ [NC]
+RewriteRule (.*) - [F,L]
 </ifmodule>
-
 From:https://perishablepress.com
 
 # Alternative:
 
 RewriteCond %{REQUEST_URI} ^/iphone/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} /android/?$ [NC,OR]
 RewriteCond %{REQUEST_URI} ^/mobile/?$ [NC,OR]
 RewriteCond %{REQUEST_URI} ^/mobi/?$ [NC,OR]
 RewriteCond %{REQUEST_URI} ^/m/?$ [NC]
@@ -2992,7 +2993,6 @@ RedirectMatch 403 (?i)([a-z0-9]{2000,})
 RedirectMatch 403 (?i)(https?|ftp|php):/
 </IfModule>
 
-<IfModule mod_alias.c>
 <IfModule mod_alias.c>
 RedirectMatch 403 \,
 RedirectMatch 403 \:
@@ -3632,6 +3632,12 @@ RewriteCond%{HTTP_USER_AGENT}"NetSeer"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
 RewriteRule ^(.*)$ - [F]
 
+* Amazon.com - useragents:
+User-agent: Amazonbot               
+Disallow: /
+User-agent: Amazonbot/0.1
+Disallow: /
+
 # Alternative:
 
 <IfModule mod_rewrite.c>
@@ -3959,4 +3965,4 @@ RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231119
+Uodated: 231130
