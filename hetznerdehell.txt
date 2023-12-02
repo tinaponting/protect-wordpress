@@ -46,7 +46,6 @@ hzfn22.bvserver.net
 hzfn23.bvserver.net
 
 
-
 deny from 5.9.0.0/16
 deny from 5.75.128.0/17					
 deny from 5.161.0.0/21	
@@ -115,6 +114,7 @@ deny from 128.140.54.24/34
 deny from 128.140.54.1/24
 deny from 128.140.54.8
 deny from 128.140.54.13
+deny from 128.140.54.16
 deny from 128.140.54.18
 deny from 128.140.54.1/24
 deny from 128.140.54.0/24
@@ -193,6 +193,20 @@ deny from 213.232.193.0/24
 deny from 213.239.192.0/18
 deny from 216.55.108.0/22	
 deny from 217.78.237.0/24
+deny from 2a01:4f8::/29	
+deny from 2a06:1301:4050::/48
+deny from 2a01:4f8::/30	
+deny from 2a01:4fc::/31	
+deny from 2a01:4fe::/32	
+deny from 2a01:4ff:200::/39	
+deny from 2a01:4ff:400::/38	
+deny from 2a01:4ff:800::/37		
+deny from 2a01:4ff:1000::/36		
+deny from 2a01:4ff:2000::/35		
+deny from 2a01:4ff:4000::/34		
+deny from 2a01:4ff:8000::/33
+deny from 2a06:1301:4050::/48	
+´´
 
 
 IP 6:
@@ -209,4 +223,96 @@ deny from 2a01:4ff:4000::/34
 deny from 2a01:4ff:8000::/33
 deny from 2a01:4f8::/29	
 deny from 2a06:1301:4050::/48
+
+
+ALTERNATIVE: Stops almost everything:
+
+deny from 5.9.*.*
+deny from 5.75.*.*
+deny from 5.161.*.*			
+deny from 23.*.*
+deny from 37.27.*.*
+deny from 44.76.*.*
+deny from 45.15.*.*
+deny from 45.136.*.*
+deny from 45.136.*.*
+deny from 45.148.*.*
+deny from 46.4.*.*
+deny from 46.62.*.*
+deny from 49.12.*.*
+deny from 49.13.*.*	
+deny from 65.21.*.*
+deny from 65.108.*.*
+deny from 65.109.*.*
+deny from 77.42.*.*
+deny from 78.46*.*
+deny from 78.138.*.*
+deny from 85.10.*.*
+deny from 88.99.*.*
+deny from 88.198.*.*
+deny from 89.167.*.*
+deny from 91.99.*.*
+deny from 91.107.*.*
+deny from 91.190.*.*
+deny from 91.233.*.*		
+deny from 94.130.*.*		
+deny from 95.216.*.*		
+deny from 95.217.*.*		
+deny from 128.140.*.*	
+deny from 128.99..*.*			
+deny from 129.232.*.*	
+deny from 135.181.*.*	
+deny from 136.243.*.*	
+deny from 138.201.*.*
+deny from 138.246.*.*
+deny from 142.132.*.*
+deny from 144.76.*.*
+deny from 148.251.*.*
+deny from 157.90.*.*
+deny from 157.180.*.*
+deny from 59.69.*.*	
+deny from 162.55.*.*	
+deny from 162.244.*.*	
+deny from 167.233.*.*	
+deny from 167.235.*.*				
+deny from 168.119.*.*
+deny from 171.25.*.*
+deny from 176.9.*.*	
+deny from 178.63.*.*
+deny from 178.212.*.*	
+deny from 185.12.*.*
+deny from 185.50.*.*	
+deny from 185.107.*.*
+deny from 185.126.*.*
+deny from 185.136.*.*
+deny from 185.157.*.*
+deny from 185.171.*.*
+deny from 185.189.*.*
+deny from 185.213.*.*
+deny from 185.216.*.*		
+deny from 185.226.*.*
+deny from 185.228.*.*	
+deny from 185.242.*.*
+deny from 188.34.*.*			
+deny from 188.40.*.*						
+deny from 188.245.*.*	
+deny from 193.25.*.*
+deny from 193.110.*.*
+deny from 193.163.*.*
+deny from 194.42.*.*
+deny from 194.62.*.*
+deny from 195.60.*.*
+deny from 195.201.*.*
+deny from 196.251.*.*
+deny from 197.242.*.*
+deny from 201.131.*.*	
+deny from 204.29.*.*
+deny from 213.133.*.*
+deny from 213.232.*.*
+deny from 213.239.*.*
+deny from 217.78.*.*
+
+
+..............................
+Updated: 231202
 	
