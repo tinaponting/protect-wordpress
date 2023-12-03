@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+- Udated: htaccess1, delated som double and not todays problem! works with no speed Loss! 
 - Updafed: BBQ PRO, customs codes, with alternative: They do not see anything, alternative:
 - Added: 231124 A1 common user agents - HELL! if you want stop them.
 - Updated: 231123, Updated wp-content with better alternatives, htacces with alternatives for AI Protection (my htaccess).
