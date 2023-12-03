@@ -3656,6 +3656,10 @@ SetEnvIfNoCase Referer "blockeddomain.com" blocked_domain
 Order Allow,Deny
 Allow from ALL
 Deny from env=blocked_domain
+
+
+#  ALTERNATIVE:
+(DENY FROM) *amazonaws.com
 .......................................................................................
 .......................................................................................
 ### STOP Ai:  
@@ -3752,6 +3756,7 @@ User-agent: Owler@ows.eu/X
 Disallow: /
 User-agent: Owler@ows.eu/2
 Disallow: /
+
 User-agent: openai
 Disallow:/
 User-agent: openai.com
@@ -3854,6 +3859,13 @@ Open AI:  IP Adresses:
 20.15.242.144/28
 20.15.242.192/28
 40.83.2.64/28
+
+# THIS is the one walking my blog:
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0 |Claude bot|Claude 2.1|Claudebot|Diffbot|
+ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
+RewriteRule ^ – [F] 
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3977,4 +3989,4 @@ RewriteCond%{HTTP_USER_AGENT}(crawler.ninja) [NC]
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231202
+Uodated: 231203
