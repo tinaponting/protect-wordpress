@@ -1299,6 +1299,80 @@ Header set Content-Type text/plain
 
 Just change ico to .... so on to your needs!
 
+# THEME Alternative Protection:
+
+RewriteRule !^.js|.min.js|json|css|.min.css|.css|xml|.php|js|php\.php$ - [F,L]
+
+ALT2:
+<Files ~"\.(js|css|php)$">order allow,deny deny from all</Files>
+
+Alternative to above:
+<Files ~"\.(js|min.js|css|min.css)$">order allow,deny deny from all</Files>
+
+ALT 3:
+<IfModule mod_rewrite.c>
+RewriteRule ^theme/(.*)$ /wp-content/themes/yourtheme/$1 [L]
+RewriteRule ^wp-content/themes/mytheme/$ /the/page/not-found [L]</IfModule>
+
+ALT4:
+<IfModule mod_rewrite.c>
+RewriteCond%{REQUEST_URI}^.*/wp-content/themes/.*[NC,OR]
+RewriteCond%{THE_REQUEST}^.*/wp-content/themes/.*[NC]
+RewriteRule.*-[F,L]</IfModule>
+
+........................................................................................
+........................................................................................
+# MS/ Multi site files protection:
+
+<Files  ms-files.php><IfModule !mod_authz_core.c>Allow from all</IfModule><IfModule mod_authz_core.c>Require all granted</IfModule></Files>
+
+# MU plugins:
+RewriteRule ^wp-content/mu-plugins/$ - [L,R=404]
+
+# Network|Multisite Signup POST Form Requests
+
+RewriteCond %{REQUEST_URI} !^.*/wp-signup.php [NC]
+
+# Network|Multisite Activate POST Form Requests
+
+RewriteCond %{REQUEST_URI} !^.*/wp-activate.php [NC]
+
+........................................................................................
+........................................................................................
+# DENY access to all PHP/CSS files in Some directory - Add .htaccess in the folder you want it:
+
+<Files *.php>deny from all</Files>
+
+<Files ~ "[^/]\{0,}\.(php|css)$">Order deny,allow Deny from all</Files>
+
+Apache 2.4+:
+<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
+
+............
+Alternative: Only php files:
+
+<FilesMatch "\.php$">Order deny,allow Deny from all</FilesMatch>
+
+Apache 2.4+:
+
+<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
+
+Alternative: Only Js files:
+
+<FilesMatch "\.js$">Order deny,allow Deny from all</FilesMatch>
+
+Apache 2.4:
+<Files ~"\.(js|min.js|css|min.css)$">Require all denied</Files>
+
+# JS:
+<FilesMatch "\.(js|min.js)$">Require all denied</FilesMatch> 
+
+# Backdoor Protection Apache 2.4+: (uploads):
+
+<FilesMatch “.+\.php$”>Require all denied</FilesMatch> 
+
+........................................................................................
+........................................................................................
 .......................................................................................
 .......................................................................................
 
@@ -1867,80 +1941,6 @@ RewriteRule (^|/)php_errorlog$ -  [F]
 
 ........................................................................................
 ........................................................................................
-# THEME Alternative Protection:
-
-RewriteRule !^.js|.min.js|json|css|.min.css|.css|xml|.php|js|php\.php$ - [F,L]
-
-ALT2:
-<Files ~"\.(js|css|php)$">order allow,deny deny from all</Files>
-
-Alternative to above:
-<Files ~"\.(js|min.js|css|min.css)$">order allow,deny deny from all</Files>
-
-ALT 3:
-<IfModule mod_rewrite.c>
-RewriteRule ^theme/(.*)$ /wp-content/themes/yourtheme/$1 [L]
-RewriteRule ^wp-content/themes/mytheme/$ /the/page/not-found [L]</IfModule>
-
-ALT4:
-<IfModule mod_rewrite.c>
-RewriteCond%{REQUEST_URI}^.*/wp-content/themes/.*[NC,OR]
-RewriteCond%{THE_REQUEST}^.*/wp-content/themes/.*[NC]
-RewriteRule.*-[F,L]</IfModule>
-
-........................................................................................
-........................................................................................
-# MS/ Multi site files protection:
-
-<Files  ms-files.php><IfModule !mod_authz_core.c>Allow from all</IfModule><IfModule mod_authz_core.c>Require all granted</IfModule></Files>
-
-# MU plugins:
-RewriteRule ^wp-content/mu-plugins/$ - [L,R=404]
-
-# Network|Multisite Signup POST Form Requests
-
-RewriteCond %{REQUEST_URI} !^.*/wp-signup.php [NC]
-
-# Network|Multisite Activate POST Form Requests
-
-RewriteCond %{REQUEST_URI} !^.*/wp-activate.php [NC]
-
-........................................................................................
-........................................................................................
-# DENY access to all PHP/CSS files in Some directory - Add .htaccess in the folder you want it:
-
-<Files *.php>deny from all</Files>
-
-<Files ~ "[^/]\{0,}\.(php|css)$">Order deny,allow Deny from all</Files>
-
-Apache 2.4+:
-<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
-
-............
-Alternative: Only php files:
-
-<FilesMatch "\.php$">Order deny,allow Deny from all</FilesMatch>
-
-Apache 2.4+:
-
-<Files ~ "[^/]\{0,}\.(|min.js|css|min.css)$">Require all denied</Files>
-
-Alternative: Only Js files:
-
-<FilesMatch "\.js$">Order deny,allow Deny from all</FilesMatch>
-
-Apache 2.4:
-<Files ~"\.(js|min.js|css|min.css)$">Require all denied</Files>
-
-# JS:
-<FilesMatch "\.(js|min.js)$">Require all denied</FilesMatch> 
-
-# Backdoor Protection Apache 2.4+: (uploads):
-
-<FilesMatch “.+\.php$”>Require all denied</FilesMatch> 
-
-........................................................................................
-........................................................................................
 # If you got a shop/store:
 
 <IfModule mod_rewrite.c>
@@ -2112,6 +2112,22 @@ RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.html [NC]
 </IfModule>
+
+# ALternative:
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.jp?g [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.gif [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.css [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.html [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 
 ........................................................................................
 ........................................................................................
@@ -3774,6 +3790,23 @@ Disallow: /
 User-Agent: The Knowledge AI 
 Disallow: /
 
+AI:
+User-Agent: fidget-spinner-bot 
+Disallow: /
+
+User-Agent: my-tiny-bot
+Disallow: /
+ 
+I see these are all Amazon hosted:
+44.192.0.0/10
+50.112.0.0/16
+52.0.0.0/10
+52.64.0.0/12
+54.184.0.0/13
+100.20.0.0/14
+100.24.0.0/13
+
+
 # AI: .htaccess(1) 
 
 RewriteEngine On
@@ -3981,12 +4014,73 @@ RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
 
 Another: Pain in the Ass:
 RewriteCond%{HTTP_USER_AGENT}(crawler.ninja) [NC]
-.......................................................................................
-.......................................................................................
-# PETALBOT HELL:
-114.119.*.*
+
+# Web scraper
+User-agent: TinyTestBot
+Disallow: 
+
+User-Agent: thesis-research-bot
+Disallow: /
+
+#Stops generator of user agents, hopefully....
+
+User-agent: generator
+Disallow: / 
 
 .......................................................................................
 .......................................................................................
+#Image Stealer:
+
+ImagesiftBot
+https://imagesift.com
+
+Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)
+
+IP:
+64.124.0.0 
+64.125.255.255
+64.124.0.0/15
+
+ROBOTS.TXT:
+
+User-Agent: ImagesiftBot 
+Disallow: / 
+
+.......................................................................................
+.......................................................................................
+# PETALBOT HELL:  Block them:
+
+114.119.*.*
+
+# China HELL: Unicom:
+110.240.*.*
+110.255.*.*
+
+# China/HOKONG HELL:
+
+deny from *aliyun.com
+deny from *alicloud.com
+deny from *chinatelecom.com.cn
+deny from *cyberwill.com.hk
+deny from *chinaunicom.com
+deny from *infomove.com
+deny from *minttelecom.com.au
+
+
+HELL FROM: ovh.com:
+
+deny from *ovh.com
+
+.......................................................................................
+.......................................................................................
+# WHEN yo are really tired of someone - mostly china/honkong/http//binance.com for me:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_REFERER}^Domainadreesshere.com/ RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
+RewriteCond%{HTTP_REFERER}^.bc.googleusercontent.com/ RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
+RewriteCond%{HTTP_REFERER}^.binance,com / RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
+</IfModule>
+.......................................................................................
+.......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231203
+Uodated: 231205
