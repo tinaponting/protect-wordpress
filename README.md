@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+-Updated:231211, htaccess1 found some doubles:(  
 - Updated: 231210 added more alternatives to wp-content protection.
 - Updated: 231208, wp-admin with more alternatives.
 - Updated: htaccess1, delated som double and not todays problem! works with no speed Loss! 
