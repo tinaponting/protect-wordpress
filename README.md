@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 UPDATED FILES AND FOLDERS:
 
+-Updated: 231219, mu strongest: htaccess1 ever!
 - Updated: 231218, not allowed, with morealternatives.
 - Updated: 231217 htaccess (core ) with more speed:) 
 - Updated: 231211, htaccess1 found some doubles:(  
