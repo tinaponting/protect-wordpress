@@ -2,16 +2,17 @@ Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own 
 .....................................................................:)
 # Bots Using Fake User-Agents
 
-* If you want to use, place beetwen:
+* If you want to use, place between:
 
 <IfModule mod_rewrite.c>
 
 RewriteRule ^.* - [F,L]
+
 </IfModule>
 
 ..............
 
-OK:
+# OK:
 
 RewriteCond %{HTTP_USER_AGENT} ^-?$ [OR]
 RewriteCond %{HTTP_USER_AGENT} "^\(" [OR]
@@ -187,6 +188,7 @@ RewriteCond %{HTTP_USER_AGENT} "Trident/.*Trident" [NC]
 
 # Redirect during the testing period:
 RewriteRule .* /strangebrowser.html? [R=307,L]
+
 # Comment out the line above and remove the comment mark below to block fake browsers after the testing period:
 RewriteRule ^.*$ - [F,L]
 
@@ -403,7 +405,7 @@ RewriteRule ^.* - [F,L
 
 #Alternative:  Change if what you need:
 
-RewriteCond %{HTTP_USER_AGENT} Firefox/1(.+) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} fakeadressbrowser/1(.+) [NC,OR]
 
 # must be togeher to work:
 
@@ -437,12 +439,13 @@ RewriteCond %{REQUEST_URI} !\.well-known/acme-challenge
 
 
 Blocking several USER_AGENTs:
-RewriteEngine on
+
 RewriteCond %{HTTP_USER_AGENT} BadBot [OR]
 RewriteCond %{HTTP_USER_AGENT} EvilScanner [OR]
 RewriteCond %{HTTP_USER_AGENT} Fake
 RewriteRule .* - [F]
-............................
+.........................................................
+#DIV: HELL -NOT WANTED!
 
 # Anonymousfox:  
 
@@ -469,15 +472,6 @@ RewriteBase /
 RewriteCond %{HTTP_REFERER} internetvikings\.com
 RewriteRule ^/(.*)$ /$1 [F]
 </IfModule>
-
-# Amazon.com /Hell!
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} amazon\.com
-RewriteRule ^ - [NC,F,L]
-</IfModule>
-
 
 # WordPress URLs You Will See Bots Scan For
 
@@ -901,6 +895,17 @@ RewriteRule .* - [F]</IfModule>
 
 RewriteCond %{REQUEST_URI} ^/wp-login.php$
 RewriteRule .* - [F]
+
+#  Protect all Js & css files on the wp:
+
+PROTECT:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(css|js)$ index.php [L]
+<IfModule mod_rewrite.c>
+
 .......................................................................................
 .......................................................................................
 # If you are tired of a hacker who always tryes to get in.....
@@ -978,6 +983,7 @@ RewriteEngine on RewriteRule (^\.|/\.) - [F]
 # Alternatively, you can just raise a “Not Found” error, giving the attacker no clue:
 
 RedirectMatch 404 /\..*$
+
 .......................................................................................
 .......................................................................................
 # If you got git in your site:
@@ -1375,7 +1381,6 @@ Apache 2.4:
 ........................................................................................
 .......................................................................................
 .......................................................................................
-
 # PHP info file protect:
 
 <Files  php-info.php>
@@ -1939,6 +1944,19 @@ RewriteRule ^wp-content/debug\.log$ - [F]
 RewriteRule (^|/)error_log$ - [F]
 RewriteRule (^|/)php_errorlog$ -  [F]
 
+Noway:
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(css|js)$ index.php [L]
+<IfModule mod_rewrite.c>
+
+
+# BLOCK ALL OTHER SCRIPTS
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(php.?|css|cgi)$ - [F,L]
+</IfModule>
+
 ........................................................................................
 ........................................................................................
 # If you got a shop/store:
@@ -2101,7 +2119,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]</IfModule>
 
 
-# ALTERNATIVE ( uses in my .htaccess1):
+# ALTERNATIVE:
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.jp?g [NC]
@@ -2970,6 +2988,7 @@ RewriteCond %{REQUEST_URI} /mobi/?$ [NC,OR]
 RewriteCond %{REQUEST_URI} /m/?$ [NC]
 RewriteRule (.*) - [F,L]
 </ifmodule>
+
 From:https://perishablepress.com
 
 # Alternative:
@@ -3676,8 +3695,92 @@ Deny from env=blocked_domain
 
 #  ALTERNATIVE:
 (DENY FROM) *amazonaws.com
+
+#  Amazon.com /Hell!
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} amazon\.com
+RewriteRule ^ - [NC,F,L]
+</IfModule>
+
 .......................................................................................
 .......................................................................................
+# If needed: https:// on:
+RewriteCond%{HTTPS}!on RewriteRule(.*)https://%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
+
+#Don't allow screenshots
+RewriteCond %{REQUEST_URI} screenshot(?:\-\d+)?\.(?:jpe?g|png|gif)$ [NC,OR]
+
+.......................................................................................
+.......................................................................................
+# Block tentatives to access Wordpress ressources
+RewriteEngine on
+RewriteRule ^(.*)wp-(.*)$ - [F]
+
+.......................................................................................
+.......................................................................................
+# Add Apache rewrite rules to your .htaccess file. 
+For example, the following will redirect all attempts to access files with names starting with, 
+"phpMyAdmin" to index.php.
+
+
+# Sample Apache Rewrite Rule
+
+RewriteRule ^/phpMyAdmin.*$ /index.php
+
+FOR plugins: //Test it!
+
+RewriteRule ^/wp-content/plugins.*$ /index.php
+
+Troubled Plugins:
+RewriteRule ^/wp-content/plugins/plugin name.*$ /index.php
+
+.......................................................................................
+.......................................................................................
+# Stop aggressive doamin:
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?zurnasohbet.org/.*$ [NC]
+RewriteRule .* - [F,L]
+
+
+# IF put in exting site:
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?evilsite.org/.*$ [NC]
+RewriteRule .* - [F,L]
+
+.......................................................................................
+.......................................................................................
+
+# protect includesrss file!
+RewriteRule^wp-includes/rss\.php$ - [R=404,L,NC] 
+
+# ----------------------------------------------------------------------
+# Prevent SSL cert warnings
+# ----------------------------------------------------------------------
+
+# Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent
+# https://www.example.com when your cert only allows https://secure.example.com
+
+<IfModule mod_rewrite.c>
+RewriteCond %{SERVER_PORT}!^443
+RewriteRule ^ https://example.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+
+# Sometimes: (protection)
+
+RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+.......................................................................................
+.......................................................................................
+
 ### STOP Ai:  
 
 
@@ -3704,6 +3807,11 @@ Disallow: /
 ‍User-agent: anthropic-ai
 Disallow: /
 ‍User-agent: Claude-Web
+Disallow: /
+
+# This blocks cohere-ai / Only if someone sends it you your site!
+
+User-agent: cohere-ai
 Disallow: /
 
 User-agent: AiHitBot
@@ -3865,6 +3973,7 @@ disallow: /
 SetEnvIfNoCase USER_AGENT "python-requests/2.26.0" bad_bot
 SetEnvIfNoCase USER_AGENT "python-requests" bad_bot
 
+
 RewriteCond%{{HTTP_USER_AGENT}HtmlRequestScraper [NC]
 
 RewriteCond%{{HTTP_USER_AGENT}GoogleScraper [NC]
@@ -3872,7 +3981,6 @@ RewriteCond%{{HTTP_USER_AGENT}GoogleScraper [NC]
 # Alternative:
 
 SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
-
 SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
 
 :
@@ -3895,84 +4003,13 @@ Open AI:  IP Adresses:
 
 # THIS is the one walking my blog:
 
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0 |Claude bot|Claude 2.1|Claudebot|Diffbot|
+
+RewriteCond%{HTTP_USER_AGENT}zh-CN|zh_CN zh\-CN|OPPO\sA33[NC]  //CHina Hell!
+
+RewriteCond%{HTTP_USER_AGENT}(360spider|apache|apache-useragents|Nikto)[NC]  Uses by hackers on A1!
+
+RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
 ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
-RewriteRule ^ – [F] 
-.......................................................................................
-.......................................................................................
-# If needed: https:// on:
-RewriteCond%{HTTPS}!on RewriteRule(.*)https://%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
-
-#Don't allow screenshots
-RewriteCond %{REQUEST_URI} screenshot(?:\-\d+)?\.(?:jpe?g|png|gif)$ [NC,OR]
-
-.......................................................................................
-.......................................................................................
-# Block tentatives to access Wordpress ressources
-RewriteEngine on
-RewriteRule ^(.*)wp-(.*)$ - [F]
-
-.......................................................................................
-.......................................................................................
-# Add Apache rewrite rules to your .htaccess file. 
-For example, the following will redirect all attempts to access files with names starting with, 
-"phpMyAdmin" to index.php.
-
-
-# Sample Apache Rewrite Rule
-
-RewriteRule ^/phpMyAdmin.*$ /index.php
-
-FOR plugins: //Test it!
-
-RewriteRule ^/wp-content/plugins.*$ /index.php
-
-Troubled Plugins:
-RewriteRule ^/wp-content/plugins/plugin name.*$ /index.php
-
-.......................................................................................
-.......................................................................................
-# Stop aggressive doamin:
-
-<IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?zurnasohbet.org/.*$ [NC]
-RewriteRule .* - [F,L]
-
-
-# IF put in exting site:
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?domain.com/.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?evilsite.org/.*$ [NC]
-RewriteRule .* - [F,L]
-
-.......................................................................................
-.......................................................................................
-
-# protect includesrss file!
-RewriteRule^wp-includes/rss\.php$ - [R=404,L,NC] 
-
-# ----------------------------------------------------------------------
-# Prevent SSL cert warnings
-# ----------------------------------------------------------------------
-
-# Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent
-# https://www.example.com when your cert only allows https://secure.example.com
-
-<IfModule mod_rewrite.c>
-RewriteCond %{SERVER_PORT}!^443
-RewriteRule ^ https://example.com%{REQUEST_URI} [R=301,L]
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
-
-
-# Sometimes: (protection)
-
-RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php [NC,L]
-
 .......................................................................................
 .......................................................................................
 # Headless SCRAPERS/Ai: 
@@ -3981,7 +4018,7 @@ RewriteCond %{HTTP_USER_AGENT} (Headless) [NC]
 RewriteCond %{HTTP_USER_AGENT} (HeadlessChrome) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Headless Chromium) [NC]
 RewriteCond %{HTTP_USER_AGENT} (HtmlUnit) [NC]
-RewriteCond %{HTTP_USER_AGENT} (Mozilla Firefox Headless Browser) [NC]
+RewriteCond %{HTTP_USER_AGENT}(Firefox Headless) [NC]
 RewriteCond %{HTTP_USER_AGENT} (PhantomJS Webkit) [NC]
 RewriteCond %{HTTP_USER_AGENT} (SimpleBrowser) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Splash) [NC]
@@ -4012,7 +4049,8 @@ RewriteCond %{HTTP_USER_AGENT} (Cheerio) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Puppeteer) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
 
-Another: Pain in the Ass:
+
+# Another: Pain in the Ass:
 RewriteCond%{HTTP_USER_AGENT}(crawler.ninja) [NC]
 
 # Web scraper
@@ -4022,10 +4060,37 @@ Disallow:
 User-Agent: thesis-research-bot
 Disallow: /
 
-#Stops generator of user agents, hopefully....
+# Stops generator of user agents, hopefully....
 
 User-agent: generator
 Disallow: / 
+
+
+# OLD Useragents scrapers use:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
+RewriteCond %{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Mozilla\/[1-120]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+
+
+# Some still use:
+RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+
+# Sometimes:
+RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
+:
+
+# OLD servers used by scraper:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
 
 .......................................................................................
 .......................................................................................
@@ -4048,28 +4113,40 @@ Disallow: /
 
 .......................................................................................
 .......................................................................................
-# PETALBOT HELL:  Block them:
-
-114.119.*.*
+# Block them:
 
 # China HELL: Unicom:
 110.240.*.*
 110.255.*.*
 
-# China/HOKONG HELL:
-
-deny from *aliyun.com
-deny from *alicloud.com
-deny from *chinatelecom.com.cn
-deny from *cyberwill.com.hk
-deny from *chinaunicom.com
-deny from *infomove.com
-deny from *minttelecom.com.au
-
 
 HELL FROM: ovh.com:
-
 deny from *ovh.com
+
+CHINA HELL:
+#China
+deny from *aliyun.com 
+deny from *alicloud.com  
+deny from *chinatelecom.com.cn 
+deny from *chinamobileltd.com
+deny from *chinanetcenter.com  
+deny from *cyberwill.com.hk  
+deny from *chinaunicom.com  
+deny from *infomove.com  
+deny from 119.42.146.146
+Deny from 119.42.*.* 
+deny from *tencent.com 
+deny from *ucloud.cn  
+deny from *anubisnetworks.com 
+
+#Hongkong 
+deny from *eplushost.com 
+deny from *spread51.com  
+deny from *scloud.sg
+Deny from 114.119.*.*    #petalbot hell
+
+#Singapore
+deny from *vultr.com  #Singapore
 
 .......................................................................................
 .......................................................................................
@@ -4080,7 +4157,16 @@ RewriteCond%{HTTP_REFERER}^Domainadreesshere.com/ RewriteRule /* https://www.por
 RewriteCond%{HTTP_REFERER}^.bc.googleusercontent.com/ RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
 RewriteCond%{HTTP_REFERER}^.binance,com / RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
 </IfModule>
+
+.......................................................................................
+.......................................................................................
+# FONTS - Deny download:
+
+To avoid the font files download change the permission of the font files directory of your site from 755 to 700.
+
+Try and see if it works:)
+
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231205
+Uodated: 231220
