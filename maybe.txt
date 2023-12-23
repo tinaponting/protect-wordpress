@@ -1,6 +1,6 @@
 Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own htaccess:)
 .....................................................................:)
-# Bots Using Fake User-Agents
+# Bots Using Fake User-Agents  : use wirh care! can block legitime visitors!
 
 * If you want to use, place between:
 
@@ -10,9 +10,8 @@ RewriteRule ^.* - [F,L]
 
 </IfModule>
 
-..............
-
-# OK:
+........................................................................
+# These HELL Spammers and Hackers:
 
 RewriteCond %{HTTP_USER_AGENT} ^-?$ [OR]
 RewriteCond %{HTTP_USER_AGENT} "^\(" [OR]
@@ -237,7 +236,7 @@ RewriteCond %{REMOTE_ADDR} !^131\.253\.25\.
 RewriteRule .* /strangebrowser.html? [R=307,L]
 RewriteRule ^.*$ - [F,L]
 
-.............
+........
 
 # Bad bots:
 
@@ -444,6 +443,7 @@ RewriteCond %{HTTP_USER_AGENT} BadBot [OR]
 RewriteCond %{HTTP_USER_AGENT} EvilScanner [OR]
 RewriteCond %{HTTP_USER_AGENT} Fake
 RewriteRule .* - [F]
+.........................................................
 .........................................................
 #DIV: HELL -NOT WANTED!
 
@@ -4148,6 +4148,12 @@ Deny from 114.119.*.*    #petalbot hell
 #Singapore
 deny from *vultr.com  #Singapore
 
+#Yandex bot:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
+
+By misstake I saw that this stops Yandex for visiting my blog.....
+
 .......................................................................................
 .......................................................................................
 # WHEN yo are really tired of someone - mostly china/honkong/http//binance.com for me:
@@ -4169,4 +4175,4 @@ Try and see if it works:)
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231220
+Uodated: 231222
