@@ -1281,7 +1281,7 @@ rewritecond% {REQUEST_FILENAME}! ^ (. +) .js $
 rewritecond% {REQUEST_FILENAME}! file.php $
 RewriteRule ^ (. +) $ / Deny / [nc]
 
-# Prevent Direct File Download in Apache Server
+# Prevent Direct File Download in Apache Server  // Not  alwaysworking ,try and see!
 
 <filesmatch ".*"="">
     Order Allow,Deny
@@ -3780,7 +3780,14 @@ RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php
 
 .......................................................................................
 .......................................................................................
+Header extra security:  (sometimes slow down the site, try and see!
 
+Header append X-FRAME-OPTIONS "DENY"
+Header set Set-Cookie HttpOnly;Secure 
+Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+
+.......................................................................................
+.......................................................................................
 ### STOP Ai:  
 
 
@@ -3794,19 +3801,25 @@ Disallow: /
 User-agent: AgentRunner.ai
 Disallow: /
 
-User-agent: AIBOT Disallow:/
-User-agent: AISearchBot Disallow:/
+User-agent: AIBOT 
+Disallow:/
+User-agent: AISearchBot 
+Disallow:/
 
 User-agent: anthropic-ai
 Disallow: /
-User-agent: Claude bot
-Disallow: /
-User-agent: Claude 2.1
-Disallow: /
-
 ‍User-agent: anthropic-ai
 Disallow: /
+
+User-agent: Claude bot
+Disallow: /
 ‍User-agent: Claude-Web
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
+User-agent: Claudebot
+Disallow: /
+User-agent: Claude 2.1
 Disallow: /
 
 # This blocks cohere-ai / Only if someone sends it you your site!
@@ -3819,9 +3832,6 @@ Disallow:/
 
 User-agent: AIBOT
 Disallow:/
-
-‍User-agent: Claude-Web
-Disallow: /
 
 User-agent: CCBot
 Disallow: /
@@ -3846,11 +3856,6 @@ Disallow: /
 User-agent: GPT-3.5
 Disallow: /
 User-agent: GPT-4 
-Disallow: /
-
-User-agent: Claudebot
-Disallow: /
-User-agent: Claude 2.1
 Disallow: /
 
 User-agent: Google-Extended   
@@ -4003,13 +4008,18 @@ Open AI:  IP Adresses:
 
 # THIS is the one walking my blog:
 
-
 RewriteCond%{HTTP_USER_AGENT}zh-CN|zh_CN zh\-CN|OPPO\sA33[NC]  //CHina Hell!
 
 RewriteCond%{HTTP_USER_AGENT}(360spider|apache|apache-useragents|Nikto)[NC]  Uses by hackers on A1!
 
 RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
 ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
+
+??
+https://spawning.ai
+Cannon tfind any User agent!
+
+I´ve seen tis commint many times invading my blog!
 .......................................................................................
 .......................................................................................
 # Headless SCRAPERS/Ai: 
@@ -4092,6 +4102,10 @@ RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
 
+Scraper:
+
+RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
+
 .......................................................................................
 .......................................................................................
 #Image Stealer:
@@ -4120,10 +4134,32 @@ Disallow: /
 110.255.*.*
 
 
-HELL FROM: ovh.com:
+#HELL Hackers! 
+deny from *amazonaws.com
+deny from *amazon.com
+deny from *bigholding.vn 
+deny from *Binance.com
+deny from *bellsouth.net
+Deny from *bytedance.com
+deny from *contabo.com
+deny from *centurylink.com
+deny from *castleglobal.com
+deny from *.googleusercontent.com
+deny from *tm.net.my
+deny from *digitalocean.com
 deny from *ovh.com
-
-CHINA HELL:
+deny from *stableserver.net
+deny from *minttelecom.com.au
+Deny from *tm.net.my
+deny from *maxcloudtechnology.com
+deny from *ines.ro
+deny from *veloxserv.co.uk
+#Sweden
+deny from *internetvikings.com
+# Brazil
+deny from *ciclohost.com.br
+#Canada
+deny from *dataprovider.com
 #China
 deny from *aliyun.com 
 deny from *alicloud.com  
@@ -4133,27 +4169,65 @@ deny from *chinanetcenter.com
 deny from *cyberwill.com.hk  
 deny from *chinaunicom.com  
 deny from *infomove.com  
-deny from 119.42.146.146
 Deny from 119.42.*.* 
 deny from *tencent.com 
 deny from *ucloud.cn  
 deny from *anubisnetworks.com 
-
 #Hongkong 
+deny from *alicloud.com
+deny from *huawei.com
 deny from *eplushost.com 
 deny from *spread51.com  
 deny from *scloud.sg
+deny from *spread51.com
+deny from *infomove.com
 Deny from 114.119.*.*    #petalbot hell
-
+Deny from 119.42.*.*     #infomove.com Hell
 #Singapore
-deny from *vultr.com  #Singapore
+deny from *vultr.com 
+deny from *vultrusercontent.com
+#Belarus
+deny from *datahata.by  
+#Tyskland - Hetzner HELL!
+deny from *hetzner.de
+#India
+deny from *ipxo.com
+#Korea
+deny from *tencent.com
+#Russia
+deny from *avantel.ru
+deny from *gtn.ru
+deny from *layershift.ru  
+deny from *nic.ru  
+deny from *nationalcablenetworks.ru 
+deny from *rostelecom.ru 
+deny from *tinconet.ru
+deny from *scg.tv
+deny from *websitewelcome.com
+deny from *crelcom.ru
+deny from *eurobyte.ru 
+deny from *westcall.ru
+#TAIWAN
+deny from *emagineconcept.com
+deny from *websitewelcome.com
+#Vietnamn
+deny from *coccoc.com
+deny from *onet.host
+deny from *megacore.net
+#Nederländerna
+deny from *limenet.io
+deny from *legaconetworks.nl
+
 
 #Yandex bot:
+By misstake I saw that this stops Yandex for visiting my blog.....
 
 RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
 
-By misstake I saw that this stops Yandex for visiting my blog.....
 
+
+# Downloader from China:  Vistis again and again and try to download!  :(
+RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
 .......................................................................................
 .......................................................................................
 # WHEN yo are really tired of someone - mostly china/honkong/http//binance.com for me:
@@ -4175,4 +4249,4 @@ Try and see if it works:)
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 231222
+Uodated: 230102
