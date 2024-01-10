@@ -9,6 +9,14 @@ Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own 
 RewriteRule ^.* - [F,L]
 
 </IfModule>
+........................................................................
+# Hide folder: Not visible Folder, place in a .htaccess in folder where you want it.
+
+IndexOptions +ShowForbidden
+
+OR:
+
+Options +FollowSymLinks -MultiViews -Indexes
 
 ........................................................................
 # These HELL Spammers and Hackers:
@@ -4028,7 +4036,7 @@ RewriteCond %{HTTP_USER_AGENT} (Headless) [NC]
 RewriteCond %{HTTP_USER_AGENT} (HeadlessChrome) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Headless Chromium) [NC]
 RewriteCond %{HTTP_USER_AGENT} (HtmlUnit) [NC]
-RewriteCond %{HTTP_USER_AGENT}(Firefox Headless) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Firefox Headless) [NC]
 RewriteCond %{HTTP_USER_AGENT} (PhantomJS Webkit) [NC]
 RewriteCond %{HTTP_USER_AGENT} (SimpleBrowser) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Splash) [NC]
@@ -4132,6 +4140,8 @@ Disallow: /
 # China HELL: Unicom:
 110.240.*.*
 110.255.*.*
+
+openbot // useragent honkong hell!
 
 
 #HELL Hackers! 
