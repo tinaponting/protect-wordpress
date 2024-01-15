@@ -111,8 +111,10 @@ define('DB_CHARSET','utf8');
 
 Love Kristina Sweden
 
-UPDATED FILES AND FOLDERS:
--Updaed: 2410110: w-admin for more security:)
+***UPDATED FILES AND FOLDERS: ***
+
+- Updated: 230115 htaccess1, for better Security.
+- Updated: 2410110: w-admin for more security:)
 - Updated: 2400102, my strongest; htaccess1.
 - Updated: 230306 - 231220
 - Updated: 2302006 - 230505. 
