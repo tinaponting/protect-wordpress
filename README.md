@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 230116 htaccess, errors....Checked:)
 - Updated: 230115 htaccess1, for better Security.
 - Updated: 2410110: w-admin for more security:)
 - Updated: 2400102, my strongest; htaccess1.
