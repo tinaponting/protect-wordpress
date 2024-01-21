@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240124 htaccess1.
 - Updated: 230116 htaccess, errors....Checked:)
 - Updated: 230115 htaccess1, for better Security.
 - Updated: 2410110: w-admin for more security:)
@@ -122,8 +123,8 @@ Love Kristina Sweden
 - Updated: 230202 - 230101.
 - Updated: 221225 - 221230.
 - Updated: 221225 - 221124.
-- Updated: 2200915 - 221124.
-- Updated: 20220 - 2021.
+- Updated: 220915 - 221124.
+- Updated: 200220 - 2021.
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
