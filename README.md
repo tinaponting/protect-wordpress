@@ -113,7 +113,8 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
--Updated: 240125, htaccess1 for better protection:)
+- Updated: 240127, htaccess1 by accident, I blocked, google.....:(
+- Updated: 240125, htaccess1 for better protection:)
 - Updated: 240125, updated, wp-includes for more power and security.
 - Updated: 240124 htaccess1.
 - Updated: 230116 htaccess, errors....Checked:)
