@@ -113,6 +113,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240223, htaccess1 updated:)
 - Updaed: 240201, htaccess1 with 2024 Security headers:)
 - Updated: 240201, perssishpress firewall updated:)
 - Updated: 240127, htaccess1 by accident, I blocked, google.....:(
