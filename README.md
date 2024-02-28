@@ -65,8 +65,6 @@ Free version: https://wordpress.org/plugins/login-ip-country-restriction/  * Bot
 
 * Simple Login Captcha:  https://wordpress.org/plugins/simple-login-captcha/    Really godd against Autobots, does not take poer from your blog.
 
-* WP CSRF Protector: (mostly in forms, if you use that is Mostly on Multisite then it is in good use!, this works fine!) https://github.com/mebjas/WP-CSRF-Protector
-
 * None above takes power from your blog!
 
 If you got google / bing XML files, set them t0 444 0r if it works: 440:) for safety
