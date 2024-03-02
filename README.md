@@ -111,6 +111,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240304, wp-includes
 - Updated: 240303, wp-content
 - Updated: 240229fuckdevtools:)
 - Updated: 240225 htaccess1 udated:)
