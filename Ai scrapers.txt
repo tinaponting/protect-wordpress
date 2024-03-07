@@ -80,6 +80,7 @@ Babbar.tech:
 Mozilla/5.0+(compatible;+Barkrowler/0.9;++https://babbar.tech/crawler)
 
 HACKERS:
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21	
 Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0	
 Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0	
@@ -121,7 +122,54 @@ Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4 (KHTML, like G
 CHINA UNICORN:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
 
+Strange:
+Mozilla/99999.9 AppleWebKit/9999999.99 (KHTML, like Gecko) Chrome/999999.0.9999.99 Safari/9999999.99 seraph-accel-Agent/2.20.45 Mobile Android Silk/ Blackberry Opera Mini Opera Mobi
+Mozilla/99999.9 AppleWebKit/9999999.99 (KHTML, like Gecko) Chrome/999999.0.9999.99 Safari/9999999.99 seraph-accel-Agent/2.20.45
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/242.02.8301.120 Safari/537.36
 
 
-Updated: 231128
+...........................................................
 
+Headless browsers:
+
+RewriteCond %{HTTP_USER_AGENT} ^GoogleScraper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Dotbot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Headless scraping bad_bot [NC,OR]
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+OLD Useragents scrapers use:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
+RewriteCond %{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Mozilla\/[1-120]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+
+
+Some still use:
+RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+
+SOmetimes:
+RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
+:
+
+OLD servers used by scraper:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+
+Scraper:
+RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 231223
