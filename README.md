@@ -111,7 +111,8 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
--Updated: 240304: htaccess1.
+- Updated: 240308: htaccess1 updated -Checked for errors! Works no impact on speed!
+- Updated: 240304: htaccess1.
 - Updated: 240304, wp-includes
 - Updated: 240303, wp-content
 - Updated: 240229fuckdevtools:)
