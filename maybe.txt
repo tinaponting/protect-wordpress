@@ -4046,6 +4046,15 @@ RewriteCond %{HTTP_USER_AGENT} (SlimerJS) [NC]
 RewriteCond %{HTTP_USER_AGENT} (TrileFejs) [NC]
 RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
 
+RewriteCond %{HTTP_USER_AGENT} (SSL/TLS Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (WhatWeb) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Wappalyzer Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (WordPress Security Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Nmap) [NC]
+RewriteCond %{HTTP_USER_AGENT} (OpenVAS) [NC]
+
+HTTP Header Check
+
 # Alternative:
 
 RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
@@ -4099,22 +4108,112 @@ RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
 
-
 # Some still use:
 RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
 
 # Sometimes:
 RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
 :
-
 # OLD servers used by scraper:
 
 RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
 
 Scraper:
-
 RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
+
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"^WPScan"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^sqlmap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^sqlninja" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Wappalyzer"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^zgrab"[NC]
+RewriteCond%{HTTP_USER_AGENT}"^openvas"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nuclei" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nmap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nikto"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^nessus"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^havij"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^dirbuster"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^arachni"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^w3af.org"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^w3af.sourceforge.net"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^dirbuster"[NC,OR]]
+RewriteCond%{HTTP_USER_AGENT}"^SF"[OR]
+RewriteCond%{HTTP_USER_AGENT}"^fimap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^whatweb"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^jbrofuzz"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT}"^webshag"[NC]
+RewriteRule ^.* - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
+ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Photon/1.0[NC] 
+RewriteCond%{HTTP_USER_AGENT}(Headless)[NC]
+RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome)[NC]
+RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome (Linux))[NC]
+RewriteCond%{HTTP_USER_AGENT}(Headless Chromium)[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Scan).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(headless.py)[NC]
+RewriteCond%{HTTP_USER_AGENT}(crawler.ninja)[NC]
+RewriteCond%{HTTP_USER_AGENT}(HtmlUnit)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Firefox Headless)[NC]
+RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(PhantomJS Webkit)[NC]
+RewriteCond%{HTTP_USER_AGENT}(SimpleBrowser)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Splash)[NC]
+RewriteCond%{HTTP_USER_AGENT}(SlimerJS)[NC]
+RewriteCond%{HTTP_USER_AGENT}(TrileFejs)[NC]
+RewriteCond%{HTTP_USER_AGENT}(ZombieJS)[NC]
+RewriteCond%{HTTP_USER_AGENT}(node js)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Ruby)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Python)[NC]
+RewriteCond%{HTTP_USER_AGENT}(cURL)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Rust)[NC] 
+RewriteCond%{HTTP_USER_AGENT}(Scrapy)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Java)[NC]
+RewriteCond%{HTTP_USER_AGENT}(R)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Golang Scraper)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Go Web Scraping)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Request-Promise-Native)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
+RewriteCond %{HTTP_USER_AGENT} (SSL/TLS Scan) [NC]
+RewriteCond%{HTTP_USER_AGENT}(WPScan"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT}(WhatWeb) [NC]
+RewriteCond %{HTTP_USER_AGENT}(Wappalyzer Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT}(WordPress Security Scan) [NC]
+
+# Common Search eninge old uses:
+RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
+RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozilla\/[1-4]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3.1-9]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
+RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
+RewriteRule .* - [F]</ifModule>
+
+
+#Dangerous port scanner:
+RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC]
 
 .......................................................................................
 .......................................................................................
@@ -4325,6 +4424,7 @@ deny from *wordpress.com
 deny from *wowrack.com
 #UKRAINA
 deny from *hidehost.net
+
 #THE REST OF SHITBAGS
 deny from 54.36.*.*    #Shitbag
 deny from 46.101.*.*   #dedicated.com
@@ -4344,8 +4444,8 @@ By misstake I saw that this stops Yandex for visiting my blog.....
 RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
 
 
-
 # Downloader from China:  Vistis again and again and try to download!  :(
+
 RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
 .......................................................................................
 .......................................................................................
@@ -4365,6 +4465,8 @@ To avoid the font files download change the permission of the font files directo
 
 Try and see if it works:)
 
+.......................................................................................
+.......................................................................................
 
 BInance  HELL:
 
@@ -4386,7 +4488,9 @@ Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537
 Python:
 RewriteCond%{HTTP_USER_AGENT}^python-binance v1.0.19  [NC] 
 RewriteCond%{HTTP_USER_AGENT}^python-binance [NC] 
+RewriteCond%{HTTP_USER_AGENT}^apache-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^linux-binance [NC]
 .......................................................................................
 .......................................................................................
 ---------------------------------------------------------------------------------------
-Uodated: 240222
+Updated: 240312
