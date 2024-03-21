@@ -1115,7 +1115,6 @@ RewriteRule ^wp-content/(plugins|themes)/(.+)/$ - [L,R=404]
 
 .......................................................................................
 .......................................................................................
-
 #USER INI:
 
 RewriteRule \.user\.ini$ - [F,L,NC]
@@ -1387,8 +1386,6 @@ Apache 2.4:
 
 ........................................................................................
 ........................................................................................
-.......................................................................................
-.......................................................................................
 # PHP info file protect:
 
 <Files  php-info.php>
@@ -3796,6 +3793,15 @@ Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
 
 .......................................................................................
 .......................................................................................
+#Humans.txt deny:
+
+<IfModule mod_rewrite.c>RewriteRule ^([a-zA-Z0-9-_\/]+)humans.txt$ /humans.txt [F,L]</IfModule>
+
+#ADS:
+<IfModule mod_rewrite.c>RewriteRule ^([a-zA-Z0-9-_\/]+)ads.txt$ /humans.txt [F,L]</IfModule>
+
+.......................................................................................
+.......................................................................................
 ### STOP Ai:  
 
 
@@ -4249,7 +4255,7 @@ RewriteCond%{HTTP_USER_AGENT}"^fimap"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^whatweb"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^jbrofuzz"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"^webshag"[NC]
+RewriteCond %{HTTP_USER_AGENT}"^webshag"[NC]
 RewriteCond%{HTTP_USER_AGENT}(Photon/1.0[NC] 
 RewriteCond%{HTTP_USER_AGENT}(Headless)[NC]
 RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome)[NC]
@@ -4292,12 +4298,11 @@ RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
-RewriteCond%{HTTP_USER_AGENT}(SSL/TLS Scan)[NC]
+RewriteCond %{HTTP_USER_AGENT}(SSL/TLS Scan)[NC]
 RewriteCond%{HTTP_USER_AGENT}(WPScan"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(WhatWeb)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Webscrape AI)[NC]
-RewriteCond%{HTTP_USER_AGENT}(WordPress Security Scan)[NC]
+RewriteCond %{HTTP_USER_AGENT}(WhatWeb)[NC]
+RewriteCond %{HTTP_USER_AGENT}(WordPress Security Scan)[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
 RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
@@ -4331,8 +4336,6 @@ aiohttp
 got-scraping
 AnyPicker
 
-
-#ai new list og ai scrapers::
 Browse AI
 Webscrape AI
 Raw HTML Scraper
@@ -4368,19 +4371,6 @@ Disallow: /
 110.255.*.*
 
 openbot // useragent honkong hell!
-
-#THE REST OF SHITBAGS
-deny from 54.36.*.*    #Shitbag
-deny from 46.101.*.*   #dedicated.com
-deny from 167.160.*.*  #dedicated.com
-deny from 159.89.*.*   #ovh.com
-deny from 119.42.*.* 	
-deny from 146.70.*.* 
-deny from 167.160.*.* 
-deny from 192.0.*.* 
-deny from 46.101.*.* 
-deny from 216.*.* 
-
 
 #Yandex bot:
 By misstake I saw that this stops Yandex for visiting my blog.....
@@ -4429,11 +4419,18 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BNC/1.7.0 (Android 1.39.4)
 
 
-Python:
-RewriteCond%{HTTP_USER_AGENT}^python-binance v1.0.19  [NC] 
-RewriteCond%{HTTP_USER_AGENT}^python-binance [NC] 
+Python and the rest shitbags::
+RewriteCond%{HTTP_USER_AGENT}^http-requests-binance.com-error-log [NC] 
+RewriteCond%{HTTP_USER_AGENT}^HTTP/1.0-binance.com [NC] 
 RewriteCond%{HTTP_USER_AGENT}^apache-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/5.0-binance [NC]
 RewriteCond%{HTTP_USER_AGENT}^linux-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^php-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^python-binance v1.0.19 [NC]
+RewriteCond%{HTTP_USER_AGENT}^python-binance [NC]  
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/5.0-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^Windows NT 10.0-binance [NC]
+RewriteCond%{HTTP_USER_AGENT}^Windows-binance [NC]
 .......................................................................................
 .......................................................................................
 # Deny all methods except POST with htaccess:
