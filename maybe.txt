@@ -4220,22 +4220,21 @@ RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]
-RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]
 RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
 ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
-RewriteCond%{HTTP_USER_AGENT}(A1 Website DownloadRewriteCond%{HTTP_USER_AGENT}(
-RewriteCond%{HTTP_USER_AGENT}(A1 Website ScraperRewriteCond%{HTTP_USER_AGENT}(
+RewriteCond%{HTTP_USER_AGENT}(A1 Website Download[NC] 
+RewriteCond%{HTTP_USER_AGENT}(A1 Website Scraper[NC] 
 RewriteCond%{HTTP_USER_AGENT}(dataproviderbot.com)[NC] 
 RewriteCond%{HTTP_USER_AGENT}(DataForSeoBot)[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*scan.*$ [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Browse AI"[NC]
 RewriteCond%{HTTP_USER_AGENT}"^Webscrape AI"[NC]
 RewriteCond%{HTTP_USER_AGENT}"^sqlmap"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"^sqlninja" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^sqlninja"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Wappalyzer"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^zgrab"[NC]
 RewriteCond%{HTTP_USER_AGENT}"^openvas"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"^Nuclei" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nuclei"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Nmap"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Nikto"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^nessus"[NC,OR]
@@ -4250,9 +4249,7 @@ RewriteCond%{HTTP_USER_AGENT}"^fimap"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^whatweb"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^jbrofuzz"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC,OR]
-RewriteCond %{HTTP_USER_AGENT}"^webshag"[NC]
-RewriteCond%{HTTP_USER_AGENT}(http-requests-error-log)[NC]
-RewriteCond%{HTTP_USER_AGENT}(http-requests-errors)[NC]  
+RewriteCond%{HTTP_USER_AGENT}"^webshag"[NC]
 RewriteCond%{HTTP_USER_AGENT}(Photon/1.0[NC] 
 RewriteCond%{HTTP_USER_AGENT}(Headless)[NC]
 RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome)[NC]
@@ -4267,13 +4264,13 @@ RewriteCond%{HTTP_USER_AGENT}(headless.py)[NC]
 RewriteCond%{HTTP_USER_AGENT}(crawler.ninja)[NC]
 RewriteCond%{HTTP_USER_AGENT}(HtmlUnit)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Firefox Headless)[NC]
-RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^GoogleScraper [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^Headless scraping bad_bot [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper [NC]
-RewriteCond%{HTTP_USER_AGENT}^GoogleScraper [NC]
+RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^Headless scraping bad_bot[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper[NC]
+RewriteCond%{HTTP_USER_AGENT}^GoogleScraper[NC]
 RewriteCond%{HTTP_USER_AGENT}(PhantomJS Webkit)[NC]
 RewriteCond%{HTTP_USER_AGENT}(SimpleBrowser)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Splash)[NC]
@@ -4295,11 +4292,12 @@ RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
-RewriteCond %{HTTP_USER_AGENT}(SSL/TLS Scan) [NC]
+RewriteCond%{HTTP_USER_AGENT}(SSL/TLS Scan)[NC]
 RewriteCond%{HTTP_USER_AGENT}(WPScan"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(WhatWeb) [NC]
-RewriteCond %{HTTP_USER_AGENT}(WordPress Security Scan) [NC]
+RewriteCond%{HTTP_USER_AGENT}(WhatWeb)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Webscrape AI)[NC]
+RewriteCond%{HTTP_USER_AGENT}(WordPress Security Scan)[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
 RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
@@ -4311,7 +4309,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-10]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3.1-9]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3-10]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
 RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
@@ -4371,187 +4369,6 @@ Disallow: /
 
 openbot // useragent honkong hell!
 
-
-#HELL Hackers! 
-deny from *Binance.com
-#Sweden
-deny from *gavlenet.com
-deny from *hi3gaccess.se
-deny from *resilans.se
-deny from *internetvikings.com
-#Austria
-deny from *vodien.com.au
-# Brazil
-deny from *desktop.com.br
-deny from *ciclohost.com.br
-deny from *mundivox.com
-#Belarus
-deny from *datahata.by 
-#Bangladesh
-deny from *bddsl.com.bd
-#China
-deny from *aliyun.com 
-deny from *alicloud.com
-deny from *anubisnetworks.com   
-deny from *chinatelecom.com.cn 
-deny from *chinamobileltd.com
-deny from *chinanetcenter.com  
-deny from *cyberwill.com.hk  
-deny from *chinaunicom.com  
-deny from *kingsoft.com 
-deny from *llidc.com
-deny from *ucloud.cn
-#Chile
-deny from *stumpnernet.de  
-#Hongkong 
-deny from *alicloud.com
-Deny from *bytedance.com
-deny from *contabo.com
-deny from *huawei.com
-deny from *hgc.com.hk
-deny from *eplushost.com 
-deny from *spread51.com  
-deny from *scloud.sg
-deny from *ctgserver.net
-deny from *spread51.com
-deny from *infomove.com
-deny from *kamatera.com
-Deny from *rackip.com
-Deny from *powerline.hk
-Deny from 114.119.*.*     #petalbot 
-Deny from 119.42.*.*      #infomove.com 
-Deny from 103.194.*.*     #eplushost.com
-#France
-deny from *hosteurope.de 
-deny from *ahrefs.com
-#Germany
-deny from *cdn77.com
-deny from *contabo.com
-deny from *dataforseo.com
-deny from *hetzner.de
-deny from *enmyloc.de
-deny from *etten-server.de
-deny from *ipxo.com
-deny from *ionos.com
-deny from *lrz.de
-deny from *njal.la
-deny from 168.119.*.*   #hetzner.de
-#Turkey
-deny from *megatrhost.com
-#India
-deny from *ipxo.com
-deny from *airtel.in
-deny from *bellsouth.net
-#Japan
-deny from *gmo.jp
-deny from *kddi.com
-deny from *yahoo.co.jp
-#Kanada
-deny from *ahrefs.com
-deny from *dataprovider.com
-deny from *oracle.com
-deny from *esecuredata.com
-#Russia
-deny from *aoiot.ru
-deny from *avantel.ru
-deny from *adminvps.ru
-deny from *estt.ru
-deny from *crelcom.ru
-deny from *eurobyte.ru 
-deny from *gtn.ru
-deny from *layershift.ru 
-deny from *mts-nn.ru 
-deny from *nic.ru  
-deny from *nationalcablenetworks.ru 
-deny from *obit.ru
-deny from *rostelecom.ru 
-deny from *vimpelcom.com
-deny from *scg.tv
-deny from *sibirtelecom.ru
-deny from *mga.bionet.nsc.ru
-deny from *tinconet.ru
-deny from *timeweb.ru
-deny from *teleport-tv.ru
-deny from *websitewelcome.com
-deny from *westcall.ru
-deny from *vimpelcom.com
-#Romania
-deny from *alexhost.md
-#Singapore
-deny from *huawei.com
-deny from *vultr.com 
-deny from *vultrusercontent.com
-deny from *tencent.com
-#Switzerland
-deny from *tencentprivatelayer.com
-#Nederlands
-deny from *limenet.io
-deny from *ipxo.com
-deny from 94.156.*.* #limenet.io
-deny from 91.92.*.*  #limenet.io
-deny from 94.156.*.*   #limenet.io
-deny from *24x7.nl
-deny from *legaconetworks.nl
-#Tor
-deny from *emeraldonion.org
-deny from *as1101.net
-deny from *buyvm.net
-deny from *humansconnexion.com
-deny from *hosteurope.de
-deny from *theinfrastructure.group
-deny from *nforce.com
-deny from *onion.xor.sc
-deny from *tor-exit-54.for-privacy.net
-deny from *tor-exit-33.for-privacy.net
-deny from *21.tor-exit.nothingtohide.nl
-deny from *28.tor-exit.nothingtohide.nl
-deny from *tor-exit-9.zbau.f3netze.de
-deny from *tor02.zencurity.com
-deny from *zwiebelfreunde.de
-#TAIWAN
-deny from *emagineconcept.com
-deny from *websitewelcome.com
-#Vietnamn
-deny from *coccoc.com
-deny from *onet.host
-deny from *megacore.net
-deny from *bigholding.vn
-deny from *edigi.vn
-#USA
-deny from *athenixinc.com
-deny from *bigtip.com
-deny from *bandito.net
-deny from *bellsouth.net
-deny from *contabo.com
-deny from *cloudflare.com
-deny from *centurylink.com
-deny from *castleglobal.com
-deny from *crashlytics.com
-deny from *dedicated.com
-deny from *godaddy.com
-deny from *digitalocean.com
-deny from *dreamhost.com
-deny from *he.net
-deny from *intergen.org
-deny from *linode.com
-deny from *stableserver.net
-deny from *syndesi-networks.nl
-deny from *scaleway.com
-deny from *shotianseals.com
-deny from *securedservers.com
-deny from *zenlayer.com
-deny from *njal.la
-deny from *maxcloudtechnology.com
-deny from *mmh-inc.com
-deny from *websitewelcome.com
-deny from *ovh.com
-deny from *oracle.com
-deny from *microsoft.com
-deny from *wordpress.com
-deny from *wowrack.com
-#UKRAINA
-deny from *hidehost.net
-
 #THE REST OF SHITBAGS
 deny from 54.36.*.*    #Shitbag
 deny from 46.101.*.*   #dedicated.com
@@ -4595,7 +4412,7 @@ Try and see if it works:)
 .......................................................................................
 .......................................................................................
 
-BInance  HELL:
+#Binance  HELL:
 
 RewriteCond%{HTTP_USER_AGENT}(Mozilla/5.0(Linux; Android 10;JNY-LX1 Build/HUAWEIJNY-L21;wv)AppleWebKit/537.36(KHTML,like Gecko)Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BNC/1.7.0 (Android 1.39.4))[NC] 
 RewriteCond%{HTTP_USER_AGENT}(Mozilla/5.0(Windows NT 10.0;Win64;x64)AppleWebKit/537.36(KHTML,like Gecko)Binance/1.26.0 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36 (electron 1.26.0)Windows 10 desktop)[NC] 
@@ -4638,4 +4455,4 @@ deny from all
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240318
+Updated: 240321
