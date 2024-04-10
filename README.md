@@ -110,7 +110,8 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
-- Updated: 230321 maybe text:)
+- Updated:24010 htaccess1 for better protection:)
+- Updated: 240321 maybe text:)
 - Updated: 240312, wp-includes for better protection.
 - Updated: 24010 htaccess, better deflate and filesmatch:) - FASTER!
 - Updated: 240308: htaccess1 updated -Checked for errors! Works no impact on speed!
