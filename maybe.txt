@@ -4449,7 +4449,52 @@ order deny,allow
 deny from all
 </LimitExcept>
 
+.......................................................................................
+.......................................................................................
+
+# Secure cockeie:
+
+<IfModule mod_headers.c>
+    Header always edit Set-Cookie (.*) "$1; HttpOnly."
+</IfModule>
+
+
+In folders you want to protect:
+
+RewriteEngine On
+RewriteBase /
+<IfModule mod_rewrite.c>
+RewriteRule ^DIRECTORY - [F]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{HTTP_COOKIE} !^.*HttpOnly.*$ [NC]
+RewriteRule .* - [F]
+</IfModule>
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240321
+Linux Hacking tools:
+
+Metaspoilt
+
+Kali Linux
+Parrot Security OS
+BlackArch Linux
+BackBox Linux
+Arch Linux
+ZAP
+OSV-Scanner
+sqlmap
+
+Search engine uses by hackers:
+Crt.sh
+Shodan* Most used
+searchcode.com
+GreyNoise
+ZoomEye
+Shodan
+Censys
+Hunter
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+Updated: 240413
