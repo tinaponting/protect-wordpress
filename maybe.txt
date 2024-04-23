@@ -3835,6 +3835,10 @@ User-agent: Claudebot
 Disallow: /
 User-agent: Claude 2.1
 Disallow: /
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+
 
 # This blocks cohere-ai / Only if someone sends it you your site!
 
@@ -4502,6 +4506,32 @@ ZoomEye
 Shodan
 Censys
 Hunter
+
+
+Blandat nytt: 22240423:
+
+User-agent: 2ip bot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# website image creator
+User-agent: Nicecrawler
+Disallow: /
+
+User-agent: Dark Visitor
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
