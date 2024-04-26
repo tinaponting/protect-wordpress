@@ -4448,8 +4448,8 @@ RewriteCond%{HTTP_USER_AGENT}^Windows-binance [NC]
 .......................................................................................
 # Deny all methods except POST with htaccess:
 
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteRule .* - [R=403,L]
+RewriteCond %{REQUEST_METHOD}!POST
+RewriteRule .* - [F]
 
 2:
 .htaccess at the beginning/ <IfModule mod_headers.c>
@@ -4468,7 +4468,7 @@ deny from all
 # Secure cockeie:
 
 <IfModule mod_headers.c>
-    Header always edit Set-Cookie (.*) "$1; HttpOnly."
+Header always edit Set-Cookie (.*) "$1; HttpOnly."
 </IfModule>
 
 
@@ -4477,7 +4477,6 @@ In folders you want to protect:
 RewriteEngine On
 RewriteBase /
 <IfModule mod_rewrite.c>
-RewriteRule ^DIRECTORY - [F]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{HTTP_COOKIE} !^.*HttpOnly.*$ [NC]
 RewriteRule .* - [F]
@@ -4503,9 +4502,13 @@ Shodan       * Most used
 searchcode.com
 GreyNoise
 ZoomEye
-Shodan
 Censys
 Hunter
+
+# Tor:
+Tails
+Tor2Web
+TOR browser
 
 
 Blandat nytt: 22240423:
@@ -4539,28 +4542,104 @@ Disallow: /
 #Claudebot HELL
 
 <IfModule mod_rewrite.c>
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-19-56-45.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-85-6-255.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-232-112-238.compute-1.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-216-239-46.us-east-2.compute.amazonaws.com [NC,OR]	
 RewriteCond%{REMOTE_HOST}^.*\ec2-44-204-243-12.compute-1.amazonaws.com [NC,OR]	 
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-234-211-244.compute-1.amazonaws.com [NC,OR]	 	
-RewriteCond%{REMOTE_HOST}^.*\ec2-44-206-241-18.compute-1.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-18-190-156-212.us-east-2.compute.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-23-123.us-east-2.compute.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-15-18-66.us-east-2.compute.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-18-232-112-238.compute-1.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-12-71-34.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-234-211-244.compute-1.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-44-206-241-18.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-44-200-170-141.compute-1.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-44-206-245-52.compute-1.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-15-229-226.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-225-221-215.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-239-92-207.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-14-246-254.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-52-15-71-15.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-138-122-4.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-42-94.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-77-114.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ecec2-3-146-35-203.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-118-226-105.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-226-96-61.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-224-38-3.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-224-59-231.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-221-208-183.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-224-59-231.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-190-156-212.us-east-2.compute.amazonaws.com [NC,OR]		
 RewriteCond%{REMOTE_HOST}^.*\ec2-18-191-157-186.us-east-2.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-85-6-255.compute-1.amazonaws.com [NC,OR]	 	
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-117-162-80.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-133-152-95.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-23-123.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-15-18-66.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-12-162-179.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-12-71-34.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-165-8.us-east-2.compute.amazonaws.com [NC,OR] 	
 RewriteCond%{REMOTE_HOST}^.*\ec2-13-59-36-203.us-east-2.compute.amazonaws.com [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\ec2-3-137-199-162.us-east-2.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\ec2-18-118-205-186.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-117-162-80.us-east-2.compute.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-118-205-186.us-east-2.compute.amazonaws.com [NC,OR
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-118-184-237.us-east-2.compute.amazonaws.com [NC,OR]]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-118-120-204.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-221-129-145.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-222-115-120.us-east-2.compute.amazonaws.com [NC,OR]
 RewriteCond%{REMOTE_HOST}^.*\3ec2-3-144-116-159.us-east-2.compute.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-225-221-215.compute-1.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\ec2-44-200-170-141.compute-1.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-18-226-222-12.us-east-2.compute.amazonaws.com [NC,OR]	
-RewriteCond%{REMOTE_HOST}^.*\ec2-44-206-245-52.compute-1.amazonaws.com [NC,OR]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-22-248-208.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-18-226-222-12.us-east-2.compute.amazonaws.com [NC,OR]		
 RewriteCond%{REMOTE_HOST}^.*\ec2-18-119-125-135.us-east-2.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-186-173.us-east-2.compute.amazonaws.com [NC]	
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-138-34-158.us-east-2.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-186-173.us-east-2.compute.amazonaws.com[NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\ec2-3-146-34-191.us-east-2.compute.amazonaws.com [NC]	
+RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"User-Agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com"[NC]
 RewriteRule ^(.*)$ - [F]</IfModule>
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240423
+#Nytt: scanners/site siterippers, scanners:
+
+# TOR:
+RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(TOR browser)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(Gobuster)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Dirsearch)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(FeroxBuster)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(Masscan)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Metaspoilt)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(Nexpose)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(nmap)[NC,OR] 
+
+RewriteCond%{HTTP_USER_AGENT}(Kali Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(BlackArch Linuxv
+RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+Errors -that not goes away! 
+
+Set this: error_reporting(0);    in php file, under se example:
+
+Plugin Name: CM 404 Console
+Plugin URI: https://example.com/
+Description: Best plugins sofar
+Version: 1.0.6
+Author: example
+Author URI: https://www.example.com/
+*/
+error_reporting(0);
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+Updated: 240426
