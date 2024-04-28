@@ -110,8 +110,9 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: 2230428, htaccess1 for better perfomance and a error!
 - Uddated: 240426, beter choises for wp-includes
-- Updated: htacces1, for better performance:)
+- Updated: 240425, htacces1, for better performance:)
 - Updated: 240423, Robots.txt extendes version, with some new ai - no thanks:(
 - Updated: 240416, do no see folder for better performance.
 - Updated: 240416, wp-includes to works for wp:6,5
