@@ -5,9 +5,7 @@ Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own 
 * If you want to use, place between:
 
 <IfModule mod_rewrite.c>
-
 RewriteRule ^.* - [F,L]
-
 </IfModule>
 ........................................................................
 # Hide folder: Not visible Folder, place in a .htaccess in folder where you want it.
@@ -15,7 +13,6 @@ RewriteRule ^.* - [F,L]
 IndexOptions +ShowForbidden
 
 OR:
-
 Options +FollowSymLinks -MultiViews -Indexes
 
 ........................................................................
@@ -61,7 +58,7 @@ RewriteCond %{HTTP_USER_AGENT} "MSIE.*MSIE" [NC,OR]
 
 # Missing space after closing parenthesis:
 
-RewriteCond %{HTTP_USER_AGENT} "\)([a-z|A-Z])" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT}"\)([a-z|A-Z])" [NC,OR]
 
 # Fake mixtures of browsers:
 
@@ -1274,7 +1271,7 @@ RewriteRule \.(jpe?g|gif|png)$ /images/go_away.png [NC,L]
 <FilesMatch "\.(7z|as|bat|bin|cgi|chm|chml|class|cmd|com|command|dat|db|db2|db3|dba|dll|
 DS_Store|exe|gz|hta|htaccess|htc|htx|idc|ini|ins|isp|jar|jav|java|jse|jsfl|json|jsp|jsx|lib|
 lnk|out|php|phps|php5|php4|php3|phtml|phpt|pl|py|pyd|pyc|pyo|rar|shtm|shtml|sql|sys|tar|taz|tgz|tpl|vb|vbe|vbs|war|ws|wsf|xhtml|xml|z)$">
-Order Deny,Allow Deny from allRewriteCond%{HTTP_REFERER}!^$
+Order Deny,Allow Deny from all RewriteCond%{HTTP_REFERER}!^$
 
 
 # Restrict the type of executable files and display
@@ -2326,7 +2323,7 @@ RewriteCond%{QUERY_STRING}(\?|%3F) [NC]RewriteRule .* - [F,L]
 
 # ALTERNATIVE:
 
-RewriteCond%{QUERY_STRING} ^(%2d|-)[^=]+$ [NC] RewriteRule ^(.*) $1? [L]
+RewriteCond %{QUERY_STRING}^(%2d|-)[^=]+$ [NC] RewriteRule ^(.*) $1? [L]
 
 # ALTERNATIVE:
 
@@ -3113,7 +3110,6 @@ RedirectMatch 403 submit\_links\.
 RedirectMatch 403 change\_action\.
 Redirectmatch 403 com\_facileforms\/
 RedirectMatch 403 admin\_db\_utilities\.
-RedirectMatch 403 admin\.webring\.docs\.
 Redirectmatch 403 Table\/Latest\/index\.
 </IfModule>
 
@@ -3709,6 +3705,19 @@ RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^ - [NC,F,L]
 </IfModule>
 
+# I USE THIS: (240427)
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
+RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [F]      
+RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]] 
+RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]         
+RewriteRule ^(.*)$ - [F]</IfModule>
+
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3821,8 +3830,6 @@ User-agent: AISearchBot
 Disallow:/
 
 User-agent: anthropic-ai
-Disallow: /
-‍User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Claude bot
@@ -4055,7 +4062,6 @@ RewriteCond %{HTTP_USER_AGENT} (Splash) [NC]
 RewriteCond %{HTTP_USER_AGENT} (SlimerJS) [NC]
 RewriteCond %{HTTP_USER_AGENT} (TrileFejs) [NC]
 RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
-
 RewriteCond %{HTTP_USER_AGENT} (SSL/TLS Scan) [NC]
 RewriteCond %{HTTP_USER_AGENT} (WhatWeb) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Wappalyzer Scan) [NC]
@@ -4158,48 +4164,6 @@ RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC,OR]
 RewriteCond %{HTTP_USER_AGENT}"^webshag"[NC]
 RewriteRule ^.* - [F,L]</IfModule>
 
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
-ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Photon/1.0[NC] 
-RewriteCond%{HTTP_USER_AGENT}(Headless)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome (Linux))[NC]
-RewriteCond%{HTTP_USER_AGENT}(Headless Chromium)[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Scan).*$[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(headless.py)[NC]
-RewriteCond%{HTTP_USER_AGENT}(crawler.ninja)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HtmlUnit)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Firefox Headless)[NC]
-RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(PhantomJS Webkit)[NC]
-RewriteCond%{HTTP_USER_AGENT}(SimpleBrowser)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Splash)[NC]
-RewriteCond%{HTTP_USER_AGENT}(SlimerJS)[NC]
-RewriteCond%{HTTP_USER_AGENT}(TrileFejs)[NC]
-RewriteCond%{HTTP_USER_AGENT}(ZombieJS)[NC]
-RewriteCond%{HTTP_USER_AGENT}(node js)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Ruby)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Python)[NC]
-RewriteCond%{HTTP_USER_AGENT}(cURL)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Rust)[NC] 
-RewriteCond%{HTTP_USER_AGENT}(Scrapy)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Java)[NC]
-RewriteCond%{HTTP_USER_AGENT}(R)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Golang Scraper)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Go Web Scraping)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Request-Promise-Native)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
-RewriteCond %{HTTP_USER_AGENT} (SSL/TLS Scan) [NC]
-RewriteCond%{HTTP_USER_AGENT}(WPScan"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT}(WhatWeb) [NC]
-RewriteCond %{HTTP_USER_AGENT}(Wappalyzer Scan) [NC]
-RewriteCond %{HTTP_USER_AGENT}(WordPress Security Scan) [NC]
-
 # Common Search eninge old uses:
 RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
@@ -4225,17 +4189,20 @@ RewriteRule .* - [F]</ifModule>
 #Dangerous port scanner:
 RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC]
 
+# Acraper/ai:
+Node.js
 
 #COMPLETE LIST _ I USE:  updated: 240418
 
 <IfModule mod_rewrite.c> 
-RewriteCond%{HTTP_USER_AGENT}(AnyPicker|crewAI|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]
-RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claude-Web/1.0|Claude 3|Claudebot|Diffbot|ImagesiftBot|
-ChatGPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI|GPT|proximic)[NC]
+RewriteCond%{HTTP_USER_AGENT}(AnyPicker|crewAI|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]
+RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claude-Web/1.0|ClaudeBot|Claudebot|Diffbot|ImagesiftBot|
+ChatGPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI|GPT|proximic|Kali)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Gobuster)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Dirsearch)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(FeroxBuster)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(A1 Website Download[NC] 
 RewriteCond%{HTTP_USER_AGENT}(A1 Website Scraper[NC]
-RewriteCond%{HTTP_USER_AGENT}(DomainStatsBot[NC]
-RewriteCond%{HTTP_USER_AGENT}(dataproviderbot.com)[NC] 
 RewriteCond%{HTTP_USER_AGENT}(DataForSeoBot)[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*scan.*$ [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Browse AI"[NC]
@@ -4245,9 +4212,15 @@ RewriteCond%{HTTP_USER_AGENT}"^sqlninja"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Wappalyzer"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^zgrab"[NC]
 RewriteCond%{HTTP_USER_AGENT}"^openvas"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^OpenVAS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Nuclei"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Nmap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Masscan)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Metaspoilt)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Metaspoilt"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nexpose)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^Nikto"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^nessus"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"^havij"[NC,OR]
@@ -4291,6 +4264,9 @@ RewriteCond%{HTTP_USER_AGENT}(SimpleBrowser)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Splash)[NC]
 RewriteCond%{HTTP_USER_AGENT}(SlimerJS)[NC]
 RewriteCond%{HTTP_USER_AGENT}(TrileFejs)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(TOR browser)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(ZombieJS)[NC]
 RewriteCond%{HTTP_USER_AGENT}(node js)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Ruby)[NC]
@@ -4308,8 +4284,8 @@ RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
+RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(SSL/TLS Scan)[NC]
-RewriteCond%{HTTP_USER_AGENT}(WPScan"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(WhatWeb)[NC]
 RewriteCond%{HTTP_USER_AGENT}(Webscrape AI)[NC]
@@ -4324,6 +4300,10 @@ RewriteCond%{HTTP_USER_AGENT}^.*Mozilla\/[1-4]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-10]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}(Kali Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(BlackArch Linuxv
+RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3-10]\\.*[OR,NC]
 RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
@@ -4332,6 +4312,7 @@ RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
 RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
 RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
+RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC]
 RewriteRule .* - [F]</ifModule>
 
 
@@ -4432,9 +4413,12 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BNC/1.7.0 (Android 1.39.4)
 
 
-Python and the rest shitbags::
+Python and the Binance.com shitbags::
 RewriteCond%{HTTP_USER_AGENT}^http-requests-binance.com-error-log [NC] 
-RewriteCond%{HTTP_USER_AGENT}^HTTP/1.0-binance.com [NC] 
+
+RewriteCond%{HTTP_USER_AGENT}^HTTP/1.0-binance.com [NC]
+RewriteCond%{HTTP_USER_AGENT}^HTTP/2.0-binance.com [NC]  
+ 
 RewriteCond%{HTTP_USER_AGENT}^apache-binance [NC]
 RewriteCond%{HTTP_USER_AGENT}^Mozilla/5.0-binance [NC]
 RewriteCond%{HTTP_USER_AGENT}^linux-binance [NC]
@@ -4592,6 +4576,16 @@ RewriteCond%{REMOTE_HOST}^.*\ec2-3-145-186-173.us-east-2.compute.amazonaws.com[N
 RewriteCond%{REMOTE_HOST}^.*\ec2-3-146-34-191.us-east-2.compute.amazonaws.com [NC]	
 RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude bot"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"ClaudeBot/1.0"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude 2.1"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"ClaudeBot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claudebot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-Web"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*ClaudeBot.*$
+RewriteCond %{REQUEST_URI} !robots\.txt
 RewriteCond%{HTTP_USER_AGENT}"User-Agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com"[NC]
 RewriteRule ^(.*)$ - [F]</IfModule>
 
@@ -4604,6 +4598,7 @@ RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(TOR browser)[NC,OR]
 
+OTHERS:
 RewriteCond%{HTTP_USER_AGENT}(Gobuster)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Dirsearch)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(FeroxBuster)[NC,OR]
@@ -4622,8 +4617,11 @@ RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
 
 RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
-
 RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
+
+Ai image grabber:
+RedirectMatch 403 thehive.ai  #ai image scraper
+thehive.ai
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 
@@ -4631,15 +4629,28 @@ Errors -that not goes away!
 
 Set this: error_reporting(0);    in php file, under se example:
 
-Plugin Name: CM 404 Console
-Plugin URI: https://example.com/
-Description: Best plugins sofar
-Version: 1.0.6
-Author: example
-Author URI: https://www.example.com/
+
+<?php
+/*
+Plugin Name: Header Example errornoway
 */
 error_reporting(0);
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240426
+
+#Protect plugins /some plugins you need keep safe:
+- All you have to do is add this code to your theme’s .HTACCESS file or in a site-specific plugin:
+
+
+RewriteCond %{REQUEST_URI} !^/(wp-login.php|wp-admin/|wp-content/plugins/|wp-plugins/NAME of the plugin/).* [NC]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ ///.*\ HTTP/HTTPS/ [NC,OR]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\?\=?(http|ftp|ssl|https):/.*\ HTTP/ [NC,OR]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\?\?.*\ HTTP/HTTPS/ [NC,OR]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.(phps|js|dll).*\ HTTP/HTTPS/ [NC,OR]
+RewriteRule .* - [F,NS,L]
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+Updated: 240502
