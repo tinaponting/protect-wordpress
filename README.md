@@ -110,6 +110,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+-Updated: 240505, robots.txt, htacces with deflate, wepg.
 - Updated: 240429, updatet htaccess1, my own, when I hate these HK/China hackers.
 - Updated: 240428, htaccess1 for better perfomance and a error!
 - Uddated: 240426, beter choises for wp-includes
@@ -140,7 +141,7 @@ Love Kristina Sweden
 - Updated: 2410110: w-admin for more security:)
 - Updated: 2400102, my strongest; htaccess1.
 - Updated: 230306 - 231220
-- Updated: 2302006 - 230505. 
+- Updated: 230206 - 230505. 
 - Updated: 230202 - 230101.
 - Updated: 221225 - 221230.
 - Updated: 221225 - 221124.
