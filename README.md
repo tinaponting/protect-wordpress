@@ -110,7 +110,8 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
--Updated: 240505, robots.txt, htacces with deflate, wepg.
+- Updated: 240506, htaccess1 for better firewall:)
+- Updated: 240505, robots.txt, htacces with deflate, wepg.
 - Updated: 240429, updatet htaccess1, my own, when I hate these HK/China hackers.
 - Updated: 240428, htaccess1 for better perfomance and a error!
 - Uddated: 240426, beter choises for wp-includes
