@@ -110,6 +110,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: 240517, htaccess1- I use, withoout Ai, better security.
 - Updated: 240506, htaccess1 for better firewall:)
 - Updated: 240505, robots.txt, htacces with deflate, wepg.
 - Updated: 240429, updatet htaccess1, my own, when I hate these HK/China hackers.
