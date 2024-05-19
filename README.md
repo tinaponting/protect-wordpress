@@ -110,6 +110,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: 240519, htaccess1 with the Latest, Ai, not here thanks!
 - Updated: 240517: No way - do not see, with hide all.
 - Updated: 240517, htaccess1- I use, withoout Ai, better security.
 - Updated: 240506, htaccess1 for better firewall:)
