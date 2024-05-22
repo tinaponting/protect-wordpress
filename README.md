@@ -110,6 +110,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+Updated: Noway allowed-Do not see with hellodolly plugin, need for it work good! and How to change tou your favorite song:)
 - Updaeted: htaccess1, more secure:)
 - Updated: 240519, htaccess1 with the Latest, Ai, not here thanks!
 - Updated: 240517: No way - do not see, with hide all.
