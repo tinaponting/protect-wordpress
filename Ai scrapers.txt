@@ -1,3 +1,5 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Chrome:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
@@ -60,7 +62,7 @@ Microsoft Internet Explorer 6 / IE 6: Mozilla/4.0 (compatible; MSIE 6.0; Windows
 Microsoft Internet Explorer 11 / IE 11: Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
 Microsoft Internet Explorer 10 / IE 10: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; MDDCJS)
 
-
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 SCRAPERS/HACKERS:
 Bad bots:
 
@@ -129,7 +131,6 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) 
 
 
 ...........................................................
-
 Headless browsers:
 
 RewriteCond %{HTTP_USER_AGENT} ^GoogleScraper [NC,OR]
@@ -139,7 +140,6 @@ RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Headless scraping bad_bot [NC,OR]
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 OLD Useragents scrapers use:
 
@@ -158,7 +158,7 @@ RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
 Some still use:
 RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
 
-SOmetimes:
+Sometimes:
 RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
 :
 
@@ -171,5 +171,255 @@ Scraper:
 RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+...................................................................
+   
+# Block “AI” bots  By Robots.txt#
+#### Robots.txt:   #Add to robots.txt file,sometimes the ai do not care, stop them by htaccess! #
+
+User-agent: Accoona-AI-Agent/1.1.1 
+Disallow: /
+User-agent: Accoona-AI-Agent/1.1.2 
+Disallow: /
+User-agent: Accoona-AI-Agent
+Disallow: /
+User-agent: AgentRunner.ai
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: AiHitBot
+Disallow:/
+
+User-agent: AIBOT
+Disallow:/
+
+User-agent: AISearchBot 
+Disallow:/
+
+User-agent: Applebot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+User-agent: ccbot
+Disallow: /
+User-agent: CCBot/2.0
+Disallow: /
+
+user-agent: ChatGPT
+disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: crewAI
+Disallow: /
+
+User-agent: GPT 
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-Agent: GPTbot/0.1
+Disallow: /
+User-agent: GPT-2
+Disallow: /
+User-agent: GPT-3 
+Disallow: /
+User-agent: GPT-3.5
+Disallow: /
+User-agent: GPT-4 
+Disallow: /
+
+User-agent: Claude bot
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
+User-agent: Claudebot
+Disallow: /
+User-agent: Claude 2.1
+Disallow: /
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: commoncrawl
+Disallow: /
+
+User-agent: Google-Extended   
+Disallow: /
+User-agent: Google Bard AI
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: DialoGPT
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+User-agent: facebookscraper 
+Disallow:/
+	
+User-agent: Intelliseek 
+Disallow:/
+User-agent: IntelliSeek.ai
+Disallow:/
+
+User-Agent: The Knowledge AI 
+Disallow: /
+
+User-agent: Meta AI
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+
+User-agent: OpenAI GPT
+Disallow: /
+User-agent: openai
+Disallow:/
+User-agent: openai.com
+Disallow:/
+User-agent: Openbot
+Disallow: /
+
+User-agent: Owler@ows.eu/1
+Disallow: /
+User-agent: Owler@ows.eu/X
+Disallow: /
+User-agent: Owler@ows.eu/2
+Disallow: /
+
+User-agent: openai
+Disallow:/
+User-agent: openai.com
+Disallow:/
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Peer39_crawler
+Disallow: /
+User-agent: Peer39_crawler/1.0
+Disallow: /
+
+User-agent: proximic
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+*********************
+
+## ImagesAi bots:
+
+User-agent: ImagesiftBot 
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+# website image creator
+User-agent: Nicecrawler
+Disallow: /
+
+# I see these are all Amazon hosted:
+44.192.0.0/10
+50.112.0.0/16
+52.0.0.0/10
+52.64.0.0/12
+54.184.0.0/13
+100.20.0.0/14
+100.24.0.0/13
+
+******************
+# AI: Div Ai:
+User-Agent: fidget-spinner-bot 
+Disallow: /
+
+User-Agent: my-tiny-bot
+Disallow: /
+
+# Social ranker Ai:
+User-agent: SocialRankIOBot
+Disallow:/
+User-agent: Sociscraper
+Disallow:/
+
+## Downloader:
+User-agent: magpie-crawler
+Disallow:/
+User-agent: magpie-crawler 
+Disallow: /
+
+# downloader MICROSOFT:
+Disallow:/
+User-agent: MSIECrawler
+Disallow: /
+
+
+*****************
+
+# IP RANGE:
+GPTBot IP address range:
+40.83.2.64/28
+
+Open AI:  IP Adresses:
+20.15.240.64/28
+20.15.240.80/28
+20.15.240.96/28
+20.15.240.176/28
+20.15.241.0/28
+20.15.242.128/28
+20.15.242.144/28
+20.15.242.192/28
+40.83.2.64/28
+
+
+# There are some image-scraping tools that honor the following directive:  // Can sometimes slow dom site!)
+
+<meta name="robots" content="noai, noimageai">
+
+
+## Scrapers:
+
+User-agent: AnyPicker
+Disallow: /
+
+# Prompts ai:
+User-agent: WebChatGPT
+Disallow: /
+
+
+# Web scraper
+User-agent: TinyTestBot
+Disallow: 
+
+User-Agent: thesis-research-bot
+Disallow: /
+
+# Stops generator of user agents, hopefully....
+
+User-agent: generator
+Disallow: / 
+
+:::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 231223
+Updated: 24061417
