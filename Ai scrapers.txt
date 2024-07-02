@@ -605,7 +605,7 @@ FacebookBot|facebookscraper| facebookexternalhit|facebookexternalhit/1.1|Intelli
 Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39_crawler/1.0|proximic|WebChatGPT|RightWingGPT|LeftWingGPT|DepolarizingGPT) [NC]RewriteRule ^ – [F]    
 
 ....................
-#Scraping and paltforms for Ai:
+#Scraping and platforms for Ai:
 
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping )[NC]RewriteRule ^ – [F]
 
