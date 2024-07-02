@@ -1,5 +1,4 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 Chrome:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
@@ -20,7 +19,6 @@ Mozilla/5.0 (iPad; CPU OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like 
 Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
-
 
 Firefox:
 Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
@@ -65,7 +63,6 @@ Microsoft Internet Explorer 10 / IE 10: Mozilla/5.0 (compatible; MSIE 10.0; Wind
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 SCRAPERS/HACKERS:
 Bad bots:
-
 Petalbot:
 Mozilla/5.0 (Linux; Android 7.0;)AppleWebKit/537.36 (KHTML, like Gecko)Mobile Safari/537.36 (compatible;PetalBot;+https://webmaster.petalsearch.com/site/petalbot)
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Petalbot
@@ -129,8 +126,105 @@ Mozilla/99999.9 AppleWebKit/9999999.99 (KHTML, like Gecko) Chrome/999999.0.9999.
 Mozilla/99999.9 AppleWebKit/9999999.99 (KHTML, like Gecko) Chrome/999999.0.9999.99 Safari/9999999.99 seraph-accel-Agent/2.20.45
 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/242.02.8301.120 Safari/537.36
 
-
-...........................................................
+Mozilla/5.0 (Macintosh; Intel Mac OS X 11_15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5392.175 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.4.263.6 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5367.208 Safari/537.36',
+'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5387.128 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786808',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786817',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786823',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786837',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.5.197.2 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5413.94 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5399.203 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786847',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786468',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786802',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786842',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.172.10 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786831',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786811',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786235',
+'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5412.145 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786229',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5407.108 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786215',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786210',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.36}}l8xqx',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786130',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36list1675786199',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.184.2 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 618',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.36%}w1xn2',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786214',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786222',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786241',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675786202',
+'http://abpe79b25ysvufijoog62lkvlmrgfe34rwen8bx.oastify.com/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.36',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.75 615',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3627288',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3692221',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3647451',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3623358',
+'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 terteefullbead1988 (KHTML, like Gecko) Chrome/106.0.9406.331 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.364411',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3622633',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3682586',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36 Trailer/97.3.7892.93 623',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3699002',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3611840',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3639608',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3665306',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3698600',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.75 622',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3686140',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3669774',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3616088',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.363777',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.3637534',
+'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5384.135 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.36.922.499 Safari/537.36',
+'Mozilla/5.0 (X11; Linux x86_64; Nexus Player Build/PI; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5396.154 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5365.118 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5408.170 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5387.155 Safari/537.36',
+'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5388.218 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787136',
+'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5400.147 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.5.20.6 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787145',
+'Mozilla/5.0 (Windows NT 11.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5406.108 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5365.98 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.1.27.2 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787141',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 615',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.366yz18aeszp',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 619',
+'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 partplyfsatax1980 (KHTML, like Gecko) Chrome/106.0.4722.586 Safari/537.36',
+'http://xtu1pwtpnlaic2066bytk82i3993x0lq9iw9qxf.oastify.com/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5382.175 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5380.154 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5411.106 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.36.689.861 Safari/537.36',
+'Mozilla/5.0 (X11; Linux x86_64; XK03H Build/QX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787702',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787718',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787710',
+'Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5400.194 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787711',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787737',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787747',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787742',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787707',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787725',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361675787731',
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Agency/96.8.7147.48 498',
+'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 cornecaltio1974 (KHTML, like Gecko) Chrome/106.0.5098.200 Safari/537.36',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.68 Safari/537.36 623',
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.109 Safari/537.36',
+'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 onswinenas1985 (KHTML, like Gecko) Chrome/106.0.2669.508 Safari/537.36'
+...........................................................................................................................................
 Headless browsers:
 
 RewriteCond %{HTTP_USER_AGENT} ^GoogleScraper [NC,OR]
@@ -140,7 +234,6 @@ RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Headless scraping bad_bot [NC,OR]
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 OLD Useragents scrapers use:
 
 RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
@@ -154,26 +247,24 @@ RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
 
-
-Some still use:
+# Some still use:
 RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+RewriteCond% {HTTP_USER_AGENT} Konqueror [NC]
 
 Sometimes:
 RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
 :
 
-OLD servers used by scraper:
-
+# OLD servers used by scraper:
 RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
 
-Scraper:
+# Scraper:
 RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-...................................................................
-   
+................................................................... 
 # Block “AI” bots  By Robots.txt#
 #### Robots.txt:   #Add to robots.txt file,sometimes the ai do not care, stop them by htaccess! #
 
@@ -189,6 +280,7 @@ Disallow: /
 User-agent: anthropic-ai
 Disallow: /
 
+# Not always maeks  yor blog a living hell, but if:
 User-agent: Applebot
 Disallow: /
 
@@ -204,9 +296,15 @@ Disallow:/
 User-agent: AISearchBot 
 Disallow:/
 
-User-agent: Applebot
-Disallow: /
 User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Amazon Bedrock
+Disallow: /
+
+User-agent: Brave Leo AI
+Disallow: /
+User-agent: Bing ai 
 Disallow: /
 
 User-agent: CCBot
@@ -241,10 +339,14 @@ User-agent: GPT-3.5
 Disallow: /
 User-agent: GPT-4 
 Disallow: /
+User-agent: gpt-4-turbo
+Disallow: /
+User-agent: GPT-4o
+Disallow: /
+User-agent: GPT-3.5 Turbo
+Disallow: /
 
 User-agent: Claude bot
-Disallow: /
-‍User-agent: Claude-Web
 Disallow: /
 ‍User-agent: Claude-Web
 Disallow: /
@@ -252,6 +354,7 @@ User-agent: Claudebot
 Disallow: /
 User-agent: Claude 2.1
 Disallow: /
+User-agent: Claude 3.5
 Disallow: /
 User-agent: ClaudeBot
 Disallow: /
@@ -270,10 +373,18 @@ Disallow: /
 User-agent: DialoGPT
 Disallow: /
 
+
+User-agent: Facebot
+Disallow: /
 User-agent: FacebookBot
 Disallow: /
 User-agent: facebookscraper 
 Disallow:/
+
+User-agent: facebookexternalhit
+Disallow: /
+facebookexternalhit/1.1
+Disallow: /
 	
 User-agent: Intelliseek 
 Disallow:/
@@ -307,11 +418,6 @@ Disallow: /
 User-agent: Owler@ows.eu/2
 Disallow: /
 
-User-agent: openai
-Disallow:/
-User-agent: openai.com
-Disallow:/
-
 User-agent: PerplexityBot
 Disallow: /
 
@@ -328,7 +434,7 @@ Disallow: /
 
 *********************
 
-## ImagesAi bots:
+## ImagesAi bots:  ##
 
 User-agent: ImagesiftBot 
 Disallow: /
@@ -366,17 +472,34 @@ Disallow:/
 ## Downloader:
 User-agent: magpie-crawler
 Disallow:/
-User-agent: magpie-crawler 
-Disallow: /
 
 # downloader MICROSOFT:
-Disallow:/
 User-agent: MSIECrawler
 Disallow: /
 
+# Collect all data:
+User-agent: PiplBot
+Disallow: /
+
+# Language training
+User-agent: Meta Llama 3
+Disallow: /
+
+# Prompts ai:
+User-agent: WebChatGPT
+Disallow: /
+
+# Good Ai:
+RightWingGPT
+LeftWingGPT
+DepolarizingGPT
+
+#AutoGPT is an experimental initiative to make GPT-4 fully autonomous, pushing the boundaries of what AI can achieve independently. 
+It aims to operate without human intervention, exploring new horizons in self-sufficient artificial intelligence.
+
+AutoGPT
 
 *****************
-
 # IP RANGE:
 GPTBot IP address range:
 40.83.2.64/28
@@ -392,34 +515,102 @@ Open AI:  IP Adresses:
 20.15.242.192/28
 40.83.2.64/28
 
+GTBBot /microsoft:
+52.230.152.0/24
+52.230.154.25/254
+52.233.106.0/24"
+
 
 # There are some image-scraping tools that honor the following directive:  // Can sometimes slow dom site!)
 
 <meta name="robots" content="noai, noimageai">
 
 
-## Scrapers:
-
-User-agent: AnyPicker
+## Scrapers:  ##
+User-agent: FriendlyCrawler
+Disallow: /
+User-agent: FriendlyCrawler/1.0
 Disallow: /
 
-# Prompts ai:
-User-agent: WebChatGPT
+User-agent: AnyPicker
 Disallow: /
 
 
 # Web scraper
 User-agent: TinyTestBot
-Disallow: 
+Disallow: /
 
+Scarper:
+User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+Disallow: /
+
+User-agent: ISSCyberRiskCrawler
+Disallow: /
+
+# OTHERS:
 User-Agent: thesis-research-bot
 Disallow: /
 
-# Stops generator of user agents, hopefully....
-
+# Stops generator of user agents, hopefully.... ##
 User-agent: generator
 Disallow: / 
 
-:::::::::::::::::::::::::::::::::::::::::
+
+## MACHINE Ai: Not affecting blogs, but good to know in case ....
+Vertex AI  (google - It allows you to train, deploy, and customize ML models and AI applications, including large language models (LLMs)
+
+
+Dalvik is a virtual machine (VM) for the Android operating system. 
+Usually used on mobile click farms for automated tasks. No sane human will be using this browser agent.
+
+User-agent: Dalvik/2.1.0
+Disallow: / 
+
+## GoogleOther is a new set of data crawlers from Google, used for web scraping. “GoogleOther is the 
+generic crawler that may be used by various product teams for fetching publicly accessible content from sites”. Besides the generic GoogleOther, 
+they also use GoogleOther-Image and GoogleOther-Video. If you block the user agent string “GoogleOther” you will block all of them.
+
+User-agent: GoogleOther
+Disallow: / 
+
+# The Read Assistant (Read's meeting bot)
+User-agent: Read.ai
+Disallow: /
+
+
+#IN .htaccess put: Then they only can get one visit/per IP! 
+
+<IfModule mod_php8.c>
+LimitXMLRequestBody 102400
+MaxConnPerIP 1
+LimitRequestBody 52428800
+</IfModule>
+
+............................
+
+Put in .htaccess 1: 
+# Block “Scrapers, image sstealers/downloader” bots
+
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(AwarioRssBot|AwarioSmartBot|FriendlyCrawler| 
+DataForSeoBot|Dataprovider|Diffbot|ImagesiftBot|img2dataset|Nicecrawler||magpie-crawler|omgili|peer39_crawler|PerplexityBot|YouBot|
+fidget-spinner-bot| my-tiny-bot|SocialRankIOBot|Sociscraper|MSIECrawler|PiplBot|Meta Llama 3) [NC]RewriteRule ^ – [F]
+
+....................
+#BLOCK ai agents:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Applebot|Applebot-Extended|AIBOT|AutoGPT|AiHitBot|AISearchBot|Aipbot|AIBOT D|AgentRunner.ai|Accoona-AI-Agent|Accoona-AI-Agent/1.1.2|Accoona-AI-Agent/1.1.1|
+AgentRunner.ai|anthropic-ai|Amazon Bedrock |Brave Leo AI| Bing ai|CCBot|ccbot|CCBot/2.0|crewAI|ChatGPT|ChatGPT-User|cohere-ai|GPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3| GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|
+Claude bot|Claude-Web|Claudebot|Claude 2.1|Claude 3.5|ClaudeBot|commoncrawl|Google-Extended|Google Bard AI DialoGPT|FacebookBot|facebookscraper| facebookexternalhit|facebookexternalhit/1.1|
+FacebookBot|facebookscraper| facebookexternalhit|facebookexternalhit/1.1|Intelliseek|IntelliSeek.ai|The Knowledge AI| Meta AI|Omgilibot|Omgili|OpenAI GPT|openai|openai.com|Openbot|
+Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39_crawler/1.0|proximic|WebChatGPT|RightWingGPT|LeftWingGPT|DepolarizingGPT) [NC]RewriteRule ^ – [F]    
+
+....................
+#Scraping and paltforms for Ai:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping )[NC]RewriteRule ^ – [F]
+
+#Always in the end: ADD: ###
+</IfModule>
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240620
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 240701
