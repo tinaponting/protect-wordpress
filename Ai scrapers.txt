@@ -556,6 +556,11 @@ User-agent: generator
 Disallow: / 
 
 
+# BLOCK: iask.com   (Ai ASK)
+User-agent: iaskspider/2.0
+Disallow: /
+
+
 ## MACHINE Ai: Not affecting blogs, but good to know in case ....
 Vertex AI  (google - It allows you to train, deploy, and customize ML models and AI applications, including large language models (LLMs)
 
@@ -607,10 +612,10 @@ Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39
 ....................
 #Scraping and platforms for Ai:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping )[NC]RewriteRule ^ – [F]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]RewriteRule ^ – [F]
 
 #Always in the end: ADD: ###
 </IfModule>
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240701
+Updated: 240707
