@@ -47,7 +47,6 @@ Core .htaccess for protection and speed.  Set: 444 files rights or of it possibl
 Plugins I recommend:
 * limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
 * disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
-* wp-cron http auth: // Small very good protectin for  rest api:   https://wordpress.org/plugins/wp-cron-http-auth/
 
 None above takes power fron your blog:)
 
