@@ -109,9 +109,10 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
-- Updated:240717, htacess1 for better security
+- Updated: 240725 Noway allowed-Do not see  files, works better:)
+- Updated: 240717, htacess1 for better security
 - Updated: 240705, htaccess1 - my own, a error in block, china/singapore hell:)
-- Updated: robots.txxt moved to: Single user.
+- ROBOTS.txt moved to: Single user.
 - Updated:htaccess1 for better security.
 - Updated: Noway allowed-Do not see with hellodolly plugin, need for it work good! and How to change tou your favorite song:)
 - Updated: htaccess1 more secure site:)
