@@ -225,7 +225,8 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 11_15) AppleWebKit/537.36 (KHTML, like Ge
 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.109 Safari/537.36',
 'Mozilla/5.0 (X11; U; Linux x86_64) AppleWebKit/537.36 onswinenas1985 (KHTML, like Gecko) Chrome/106.0.2669.508 Safari/537.36'
 ...........................................................................................................................................
-Headless browsers:
+...........................................................................................................................................
+# Headless browsers:
 
 RewriteCond %{HTTP_USER_AGENT} ^GoogleScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
@@ -265,171 +266,6 @@ RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ................................................................... 
-# Block “AI” bots  By Robots.txt#
-#### Robots.txt:   #Add to robots.txt file,sometimes the ai do not care, stop them by htaccess! #
-
-User-agent: Accoona-AI-Agent/1.1.1 
-Disallow: /
-User-agent: Accoona-AI-Agent/1.1.2 
-Disallow: /
-User-agent: Accoona-AI-Agent
-Disallow: /
-User-agent: AgentRunner.ai
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-# Not always maeks  yor blog a living hell, but if:
-User-agent: Applebot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
-User-agent: AiHitBot
-Disallow:/
-
-User-agent: AIBOT
-Disallow:/
-
-User-agent: AISearchBot 
-Disallow:/
-
-User-agent: Applebot-Extended
-Disallow: /
-
-User-agent: Amazon Bedrock
-Disallow: /
-
-User-agent: Brave Leo AI
-Disallow: /
-User-agent: Bing ai 
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-User-agent: ccbot
-Disallow: /
-User-agent: CCBot/2.0
-Disallow: /
-
-user-agent: ChatGPT
-disallow: /
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: cohere-ai
-Disallow: /
-
-User-agent: crewAI
-Disallow: /
-
-User-agent: GPT 
-Disallow: /
-User-agent: GPTBot
-Disallow: /
-User-Agent: GPTbot/0.1
-Disallow: /
-User-agent: GPT-2
-Disallow: /
-User-agent: GPT-3 
-Disallow: /
-User-agent: GPT-3.5
-Disallow: /
-User-agent: GPT-4 
-Disallow: /
-User-agent: gpt-4-turbo
-Disallow: /
-User-agent: GPT-4o
-Disallow: /
-User-agent: GPT-3.5 Turbo
-Disallow: /
-
-User-agent: Claude bot
-Disallow: /
-User-agent: Claudebot
-Disallow: /
-User-agent: Claude 2.1
-Disallow: /
-User-agent: Claude 3.5
-Disallow: /
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: commoncrawl
-Disallow: /
-
-User-agent: Google-Extended   
-Disallow: /
-User-agent: Google Bard AI
-Disallow: /
-
-User-agent: Diffbot
-Disallow: /
-
-User-agent: DialoGPT
-Disallow: /
-
-
-User-agent: Facebot
-Disallow: /
-User-agent: FacebookBot
-Disallow: /
-User-agent: facebookscraper 
-Disallow:/
-
-User-agent: facebookexternalhit
-Disallow: /
-facebookexternalhit/1.1
-Disallow: /
-	
-User-agent: Intelliseek 
-Disallow:/
-User-agent: IntelliSeek.ai
-Disallow:/
-
-User-Agent: The Knowledge AI 
-Disallow: /
-
-User-agent: Meta AI
-Disallow: /
-
-User-agent: Omgilibot
-Disallow: /
-User-agent: Omgili
-Disallow: /
-
-User-agent: OpenAI GPT
-Disallow: /
-User-agent: openai
-Disallow:/
-User-agent: openai.com
-Disallow:/
-User-agent: Openbot
-Disallow: /
-
-User-agent: Owler@ows.eu/1
-Disallow: /
-User-agent: Owler@ows.eu/X
-Disallow: /
-User-agent: Owler@ows.eu/2
-Disallow: /
-
-User-agent: PerplexityBot
-Disallow: /
-
-User-agent: Peer39_crawler
-Disallow: /
-User-agent: Peer39_crawler/1.0
-Disallow: /
-
-User-agent: proximic
-Disallow: /
-
-User-agent: YouBot
-Disallow: /
-
 *********************
 
 ## ImagesAi bots:  ##
@@ -558,6 +394,14 @@ ByPasser of ai: Can by pass allrobots.txt, scurity to stealyour stuff:
 User-agent: GPTZero
 Disallow: /
 
+** FacebookBot crawls public web pages to improve language models 
+for our speech recognition technology. 
+We use polite web crawling protocols that respect standard robots.txt rules
+
+* BLOCK:
+FacebookBot
+FacebookBot/1.0
+
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
 
 <IfModule mod_php8.c>
@@ -589,6 +433,8 @@ Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39
 
 #Always in the end: ADD: ###
 </IfModule>
+
+::::::::::::::::::::::::::::::::::::::::
 
 
 ### A Complete Ai List (240725)  ##
@@ -699,6 +545,8 @@ User-agent: Facebot
 Disallow: /
 User-agent: FacebookBot
 Disallow: /
+User-agent: FacebookBot/1.0
+Disallow: /
 User-agent: facebookscraper 
 Disallow:/
 User-agent: facebookexternalhit
@@ -771,5 +619,3 @@ Disallow: /
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Updated: 240725
-
-
