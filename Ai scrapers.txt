@@ -348,8 +348,6 @@ Disallow: /
 
 User-agent: Claude bot
 Disallow: /
-‍User-agent: Claude-Web
-Disallow: /
 User-agent: Claudebot
 Disallow: /
 User-agent: Claude 2.1
@@ -489,42 +487,12 @@ Disallow: /
 User-agent: WebChatGPT
 Disallow: /
 
-# Good Ai:
+# Good Ai:  ??
 RightWingGPT
 LeftWingGPT
 DepolarizingGPT
 
-#AutoGPT is an experimental initiative to make GPT-4 fully autonomous, pushing the boundaries of what AI can achieve independently. 
-It aims to operate without human intervention, exploring new horizons in self-sufficient artificial intelligence.
-
-AutoGPT
-
-*****************
-# IP RANGE:
-GPTBot IP address range:
-40.83.2.64/28
-
-Open AI:  IP Adresses:
-20.15.240.64/28
-20.15.240.80/28
-20.15.240.96/28
-20.15.240.176/28
-20.15.241.0/28
-20.15.242.128/28
-20.15.242.144/28
-20.15.242.192/28
-40.83.2.64/28
-
-GTBBot /microsoft:
-52.230.152.0/24
-52.230.154.25/254
-52.233.106.0/24"
-
-
-# There are some image-scraping tools that honor the following directive:  // Can sometimes slow dom site!)
-
-<meta name="robots" content="noai, noimageai">
-
+****************
 
 ## Scrapers:  ##
 User-agent: FriendlyCrawler
@@ -532,11 +500,6 @@ Disallow: /
 User-agent: FriendlyCrawler/1.0
 Disallow: /
 
-User-agent: AnyPicker
-Disallow: /
-
-
-# Web scraper
 User-agent: TinyTestBot
 Disallow: /
 
@@ -555,15 +518,23 @@ Disallow: /
 User-agent: generator
 Disallow: / 
 
-
 # BLOCK: iask.com   (Ai ASK)
 User-agent: iaskspider/2.0
 Disallow: /
 
+#Scraper
+User-agent: AlphaAI
+Disallow: 
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/timpibot
+
+User-agent: Timpibot
+Disallow: /
+
+....
 ## MACHINE Ai: Not affecting blogs, but good to know in case ....
 Vertex AI  (google - It allows you to train, deploy, and customize ML models and AI applications, including large language models (LLMs)
-
 
 Dalvik is a virtual machine (VM) for the Android operating system. 
 Usually used on mobile click farms for automated tasks. No sane human will be using this browser agent.
@@ -582,40 +553,223 @@ Disallow: /
 User-agent: Read.ai
 Disallow: /
 
+ByPasser of ai: Can by pass allrobots.txt, scurity to stealyour stuff:
 
-#IN .htaccess put: Then they only can get one visit/per IP! 
+User-agent: GPTZero
+Disallow: /
+
+#IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
 
 <IfModule mod_php8.c>
-LimitXMLRequestBody 102400
 MaxConnPerIP 1
-LimitRequestBody 52428800
 </IfModule>
 
 ............................
-
-Put in .htaccess 1: 
+# Put in .htaccess 1: 
 # Block “Scrapers, image sstealers/downloader” bots
 
 <IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(AwarioRssBot|AwarioSmartBot|FriendlyCrawler| 
 DataForSeoBot|Dataprovider|Diffbot|ImagesiftBot|img2dataset|Nicecrawler||magpie-crawler|omgili|peer39_crawler|PerplexityBot|YouBot|
-fidget-spinner-bot| my-tiny-bot|SocialRankIOBot|Sociscraper|MSIECrawler|PiplBot|Meta Llama 3) [NC]RewriteRule ^ – [F]
+fidget-spinner-bot| my-tiny-bot|SocialRankIOBot|Sociscraper|MSIECrawler|PiplBot|Meta Llama 3)[NC]RewriteRule ^ – [F]
 
 ....................
 #BLOCK ai agents:
 
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Applebot|Applebot-Extended|AIBOT|AutoGPT|AiHitBot|AISearchBot|Aipbot|AIBOT D|AgentRunner.ai|Accoona-AI-Agent|Accoona-AI-Agent/1.1.2|Accoona-AI-Agent/1.1.1|
-AgentRunner.ai|anthropic-ai|Amazon Bedrock |Brave Leo AI| Bing ai|CCBot|ccbot|CCBot/2.0|crewAI|ChatGPT|ChatGPT-User|cohere-ai|GPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3| GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|
-Claude bot|Claude-Web|Claudebot|Claude 2.1|Claude 3.5|ClaudeBot|commoncrawl|Google-Extended|Google Bard AI DialoGPT|FacebookBot|facebookscraper| facebookexternalhit|facebookexternalhit/1.1|
-FacebookBot|facebookscraper| facebookexternalhit|facebookexternalhit/1.1|Intelliseek|IntelliSeek.ai|The Knowledge AI| Meta AI|Omgilibot|Omgili|OpenAI GPT|openai|openai.com|Openbot|
-Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39_crawler/1.0|proximic|WebChatGPT|RightWingGPT|LeftWingGPT|DepolarizingGPT) [NC]RewriteRule ^ – [F]    
+AgentRunner.ai|AlphaAI|anthropic-ai|Amazon Bedrock|Brave Leo AI Bing ai|CCBot|ccbot|CCBot/2.0|crewAI|ChatGPT|ChatGPT-User|cohere-ai|GPT|GPTZero|GPTBot|GPTbot/0.1|GPT-2|GPT-3| GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|
+Claude bot|Claude-Web|Claudebot|Claude 2.1|Claude 3.5|ClaudeBot|commoncrawl|Google-Extended|Google Bard AI DialoGPT|FacebookBot|facebookscraper|facebookexternalhit|facebookexternalhit/1.1|
+FacebookBot|facebookscraper|facebookexternalhit|facebookexternalhit/1.1|Intelliseek|IntelliSeek.ai|Timpibot|LLaMA AI||iaskspider/2.0|The Knowledge AI| Meta AI|Omgilibot|Omgili|OpenAI GPT|openai|openai.com|Openbot|
+Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39_crawler/1.0|proximic|WebChatGPT|RightWingGPT|LeftWingGPT|DepolarizingGPT)[NC]RewriteRule ^ – [F]</IfModule>    
 
 ....................
 #Scraping and platforms for Ai:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]RewriteRule ^ – [F]
+<<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco|aiohtt|Browse AI|Parse|got-scraping|scraping)[NC]RewriteRule ^ – [F]</IfModule>
+
 
 #Always in the end: ADD: ###
 </IfModule>
+
+
+### A Complete Ai List (240725)  ##
+
+User-agent: Accoona-AI-Agent/1.1.1 
+Disallow: /
+User-agent: Accoona-AI-Agent/1.1.2 
+Disallow: /
+User-agent: Accoona-AI-Agent
+Disallow: /
+User-agent: AgentRunner.ai
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: AutoGPT
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: AiHitBot
+Disallow:/
+User-agent: AIBOT
+Disallow:/
+User-agent: AlphaAI
+Disallow: 
+User-agent: iaskspider/2.0
+Disallow: /
+User-agent: AISearchBot 
+Disallow:/
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: Amazon Bedrock
+Disallow: /
+User-agent: AnyPicker
+Disallow: /
+User-agent: AlphaAI
+Disallow: 
+User-agent: Brave Leo AI
+Disallow: /
+User-agent: Bing ai 
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: ccbot
+Disallow: /
+User-agent: CCBot/2.0
+Disallow: /
+user-agent: ChatGPT
+disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: crewAI
+Disallow: /
+User-agent: GPT 
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-Agent: GPTbot/0.1
+Disallow: /
+User-agent: GPT-2
+Disallow: /
+User-agent: GPT-3 
+Disallow: /
+User-agent: GPT-3.5
+Disallow: /
+User-agent: GPT-4 
+Disallow: /
+User-agent: gpt-4-turbo
+Disallow: /
+User-agent: GPT-4o
+Disallow: /
+User-agent: GPT-3.5 Turbo
+Disallow: /
+User-agent: GPTZero
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: ccbot
+Disallow: /
+User-agent: CCBot/2.0
+Disallow: /
+user-agent: ChatGPT
+disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: crewAI
+Disallow: /
+User-agent: commoncrawl
+Disallow: /
+User-agent: Google-Extended   
+Disallow: /
+User-agent: Google Bard AI
+Disallow: /
+User-agent: GoogleOther
+Disallow: / 
+User-agent: Dalvik/2.1.0
+Disallow: / 
+User-agent: Diffbot
+Disallow: /
+User-agent: DialoGPT
+Disallow: /
+User-agent: DepolarizingGPT
+Disallow: /
+User-agent: Facebot
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: facebookscraper 
+Disallow:/
+User-agent: facebookexternalhit
+Disallow: /
+User-agent: facebookexternalhit/1.1
+Disallow: /
+User-Agent: fidget-spinner-bot 
+Disallow: /
+User-agent: FriendlyCrawler
+Disallow: /
+User-agent: FriendlyCrawler/1.0
+Disallow: /	
+User-agent: Intelliseek 
+Disallow:/
+User-agent: IntelliSeek.ai
+Disallow:/
+User-agent: ImagesiftBot 
+Disallow: /
+User-agent: img2dataset
+Disallow: /
+User-Agent: The Knowledge AI 
+Disallow: /
+User-agent: LeftWingGPT
+Disallow: /
+User-agent: Meta AI
+Disallow: /
+User-agent: Meta Llama 3
+Disallow: /
+User-Agent: my-tiny-bot
+Disallow: /
+User-agent: Nicecrawler
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: OpenAI GPT
+Disallow: /
+User-agent: openai
+Disallow:/
+User-agent: openai.com
+Disallow:/
+User-agent: Openbot
+Disallow: /
+User-agent: Owler@ows.eu/1
+Disallow: /
+User-agent: Owler@ows.eu/X
+Disallow: /
+User-agent: Owler@ows.eu/2
+Disallow: /
+User-agent: WebChatGPT
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Peer39_crawler
+Disallow: /
+User-agent: Peer39_crawler/1.0
+Disallow: /
+User-agent: RightWingGPT
+Disallow: /
+User-agent: Timpibot
+Disallow: /
+User-agent: proximic
+Disallow: /
+User-agent: PiplBot
+Disallow: /
+User-agent: YouBot
+Disallow: /
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240707
+Updated: 240725
+
+
