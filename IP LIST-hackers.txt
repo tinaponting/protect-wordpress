@@ -9564,6 +9564,13 @@ https://wprecon.com
 https://seahawkmedia.com/tools/wordpress-security-scanner
 https://pentest-tools.com/website-vulnerability-scanning/website-scanner
 
+Photo/images extracts:
+https://extract.pics
+https://imgdownloader.com
+
+Feed Stealers:
+site.livelap.com  BOT: LivelapBot/0.2  and: LivelapBot
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Bots you do not want:
@@ -9589,7 +9596,7 @@ RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
 
 .......................................................................
 -----------------------------------------------------------------------
-Updated: 240707
+Updated: 240725
 
 Some of them maybe ? gone!
 .................
