@@ -109,6 +109,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: 240729, htaccess1, for better performance.
 - Updated: 240725 Noway allowed-Do not see  files, works better:)
 - Updated: 240717, htacess1 for better security
 - Updated: 240705, htaccess1 - my own, a error in block, china/singapore hell:)
