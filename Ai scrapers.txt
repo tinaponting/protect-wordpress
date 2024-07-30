@@ -1,4 +1,5 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Ai Bots/ ai scrapers:
 .................................................................
 # Headless browsers:
 
@@ -8,15 +9,13 @@ RewriteCond %{HTTP_USER_AGENT} ^Dotbot [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Headless scraping bad_bot [NC,OR]
 .
-
 # Scraper:
 RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ................................................................... 
-*********************
-
+*******************************************************************
 ## ImagesAi bots:  ##
 
 User-agent: ImagesiftBot 
@@ -29,18 +28,27 @@ Disallow: /
 User-agent: Nicecrawler
 Disallow: /
 
-# I see these are all Amazon hosted:
-44.192.0.0/10
-50.112.0.0/16
-52.0.0.0/10
-52.64.0.0/12
-54.184.0.0/13
-100.20.0.0/14
-100.24.0.0/13
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+# To not allow AI to use anything on the page:
 
-******************
+<meta name="robots" content="noai">
+
+#To not allow AI to use any images on the page:
+
+<meta name="robots" content="noimageai">
+
+To place both directives:
+
+<meta name="robots" content="noai, noimageai">
+
+************************************
 # AI: Div Ai:
 User-Agent: fidget-spinner-bot 
+Disallow: /
+
+#Extract and monitor data from any website
+User-Agent: Browse AI
 Disallow: /
 
 User-Agent: my-tiny-bot
@@ -64,21 +72,16 @@ Disallow: /
 User-agent: PiplBot
 Disallow: /
 
-# Language training
-User-agent: Meta Llama 3
-Disallow: /
-
 # Prompts ai:
 User-agent: WebChatGPT
 Disallow: /
 
-# Good Ai:  ??
+# RIGHT/LEFT wing Ai:  
 RightWingGPT
 LeftWingGPT
 DepolarizingGPT
 
 ****************
-
 ## Scrapers:  ##
 User-agent: FriendlyCrawler
 Disallow: /
@@ -117,6 +120,10 @@ Disallow:
 User-agent: Timpibot
 Disallow: /
 
+# ByPasser of ai: Can by pass allrobots.txt, scurity to steal your stuff:
+User-agent: GPTZero
+Disallow: /
+
 ....
 ## MACHINE Ai: Not affecting blogs, but good to know in case ....
 Vertex AI  (google - It allows you to train, deploy, and customize ML models and AI applications, including large language models (LLMs)
@@ -131,7 +138,7 @@ Disallow: /
 generic crawler that may be used by various product teams for fetching publicly accessible content from sites”. Besides the generic GoogleOther, 
 they also use GoogleOther-Image and GoogleOther-Video. If you block the user agent string “GoogleOther” you will block all of them.
 
-# Google Other:
+# Google Other: (Mostly robots.txt works if not wanted)
 User-agent: GoogleOther
 Disallow: / 
 User-agent: GoogleOther-Image
@@ -143,18 +150,50 @@ Disallow: /
 User-agent: Read.ai
 Disallow: /
 
-# ByPasser of ai: Can by pass allrobots.txt, scurity to stealyour stuff:
-
-User-agent: GPTZero
+# AMAZON AI:
+User-agent:Amazon Bedrock
 Disallow: /
 
-** FacebookBot crawls public web pages to improve language models 
-for our speech recognition technology. 
-We use polite web crawling protocols that respect standard robots.txt rules
+# Accona business (`USA):
+https://www.accoona.com
+User-agent: Accoona-AI-Agent/1.1.1 
+Disallow: /
+User-agent: Accoona-AI-Agent/1.1.2 
+Disallow: /
+User-agent: Accoona-AI-Agent
+Disallow: /
 
+** FacebookBot 
 * BLOCK:
-FacebookBot
-FacebookBot/1.0
+User-agent: FacebookBot
+Disallow: /
+User-agent: FacebookBot/1.0
+Disallow: /
+User-agent: facebookexternalhit
+Disallow: /
+User-agent: facebookexternalhit/1.1
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: meta-externalfetcher/1.1
+Disallow: /
+
+# Language training
+User-agent: Meta Llama 3
+Disallow: /
+
+User-agent: Meta AI
+Disallow: /
+
+#MORE:
+User-agent: MetaAI
+User-agent: Meta-AI
+User-agent: Meta AI
+User-agent: Meta.AI
+User-agent: meta-ai
+User-agent: metaai
+Disallow: /
+::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
 
@@ -165,30 +204,54 @@ MaxConnPerIP 1
 # Another way:
 MaxClients < number-of-connections> 
 
-............................
-# Put in .htaccess 1: 
-# Block “Scrapers, image sstealers/downloader” bots
+:::::::::::::::::::::::::::::::::::::::::::::::::
+.................................................
+# Put in .htaccess or htaccess: 
+# Block “Scrapers, image stealers/downloader” bots:
 
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(AwarioRssBot|AwarioSmartBot|FriendlyCrawler|DataForSeoBot|Dataprovider|Diffbot|ImagesiftBot|img2dataset|Nicecrawler|magpie-crawler|omgili|peer39_crawler|PerplexityBot|YouBot|
-fidget-spinner-bot| my-tiny-bot|SocialRankIOBot|Sociscraper|MSIECrawler|PiplBot|Meta Llama 3)[NC]RewriteRule ^ – [F]
+### EXEMPEL/EXAMPLE:
 
-....................
-#BLOCK ai agents:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(Useragent|Useragent|Useragent).*$[NC]
+RewriteRule .* - [F,L]
+</IfModule>
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Applebot|Applebot-Extended|AIBOT|AutoGPT|AiHitBot|AISearchBot|Aipbot|AIBOT D|AgentRunner.ai|Accoona-AI-Agent|Accoona-AI-Agent/1.1.2|Accoona-AI-Agent/1.1.1|
-AgentRunner.ai|AlphaAI|anthropic-ai|Amazon Bedrock|Brave Leo AI Bing ai|CCBot|ccbot|CCBot/2.0|crewAI|ChatGPT|ChatGPT-User|cohere-ai|GPT|GPTZero|GPTBot|GPTbot/0.1|GPT-2|GPT-3| GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo)[NC]RewriteRule ^ – [F]</IfModule> 
-<IfModule mod_rewrite.c>Claude bot|Claude-Web|Claudebot|Claude 2.1|Claude 3.5|ClaudeBot|commoncrawl|Google-Extended|Google Bard AI DialoGPT|FacebookBot|facebookscraper|facebookexternalhit|facebookexternalhit/1.1|
-FacebookBot/1.0|facebookscraper|facebookexternalhit|facebookexternalhit/1.1|Intelliseek|IntelliSeek.ai|Timpibot|LLaMA AI|iaskspider/2.0|The Knowledge AI| Meta AI|Omgilibot|Omgili|OpenAI GPT|openai|openai.com|Openbot|
-Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39_crawler/1.0|proximic|WebChatGPT|RightWingGPT|LeftWingGPT|DepolarizingGPT)[NC]RewriteRule ^ – [F]</IfModule>    
+::::::::::::::::::::::::::
+## htaccess:
 
-....................
-#Scraping and platforms for Ai:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
+</IfModule>
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco|aiohtt|Browse AI|Parse|got-scraping|scraping)[NC]RewriteRule ^ – [F]</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(anthropic-ai|Applebot-Extended|
+Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|
+WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|
+GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Owler|PerplexityBot|proximic).*$[NC]
+RewriteRule .* - [F,L]
+</IfModule>
 
+RewriteCond %{HTTP_USER_AGENT}^.*(AutoGPT|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPT|
+GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|
+IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot ).*$[NC]
+RewriteRule .* - [F,L]
 
-::::::::::::::::::::::::::::::::::::::::
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
+Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1).*$[NC]
+RewriteRule .* - [F,L]
+</IfModule>
+
+RewriteCond %{HTTP_USER_AGENT}^.*(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot).*$[NC]
+RewriteRule .* - [F,L]
+</IfModule>
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+..................................................
+   
+### A Complete Ai List ##)
 #Ai/BOTS - scrapers:
+
 
 User-agent: anthropic-ai
 Disallow: /
@@ -426,5 +489,3 @@ User-agent: OAI-SearchBot
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Updated: 240730
-
-
