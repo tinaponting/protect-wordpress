@@ -7,32 +7,7 @@ RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Dotbot [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HtmlRequestScraper [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Headless scraping bad_bot [NC,OR]
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-OLD Useragents scrapers use:
-
-RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
-RewriteCond %{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Mozilla\/[1-120]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
-
-# Some still use:
-RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
-RewriteCond% {HTTP_USER_AGENT} Konqueror [NC]
-
-Sometimes:
-RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
-:
-
-# OLD servers used by scraper:
-RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+.
 
 # Scraper:
 RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
@@ -156,14 +131,19 @@ Disallow: /
 generic crawler that may be used by various product teams for fetching publicly accessible content from sites”. Besides the generic GoogleOther, 
 they also use GoogleOther-Image and GoogleOther-Video. If you block the user agent string “GoogleOther” you will block all of them.
 
+# Google Other:
 User-agent: GoogleOther
 Disallow: / 
+User-agent: GoogleOther-Image
+Disallow: /
+User-agent: GoogleOther-Video
+Disallow: /
 
 # The Read Assistant (Read's meeting bot)
 User-agent: Read.ai
 Disallow: /
 
-ByPasser of ai: Can by pass allrobots.txt, scurity to stealyour stuff:
+# ByPasser of ai: Can by pass allrobots.txt, scurity to stealyour stuff:
 
 User-agent: GPTZero
 Disallow: /
@@ -204,16 +184,10 @@ Owler@ows.eu/1|Owler@ows.eu/X|Owler@ows.eu/2|PerplexityBot|Peer39_crawler|Peer39
 ....................
 #Scraping and platforms for Ai:
 
-
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco|aiohtt|Browse AI|Parse|got-scraping|scraping)[NC]RewriteRule ^ – [F]</IfModule>
 
 
-#Always in the end: ADD: ###
-</IfModule>
-
 ::::::::::::::::::::::::::::::::::::::::
-
-
 ### A Complete Ai List (240728)  ##
 
 #Ai - scrapers
@@ -369,6 +343,11 @@ User-agent: openai.com
 Disallow:/
 User-agent: Openbot
 Disallow: /
+
+User-agent: SearchGPT 
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
 User-agent: Owler@ows.eu/1
 Disallow: /
 User-agent: Owler@ows.eu/X
@@ -394,11 +373,70 @@ Disallow: /
 User-agent: YouBot
 Disallow: /
 
+# Spawning AI
+User-Agent: *
+Disallow: *.txt
+Disallow: *.pdf
+Disallow: *.doc
+Disallow: *.docx
+Disallow: *.odt
+Disallow: *.rtf
+Disallow: *.tex
+Disallow: *.wks
+Disallow: *.wpd
+Disallow: *.wps
+Disallow: *.html
+Disallow: *.bmp
+Disallow: *.gif
+Disallow: *.ico
+Disallow: *.jpeg
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.svg
+Disallow: *.tif
+Disallow: *.tiff
+Disallow: *.webp
+Disallow: *.aac
+Disallow: *.aiff
+Disallow: *.amr
+Disallow: *.flac
+Disallow: *.m4a
+Disallow: *.mp3
+Disallow: *.oga
+Disallow: *.opus
+Disallow: *.wav
+Disallow: *.wma
+Disallow: *.mp4
+Disallow: *.webm
+Disallow: *.ogg
+Disallow: *.avi
+Disallow: *.mov
+Disallow: *.wmv
+Disallow: *.flv
+Disallow: *.mkv
+Disallow: *.py
+Disallow: *.js
+Disallow: *.java
+Disallow: *.c
+Disallow: *.cpp
+Disallow: *.cs
+Disallow: *.h
+Disallow: *.css
+Disallow: *.php
+Disallow: *.swift
+Disallow: *.go
+Disallow: *.rb
+Disallow: *.pl
+Disallow: *.sh
+Disallow: *.sql
+Disallow: /
+Disallow: *
 
-NEW added: SearchGPT 
+
+## NEW added: 
+User-agent: SearchGPT 
+User-agent: OAI-SearchBot
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240729
-
-
+Updated: 240730
