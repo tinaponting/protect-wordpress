@@ -206,11 +206,11 @@ Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
 User-agent: AiHitBot
-Disallow:/
+Disallow: /
 User-agent: AIBOT
-Disallow:/
+Disallow: /
 User-agent: AlphaAI
-Disallow: 
+Disallow:  /
 User-agent: iaskspider/2.0
 Disallow: /
 User-agent: AISearchBot 
@@ -222,7 +222,7 @@ Disallow: /
 User-agent: AnyPicker
 Disallow: /
 User-agent: AlphaAI
-Disallow: 
+Disallow: /
 User-agent: Brave Leo AI
 Disallow: /
 User-agent: Bing ai 
@@ -443,3 +443,5 @@ User-agent: OAI-SearchBot
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Updated: 240730
+
+
