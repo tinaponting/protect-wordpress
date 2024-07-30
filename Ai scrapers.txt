@@ -327,6 +327,8 @@ User-agent: Meta AI
 Disallow: /
 User-agent: Meta Llama 3
 Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
 User-Agent: my-tiny-bot
 Disallow: /
 User-agent: Nicecrawler
@@ -343,7 +345,6 @@ User-agent: openai.com
 Disallow:/
 User-agent: Openbot
 Disallow: /
-
 User-agent: SearchGPT 
 Disallow: /
 User-agent: OAI-SearchBot
