@@ -1,5 +1,5 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Ai Bots/ ai scrapers:
+Ai bots/scrapers:
 .................................................................
 # Headless browsers:
 
@@ -95,9 +95,6 @@ Scarper:
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
 Disallow: /
 
-User-agent: ISSCyberRiskCrawler
-Disallow: /
-
 # OTHERS:
 User-Agent: thesis-research-bot
 Disallow: /
@@ -152,6 +149,13 @@ Disallow: /
 
 # AMAZON AI:
 User-agent:Amazon Bedrock
+Disallow: /
+# Blockera Amazons AI-robot Alexa
+User-agent: Alexa
+Disallow: /
+
+# Blockera Microsofts AI-robot Tay
+User-agent: bingbot/2.0
 Disallow: /
 
 # Accona business (`USA):
@@ -216,7 +220,15 @@ RewriteCond %{HTTP_USER_AGENT}^.*(Useragent|Useragent|Useragent).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
 
+## OR:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (Useragent|Useragent|Useragent)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
 ::::::::::::::::::::::::::
+## htaccess: (htaccess1)
+
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
 </IfModule>
@@ -230,13 +242,13 @@ RewriteRule .* - [F,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(AutoGPT|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPT|
+RewriteCond %{HTTP_USER_AGENT}^.*(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPT|GPTbot|
 GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|
 IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot ).*$[NC]
 RewriteRule .* - [F,L]
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
+RewriteCond %{HTTP_USER_AGENT}^.*(Alexa|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
 Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
@@ -273,11 +285,15 @@ User-agent: Applebot-Extended
 Disallow: /
 User-agent: Amazon Bedrock
 Disallow: /
+User-agent: Alexa
+Disallow: /
 User-agent: AnyPicker
 Disallow: /
 User-agent: AlphaAI
 Disallow: /
 User-agent: Brave Leo AI
+Disallow: /
+User-agent: bingbot/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
@@ -292,6 +308,8 @@ disallow: /
 User-agent: ChatGPT-User
 Disallow: /
 User-agent: cohere-ai
+Disallow: /
+User-agent: ClaudeBot
 Disallow: /
 User-agent: crewAI
 Disallow: /
