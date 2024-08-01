@@ -111,6 +111,10 @@ Disallow: /
 User-agent: AlphaAI
 Disallow: 
 
+NEW: 240827:
+User-agent: SearchGPT 
+User-agent: OAI-SearchBot
+
 # AI Data Scraper
 # https://darkvisitors.com/agents/timpibot
 
@@ -229,9 +233,7 @@ RewriteRule ^ – [F]
 ::::::::::::::::::::::::::
 ## htaccess: (htaccess1)
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
-</IfModule>
+# Ai Bots bloccking:
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(anthropic-ai|Applebot-Extended|
@@ -253,9 +255,24 @@ Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetche
 RewriteRule .* - [F,L]
 </IfModule>
 
+# Diffbot,dataprovider and images scarapers:
+
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot).*$[NC]
 RewriteRule .* - [F,L]
+</IfModule>
+
+# Ai webscraping:  
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js| WebMagic).*$[NC]
+RewriteRule .* - [F,L]
+</IfModule>
+
+# Scrips ai and/scaraping:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
 </IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -263,7 +280,7 @@ RewriteRule .* - [F,L]
    
 ### A Complete Ai List ##)
 #Ai/BOTS - scrapers:
-
+# Robots.txt:
 
 User-agent: anthropic-ai
 Disallow: /
@@ -500,10 +517,6 @@ Disallow: /
 Disallow: *
 
 
-## NEW added 240727: 
-User-agent: SearchGPT 
-User-agent: OAI-SearchBot
-
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240730
+Updated: 240801
