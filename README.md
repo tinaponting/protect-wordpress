@@ -109,6 +109,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: htaccess1, better performance, delated some not in use useragents.
 - Updated: 240729 wp-content security.
 - Updated: 240729, htaccess1, for better performance.
 - Updated: 240725 Noway allowed-Do not see  files, works better:)
