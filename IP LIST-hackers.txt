@@ -8748,190 +8748,9 @@ Deny from 185.229.227.34
 Deny from 185.220.205.144
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-........................................................
-BLock Huawai HELL! 
+........................................................ 
 #HUAWEI.COM
-<IfModule mod_rewrite.c>
-RewriteCond%{REMOTE_ADDR}49.0.200.*
-RewriteCond%{REMOTE_ADDR}49.0.201.*
-RewriteCond%{REMOTE_ADDR}49.0.202.* 
-RewriteCond%{REMOTE_ADDR}49.0.203.* 
-RewriteCond%{REMOTE_ADDR}49.0.204.*
-RewriteCond%{REMOTE_ADDR}49.0.205.*  
-RewriteCond%{REMOTE_ADDR}49.0.206.*  
-RewriteCond%{REMOTE_ADDR}49.0.207.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}74.90.* 
-RewriteCond%{REMOTE_ADDR}74.91.*  
-RewriteCond%{REMOTE_ADDR}74.92.* 
-RewriteCond%{REMOTE_ADDR}74.94.*
-RewriteCond%{REMOTE_ADDR}93.191.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}94.74.81.*
-RewriteCond%{REMOTE_ADDR}94.74.82.*
-RewriteCond%{REMOTE_ADDR}94.74.83.*  
-RewriteCond%{REMOTE_ADDR}94.74.87.*
-RewriteCond%{REMOTE_ADDR}94.74.88.*  
-RewriteCond%{REMOTE_ADDR}94.74.89.*  
-RewriteCond%{REMOTE_ADDR}94.74.90.*  
-RewriteCond%{REMOTE_ADDR}94.74.91.* 
-RewriteCond%{REMOTE_ADDR}94.74.95.* 
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}101.44.159.* 
-RewriteCond%{REMOTE_ADDR}101.44.160.* 
-RewriteCond%{REMOTE_ADDR}101.44.161.* 
-RewriteCond%{REMOTE_ADDR}101.44.162.* 
-RewriteCond%{REMOTE_ADDR}101.44.163.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}110.238.104.*
-RewriteCond%{REMOTE_ADDR}110.238.106.* 
-RewriteCond%{REMOTE_ADDR}110.238.107.*
-RewriteCond%{REMOTE_ADDR}110.238.108.* 
-RewriteCond%{REMOTE_ADDR}110.238.109.*  
-RewriteCond%{REMOTE_ADDR}110.238.110.* 
-RewriteCond%{REMOTE_ADDR}110.238.111.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}111.119.193.*
-RewriteCond%{REMOTE_ADDR}111.119.200.* 
-RewriteCond%{REMOTE_ADDR}111.119.205.*
-RewriteCond%{REMOTE_ADDR}111.119.217.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}114.119.172.*
-RewriteCond%{REMOTE_ADDR}114.119.173.* 
-RewriteCond%{REMOTE_ADDR}114.119.174.*
-RewriteCond%{REMOTE_ADDR}114.119.181.*
-RewriteCond%{REMOTE_ADDR}114.119.183.*
-RewriteCond%{REMOTE_ADDR}114.119.189.*  
-RewriteCond%{REMOTE_ADDR}114.119.190.*  
-RewriteCond%{REMOTE_ADDR}114.119.191.*  
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}119.8.162.*  
-RewriteCond%{REMOTE_ADDR}119.8.166.*
-RewriteCond%{REMOTE_ADDR}119.8.167.* 
-RewriteCond%{REMOTE_ADDR}119.8.168.* 
-RewriteCond%{REMOTE_ADDR}119.8.169.* 
-RewriteCond%{REMOTE_ADDR}119.13.100.*
-RewriteCond%{REMOTE_ADDR}119.13.101.*
-RewriteCond%{REMOTE_ADDR}119.13.102.*
-RewriteCond%{REMOTE_ADDR}119.13.103.*
-RewriteCond%{REMOTE_ADDR}119.13.104.* 
-RewriteCond%{REMOTE_ADDR}119.13.105.*
-RewriteCond%{REMOTE_ADDR}119.13.106.* 
-RewriteCond%{REMOTE_ADDR}119.13.107.* 
-RewriteCond%{REMOTE_ADDR}119.13.110.*
-RewriteCond%{REMOTE_ADDR}119.13.111.* 
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}124.243.132.*
-RewriteCond%{REMOTE_ADDR}124.243.133.* 
-RewriteCond%{REMOTE_ADDR}124.243.134.* 
-RewriteCond%{REMOTE_ADDR}124.243.135.*
-RewriteCond%{REMOTE_ADDR}124.243.136.*  
-RewriteCond%{REMOTE_ADDR}124.243.137.*
-RewriteCond%{REMOTE_ADDR}124.243.138.*
-RewriteCond%{REMOTE_ADDR}124.243.144.*  
-RewriteCond%{REMOTE_ADDR}124.243.145.*  
-RewriteCond%{REMOTE_ADDR}124.243.146.*  
-RewriteCond%{REMOTE_ADDR}124.243.147.* 
-RewriteCond%{REMOTE_ADDR}124.243.148.* 
-RewriteCond%{REMOTE_ADDR}124.243.149.* 
-RewriteCond%{REMOTE_ADDR}124.243.150.* 
-RewriteCond%{REMOTE_ADDR}124.243.151.* 
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}159.138.91.*
-RewriteCond%{REMOTE_ADDR}159.138.96.* 
-RewriteCond%{REMOTE_ADDR}159.138.98.*
-RewriteCond%{REMOTE_ADDR}159.138.99.*
-RewriteCond%{REMOTE_ADDR}159.138.100.*
-RewriteCond%{REMOTE_ADDR}159.138.103.*
-RewriteCond%{REMOTE_ADDR}159.138.105.* 
-RewriteCond%{REMOTE_ADDR}159.138.106.*
-RewriteCond%{REMOTE_ADDR}159.138.107.*
-RewriteCond%{REMOTE_ADDR}159.138.108.* 
-RewriteCond%{REMOTE_ADDR}159.138.109.* 
-RewriteCond%{REMOTE_ADDR}159.138.110.*
-RewriteCond%{REMOTE_ADDR}159.138.111.* 
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}159.138.123.*
-RewriteCond%{REMOTE_ADDR}159.138.199.*
-RewriteCond%{REMOTE_ADDR}166.108.237 .*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-RewriteCond%{REMOTE_ADDR}190.92.100.*
-RewriteCond%{REMOTE_ADDR}190.92.198.* 
-RewriteCond%{REMOTE_ADDR}190.92.199.* 
-RewriteCond%{REMOTE_ADDR}190.92.200.*
-RewriteCond%{REMOTE_ADDR}190.92.201.*
-RewriteCond%{REMOTE_ADDR}190.92.202.* 
-RewriteCond%{REMOTE_ADDR}190.92.203.*
-RewriteCond%{REMOTE_ADDR}190.92.204.*
-RewriteCond%{REMOTE_ADDR}190.92.205.* 
-RewriteCond%{REMOTE_ADDR}190.92.206.* 
-RewriteCond%{REMOTE_ADDR}190.92.207.* 
-RewriteCond%{REMOTE_ADDR}190.92.208.* 
-RewriteCond%{REMOTE_ADDR}190.92.209.* 
-RewriteCond%{REMOTE_ADDR}190.92.210.* 
-RewriteCond%{REMOTE_ADDR}190.92.211.* 
-RewriteCond%{REMOTE_ADDR}190.92.212.* 
-RewriteCond%{REMOTE_ADDR}190.92.213.* 
-RewriteCond%{REMOTE_ADDR}190.92.214.*
-RewriteCond%{REMOTE_ADDR}190.92.215.*
-RewriteCond%{REMOTE_ADDR}190.92.216.*
-RewriteCond%{REMOTE_ADDR}190.92.217.*
-RewriteCond%{REMOTE_ADDR}190.92.218.* 
-RewriteCond%{REMOTE_ADDR}190.92.198.*
-RewriteCond%{REMOTE_ADDR}190.92.220.*
-RewriteCond%{REMOTE_ADDR}190.92.221.*
-RewriteRule ^(.*)$ https://%{REMOTE_ADDR}/ [R=302,L]
-</IfModule>
-
-Deny from 49.0.200.245
-Deny from 49.0.204.134
-Deny from 49.0.204.151
-Deny from 94.74.84.239
-Deny from 101.44.160.236
-Deny from 101.44.163.82
-Deny from 101.44.160.128
-Deny from 101.32.243.180
-Deny from 101.44.163.82
-Deny from 110.238.109.93
-Deny from 110.238.109.69
-Deny from 110.238.109.93
-Deny from 114.119.172.73
-Deny from 110.238.110.188
-Deny from 110.238.107.187
-Deny from 119.13.101.51
-Deny from 119.8.162.74
-Deny from 119.13.108.89
-Deny from 119.13.100.168
-Deny from 124.243.151.132
-Deny from 124.243.137.68
-Deny from 124.243.136.12
-Deny from 124.243.133.214
-Deny from 124.243.148.208
-Deny from 124.243.136.110
-Deny from 124.243.133.214
-Deny from 124.243.136.110
-Deny from 124.243.135.189
-Deny from 124.243.134.205
-Deny from 124.243.151.132
-Deny from 124.243.137.36
-Deny from 124.243.133.167
-Deny from 159.138.109.92
-Deny from 159.138.109.15
-Deny from 159.138.103.36
-Deny from 159.138.109.92
-Deny from 190.92.208.1
-Deny from 190.92.210.9
-Deny from 190.92.201.11
-Deny from 190.92.210.227
-Deny from 190.92.201.11
-Deny from 190.92.216.77
-Deny from 90.92.205.226
-Deny from 190.92.205.164
-Deny from 190.92.221.240
-Deny from 190.92.215.37
-Deny from 1190.92.218.12
-Deny from 190.92.221.220
-Deny from 190.92.201.147
+# Huawei Hell:
 Deny from Huawei International Pte
 Deny from Huawei 
 Deny from huawei.com
@@ -8939,7 +8758,6 @@ Deny from https://huawei.com
 Deny from  http://huawei.com
 Deny from.compute.hwclouds-dns.com
 Deny from.computeFunctionGraph
-
 Deny from 49.*
 Deny from 74.* 
 Deny from 94.*
@@ -8947,10 +8765,13 @@ Deny from 101.*
 Deny from 110.*
 Deny from 111.*'
 Deny from 114.*
+Deny from 114.119.*
 Deny from 119.* 
 Deny from 124.*
 Deny from 159.*
 Deny from 190.*
+
+.....................................
 
 # They need SSL fot getting in to your site, can stop some. #
 
@@ -8979,186 +8800,34 @@ ErrorDocument 403 https://huaweicloud.com
 RewriteCond %{HTTPS} !=on [NC]
 RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
-:::::::::::::::::::::::::::::::::::::::::
-.........................................
-# Sweden hackers:
+# chinaunicom.com HELL
+Deny from chinaunicom.com
+Deny from 27.*
+Deny from 27.115.*
+Deny from 119.188.*
+Deny from 121.*
+Deny from 121.237.*
+Deny from 123.*
+Deny from 123.6.*
+Deny from 124.*
+Deny from 124.236.*
+Deny from 124.243.*
 
-Deny from 2.70.7.210
-Deny from 2.67.213.91
-Deny from 5.150.214.184
-Deny From 5.241.112.35
-Deny from 37.123.180.155
-Deny from 37.155.231.7
-Deny from 46.252.3.33
-Deny from 46.59.65.197
-Deny from 77.240.67.21    
-Deny from 77.240.75.49   
-Deny from 77.240.68.62 
-Deny from 77.74.130.2023
-Deny from 78.66.159.189 
-Deny from 78.66.159.189
-Deny from 78.77.210.20
-Deny from 78.82.228.44
-Deny from 78.79.226.75
-Deny from 78.82.161.80
-Deny from 78.77.206.185
-Deny from 79.136.15.252
-Deny from 80.216.76.173
-Deny from 81.224.47.78 
-Deny from 81.235.21.152
-Deny from 81.232.164.152
-Deny from 81.235.224.227
-Deny from 81.225.207.90
-Deny from 82.100.91.211
-Deny from 83.251.58.7 
-Deny from 83.241.210.163 
-Deny from 83.233.138.117
-Deny from 83.252.185.140
-Deny From 83.241.210.163
-Deny from 83.253.9.231 
-Deny from 83.251.174.232
-Deny from 83.254.175.15
-Deny from 83.254.175.151
-Deny from 83.255.44.21
-Deny from 83.250.114.23
-Deny from 84.55.82.108
-Deny from 85.30.188.140
-Deny from 85.224.102.130
-Deny from 85.226.188.44
-Deny from 88.129.28.254
-Deny from 90.129.199.34
-Deny from 90.143.215.39
-Deny from 90.132.220.80
-Deny from 90.235.51.143
-Deny from 90.143.214.161
-Deny from 90.224.39.254
-Deny from 92.33.132.43
-Deny from 93.188.2.5
-Deny From 93.158.91.38 
-Deny From 94.234.102.88
-Deny from 94.234.110.89 
-Deny from 94.191.136.107
-Deny from 94.191.136.203
-Deny from 94.234.107.200
-Deny from 94.234.108.147
-Deny from 95.203.159.36 
-Deny from 95.140.187.7
-Deny from 95.193.54.77 
-Deny From 95.203.238.111
-Deny from 109.225.113.165
-Deny From 112.245.241.95
-Deny from 138.3.245.161                     
-Deny from 158.174.23.52 
-Deny from 158.174.130.16 
-Deny from 178.164.99.21
-Deny from 178.73.212.122
-Deny from 178.73.212.123   
-Deny from 178.33.84.49
-Deny from 178.174.249.164
-Deny from 178.174.146.39 
-Deny from 178.218.154.66   
-Deny from 185.81.108.138 
-Deny from 185.113.96.248
-Deny from 185.183.147.227
-Deny from 188.126.80.5
-Deny from 188.148.107.150
-Deny from 188.149.6.251 
-Deny from 188.150.131.155
-Deny from 192.165.98.65
-Deny from 192.36.182.174 
-Deny from 193.47.167.201   
-Deny from 193.33.246.242
-Deny from 193.235.141.21
-Deny from 194.68.144.213
-Deny from 194.132.56.175
-Deny from 195.66.131.13
-Deny from 194.9.94.213  
-Deny from 195.198.220.37
-Deny from 213.80.38.234
-Deny from 217.78.30.22 
-Deny from 217.213.123.81 
-Deny from 217.209.27.103 
-Deny from 217.209.113.201
-Deny from 4.227.147.27
-Deny from 8.210.232.197
-Deny from 20.232.178.16
-Deny from 20.25.68.26
-Deny from 20.92.106.19
-Deny from 20.220.196.169
-Deny from 8.210.232.197
-Deny from 42.106.8.215
-Deny from 45.32.109.170
-Deny from 46.125.249.73
-Deny from 50.87.248.17
-Deny from 60.188.9.231
-Deny from 62.210.215.100
-Deny from 62.220.168.143
-Deny from 62.102.148.156
-Deny from 63.250.38.57
-Deny from 77.240.77.182
-Deny from 78.101.234.36
-Deny from 81.232.8.146
-Deny from 83.26.158.21
-Deny from 83.251.18.7
-Deny from 83.191.107.96
-Deny from 83.233.246.218
-Deny from 84.216.129.84
-Deny from 90.129.199.34
-Deny from 92.32.74.164
-Deny from 92.33.132.43
-Deny from 94.191.136.3
-Deny from 95.193.88.70
-Deny from 95.216.57.165
-Deny from 95.217.38.242
-Deny from 98.14.96.47
-Deny from 101.67.49.81
-Deny from 103.254.118.231
-Deny from 104.208.105.75
-Deny from 105.101.234.216
-Deny from 109.234.161.82
-Deny from 138.3.245.161
-Deny from 141.94.87.67
-Deny from 141.94.87.67
-Deny from 162.241.203.17
-Deny from 168.119.149.8
-Deny from 170.64.133.131
-Deny from 172.221.164.149
-Deny from 172.105.74.85
-Deny from 176.10.252.151
-Deny from 182.50.135.52
-Deny from 185.176.40.206
-Deny from 185.27.133.12
-Deny from 188.148.74.122
-Deny from 188.150.146.115
-Deny from 190.92.188.91
-Deny from 192.0.112.114
-Deny from 193.41.214.120
-Deny from 194.71.153.204
-deny from 198.57.247.225
-Deny from 202.61.253.63
-Deny from 211.20.175.134
-Deny from 213.66.119.192
-Deny from 213.112.129.212
-Deny from 216.244.66.198
-Deny from 213.239.218.163
+#Tencent HELL
+Deny from tencent.com
+Deny from 43.*
+Deny from 43.131.*
+Deny from 43.155.*
+Deny from 150.*
+Deny from 43.156.*
+Deny from 43.157.*
+Deny from 43.163.*
+Deny from 150.109.*
+Deny from 129.*
 
-230307:
-Deny from 37.197.164.40 
-Deny from 78.82.161.80    
-Deny from 80.70.156.56     
-Deny from 81.232.71.216    
-Deny from 90.230.172.9     
-Deny from 90.235.10.108   
-Deny from 91.192.31.128    
-Deny from 93.90.147.101    
-Deny from 94.254.59.239   
-Deny from 109.235.174.5    
-Deny from 171.25.193.79   
-Deny from 178.62.98.236    
-Deny from 193.235.141.125  
-Deny from 213.66.237.151  
 
-The swedish list been bigger.... Hate hackers, deny them please, if you got problem with them!
+::::::::::::::::::::::::::::::::::::
+#Sweden hackers:
 
 https://internetvikings.com
 Internetvikings.se:
@@ -9187,30 +8856,6 @@ Kustbandet:
 # InternetBolaget
 deny from 80.248.224.0/20
 
-#sweden
-deny from 192.71.2.57 
-deny from 176.70.52.196  
-deny from 192.71.126.27 
-deny from 192.71.12.181  
-deny from 192.71.12.10 
-deny from 192.71.2.56  
-deny from 192.71.126.53 
-
-231030:
-
-deny from 78.82.161.80 
-deny from 192.71.2.57 
-deny from 176.70.52.196 
-deny from 192.71.126.27  
-deny from 192.71.12.181 
-deny from 192.71.12.10 
-deny from 192.71.2.56  
-deny from 192.71.126.53  
-
-231207
-37.3.104.133
-
-Updates: 240706
 ..................................................
 Feed Stelaers:         
 
@@ -9596,7 +9241,7 @@ RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
 
 .......................................................................
 -----------------------------------------------------------------------
-Updated: 240725
+Updated: 2400802
 
 Some of them maybe ? gone!
 .................
