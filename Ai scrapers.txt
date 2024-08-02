@@ -81,6 +81,10 @@ RightWingGPT
 LeftWingGPT
 DepolarizingGPT
 
+# The Common Crawl crawler bot
+User-agent: CCBot
+Disallow: /
+
 ****************
 ## Scrapers:  ##
 User-agent: FriendlyCrawler
@@ -250,7 +254,7 @@ IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot ).*$[NC]
 RewriteRule .* - [F,L]
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Alexa|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
+RewriteCond %{HTTP_USER_AGENT}^.*(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
 Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
@@ -265,7 +269,7 @@ RewriteRule .* - [F,L]
 # Ai webscraping:  
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js| WebMagic).*$[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
 
@@ -273,6 +277,13 @@ RewriteRule .* - [F,L]
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
+</IfModule>
+
+#Other Hell:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|Mozlila).*$ [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(package|censys|scrapy|aiHitBot|linkfluence).*$ [NC]
+RewriteRule .* - [F,L]
 </IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -311,6 +322,8 @@ Disallow: /
 User-agent: Brave Leo AI
 Disallow: /
 User-agent: bingbot/2.0
+Disallow: /
+User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
@@ -516,7 +529,13 @@ Disallow: *.sql
 Disallow: /
 Disallow: *
 
+# 240802 
+An open source and collaborative framework for extracting the data you need from websites.
+This tries to scrape almost every blogpost on my blog:(
+
+User-agent: scrapy
+Disallow
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240801
+Updated: 240802
