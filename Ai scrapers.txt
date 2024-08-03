@@ -303,8 +303,6 @@ User-agent: AiHitBot
 Disallow: /
 User-agent: AIBOT
 Disallow: /
-User-agent: AlphaAI
-Disallow:  /
 User-agent: iaskspider/2.0
 Disallow: /
 User-agent: AISearchBot 
@@ -530,4 +528,4 @@ Disallow
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240803
+Updated: 240802
