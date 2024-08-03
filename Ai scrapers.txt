@@ -242,7 +242,7 @@ RewriteRule ^ – [F]
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}^.*(anthropic-ai|Applebot-Extended|
 Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|
-WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|
+WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|AI|crewAI|
 GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Owler|PerplexityBot|proximic).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
@@ -326,12 +326,6 @@ Disallow: /
 User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
-Disallow: /
-User-agent: CCBot
-Disallow: /
-User-agent: ccbot
-Disallow: /
-User-agent: CCBot/2.0
 Disallow: /
 user-agent: ChatGPT
 disallow: /
@@ -536,4 +530,4 @@ Disallow
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240802
+Updated: 240803
