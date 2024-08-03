@@ -443,8 +443,6 @@ User-agent: OpenAI GPT
 Disallow: /
 User-agent: openai
 Disallow:/
-User-agent: openai.com
-Disallow:/
 User-agent: Openbot
 Disallow: /
 User-agent: OAI-SearchBot
