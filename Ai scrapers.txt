@@ -397,8 +397,6 @@ User-agent: DialoGPT
 Disallow: /
 User-agent: DepolarizingGPT
 Disallow: /
-User-agent: GenAI
-Disallow: /
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
