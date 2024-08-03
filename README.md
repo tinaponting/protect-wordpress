@@ -109,6 +109,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Added: 240803, small php script, exit ai, as extra layer on blogs. 
 - Updated: 240802: ALT- if you only want some user agents to visit, ready to clip in.
 - Updated:240802:  htaccess1, better performance, delated some not in use useragents.
 - Updated: 240729 wp-content security.
