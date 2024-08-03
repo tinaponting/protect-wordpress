@@ -371,8 +371,6 @@ user-agent: ChatGPT
 disallow: /
 User-agent: ChatGPT-User
 Disallow: /
-User-agent: crewAI
-Disallow: /
 User-agent: commoncrawl
 Disallow: /
 User-agent: Google-Extended   
