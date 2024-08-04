@@ -232,10 +232,18 @@ RewriteCond %{HTTP_USER_AGENT}^.*(Useragent|Useragent|Useragent).*$[NC]
 RewriteRule .* - [F,L]
 </IfModule>
 
-## OR:
+## OR: Works great:)
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT} (Useragent|Useragent|Useragent)[NC]
 RewriteRule ^ – [F]
+</IfModule>
+
+# Another way to block ai bots:
+
+# Block via Request URI
+
+<IfModule mod_alias.c>
+	RedirectMatch 403 /crawl/
 </IfModule>
 
 ::::::::::::::::::::::::::
