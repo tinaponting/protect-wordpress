@@ -288,6 +288,18 @@ RewriteRule ^ – [F]
 RewriteRule ^ – [F]
 </IfModule>
 
+#From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
+
+add the following snippet of code to your functions.php file by going to the administration interface and choosing Appearance > 
+Theme File Editor and selecting functions.php from the sidebar. (You can also do this via a plugin like Code Snippets, which I use.
+
+add_filter('robots_txt', 'my_robots_commands', 99, 2); // filter to add robots
+function my_robots_commands($output, $public) {
+  $output .= "User-agent: Applebot-Extended\nDisallow: /";
+  return $output;
+}
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::
 ..................................................
    
