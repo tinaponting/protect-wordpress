@@ -279,8 +279,9 @@ RewriteRule ^ – [F]
 </IfModule>
 
 #Other Hell:
-RewriteCond%{HTTP_USER_AGENT}(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|scrapy|aiHitBot|linkfluence)[NC]
-RewriteRule .* - [F,L]</IfModule>
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|scrapy|aiHitBot|linkfluence)[NC]
+RewriteRule ^ – [F]
+</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 ..................................................
