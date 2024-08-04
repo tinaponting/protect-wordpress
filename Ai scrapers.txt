@@ -205,6 +205,10 @@ User-agent: Meta.AI
 User-agent: meta-ai
 User-agent: metaai
 Disallow: /
+
+
+Images:
+Dalle2AI
 ::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
@@ -239,52 +243,44 @@ RewriteRule ^ – [F]
 
 # Ai Bots bloccking:
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(anthropic-ai|Applebot-Extended|
-Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|
-WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|AI|crewAI|
-GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Owler|PerplexityBot|proximic).*$[NC]
-RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT} (anthropic-ai|Applebot-Extended|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot
+|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0
+WebChatGPT|Owler|PerplexityBot|proximic)[NC]
+RewriteRule ^ – [F]
 </IfModule>
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPT|GPTbot|
-GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|
-IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot ).*$[NC]
-RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} ((AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|D
+epolarizingGPT|GPT|GPTBot|GPTbot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPTZero|SearchGPT|OAI-SearchBot
+|The Knowledge AI|IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot)[NC]
+RewriteRule ^ – [F]
+</IfModule>
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|
-Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1).*$[NC]
-RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|
+FacebookBot/1.0|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1)[NC]
+RewriteRule ^ – [F]
 </IfModule>
 
 # Diffbot,dataprovider and images scarapers:
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot).*$[NC]
-RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)[NC]
+RewriteRule ^ – [F]
 </IfModule>
 
 # Ai webscraping:  
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic).*$[NC]
-RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
+RewriteRule ^ – [F]
 </IfModule>
 
 # Scrips ai and/scaraping:
 
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping).*$[NC]RewriteRule .* - [F,L]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping)[NC]
+RewriteRule ^ – [F]
 </IfModule>
 
 #Other Hell:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}^.*(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|Mozlila).*$ [NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(package|censys|scrapy|aiHitBot|linkfluence).*$ [NC]
-RewriteRule .* - [F,L]
-</IfModule>
+RewriteCond%{HTTP_USER_AGENT}(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|scrapy|aiHitBot|linkfluence)[NC]
+RewriteRule .* - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 ..................................................
@@ -532,4 +528,4 @@ Disallow
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240802
+Updated: 240804
