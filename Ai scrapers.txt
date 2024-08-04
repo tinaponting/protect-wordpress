@@ -243,9 +243,7 @@ RewriteRule ^ – [F]
 
 # Ai Bots bloccking:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT} (anthropic-ai|Applebot-Extended|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot
-|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0
-WebChatGPT|Owler|PerplexityBot|proximic)[NC]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT} (anthropic-ai|Applebot-Extended|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bingai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.|WebChatGPT|Owler|PerplexityBot|proximic)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -262,8 +260,7 @@ RewriteRule ^ – [F]
 
 # Diffbot,dataprovider and images scarapers:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)[NC]
-RewriteRule ^ – [F]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)[NC]RewriteRule ^ – [F]
 </IfModule>
 
 # Ai webscraping:  
