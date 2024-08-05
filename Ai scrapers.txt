@@ -285,7 +285,7 @@ RewriteRule ^ – [F]
 
 #With: +Linux + Macintosh /Same as above but Linux/Macintosh + JSON Output:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|Macintosh|libcurl|Poco||Parse|got-scraping|scraping)
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco||Parse|got-scraping|scraping)
 [NC]RewriteRule ^ – [F]</IfModule>
 
 #Other Hell:
