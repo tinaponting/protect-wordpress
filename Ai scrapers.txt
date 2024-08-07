@@ -51,6 +51,14 @@ Disallow: /
 User-Agent: Browse AI
 Disallow: /
 
+# Scraper (scrapes your blog for everything:
+User-agent: scrapy
+Disallow
+
+# Speaking Ai:
+User-agent: Amazon Lex
+Disallow
+
 User-Agent: my-tiny-bot
 Disallow: /
 
@@ -84,6 +92,12 @@ DepolarizingGPT
 # The Common Crawl crawler bot
 User-agent: CCBot
 Disallow: /
+
+# peer crawler:
+An open source and collaborative framework for extracting the data you need from websites.
+
+Site: https://www.peer39.com/
+User-agent: peer39_crawler/1.0
 
 ****************
 ## Scrapers:  ##
@@ -197,7 +211,7 @@ Disallow: /
 User-agent: Meta AI
 Disallow: /
 
-#MORE:
+#MORE if...:
 User-agent: MetaAI
 User-agent: Meta-AI
 User-agent: Meta AI
@@ -206,14 +220,18 @@ User-agent: meta-ai
 User-agent: metaai
 Disallow: /
 
+#Japan: https://ucri.nict.go.jp/en/icccrawler/
 
-Images:
+User-agent: ICC-Crawler
+Disallow: /
+
+# Images:
 Dalle2AI
 ::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
 
-<IfModule mod_php8.c>
+<IfModule mod_rewrite.c>
 MaxConnPerIP 1
 </IfModule>
 
@@ -228,70 +246,17 @@ MaxClients < number-of-connections>
 ### EXEMPEL/EXAMPLE:
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}^.*(Useragent|Useragent|Useragent).*$[NC]
-RewriteRule .* - [F,L]
-</IfModule>
-
-## OR: Works great:)
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (Useragent|Useragent|Useragent)[NC]
-RewriteRule ^ – [F]
+RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
+RewriteRule "^.*$" - [F,L]
 </IfModule>
 
 # Another way to block ai bots:
 
 # Block via Request URI
-
 <IfModule mod_alias.c>
-	RedirectMatch 403 /crawl/
+	RedirectMatch 403 /bot/
 </IfModule>
 
-::::::::::::::::::::::::::
-## htaccess: (htaccess1)
-
-# Ai Bots bloccking:
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT} (anthropic-ai|Applebot-Extended|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bingai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.|WebChatGPT|Owler|PerplexityBot|proximic)[NC]
-RewriteRule ^ – [F]
-</IfModule>
-
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} ((AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|D
-epolarizingGPT|GPT|GPTBot|GPTbot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPTZero|SearchGPT|OAI-SearchBot
-|The Knowledge AI|IntelliSeek.ai|LeftWingGPT|RightWingGPT|OpenAI GPT|openai|Openbot)[NC]
-RewriteRule ^ – [F]
-</IfModule>
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|
-FacebookBot/1.0|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1)[NC]
-RewriteRule ^ – [F]
-</IfModule>
-
-# Diffbot,dataprovider and images scarapers:
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)[NC]RewriteRule ^ – [F]
-</IfModule>
-
-# Ai webscraping:  
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
-RewriteRule ^ – [F]
-</IfModule>
-
-# Scrips ai and/scaraping:
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|Selenium|Kali|libcurl|Poco||Parse|got-scraping|scraping)[NC]
-RewriteRule ^ – [F]
-</IfModule>
-
-#With: +Linux + Macintosh /Same as above but Linux/Macintosh + JSON Output:
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco||Parse|got-scraping|scraping)
-[NC]RewriteRule ^ – [F]</IfModule>
-
-#Other Hell:
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AISearchBot|aipbot|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|scrapy|aiHitBot|linkfluence)[NC]
-RewriteRule ^ – [F]
-</IfModule>
 
 #From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
 
@@ -304,6 +269,79 @@ function my_robots_commands($output, $public) {
   return $output;
 }
 
+::::::::::::::::::::::::::
+## htaccess: (htaccess1)
+
+# Ai Bots bloccking:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot
+|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Bing ai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Owler|PerplexityBot|proximic)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPTBot|GPTbot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPT-4o mini
+|GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|IntelliSeek.ai|LeftWingGPT|RightWingGPT|Openbot)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|
+FacebookBot/1.0|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+# Diffbot,dataprovider and images scarapers:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+# Ai webscraping:  
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+# Scrips ai and/scaraping:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco||Parse|got-scraping|scraping)
+[NC]RewriteRule ^ – [F]</IfModule>
+
+
+#Other Hell:
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AISearchBot|FastAPI|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|Scraper API|scrapy|HTML|Langchain|Pinecone)[NC]
+RewriteRule ^ – [F]
+</IfModule>
+
+
+# MY htaccess1: 
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(Amazon Bedrock|Google-Extended|Applebot-Extended|Google Bard AI|Bing ai|Brave Leo AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Amazon Bedrock|Google-Extended|Bing ai|AI|crewAI|GenAI|CCBot|ccbot|CCBot/2.0|WebChatGPT|Owler|PerplexityBot|proximic)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPTBot|GPTbot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPT-4o mini|GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|IntelliSeek.ai|LeftWingGPT|RightWingGPT|Openbot)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(Alexa|CCBot|ClaudeBot|FacebookBot|facebookexternalhit|facebookexternalhit/1.1|FacebookBot/1.0|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|meta-externalfetcher/1.1|WormGPT V3.0|peer39_crawler/1.0)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c 
+RewriteCond%{HTTP_USER_AGENT}"{HTTP_USER_AGENT}"(Dataprovider|Diffbot|fidget-spinner-bot|ImagesiftBot|img2dataset|omgili|Omgilibot|YouBot|my-tiny-bot|PiplBot)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)"[NC]]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco||Parse|got-scraping|scraping)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(AISearchBot|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|package|censys|Scraper API|scrapy|HTML|Langchain|peer39_crawler/1.0|Pinecone)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 ..................................................
@@ -312,15 +350,11 @@ function my_robots_commands($output, $public) {
 #Ai/BOTS - scrapers:
 # Robots.txt:
 
-User-agent: anthropic-ai
-Disallow: /
 User-agent: AutoGPT
 Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
 User-agent: AiHitBot
-Disallow: /
-User-agent: AIBOT
 Disallow: /
 User-agent: iaskspider/2.0
 Disallow: /
@@ -360,6 +394,10 @@ User-agent: GPTBot
 Disallow: /
 User-Agent: GPTbot/0.1
 Disallow: /
+User-Agent: GPTBot/1.0
+Disallow: /
+User-Agent: GPTBot/1.2
+Disallow: /
 User-agent: GPT-2
 Disallow: /
 User-agent: GPT-3 
@@ -372,9 +410,13 @@ User-agent: gpt-4-turbo
 Disallow: /
 User-agent: GPT-4o
 Disallow: /
+User-agent: GPT-4o mini
+Disallow: /
 User-agent: GPT-3.5 Turbo
 Disallow: /
 User-agent: GPTZero
+Disallow: /
+User-agent: 3.5 Sonnet
 Disallow: /
 User-agent: GenAI
 Disallow: /
@@ -389,8 +431,6 @@ Disallow: /
 user-agent: ChatGPT
 disallow: /
 User-agent: ChatGPT-User
-Disallow: /
-User-agent: commoncrawl
 Disallow: /
 User-agent: Google-Extended   
 Disallow: /
@@ -460,8 +500,6 @@ User-agent: Omgili
 Disallow: /
 User-agent: OpenAI GPT
 Disallow: /
-User-agent: openai
-Disallow:/
 User-agent: Openbot
 Disallow: /
 User-agent: OAI-SearchBot
@@ -542,13 +580,16 @@ Disallow: *.sql
 Disallow: /
 Disallow: *
 
-# 240802 
-An open source and collaborative framework for extracting the data you need from websites.
-This tries to scrape almost every blogpost on my blog:(
 
-User-agent: scrapy
-Disallow
+New 200807:
+
+# HACKING:
+https://flowgpt.com/p/wormgpt-v30
+# WormGPT V3.0 is a powerful and ruthless AI chatbot designed to assist 
+hackers with their hacking and programming endeavors
+
+WormGPT V3.0
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240804
+Updated: 240807
