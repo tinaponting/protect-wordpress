@@ -308,7 +308,7 @@ RewriteRule ^ – [F]
 
 
 #Other Hell:
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AISearchBot|FastAPI|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|censys|Scraper API|scrapy|HTML|Langchain|Pinecone)[NC]
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(AISearchBot|FastAPI|evc-batch|YaK/1.0|MSIECrawler|MSIE|Mozlila|package|Ubuntu|Scraper API|scrapy|HTML|Langchain|Pinecone)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -340,7 +340,7 @@ RewriteCond%{HTTP_USER_AGENT}"(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Ka
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(AISearchBot|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|package|censys|Scraper API|scrapy|HTML|Langchain|peer39_crawler/1.0|Pinecone)"[NC]
+RewriteCond%{HTTP_USER_AGENT}"(AISearchBot|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|package|censys|Scraper API|scrapy|HTML|Langchain|peer39_crawler/1.0|EXIF data|File Viewer)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -352,9 +352,13 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 User-agent: AutoGPT
 Disallow: /
+User-agent: Agent GPT
+Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
-User-agent: AiHitBot
+User-agent: Aria browser AI
+Disallow: /
+Aria browse Aria AI
 Disallow: /
 User-agent: iaskspider/2.0
 Disallow: /
@@ -388,8 +392,6 @@ User-agent: ClaudeBot
 Disallow: /
 User-agent: crewAI
 Disallow: /
-User-agent: GPT 
-Disallow: /
 User-agent: GPTBot
 Disallow: /
 User-Agent: GPTbot/0.1
@@ -397,6 +399,8 @@ Disallow: /
 User-Agent: GPTBot/1.0
 Disallow: /
 User-Agent: GPTBot/1.2
+Disallow: /
+User-agent: GPT-1
 Disallow: /
 User-agent: GPT-2
 Disallow: /
@@ -414,6 +418,8 @@ User-agent: GPT-4o mini
 Disallow: /
 User-agent: GPT-3.5 Turbo
 Disallow: /
+User-agent: GPT-Sw3
+Disallow: /
 User-agent: GPTZero
 Disallow: /
 User-agent: 3.5 Sonnet
@@ -427,7 +433,9 @@ Disallow: /
 User-agent: ccbot
 Disallow: /
 User-agent: CCBot/2.0
-Disallow: /
+Disallow: 
+User-agent: CC-Crawler/2.0
+Disallow: 
 user-agent: ChatGPT
 disallow: /
 User-agent: ChatGPT-User
@@ -438,6 +446,8 @@ User-agent: Google Bard AI
 Disallow: /
 User-agent: GoogleOther
 Disallow: / 
+User-agent: GenAI
+Disallow: /
 User-agent: Dalvik/2.1.0
 Disallow: / 
 User-agent: Diffbot
@@ -462,6 +472,8 @@ User-agent: FriendlyCrawler
 Disallow: /
 User-agent: FriendlyCrawler/1.0
 Disallow: /	
+User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+Disallow: /	
 User-agent: Intelliseek 
 Disallow:/
 User-agent: IntelliSeek.ai
@@ -475,14 +487,6 @@ Disallow: /
 User-agent: LeftWingGPT
 Disallow: /
 User-agent: Meta AI
-Disallow: /
-User-agent: Meta-AI
-Disallow: /
-User-agent: Meta.AI
-Disallow: /
-User-agent: meta-ai
-Disallow: /
-User-agent: metaai
 Disallow: /
 User-agent: Meta Llama 3
 Disallow: /
@@ -506,7 +510,11 @@ User-agent: OAI-SearchBot
 Disallow: /
 User-agent: Owler
 Disallow: /
+User-agent: SearchGPT 
+Disallow: /
 User-agent: WebChatGPT
+Disallow: /
+User-agent: WormGPT V3.0
 Disallow: /
 User-agent: PerplexityBot
 Disallow: /
@@ -592,4 +600,4 @@ WormGPT V3.0
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240807
+Updated: 240808
