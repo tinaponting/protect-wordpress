@@ -303,7 +303,7 @@ RewriteRule ^ – [F]
 
 # Scrips ai and/scaraping:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco||Parse|got-scraping|scraping)
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT(okhttp|cpp-httplib|Curlpp|JSON Output|Selenium|Kali|Linux|libcurl|Poco|Parse|got-scraping|scraping)
 [NC]RewriteRule ^ – [F]</IfModule>
 
 
