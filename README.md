@@ -110,6 +110,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240809:  Mu htaccess1 with ai. 
 - Updated: 240807: Updaed Perrishpress 8G extended version.
 - Updated:240804: htaccess1, small errors on my htaccess1.
 - Added: 240803, small php script, exit ai, as extra layer on blogs. Not sure it works. 
