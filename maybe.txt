@@ -221,9 +221,6 @@ RewriteCond %{HTTP_USER_AGENT} !virustotalcloud\)$
 RewriteCond %{HTTP_USER_AGENT} !Trident/
 RewriteCond %{HTTP_USER_AGENT} MSIE\ .*Windows
 
-# Redirect during the testing period:
-RewriteRule .* /strangebrowser.html? [R=307,L]
-
 # Comment out the line above and remove the comment mark below to block fake browsers after the testing period
 RewriteRule ^.*$ - [F,L]
 
@@ -3794,88 +3791,12 @@ RewriteEngine On RewriteCond %{REQUEST_FILENAME}!-f RewriteRule ^([^.]+)$ $1.php
 
 .......................................................................................
 .......................................................................................
-Header extra security:  (sometimes slow down the site, try and see!
-
-Header append X-FRAME-OPTIONS "DENY"
-Header set Set-Cookie HttpOnly;Secure 
-Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
-
-.......................................................................................
-.......................................................................................
 #Humans.txt deny:
 
 <IfModule mod_rewrite.c>RewriteRule ^([a-zA-Z0-9-_\/]+)humans.txt$ /humans.txt [F,L]</IfModule>
 
 #ADS:
 <IfModule mod_rewrite.c>RewriteRule ^([a-zA-Z0-9-_\/]+)ads.txt$ /humans.txt [F,L]</IfModule>
-
-.......................................................................................
-.......................................................................................
-### STOP Ai:  
-# AI: .htaccess(1) 
-
-RewriteCond %{HTTP_USER_AGENT} (CCBot|ChatGPT|GPTBot|Omgilibot|SOME BOT here) [NC]
-RewriteRule ^ – [F]
-
-# diffbot:
-
-SetEnvIfNoCase User-Agent "^(-?|Asperatusbot|Mozilla(\/.\..)?|QCrawl|robot)$" bad
-SetEnvIfNoCase User-Agent "^('|=|\/|BUFF|Jersey|Mozilla.*Mozilla|Pcore|pshtt|User.?Agent)" bad
-SetEnvIfNoCase User-Agent "(\\x|\"\)|\ \ Safari|\(compatible;?(\ )?\)|\(Mobile;\ rv:|0\ Gecko|Mozilla\/5.*MSIE\ [2-8]|MSIE\ (9|1[01]).*\.NET|Windows(\ (10|NT\)|XP\))|\))|X\ 10_10_0)" bad
-SetEnvIfNoCase User-Agent "(aylienbot|BegunAdvertising|betaBot|Bitvore|BoogleBot|cmscrawler|CommonCrawler|devworx|Diffbot|Digincore|evc-batch|exif-search|Feosey|FOCA|GarlikCrawler|Genieo|Getintent|Headless|HubSpot|HybridBot|Iframely|Indy|ips(-agent|\ Community)|Kemvibot|KomodiaBot|mfibot|MixrankBot|Nutch|Pulsepoint|Scrapy|semantic|SiteTruth|Slackbot|Stratagems|Surdotly|Synapse|TWMBot|Web(Copy|collage|Fuck)|wonderbot)" bad
-SetEnvIf Request_URI "^/robots\.txt$" ok
-
-# Used by by spammers, scanners, bad things:
-
-User-agent: Mozilla/4.0 (compatible; BullsEye; Windows 95)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 95)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 98)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows NT)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows XP)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows 2000)
-Disallow:/
-User-agent: Mozilla/4.0 (compatible; MSIE 4.0; Windows ME)
-Disallow:/
-User-agent: mozilla/5
-
-# you can group all user-agents together in robots.txt, it makes maintenance easier:
-
-user-agent: ua1
-user-agent: ua2
-user-agent: ua3
-user-agent: ua4
-disallow: /
-
-
-# I stoped some of AI scrapers by this:
-
-SetEnvIfNoCase USER_AGENT "python-requests/2.26.0" bad_bot
-SetEnvIfNoCase USER_AGENT "python-requests" bad_bot
-
-
-RewriteCond%{{HTTP_USER_AGENT}HtmlRequestScraper [NC]
-
-RewriteCond%{{HTTP_USER_AGENT}GoogleScraper [NC]
-
-# Alternative:
-
-SetEnvIfNoCase User-Agent ^GoogleScraper bad_bot
-SetEnvIfNoCase User-Agent ^HtmlRequestScraper bad_bot
-
-:
-# THIS is the one walking my blog:
-
-RewriteCond%{HTTP_USER_AGENT}zh-CN|zh_CN zh\-CN|OPPO\sA33[NC]  //CHina Hell!
-
-RewriteCond%{HTTP_USER_AGENT}(360spider|apache|apache-useragents|Nikto)[NC]  Uses by hackers on A1!
-
-RewriteCond%{HTTP_USER_AGENT}(AIBOT|AiHitBot|AISearchBot|Omgilibot|CCBot|ccbot|CCBot/2.0|Claude bot|Claude 2.1|Claudebot|Diffbot|ImagesiftBot|
-ChatGPT|GPTBot|GPTbot/0.1GPT-2|GPT-3|GPT-3.5|GPT-4|OpenAI GPT|proximic)[NC]
 
 .......................................................................................
 .......................................................................................
@@ -3918,7 +3839,6 @@ RewriteCond %{HTTP_USER_AGENT} (Puppeteer) [NC]
 RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
 # Alternative:
 
 RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
@@ -3929,9 +3849,6 @@ RewriteCond%{HTTP_USER_AGENT}(crawler.ninja) [NC]
 # Web scraper
 User-agent: TinyTestBot
 Disallow: 
-
-User-Agent: thesis-research-bot
-Disallow: /
 
 # Stops generator of user agents, hopefully....
 
@@ -4013,147 +3930,11 @@ RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
 RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
 RewriteRule .* - [F]</ifModule>
 
-
 #Dangerous port scanner:
 RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC]
 
 # A craper/ai:
 Node.js
-
-#COMPLETE LIST _ I USE:  updated: 240418
-
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Applebot|AIBOT|AiHitBot|AISearchBot|Aipbot|AIBOT D|
-Omgilibot|omgili|CCBot|ccbot|CCBot/2.0|ClaudeBot/1.0|Claude bot|Claude 2.0|Claude 2.1|Claude-Web/1.0|ClaudeBot|Claudebot|Claude-Web|anthropic-ai|
-FacebookBot|Diffbot|ImagesiftBot|ChatGPT|GPTBot|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|GPT|GPT-3.5|GPT-4o|Agent GPT|ChatGPT-User|WebChatGPT| 
-OpenAI|openai.com|Openbot|OpenAI|GPT|Meta AI| The Knowledge AI|cohere-ai|PerplexityBot|AgentRunner.ai|Accoona-AI-Agent|Accoona-AI-Agent/1.1.2|Accoona-AI-Agent/1.1.1)[NC]      
-RewriteCond%{HTTP_USER_AGENT}(AnyPicker|crewAI|okhttp|cpp-httplib|Curlpp|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)
-ImagesiftBot|OpenAI|GPT|proximic|Kali|cohere-ai|CommonCrawl|Google-Extended|omgili|Omgilibot|magpie-crawler|PerplexityBot|YouBot)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^arachni"[NC]
-RewriteCond%{HTTP_USER_AGENT}(A1 Website Download[NC] 
-RewriteCond%{HTTP_USER_AGENT}(A1 Website Scraper[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Browse AI"[NC] 
-RewriteCond%{HTTP_USER_AGENT}(Cheerio)[NC]
-RewriteCond%{HTTP_USER_AGENT}(cURL)[NC]
-RewriteCond%{HTTP_USER_AGENT}(C#)[NC]
-RewriteCond%{HTTP_USER_AGENT}(C++)[NC]
-RewriteCond%{HTTP_USER_AGENT}(DataForSeoBot)[NC] 
-RewriteCond%{HTTP_USER_AGENT}(FeroxBuster)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Dirsearch)[NCR]
-RewriteCond%{HTTP_USER_AGENT}(Elixir)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Gobuster)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nuclei"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nmap"[NC]
-RewriteCond%{HTTP_USER_AGENT}(Masscan)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Metaspoilt)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Metaspoilt"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nessus)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nexpose)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nessus)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Nikto"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^nessus"[NCR]
-RewriteCond%{HTTP_USER_AGENT}"^NodeJS[NC]
-RewriteCond%{HTTP_USER_AGENT}"^nutch [NC]
-RewriteCond%{HTTP_USER_AGENT}"^havij"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^dirbuster"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^GuzzleHttp"[NC]
-RewriteCond%{HTTP_USER_AGENT}^GoogleScraper[NC]
-RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp [NC]
-RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7[NC]
-RewriteCond%{HTTP_USER_AGENT}"^SF"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^fimap"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^jbrofuzz"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^webshag"[NC]
-RewriteCond%{HTTP_USER_AGENT}(Photon/1.0[NC] 
-RewriteCond%{HTTP_USER_AGENT}(Headless)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome Linux)[NC] 
-RewriteCond%{HTTP_USER_AGENT}(HeadlessChrome Python)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Headless Chromium)[NC]
-RewriteCond%{HTTP_USER_AGENT}(headful chromium)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Headless Edge)[NC]
-RewriteCond%{HTTP_USER_AGENT}(headless firefox)[NC]
-RewriteCond%{HTTP_USER_AGENT}(headful firefox)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HtmlRequestScraper)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Raw HTML Scraper)[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Scan).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}(headless.py)[NC]
-RewriteCond%{HTTP_USER_AGENT}(httpful)[NC]
-RewriteCond%{HTTP_USER_AGENT}(hQuery.php)[NC]
-RewriteCond%{HTTP_USER_AGENT}(crawler.ninja)[NC]
-RewriteCond%{HTTP_USER_AGENT}(HtmlUnit)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Firefox Headless)[NC]
-RewriteCond%{HTTP_USER_AGENT}^HtmlRequestScraper[NC]
-RewriteCond%{HTTP_USER_AGENT}^Headless scraping bad_bot[NC]
-RewriteCond%{HTTP_USER_AGENT}(SimpleBrowser)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Splash)[NC]
-RewriteCond%{HTTP_USER_AGENT}(SlimerJS)[NC]
-RewriteCond%{HTTP_USER_AGENT}(TrileFejs)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}(TOR browser)[NC]
-RewriteCond%{HTTP_USER_AGENT}(ZombieJS)[NC]
-RewriteCond%{HTTP_USER_AGENT}(node js)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Ruby)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Rust)[NC] 
-RewriteCond%{HTTP_USER_AGENT}(Python)[NC]
-RewriteCond%{HTTP_USER_AGENT}(python aiohttp)[NC]
-RewriteCond%{HTTP_USER_AGENT}(PhantomJS Webkit)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Playwright)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Puppeteer)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Scrapy)[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*scan.*$ [NC]
-RewriteCond%{HTTP_USER_AGENT}"^sqlmap"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^sqlninja"[NCR]
-RewriteCond%{HTTP_USER_AGENT}(Java)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Jaunt)[NC]
-RewriteCond%{HTTP_USER_AGENT}(R)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Golang Scraper)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Go Web Scraping)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Request-Promise-Native)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Unirest)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Osmosis)[NC]
-RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^openvas"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^OpenVAS"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^PHPScraper"[NC]
-RewriteCond%{HTTP_USER_AGENT}(panther)[NC]
-RewriteCond%{HTTP_USER_AGENT}(SSL/TLS Scan)[NC]
-RewriteCond%{HTTP_USER_AGENT}(scan.*$ [NC]
-RewriteCond%{HTTP_USER_AGENT}(WhatWeb)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^whatweb"[NC]
-RewriteCond%{HTTP_USER_AGENT}(Webscrape AI)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Webscrape AI"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Wappalyzer"[NC]
-RewriteCond%{HTTP_USER_AGENT}"^w3af.org"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"^w3af.sourceforge.net"[NC]
-RewriteCond%{HTTP_USER_AGENT}(WordPress Security Scan)[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[NC]                             
-RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Mozilla\/[1-4]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-10]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}(BlackArch Linux)[NC]
-RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC]
-RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3-10]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!Linux;\Android\[234]\.[0-10][NC]
-RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
-RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
-RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC]
-RewriteCond%{HTTP_USER_AGENT}"^zgrab"[NC]RewriteRule .* - [F]</ifModule>
-
-##updated: 2400620  ##
 
 
 # New list of scrapers:
@@ -4172,10 +3953,6 @@ Browse AI
 Webscrape AI
 Raw HTML Scraper
 
-# If needed:
-RewriteCond%{HTTP_USER_AGENT}(AnyPicker|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohtt|got-scraping|scraping)[NC]
-
-New scraping Ai bot: crewAI
 
 .......................................................................................
 .......................................................................................
@@ -4222,7 +3999,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_REFERER}^Domainadreesshere.com/ RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
 RewriteCond%{HTTP_REFERER}^.bc.googleusercontent.com/ RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
-RewriteCond%{HTTP_REFERER}^.binance,com / RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
+RewriteCond%{HTTP_REFERER}^.binance.com / RewriteRule /* https://www.porn300.com/sv/tagg/gratis-knull [R,L]
 </IfModule>
 
 .......................................................................................
@@ -4296,6 +4073,10 @@ Header always edit Set-Cookie (.*) "$1; HttpOnly."
 Header always edit Set-Cookie (.*) "$1; Secure"
 </IfModule>
 
+#Alternative: Header extra security:  (sometimes slow down the site, try and see!)
+
+Header set Set-Cookie HttpOnly;Secure 
+Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
 
 In folders you want to protect:
 
@@ -4343,7 +4124,6 @@ Disallow: /
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-
 #Claudebot HELL
 
 <IfModule mod_rewrite.c>	
@@ -4357,8 +4137,8 @@ RewriteCond%{HTTP_USER_AGENT}"ClaudeBot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claudebot"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claude-Web"[NC]
 RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*ClaudeBot.*$
-RewriteCond %{REQUEST_URI} !robots\.txt
+RewriteCond%{HTTP_USER_AGENT} ^.*ClaudeBot.*$
+RewriteCond%{REQUEST_URI} !robots\.txt
 RewriteCond%{HTTP_USER_AGENT}"User-Agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com"[NC]
 RewriteRule ^(.*)$ - [F]</IfModule>
 
@@ -4397,8 +4177,7 @@ RedirectMatch 403 thehive.ai  #ai image scraper
 thehive.ai
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-
-Errors -that not goes away! 
+# Errors -that not goes away! 
 
 Set this: error_reporting(0);    in php file, under se example:
 
@@ -4440,7 +4219,9 @@ put it in themes header.
 #Block comment spammers, bad bots and some proxies:  
 add your boots, ip numer
 
-RewriteCond %{REMOTE_HOST} 11.111.111.111 [OR]
+<IfModule mod_rewrite.c>
+
+RewriteCond%{REMOTE_HOST} 11.111.111.111 [OR]
 
 RewriteCond %{HTTP_USER_AGENT} ^Website\ eXtractor [NC,OR]
 
@@ -4449,4 +4230,4 @@ RewriteRule ^.* - [F,L]
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240620
+Updated: 240809
