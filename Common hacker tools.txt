@@ -40,6 +40,40 @@ meterpreter
 
 BLOCK: MSIE
 ....................
+....................
+# Linux Hacking tools:
+
+Metaspoilt
+Kali Linux
+Parrot Security OS
+BlackArch Linux
+BackBox Linux
+Arch Linux
+ZAP
+OSV-Scanner
+sqlmap
+
+Search engine uses by hackers:
+Crt.sh
+Shodan       * Most used
+searchcode.com
+GreyNoise
+ZoomEye
+Censys
+Hunter
+
+# Tor:
+Tails
+Tor2Web
+TOR browser
+
+
+Blandat nytt:240620:
+
+User-agent: 2ip bot
+Disallow: /
+
+:::::::::::::::::::::::::::::
 
 # HACKER/ Not wanted browsers:
 
@@ -66,3 +100,5 @@ RewriteRule "^.*$" - [F,L]
 Index of #source Code"
 
 
+..................................................
+Updated: 240812
