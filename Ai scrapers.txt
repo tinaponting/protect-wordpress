@@ -281,7 +281,7 @@ RewriteRule ^ – [F]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPTBot|GPTbot|GPTBot/1.0|GPTbot/0.1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPT-4o mini
+RewriteCond %{HTTP_USER_AGENT}(AutoGPT|bingbot/2.0|cohere-ai|ChatGPT|ChatGPT-User|DialoGPT|DepolarizingGPT|GPTBot|GPTbot|GPTBot/1.0|GPTbot/0.1|GPTBot/1.2|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-3.5 Turbo|GPT-4o mini
 |GPTZero|SearchGPT|OAI-SearchBot|The Knowledge AI|IntelliSeek.ai|LeftWingGPT|RightWingGPT|Openbot)[NC]
 RewriteRule ^ – [F]
 </IfModule>
