@@ -1,0 +1,68 @@
+HackBar
+Wappalyzer
+Site Spider, Mark II 
+Cache killer
+Open port check tool  
+Request maker
+Proxy SwitchyOmega 
+iMacros for chrome
+Note anywhere
+d3coder
+Tamper Data
+Data Scraper
+EditThisCookie
+User-Agent Switcher and Manager
+Invicti
+WebInspect
+Netsparker
+Intruder
+John the Ripper
+LiveAction
+WebInspect
+Zenmap
+Burp Suite
+
+Crt.sh
+searchcode.com
+GreyNoise
+ZoomEye
+Censys
+Hunter
+Node.js
+Acunetix
+DIRB
+
+X11
+Metasploitable 2
+exiftool
+Metasploit
+meterpreter
+
+BLOCK: MSIE
+....................
+
+# HACKER/ Not wanted browsers:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}"(Shodan|MSIE|UBrowser|UCBrowser|Nyxt|SimpleBrowser|TOR browser|Tails|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|Waterfox)"[NC]
+RewriteRule "^.*$" - [F,L] 
+</IfModule>
+
+
+###
+
+# HACKERS tools - Not wanted:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT}"(Acunetix|Burp Suite|Crt.sh|Censys|Cache killer|exiftool|DIRB|d3coder|Data Scraper|HackBar|Hunter|iMacros for chrome|Note anywhere|Netsparker
+|GreyNoise|John the Ripper|Intruder|Invicti|LiveAction|Tamper Data|Proxy SwitchyOmega|Request maker|Site Spider, Mark II|Metasploitable 2|Metasploit|meterpreter|packets
+|User-Agent Switcher and Manager|ZoomEye|WebInspect|Wappalyzer|Zenmap|ZAP|X11)"[NC]
+RewriteRule "^.*$" - [F,L]
+</IfModule>
+
+
+
+# Used to see what you got:
+Index of #source Code"
+
+
