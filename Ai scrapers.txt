@@ -250,6 +250,11 @@ RewriteCond %{HTTP_USER_AGENT}"(bot|bot|bot|bot|bot|bot|bot)"[NC]
 RewriteRule "^.*$" - [F,L]
 </IfModule>
 
+#Another way:
+
+RewriteCond %{HTTP_USER_AGENT}^.*(BotToBlock1|BotToBlock2|BotToBlock3).*$ [NC] 
+RewriteRule .* – [F,L]
+
 # Another way to block ai bots:
 
 # Block via Request URI
@@ -396,7 +401,7 @@ User-agent: GPT-Sw3
 Disallow: /
 User-agent: GPTZero
 Disallow: /
-User-agent: 3.5 Sonnet
+User-agent: Claude 3.5 Sonnet
 Disallow: /
 User-agent: GenAI
 Disallow: /
@@ -574,4 +579,4 @@ WormGPT V3.0
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240812
+Updated: 240813
