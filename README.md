@@ -110,7 +110,8 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
-- Updated: wp-content/uploads with working stop stealing my images from: [AwarioRssBot](https://perishablepress.com/)
+- Updated: 240822 Not Allowed, so it works better:)
+- Updated: 240820 wp-content/uploads with working stop stealing my images from: [AwarioRssBot](https://perishablepress.com/)
 - Added: common hackers tools, use all or take what you need:)
 - Updated: 240809:  Mu htaccess1 with ai. 
 - Updated: 240807: Updaed Perrishpress 8G extended version.
