@@ -39,8 +39,33 @@ Metasploit
 meterpreter
 
 BLOCK: MSIE
+
+#Connection with your site:  
+Java's HttpUrlConnection
+
+# Scraping:
+TypeScript
+Cheerio
+Empty TypeScript
+Standby TypeScript 
+
+# test if....
+Playwright Test 
+
+#HTML SCRAPING:
+HTML Scraper
+
+
+# ai downloader of whole site:
+A1 Website Download
+
+#Other heads
+Headful
+Headless Client
+Splash
+
 ....................
-....................
+
 # Linux Hacking tools:
 
 Metaspoilt
@@ -67,15 +92,42 @@ Tails
 Tor2Web
 TOR browser
 
-
-Blandat nytt:240620:
+# Not wantet useragent:
 
 User-agent: 2ip bot
 Disallow: /
 
+
+# Scrapers bypassing:
+
+Objective C
+Scala
+Kotlin
+Javascript
+
+# Other scrapers:
+
+Proxies/API
+VPN/proxy
+RESTful API
+
+# Python scrapers:
+webscraper.py
+scraper.py
+
+# Bypass scanner:
+SSL Scanner
+
 :::::::::::::::::::::::::::::
 
 # HACKER/ Not wanted browsers:
+
+fModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(Acunetix|Burp Suite|Crt.sh|Censys|Cache killer|exiftool|DIRB|d3coder|Data Scraper|HackBar|Hunter|iMacros for chrome|Note anywhere|Netsparker
+|GreyNoise|John the Ripper|Intruder|Invicti|LiveAction|Tamper Data|Proxy SwitchyOmega|Request maker|Site Spider, Mark II|Metasploitable 2|Metasploit|meterpreter|packets|User-Agent Switcher and Manager|ZoomEye|WebInspect|Wappalyzer|Zenmap|ZAP|X11)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}"(Shodan|MSIE|UBrowser|UCBrowser|Nyxt|SimpleBrowser|TOR browser|Tails|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|Waterfox)"[NC]
@@ -83,22 +135,42 @@ RewriteRule "^.*$" - [F,L]
 </IfModule>
 
 
-###
-
-# HACKERS tools - Not wanted:
+#### Other:
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}"(Acunetix|Burp Suite|Crt.sh|Censys|Cache killer|exiftool|DIRB|d3coder|Data Scraper|HackBar|Hunter|iMacros for chrome|Note anywhere|Netsparker
-|GreyNoise|John the Ripper|Intruder|Invicti|LiveAction|Tamper Data|Proxy SwitchyOmega|Request maker|Site Spider, Mark II|Metasploitable 2|Metasploit|meterpreter|packets
-|User-Agent Switcher and Manager|ZoomEye|WebInspect|Wappalyzer|Zenmap|ZAP|X11)"[NC]
-RewriteRule "^.*$" - [F,L]
-</IfModule>
+RewriteCond%{HTTP_USER_AGENT}^.*(dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client).*$ [NC]
+RewriteRule .* - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*(DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler).*$ [NC]
+RewriteRule .* - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux).*$ [NC]
+RewriteRule .* - [F,L]</IfModule>
 
 
+# CODE Scraping + ai:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{QUERY_STRING}(A1 Website Download|Cheerio|Headful|Headless Client|HTML Scraper|Empty TypeScript|Objective C|Splash|Scala|Standby TypeScript|
+TypeScript|Kotlin|Javascript|Java's HttpUrlConnection|Proxies/API|Playwright Test|VPN/proxy|scraper.py|RESTful API|SSL Scanner)\:[NC]RewriteRule .* - [F]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(A1 Website Download|Cheerio|Headful|Headless Client|HTML Scraper|Empty TypeScript|Objective C|Splash|Scala|Standby TypeScript|
+TypeScript|Kotlin|Javascript|Java's HttpUrlConnection|Proxies/API|Playwright Test|VPN/proxy|scraper.py|RESTful API|SSL Scanner)[NC]RewriteRule .* - [F]</IfModule>
+
+
+
+
+
+# CHECK IT: 
 
 # Used to see what you got:
-Index of #source Code"
+Index of #your site Domain"
 
 
 ..................................................
-Updated: 240812
+Updated: 240823
+
+
