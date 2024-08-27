@@ -1,4 +1,4 @@
-# protect-wordpress  For Paranoid bloggers on wordpress.
+0022# protect-wordpress  For Paranoid bloggers on wordpress.
 Protect wordpress with .htaccess
 
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
@@ -110,7 +110,8 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
--  Updated:240827: perishablepress.com8g-firewall /htaccess2 firewall.
+- Updated:240827: htaccess1with Ai/hacking - no thanx updated, my own htaccess1. 
+- Updated:240827: perishablepress.com8g-firewall /htaccess2 firewall.
 - Updated: 240822 Not Allowed, so it works better:)
 - Updated: 240820 wp-content/uploads with working stop stealing my images from: [AwarioRssBot](https://perishablepress.com/)
 - Added: common hackers tools, use all or take what you need:)
