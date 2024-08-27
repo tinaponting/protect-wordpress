@@ -118,6 +118,47 @@ scraper.py
 # Bypass scanner:
 SSL Scanner
 
+
+# CYBERCRIME:  (WP)
+WPXStrike
+hydra
+Octopus Scanner
+Angry IP Scanner
+Gitpaste-12
+Imgur
+Burp Suite
+Wireshark
+Reverse Shell
+
+# PW CRACKERS:
+John the Ripper
+Hashcat
+
+# os:
+Parrot OS
+BackBox
+Dracos Linux
+DemonLinux
+CAINE
+FreeBSD
+OpenBSD
+Solaris
+IRIX
+Samurai Web Testing Framework  (SamuraiWTF)
+Network Security Toolkit (NST)
+BlackArch  (Linux)
+
+
+# Bypass:
+/wp-json/oembed/1.0/proxy - SSRF
+php shell
+
+
+# CHECK IT / if.... block it: 
+
+# Used to see what you got:
+Index of #your site Domain"
+
 :::::::::::::::::::::::::::::
 
 # HACKER/ Not wanted browsers:
@@ -130,7 +171,7 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}"(Shodan|MSIE|UBrowser|UCBrowser|Nyxt|SimpleBrowser|TOR browser|Tails|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|Waterfox)"[NC]
+RewriteCond%{HTTP_USER_AGENT}"(Shodan|MSIE|UBrowser|UCBrowser|Nyxt|SimpleBrowser|TOR browser|Tails|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|Waterfox)"[NC]
 RewriteRule "^.*$" - [F,L] 
 </IfModule>
 
@@ -156,21 +197,36 @@ RewriteRule .* - [F,L]</IfModule>
 RewriteCond%{QUERY_STRING}(A1 Website Download|Cheerio|Headful|Headless Client|HTML Scraper|Empty TypeScript|Objective C|Splash|Scala|Standby TypeScript|
 TypeScript|Kotlin|Javascript|Java's HttpUrlConnection|Proxies/API|Playwright Test|VPN/proxy|scraper.py|RESTful API|SSL Scanner)\:[NC]RewriteRule .* - [F]</IfModule>
 
+#Common hCKERA TOOLS:
+0
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(A1 Website Download|Cheerio|Headful|Headless Client|HTML Scraper|Empty TypeScript|Objective C|Splash|Scala|Standby TypeScript|
-TypeScript|Kotlin|Javascript|Java's HttpUrlConnection|Proxies/API|Playwright Test|VPN/proxy|scraper.py|RESTful API|SSL Scanner)[NC]RewriteRule .* - [F]</IfModule>
+RewriteCond%{HTTP_USER_AGENT}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)[NC,OR]
+RewriteCond%{QUERY_STRING}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab).*[NC]
+RewriteRule .* - [F]</ifModule>
 
+# os/sEARCH ENGINE USED WITH SCRAPING/HACKING:
 
-
-
-
-# CHECK IT: 
-
-# Used to see what you got:
-Index of #your site Domain"
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}^.*(IE|Windows).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{BlackArch|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{BackBox|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{Arch|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{Kali|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Opera|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Linux).*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(Chrome|Linux).*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Fedora).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Ubuntu).*$[NC]  
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Python).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Android).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]RewriteRule .* - [F]</IfModule>
 
 
 ..................................................
-Updated: 240823
+Updated: 240827
 
 
