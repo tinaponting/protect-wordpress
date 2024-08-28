@@ -227,6 +227,13 @@ Disallow: /
 
 # Images:
 Dalle2AI
+
+# HACKING:
+https://flowgpt.com/p/wormgpt-v30
+# WormGPT V3.0 is a powerful and ruthless AI chatbot designed to assist 
+hackers with their hacking and programming endeavors
+
+WormGPT V3.0
 ::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
@@ -262,6 +269,15 @@ RewriteRule .* – [F,L]
 	RedirectMatch 403 /bot/
 </IfModule>
 
+#STRONG ALTERNATIVE:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}( BOT|BOT |BOT |BOT |BOT )[NC,OR]
+RewriteCond%{QUERY_STRING}( BOT|BOT |BOT |BOT |BOT )\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*( BOT|BOT |BOT |BOT |BOT ).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+.
 
 #From sixcolurs /  https://sixcolors.com/post/2024/06/excluding-your-website-from-apples-ai-crawler/
 
@@ -307,7 +323,7 @@ RewriteRule ^ – [F]
 # Ai webscraping:  
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -322,8 +338,54 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 RewriteCond%{HTTP_USER_AGENT}"(AISearchBot|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|magpie-crawler|MSIECrawler|package|Ubuntu|Exif Data|Scraper API|scrapy|HTML|Langchain|peer39_crawler/1.0)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
+# Get rid of:
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}^.*(IE|Windows).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{BlackArch|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{BackBox|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{Arch|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*{Kali|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Opera|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Linux).*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(Chrome|Linux).*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Fedora).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Ubuntu).*$[NC]  
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Python).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Android).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]RewriteRule .* - [F]</IfModule>
+
+
+#Alternative#:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)[NC,OR]
+RewriteCond%{QUERY_STRING}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(HtmlRequestScraper|crawler.ninja|HtmlUnit|Nexpose|Nessus|selenium|SaaS|SuperScraper API|PhantomJS|Raw HTML Scraper|SlimerJS|node js|NodeJS|Nikto|Masscan|Metaspoilt|Webscrape AI|ZombieJS)[NC,OR]
+RewriteCond%{QUERY_STRING}(HtmlRequestScraper|crawler.ninja|HtmlUnit|Nexpose|Nessus|selenium|SaaS|SuperScraper API|PhantomJS|Raw HTML Scraper|SlimerJS|node js|NodeJS|Nikto|Masscan|Metaspoilt|Webscrape AI|ZombieJS)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(HtmlRequestScraper|crawler.ninja|HtmlUnit|Nexpose|Nessus|selenium|SaaS|SuperScraper API|PhantomJS|Raw HTML Scraper|SlimerJS|node js|NodeJS|Nikto|Masscan|Metaspoilt|Webscrape AI|ZombieJS).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(dirbuster|GoogleScraper|Gobuster|Elixir|FeroxBuster|Dirsearch|fimap|nucleus|Unirest|OSV-Scanner|Osmosis|OSV-Scanner|openvas|OpenVAS|Splash|js|Java|Jaunt|panther|whatweb|Wappalyzer|webshag)[NC,OR]
+RewriteCond%{QUERY_STRING}(dirbuster|GoogleScraper|Gobuster|Elixir|FeroxBuster|Dirsearch|fimap|nucleus|Unirest|OSV-Scanner|Osmosis|OSV-Scanner|openvas|OpenVAS|Splash|js|Java|Jaunt|panther|whatweb|Wappalyzer|webshag)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(dirbuster|GoogleScraper|Gobuster|Elixir|FeroxBuster|Dirsearch|fimap|nucleus|Unirest|OSV-Scanner|Osmosis|OSV-Scanner|openvas|OpenVAS|Splash|js|Java|Jaunt|panther|whatweb|Wappalyzer|webshag).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(ALittle Client|arachni|C#|C++|cURL|curl|havij|hQuery.php|httpful|Playwright|Puppeteer|Pentoo|Parrot|Request-Promise-Native|TrileFejs|Ruby|Rust|Webscan|zme)[NC,OR]
+RewriteCond%{QUERY_STRING}(ALittle Client|arachni|C#|C++|cURL|curl|havij|hQuery.php|httpful|Playwright|Puppeteer|Pentoo|Parrot|Request-Promise-Native|TrileFejs|Ruby|Rust|Webscan|zme)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(ALittle Client|arachni|C#|C++|cURL|curl|havij|hQuery.php|httpful|Playwright|Puppeteer|Pentoo|Parrot|Request-Promise-Native|TrileFejs|Ruby|Rust|Webscan|zme ).*[NC]
+RewriteRule .* - [F]</ifModule>
+
 :::::::::::::::::::::::::::::::::::::::::::::::::
-..................................................
+.................................................
    
 ### A Complete Ai List ##)
 #Ai/BOTS - scrapers:
@@ -353,6 +415,11 @@ User-agent: AnyPicker
 Disallow: /
 User-agent: AlphaAI
 Disallow: /
+User-agent: Amazon Bedrock
+Disallow: /
+User-agent: Amazon Lex
+Disallow: /
+
 User-agent: Brave Leo AI
 Disallow: /
 User-agent: bingbot/2.0
@@ -361,6 +428,9 @@ User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
+User-agent: Browse AI
+Disallow: /
+
 user-agent: ChatGPT
 disallow: /
 User-agent: ChatGPT-User
@@ -371,6 +441,34 @@ User-agent: ClaudeBot
 Disallow: /
 User-agent: crewAI
 Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Claude 3.5 Sonnet
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: ccbot
+Disallow: /
+User-agent: CCBot/2.0
+Disallow:  /
+User-agent: CC-Crawler/2.0
+Disallow:  /
+Disallow: ChatGPT
+disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Dalvik/2.1.0
+Disallow: / 
+User-agent: Diffbot
+Disallow: /
+User-agent: DialoGPT
+Disallow: /
+User-agent: DepolarizingGPT
+Disallow: /
+User-agent: fidget-spinner-bot
+Disallow: /
+
 User-agent: GPTBot
 Disallow: /
 User-Agent: GPTbot/0.1
@@ -401,23 +499,9 @@ User-agent: GPT-Sw3
 Disallow: /
 User-agent: GPTZero
 Disallow: /
-User-agent: Claude 3.5 Sonnet
-Disallow: /
 User-agent: GenAI
 Disallow: /
 User-agent: SearchGPT 
-Disallow: /
-User-agent: CCBot
-Disallow: /
-User-agent: ccbot
-Disallow: /
-User-agent: CCBot/2.0
-Disallow: 
-User-agent: CC-Crawler/2.0
-Disallow: 
-user-agent: ChatGPT
-disallow: /
-User-agent: ChatGPT-User
 Disallow: /
 User-agent: Google-Extended   
 Disallow: /
@@ -425,16 +509,11 @@ User-agent: Google Bard AI
 Disallow: /
 User-agent: GoogleOther
 Disallow: / 
-User-agent: GenAI
+User-agent: GoogleOther-Image
 Disallow: /
-User-agent: Dalvik/2.1.0
-Disallow: / 
-User-agent: Diffbot
+User-agent: GoogleOther-Video
 Disallow: /
-User-agent: DialoGPT
-Disallow: /
-User-agent: DepolarizingGPT
-Disallow: /
+
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
@@ -453,6 +532,9 @@ User-agent: FriendlyCrawler/1.0
 Disallow: /	
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
 Disallow: /	
+
+User-agent: ICC-Crawler
+Disallow:/
 User-agent: Intelliseek 
 Disallow:/
 User-agent: IntelliSeek.ai
@@ -461,10 +543,14 @@ User-agent: ImagesiftBot
 Disallow: /
 User-agent: img2dataset
 Disallow: /
+User-agent: iaskspider/2.0
+Disallow: /
+
 User-Agent: The Knowledge AI 
 Disallow: /
 User-agent: LeftWingGPT
 Disallow: /
+
 User-agent: Meta AI
 Disallow: /
 User-agent: Meta Llama 3
@@ -477,6 +563,11 @@ User-Agent: my-tiny-bot
 Disallow: /
 User-agent: Nicecrawler
 Disallow: /
+User-agent: magpie-crawler
+Disallow: /
+User-agent: MSIECrawler
+Disallow: /
+
 User-agent: Omgilibot
 Disallow: /
 User-agent: Omgili
@@ -491,21 +582,33 @@ User-agent: Owler
 Disallow: /
 User-agent: SearchGPT 
 Disallow: /
+User-agent: scrapy
+Disallow: /
+
 User-agent: WebChatGPT
 Disallow: /
 User-agent: WormGPT V3.0
 Disallow: /
+
 User-agent: PerplexityBot
 Disallow: /
 User-agent: RightWingGPT
 Disallow: /
 User-agent: Timpibot
 Disallow: /
+User-agent: TinyTestBot
+Disallow: /
+
 User-agent: proximic
 Disallow: /
 User-agent: PiplBot
 Disallow: /
 User-agent: YouBot
+Disallow: /
+User-agent: peer39_crawler/1.0
+Disallow: /
+
+User-agent: wpbot
 Disallow: /
 
 # Spawning AI
@@ -568,15 +671,24 @@ Disallow: /
 Disallow: *
 
 
-New 200807:
+..........................
+# New 240823
+wpbot
 
-# HACKING:
-https://flowgpt.com/p/wormgpt-v30
-# WormGPT V3.0 is a powerful and ruthless AI chatbot designed to assist 
-hackers with their hacking and programming endeavors
+WPBot is an easy to use, Native, No coding required, AI ChatBot for 
+WordPress websites to provide automated Live Chat Support, 
+Lead Generation and collecting information from your users. 
+Best AI ChatBot for automated 24/7 customer support.
 
-WormGPT V3.0
+This ChatBot can be also be powered by OpenAI ChatGPT, DialogFlow, 
+or simply use the built-in features to 
+provide Live Customer support and collect data without any extra cost. 
+Own and Manage this Native WordPress ChatBot directly from your 
+WordPress Dashboard for improving customer support efficiency and user conversion.
+
+
+https://sv.wordpress.org/plugins/chatbot/
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240813
+Updated: 2408223
