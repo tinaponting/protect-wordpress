@@ -7,7 +7,7 @@ About me: A blogger since 2002, been on blogspot as on wordpress, made all mista
 I gone throught everything  i could find in google, gibhub and forums for all .htacces security, some things didn´t work, some did works! Some old htacces tricks that still works.  Use it free but come back time to time to check latest updates.  Love //KP Karlshamn sweden
 
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
-* works best with Apache, 5.0 + Wordpress, 6,1, 6.2+
+* works best with Apache, 5.0 + Wordpress, 6,1, 6.6+
 
 * You can use both htaccess and Perrish Press firewall at the same time with no impact on speed! Name PR to htaccess2 and it is ready to protect.
 WORDPRESS - FORT KNOX:)
@@ -110,6 +110,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated, ai scrapers list.
 - Updated:240827: htaccess1with Ai/hacking - no thanx updated, my own htaccess1. 
 - Updated:240827: perishablepress.com8g-firewall /htaccess2 firewall.
 - Updated: 240822 Not Allowed, so it works better:)
