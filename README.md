@@ -109,10 +109,10 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
-
-- Updated, ai scrapers list.
-- Updated:240827: htaccess1with Ai/hacking - no thanx updated, my own htaccess1. 
-- Updated:240827: perishablepress.com8g-firewall /htaccess2 firewall.
+- Updated: 240830: perishablepress.com8g-firewall /htaccess2 - I USE, firewall.
+- Updated: 240830: htaccess1 my own htaccess with block ai.
+- Updated: 24083- Updated,240830:th Ai/hacking - no thanx updated, my own htaccess1. 
+- Updated: 240827: perishablepress.com8g-firewall /htaccess2 firewall.
 - Updated: 240822 Not Allowed, so it works better:)
 - Updated: 240820 wp-content/uploads with working stop stealing my images from: [AwarioRssBot](https://perishablepress.com/)
 - Added: common hackers tools, use all or take what you need:)
