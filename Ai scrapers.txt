@@ -333,7 +333,7 @@ RewriteRule ^ – [F]
 # Scrips ai and/scaraping# :
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|Scrapy|WebMagic)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|WebMagic)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -377,6 +377,17 @@ RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|
 RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
 RewriteRule .* - [F]</ifModule>
 
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(AISearchBot|AnyPicker|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|MSIECrawler|package|Exif Data|Scraper API|scrapy|HTML|Langchain|Proxy Api)[NC,OR]
+RewriteCond%{QUERY_STRING}(AISearchBot|AnyPicker|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|MSIECrawler|package|Exif Data|Scraper API|scrapy|HTML|Langchain|Proxy Api)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(AISearchBot|AnyPicker|FriendlyCrawler|FriendlyCrawler/1.0|FriendlyCrawler/Nutch-1.20-SNAPSHOT|FastAPI|evc-batch|YaK|MSIECrawler|MSIE|Mozlila|MSIECrawler|package|Exif Data|Scraper API|scrapy|HTML|Langchain|Proxy Api).*[NC]
+RewriteRule .* - [F]</ifModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|WebMagic|okhttp|cpp-httplib|Dataprovider|Curlpp|JSON Output|Selenium|Kali|Linux|Ubuntu|libcurl|Poco|Parse|got-scraping|scraping|HTML code)[NC,OR]
+RewriteCond%{QUERY_STRING}(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|WebMagic|okhttp|cpp-httplib|Dataprovider|Curlpp|JSON Output|Selenium|Kali|Linux|Ubuntu|libcurl|Poco|Parse|got-scraping|scraping|HTML code)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Apache Nutch|Beautiful Soup|content_fetcher.py|rss-parser|RenderJS|Gecco|Jsoup|Jauntium|Htmleasy|HtmlUnit|JavaScript|Node.js|WebMagic|okhttp|cpp-httplib|Dataprovider|Curlpp|JSON Output|Selenium|Kali|Linux|Ubuntu|libcurl|Poco|Parse|got-scraping|scraping|HTML code).*[NC]
+RewriteRule .* - [F]</ifModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................
@@ -699,4 +710,4 @@ Disallow: /
   
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240830
+Updated: 240831
