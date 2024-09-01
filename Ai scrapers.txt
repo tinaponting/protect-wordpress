@@ -223,6 +223,25 @@ Disallow: /
 # Images:
 Dalle2AI
 
+#Image Stealer:
+
+ImagesiftBot
+https://imagesift.com
+
+Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)
+
+IP:
+64.124.0.0 
+64.125.255.255
+64.124.0.0/15
+
+ROBOTS.TXT:
+
+User-Agent: ImagesiftBot 
+Disallow: / 
+
+
+
 # HACKING:
 https://flowgpt.com/p/wormgpt-v30
 # WormGPT V3.0 is a powerful and ruthless AI chatbot designed to assist 
@@ -239,6 +258,58 @@ MaxConnPerIP 1
 
 # Another way:
 MaxClients < number-of-connections> 
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+#### claude Hell:
+
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}"claudebot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"claudeBot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"anthropic-ai"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude bot"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"ClaudeBot/1.0"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude 2.0"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude 2.1"[NC] 
+RewriteCond%{HTTP_USER_AGENT}"ClaudeBot"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-Web"[NC]
+RewriteCond%{HTTP_USER_AGENT}"Claude-Web/1.0"[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*ClaudeBot.*$
+RewriteCond%{REQUEST_URI}!robots\.txt 
+RewriteRule ^(.*)$ - [F]</IfModule>
+
+#OR:
+
+# Claudebot:
+Order Allow,Deny
+Deny from 173.252.*.*
+Deny from 69.171.*.*
+Allow from all
+
+
+# TOR:
+RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(TOR browser)[NC,OR]
+
+OTHERS:
+RewriteCond%{HTTP_USER_AGENT}(Gobuster)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Dirsearch)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(FeroxBuster)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Masscan)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Metaspoilt)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nexpose)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Nessus)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(nmap)[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}(Kali Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(BlackArch Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
+
+Ai image grabber:
+RedirectMatch 403 thehive.ai  #ai image scraper
+thehive.ai
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................
@@ -710,4 +781,4 @@ Disallow: /
   
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240831
+Updated: 240901
