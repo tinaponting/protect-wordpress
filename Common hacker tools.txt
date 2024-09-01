@@ -64,6 +64,160 @@ Headful
 Headless Client
 Splash
 
+
+# Headless SCRAPERS/Ai: 
+
+RewriteCond %{HTTP_USER_AGENT} (Headless) [NC]
+RewriteCond %{HTTP_USER_AGENT} (HeadlessChrome) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Headless Chromium) [NC]
+RewriteCond %{HTTP_USER_AGENT} (HtmlUnit) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Firefox Headless) [NC]
+RewriteCond %{HTTP_USER_AGENT} (PhantomJS Webkit) [NC]
+RewriteCond %{HTTP_USER_AGENT} (SimpleBrowser) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Splash) [NC]
+RewriteCond %{HTTP_USER_AGENT} (SlimerJS) [NC]
+RewriteCond %{HTTP_USER_AGENT} (TrileFejs) [NC]
+RewriteCond %{HTTP_USER_AGENT} (ZombieJS) [NC]
+RewriteCond %{HTTP_USER_AGENT} (SSL/TLS Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (WhatWeb) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Wappalyzer Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (WordPress Security Scan) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Nmap) [NC]
+RewriteCond %{HTTP_USER_AGENT} (OpenVAS) [NC]
+
+# THE REST:.....
+
+RewriteCond %{HTTP_USER_AGENT} (node js) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Ruby) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Python) [NC]
+RewriteCond %{HTTP_USER_AGENT} (cURL) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Rust) [NC] 
+RewriteCond %{HTTP_USER_AGENT} (Scrapy) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Java) [NC]
+RewriteCond %{HTTP_USER_AGENT} (R) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Golang Scraper) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Go Web Scraping) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Request-Promise-Native) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Unirest) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Cheerio) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Puppeteer) [NC]
+RewriteCond %{HTTP_USER_AGENT} (Osmosis) [NC]
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+# Alternative:
+
+RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
+
+# Another: Pain in the Ass:
+RewriteCond%{HTTP_USER_AGENT}(crawler.ninja) [NC]
+
+# Web scraper
+User-agent: TinyTestBot
+Disallow: 
+
+# Stops generator of user agents, hopefully....
+
+User-agent: generator
+Disallow: / 
+
+
+# OLD Useragents scrapers use:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
+RewriteCond %{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Mozilla\/[1-120]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+
+# Some still use:
+RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+
+# Sometimes:
+RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
+:
+# OLD servers used by scraper:
+
+RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+
+Scraper:
+RewriteCond%{HTTP_USER_AGENT}^GuzzleHttp/7 [NC,OR]
+
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"^WPScan"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^sqlmap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^sqlninja" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Wappalyzer"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^zgrab"[NC]
+RewriteCond%{HTTP_USER_AGENT}"^openvas"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nuclei" [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nmap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^Nikto"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^nessus"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^havij"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^dirbuster"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^arachni"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^w3af.org"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^w3af.sourceforge.net"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^dirbuster"[NC,OR]]
+RewriteCond%{HTTP_USER_AGENT}"^SF"[OR]
+RewriteCond%{HTTP_USER_AGENT}"^fimap"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^whatweb"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^jbrofuzz"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"^libwhisker"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT}"^webshag"[NC]
+RewriteRule ^.* - [F,L]</IfModule>
+
+# Common Search eninge old uses:
+RewriteCond%{HTTP_USER_AGENT}^.*Zend_Http_Client.*$[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
+RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozilla\/[1-4]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3.1-9]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*UBrowser*[NC]
+RewriteCond%{HTTP_USER_AGENT}"^Maxthon$"[NC]
+RewriteRule .* - [F]</ifModule>
+
+#Dangerous port scanner:
+RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC]
+
+# A craper/ai:
+Node.js
+
+
+# New list of scrapers:
+okhttp
+cpp-httplib
+Curlpp
+Boost.Asio
+Selenium
+libcurl 
+Poco
+aiohttp
+got-scraping
+AnyPicker
+
+Browse AI
+Webscrape AI
+Raw HTML Scraper
+
 ....................
 
 # Linux Hacking tools:
@@ -349,6 +503,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*(X11|Fedora).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]RewriteRule .* - [F]</IfModule>
 
 
-
 ..................................................
 Updated: 240831
+
+
