@@ -109,6 +109,7 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+- Updated: 240901: aiscrapera, common and maybe updated:)
 - Updated: 240830: perishablepress.com8g-firewall /htaccess2 - I USE, firewall.
 - Updated: 240830: htaccess1 my own htaccess with block ai.
 - Updated: 24083- Updated,240830:th Ai/hacking - no thanx updated, my own htaccess1. 
