@@ -475,7 +475,7 @@ User-agent: Applebot-Extended
 Disallow: /
 User-agent: Aria browser AI
 Disallow: /
-Aria browse Aria AI
+User-agent: Aria browse Aria AI
 Disallow: /
 User-agent: AISearchBot 
 Disallow:/
@@ -745,7 +745,7 @@ Disallow: *
 
 
 ..........................
-# New 240823
+# New 240903
 wpbot
 
 WPBot is an easy to use, Native, No coding required, AI ChatBot for 
@@ -781,4 +781,4 @@ Disallow: /
   
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240901
+Updated: 240830
