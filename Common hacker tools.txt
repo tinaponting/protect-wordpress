@@ -59,11 +59,20 @@ HTML Scraper
 # ai downloader of whole site:
 A1 Website Download
 
-#Other heads
-Headful
-Headless Client
-Splash
+#BLOCK PROXY:
 
+<IfModule mod_alias.c>
+Redirectmatch 403 proxydeny
+Redirectmatch 403 forward proxydeny
+Redirectmatch 403 Server proxiesdeny
+Redirectmatch 403 residential proxiesdeny
+Redirectmatch 403 Reverse Proxydeny
+Redirectmatch 403 AI proxydeny
+Redirectmatch 403 ISP Proxiesdeny
+RedirectMatch 403 check\_proxy
+</IfModule>
+
+........................................................
 
 # Headless SCRAPERS/Ai: 
 
@@ -362,6 +371,54 @@ Photon/1.0|
 X11; Fedora|
 Photon OS
 
+# Other:
+AdsPower
+Incogniton
+Dataskrapa
+Dolphin
+Ghost Browser
+d3coder
+Site Spider, Mark II     
+Cache killer
+Open port check tool
+Proxy SwitchyOmega
+iMacros for chrome
+Nstbrowser 
+User-Agent Switcher
+Undetectable 
+
+# Proxy Hell:
+forward proxy
+Server proxies
+residential proxies
+Reverse Proxy
+AI proxy
+ISP Proxies
+
+# Login (web):
+GoLogin
+MoreLogin
+MultiLogin
+
+#Other heads
+Headful
+Headless Client
+Splash
+selenium  :headless:chromium:
+selenium  :headful :chromium
+selenium  :headless:firefox 
+selenium  :headful :firefox 
+playwright:headless:chromium
+playwright:headful :chromium
+playwright:headless:firefox
+playwright:headful :firefox 
+
+# Fingerprinting:
+
+JA3 Fingerprint
+HTTP/2 fingerprint
+PHP cURL
+
 ...............................
 
 # CHECK IT / if.... block it: 
@@ -371,7 +428,13 @@ Index of #your site Domain"
 
 :::::::::::::::::::::::::::::
 
-# List to use - Extra good BLOCK #:
+# Common way:
+
+fModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+# Extra good BLOCK #:
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}( | | | | )[NC,OR]
@@ -381,7 +444,7 @@ RewriteRule .* - [F]</ifModule>
 
 .............................................................
 
-fModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(Acunetix|Burp Suite|Crt.sh|Censys|Cache killer|exiftool|DIRB|d3coder|Data Scraper|HackBar|Hunter|iMacros for chrome|Note anywhere|Netsparker
 |GreyNoise|John the Ripper|Intruder|Invicti|LiveAction|Tamper Data|Proxy SwitchyOmega|Request maker|Site Spider, Mark II|Metasploitable 2|Metasploit|meterpreter|packets|User-Agent Switcher and Manager|ZoomEye|WebInspect|Wappalyzer|Zenmap|ZAP|X11)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
@@ -391,6 +454,10 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 RewriteCond%{HTTP_USER_AGENT}"(Shodan|MSIE|UBrowser|UCBrowser|Nyxt|SimpleBrowser|TOR browser|Tails|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|Waterfox)"[NC]
 RewriteRule "^.*$" - [F,L] 
 </IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(PHP cURL|HTTP/2 fingerprint|JA3 Fingerprint Headful|Headless Client|Splash|selenium:headless:chromium|selenium:headful:chromium|selenium:headless:firefox| selenium:headful:firefox| playwright:headless:chromium|playwright:headful:chromium|playwright:headless:firefox|playwright:headful:firefox)"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
 .............................................
 #### Other:
 
@@ -504,6 +571,4 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]RewriteRule .* - [F]</IfM
 
 
 ..................................................
-Updated: 240831
-
-
+Updated: 2400905
