@@ -4008,4 +4008,25 @@ RewriteRule ^.* - [F,L]
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Updated: 240901
+#Rate Limit:
+
+Images scrapers:
+RewriteCond %{REQUEST_URI} !^/images/
+RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
+Header set Retry-After "5" env=RATE_LIMIT
+
+# DOS/scrapers limit:
+<IfModule ratelimit_module>
+SetOutputFilter RATE_LIMIT
+SetEnv rate-limit 100
+SetEnv rate-initial-burst 200
+</IfModule>
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+
+
+..........................
+Updated: 240906
