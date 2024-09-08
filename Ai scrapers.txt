@@ -21,10 +21,13 @@ RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 User-agent: ImagesiftBot 
 Disallow: /
 
+#https://github.com/rom1504/img2dataset:
+
 User-agent: img2dataset
 Disallow: /
 
 # website image creator
+
 User-agent: Nicecrawler
 Disallow: /
 
@@ -45,10 +48,6 @@ To place both directives:
 ************************************
 # AI: Div Ai:
 User-Agent: fidget-spinner-bot 
-Disallow: /
-
-#Extract and monitor data from any website
-User-Agent: Browse AI
 Disallow: /
 
 # Scraper (scrapes your blog for everything:
@@ -119,8 +118,6 @@ User-Agent: thesis-research-bot
 Disallow: /
 
 # Stops generator of user agents, hopefully.... ##
-User-agent: generator
-Disallow: / 
 # Maybe: 
 User-agent: GenAI
 Disallow: /
@@ -309,6 +306,7 @@ RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
 
 Ai image grabber:
 RedirectMatch 403 thehive.ai  #ai image scraper
+
 thehive.ai
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
@@ -504,20 +502,12 @@ User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
-User-agent: Browse AI
-Disallow: /
 
-user-agent: ChatGPT
-disallow: /
-User-agent: ChatGPT-User
-Disallow: /
 User-agent: cohere-ai
 Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 User-agent: crewAI
-Disallow: /
-User-agent: CCBot
 Disallow: /
 User-agent: Claude 3.5 Sonnet
 Disallow: /
@@ -540,6 +530,9 @@ User-agent: DialoGPT
 Disallow: /
 User-agent: DepolarizingGPT
 Disallow: /
+User-agent: Dalvik/2.1.0
+Disallow: / 
+
 User-agent: fidget-spinner-bot
 Disallow: /
 
@@ -596,6 +589,14 @@ User-agent: facebookexternalhit/1.1
 Disallow: /
 User-agent: meta-externalfetcher/1.1
 Disallow: /
+User-agent: Meta AI
+Disallow: /
+User-agent: Meta Llama 3
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-ExternalFetcher
+Disallow: /
 User-Agent: fidget-spinner-bot 
 Disallow: /
 User-agent: FriendlyCrawler
@@ -606,6 +607,8 @@ User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
 Disallow: /	
 
 User-agent: ICC-Crawler
+Disallow:/
+User-agent: IntelliSeek
 Disallow:/
 User-agent: IntelliSeek.ai
 Disallow:/
@@ -621,14 +624,6 @@ Disallow: /
 User-agent: LeftWingGPT
 Disallow: /
 
-User-agent: Meta AI
-Disallow: /
-User-agent: Meta Llama 3
-Disallow: /
-User-agent: Meta-ExternalAgent
-Disallow: /
-User-agent: Meta-ExternalFetcher
-Disallow: /
 User-Agent: my-tiny-bot
 Disallow: /
 User-agent: Nicecrawler
@@ -650,6 +645,7 @@ User-agent: OAI-SearchBot
 Disallow: /
 User-agent: Owler
 Disallow: /
+
 User-agent: SearchGPT 
 Disallow: /
 User-agent: scrapy
@@ -682,7 +678,8 @@ User-agent: wpbot
 Disallow: /
 User-agent: Webzio-Extended
 Disallow: /
-
+User-agent: VelenPublicWebCrawler
+Disallow: /
 
 # Spawning AI
 User-Agent: *
@@ -781,4 +778,4 @@ Disallow: /
   
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240830
+Updated: 240908
