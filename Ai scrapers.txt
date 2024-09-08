@@ -651,11 +651,6 @@ Disallow: /
 User-agent: scrapy
 Disallow: /
 
-User-agent: WebChatGPT
-Disallow: /
-User-agent: WormGPT V3.0
-Disallow: /
-
 User-agent: PerplexityBot
 Disallow: /
 User-agent: RightWingGPT
@@ -663,6 +658,17 @@ Disallow: /
 User-agent: Timpibot
 Disallow: /
 User-agent: TinyTestBot
+Disallow: /
+
+User-agent: WebChatGPT
+Disallow: /
+User-agent: WormGPT V3.0
+Disallow: /
+User-agent: wpbot
+Disallow: /
+User-agent: Webzio-Extended
+Disallow: /
+User-agent: VelenPublicWebCrawler
 Disallow: /
 
 User-agent: proximic
@@ -674,12 +680,7 @@ Disallow: /
 User-agent: peer39_crawler/1.0
 Disallow: /
 
-User-agent: wpbot
-Disallow: /
-User-agent: Webzio-Extended
-Disallow: /
-User-agent: VelenPublicWebCrawler
-Disallow: /
+
 
 # Spawning AI
 User-Agent: *
