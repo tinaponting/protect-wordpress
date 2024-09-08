@@ -109,6 +109,8 @@ define('DB_CHARSET','utf8');
 Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+
+- Updated: 240908 ai bots/scrapers list.
 - Updated: 240901: aiscrapera, common and maybe updated:)
 - Updated: 240830: perishablepress.com8g-firewall /htaccess2 - I USE, firewall.
 - Updated: 240830: htaccess1 my own htaccess with block ai.
