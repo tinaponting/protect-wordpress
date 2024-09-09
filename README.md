@@ -110,6 +110,7 @@ Love Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240909, block ai.php with latests ai blocks, works great, not intefering with blogs, an extra layer of protection:)
 - Updated: 240908 ai bots/scrapers list.
 - Updated: 240901: aiscrapera, common and maybe updated:)
 - Updated: 240830: perishablepress.com8g-firewall /htaccess2 - I USE, firewall.
