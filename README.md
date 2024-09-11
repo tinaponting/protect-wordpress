@@ -17,17 +17,11 @@ Wp.config.php file:  //Se also my core - single user or wp addon on here:)
 
 require_once(ABSPATH.'wp-settings.php');  
 Add this after this:
+* define('WP_DEBUG',false);
 
-define('WP_DEBUG',false);
-Insert: define('WP_DEBUG_DISPLAY',false);
-
-After: require_once(ABSPATH.'wp-settings.php'); 
-
-define('display_errors','off');
-
-define('DISALLOW_FILE_EDIT',true);
-
-define('DISALLOW_FILE_MODS',true); 
+define('DISALLOW_FILE_EDIT',true); 
+define('DISALLOW_FILE_MODS',true);
+define('DISABLE_WP_CRON',true);
 ob_start();?>
 
 Set to: 444 in wp.config.php Also gets some speed!  //important!!
@@ -45,7 +39,6 @@ Core .htaccess for protection and speed.  Set: 444 files rights or of it possibl
 **** IF You use. perrrishpress 8G Firewall, name it: .htacces2 if use it with my other .htacess in root.
 
 Plugins I recommend:
-* limit login attempts reloaded:   See: https://wordpress.org/plugins/limit-login-attempts-reloaded/
 * disable wp rest-api:  // So they cannot se who is the user: https://wordpress.org/plugins/disable-wp-rest-api/
 
 None above takes power fron your blog:)
