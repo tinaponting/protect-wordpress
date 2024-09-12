@@ -260,7 +260,6 @@ TOR browser
 User-agent: 2ip bot
 Disallow: /
 
-
 # Scrapers bypassing:
 
 Objective C
@@ -495,12 +494,6 @@ RewriteCond%{HTTP_USER_AGENT}^.*(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScr
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)[NC,OR]
-RewriteCond%{QUERY_STRING}(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(sqlninja|sqlmap|Nmap|nutch|pycurl|PycURL|PHPScraper|PHPCrawl|PHP Scanner|Zeus|Kali|Zmap|ZmEu|zgrab).*[NC]
-RewriteRule .* - [F]</ifModule>
-
-<IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)[NC,OR]
 RewriteCond%{QUERY_STRING}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client).*[NC]
@@ -526,11 +519,11 @@ RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(axios|/wp-json/oembed/1.0/proxy - SSRF|php shell|CakePHP||java/|json/|Miro-HttpClient|4D_HTTP_Client|android-async-http|andyhttp|Aplix|akka-http|attohttpc|
-Cowblog|DAP/NetHTTP|Scrapy|Photon/1.0|X11; Fedora|Photon OS|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect)[NC,OR]
+Cowblog|DAP/NetHTTP|Scrapy|X11; Fedora|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect)[NC,OR]
 RewriteCond%{QUERY_STRING}(axios|/wp-json/oembed/1.0/proxy - SSRF|php shell|CakePHP||java/|json/|Miro-HttpClient|4D_HTTP_Client|android-async-http|andyhttp|Aplix|akka-http|attohttpc|
-Cowblog|DAP/NetHTTP|Scrapy|Photon/1.0|X11; Fedora|Photon OS|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect)\:[NC,OR]
+Cowblog|DAP/NetHTTP|Scrapy|X11; Fedora|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(axios|/wp-json/oembed/1.0/proxy - SSRF|php shell|CakePHP||java/|json/|Miro-HttpClient|4D_HTTP_Client|android-async-http|andyhttp|Aplix|akka-http|attohttpc|
-Cowblog|DAP/NetHTTP|Scrapy|Photon/1.0|X11; Fedora|Photon OS|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect).*[NC]
+Cowblog|DAP/NetHTTP|Scrapy|X11; Fedora|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -542,33 +535,67 @@ RewriteRule .* - [F]</ifModule>
 
 
 #EXTRA TOOLS #:
-# OS/SEARCH ENGINE USED WITH SCRAPING/HACKING:
+# OS/SEARCH ENGINE USED WITH SCRAPING/HACKING  Copy what you need!:
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}^.*(IE|Windows).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*{BlackArch|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*{BackBox|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*{Arch|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*{Kali|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Opera|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Linux).*$[NC] 
-RewriteCond%{HTTP_USER_AGENT}^.*(Chrome|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(chrome|py).*$[NC] 
-RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Fedora).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Ubuntu).*$[NC]  
-RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Python).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Linux).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Android).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT 10.00).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(NT|Windows).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(X11|Fedora).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(MSIE|NT).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(X11|Fedora).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]RewriteRule .* - [F]</IfModule>
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}^.*(Android|Android).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(IE|Windows).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*{BlackArch|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*{BackBox|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*{Arch|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*{Kali|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*{Edg).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Opera|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Chrome|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(chrome|py).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(compatible|MSIE).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(compatible|MSIE|Windows NT|Trident).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(compatible).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Gecko/20091102).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Gecko/20100101).*$).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Edge|Mac OS X).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox Mac OS X).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Fedora).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Ubuntu).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Firefox|Mac OS X).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(HeadlessChrome/128.0).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(HeadlessCrome|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Python).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(KDE).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Android).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Linux).*$[[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux; U|Linux).*$[[NC,OR]  
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux; U|Android).*$[[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux;|Android 7.0).*$[[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Ubuntu|Linux).*$[[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila|Mozlila/5.0).*$[NC,OR
+RewriteCond%{HTTP_USER_AGENT}^.*(MSIE|NT).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(MSIE|Windows NT).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(X11|Fedora).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(x11u;|linux).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(X11;|Linux).*$[[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Konqueror|KHTML).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(WOW64|rv:48.0).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Windows NT 10.0|Win64).*$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Windows; U|Windows NT).*$[NC]RewriteRule .* - [F]</IfModule>
 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# Hate that country: 
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https?://[^/]+\.countrycodehere/?[NC]RewriteRule ^.* - [F,L]</IfModule>
+
+
+.......
+
+NEW: 240907:
+trafilatura/1.12.1 (+https://github.com/adbar/trafilatura)  (python, pypi)
 
 ..................................................
-Updated: 2400905
+Updated: 2400912
