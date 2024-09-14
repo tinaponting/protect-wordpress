@@ -99,7 +99,17 @@ define('DB_CHARSET','utf8');
 
 *' To protect: wp-includes/js and css from curious! eyes and hackers, take wp-content: index.php and put it there!
 
-Love Kristina Sweden
+**# If you want to annoy scrapers, ai scrapers and other annoying.
+Use both or one of these:
+
+https://wordpress.org/plugins/wp-browser-update/
+http://browserupdate.org/
+
+
+https://wordpress.org/plugins/real-cookie-banner/
+
+
+Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
