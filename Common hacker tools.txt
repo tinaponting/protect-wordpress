@@ -429,7 +429,7 @@ Index of #your site Domain"
 
 # Common way:
 
-fModule mod_rewrite.c>
+IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
@@ -744,7 +744,7 @@ Macintosh; Intel Mac OS X 13.4.1
 Macintosh; Intel Mac OS X 13.5	
 Macintosh; Intel Mac OS X 13.5.1	
 Macintosh; Intel Mac OS X 13.5.2
-1Macintosh; Intel Mac OS X 3.6	
+Macintosh; Intel Mac OS X 3.6	
 Macintosh; Intel Mac OS X 13.6.1	
 Macintosh; Intel Mac OS X 13.6.2	
 Macintosh; Intel Mac OS X 13.6.3	
