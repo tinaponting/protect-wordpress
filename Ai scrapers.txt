@@ -363,11 +363,10 @@ function my_robots_commands($output, $public) {
 AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT 
 
-
 GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|
 
-Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
+Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0O|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
 
 ...................................
 
@@ -386,7 +385,7 @@ RewriteRule ^ – [F]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -429,7 +428,6 @@ RewriteCond%{HTTP_USER_AGENT}^.*(AutoGPT|Agent GPT|Applebot-Extended|Aria browse
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT).*[NC]
 RewriteRule .* - [F]</ifModule>
 
-
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}( GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC,OR]
@@ -439,11 +437,10 @@ RewriteCond%{HTTP_USER_AGENT}^.*(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|G
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|).*[NC]
 RewriteRule .* - [F]</ifModule>
 
-
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
-RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0O|wler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
+RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -643,6 +640,8 @@ User-agent: Openbot
 Disallow: /
 User-agent: OAI-SearchBot
 Disallow: /
+User-agent: OAI-SearchBot/1.0
+Disallow: /
 User-agent: Owler
 Disallow: /
 
@@ -743,7 +742,7 @@ Disallow: *
 
 
 ..........................
-# New 240903
+# New 240916
 wpbot
 
 WPBot is an easy to use, Native, No coding required, AI ChatBot for 
@@ -776,7 +775,15 @@ Disallow: /
 
 User-agent: Webzio-Extended
 Disallow: /
+
+New: 200916
+ 
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot
+
+User-agent: 
+OAI-SearchBot/1.0
+Disallow: /
   
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240908
+Updated: 240916
