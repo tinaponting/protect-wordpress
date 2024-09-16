@@ -442,6 +442,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*( | | ).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 .............................................................
+.............................................................
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(Acunetix|Burp Suite|Crt.sh|Censys|Cache killer|exiftool|DIRB|d3coder|Data Scraper|HackBar|Hunter|iMacros for chrome|Note anywhere|Netsparker
@@ -591,11 +592,180 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Windows; U|Windows NT).*$[NC]RewriteRule .* - [
 # Hate that country: 
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https?://[^/]+\.countrycodehere/?[NC]RewriteRule ^.* - [F,L]</IfModule>
 
-
 .......
 
 NEW: 240907:
 trafilatura/1.12.1 (+https://github.com/adbar/trafilatura)  (python, pypi)
 
+### LIST OF common browseers used:  ###
+# Opera:
+OPR/113.0.0.0
+OPR/96.0.4691.0
+OPR/98.0.4756.0               -
+OPR/96.0.4693.31                  -
+OPR/96.0.4693.50                   -
+OPR/96.0.4693.80   
+
+//Android
+android-5.1.1_r38 
+android-5.1.1_r37 
+android-5.1.1_r36 
+android-5.1.1_r35
+android-5.1.1_r34
+android-5.1.1_r33
+android-5.1.1_r30 
+android-5.1.1_r25 
+android-5.1.1_r19
+android-5.1.1_r14 
+android-5.1.1_r9 
+android-5.1.1_r1 
+android-5.1.0_r1 
+android-5.0.2_r1 
+android-5.0.1_r1 
+android-5.0.0_r4.0.1 
+android-4.4.4_r1 
+android-4.4.3_r1
+android-4.4.2_r1 
+android-4.4.1_r1 
+android-4.4_r1.2 
+android-4.3_r1.1 
+android-4.3_r1
+android-4.3_r0.9.1 
+android-4.2.2_r1 
+android-4.2.1_r1.1 
+android-4.2.1_r1 
+android-4.2_r
+	
+
+// MacOS - High Sierra
+Macintosh; Intel Mac OS X 10_13
+Macintosh; Intel Mac OS X 10_13_1
+Macintosh; Intel Mac OS X 10_13_2
+Macintosh; Intel Mac OS X 10_13_3
+Macintosh; Intel Mac OS X 10_13_4
+Macintosh; Intel Mac OS X 10_13_5
+Macintosh; Intel Mac OS X 10_13_6
+
+# MacOS - Mojave
+Macintosh; Intel Mac OS X 10_14
+Macintosh; Intel Mac OS X 10_14_1
+Macintosh; Intel Mac OS X 10_14_2
+Macintosh; Intel Mac OS X 10_14_3
+Macintosh; Intel Mac OS X 10_14_4
+Macintosh; Intel Mac OS X 10_14_5
+Macintosh; Intel Mac OS X 10_14_6
+
+# MacOS - Catalina
+Macintosh; Intel Mac OS X 10_15
+Macintosh; Intel Mac OS X 10_15_1
+Macintosh; Intel Mac OS X 10_15_2
+Macintosh; Intel Mac OS X 10_15_3
+Macintosh; Intel Mac OS X 10_15_4
+Macintosh; Intel Mac OS X 10_15_5
+Macintosh; Intel Mac OS X 10_15_6
+Macintosh; Intel Mac OS X 10_15_7
+
+
+# MacOS - Big Sur
+Macintosh; Intel Mac OS X 11_0
+Macintosh; Intel Mac OS X 11_0_1
+Macintosh; Intel Mac OS X 11_1
+Macintosh; Intel Mac OS X 11_2
+Macintosh; Intel Mac OS X 11_2_1
+Macintosh; Intel Mac OS X 11_2_2
+Macintosh; Intel Mac OS X 11_2_3
+Macintosh; Intel Mac OS X 11_3
+Macintosh; Intel Mac OS X 11_3_1
+Macintosh; Intel Mac OS X 11_4
+Macintosh; Intel Mac OS X 11_5
+Macintosh; Intel Mac OS X 11_5_1
+Macintosh; Intel Mac OS X 11_5_2
+Macintosh; Intel Mac OS X 11_6
+Macintosh; Intel Mac OS X 11_6_1
+Macintosh; Intel Mac OS X 11_6_2
+Macintosh; Intel Mac OS X 11_6_3
+Macintosh; Intel Mac OS X 11_6_4
+Macintosh; Intel Mac OS X 11_6_5
+Macintosh; Intel Mac OS X 11_6_6
+Macintosh; Intel Mac OS X 11_6_7
+Macintosh; Intel Mac OS X 11_6_8
+Macintosh; Intel Mac OS X 11_7
+Macintosh; Intel Mac OS X 11_7_1
+Macintosh; Intel Mac OS X 11_7_2
+Macintosh; Intel Mac OS X 11_7_3
+Macintosh; Intel Mac OS X 11_7_4
+Macintosh; Intel Mac OS X 11_7_5
+Macintosh; Intel Mac OS X 11_7_6
+Macintosh; Intel Mac OS X 11.7.7
+Macintosh; Intel Mac OS X 11.7.8
+Macintosh; Intel Mac OS X 11.7.9
+Macintosh; Intel Mac OS X 11.7.10
+Macintosh; Intel Mac OS X 11.7.9
+
+# MacOS - Monterey
+Macintosh; Intel Mac OS X 12_0
+Macintosh; Intel Mac OS X 12_0_1
+Macintosh; Intel Mac OS X 12_1
+Macintosh; Intel Mac OS X 12_2
+Macintosh; Intel Mac OS X 12_2_1
+Macintosh; Intel Mac OS X 12_3
+Macintosh; Intel Mac OS X 12_3_1
+Macintosh; Intel Mac OS X 12_4
+Macintosh; Intel Mac OS X 12_5,
+Macintosh; Intel Mac OS X 12_5_1
+Macintosh; Intel Mac OS X 12_6
+Macintosh; Intel Mac OS X 12_6_1
+Macintosh; Intel Mac OS X 12_6_2
+Macintosh; Intel Mac OS X 12_6_3
+Macintosh; Intel Mac OS X 12_6_4
+Macintosh; Intel Mac OS X 12_6_5
+Macintosh; Intel Mac OS X 12.6.6
+Macintosh; Intel Mac OS X 12.6.7
+Macintosh; Intel Mac OS X 12.6.8
+Macintosh; Intel Mac OS X 12.6.9
+Macintosh; Intel Mac OS X 12.7
+Macintosh; Intel Mac OS X 12.7.1
+Macintosh; Intel Mac OS X 12.7.2
+Macintosh; Intel Mac OS X 12.7.3
+Macintosh; Intel Mac OS X 12.7.4
+Macintosh; Intel Mac OS X 12.7.5
+Macintosh; Intel Mac OS X 12.7.6
+
+# MacOS - Ventura
+Macintosh; Intel Mac OS X 13_0
+Macintosh; Intel Mac OS X 13_0_1
+Macintosh; Intel Mac OS X 13_1
+Macintosh; Intel Mac OS X 13_2
+Macintosh; Intel Mac OS X 13_2_1
+Macintosh; Intel Mac OS X 13_3
+Macintosh; Intel Mac OS X 13_3_1	
+Macintosh; Intel Mac OS X 13.4	
+Macintosh; Intel Mac OS X 13.4.1	 
+Macintosh; Intel Mac OS X 13.5	
+Macintosh; Intel Mac OS X 13.5.1	
+Macintosh; Intel Mac OS X 13.5.2
+1Macintosh; Intel Mac OS X 3.6	
+Macintosh; Intel Mac OS X 13.6.1	
+Macintosh; Intel Mac OS X 13.6.2	
+Macintosh; Intel Mac OS X 13.6.3	
+Macintosh; Intel Mac OS X 13.6.4	
+Macintosh; Intel Mac OS X 13.6.5	
+Macintosh; Intel Mac OS X 13.6.6	
+Macintosh; Intel Mac OS X 13.6.7	
+Macintosh; Intel Mac OS X 13.6.8	
+
+# Windows NT
+Windows NT 4.0
+Windows NT 3.1	
+Windows NT 3.5	NT 
+Windows NT 3.51	NT 3.
+Windows NT 4.0
+Windows NT 5.1
+Windows NT 6.1; WOW64
+Windows NT 6.1; Win64; x64
+Windows NT NT 6.2
+Windows NT NT 6.3
+Windows NT 10.0; Win64; x64
+
 ..................................................
-Updated: 2400912
+Updated: 2400916
