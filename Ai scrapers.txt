@@ -366,7 +366,7 @@ Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3
 GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|
 
-Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
+Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
 
 ...................................
 
@@ -529,7 +529,6 @@ User-agent: DepolarizingGPT
 Disallow: /
 User-agent: Dalvik/2.1.0
 Disallow: / 
-
 User-agent: fidget-spinner-bot
 Disallow: /
 
