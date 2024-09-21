@@ -112,6 +112,8 @@ https://wordpress.org/plugins/real-cookie-banner/
 Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+
+_ Updated: 240921: BLOCK ai.php, new ai bot!
 _ Updated: 240917: BLOCK ai php.zip  with the Latest ai bots, not wanted.
 - Updated:240911: htaccess 1 - I use:)
 - Updated:240911: perishablepress.com8g-firewall  -I use:)
