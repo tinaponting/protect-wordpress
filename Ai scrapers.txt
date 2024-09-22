@@ -655,6 +655,8 @@ User-agent: PerplexityBot
 Disallow: /
 User-agent: RightWingGPT
 Disallow: /
+User-agent: Timpibot/0.9 
+Disallow: /
 User-agent: Timpibot
 Disallow: /
 User-agent: TinyTestBot
@@ -758,6 +760,7 @@ WordPress Dashboard for improving customer support efficiency and user conversio
 
 https://sv.wordpress.org/plugins/chatbot/
 
+................................
 
 New: 240830:
 
@@ -787,6 +790,16 @@ Disallow: /
 User-agent: OAI SearchBot
 Disallow: /
 
+
+NEW: 240922
+
+# Timpibot:
+
+Timpibot/0.9 (+http://www.timpi.io)
+
+User-agent: Timpibot/0.9 
+Disallow: /
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240921
+Updated: 240922
