@@ -113,7 +113,8 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
-Updated: 240922, Aiscrapers txt, new ai scraper bot:(
+- Updated: 240922, BLock ai.php Updated new ai scraper.
+- Updated: 240922, Aiscrapers txt, new ai scraper bot:(
 - Updated: 240921: BLOCK ai.php, new ai bot!
 - Updated: 240917: BLOCK ai php.zip  with the Latest ai bots, not wanted.
 - Updated:240911: htaccess 1 - I use:)
