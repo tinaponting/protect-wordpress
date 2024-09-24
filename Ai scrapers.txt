@@ -245,6 +245,43 @@ https://flowgpt.com/p/wormgpt-v30
 hackers with their hacking and programming endeavors
 
 WormGPT V3.0
+
+...........................
+
+### Affect me/or? 
+
+Baidu - Ernie
+Google/DeepMind - PaLM, Gemini, Gemma
+DeepMind - Chinchilla
+Meta - OPT, Galactica, LLaMA
+Amazon - AlexaTM
+x.AI - Grok
+
+
+Other:
+DALL-E (text-to-image) - https://openai.com/dall-e-2
+Sora (text-to-video) - https://openai.com/sora (FB) Sora - ny text-to-video modell från OpenAI
+Whisper (speech-to-text)
+
+Meta (Facebook) Llama
+https://www.llama2.ai/
+https://llama.meta.com/
+
+Mistral AI
+https://mistral.ai
+http://chat.mistral.ai/
+
+Open source modeller
+https://huggingface.co/mistralai/Mistral-7B-v0.1
+https://huggingface.co/mistralai/Mix...-Instruct-v0.1
+
+
+#YANDEX:
+# Machine learning
+
+CatBoost
+Yandex - YaLM
+
 ::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
@@ -385,7 +422,7 @@ RewriteRule ^ – [F]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -416,6 +453,8 @@ RewriteCond%{HTTP_USER_AGENT}"(AISearchBot|AnyPicker|FriendlyCrawler|FriendlyCra
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 .................................
+---------------------------------
+
 #Alternative#:
 # List to use - Extra good BLOCK #:
 
@@ -429,7 +468,7 @@ Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}( GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
+RewriteCond%{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC,OR]
 RewriteCond%{QUERY_STRING}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher| )\:[NC,OR]
@@ -438,9 +477,9 @@ FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-ext
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O|wler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
-RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0O|wler|SearchGPT|PerplexityBot|RightWingGPT||Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
+RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI Openbot|OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT||Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -762,7 +801,7 @@ https://sv.wordpress.org/plugins/chatbot/
 
 ................................
 
-New: 240830:
+# New: 240830:
 
 AI2 Bot  Mozilla/5.0 (compatible) AI2Bot (+https://www.allenai.org/crawler
 
@@ -802,4 +841,4 @@ Disallow: /
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240922
+Updated: 240924
