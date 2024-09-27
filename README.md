@@ -113,6 +113,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+- Updated: 240927, updated htaccess1 for btter protectin, ai moved to: htaccess2. with block for scrapers.
 - Updated: 240924, only allwed useragents list. htaccess, good in folder you do not want noosy useragents.
 - Updated: 240922, BLock ai.php Updated new ai scraper.
 - Updated: 240922, Aiscrapers txt, new ai scraper bot:(
