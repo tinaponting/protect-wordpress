@@ -45,6 +45,17 @@ To place both directives:
 
 <meta name="robots" content="noai, noimageai">
 
+###Alternative:
+<meta name="googlebot" content="noml">
+
+#and request that Microsoft does not include a page in their Bing search index and does not use the page for training, with:
+
+<meta name="bingbot" content="noindex, noml">
+
+#you might also request that OpenAI, for example, does not use the page for machine learning with:
+
+<meta name="gptbot" content="noml">
+
 ************************************
 # AI: Div Ai:
 User-Agent: fidget-spinner-bot 
@@ -237,7 +248,8 @@ ROBOTS.TXT:
 User-Agent: ImagesiftBot 
 Disallow: / 
 
-
+CHINA; bytesdance aibot:
+Doubao AI
 
 # HACKING:
 https://flowgpt.com/p/wormgpt-v30
@@ -282,6 +294,16 @@ https://huggingface.co/mistralai/Mix...-Instruct-v0.1
 CatBoost
 Yandex - YaLM
 
+::::::::::::::::::::::::::::::::::::::::::::::::::
+--------------------------------------------------
+
+# Add text in footer, may help?:
+# from: https://postopen.org/content-protection-project/
+
+#### Add this text to your web site terms of service and any copyright statements related to your content. ###
+
+Any copying, including ephemeral copying, for the purpose of training an artificial intelligence (AI), large language model (LLM), machine learning system or neural network is prohibited.
+
 ::::::::::::::::::::::::::::::::::::: :)
 
 #IN .htaccess put: Then they only can get one visit/per IP! Good for a short while if youare under attack!
@@ -318,7 +340,6 @@ Deny from 173.252.*.*
 Deny from 69.171.*.*
 Allow from all
 
-
 # TOR:
 RewriteCond%{HTTP_USER_AGENT}(Tails)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Tor2Web)[NC,OR]
@@ -340,6 +361,7 @@ RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
+
 
 Ai image grabber:
 RedirectMatch 403 thehive.ai  #ai image scraper
@@ -398,12 +420,13 @@ function my_robots_commands($output, $public) {
 # RAW FILES:#
 
 AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT 
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|
+Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0
 
 GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|
 
-Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
+Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
 
 ...................................
 
@@ -411,14 +434,12 @@ Omgilibot|Omgili|OpenAI| Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT)[NC]
-RewriteRule ^ – [F]
-</IfModule>
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|
+Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC]RewriteRule ^ – [F]</IfModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
-FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC]
-RewriteRule ^ – [F]
+FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC]RewriteRule ^ – [F]
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -460,12 +481,12 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT )[NC,OR]
-RewriteCond%{QUERY_STRING}(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT)\:[NC,OR]
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC,OR]RewriteCond%{QUERY_STRING}(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|DiffbotDialoGPTDepolarizingGPT).*[NC]
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0).*[NC]
 RewriteRule .* - [F]</ifModule>
+
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
@@ -566,6 +587,8 @@ User-agent: DialoGPT
 Disallow: /
 User-agent: DepolarizingGPT
 Disallow: /
+User-agent: Dalvik/2
+Disallow: /
 User-agent: Dalvik/2.1.0
 Disallow: / 
 User-agent: fidget-spinner-bot
@@ -618,19 +641,9 @@ User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
 Disallow: /
-User-agent: facebookexternalhit
-Disallow: /
-User-agent: facebookexternalhit/1.1
-Disallow: /
-User-agent: meta-externalfetcher/1.1
-Disallow: /
 User-agent: Meta AI
 Disallow: /
 User-agent: Meta Llama 3
-Disallow: /
-User-agent: Meta-ExternalAgent
-Disallow: /
-User-agent: Meta-ExternalFetcher
 Disallow: /
 User-Agent: fidget-spinner-bot 
 Disallow: /
@@ -720,6 +733,21 @@ User-agent: YouBot
 Disallow: /
 User-agent: peer39_crawler/1.0
 Disallow: /
+
+##OTHERS - If needed:
+
+User-agent: facebookexternalhit
+Disallow: /
+User-agent: facebookexternalhit/1.1
+Disallow: /
+User-agent: meta-externalfetcher/1.1
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-ExternalFetcher
+Disallow: /
+...............................
+
 
 # Spawning AI
 User-Agent: *
@@ -839,6 +867,10 @@ Timpibot/0.9 (+http://www.timpi.io)
 User-agent: Timpibot/0.9 
 Disallow: /
 
+240928 /this comes loking around: 
+User-agent: Dalvik/2
+Disallow: /
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240924
+Updated: 240928
