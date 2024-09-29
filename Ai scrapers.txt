@@ -589,8 +589,6 @@ User-agent: Dalvik/2
 Disallow: /
 User-agent: Dalvik/2.1.0
 Disallow: / 
-User-agent: fidget-spinner-bot
-Disallow: /
 User-agent: GPTBot
 Disallow: /
 User-Agent: GPTbot/0.1
@@ -636,6 +634,7 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
+Disallow: /
 User-agent: facebookexternalhit
 Disallow: /
 User-agent: facebookexternalhit/1.1
@@ -645,7 +644,6 @@ Disallow: /
 User-agent: Meta-ExternalAgent
 Disallow: /
 User-agent: Meta-ExternalFetcher
-Disallow: /
 Disallow: /
 User-agent: Meta AI
 Disallow: /
@@ -766,7 +764,6 @@ User-agent: DialoGPT
 User-agent: DepolarizingGPT
 User-agent: Dalvik/2
 User-agent: Dalvik/2.1.0
-User-agent: fidget-spinner-bot
 User-agent: GPTBot
 User-Agent: GPTbot/0.1
 User-Agent: GPTBot/1.0
