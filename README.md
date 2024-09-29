@@ -113,7 +113,8 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
-- Updated: 240927,  Updated Perrishpress 8G . my own, with protection for ai bots,scrapers, working on more chrome/firefox scrapers.
+- Updated: 240929, Updated ai scrapers, txt, new ai:(
+- Updated: 240927, Updated Perrishpress 8G . my own, with protection for ai bots,scrapers, working on more chrome/firefox scrapers.
 - Updated: 240927, updated htaccess1 for btter protectin, ai moved to: htaccess2. with block for scrapers.
 - Updated: 240924, only allwed useragents list. htaccess, good in folder you do not want noosy useragents.
 - Updated: 240922, BLock ai.php Updated new ai scraper.
