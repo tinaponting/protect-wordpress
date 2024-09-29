@@ -31,9 +31,26 @@ Disallow: /
 User-agent: Nicecrawler
 Disallow: /
 
+#Image Stealer:
+
+ImagesiftBot
+https://imagesift.com
+
+Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)
+
+IP:
+64.124.0.0 
+64.125.255.255
+64.124.0.0/15
+
+Ai image grabber:
+RedirectMatch 403 thehive.ai  #ai image scraper
+
+thehive.ai
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-# To not allow AI to use anything on the page:
+# To not allow AI to use anything on the Index page:
 
 <meta name="robots" content="noai">
 
@@ -41,7 +58,7 @@ Disallow: /
 
 <meta name="robots" content="noimageai">
 
-To place both directives:
+# To place both directives:
 
 <meta name="robots" content="noai, noimageai">
 
@@ -165,6 +182,8 @@ Usually used on mobile click farms for automated tasks. No sane human will be us
 User-agent: Dalvik/2.1.0
 Disallow: / 
 
+....................................
+
 ## GoogleOther is a new set of data crawlers from Google, used for web scraping. “GoogleOther is the 
 generic crawler that may be used by various product teams for fetching publicly accessible content from sites”. Besides the generic GoogleOther, 
 they also use GoogleOther-Image and GoogleOther-Video. If you block the user agent string “GoogleOther” you will block all of them.
@@ -231,19 +250,8 @@ Disallow: /
 # Images:
 Dalle2AI
 
-#Image Stealer:
 
-ImagesiftBot
-https://imagesift.com
-
-Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)
-
-IP:
-64.124.0.0 
-64.125.255.255
-64.124.0.0/15
-
-ROBOTS.TXT:
+# ROBOTS.TXT:
 
 User-Agent: ImagesiftBot 
 Disallow: / 
@@ -287,10 +295,14 @@ Open source modeller
 https://huggingface.co/mistralai/Mistral-7B-v0.1
 https://huggingface.co/mistralai/Mix...-Instruct-v0.1
 
+#Google:
+Google - Not affecting ordinary blogs yet.
+Gemini 1.5 Pro	
+Gemini 1.5 Pro (Vertex AI)	
+Gemini 1.5 Flash
 
 #YANDEX:
 # Machine learning
-
 CatBoost
 Yandex - YaLM
 
@@ -361,12 +373,6 @@ RewriteCond%{HTTP_USER_AGENT}(BackBox Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(Arch Linux)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(OSV-Scanner)[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}(ZAP)[NC,OR]
-
-
-Ai image grabber:
-RedirectMatch 403 thehive.ai  #ai image scraper
-
-thehive.ai
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................
@@ -475,7 +481,6 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 .................................
 ---------------------------------
-
 #Alternative#:
 # List to use - Extra good BLOCK #:
 
@@ -516,8 +521,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Apache Nutch|Beautiful Soup|content_fetcher.py|
 RewriteRule .* - [F]</ifModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
-.................................................
-   
+.................................................  
 ### A Complete Ai List ##)
 #Ai/BOTS - scrapers:
 # Robots.txt:
@@ -867,10 +871,15 @@ Timpibot/0.9 (+http://www.timpi.io)
 User-agent: Timpibot/0.9 
 Disallow: /
 
-240928 /this comes loking around: 
+#240928 /this comes loking around: 
 User-agent: Dalvik/2
 Disallow: /
 
+# Open ai new:
+
+GPT 4 Omni	
+GPT 4 Omni Mini
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240928
+Updated: 240929
