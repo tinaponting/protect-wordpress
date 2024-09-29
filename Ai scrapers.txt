@@ -444,7 +444,7 @@ Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3
 Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC]RewriteRule ^ – [F]</IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
+RewriteCond %{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC]RewriteRule ^ – [F]
 </IfModule>
 
@@ -492,9 +492,8 @@ RewriteCond%{HTTP_USER_AGENT}^.*(AutoGPT|Agent GPT|Applebot-Extended|Aria browse
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0).*[NC]
 RewriteRule .* - [F]</ifModule>
 
-
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
+RewriteCond%{HTTP_USER_AGENT}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT 4 Omni|GPT 4 Omni Mini|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|)[NC,OR]
 RewriteCond%{QUERY_STRING}(GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher| )\:[NC,OR]
@@ -554,7 +553,6 @@ User-agent: AI2 Bot
 Disallow: /
 User-agent: Ai2Bot-Dolma
 Disallow: /
-  
 User-agent: Brave Leo AI
 Disallow: /
 User-agent: bingbot/2.0
@@ -563,7 +561,6 @@ User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
 Disallow: /
-
 User-agent: cohere-ai
 Disallow: /
 User-agent: ClaudeBot
@@ -584,7 +581,6 @@ User-agent: ChatGPT
 disallow: /
 User-agent: ChatGPT-User
 Disallow: /
-
 User-agent: Diffbot
 Disallow: /
 User-agent: DialoGPT
@@ -597,7 +593,6 @@ User-agent: Dalvik/2.1.0
 Disallow: / 
 User-agent: fidget-spinner-bot
 Disallow: /
-
 User-agent: GPTBot
 Disallow: /
 User-Agent: GPTbot/0.1
@@ -640,10 +635,19 @@ User-agent: GoogleOther-Image
 Disallow: /
 User-agent: GoogleOther-Video
 Disallow: /
-
 User-agent: FacebookBot
 Disallow: /
 User-agent: FacebookBot/1.0
+User-agent: facebookexternalhit
+Disallow: /
+User-agent: facebookexternalhit/1.1
+Disallow: /
+User-agent: meta-externalfetcher/1.1
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-ExternalFetcher
+Disallow: /
 Disallow: /
 User-agent: Meta AI
 Disallow: /
@@ -657,7 +661,6 @@ User-agent: FriendlyCrawler/1.0
 Disallow: /	
 User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
 Disallow: /	
-
 User-agent: ICC-Crawler
 Disallow:/
 User-agent: IntelliSeek
@@ -669,13 +672,11 @@ Disallow: /
 User-agent: img2dataset
 Disallow: /
 User-agent: iaskspider/2.0
-Disallow: /
-
+Disallow: 
 User-Agent: The Knowledge AI 
 Disallow: /
 User-agent: LeftWingGPT
 Disallow: /
-
 User-Agent: my-tiny-bot
 Disallow: /
 User-agent: Nicecrawler
@@ -684,7 +685,6 @@ User-agent: magpie-crawler
 Disallow: /
 User-agent: MSIECrawler
 Disallow: /
-
 User-agent: Omgilibot
 Disallow: /
 User-agent: Omgili
@@ -701,12 +701,10 @@ User-agent: OAI-SearchBot/1.0
 Disallow: /
 User-agent: Owler
 Disallow: /
-
 User-agent: SearchGPT 
 Disallow: /
 User-agent: scrapy
 Disallow: /
-
 User-agent: PerplexityBot
 Disallow: /
 User-agent: RightWingGPT
@@ -717,7 +715,6 @@ User-agent: Timpibot
 Disallow: /
 User-agent: TinyTestBot
 Disallow: /
-
 User-agent: WebChatGPT
 Disallow: /
 User-agent: WormGPT V3.0
@@ -728,7 +725,6 @@ User-agent: Webzio-Extended
 Disallow: /
 User-agent: VelenPublicWebCrawler
 Disallow: /
-
 User-agent: proximic
 Disallow: /
 User-agent: PiplBot
@@ -738,20 +734,119 @@ Disallow: /
 User-agent: peer39_crawler/1.0
 Disallow: /
 
-##OTHERS - If needed:
-
-User-agent: facebookexternalhit
-Disallow: /
-User-agent: facebookexternalhit/1.1
-Disallow: /
-User-agent: meta-externalfetcher/1.1
-Disallow: /
-User-agent: Meta-ExternalAgent
-Disallow: /
-User-agent: Meta-ExternalFetcher
-Disallow: /
 ...............................
+SLIM: #Ai - scrapers -RObots. txt:
 
+User-agent: AutoGPT
+User-agent: Agent GPT
+User-agent: Applebot-Extended
+User-agent: Aria browser AI
+User-agent: Aria browse Aria AI
+User-agent: AISearchBot 
+User-agent: Applebot-Extended
+User-agent: Amazon Bedrock
+User-agent: Alexa
+User-agent: AnyPicker
+User-agent: AlphaAI
+User-agent: Amazon Lex
+User-agent: AI2 Bot
+User-agent: Ai2Bot-Dolma  
+User-agent: Brave Leo AI
+User-agent: bingbot/2.0
+User-agent: bingbot-chat/2.0
+User-agent: Bing ai 
+User-agent: cohere-ai
+User-agent: ClaudeBot
+User-agent: crewAI
+User-agent: Claude 3.5 Sonnet
+User-agent: CCBot
+User-agent: ccbot
+User-agent: CCBot/2.0
+User-agent: CC-Crawler/2.0
+User-agent: ChatGPT
+User-agent: ChatGPT-User
+User-agent: Diffbot
+User-agent: DialoGPT
+User-agent: DepolarizingGPT
+User-agent: Dalvik/2
+User-agent: Dalvik/2.1.0
+User-agent: fidget-spinner-bot
+User-agent: GPTBot
+User-Agent: GPTbot/0.1
+User-Agent: GPTBot/1.0
+User-Agent: GPTBot/1.2
+User-agent: GPT-1
+User-agent: GPT-2
+User-agent: GPT-3 
+User-agent: GPT-3.5
+User-agent: GPT-4 
+User-agent: gpt-4-turbo
+User-agent: GPT-4o
+User-agent: GPT-4o mini
+User-agent: GPT-3.5 Turbo
+User-agent: GPT 4 Omni	
+User-agent: GPT 4 Omni Mini
+User-agent: GPT-Sw3
+User-agent: GPTZero
+User-agent: SearchGPT 
+User-agent: Google-Extended   
+User-agent: Google Bard AI
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: FacebookBot
+User-agent: FacebookBot/1.0
+User-agent: facebookexternalhit
+User-agent: facebookexternalhit/1.1
+User-agent: meta-externalfetcher/1.1
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-Agent: fidget-spinner-bot 
+User-agent: Meta AI
+User-agent: Meta Llama 3
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-Agent: fidget-spinner-bot 
+User-agent: FriendlyCrawler
+User-agent: FriendlyCrawler/1.0
+User-agent: FriendlyCrawler/Nutch-1.20-SNAPSHOT
+User-agent: ICC-Crawler
+User-agent: IntelliSeek
+User-agent: IntelliSeek.ai
+User-agent: ImagesiftBot 
+User-agent: img2dataset
+User-agent: iaskspider/2.0
+User-Agent: The Knowledge AI 
+User-agent: LeftWingGPT
+User-Agent: my-tiny-bot
+User-agent: Nicecrawler
+User-agent: magpie-crawler
+User-agent: MSIECrawler
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: OpenAI 
+User-agent: Openbot
+User-agent: OAI SearchBot
+User-agent: OAI-SearchBot
+User-agent: OAI-SearchBot/1.0
+User-agent: Owler
+User-agent: SearchGPT 
+User-agent: scrapy
+User-agent: PerplexityBot
+User-agent: RightWingGPT
+User-agent: Timpibot
+User-agent: Timpibot/0.9 /
+User-agent: TinyTestBot
+User-agent: WebChatGPT
+User-agent: WormGPT V3.0
+User-agent: wpbot
+User-agent: Webzio-Extended
+User-agent: VelenPublicWebCrawler
+User-agent: proximic
+User-agent: PiplBot
+User-agent: YouBot
+User-agent: peer39_crawler/1.0 
+Disallow: /
 
 # Spawning AI
 User-Agent: *
