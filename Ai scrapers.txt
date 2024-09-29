@@ -555,8 +555,6 @@ User-agent: Ai2Bot-Dolma
 Disallow: /
 User-agent: Brave Leo AI
 Disallow: /
-User-agent: bingbot/2.0
-Disallow: /
 User-agent: bingbot-chat/2.0
 Disallow: /
 User-agent: Bing ai 
@@ -739,7 +737,6 @@ SLIM: #Ai - scrapers -RObots. txt:
 
 User-agent: AutoGPT
 User-agent: Agent GPT
-User-agent: Applebot-Extended
 User-agent: Aria browser AI
 User-agent: Aria browse Aria AI
 User-agent: AISearchBot 
@@ -752,7 +749,6 @@ User-agent: Amazon Lex
 User-agent: AI2 Bot
 User-agent: Ai2Bot-Dolma  
 User-agent: Brave Leo AI
-User-agent: bingbot/2.0
 User-agent: bingbot-chat/2.0
 User-agent: Bing ai 
 User-agent: cohere-ai
