@@ -113,6 +113,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+* Updated: 240929, updated robots.txt, user agents,checked all dissalow for not in use, long gone robots, set latest useragents, download it on singe user:)
 - Updated: 240929, Updated ai scrapers, txt, new ai:(
 - Updated: 240927, Updated Perrishpress 8G . my own, with protection for ai bots,scrapers, working on more chrome/firefox scrapers.
 - Updated: 240927, updated htaccess1 for btter protectin, ai moved to: htaccess2. with block for scrapers.
