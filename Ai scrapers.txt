@@ -689,6 +689,8 @@ User-agent: OpenAI
 Disallow: /
 User-agent: Openbot
 Disallow: /
+User-agent: OpenAI GPT
+Disallow: /
 User-agent: OAI SearchBot
 Disallow: /
 User-agent: OAI-SearchBot
@@ -819,6 +821,7 @@ User-agent: Omgilibot
 User-agent: Omgili
 User-agent: OpenAI 
 User-agent: Openbot
+User-agent: OpenAI GPT
 User-agent: OAI SearchBot
 User-agent: OAI-SearchBot
 User-agent: OAI-SearchBot/1.0
@@ -970,4 +973,6 @@ GPT 4 Omni Mini
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 240929
+Updated: 241002
+
+241002: Updates robots. txt both!
