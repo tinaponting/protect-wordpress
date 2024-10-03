@@ -844,66 +844,8 @@ User-agent: YouBot
 User-agent: peer39_crawler/1.0 
 Disallow: /
 
-# Spawning AI
-User-Agent: *
-Disallow: *.txt
-Disallow: *.pdf
-Disallow: *.doc
-Disallow: *.docx
-Disallow: *.odt
-Disallow: *.rtf
-Disallow: *.tex
-Disallow: *.wks
-Disallow: *.wpd
-Disallow: *.wps
-Disallow: *.html
-Disallow: *.bmp
-Disallow: *.gif
-Disallow: *.ico
-Disallow: *.jpeg
-Disallow: *.jpg
-Disallow: *.png
-Disallow: *.svg
-Disallow: *.tif
-Disallow: *.tiff
-Disallow: *.webp
-Disallow: *.aac
-Disallow: *.aiff
-Disallow: *.amr
-Disallow: *.flac
-Disallow: *.m4a
-Disallow: *.mp3
-Disallow: *.oga
-Disallow: *.opus
-Disallow: *.wav
-Disallow: *.wma
-Disallow: *.mp4
-Disallow: *.webm
-Disallow: *.ogg
-Disallow: *.avi
-Disallow: *.mov
-Disallow: *.wmv
-Disallow: *.flv
-Disallow: *.mkv
-Disallow: *.py
-Disallow: *.js
-Disallow: *.java
-Disallow: *.c
-Disallow: *.cpp
-Disallow: *.cs
-Disallow: *.h
-Disallow: *.css
-Disallow: *.php
-Disallow: *.swift
-Disallow: *.go
-Disallow: *.rb
-Disallow: *.pl
-Disallow: *.sh
-Disallow: *.sql
-Disallow: /
-Disallow: *
 
-
+..........................
 ..........................
 # New 240916
 wpbot
@@ -973,6 +915,7 @@ GPT 4 Omni Mini
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Updated: 241002
+Updated: 241003
 
-241002: Updates robots. txt both!
+241003: Updates robots. txt both!
+Removed spawning.txt then Google will not index your posts:(
