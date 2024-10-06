@@ -1,6 +1,26 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Ai bots/scrapers:
 .................................................................
+## Ai (important) Adresses:  ###
+
+* Anthropic: https://www.anthropic.com/
+* Hugging face:  https://huggingface.co/
+* Open ai: https://openai.com/
+* Claude ai news: https://claude.ai/login
+* Common Crawl: https://commoncrawl.org/
+* crew AI: https://www.crewai.com/
+* Crew ai: spider scraper: https://spider.cloud/   Useragent: spider
+* Cohere: https://cohere.com/
+* Grok: https://x.ai/
+* Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers?hl=en
+* Gemini: https://gemini.google.com/
+* Meta ai (facebook): https://ai.meta.com/
+* Perplexity: 
+* Webz.io:  https://webz.io/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.................................................................... 
+********************************************************************
 # Headless browsers:
 
 RewriteCond %{HTTP_USER_AGENT} ^GoogleScraper [NC,OR]
@@ -14,8 +34,8 @@ RewriteCond%{HTTP_USER_AGENT}^A1 Website download [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^A1 Website Scraper [NC,OR]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-................................................................... 
-*******************************************************************
+.................................................................... 
+********************************************************************
 ## ImagesAi bots:  ##
 
 User-agent: ImagesiftBot 
@@ -432,7 +452,7 @@ Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0
 GPTBot|GPTbot/0.1|GPTBot/1.0|GPTBot/1.2|GPT-1|GPT-2|GPT-3|GPT-3.5|GPT-4|gpt-4-turbo|GPT-4o|GPT-4o mini|GPT-3.5 Turbo|GPT-Sw3|GPTZero|SearchGPT|Google-Extended|Google Bard AI|GoogleOther|
 FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-externalfetcher/1.1|ICC-Crawler|IntelliSeek.ai|iaskspider/2.0|The Knowledge AI|LeftWingGPT|Meta AI|Meta Llama 3|Meta-ExternalAgent|Meta-ExternalFetcher|
 
-Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
+Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.00|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.8|Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|
 
 ...................................
 
@@ -449,7 +469,7 @@ FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-ext
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.9|Timpibot|PiplBot|YouBot|YarGPT|yarchatgpt|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -486,7 +506,8 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}(AI2 Bot|Ai2Bot-Dolma|AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
-Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC,OR]RewriteCond%{QUERY_STRING}(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
+Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)[NC,OR
+]RewriteCond%{QUERY_STRING}(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0)\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(AutoGPT|Agent GPT|Applebot-Extended|Aria browser AI|Aria AI|Applebot-Extended|Amazon Bedrock|Alexa|AlphaAI|Amazon Lex|Brave Leo AI|bingbot/2.0|bingbot-chat/2.0|
 Bing ai|Browse AI|ChatGPT|ChatGPT-User|cohere-ai|ClaudeBot|crewAI|CCBot|Claude 3.5 Sonnet|CCBot|ccbot|CCBot/2.0|CC-Crawler/2.0|ChatGPT|ChatGPT-User|Diffbot|DialoGPT|DepolarizingGPT|Dalvik/2|Dalvik/2.1.0).*[NC]
@@ -502,9 +523,9 @@ FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-ext
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0O|wler|SearchGPT|PerplexityBot|RightWingGPT||Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
-RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI Openbot|OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT||Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0O|wler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.8|Timpibot/0.9|Timpibot|PiplBot|YouBot|YarGPT|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC,OR]
+RewriteCond%{QUERY_STRING}(Omgilibot|Omgili|OpenAI| Openbot|OAI SearchBot|OAI SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.8|Timpibot|PiplBot|YouBot|YarGPT|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Omgilibot|Omgili|OpenAI Openbot|OAI SearchBot|OAI-SearchBot|OAI-SearchBot/1.0|Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.8|Timpibot/0.9|Timpibot|PiplBot|YouBot|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -707,6 +728,8 @@ User-agent: PerplexityBot
 Disallow: /
 User-agent: RightWingGPT
 Disallow: /
+User-agent: Timpibot/0.8
+Disallow: /
 User-agent: Timpibot/0.9 
 Disallow: /
 User-agent: Timpibot
@@ -729,11 +752,15 @@ User-agent: PiplBot
 Disallow: /
 User-agent: YouBot
 Disallow: /
+User-agent: YarGPT
+Disallow: /
+User-agent: yarchatgpt
+Disallow: /
 User-agent: peer39_crawler/1.0
 Disallow: /
 
 ...............................
-SLIM: #Ai - scrapers -RObots. txt:
+SLIM: #Ai - scrapers -Robots. txt:
 
 User-agent: AutoGPT
 User-agent: Agent GPT
@@ -831,7 +858,8 @@ User-agent: scrapy
 User-agent: PerplexityBot
 User-agent: RightWingGPT
 User-agent: Timpibot
-User-agent: Timpibot/0.9 /
+User-agent: Timpibot/0.8
+User-agent: Timpibot/0.9 
 User-agent: TinyTestBot
 User-agent: WebChatGPT
 User-agent: WormGPT V3.0
@@ -841,6 +869,8 @@ User-agent: VelenPublicWebCrawler
 User-agent: proximic
 User-agent: PiplBot
 User-agent: YouBot
+User-agent: YarGPT
+User-agent: yarchatgpt
 User-agent: peer39_crawler/1.0 
 Disallow: /
 
@@ -913,9 +943,40 @@ Disallow: /
 GPT 4 Omni	
 GPT 4 Omni Mini
 
+::::
+
+241006:
+# Yandex:
+
+User-agent: YarGPT
+Disallow: /
+
+Also: User-agent: yarchatgpt
+      Disallow: /
+
+FROM: http://yarchatgpt.ru
+
+## Hard to block:(
+Timpibot/0.8     Mozilla/5.0 (compatible; Timpibot/0.8; +http://www.timpi.io)
+Timpibot/0.9     Timpibot/0.9 (+http://www.timpi.io)
+
+https://timpi.io/
+I blocked whole user string!
+
+:::
+Not seen this on my blog yet:
+
+### Grok: https://x.ai/
+
+Grok-1.5	
+Grok-2 mini	
+Grok-2
+Grok-2‡
+
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Updated: 241003
 
 241003: Updates robots. txt both!
-Removed spawning.txt then Google will not index your posts:(
+241003: Removed spavning.txt then google wont index posts /AI won´t care index posts:(
