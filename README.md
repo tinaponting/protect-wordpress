@@ -113,6 +113,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+* Updated: 241016, updated: ai texts new AI scrapers:(
 * Updated: 241010, updated, block ai.php scripts, do no intefere with speed, and ai acrapers.tt to the Latest:)
 * Updated: 241001,Noway allowed-Do not see. updated.
 * Updated: 240929, updated robots.txt, user agents,checked all dissalow for not in use, long gone robots, set latest useragents, download it on singe user:)
