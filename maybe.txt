@@ -2451,7 +2451,7 @@ ALTERNATIVE:
 RewriteCond%{HTTP_USER_AGENT}"^WebCopier"[NC,OR]
 RewriteRule ^.* - [F,L]
 
-Maybe someone uses:
+Maybe still someone uses:
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -3131,13 +3131,6 @@ RedirectMatch 403 (?i)/+upload
 ***Copy what you need ans add it to your .htaccess1*
 ........................................................................................
 ........................................................................................
-# Redirecting 404 requests for favicon files:
- 
-<IfModule mod_alias.c>RedirectMatch 403 favicon.ico</IfModule>
-
-From: https://perishablepress.com
-........................................................................................
-........................................................................................
 # Removing File Extensions:  Cannot works in some cases!
 
 <IfModule mod_rewrite.c>
@@ -3157,11 +3150,20 @@ Apache 2,4+
 
 ........................................................................................
 ........................................................................................
-# Then change the redirect location, /custom.php, to whatever is required.
+# Then change the redirect location, /custom.php, to whatever is required.  ####
 
 RewriteRule .* /custom.php [R=301,L]
 
 From: https://perishablepress.com
+
+..............................................
+# Redirecting 404 requests for favicon files:
+ 
+<IfModule mod_alias.c>RedirectMatch 403 favicon.ico</IfModule>
+
+From: https://perishablepress.com
+........................................................................................
+........................................................................................
 ........................................................................................
 ........................................................................................
 # Rules:
@@ -3556,7 +3558,8 @@ SetEnvIfNoCase User-Agent "^Wget/1.8.2.*" bad_bot
 SetEnvIfNoCase User-Agent "^Wget/1.9-beta.*" bad_bot
 
 ........................................................................................
-# PHP Hide:
+........................................................................................
+# PHP Hide  ###:
 From: https://perishablepress.com
 
 RewriteCond %{THE_REQUEST} .+\.php [NC]RewriteRule ^ - [F,L]
@@ -4011,22 +4014,49 @@ RewriteRule ^.* - [F,L]
 #Rate Limit:
 
 Images scrapers:
+
 RewriteCond %{REQUEST_URI} !^/images/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT
 
 # DOS/scrapers limit:
+
 <IfModule ratelimit_module>
 SetOutputFilter RATE_LIMIT
 SetEnv rate-limit 100
 SetEnv rate-initial-burst 200
 </IfModule>
 
+#Alternative:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} !^/Post/
+RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
+Header set Retry-After "5" env=RATE_LIMIT
+</ifModule>
+
+## If you want them gone for a long time....
+
+<IfModule mod_rewrite.c>RewriteCond%{REQUEST_URI} !^/Post/
+RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
+Header set Retry-After "5550" env=RATE_LIMIT</ifModule>
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 
+###Chrome Privacy Preserving Prefetch Proxy
 
 
-..........................
-Updated: 240906
+RewriteEngine On
+SetEnvIfNoCase X-Forwarded-For .+ proxy=yes
+SetEnvIfNoCase X-moz prefetch no_access=yes
+
+# block pre-fetch requests with X-moz headers
+RewriteCond %{ENV:no_access} yes
+RewriteRule .* - [F,L]
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+.......................................................................................
+Updated: 241006
