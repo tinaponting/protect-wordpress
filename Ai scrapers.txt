@@ -469,7 +469,7 @@ FacebookBot|FacebookBot/1.0|facebookexternalhit|facebookexternalhit/1.1|meta-ext
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.9|Timpibot|PiplBot|YouBot|YarGPT|yarchatgpt|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
+RewriteCond%{HTTP_USER_AGENT}(Omgilibot|Omgili|OpenAI|Openbot|OAI-SearchBot|OAI SearchBot|OAI-SearchBot/1.0O||Owler|SearchGPT|PerplexityBot|RightWingGPT|Timpibot/0.8|Timpibot/0.9|Timpibot|PiplBot|YouBot|YarGPT|yarchatgpt|peer39_crawler/1.0|wpbot|WebChatGPT|WormGPT V3.0|)[NC]
 RewriteRule ^ – [F]
 </IfModule>
 
@@ -979,4 +979,4 @@ Grok-2‡
 Updated: 241003
 
 241003: Updates robots. txt both!
-241003: Removed spavning.txt then google wont index posts /AI won´t care index posts:(
+241003: Removed spavning.txt then google wont index posts:(
