@@ -112,6 +112,7 @@ https://wordpress.org/plugins/real-cookie-banner/
 Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+* Updated: 241014, Ai bots/ai scrapers on own ai folder updated:)
 * Updated: 241007, Ai bots/ai scrapers moved to own ai:)
 * Updated: 241006, updated: ai texts new AI scrapers:(
 * Updated: 2410910, updated, block ai.php scripts, do no intefere with speed, and ai acrapers.tt to the Latest:)
