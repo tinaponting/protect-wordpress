@@ -105,8 +105,9 @@ Use both or one of these:
 https://wordpress.org/plugins/wp-browser-update/
 http://browserupdate.org/
 
-
 https://wordpress.org/plugins/real-cookie-banner/
+
+AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 
 Love ///  Kristina Sweden
