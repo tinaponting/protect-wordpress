@@ -113,6 +113,8 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+
+* Updated: 241022, Updated: htaccess1 for better security, delated som not used studd, added some.
 * Updated: 241014, Ai bots/ai scrapers on own ai folder updated:)
 * Updated: 241007, Ai bots/ai scrapers moved to own ai:)
 * Updated: 241006, updated: ai texts new AI scrapers:(
@@ -190,13 +192,13 @@ Love ///  Kristina Sweden
 - Updated: 230115 htaccess1, for better Security.
 - Updated: 2410110: w-admin for more security:)
 - Updated: 2400102, my strongest; htaccess1.
-- Updated: 230306 - 231220
-- Updated: 230206 - 230505. 
-- Updated: 230202 - 230101.
-- Updated: 221225 - 221230.
-- Updated: 221225 - 221124.
-- Updated: 220915 - 221124.
-- Updated: 200220 - 2021.
+* Updated: 230306 - 231220
+* Updated: 230206 - 230505. 
+* Updated: 230202 - 230101.
+* Updated: 221225 - 221230.
+* Updated: 221225 - 221124.
+* Updated: 220915 - 221124.
+*  Updated: 200220 - 2021.
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
