@@ -114,6 +114,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
 
+* Updated: 241022,  Perishablepress.com8g-firewall - my own that I use.
 * Updated: 241022, Updated: htaccess1 for better security, delated som not used studd, added some.
 * Updated: 241014, Ai bots/ai scrapers on own ai folder updated:)
 * Updated: 241007, Ai bots/ai scrapers moved to own ai:)
