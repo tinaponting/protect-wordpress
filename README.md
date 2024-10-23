@@ -1,5 +1,6 @@
 #### protect-wordpress  For Paranoid bloggers on wordpress.
 Protect wordpress with .htaccess
+* AI ROBOTS/SCRAPERS:  https://github.com/tinaponting/ai-robots-scrapers
 
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
