@@ -114,6 +114,7 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: ***
+* Updated: 241031, htaccess1 - Some tried to hack with base 64, so uppdated htaccess protection for that.
 * Updated: 241026, perishablepress.com8g-firewall - New updated I Use this with AI.
 * Updated: 241022, Perishablepress.com8g-firewall - my own that I use.
 * Updated: 241022, Updated: htaccess1 for better security, delated som not used studd, added some.
