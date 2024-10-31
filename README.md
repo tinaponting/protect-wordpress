@@ -2,6 +2,7 @@
 Protect wordpress with .htaccess
 * AI ROBOTS/SCRAPERS:  https://github.com/tinaponting/ai-robots-scrapers
 
+* No one of these htaccess 1 or 2 makes any diffrent in speed! *
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
 About me: A blogger since 2002, been on blogspot as on wordpress, made all mistakes through the years, I learned not only a free firewall can protect med, so I made my own, follow the latest trends in hacking and some blogs on to get it in order:)  
