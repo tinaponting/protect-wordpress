@@ -238,8 +238,7 @@ RewriteCond %{REMOTE_ADDR} !^131\.253\.25\.
 RewriteRule .* /strangebrowser.html? [R=307,L]
 RewriteRule ^.*$ - [F,L]
 
-........
-
+...........................................................
 # Bad bots:
 
 RewriteCond %{HTTP_USER_AGENT} ^-?$ [NC,OR]
@@ -299,7 +298,7 @@ RewriteCond %{HTTP_USER_AGENT} ^.*(YaBrowser|YandexBot|yamanalab|yioopbot|YisouS
 RewriteCond %{HTTP_USER_AGENT} ^.*(zeus|zgrab|zh\-CN|zh_CN|ZHCN|zmeu|zune|zyborg).*$ [NC]
 RewriteRule ^(.*)$ - [R=403,L]
 
--------
+-------------------------------------------------------------------------------------------
 
 RewriteCond %"{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
 RewriteCond %"{HTTP_USER_AGENT}" "ltx71" [OR,NC]
@@ -2435,6 +2434,10 @@ Options AddHandler cgi-script .php .pl .py .jsp .asp .htm .html .txt .shtml .sh 
 # PHP - (CSS/JS): 
 
 Options AddHandler cgi-script .php .js .css .html .txt .readme .cgi -ExecCGI
+
+#Alternative:
+AddHandler cgi-script .php .txt .css .min.css .js .min.js .html .xml .json .cgi Options -ExecCGI
+RemoveHandler .cgi .php .txt.php4 .php5 .phtml .pl .py .pyc .pyo .css .min.css .js .min.js .html .xml .json .htaccess .htaccess1 .htaccess2 
 ........................................................................................
 ........................................................................................
 # Deny Crawlers:
@@ -2446,7 +2449,7 @@ RewriteRule (.*) - [F,L]
 </IfModule>
 
 
-ALTERNATIVE:
+#ALTERNATIVE:
 
 RewriteCond%{HTTP_USER_AGENT}"^WebCopier"[NC,OR]
 RewriteRule ^.* - [F,L]
@@ -3746,15 +3749,6 @@ RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazon Lex"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC]
 RewriteCond%{REMOTE_ADDR}!^23\.20.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^3\.82.38.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^3\.91.158.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^3\.95.252.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^34.204.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^34\.224.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^34\.230.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^52\.16.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^54\.90.*$ [NC]
-RewriteCond%{REMOTE_ADDR}!^98\.80.7.*$ [NC]
 RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]RewriteRule ^(.*)$ - [F]</IfModule>
 
 .......................................................................................
@@ -4043,9 +4037,7 @@ Header set Retry-After "5550" env=RATE_LIMIT</ifModule>
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-
 ###Chrome Privacy Preserving Prefetch Proxy
-
 
 RewriteEngine On
 SetEnvIfNoCase X-Forwarded-For .+ proxy=yes
@@ -4055,8 +4047,23 @@ SetEnvIfNoCase X-moz prefetch no_access=yes
 RewriteCond %{ENV:no_access} yes
 RewriteRule .* - [F,L]
 
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+#BLOCK Scumbags:
+
+# Start blocking on HTTP requests
+RewriteCond %{HTTP_REFERER} "^https?://(?:[^/]+\.)?******\.com" [NC,OR]
+RewriteCond %{HTTP_REFERER} "^https?://(?:[^/]+\.)?kambasoft\.com" [NC,OR]
+RewriteCond %{HTTP_REFERER} "^https?://(?:[^/]+\.)?savetubevideo\.com" [NC]
+RewriteRule ^.* - [F,L]
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+#FEED stealers: Send them somewhere on internet!
+
+RewriteCond%{REMOTE_ADDR} ^123.123.123
+RewriteRule ^(.*)$ http://domain.tld/feed
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 241006
+Updated: 241101
