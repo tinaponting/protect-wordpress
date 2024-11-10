@@ -429,21 +429,21 @@ playwright:headless:firefox
 playwright:headful :firefox 
 
 # Fingerprinting:
-
 JA3 Fingerprint
 HTTP/2 fingerprint
 PHP cURL
 
 
 ## HEADLESS browser;
-
 Cypress
 chromedp
 
-......
+# Common hackeratools:
+litserve
+got
 
+............................
 ###  Non sorted:
- 
  Greenbone CE 22.04.14
  data-requests
  OpenVAS-VT 9.0.3
@@ -456,13 +456,15 @@ chromedp
  Empty TypeScript
  Standby TypeScript 
  Bun
+ Apache Nutch
 
 RAW:
-Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3| OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun
+Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3| OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|
+litserve|got
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun)[NC,OR]
-RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bun)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun).*[NC]RewriteRule .* - [F]</ifModule>
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got)[NC,OR]
+RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got).*[NC]RewriteRule .* - [F]</ifModule>
 
 ......................................................
 #NO AI but anyway::
@@ -627,9 +629,9 @@ RewriteRule .* - [F]</ifModule>
 #No Sorted: 
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun)[NC,OR]
-RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bun)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun).*[NC]
+RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|litserve|got)[NC,OR]
+RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bun|litserve|got)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|litserve|got).*[NC]
 RewriteRule .* - [F]</ifModule>
 ....................................................................
 
@@ -637,8 +639,92 @@ RewriteRule .* - [F]</ifModule>
 # OS/SEARCH ENGINE USED WITH SCRAPING/HACKING  Copy what you need!:
 ### OLD Browsers/plattforms: ###
 
-<IfModule mod_rewrite.c
->RewriteCond%{HTTP_USER_AGENT}^.*{Android; Android).*$[NC]
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*Android \/[1-13]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Android /[1-13]\.[1-13]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Edg\/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Edg/[1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Headless Edge|/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Headless Edge|/[1-131]\.[1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Chrome /[1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome (Ubuntu)\/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Chrome (Ubuntu)/[1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*HeadlessChrome|/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^HeadlessChrome|/[1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Headless Chromium|/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Headless Chromium|/[1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome Mobile\/[1-131]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Chrome Mobile\/[1-131][0-131.][0-128.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*CentOS\/[1-8]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^CentOS/[1-1-8]\.[1-1-8]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*CriOS\/[1-128]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*CriOS\/[1-128][0-128.][0-128.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-129][0-129.][0-129.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Firefox /[1-129]\.[1-1-129]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Firefox(Ubuntu)/[1-130]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Firefox( Ubuntu)/[1-130]\.[1-1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie3"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 3"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie5"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 5.5"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""msie 6.0"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""MSIE 8.0"[OR,NC]
+RewriteCond%"{HTTP_USER_AGENT}""compatible; MSIE"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}""MSIE 6.0; Windows NT 5.1"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1;"[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!Linux;\ U;\ Android [NC]
+RewriteCond%{HTTP_USER_AGENT}Linux;\ U;\ Android [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*KDE*[NC]
+RewriteCond%{HTTP_USER_AGENT}KDE*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozila*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozila$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozilla/4.0*[NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/4.0$[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-129][0-129.][0-129.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[1-129]\.[1-129]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Safari\/[1-17][1-17.][0-17.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Safari/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Mobile Safari\/[1-17][1-17.][0-17.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Mobile Safari/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Mobile Safari\/[35-80000][35-80000].][35-80000].]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Mobile Safari/[35-80000]]\.[35-80000]]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(compatible;\ MSIE\ [0-9]\.[0-9.]+[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.])$[OR,NC
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(Macintosh;\ I;\ PPC\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\)$[OR,NC]  
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Microsoft\ Internet\ Explorer/[34]\.[0-11]{1,11}[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-129][0-129.][0-129.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Mozilla/[3-4]\.[0-129]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv: ))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^Trident/[4.0-6.0]\.4.0-6.0.]+[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}!^.*Trident\/[4.0-6.0][4-6..][4-6.0.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^OPR/[1-113]\.1-113]+[OR,NC] 
+RewriteCond%{HTTP_USER_AGENT}!^.*OPR\/[1-13][1-13.][1-13.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*PRESTO\/[1.0.0-2.12.388][1.0.0-2.12.388.][1.0.0-2.12.388.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^PRESTO/[1.0.0-2.12.388]\.[1.0.0-2.12.388]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*IE*[NC] 
+RewriteCond%{HTTP_USER_AGENT}^IE$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}!^.*iPad OS\/[1-13][1-13.][[1-13]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^iPad OS/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*IE Windows*[NC] 
+RewriteCond%{HTTP_USER_AGENT}^IE Windows$[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}!^.*iPhone; CPU iPhone OS \/[1-17][1-7.][16.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^iPhone; CPU iPhone OS /[1-17]\.[1-16]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^iPhone; CPU iPhone OS /[1-17]\.[1.0.0-2.17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-10.05][0-10.05.][0-10.05.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Vivaldi\/[1-6.9][1-6.9.][[1-6.9]*[NC]
+RewriteCond%{HTTP_USER_AGENT}^Vivaldi/[1-6.9]\.[1-1-6.9]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
+RewriteCond%{HTTP_USER_AGENT} x86_64;]*[NC]
+RewriteRule .* - [F]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*{Android; Android).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*{Android; Android 5.0; HTC).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*{IE|Windows).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*{BlackArch|Linux).*$[NC]
@@ -661,8 +747,8 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Gecko/20100101).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Gecko/20130401).*$[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*{Go-http-client).*$[NC]]
 RewriteCond%{HTTP_USER_AGENT}^.*(Go-http-client/1.1).*$[NC] 
-RewriteCond%{HTTP_USER_AGENT}^.*(GET /feed/" 200 8551 "" "rss-parser").*$[NC] 
-RewriteCond%{HTTP_USER_AGENT}^.*(GET /feed/" 200 2474 "" "Symfony HttpClient (Curl).*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(GET /feed/" 200 " " "rss-parser").*$[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(GET /feed/" 200 " " "Symfony HttpClient (Curl).*$[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*(GNU/Linux x64).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(got).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*{gocolly|colly).*$[NC]
@@ -679,6 +765,7 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Headless).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(HeadlessChrome).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(HeadlessCrome|Linux).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Scan).*$ [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*(Headless|Python).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Linux).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Headful|Python).*$[NC]
@@ -688,10 +775,13 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Linux|Android).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Linux;|Android 7.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Linux; U; Linux).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Linux;u;Android 4.2.2;zh-cn;).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux; Android 10).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Linux; U; Linux x86_64).*$[NC]  
 RewriteCond%{HTTP_USER_AGENT}^.*(X11; Linux x86_64).*$[NC]  
 RewriteCond%{HTTP_USER_AGENT}^.*(Linux; U;Android).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Linux; Android 1-12.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Ubuntu|Linux).*$[[NC] 
+RewriteCond%{HTTP_USER_AGENT}^.*(X11; Ubuntu; Linux x86_64; rv:130.0).*$[[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*(Mozilla/4.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Mozlila/5.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(MSIE|NT).*$[NC]
@@ -699,14 +789,13 @@ RewriteCond%{HTTP_USER_AGENT}^.*(MSIE 8.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(compatible; MSIE).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(OpenWave).*$[NC] 
 RewriteCond%{HTTP_USER_AGENT}^.*(Symfony HttpClient|Curl).*$[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(RV)).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Trident/4.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(X11).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(X11|Fedora).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(x11u; linux).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(X11 Linux).*$[[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(X11; Ubuntu).*$[[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*(X11; Ubuntu|Linux).*$[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(X11; Ubuntu; Linux).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(WOW64|rv:48.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Viewer/ ).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Windows|NT 5.01).*$[NC]
@@ -717,80 +806,6 @@ RewriteCond%{HTTP_USER_AGENT}^.*(Windows NT 6.1; Trident/4.0).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Windows NT 10.0|Win64).*$[NC]
 RewriteCond%{HTTP_USER_AGENT}^.*(Windows; U|Windows NT).*$[NC]
 RewriteRule .* - [F]</IfModule>
-
-
-##BLOCK OLD BROWSERS:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}^.*Android \/[1-12]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Android /[1-1-12]\.[1-1-12]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Edg\/[1-131]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Edg/[1-1-131]\.[1-1-131]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Headless Edge|/[1-131]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Headless Edge|/[1-131]\.[1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-128]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Chrome\/[1-128][0-128.][0-128.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Chrome (Ubuntu)\/[1-130]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Chrome (Ubuntu)/[1-1-130]\.[1-1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*HeadlessChrome|/[1-130]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^HeadlessChrome|/[1-1-130]\.[1-1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Headless Chromium|/[1-130]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^HHeadless Chromium|/[1-1-130]\.[1-1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Chrome Mobile\/[1-128]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Chrome Mobile\/[1-128][0-128.][0-128.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*CriOS\/[1-128]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*CriOS\/[1-128][0-128.][0-128.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Firefox\/[1-129][0-129.][0-129.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Firefox/[1-1-129]\.[1-1-1329]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Firefox( Ubuntu)/[1-130]\\.*[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Firefox( Ubuntu)/[1-1-130]\.[1-1-130]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie3"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 3"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie5"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 5.5"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""msie 6.0"[OR,NC]
-RewriteCond%"{HTTP_USER_AGENT}""compatible; MSIE"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}""MSIE 6.0; Windows NT 5.1"[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}".*MSIE 6.0; Windows NT 5.1;" [OR]
-RewriteCond%{HTTP_USER_AGENT}"MSIE 6.0; Windows NT 5.1;"
-RewriteCond%{HTTP_USER_AGENT}!Linux;\ U;\ Android [NC]
-RewriteCond%{HTTP_USER_AGENT}Linux;\ U;\ Android [NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*MSIE\s[1-9][0-9.][0-9.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*KDE*[NC]
-RewriteCond%{HTTP_USER_AGENT}KDE*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Mozila*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozila$[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*Mozilla/4.0*[NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/4.0$[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}!^.*Mozilla\/[1-129][0-129.][0-129.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla|/[1-129]\.[1-129]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Safari\/[1-17][1-17.][0-17.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Safari/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Mobile Safari\/[1-17][1-17.][0-17.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^Mobile Safari/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(compatible;\ MSIE\ [0-9]\.[0-9.]+[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(Macintosh;\ .+\)\ \AppleWebKit/[1-9]\.[0-9.])$[OR,NC
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(Macintosh;\ I;\ PPC\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(X11;\ U;\ Linux\ i686;\ [a-z]{2}-[A-Z]{2};\ rv:[1-9]\.[0-9.]+\)\)$[OR,NC]  
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(compatible;\ Konqueror/([0-9]+\.)+[0-9]+.+\ 20[0-9]{6}\)$[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[4-5]\.[0-129]+\ \(.+;\ rv:([0-9]+\.)+[0-9a-z]+\)\ Gecko/20[0-9]{6[OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Microsoft\ Internet\ Explorer/[34]\.[0-11]{1,11}[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}^Mozilla/[3-4]\.[0-129]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv: ))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^Trident/[4-6]\.4-6]+[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}!^.*Trident\/[4-6][4-6.][4-6.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^OPR/[1-113]\.1-113]+[OR,NC] 
-RewriteCond%{HTTP_USER_AGENT}!^.*OPR\/[1-13][1-13.][1-13.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^.*IE*[NC] 
-RewriteCond%{HTTP_USER_AGENT}^IE$[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}!^.*iPad OS\/[1-13][1-13.][[1-13]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^iPad OS/[1-17]\.[1-17]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*IE*[NC] 
-RewriteCond%{HTTP_USER_AGENT}^IE$[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}!^.*iPhone; CPU iPhone OS \/[1-17][1-7.][16.]*[NC]
-RewriteCond%{HTTP_USER_AGENT}^iPhone; CPU iPhone OS /[1-17]\.[1-16]+\ \[[a-z]{2}\](\ \(.+\))? [OR,NC]
-RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
-RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-10.05][0-10.05.][0-10.05.]*[NC]
-RewriteCond%{HTTP_USER_AGENT} x86_64;]*[NC]RewriteRule .* - [F]</IfModule>
 
 ..........................................................................................
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -1019,69 +1034,126 @@ Windows NT 10.0; Win64; x64
 
 
 # EDGE:
-Edg/129.0
-Edg/128.0.2739.67
-Edg/128.0.2739.63
-Edg/128.0.2739.54
-Edg/127.0.2651.98
-Edg/127.0.2651.86
-Edg/126.0.2592.87
-Edg/126.0.2592.68
-Edg/125.0.2535.92
-Edg/125.0.2535.85
-Edg/124.0.2478.67
-Edg/123.0.2420.65
-Edg/122.0.2365.92
-Edg/122.0.2365.66
-Edg/122.0.2365.52
-Edg/121.0.2277.106
-Edg/120.0.2210.91
-Edg/119.0.2151.72
-Edg/117.0.2045.41
-Edg/115.0.1901.203
-Edg/115.0.1901.200
-Edg/111.0.1661.41
+Edg/100.0.1185.10
+Edg/100.0.1185.29
+Edg/101.0.1210.10
+Edg/101.0.1210.32
+Edg/101.0.1210.47
+Edg/102.0.1245.30
+Edg/102.0.1245.7
+Edg/103.0.1264.13
+Edg/103.0.1264.37
+Edg/104.0.1293.14
+Edg/104.0.1293.47
+Edg/105.0.1343.25
+Edg/105.0.1343.7
+Edg/106.0.1370.15
 Edg/106.0.1370.34
-Edg/103.0.1264.37
-Edg/111.0.1661.41
+Edg/107.0.1418.24
+Edg/107.0.1418.26
+Edg/107.0.1418.35
+Edg/107.0.1418.8
+Edg/108.0.1462.15
+Edg/108.0.1462.42
+Edg/109.0.1518.14
 Edg/109.0.1518.49
+Edg/110.0.1587.17
+Edg/110.0.1587.41
+Edg/111.0.1661.15
 Edg/111.0.1661.4
-Edg/109.0.1518.49
-Edg/113.0.1774.3
-Edg/108.0.1462.42
 Edg/111.0.1661.41
-Edg/103.0.1264.37
-Edg/128.0.2739.67
-Edg/128.0.2739.63
-Edg/128.0.2739.54
-Edg/127.0.2651.98
-Edg/127.0.2651.86
-Edg/126.0.2592.87
-Edg/126.0.2592.68
-Edg/125.0.2535.92
-Edg/125.0.2535.85
-Edg/124.0.2478.67
-Edg/123.0.2420.65
-Edg/122.0.2365.92
-Edg/122.0.2365.66
-Edg/122.0.2365.52
-Edg/121.0.2277.106
-Edg/120.0.2210.91
-Edg/119.0.2151.72
-Edg/117.0.2045.41
-Edg/115.0.1901.203
+Edg/112.0.1722.11
+Edg/112.0.1722.34
+Edg/112.0.1722.68
+Edg/113.0.1774.3
+Edg/113.0.1774.9
+Edg/114.0.1823.11
+Edg/114.0.1823.37
+Edg/115.0.1901.183
 Edg/115.0.1901.200
-Edg/111.0.1661.41
-Edg/103.0.1264.37
-Edg/109.0.1518.49
-Edg/103.0.1264.37
-Edg/108.0.1462.42
-Edg/110.0.1587.41
-Edg/113.0.1774.3
-Edg/103.0.1264.37
-Edg/108.0.1462.42
-Edg/110.0.1587.41
-Edg/113.0.1774.3
+Edg/115.0.1901.203
+Edg/115.0.1901.7
+Edg/116.0.1938.29
+Edg/116.0.1938.54
+Edg/117.0.2045.31
+Edg/117.0.2045.41
+Edg/117.0.2045.9
+Edg/118.0.2088.11
+Edg/118.0.2088.46
+Edg/119.0.2151.12
+Edg/119.0.2151.44
+Edg/119.0.2151.72
+Edg/120.0.1054.29
+Edg/120.0.2210.61
+Edg/120.0.2210.7
+Edg/120.0.2210.91
+Edg/121.0.0.0
+Edg/121.0.2277.106
+Edg/121.0.2277.4
+Edg/121.0.2277.83
+Edg/122.0.0.0
+Edg/122.0.2365.52
+Edg/122.0.2365.66
+Edg/122.0.2365.8
+Edg/122.0.2365.92
+Edg/123.0.2420.10
+Edg/123.0.2420.53
+Edg/123.0.2420.65
+Edg/124.0.2478.10
+Edg/124.0.2478.51
+Edg/124.0.2478.67
+Edg/125.0.2535.13
+Edg/125.0.2535.51
+Edg/125.0.2535.85
+Edg/125.0.2535.92
+Edg/126.0.2592.13
+Edg/126.0.2592.56
+Edg/126.0.2592.68
+Edg/126.0.2592.87
+Edg/127.0.2651.74
+Edg/127.0.2651.86
+Edg/127.0.2651.98
+Edg/128.0.2739.42
+Edg/128.0.2739.5
+Edg/128.0.2739.54
+Edg/128.0.2739.63
+Edg/128.0.2739.67
+Edg/129
+Edg/129.0
+Edg/129.0.2792.12
+Edg/129.0.2792.52
+Edg/130.0.2849.46
+Edg/130.0.2849.5
+Edg/16.16299
+Edg/79.0.309.14
+Edg/79.0.309.63
+Edg/80.0.361.9
+Edg/81.0.416.68
+Edg/87.0.664.75
+Edg/88.0.705.18
+Edg/88.0.705.50
+Edg/89.0.774.18
+Edg/89.0.774.48
+Edg/90.0.818.39
+Edg/90.0.818.8
+Edg/91.0.864.11
+Edg/91.0.864.37
+Edg/92.0.902.55
+Edg/92.0.902.9
+Edg/93.0.961.11
+Edg/93.0.961.38
+Edg/94.0.992.31
+Edg/94.0.992.9
+Edg/95.0.1020.30
+Edg/95.0.1020.9
+Edg/96.0.1054.29
+Edg/96.0.1054.8
+Edg/97.0.1072.21
+Edg/97.0.1072.55
+Edg/98.0.1108.23
+Edg/98.0.1108.43
+Edg/99.0.1150.11
+Edg/99.0.1150.30
 
 # Opera:
 OPR/97.0.4719.26
@@ -1119,7 +1191,6 @@ OPR/96.0.4693.31                  -
 OPR/96.0.4693.50                   -
 OPR/96.0.4693.80  
 OPR/96.0.4691.0 
-
 
 ### Firefox (Both false and common:
 Firefox/3.6.1
@@ -1337,6 +1408,14 @@ Firefox/128.0
 Firefox/129.0
 Firefox/129.0.1
 Firefox/129.0.2
+
+#FAKE FIREFOX:
+Firefox/3.6
+Firefox/4.0 
+Firefox/13.0
+Firefox/106.0
+Firefox/108.0
+Firefox/111.0
 
 
 ### Chrome (Both false and common:
@@ -1641,6 +1720,28 @@ Chrome/129.0.0.0
 Chrome/129.0.6668.29
 Chrome/129.0.6668.71
 
+## FAKE CHROME:
+Chrome/74.0.3729.169 
+Chrome/43.0.845.0 
+Chrome/48.0.861.0 
+Chrome/51.0.870.0 
+Chrome/34.0.824.0
+Chrome/30.0.1599.66
+Chrome/90.0.4430.85
+Chrome/98.0.4758.80
+Chrome/104.0.0.0
+Chrome/104.0.5112.79
+Chrome/112.0.5615.50
+Chrome/112.0.5615.87
+Chrome/74.0.3729.169 
+Chrome/68.0.3440.106
+Chrome/66.0.3359.158
+Chrome/60.0.3112.107
+Chrome/18.0.865.0|
+Chrome/60.0.3112.107|
+Chrome/74.0.3729.169|
+Chrome/70.0.3538.77|
+Chrome/129.0.6668.71
 
 :::::::::::::::::::::::::::::::::
 ### TEST SCRIPT: ####  Use qhat you need! To block scrapers, false bots trafic.
@@ -1686,7 +1787,6 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6
 Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|
 
-
 <ifModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(
 Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6|Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|)"[NC]
@@ -1701,11 +1801,11 @@ RewriteCond%{HTTP_USER_AGENT}"(iPhone; CPU iPhone OS 13_2_3 like Mac OS X|Macint
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 # Opera:
-OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
+OPR/79.3.4195.76674|OPR/97.0.4719.11|OPR/98.0.4759.1|Opera/9.61|Opera/8.46|Opera/8.49|Opera/8.55|Opera/9.66|OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
 OPR/97.0.4719.26|OPR/98.0.4759.3|OPR/97.0.4719.28|OPR/98.0.4756.0|OPR/97.0.4697.0|OPR/96.0.4693.20|OPR/96.0.4693.50|OPR/98.0.4746.0|OPR/113.0.0.0||OPR/97.0.4719.26|OPR/96.0.4691.0OPR/98.0.4756.0|OPR/96.0.4693.31|OPR/96.0.4693.50|OPR/96.0.4693.8|OPR/98.0.4759.3|OPR/97.0.4719.11|OPR/97.0.4719.40  
  
 <ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
+RewriteCond%{HTTP_USER_AGENT}"(OPR/79.3.4195.76674|OPR/97.0.4719.11|OPR/98.0.4759.1|Opera/9.61|Opera/8.46|Opera/8.49|Opera/8.55|Opera/9.66|OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
 OPR/97.0.4719.26|OPR/98.0.4759.3|OPR/97.0.4719.28|OPR/98.0.4756.0|OPR/97.0.4697.0|OPR/96.0.4693.20|OPR/96.0.4693.50|OPR/98.0.4746.0|OPR/113.0.0.0||OPR/97.0.4719.26|OPR/96.0.4691.0OPR/98.0.4756.0|OPR/96.0.4693.31|OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/98.0.4759.3|OPR/97.0.4719.11|OPR/97.0.4719.4 )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
@@ -1717,17 +1817,38 @@ RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 13_0|Macintosh; Intel M
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 # Windows NT
-Windows NT 4.0|Windows NT 3.1|	Windows NT 3.5|Windows NT 3.51|Windows NT 4.0|Windows NT 5.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|
+RAW: Windows NT 4.0|Windows NT 3.1|	Windows NT 3.5|Windows NT 3.51|Windows NT 4.0|Windows NT 5.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|
 
 # Windows NT
 <ifModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(Windows NT 4.0|Windows NT 3.1|Windows NT 3.5|Windows NT 3.51|Windows NT 4.0|Windows NT 5.1|Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|)"[NC]RewriteRule "^.*$" - [F,L]</IfModule>
 
 #EDGE
-Edg/129.0|Edg/128.0.2739.67|Edg/103.0.1264.37|Edg/108.0.1462.42|Edg/110.0.1587.41Edg/129.0|Edg/128.0.2739.67|Edg/128.0.2739.63|Edg/128.0.2739.54|Edg/127.0.2651.98|Edg/127.0.2651.86|Edg/126.0.2592.87|Edg/126.0.2592.68|Edg/125.0.2535.92|Edg/125.0.2535.85|Edg/124.0.2478.67|Edg/123.0.2420.65|Edg/122.0.2365.92|Edg/122.0.2365.66|Edg/122.0.2365.52|Edg/121.0.2277.106|Edg/120.0.2210.91|Edg/119.0.2151.72|Edg/117.0.2045.41|Edg/115.0.1901.203|Edg/115.0.1901.200|Edg/111.0.1661.41|Edg/106.0.1370.34|Edg/103.0.1264.37|Edg/111.0.1661.41|Edg/109.0.1518.49|Edg/111.0.1661.4|Edg/109.0.1518.49|Edg/113.0.1774.3|Edg/108.0.1462.42|Edg/111.0.1661.41|Edg/103.0.1264.37|Edg/128.0.2739.67|Edg/128.0.2739.63|Edg/128.0.2739.54|Edg/127.0.2651.98|Edg/127.0.2651.86|Edg/126.0.2592.87|Edg/126.0.2592.68|Edg/125.0.2535.92|Edg/125.0.2535.85|Edg/124.0.2478.67|Edg/123.0.2420.65|Edg/122.0.2365.92|Edg/122.0.2365.66|Edg/122.0.2365.52|Edg/121.0.2277.106|Edg/120.0.2210.91|Edg/119.0.2151.72|Edg/117.0.2045.41|Edg/115.0.1901.203|Edg/115.0.1901.200|Edg/111.0.1661.41|Edg/103.0.1264.37|Edg/109.0.1518.49|Edg/103.0.1264.37|Edg/108.0.1462.42|Edg/110.0.1587.41|Edg/113.0.1774.3
+RAW:  Edg/100.0.1185.10|Edg/100.0.1185.29|Edg/101.0.1210.10|Edg/101.0.1210.32|Edg/101.0.1210.47|Edg/102.0.1245.30|Edg/102.0.1245.7|Edg/103.0.1264.13|Edg/103.0.1264.37|Edg/104.0.1293.14|Edg/104.0.1293.47|
+Edg/105.0.1343.25|Edg/105.0.1343.7|Edg/106.0.1370.15|Edg/106.0.1370.34|Edg/107.0.1418.35|Edg/107.0.1418.24|Edg/107.0.1418.26|Edg/107.0.1418.35|Edg/107.0.1418.8|Edg/108.0.1462.15|Edg/108.0.1462.42|
+Edg/109.0.1518.14|Edg/109.0.1518.49|Edg/110.0.1587.17|Edg/110.0.1587.41|Edg/111.0.1661.15|Edg/111.0.1661.4|Edg/111.0.1661.41|Edg/112.0.1722.11|Edg/112.0.1722.34|Edg/112.0.1722.68|Edg/113.0.1774.3|
+Edg/113.0.1774.9|Edg/114.0.1823.11|Edg/114.0.1823.37|Edg/115.0.1901.183|Edg/115.0.1901.200|Edg/115.0.1901.203|Edg/115.0.1901.7|Edg/116.0.1938.29|Edg/116.0.1938.54|Edg/117.0.2045.31|Edg/117.0.2045.41|
+Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0.2151.44|Edg/119.0.2151.72|Edg/120.0.1054.29|Edg/120.0.2210.61|Edg/120.0.2210.7|Edg/120.0.2210.91|Edg/121.0.0.0|
+Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
+Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
+Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
+Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|
+Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
+Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
+
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Edg/129.0|Edg/128.0.2739.67|Edg/103.0.1264.37|Edg/108.0.1462.42|Edg/110.0.1587.41Edg/129.0|Edg/128.0.2739.67|Edg/128.0.2739.63|Edg/128.0.2739.54|Edg/127.0.2651.98|Edg/127.0.2651.86|Edg/126.0.2592.87|Edg/126.0.2592.68|Edg/125.0.2535.92|Edg/125.0.2535.85|Edg/124.0.2478.67|Edg/123.0.2420.65|Edg/122.0.2365.92|Edg/122.0.2365.66|Edg/122.0.2365.52|Edg/121.0.2277.106|Edg/120.0.2210.91|Edg/119.0.2151.72|Edg/117.0.2045.41|Edg/115.0.1901.203|Edg/115.0.1901.200|Edg/111.0.1661.41|Edg/106.0.1370.34|Edg/103.0.1264.37|Edg/111.0.1661.41|Edg/109.0.1518.49|Edg/111.0.1661.4|Edg/109.0.1518.49|Edg/113.0.1774.3|Edg/108.0.1462.42|Edg/111.0.1661.41|Edg/103.0.1264.37|Edg/128.0.2739.67|Edg/128.0.2739.63|Edg/128.0.2739.54|Edg/127.0.2651.98|Edg/127.0.2651.86|Edg/126.0.2592.87|Edg/126.0.2592.68|Edg/125.0.2535.92|Edg/125.0.2535.85|Edg/124.0.2478.67|Edg/123.0.2420.65|Edg/122.0.2365.92|Edg/122.0.2365.66|Edg/122.0.2365.52|Edg/121.0.2277.106|Edg/120.0.2210.91|Edg/119.0.2151.72|Edg/117.0.2045.41|Edg/115.0.1901.203|Edg/115.0.1901.200|Edg/111.0.1661.41|Edg/103.0.1264.37|Edg/109.0.1518.49|Edg/103.0.1264.37|Edg/108.0.1462.42|Edg/110.0.1587.41|Edg/113.0.1774.3
+RewriteCond%{HTTP_USER_AGENT}"(Edg/100.0.1185.10|Edg/100.0.1185.29|Edg/101.0.1210.10|Edg/101.0.1210.32|Edg/101.0.1210.47|Edg/102.0.1245.30|Edg/102.0.1245.7|Edg/103.0.1264.13|Edg/103.0.1264.37|Edg/104.0.1293.14|Edg/104.0.1293.47|
+Edg/105.0.1343.25|Edg/105.0.1343.7|Edg/106.0.1370.15|Edg/106.0.1370.34|Edg/107.0.1418.35|Edg/107.0.1418.24|Edg/107.0.1418.26|Edg/107.0.1418.35|Edg/107.0.1418.8|Edg/108.0.1462.15|Edg/108.0.1462.42|
+Edg/109.0.1518.14|Edg/109.0.1518.49|Edg/110.0.1587.17|Edg/110.0.1587.41|Edg/111.0.1661.15|Edg/111.0.1661.4|Edg/111.0.1661.41|Edg/112.0.1722.11|Edg/112.0.1722.34|Edg/112.0.1722.68|Edg/113.0.1774.3|
+Edg/113.0.1774.9|Edg/114.0.1823.11|Edg/114.0.1823.37|Edg/115.0.1901.183|Edg/115.0.1901.200|Edg/115.0.1901.203|Edg/115.0.1901.7|Edg/116.0.1938.29|Edg/116.0.1938.54|Edg/117.0.2045.31|Edg/117.0.2045.41|
+Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0.2151.44|Edg/119.0.2151.72|Edg/120.0.1054.29|Edg/120.0.2210.61|Edg/120.0.2210.7|Edg/120.0.2210.91|Edg/121.0.0.0|
+Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
+Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
+Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
+Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|
+Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
+Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 **************
@@ -1749,14 +1870,25 @@ Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefo
 Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
 Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
 Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
+Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0
 
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
-Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|Firefox/62.0|Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/63.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|Firefox/67.0|Firefox/67.0.3|Firefox/68.0|Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|Firefox/71.0|Firefox/71.8|Firefox/71.9|Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|
-Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|Firefox/78.0.1|Firefox/78.0.2|Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|Firefox/85.0||Firefox/85.0.2|Firefox/86.0|Firefox/86.0.1Firefox/87.0||Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|Firefox/90.0.2|Firefox/91.0|Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|
-Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|Firefox/105.0Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|Firefox/110.0|Firefox/111.0|Firefox/111.0.1|Firefox/112.0|Firefox/112.0.1|Firefox/112.0.2|Firefox/113.0|
-Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|)"[NC]
+RewriteCond%{HTTP_USER_AGENT}"(Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
+Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|
+Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
+Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
+Firefox/62.0|Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/63.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|Firefox/67.0|Firefox/67.0.3|Firefox/68.0|
+Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|Firefox/71.0|Firefox/71.8|Firefox/71.9|Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|
+Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|Firefox/78.0.1|Firefox/78.0.2|Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|
+Firefox/85.0||Firefox/85.0.2|Firefox/86.0|Firefox/86.0.1Firefox/87.0||Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|Firefox/90.0.2|Firefox/91.0|
+Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|
+Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|
+Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|Firefox/105.0Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|
+Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|Firefox/110.0|Firefox/111.0|Firefox/111.0.1|Firefox/112.0|Firefox/112.0.1|Firefox/112.0.2|Firefox/113.0|
+Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
+Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
+Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 **************
@@ -1788,9 +1920,9 @@ Chrome/120.0.6099.129| Chrome/120.0.6099.939|Chrome/121.0.0.0|Chrome/121.0.0.0 6
 Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261.94|Chrome/123.0.2420.65|Chrome/123.0.6312.0|Chrome/123.0.6312.4|Chrome/123.0.6312.105|Chrome/124.0.0.0|Chrome/124.0.2478.67|
 Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367.118|Chrome/125.0.|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|
 Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
-Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71
-
-
+Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|
+Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107
+|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(Chrome/15.0.1901.200|Chrome/27.0.1453.94|Chrome/30.0.1599.66|Chrome/34.0.1847.114|Chrome/45.0.2454.94|Chrome/46.0.2490.80|Chrome/47.0.2283.102|Chrome/48.0.2564.97|Chrome/49.0.2623.75|Chrome/50.0.2661|Chrome/50.0.2661.102|Chrome/50.0.3232.292|
@@ -1819,7 +1951,8 @@ Chrome/120.0.6099.129| Chrome/120.0.6099.939|Chrome/121.0.0.0|Chrome/121.0.0.0 6
 Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261.94|Chrome/123.0.2420.65|Chrome/123.0.6312.0|Chrome/123.0.6312.4|Chrome/123.0.6312.105|Chrome/124.0.0.0|Chrome/124.0.2478.67|
 Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367.118|Chrome/125.0.|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|
 Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
-Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71)"[NC]
+Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71|
+Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 ...................................................................
@@ -1868,13 +2001,20 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 'Windows NT 5.01
 'Windows 95
 
+## Fake.safari()
+Safari/6534.49.4
+Safari/6535.10.3
+Safari/6531.6.6
+Safari/6534.6.1
+Safari/6534.21.5
+
 ##RAW FALSE:
 iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU iPhone OS 12_4_8 like Mac OS X|iPad; CPU iPad OS 16_7_7 like Mac OS X|iPad; CPU iPad OS 17_2_1 like Mac OS X|iPad; CPU iPad OS 10_3_4 like Mac OS X|X11; Linux x86_64|
-X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95
+X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95|Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU iPhone OS 12_4_8 like Mac OS X|iPad; CPU iPad OS 16_7_7 like Mac OS X|iPad; CPU iPad OS 17_2_1 like Mac OS X|iPad; CPU iPad OS 10_3_4 like Mac OS X|X11; Linux x86_64|
-X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95)"[NC]
+X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95|Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 
@@ -1883,4 +2023,4 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 ..................................................:
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 2401026
+Updated: 241110
