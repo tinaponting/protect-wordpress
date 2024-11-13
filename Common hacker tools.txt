@@ -1742,6 +1742,7 @@ Chrome/60.0.3112.107|
 Chrome/74.0.3729.169|
 Chrome/70.0.3538.77|
 Chrome/129.0.6668.71
+Firefox/48.0
 
 :::::::::::::::::::::::::::::::::
 ### TEST SCRIPT: ####  Use qhat you need! To block scrapers, false bots trafic.
@@ -1854,8 +1855,7 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 **************
 
 #Firefox RAW:
-Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|
-Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
+Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/48.0|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
 Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|
 Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
 Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
@@ -1874,7 +1874,7 @@ Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0
 
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
+RewriteCond%{HTTP_USER_AGENT}"(Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/48.0|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
 Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|
 Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
 Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
@@ -1888,7 +1888,8 @@ Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefo
 Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|Firefox/110.0|Firefox/111.0|Firefox/111.0.1|Firefox/112.0|Firefox/112.0.1|Firefox/112.0.2|Firefox/113.0|
 Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
 Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
-Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0)"[NC]
+Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
+Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 **************
@@ -2023,4 +2024,4 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 ..................................................:
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 241110
+Updated: 241113
