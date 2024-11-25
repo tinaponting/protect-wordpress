@@ -114,8 +114,9 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 Love ///  Kristina Sweden
 
-***UPDATED FILES AND FOLDERS: ***
+***UPDATED FILES AND FOLDERS: 
 
+* Uddated: 241125 perishablepress.com8g-firewall Updated,my version with Ai updated.
 * Uddated: 241117 perishablepress.com8g-firewall Updated, extended version updated.
 * Uddated: 241116 perishablepress.com8g-firewall Updated, I use this with Ai protection/scrapingChanges dataforsebot for the newest.
 * Updated: htacces1, A post were twice:(
