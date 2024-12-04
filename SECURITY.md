@@ -1,4 +1,5 @@
 # Security Policy
+# Suports wordpress
 
 ## Supported Versions
 
