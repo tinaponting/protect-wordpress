@@ -4007,11 +4007,13 @@ RewriteRule ^.* - [F,L]
 ---------------------------------------------------------------------------------------
 #Rate Limit:
 
-Images scrapers:
+# Images scrapers:
 
+<IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_URI} !^/images/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5" env=RATE_LIMIT
+</IfModule>
 
 # DOS/scrapers limit:
 
@@ -4031,9 +4033,18 @@ Header set Retry-After "5" env=RATE_LIMIT
 
 ## If you want them gone for a long time....
 
-<IfModule mod_rewrite.c>RewriteCond%{REQUEST_URI} !^/Post/
+<IfModule mod_rewrite.c>
+RewriteCond%{REQUEST_URI} !^/Post/
 RewriteRule ^(.*)$ - [E=RATE_LIMIT:1]
 Header set Retry-After "5550" env=RATE_LIMIT</ifModule>
+
+
+#Add IP Adress:
+<IfModule mod_ratelimit.c>
+SetEnvIf Remote_Addr ".*" RATE_LIMIT
+SetEnv rate-limit-interval "1800"                    # 1800 seconds = 30 minutes
+SetEnv rate-limit-threshold "1"                      # 1 request per interval
+</IfModule>
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
@@ -4050,7 +4061,6 @@ RewriteRule .* - [F,L]
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 #BLOCK Scumbags:
-
 # Start blocking on HTTP requests
 RewriteCond %{HTTP_REFERER} "^https?://(?:[^/]+\.)?******\.com" [NC,OR]
 RewriteCond %{HTTP_REFERER} "^https?://(?:[^/]+\.)?kambasoft\.com" [NC,OR]
@@ -4066,4 +4076,4 @@ RewriteRule ^(.*)$ http://domain.tld/feed
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 241101
+Updated: 241210
