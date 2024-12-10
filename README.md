@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: 
 
+* Uddated: 2411210 perishablepress.com8g-firewall Updated,my version with Ai updated.
 * Uddated: 241210 Udated, maybe list with better rate limit
 * Uddated: 241204 Udated, wp-content - I use this.
 * Uddated: 241127 htaccess1 updated:)
