@@ -114,8 +114,9 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 Love ///  Kristina Sweden
 
-***UPDATED FILES AND FOLDERS: 
+***UPDATED FILES AND FOLDERS: *******
 
+* Uddated: 241218 htaccess1 updated:)
 * Uddated: 2411210 perishablepress.com8g-firewall Updated,my version with Ai updated.
 * Uddated: 241210 Udated, maybe list with better rate limit
 * Uddated: 241204 Udated, wp-content - I use this.
