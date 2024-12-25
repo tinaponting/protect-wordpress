@@ -419,10 +419,10 @@ MultiLogin
 Headful
 Headless Client
 Splash
-selenium  :headless:chromium:
-selenium  :headful :chromium
-selenium  :headless:firefox 
-selenium  :headful :firefox 
+selenium:headless:chromium:
+selenium:headful :chromium
+selenium:headless:firefox 
+selenium:headful :firefox 
 playwright:headless:chromium
 playwright:headful :chromium
 playwright:headless:firefox
@@ -457,14 +457,15 @@ got
  Standby TypeScript 
  Bun
  Apache Nutch
+ ALittle Client
 
 RAW:
 Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3| OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|
 litserve|got
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got)[NC,OR]
-RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got).*[NC]RewriteRule .* - [F]</ifModule>
+<IfModule mod_rewrite.c>RewriteCond%{HTTP_USER_AGENT}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got|ALittle Client)[NC,OR]
+RewriteCond%{QUERY_STRING}(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got|ALittle Client)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3|OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bunlitserve|gotlitserve|got|ALittle Client).*[NC]RewriteRule .* - [F]</ifModule>
 
 ......................................................
 #NO AI but anyway::
@@ -587,10 +588,12 @@ RewriteRule "^.*$" - [F,L]</IfModule>
 ............................
 #### Other:
 
+#Update: data for seo: DataForSeoBot/1.0
+
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)[NC,OR]
-RewriteCond%{QUERY_STRING}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)\:[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}^.*(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client).*[NC]
+RewriteCond%{HTTP_USER_AGENT}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot/1.0|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)[NC,OR]
+RewriteCond%{QUERY_STRING}(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot/1.0|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client)\:[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^.*(CtrlFunc|w00tw00t|Apachebench|Ubuntu; Linux|DataForSeoBot/1.0|AhrefsBot|wp_is_mobile|LWP|MSIE|VelenPublicWebCrawler|dav.pm/v|libwww-perl|urllib|python-requests|python-httplib2|winhttp.winhttprequest|lwp-request|lwp-trivial|fasthttp|Go-http-client|Java|httplib|httpclient|Zend_Http_Client).*[NC]
 RewriteRule .* - [F]</ifModule>
 
 <IfModule mod_rewrite.c>
@@ -1412,6 +1415,7 @@ Firefox/129.0.2
 #FAKE FIREFOX:
 Firefox/3.6
 Firefox/4.0 
+Firefox/48.0
 Firefox/13.0
 Firefox/106.0
 Firefox/108.0
@@ -1742,7 +1746,7 @@ Chrome/60.0.3112.107|
 Chrome/74.0.3729.169|
 Chrome/70.0.3538.77|
 Chrome/129.0.6668.71
-Firefox/48.0
+Chrome/90.0.4430.85
 
 :::::::::::::::::::::::::::::::::
 ### TEST SCRIPT: ####  Use qhat you need! To block scrapers, false bots trafic.
@@ -1833,8 +1837,7 @@ Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0
 Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
 Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
 Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
-Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|
-Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
+Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
 Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
 
 
@@ -1847,8 +1850,7 @@ Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0
 Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
 Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
 Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
-Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|
-Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
+Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
 Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
 RewriteRule "^.*$" - [F,L]</IfModule>
 
@@ -1870,7 +1872,7 @@ Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefo
 Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
 Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
 Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
-Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0
+Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0|Firefox/48.0
 
 
 <IfModule mod_rewrite.c>
@@ -1889,7 +1891,7 @@ Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefo
 Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
 Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
 Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
-Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0)"[NC]
+Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0|Firefox/48.0)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 **************
@@ -1923,7 +1925,7 @@ Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367
 Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
 Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|
 Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107
-|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71
+|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71|Chrome/90.0.4430.85
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(Chrome/15.0.1901.200|Chrome/27.0.1453.94|Chrome/30.0.1599.66|Chrome/34.0.1847.114|Chrome/45.0.2454.94|Chrome/46.0.2490.80|Chrome/47.0.2283.102|Chrome/48.0.2564.97|Chrome/49.0.2623.75|Chrome/50.0.2661|Chrome/50.0.2661.102|Chrome/50.0.3232.292|
@@ -1953,7 +1955,7 @@ Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261
 Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367.118|Chrome/125.0.|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|
 Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
 Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71|
-Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107)"[NC]
+Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107|Chrome/90.0.4430.85)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 ...................................................................
@@ -2018,10 +2020,18 @@ RewriteCond%{HTTP_USER_AGENT}"(iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU 
 X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95|Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
+:::::::::::::::::::::::::::::::::::::::::::
 
+* New 241224:
+Node.js /Blocked by Perrsishpress - my own with AI:
+https://scrapeops.io/nodejs-web-scraping-playbook/nodejs-fake-user-agents/
+
+URL: https://github.com/particle-iot/node-simplecrawler
+User-agent: Node/simplecrawler
+Disallow: /
 
 ...................................................
 ..................................................:
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Updated: 241113
+Updated: 241225
