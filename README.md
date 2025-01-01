@@ -117,7 +117,8 @@ Love ///  Kristina Sweden
 ***UPDATED FILES AND FOLDERS: *******
 * Uddated: 2411225 perishablepress.com8g-firewall Updated,my version with Ai updated.
 .................................)
-- Updated: 2400102 - 2411225 
+ * Updated: 250101 qp-includes protect to the new folders and so on  
+* Updated: 240102 - 2411225 
 * Updated: 230306 - 231220
 * Updated: 230206 - 230505. 
 * Updated: 230202 - 230101.
