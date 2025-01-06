@@ -115,8 +115,10 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
+
+* Updated: 25006 updated: htaccess1, delated som code not needed year25:)
 * Uddated: 2411225 perishablepress.com8g-firewall Updated,my version with Ai updated.
- * Updated: 250101 qp-includes protect to the new folders and so on  
+* Updated: 250101 qp-includes protect to the new folders and so on  
 * Updated: 240102 - 2411225 
 * Updated: 230306 - 231220
 * Updated: 230206 - 230505. 
