@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: Noway allowed-Do not see
 * Updated: 25006 updated: w-includes, but still have smeissues with admin, working on  it:)  But works.
 * Updated: 25006 updated: htaccess1, delated som code not needed year 25:)
 * Uddated: 2411225 perishablepress.com8g-firewall Updated,my version with Ai updated.
