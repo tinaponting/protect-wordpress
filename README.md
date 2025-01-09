@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 25009 updated: htaccess1 - one error!:(
 * Updated: Noway allowed-Do not see
 * Updated: 25006 updated: w-includes, but still have smeissues with admin, working on  it:)  But works.
 * Updated: 25006 updated: htaccess1, delated som code not needed year 25:)
