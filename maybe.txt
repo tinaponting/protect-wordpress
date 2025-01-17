@@ -1,4 +1,4 @@
-Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own htaccess:)
+*## Some .htacces if needed, add them with notepad++ on your .htaccess1 or your own htaccess:)*##
 .....................................................................:)
 # Bots Using Fake User-Agents  : use wirh care! can block legitime visitors!
 
@@ -10,7 +10,7 @@ RewriteRule ^.* - [F,L]
 ........................................................................
 # Hide folder: Not visible Folder, place in a .htaccess in folder where you want it.
 
-IndexOptions +ShowForbidden
+IndexOptions -ShowForbidden
 
 OR:
 Options +FollowSymLinks -MultiViews -Indexes
@@ -1078,7 +1078,8 @@ ALTERNATIVE:
 RewriteCond% {REQUEST_FILENAME}\.php$
 
 ALTERNATIVE: 
-<IfModule mod_rewrite.c>RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]</IfModule>
+<IfModule mod_rewrite.c>RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]</IfModule>
 
 ALTERNATIVE: 
 RewriteCond% {REQUEST_FILENAME}\.php$
@@ -1187,7 +1188,7 @@ RewriteRule .* - [F]</ifModule>
 
 .......................................................................................
 ....................................................................................... 
-# If you are tired of those download everything:  
+### If you are tired of those download everything:  
 add this with in your content folder /Or uploads folder:
 
 # In uploads folders .htacces:
@@ -1241,11 +1242,6 @@ Require all denied
     Order Allow,Deny
     Deny from All
 </FilesMatch>
-
-# maybe this works?:
-
-RewriteCond%{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://1/.*
-RewriteRule .(gif|jpg|jpeg|jpe?g|bmp|png|tif|pdf|wav|wmv|wma|avi|mov|mp4|m4v|mp3|zip?)$ – [F]
 
 # Disallowing blank referrers will means blocking them from accessing these images:
 
@@ -2050,7 +2046,7 @@ RewriteRule .* - [F]
 
 ........................................................................................
 ........................................................................................
-BACKDOOR NO WAY:
+# BACKDOOR NO WAY:
 
 <FilesMatch “.+\.php$”/>Require all denied</Files>
 
@@ -2226,7 +2222,8 @@ RewriteRule .* - [F]</IfModule>
 # ALTERNATIVE:
 
 <IfModule mod_rewrite.c>
-RewriteEngine on RewriteCond%{HTTP_REFERER}^$RewriteRule ^ - [F,L]	
+RewriteEngine on RewriteCond%{HTTP_REFERER}^$
+RewriteRule ^ - [F,L]	
 </ifModule>
 		
 ........................................................................................
@@ -2437,7 +2434,7 @@ Options AddHandler cgi-script .php .js .css .html .txt .readme .cgi -ExecCGI
 
 #Alternative:
 AddHandler cgi-script .php .txt .css .min.css .js .min.js .html .xml .json .cgi Options -ExecCGI
-RemoveHandler .cgi .php .txt.php4 .php5 .phtml .pl .py .pyc .pyo .css .min.css .js .min.js .html .xml .json .htaccess .htaccess1 .htaccess2 
+RemoveHandler .cgi .php .txt.php4 .php5 .phtml .pl .py .pyc .pyo .css .min.css .js .min.js .html .xml .json .htaccess 
 ........................................................................................
 ........................................................................................
 # Deny Crawlers:
@@ -2888,6 +2885,12 @@ RewriteCond %{HTTP_REFERER} (.ru) [NC,OR]
 
 <IfModule mod_rewrite.c>RewriteCon %{HTTP_REFERER}^https?://[^/]+\.countryodehere/?[NC]RewriteRule ^.* - [F,L]</IfModule>
 
+"" ANOTHER WAY:  if tries: public_html/uploads:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{ENV:GEOIP_COUNTRY_CODE}!^(HK|CH|IN)$
+RewriteRule (wp-uploads|public_html).php$ - [F,L]
+</IfModule>
 ........................................................................................
 ........................................................................................
 # Redirect wp-login.php
@@ -3165,8 +3168,6 @@ From: https://perishablepress.com
 <IfModule mod_alias.c>RedirectMatch 403 favicon.ico</IfModule>
 
 From: https://perishablepress.com
-........................................................................................
-........................................................................................
 ........................................................................................
 ........................................................................................
 # Rules:
@@ -3723,33 +3724,59 @@ RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^ - [NC,F,L]
 </IfModule>
 
-# I USE THIS: (2400901)
+# I USE THIS: (2500117)
+#* Bytespider tries to scrape my content:(  No  thanks!
 
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
 RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [F]
 RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[F]
-RewriteCon%{HTTP_REFERER}amazonaws\.com [NC]      
+RewriteCon%{HTTP_REFERER}amazonaws\.com [NC]  
+RewriteCon%{HTTP_REFERER}aws.amazon\.com [NC]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
 RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR] 
 RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-southeast-1.compute.amazonaws.com [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazonbot/0.1"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazon-kendra"[NC,OR]  
+RewriteCond%{HTTP_USER_AGENT}"amazon-kendra"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR]   
 RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Silk"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"AMAZON-02"[NC,OR]  
 RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Lex"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC]
-RewriteCond%{REMOTE_ADDR}!^23\.20.*$ [NC]
-RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]RewriteRule ^(.*)$ - [F]</IfModule>
+RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"SurdotlyBot"[NC,OR]
+RewriteCond%{REMOTE_ADDR}!^3\.6.93.227)$ [NC,OR]      #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.21.98.184)$ [NC,OR      #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI  
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR]
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.)$ [NC,OR]     #Image stealer India
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.104)$ [NC,OR]  #Image hacker
+RewriteCond%{REMOTE_ADDR}!^34\.232.23.139)$ [NC,OR]   #SurdotlyBot
+RewriteCond%{REMOTE_ADDR}!^47.128)$ [NC,OR]           #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47.128.116.87)$ [NC,OR]    #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.42.31)$ [NC,OR]    #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.27.246)$ [NC,OR]   #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.25.)$ [NC,OR]      #Bytesspider
+RewriteCond%{REMOTE_ADDR}!^47\.128.54.92)$ [NC,OR]    #Bytesspider
+RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]RewriteRule ^(.*)$ - [F,L]</IfModule>
 
 .......................................................................................
 .......................................................................................
@@ -4073,7 +4100,15 @@ RewriteRule ^.* - [F,L]
 
 RewriteCond%{REMOTE_ADDR} ^123.123.123
 RewriteRule ^(.*)$ http://domain.tld/feed
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+#PROTECT FILES:  (Ends with php)
+
+ALT 1: RewriteRule ^.*\.php$ - [F,L]
+
+ALT 2: RedirectMatch 403 ^.*\.php$
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 241210
+Updated: 250117
