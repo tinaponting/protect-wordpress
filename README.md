@@ -116,10 +116,11 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250115 perishablepress.com8g-firewall + new Ai not wanted!
 * Updated: 250117 maybe.txt
-* Updated: 25014 Updated wp-admin
-* Updated: 25013 htaccess1
-* Updated: 25013 perishablepress.com8g-firewall + new Ai not wanted!
+* Updated: 250114 Updated wp-admin
+* Updated: 250113 htaccess1
+* Updated: 250113 perishablepress.com8g-firewall + new Ai not wanted!
 * Updated: 25009 updated: htaccess1 - one error!:(
 * Updated: Noway allowed-Do not see
 * Updated: 25006 updated: w-includes, but still have smeissues with admin, working on  it:)  But works.
