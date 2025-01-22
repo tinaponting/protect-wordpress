@@ -1072,7 +1072,7 @@ RewriteCond %{HTTP_REFERER} (-name.) [NC,OR]
 # Return 404 if original request is file.php
 
 Put it on your long list of: RewriteCond% list:
-RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$"RewriteRule .* - [L,R=404]
+RewriteCond% {THE_REQUEST} "^[^ ]*.*?\.php[? ].*$" RewriteRule .* - [L,R=404]
 
 ALTERNATIVE: 
 RewriteCond% {REQUEST_FILENAME}\.php$
@@ -2110,10 +2110,11 @@ RewriteEngine on RewriteRule ^folder/?$ - [F,L]
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
-RewriteCond %{REQUEST_FILENAME} !^.*\.jp?g [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.jpg [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.gif [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.css [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.html [NC]
@@ -2125,16 +2126,19 @@ RewriteRule . /index.php [L]</IfModule>
 # ALTERNATIVE:
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
-RewriteCond %{REQUEST_FILENAME} !^.*\.jp?g [NC]
-RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.jpg [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.gif [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.css [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.style.css [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.min.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.php [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.html [NC]
+RewriteRule . /index.php [L]
 </IfModule>
 
-# ALternative:
+####  ALternative:
 
 RewriteEngine On
 RewriteBase /
@@ -3730,8 +3734,8 @@ RewriteRule ^ - [NC,F,L]
 <IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
 RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [F]
 RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[F]
-RewriteCon%{HTTP_REFERER}amazonaws\.com [NC]  
-RewriteCon%{HTTP_REFERER}aws.amazon\.com [NC]
+RewriteCond%{HTTP_REFERER}amazonaws\.com [NC]  
+RewriteCond%{HTTP_REFERER}aws.amazon\.com [NC]
 RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
 RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
 RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
@@ -4111,4 +4115,4 @@ ALT 2: RedirectMatch 403 ^.*\.php$
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250117
+Updated: 250122
