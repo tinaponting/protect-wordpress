@@ -2129,9 +2129,7 @@ RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.jpg [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.gif [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.css [NC]
-RewriteCond %{REQUEST_FILENAME} !^.*\.style.css [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
-RewriteCond %{REQUEST_FILENAME} !^.*\.min.js [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.php [NC]
 RewriteCond %{REQUEST_FILENAME} !^.*\.html [NC]
@@ -4115,4 +4113,4 @@ ALT 2: RedirectMatch 403 ^.*\.php$
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250122
+Updated: 250124
