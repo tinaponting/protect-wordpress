@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+ Updated: 250207 htaccess1 -works well, checked with lynx:) 
 * Updated: 250213 Updated, wp-includes folder protection.
 * Updated: 250210 perishablepress.com8g-firewall Updated my own with Ai.
 * Updated: 250207 htaccess1 -all:) delated some doubles:)
