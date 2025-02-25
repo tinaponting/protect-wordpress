@@ -116,8 +116,9 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250225 perishablepress.com8g-firewall Latest Ai someAdjustment in firewall:)
 * Updated: 250218 perishablepress.com8g-firewall Updated:)
- *Updated: 250218 htaccess1 -works well, checked with lynx:) 
+* Updated: 250218 htaccess1 -works well, checked with lynx:) 
 * Updated: 250213 Updated, wp-includes folder protection.
 * Updated: 250210 perishablepress.com8g-firewall Updated my own with Ai.
 * Updated: 250207 htaccess1 -all:) delated some doubles:)
