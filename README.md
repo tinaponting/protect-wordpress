@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250307 perishablepress.com8g-firewall + my htaccess2+ new AI
 * Updated: 250306 perishablepress.com8g-firewall + my htaccess2+ new AI
 * Updated: 250304 htaccess1 -updated = Mre security:) 
 * Updated: 250225 perishablepress.com8g-firewall Latest Ai someAdjustment in firewall:)
@@ -140,7 +141,6 @@ Love ///  Kristina Sweden
 * Updated: Noway allowed-Do not see
 * Updated: 25006 updated: w-includes, but still have smeissues with admin, working on  it:)  But works.
 * Updated: 25006 updated: htaccess1, delated som code not needed year 25:)
-* Uddated: 2411225 perishablepress.com8g-firewall Updated,my version with Ai updated.
 * Updated: 250101 qp-includes protect to the new folders and so on  
 * Updated: 240102 - 2411225 
 * Updated: 230306 - 231220
@@ -149,7 +149,7 @@ Love ///  Kristina Sweden
 * Updated: 221225 - 221230.
 * Updated: 221225 - 221124.
 * Updated: 220915 - 221124.
-*  Updated: 200220 - 2021.
+* Updated: 200220 - 2021.
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
