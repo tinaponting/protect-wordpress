@@ -116,7 +116,8 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
-* Updated: 25023 perishablepress.com8g-firewall + my htaccess2 +  new  AI
+* Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  Delated GE
+* Updated: 250323 perishablepress.com8g-firewall + my htaccess2 +  new  AI
 * Updated: 250319 htaccess  - updated
 * Updated: 25019 htaccess1 -updated =  security:: Delated, wp.user/json - do not work:(
 * Updated: 250313 perishablepress.com8g-firewall + my htaccess2+  A new AI
