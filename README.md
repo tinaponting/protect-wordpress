@@ -116,6 +116,7 @@ Love ///  Kristina Sweden
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Ai- uppdated!
 * Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  Delated GE
 * Updated: 250323 perishablepress.com8g-firewall + my htaccess2 +  new  AI
 * Updated: 250319 htaccess  - updated
