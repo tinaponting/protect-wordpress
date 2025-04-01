@@ -116,6 +116,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250401 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Updated:)
 * Added: 250401 - LIST OF common browseers used/hackers, Tzt stealers.txt
 * Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Ai- uppdated!
 * Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  Delated GE
