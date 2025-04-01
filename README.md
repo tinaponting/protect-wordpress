@@ -112,10 +112,11 @@ https://wordpress.org/plugins/real-cookie-banner/
 AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 
-Love ///  Kristina Sweden
+Love ///  Kristina Sweden  :  
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Added: 250401 - LIST OF common browseers used/hackers, Tzt stealers.txt
 * Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Ai- uppdated!
 * Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  Delated GE
 * Updated: 250323 perishablepress.com8g-firewall + my htaccess2 +  new  AI
