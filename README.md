@@ -111,6 +111,8 @@ https://wordpress.org/plugins/real-cookie-banner/
 
 AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
+* * IF YOU WANT to change something: use: Notepad ++ -to your taste:)
+
 
 Love ///  Kristina Sweden  :  
 
