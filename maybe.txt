@@ -1197,7 +1197,7 @@ add this with in your content folder /Or uploads folder:
 RewriteEngine On
 RewriteCond% {HTTP:Origin}!^$|http(s)?://(www\.)?exempel.se\.(se|local)$ [NC]
 RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [NC,L]
-RewriteCond% {HTTP_REFERER}!.
+RewriteCond% {HTTP_REFERER} !.
 RewriteRule \.(png|xls|pdf|jpeg|jpg|gif|bmp|pdf|doc|xml|jpe?g|gif|tiff)$ - [F,NC,L]
 </IfModule>
  
@@ -1616,16 +1616,6 @@ Header append Vary Accept env=REDIRECT_accept
 AddType image/webp .webp
 
 
-# Alternative:
-<IfModule pagespeed_module>
-ModPagespeed on
-ModPagespeedEnableFilters rewrite_css,combine_css
-ModPagespeedEnableFilters rewrite_js,combine_js
-ModPagespeedEnableFilters recompress_images
-ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
-ModPagespeedEnableFilters collapse_whitespace,remove_comments
-</IfModule>
-
 # BROTOLI COMPRESSION:  Better than GZIP, but not on every webhotell.
 
 <IfModule mod_brotli.c>
@@ -1657,6 +1647,7 @@ AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
 AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
 AddOutputFilterByType DEFLATE font/ttf font/otf font/opentype font/woff font/woff2
 </IfModule>
+
 </IfModule>
 <IfModule mod_rewrite.c>
 RewriteRule "\.(gz|br)$" "-" [E=no-gzip:1,E=no-brotli:1]
@@ -1722,7 +1713,6 @@ AddOutputFilterByType DEFLATE application/javascript text/css
 </IfModule>
 
 #  COMBINE CSS, COMPRESS IMAGES, REMOVE HTML WHITE SPACE AND COMMENTS
-
 <IfModule pagespeed_module>
 ModPagespeed on
 ModPagespeedEnableFilters rewrite_css,combine_css
@@ -3302,6 +3292,7 @@ RewriteRule ^(.*)$ - [R=403,L]
 
 # IF needed avoid https requests:  If you are under attack! (Use only temporarily, may stop upgrading checking) 
 In wp-config php file:
+
 define('DISABLE_WP_CRON',true);
 
 # CRON: Time out:
@@ -4120,6 +4111,10 @@ RewriteCond %{REQUEST_URI} \.(png!jpg)$
 RewriteCond %{HTTP_COOKIE} !is_logged_in=true [NC]
 RewriteRule ^([^/]+)/?$ /index.php?con=$1 [L,QSA]
 ---------------------------------------------------------------------------------------
+#Hide includes
+
+RewriteRule ^(wp-includes)\/.*$ ./ [NC,R=301,L]
+RewriteRule ^(wp-includes|subdirectory-name-here)\/.*$ ./ [NC,R=301,L]
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250315
+Updated: 250412
