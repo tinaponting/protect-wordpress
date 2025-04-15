@@ -2,6 +2,5 @@ require_once(ABSPATH.'wp-settings.php');
 define('DISALLOW_FILE_EDIT',true); 
 define('DISALLOW_FILE_MODS',true);
 define('DISABLE_WP_CRON',true);
-define('display_errors',false);
 ob_start();?>
 ?>
