@@ -42,6 +42,14 @@ BlackArch  (Linux)
 Tails
 Tor2Web
 TOR browser
+tor
+TOR Exit Nodes
+tor2web
+ssh
+ssh-tunnel
+ike
+ipsec-esp
+http-proxy
 
 # OTHERS:
 Ghost Browser
@@ -75,44 +83,43 @@ OnionLinks
 ....................
 RAW:
 Ahmia|Torch|Haystack|OnionLinks|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|GreyNoise|ZoomEye|Censys|Hunter|Shodan|MSIE|UCBrowser|Nyxt|SimpleBrowser|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|
-UR BrowserWaterfox|Headful|Headless Client|Splash|selenium:headless:chromium:selenium:headful:chromium|selenium:headless:firefox| selenium:headful:firefox|playwright:headless:chromium|
-playwright:headful:chromium|playwright:headless:firefox|playwright:headful:firefox |PlaywrightPython|GOT|Selenium Stealth|Splash Lua|HtmlUnit Java|Chromedp/Golang|Cypress/JavaScript|Nimble Browser|
-Cypresschromedp|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|Network Security Toolkit|BlackArch|Tails|Tor2Web|TOR browser
-
-# SCRIPTS TO USE:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
+UR Browser|Waterfox|Headful|Headless Client|Splash|selenium:headless:|chromium:|selenium:|headful:chromium|selenium:headless:firefox|selenium:|headful:firefox|playwright:headless:chromium|
+playwright:headful:chromium|playwright:headless:firefox|playwright:headful:firefox|PlaywrightPython|GOT|.NET|Selenium Stealth|Splash Lua|HtmlUnit Java|Chromedp/Golang|Cypress/JavaScript|Nimble Browser|
+Cypresschromedp|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|Network Security Toolkit|BlackArch|Tails|Tor2Web|TOR browser|tor|TOR Exit Nodes|tor2web|ssh|ssh-tunnel|ike|ipsec-esp|http-proxy
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
 ##NON SORTED:
- Greenbone CE 22.04.14
- data-requests
- OpenVAS-VT 9.0.3
- OpenVASVT
- OPENVASVT::SOAP  
- OpenVAS 
- X11, U; OpenVAS-VT 9.0.3  
- Python-urllib/3.9
- TypeScript
- Empty TypeScript
- Standby TypeScript 
- Bun
- Apache Nutch
- ALittle Client
- litserve
- got
+Greenbone CE 22.04.14
+data-requests
+OpenVAS-VT 9.0.3
+OpenVASVT
+OPENVASVT::SOAP  
+OpenVAS 
+X11, U; OpenVAS-VT 9.0.3  
+Python-urllib/3.9
+TypeScript
+Empty TypeScript
+Standby TypeScript 
+Bun
+Apache Nutch
+ALittle Client
+litserve
 
-.................................
+TLS Fingerprinting
+Request Header Fingerprint
+JavaScript fingerprint
+
+React 
+Angular
+Vue.js
+Graphql
+Zig
+Knoppix x64
+
 #RAW:
 Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3| OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|
-litserve|got
-
-# SCRIPTS TO USE:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
+litserveReact| Angular|Vue.js|Graphql|Zig|Knoppix x64|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -214,7 +221,8 @@ Web Scraper
 Image Scraper
 Google Search Data Scraper
 RAG
-Scraper - Content Crawler
+Scraper 
+Content Crawler
 
 #TEST if....
 Playwright Test 
@@ -222,19 +230,21 @@ Playwright Test
 #HTML SCRAPING:
 HTML Scraper
 
-...................................
-#RAW:
-TypeScript|Empty TypeScript|Standby TypeScript|ASM|C#|C++ |Pip3|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Google Search Data Scraper|RAG|Scraper - Content Crawler|
-CreepJS| SeleniumBase|PowerShell|Cloudscraper|R Selenium|Imperva|Undetected ChromeDriver Selenium Stealth|Hrequests|Geziyor|Roach PHP|Playwright Test| HTML Scraper|
+#### RAW:
+TypeScript|Empty TypeScript|Standby TypeScript|ASM|C#|C++ |Pip3|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Google Search Data Scraper|RAG|Scraper|Content Crawler|
+CreepJS| SeleniumBase|PowerShell|Cloudscraper|R Selenium|Imperva|Undetected ChromeDriver Selenium Stealth|Hrequests|Geziyor|Roach PHP|Playwright Test|HTML Scraper|
 ChromeDriver|Curl_cffi|Botright|Scrapy Splash|Superagent|Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch| OkHttp|AutoScraper|Httpx|Urllib Headers|Curl Impersonate|
-Dart|ChromeDriver|Python Lxml| Panther PHP|Goutte PHP|PyppeteerSplash|TypeScript|Botasaurus|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|
+Dart|ChromeDriver|Python LxmlPanther PHP|Goutte PHP|PyppeteerSplash|TypeScript|Botasaurus|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|
 cURL|Rust|R|Golang Scraper|Go Web Scraping|Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohttp|got-scraping|
-Webscrape AIRaw HTML Scraper|Proxies/API|VPN/proxy|RESTful API|webscraper.py|scraper.py|webscraping-ai-ruby|webscraping-ai-php|webscraping-ai-python|Scrapegraph-ai|Node.js
+Webscrape AI|Raw HTML Scraper|Proxies/API|VPN/proxy|RESTful API|webscraper.py|scraper.py|webscraping-ai-ruby|webscraping-ai-php|webscraping-ai-python|Scrapegraph-ai|Node.js
 
-# USE:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#HELL NO BOTS  *RAW LIST:
+2ip bot|2ip.ru|80legs|404checker|ALittle Client|Amazonbot|amazonbot|AhrefsBot|AhrefsSiteAudit|Apachebench|apache-bow-scanners|apache-scanners|BW/1.3|BW/1.2|BLEXBot/1.0|Barkrowler|CensysInspect|curl|dotbot|DataForSeoBot|DomainStatsBot|Extreme Picture Finder| Flamingo_SearchEngine|Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping||Go-http-client|Go-http-client/1.1|Go-http-client/2.0|
+HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httplib| Fetch|node-fetch|Favicon Fetcher|fetchurl|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libcurl|MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler|Nmap|mass-scan| OpenVAS|UnmaskParasites| 
+Python||Pyth|p|PyQ|python|python-http|python-requests|PythonRequests|Python-urllib|python aiohttp|python-httpx|Prometheus|Probely|PS_Daily|php|php://input perl|python-async|PycURL|Python-urllib||phpCrawler|PHP Meterpreter|Rogerbot|Rome Client| SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|SF| SSL/TLS Scan|SSL Scanner|tls-scan|scan|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|
+TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|TikTokSpider|TestURI|test|WPScan|WEB-Scan|woorank|WPScan|WebImageCollector|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|webshell|Web shell  Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client|HTML/Web Media Scraper|XMLFeedSpider|CSVFeedSpider|SiteMapSpider|html.parser
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -400,26 +410,18 @@ Arch Linux
 ....................................
 ##RAW:
 RAW 1:
-
 Gobuster|Dirsearch|FeroxBuster|Masscan|Metaspoilt|Nessus|Nexpose|Nessus|nmap|Arch Linux|Metaspoilt|Kali Linux|Parrot Security OS|BlackArch Linux|
-BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin||SSL Scanner|WPXStrike|hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell
-
-
-#RAW 2:
+BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin||SSL Scanner|WPXStrike|hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|
 4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
 hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|kurl|Laminas_Http_Client|libsoup|lua-resty-http|
 mozillacompatible|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|RxnetHttp|scalaj-http|Stilo OMHTTP|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam
 
-#RAW 3:
+#RAW 2:
 WP-URLDetails|X11; Fedora|Photon OS|Incogniton|Dataskrapa|Dolphin|d3coder|Site Spider, Mark II|Cache killer|Open port check tool|Proxy SwitchyOmega|User-Agent Switcher|Undetectable|GoLogin|
 MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|HackBar|Wappalyzer|Site Spider, Mark II|Cache killer|Open port check tool|Request make|Proxy SwitchyOmega|iMacros for chrome|
 Note anywhere|d3coder|Tamper Data|Data Scraper|EditThisCookie|User-Agent Switcher and Manager|Invicti|WebInspect|Netsparker|Intruder|LiveAction|WebInspect|Zenmap|Burp Suite|Crt.sh|searchcode|
 GreyNoise|ZoomEye|Hunter|Censys|Node.js|Acunetix|DIRB|X11|Metasploitable 2|exiftool|Metasploit|meterpreter| Java's HttpUrlConnection|John the Ripper|Hashcat|/wp-json/oembed/1.0/proxy - SSRF|php shell
 
-# USE:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -495,20 +497,12 @@ Windows NT 6.1; Trident/4.0
 Windows NT 10.0|Win64
 Windows; U|Windows NT
 
-.......................................
-
 #RAW:
 Android; Android|IE|Windows|Cypress|Cyberfox|chrome|py|compatible|MSIE|Windows NT|compatible; MSIE|compatible; MSIE 6.0|Gecko/20091102|Gecko/20100101|Gecko/20130401|GET /feed/" 200 " " "rss-parser"|GET /feed/" 200 " " "Symfony HttpClient (Curl)| 
 GNU/Linux x64|gocolly|colly|Gecko/geckotrail Firefox/firefoxversion|Headless|HeadlessChrome|HeadlessCrome|Linux|Headless Chromium|Firefox Headless|Headless|Linux|Headless|Scan|Headless|Python|Headful|Linux|Headful|Python|Headless|EdgeLinux|Android|
-Linux;|Android 7.0Linux; U; LinuxLinux;u;Android 4.2.2;zh-cn;Linux; U; Linux x86_64  X11; Linux x86_64  Linux; U;Android Mozilla/4.0Mozlila/5.0MSIE|NT|MSIE 8.0|compatible; MSIE|OpenWave| 
+Linux;|Android 7.0Linux; U; LinuxLinux;u;Android 4.2.2;zh-cn;Linux; U; Linux x86_64  X11; Linux x86_64|Linux; U;Android Mozilla/4.0Mozlila/5.0MSIE|NT|MSIE 8.0|compatible; MSIE|OpenWave| 
 Symfony HttpClient|Curl|SimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS Webkit|RV|Trident/4.0|TrileFejs|X11|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|
 WOW64|rv:48.0|Viewer/|WhatWeb|Wappalyzer Scan|WordPress Security Scan|Windows|NT 5.0|Windows|NT 6.1|Windows; U; Windows NT|Windows NT 6.1; Trident/4.0|Windows NT 10.0|Win64|Windows; U|Windows NT
-
-
-# SCRIPT TO USE:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -610,7 +604,6 @@ RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-
 ## New not WANTED - ??:
 
 Node.js /Blocked by Perrsishpress - my own with AI:
@@ -628,9 +621,16 @@ How to Use GoSpider for Web Crawling
 How to Use Pyspider for Web Crawling?
 
 https://www.zenrows.com/blog/stormcrawler
-StormCrawler 
+StormCrawler
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+###  SCRIPTS TO USE:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
+RewriteRule (.*) - [F,L]
+</IfModule> 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
 
-##  Updated: 250402   ##
+##  Updated: 250428   ##
