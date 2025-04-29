@@ -118,6 +118,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250428 htaccess, htaccess1, perishablepress.com8g-firewall + my htaccess2 AI blocked 
 * Updated: 250427 htaccess1 - Better security:)
 * Updated: 250425 htaccess -core htaccess
 * Updated: 250420 htaccess1 + perishablepress.com8g-firewall + Latest Ai
