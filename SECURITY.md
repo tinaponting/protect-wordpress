@@ -7,7 +7,8 @@ Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
 | Version | Supported          |
-| ------- | ------------------ |
+| ------- | ------------------
+| 8.3.x   | :apache php: |
 | 8.1.x   | :apache php:       |
 | 5.1.x   | :white_check_mark: |
 | 5.0.x   | :x:                |
