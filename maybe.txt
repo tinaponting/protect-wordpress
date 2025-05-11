@@ -2413,11 +2413,10 @@ Deny from all
 
 ........................................................................................
 ........................................................................................
-# CGI SCRIPT: 
+#### CGI SCRIPT: 
 (Then, upload the .htaccess file to the directory in which you want to disable CGI script execution,)
 
 # Remove: CGI:
-
 Options AddHandler cgi-script .php .pl .py .jsp .asp .htm .html .txt .shtml .sh .cgi -ExecCGI
 
 # PHP - (CSS/JS): 
@@ -3392,7 +3391,7 @@ define(‘FTP_SSL’, true);
 define(‘FS_METHOD’, ‘ssh2’);
 
 # I Controlling Script Concatenation and Minification:
-define( 'CONCATENATE_SCRIPTS', true );
+define('CONCATENATE_SCRIPTS', true );
 define('COMPRESS_SCRIPTS', true); 
 define('COMPRESS_CSS', true); 
 define('ENFORCE_GZIP', true);      //forces gzip for compression instead of deflate
@@ -3521,7 +3520,6 @@ RewriteCond %{HTTP_USER_AGENT}"=Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/2
 RewriteRule .* - [R=410,L]
  
 ........................................................................................
-
 # Wget: All bots:
 
 <IfModule mod_setenvif.c>
@@ -3568,11 +3566,11 @@ php 404.php https://www.exemple.se
 
 //ALTENATIVE: 404.php https://www.exemple.se
 	
-js 404.php https://exemple.se	
-js 404.php https://www.exemple.se
+js 404.js https://exemple.se	
+js 404.js https://www.exemple.se
 
-css 404.php https://exemple.se	
-css 404.php https://www.exemple.se
+css 404.css https://exemple.se	
+min.css 404.css https://www.exemple.se
 
 BBQ PRO:
 referrer=https:// 
@@ -3753,7 +3751,6 @@ RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"SurdotlyBot"[NC,OR]
 RewriteCond%{REMOTE_ADDR}!^3\.6.93.227)$ [NC,OR]      #ClaudeBot AI 
 RewriteCond%{REMOTE_ADDR}!^3\.21.98.184)$ [NC,OR      #ClaudeBot AI 
 RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI  
@@ -3893,7 +3890,6 @@ Try and see if it works:)
 
 .......................................................................................
 .......................................................................................
-
 #Binance  HELL:
 
 RewriteCond%{HTTP_USER_AGENT}(Mozilla/5.0(Linux; Android 10;JNY-LX1 Build/HUAWEIJNY-L21;wv)AppleWebKit/537.36(KHTML,like Gecko)Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BNC/1.7.0 (Android 1.39.4))[NC] 
@@ -4115,6 +4111,20 @@ RewriteRule ^([^/]+)/?$ /index.php?con=$1 [L,QSA]
 
 RewriteRule ^(wp-includes)\/.*$ ./ [NC,R=301,L]
 RewriteRule ^(wp-includes|subdirectory-name-here)\/.*$ ./ [NC,R=301,L]
+
+###
+* Your site's wp-includes/ directory is the most important one to block. Find the .htaccess file there and insert:
+
+RewriteRule ^(wp-includes)\/.*$ ./ [NC,R=301,L]
+
+If there are or will be subdirectories of wp-includes/, insert the following code for each one in the same .htaccess configuration file:
+
+RewriteRule ^(wp-includes|subdirectory-name-here)\/.*$ ./ [NC,R=301,L]
+
+W* wp-content:
+RewriteRule ^/?wp-content/.+?\.php / [NC,L,R=302]
+
+
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250412
+Updated: 250512
