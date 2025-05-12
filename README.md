@@ -118,6 +118,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250512 perishablepress.com8g-firewall with Latest Ai
 * Updated: 250511 htaccess updated.
 * Updated: 250420 perishablepress.com8g-firewall with Latest Ai
 * Updated: 250430 Noway allowed-Do not see - Better srcurity and noway you see!
