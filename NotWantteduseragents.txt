@@ -66,6 +66,60 @@ chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|AliyunSecBot/Nutch-1.2
 
 ................................................
 ::::::::::::::::::::::::::::::::::::::::::::::::
+CN: Domains:  (if needed to block)
+
+.ac.cn
+.ac.cn
+.admin.cn
+.ah.cn
+.bj.cn
+.bj.cn
+.cn
+.com.cn
+.cq.cn
+.fj.cn
+.gd.cn
+.gs.cn
+.gx.cn
+.gz.cn
+.ha.cn
+.hb.cn
+.he.cn
+.he.cn
+.hi.cn
+.hk.cn
+.hl.cn
+.hl.cn
+.hn.cn
+.jl.cn
+.js.cn
+.js.cn
+.js.cn
+.jx.cn
+.ln.cn
+.mo.cn
+.net.cn
+.nm.cn
+.nx.cn
+.org.cn
+.org.cn
+.qh.cn
+.sc.cn
+.sd.cn
+.sh.cn
+.sh.cn
+.sn.cn
+.sx.cn
+.tj.cn
+.tw.cn
+.xj.cn
+.yn.cn
+.zj.cn
+.zj.cn
+
+
+................................................
+::::::::::::::::::::::::::::::::::::::::::::::::
 #  I USE:  (/.htaccess: )
 
 <IfModule mod_rewrite.c>
@@ -87,4 +141,4 @@ Symfony HttpClient (Curl)
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250516
+Updated: 250518
