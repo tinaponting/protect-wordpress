@@ -29,7 +29,8 @@ Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client
 *#Use  one of of my scripts -, if you not want them pooking around!   ###'
 # OR THIS:
 
-RewriteCond%{HTTP_USER_AGENT}"(PLACE ITHERE )"[NC]
+</IfModule>
+RewriteCond%{HTTP_USER_AGENT}"(PLACE IT HERE )"[NC]
 RewriteRule "^.*$" - [F,L]
 </IfModule>
 
