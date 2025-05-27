@@ -118,8 +118,8 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
-* Updated: 25025 wp-content, more speed.
-* Updated: 25025 wp-includes, more speed.
+* Updated: 25027 wp-content, more speed.
+* Updated: 25027 wp-includes ? wp-admin, more securtity.
 * Updated: 25025 htaccess1 - More Speed and security)
 * Updated: 250525 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 * Updated: 25018 wp-includes, more alternatives to use.
