@@ -1,10 +1,9 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::
-# HEADLESS Browsers:
-#Other heads:
+# EADLESS Browsers:
 Headful
 Headless Client
 Splash
-selenium:headless:chromium:
+selenium:headless:chromium
 selenium:headful :chromium
 selenium:headless:firefox 
 selenium:headful :firefox 
@@ -13,7 +12,7 @@ playwright:headful :chromium
 playwright:headless:firefox
 playwright:headful :firefox 
 
-# Top Headless Browsers:
+# MOST USED HEADLESS BROWSERS:
 PlaywrightPython 	
 Selenium Stealth
 Splash	Lua 
@@ -24,7 +23,7 @@ Nimble Browser
 Cypress
 chromedp
 
-# OS:
+#OS:
 Parrot OS
 BackBox
 Dracos Linux
@@ -34,24 +33,25 @@ FreeBSD
 OpenBSD
 Solaris
 IRIX
-Samurai Web Testing Framework  (SamuraiWTF)
-Network Security Toolkit (NST)
-BlackArch  (Linux)
+Samurai Web Testing Framework  
+SamuraiWTF
+Network Security Toolkit 
+NST
+BlackArch 
 
-# TOR:
+#TOR:
 Tails
 Tor2Web
 TOR browser
 tor
 TOR Exit Nodes
-tor2web
 ssh
 ssh-tunnel
 ike
 ipsec-esp
 http-proxy
 
-# OTHERS:
+#OTHERS (HACKERS DELIGHT:
 Ghost Browser
 Nstbrowser
 Crt.sh
@@ -61,31 +61,27 @@ GreyNoise
 ZoomEye
 Censys
 Hunter
-Shodan
 MSIE
-UCBrowser
 Nyxt
 SimpleBrowser
-Maxthon
 GNOME Web
 Basilisk
 Flow browser
 I2P
 Windows NT
+UCBrowser
 UR Browser
-Waterfox
+Utopia
 
 #DARK WEB: (use by hackers):
 Ahmia
 Torch
 Haystack
 OnionLinks
-....................
-RAW:
-Ahmia|Torch|Haystack|OnionLinks|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|GreyNoise|ZoomEye|Censys|Hunter|Shodan|MSIE|UCBrowser|Nyxt|SimpleBrowser|Maxthon|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|
-UR Browser|Waterfox|Headful|Headless Client|Splash|selenium:headless:|chromium:|selenium:|headful:chromium|selenium:headless:firefox|selenium:|headful:firefox|playwright:headless:chromium|
-playwright:headful:chromium|playwright:headless:firefox|playwright:headful:firefox|PlaywrightPython|GOT|.NET|Selenium Stealth|Splash Lua|HtmlUnit Java|Chromedp/Golang|Cypress/JavaScript|Nimble Browser|
-Cypresschromedp|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|Network Security Toolkit|BlackArch|Tails|Tor2Web|TOR browser|tor|TOR Exit Nodes|tor2web|ssh|ssh-tunnel|ike|ipsec-esp|http-proxy
+............
+RAW ABOVE:
+
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -116,10 +112,22 @@ Vue.js
 Graphql
 Zig
 Knoppix x64
+retire.js
 
-#RAW:
-Greenbone CE 22.04.14|data-requests|OpenVAS-VT 9.0.3| OpenVASVT|OPENVASVT::SOAP|OpenVAS|X11, U; OpenVAS-VT 9.0.3|Python-urllib/3.9|TypeScript|Empty TypeScript|Standby TypeScript|Bun|
-litserveReact| Angular|Vue.js|Graphql|Zig|Knoppix x64|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint
+.............
+#RAW (ABOVE):
+
+Ahmia|BackBox|Basilisk|BlackArch|
+CAINE|Censys|chromedp|Chromedp /Golang|Crt.sh|Cypress|Cypress /JavaScript|DemonLinux|Dracos Linux|Flow browser|FreeBSD|Ghost Browser|GNOME Web|GreyNoise|
+Haystack|Headful|Headless Client|HtmlUnit Java|http-proxy|Hunter|
+I2P|ike|ipsec-esp|IRIX|
+MSIE|Network Security Toolkit| NST|Nimble Browser|Nstbrowser|Nyxt|
+OnionLinks|OpenBSD|
+Parrot OS|PlaywrightPython|playwright:headful :chromium|playwright:headful :firefox|playwright:headless:chromium|playwright:headless:firefox|
+Samurai Web Testing Framework| SamuraiWTF|searchcode.com|Selenium Stealth|
+selenium:headful :chromium|selenium:headful :firefox|selenium:headless:chromium|selenium:headless:firefox|Shodan|SimpleBrowser|Solaris|Splash|Splash Lua|ssh|ssh-tunnel|
+Tails|tor|TOR browser|TOR Exit Nodes|Tor2Web|Torch|
+UCBrowser|UR Browser|Utopia|Windows NT|ZoomEye
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -136,14 +144,13 @@ SeleniumBase
 PowerShell
 Cloudscraper
 R Selenium
-Imperva (Incapsula)
+Imperva 
+Incapsula
 Undetected ChromeDriver 
 Selenium Stealth
 Hrequests
 Geziyor
 Roach PHP
-
-ChromeDriver
 Curl_cffi
 Botright
 Scrapy Splash
@@ -159,6 +166,7 @@ OkHttp
 AutoScraper
 Httpx
 Urllib Headers
+Curl
 Curl Impersonate
 Dart
 ChromeDriver
@@ -167,15 +175,12 @@ Panther PHP
 Goutte PHP
 Pyppeteer
 Splash 
-TypeScript
-Botasaurus
 Cheerio
 Metasploit
 Botasaurus
 BBScan
 Fetch API
 Zig/Javascript
-
 node js
 Ruby
 cURL
@@ -200,7 +205,6 @@ got-scraping
 Webscrape AI
 Raw HTML Scraper
 Proxies/API
-VPN/proxy
 RESTful API
 
 #PYTHON scrapers:
@@ -223,32 +227,55 @@ Google Search Data Scraper
 RAG
 Scraper 
 Content Crawler
+Axios Proxy 
+Curl Proxy
+Python Requests Proxy
+Data Scraper
+Proxyscrape
+Java Web Scraper
+Scraper /
+JS Web Scraper
+Python Curl
+Instant Data Scraper
 
 #TEST if....
 Playwright Test 
+test.php
 
 #HTML SCRAPING:
 HTML Scraper
+..................
 
-#### RAW:
-TypeScript|Empty TypeScript|Standby TypeScript|ASM|C#|C++ |Pip3|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Google Search Data Scraper|RAG|Scraper|Content Crawler|
-CreepJS| SeleniumBase|PowerShell|Cloudscraper|R Selenium|Imperva|Undetected ChromeDriver Selenium Stealth|Hrequests|Geziyor|Roach PHP|Playwright Test|HTML Scraper|
-ChromeDriver|Curl_cffi|Botright|Scrapy Splash|Superagent|Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch| OkHttp|AutoScraper|Httpx|Urllib Headers|Curl Impersonate|
-Dart|ChromeDriver|Python LxmlPanther PHP|Goutte PHP|PyppeteerSplash|TypeScript|Botasaurus|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|
-cURL|Rust|R|Golang Scraper|Go Web Scraping|Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|aiohttp|got-scraping|
-Webscrape AI|Raw HTML Scraper|Proxies/API|VPN/proxy|RESTful API|webscraper.py|scraper.py|webscraping-ai-ruby|webscraping-ai-php|webscraping-ai-python|Scrapegraph-ai|Node.js
+#RAW (ABOVE):
+
+aiohttp|ASM|AutoScraper|Axios Proxy|
+BBScan|Boost.Asio|Botasaurus|Botright|
+Cheerio|ChromeDriver|Cloudscraper|Content Crawler|cpp-httplib|CreepJS|cURL|curl|Curl Impersonate|Curl Proxy|Curlpp|Curl_cffi|C#|C++|
+Dart|Data Scraper|Empty TypeScript|Fetch|Fetch API|
+Geziyor|Go Web Scraping|Golang Scraper|Google Search Data Scraper|got-scraping|Goutte PHP|
+Haskell|Hrequests|HTML Scraper|Httpx|
+Image Scraper|Imperva| Instant Data ScraperIncapsula|
+Java Web Scraper|JS Web Scraper|Jsoup|
+libcurl|MechanicalSoup|Metasploit|Node Fetch|node js|Node.js|Nodriver||
+OkHttp|okhttp|Osmosis|
+Panther PHP|Pip3|Playwright Test|Poco|PowerShell|Proxies/API|Proxy Scraper|Proxyscrape|Puppeteer|Pyppeteer|Python Curl|Python Lxml|Python Requests Proxy|
+R|R Selenium|RAG|Raw HTML Scraper|Request-Promise-Native|RESTful API|Roach PHP|Ruby|Rust|
+Scrapegraph-ai|Scraper|Scraper Api|Scraper /scraper.py|Scrapy Splash|
+Selenium|Selenium Stealth|SeleniumBase|SplashStandby TypeScript|Superagent||
+test.php|TypeScript|Undetected ChromeDriver|Unirest|Urllib Headers|
+Watir|Web Scraper|Webscrape AI|webscraper.py|webscraping-ai-php|webscraping-ai-python|webscraping-ai-ruby|Zig/Javascript
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-.............................................................
-#HELL NO BOTS  *RAW LIST:
-2ip bot|2ip.ru|80legs|404checker|ALittle Client|Amazonbot|amazonbot|AhrefsBot|AhrefsSiteAudit|Apachebench|apache-bow-scanners|apache-scanners|BW/1.3|BW/1.2|BLEXBot/1.0|Barkrowler|CensysInspect|curl|dotbot|DataForSeoBot|DomainStatsBot|Extreme Picture Finder| Flamingo_SearchEngine|Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping||Go-http-client|Go-http-client/1.1|Go-http-client/2.0|
-HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httplib| Fetch|node-fetch|Favicon Fetcher|fetchurl|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libcurl|MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler|Nmap|mass-scan| OpenVAS|UnmaskParasites| 
-Python||Pyth|p|PyQ|python|python-http|python-requests|PythonRequests|Python-urllib|python aiohttp|python-httpx|Prometheus|Probely|PS_Daily|php|php://input perl|python-async|PycURL|Python-urllib||phpCrawler|PHP Meterpreter|Rogerbot|Rome Client| SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming Frog SEO Spider|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|SF| SSL/TLS Scan|SSL Scanner|tls-scan|scan|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|
-TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|TikTokSpider|TestURI|test|WPScan|WEB-Scan|woorank|WPScan|WebImageCollector|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|webshell|Web shell  Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client|HTML/Web Media Scraper|XMLFeedSpider|CSVFeedSpider|SiteMapSpider|html.parser
+#PROXY BLOCKING
+#RAW:
+
+AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|
+proxy request|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers
+|sproxies|Static ISP Proxies|ISP Proxies|proxy
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-.............................................................
-#Hacking tools: 
+#HACKING TOOLS: 
+
 Metaspoilt
 Kali Linux
 Parrot Security OS
@@ -283,8 +310,17 @@ Hashcat
 # Bypass:
 /wp-json/oembed/1.0/proxy - SSRF
 php shell
+.......................
+##RAW:
 
+Angry IP Scanner|Arch Linux|BackBox LinuxBlackArch Linux|Burp Suite|Gitpaste-12|
+Hashcat|hydra|Imgur|Javascript|Kali Linux|Kotlin|
+Metaspoilt|Objective C|Octopus Scanner|OSV-Scanner|
+Parrot Security OS|php shell|Reverse Shell|Scala|sqlmap|SSL Scanner|Wireshark|WPXStrike|ZAP|/wp-json/oembed/1.0/proxy - SSRF
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #OTHERS:
+
 4D_HTTP_Client
 android-async-http
 axios
@@ -315,7 +351,6 @@ kurl
 Laminas_Http_Client
 libsoup
 lua-resty-http
-mozillacompatible
 nghttp2
 mio_httpc
 Miro-HttpClient
@@ -347,6 +382,33 @@ Proxy SwitchyOmega
 iMacros for chrome 
 User-Agent Switcher
 Undetectable 
+lazys3
+Webscreenshot
+EyeWitness
+Nuclei
+SQLNinja
+sqlmap
+
+.....................
+#RAW:
+
+4D_HTTP_Client|akka-http|android-async-http|andyhttp|Aplix|attohttpc|axios|
+Cache killer|CakePHP|Cowblog|
+d3coder|DAP/NetHTTP|Dataskrapa|Dispatch|Dolphin|
+EyeWitness|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
+http generic|Httparty|HTTPConnect|HTTPing|HTTPREAD|http-ping|http.rb/|hyp_http_request|
+iMacros for chrome|Incogniton|Java-http-client|java/|Jodd HTTP|
+kurl|lazys3|Laminas_Http_Client|libsoup|lua-resty-http|
+mio_httpc|Miro-HttpClient|nghttp2|Nuclei|
+Open port check tool|Photon OS|phpscraper|php/|PHX HTTP|PHX HTTP Client|Proxy SwitchyOmega|
+SQLNinja|sqlmap|
+raynette_httprequest|
+restful|rpm-bot|RxnetHttp|
+scalaj-http|Site Spider, Mark II|SP-Http-Client|Stilo OMHTTP|
+tiehttp|Undetectable|User-Agent Switcher|Valve/Steam|WP-URLDetails|Webscreenshot|X11; Fedora
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#OTHERS 2:
 
 # Login (web):
 GoLogin
@@ -377,7 +439,6 @@ Netsparker
 Intruder
 John the Ripper
 LiveAction
-WebInspect
 Zenmap
 Burp Suite
 Crt.sh
@@ -389,8 +450,6 @@ Acunetix
 DIRB
 X11
 Metasploitable 2
-exiftool
-Metasploit
 meterpreter
 
 #Connection with your site:  
@@ -404,49 +463,43 @@ Masscan
 Metaspoilt
 Nessus
 Nexpose
-Nessus
 nmap
 Arch Linux
+StormCrawler
+GoSpider
+Node/simplecrawler
+
 ....................................
 ##RAW:
-RAW 1:
-Gobuster|Dirsearch|FeroxBuster|Masscan|Metaspoilt|Nessus|Nexpose|Nessus|nmap|Arch Linux|Metaspoilt|Kali Linux|Parrot Security OS|BlackArch Linux|
-BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin||SSL Scanner|WPXStrike|hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|
-4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
-hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|kurl|Laminas_Http_Client|libsoup|lua-resty-http|
-mozillacompatible|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|RxnetHttp|scalaj-http|Stilo OMHTTP|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam
-
-#RAW 2:
-WP-URLDetails|X11; Fedora|Photon OS|Incogniton|Dataskrapa|Dolphin|d3coder|Site Spider, Mark II|Cache killer|Open port check tool|Proxy SwitchyOmega|User-Agent Switcher|Undetectable|GoLogin|
-MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|HackBar|Wappalyzer|Site Spider, Mark II|Cache killer|Open port check tool|Request make|Proxy SwitchyOmega|iMacros for chrome|
-Note anywhere|d3coder|Tamper Data|Data Scraper|EditThisCookie|User-Agent Switcher and Manager|Invicti|WebInspect|Netsparker|Intruder|LiveAction|WebInspect|Zenmap|Burp Suite|Crt.sh|searchcode|
-GreyNoise|ZoomEye|Hunter|Censys|Node.js|Acunetix|DIRB|X11|Metasploitable 2|exiftool|Metasploit|meterpreter| Java's HttpUrlConnection|John the Ripper|Hashcat|/wp-json/oembed/1.0/proxy - SSRF|php shell
-
+Acunetix|Arch Linux|Burp Suite|Cache killer|Censys|Crt.sh|
+d3coder|Data Scraper|DIRB|Dirsearch|EditThisCookie|exiftool|
+FeroxBuster|Gobuster|GoLogin|GoSpider|GreyNoise|
+HackBar|HTTP/2 fingerprint|Hunter|Intruder|Invicti|
+JA3 Fingerprint|Java's HttpUrlConnection|John the Ripper|LiveAction|
+Masscan|Metasploitable 2|Metaspoilt|meterpreter|MoreLogin|MultiLogin|
+Nessus|Netsparker|Nexpose|nmap|Node/simplecrawler|Note anywhere|Open port check tool|
+PHP cURL|Proxy SwitchyOmega|Request maker|Site Spider, Mark II|StormCrawler|
+Tamper Data|User-Agent Switcher and Manager|Wappalyzer|WebInspect|Zenmap|ZoomEye
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
 #PAIN IN THE ASS-SCRAPERS/Ai-HACKERS: 
 
 Android; Android
-IE|Windows
 Cypress
 Cyberfox  
 chrome|py
 compatible|MSIE|Windows NT
 compatible; MSIE
 compatible; MSIE 6.0]
-Gecko/20091102
-Gecko/20100101
-Gecko/20130401
-GET /feed/" 200 " " "rss-parser"] 
-GET /feed/" 200 " " "Symfony HttpClient (Curl) 
 GNU/Linux x64
 gocolly|colly
-Gecko/geckotrail Firefox/firefoxversion
+like Mac OS X
 
 Headless
-HeadlessChrome]
-HeadlessCrome|Linux
+HeadlessChrome
+HeadlessChrome|Linux
+HeadlessChrome|Ubuntu
 Headless Chromium
 Firefox Headless
 Headless|Linux
@@ -464,20 +517,18 @@ X11; Linux x86_64
 Linux; U;Android 
 Mozilla/4.0
 Mozlila/5.0
-MSIE|NT).*$[NC]
-MSIE 8.0).*$[NC]
-compatible; MSIE).*$[NC]
-OpenWave).*$[NC] 
-Symfony HttpClient|Curl).*$[NC]
-SimpleBrowser).*$[NC]
-Splash).*$[NC]
-SlimerJS).*$[NC]
-SSL/TLS Scan).*$[NC]
-PhantomJS Webkit).*$[NC]
+MSIE|NT
+MSIE 8.0
+compatible; MSIE
+OpenWave
+SimpleBrowser
+Splash
+SlimerJS
+SSL/TLS Scan
+PhantomJS Webki
 RV
 Trident/4.0
 TrileFejs
-X11
 X11|Fedora
 x11u; linux
 X11 Linux
@@ -497,23 +548,27 @@ Windows NT 6.1; Trident/4.0
 Windows NT 10.0|Win64
 Windows; U|Windows NT
 
+
 #RAW:
-Android; Android|IE|Windows|Cypress|Cyberfox|chrome|py|compatible|MSIE|Windows NT|compatible; MSIE|compatible; MSIE 6.0|Gecko/20091102|Gecko/20100101|Gecko/20130401|GET /feed/" 200 " " "rss-parser"|GET /feed/" 200 " " "Symfony HttpClient (Curl)| 
-GNU/Linux x64|gocolly|colly|Gecko/geckotrail Firefox/firefoxversion|Headless|HeadlessChrome|HeadlessCrome|Linux|Headless Chromium|Firefox Headless|Headless|Linux|Headless|Scan|Headless|Python|Headful|Linux|Headful|Python|Headless|EdgeLinux|Android|
-Linux;|Android 7.0Linux; U; LinuxLinux;u;Android 4.2.2;zh-cn;Linux; U; Linux x86_64  X11; Linux x86_64|Linux; U;Android Mozilla/4.0Mozlila/5.0MSIE|NT|MSIE 8.0|compatible; MSIE|OpenWave| 
-Symfony HttpClient|Curl|SimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS Webkit|RV|Trident/4.0|TrileFejs|X11|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|
-WOW64|rv:48.0|Viewer/|WhatWeb|Wappalyzer Scan|WordPress Security Scan|Windows|NT 5.0|Windows|NT 6.1|Windows; U; Windows NT|Windows NT 6.1; Trident/4.0|Windows NT 10.0|Win64|Windows; U|Windows NT
+
+Android; Android|chrome|pycompatible; MSIEcompatible; MSIE 6.0]compatible; MSIE).*$[NC]
+compatible|MSIE|Windows NTCyberfox|Cypress|Firefox Headless|
+GNU/Linux x64|gocolly|colly|
+Headful|Linux|Headful|Python|Headless|Headless Chromium|
+HeadlessChrome|HeadlessChrome|LinuxHeadlessChrome|UbuntuHeadless|Edge|Headless|Linux|Headless|Python|Headless|Scan|
+like Mac OS X|Linux; U; Linux|Linux; U; Linux x86_64|Linux; U;Android|Linux;u;Android 4.2.2;zh-cn;|Linux;|Android 7.0|Linux|Android|
+Mozilla/4.0|Mozlila/5.0|MSIE 8.0|MSIE|NT|
+OpenWave|PhantomJS Webkit]RV|
+SimpleBrowser|SlimerJS|Splash|SSL/TLS Scan|
+Trident/4.0|TrileFejs|
+Viewer/|Wappalyzer Scan|WhatWeb|
+Windows NT 6.1; Trident/4.0|Windows NT 10.0|Win64|Windows; U; Windows NT|Windows; U; Windows NT|Windows; U|Windows NT|Windows|NT 5.01|Windows|NT 6.1|WordPress Security Scan|WOW64|rv:48.0|
+X11 Linux|x11u; linux|X11; Linux x86_64|X11; Ubuntu|X11; Ubuntu|Linux|X11|Fedora|ZombieJS
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-#CHECK IT / if.... block it: 
-
-# Used to see what you got:
-Index of #your site Domain".
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-.............................................................
-#SCRIPT KIDDIES LOOKFOR:
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+#SCRIPT KIDDIES LOOK FOR: (not included, but if - add yourself:
 
 /blog/
 /cms/
@@ -550,7 +605,7 @@ RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC
 # Common way:
 
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 # Extra good BLOCK #:
@@ -560,18 +615,37 @@ RewriteCond%{HTTP_USER_AGENT}( | | | | )[NC,OR]
 RewriteCond%{QUERY_STRING}( | | | )\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*( | | ).*[NC]
 RewriteRule .* - [F]</ifModule>
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-# OLD Useragents scrapers use:
-RewriteCond %{HTTP_USER_AGENT}^.*Android\/[1-14]\\.*[OR,NC] 
-RewriteCond %{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Mozilla\/[1-120]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
-RewriteCond %{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+
+BLOCK Almost all Old:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT(Android\1-15\|Linux;\ U;\ Android)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Android OS\1-15)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Edg\1-134)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Headless Edge\1-134|HeadlessChrome\1-137|Headless Chromium\1-137|HeadlessChrome/Linux\1-137)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chrome\1-136 CriOS\1-132 |CentoOS\1-9|Chrome/Ubuntu\1-136|Chrome/Debian\1-136|Chrome Slackware\1-136)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chromium\1-136|Chromium Ubuntu\1-136)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chrome\200-999.0.0000.111)[NC,OR] 
+RewriteCond%{HTTP_USER_AGENT}(Headless Edge\1-134|HeadlessChrome\1-137|Headless Chromium\1-137|HeadlessChrome/Linux\1-137)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chrome\1-136 CriOS\1-132 |CentoOS\1-9|Chrome/Ubuntu\1-136|Chrome/Debian\1-136|Chrome Slackware\1-136)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chromium\1-136|Chromium Ubuntu\1-136)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Chrome\0.0.0.0-0:4444|Chromium\0.0.0.0-0:4444|Firefox \0.0.0.0-0:4444|Safari\0.0.0.0-0:)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Firefox/firefoxversion|Firefox/Debian\1-137|Firefox/Linux\-137|Firefox/Ubuntu\1-137|Firefox/Debian\1-137|Firefox\1-138|Firefox BSD\1-137)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Gecko/geckotrail|Gecko/20100101|Gecko/20130401|Gecko/20091102|Gecko/20091102)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(IE\1-11)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Tor\0.2-14.5.1)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(MSIE\|MSIE\|1-12|Mobile/15E14|Trident\1-24)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Mozilla\1-137|Mozila\1-137|Mozilla\200-91.0.0000.111)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Opera\1-118|OPR\1-118|)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Safari\1-17) [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(Vivaldi\1-7|Windows\NT|Windows; U; Windows|iPhone OS\1-16|PRESTO\0-0.291)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(X11; Linux x86_64)[NC]
+RewriteRule (.*) - [F,L]</IfModule>
+
+......................................................
+# OLD Useragents scrapers use:] 
 RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
 
 # Some still use:
@@ -583,7 +657,6 @@ RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
 # OLD servers used by scraper:
 RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
 RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
-
 
 # Common Search engine old uses:
 RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
@@ -623,14 +696,10 @@ How to Use Pyspider for Web Crawling?
 https://www.zenrows.com/blog/stormcrawler
 StormCrawler
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-###  SCRIPTS TO USE:
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} (EvilBotHere|SpamSpewer|SecretAgentAgent) [NC]
-RewriteRule (.*) - [F,L]
-</IfModule> 
-
+#ADDED AT: NOT SORTED.
+StormCrawler
+GoSpider
+Node/simplecrawler
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-
-##  Updated: 250428   ##
+##  Updated: 250531   ##
