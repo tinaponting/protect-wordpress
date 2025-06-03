@@ -5,9 +5,6 @@ Protect wordpress with .htaccess
 * No one of these htaccess 1 or 2 makes any diffrent in speed! *
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
-### About me: A blogger since 1982- University, been on blogspot as on wordpress, made all mistakes through the years, I learned not only a free firewall can protect med, so I made my own, follow the latest trends in hacking and some blogs on to get it in order:)  
-### I gone throught everything  i could find in google, gibhub and forums for all .htacces security, some things didn´t work, some did works! Some old htacces tricks that still works.  Use it free but come back time to time to check latest updates.  Love //KP Karlshamn sweden ##
-
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
 * works best with Apache, 5.0 + Wordpress, 6,7+
 
@@ -117,7 +114,7 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 Love ///  Kristina Sweden  :  
 
 ***UPDATED FILES AND FOLDERS: *******
-
+* Updated: 25027 wp-includes - wp-admin, ERROR  on my I  use..
 * Updated: 250531 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 * Updated: 25027 wp-content, more speed.
 * Updated: 25027 wp-includes ? wp-admin, more securtity.
