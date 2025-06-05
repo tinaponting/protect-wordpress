@@ -114,7 +114,10 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 Love ///  Kristina Sweden  :  
 
 ***UPDATED FILES AND FOLDERS: *******
-* Updated: 25027 wp-includes - wp-admin, ERROR  on my I  use..
+
+* Updated: 250605 htaccess1 - More Speed and security)
+* Updated: 250605  perishablepress.com8g-firewall with Latest Aibots - not wanted:)
+* Updated: 250527 wp-includes - wp-admin, ERROR  on my I  use..
 * Updated: 250531 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 * Updated: 25027 wp-content, more speed.
 * Updated: 25027 wp-includes ? wp-admin, more securtity.
