@@ -91,7 +91,7 @@ Wp-admin:
 Very important; If you got an older blog!
 On:
 WP-CONFIG.PHP
-define('DB_CHARSET','utf8mb4');  //works well in sweden, somehoq:)
+define('DB_CHARSET','utf8mb4');  //works well in sweden, somehov:)
 
 ******Change it to: 
 define('DB_CHARSET','utf8');
