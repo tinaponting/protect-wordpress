@@ -4,7 +4,7 @@ NOT WANTED BOTS:
 ###RAW FILE:
 
 2ip /|80legs|404checker|
-ALittle Client|Amazonbot|amazonbot|AhrefsBot|AhrefsSiteAudit|Apachebench|AliyunSecBot/|AliyunAliyun|
+ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Barkrowler|Apachebench|apache-scanners|AliyunSecBot/|AliyunAliyun|
 BW/1.3|BW/1.2|BLEXBot/1.0|Barkrowler|
 CensysInspect|
 dotbot|DataForSeoBot|DomainStatsBot|
@@ -13,18 +13,20 @@ Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web 
 HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httplib| 
 Fetch|node-fetch|Favicon Fetcher|fetchurl|
 Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libcurl|
-MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|NetcraftSurveyAgent/1.0|
+Majestic|MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|NetcraftSurveyAgent/1.0|
 OpenVAS|Odin|UnmaskParasites| 
 Python|Pyth|py|PyQ|python|python-http|python-requests|PythonRequests|Python-urllib|python aiohttp|python-httpx|Prometheus|
 Probely|PS_Daily|php|php://input|perl|python-async|PycURL|Python-urllib||phpCrawler|PHP Meterpreter|
 Rogerbot|Rome Client| 
-SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|SF|SSL/TLS Scan|SSL Scanner|tls-scan|scan|
+SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|
+SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|
+SSL/TLS Scan|SSL Scanner|tls-scan|scan|
 SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|Symfony HttpClient (Curl)|
 TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|TikTokSpider|TestURI|test|WPScan|WEB-Scan|
 woorank|WPScan|WebImageCollector|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|webshell|Web shell|
 Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client
 
-
+...........................................................
 
 *#Use  one of of my scripts -, if you not want them pooking around!   ###'
 # OR THIS:
@@ -34,14 +36,23 @@ RewriteCond%{HTTP_USER_AGENT}"(PLACE IT HERE )"[NC]
 RewriteRule "^.*$" - [F,L]
 </IfModule>
 
-:::::::::::::::::::::::::::::::::
+................................................
+::::::::::::::::::::::::::::::::::::::::::::::::
+#  I USE:  (/.htaccess: )
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule !^/?robots\.txt$ - [F,L] 
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+................................................
+::::::::::::::::::::::::::::::::::::::::::::::::
 250404:
 
 # TikTokSpider
 https://github.com/meetmr/TiktokSpider    //BOGUS Spider!!!!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
 ###SEARCH ENGINE CHINA:  //very aggresive:
 
 RAW:
@@ -122,29 +133,16 @@ CN: Domains:  (if needed to block)
 .zj.cn
 .zj.cn
 
-
 ................................................
 ::::::::::::::::::::::::::::::::::::::::::::::::
-#  I USE:  (/.htaccess: )
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-IF needed: RewriteRule !^/?robots\.txt$ - [F,L]   but  mostly don`t!
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-#New 250516:
-
+#Sniffer:
 wordpress-sniffer
+
 NetcraftSurveyAgent/1.0    //https://www.netcraft.com/  cybercrime on a swedish blog?
-
-
 ##If the steal your feed and stuff:
 
 Symfony HttpClient (Curl)
 ................................................
-New 250526:
 #Very Dangerous: //added Raw file:
 AliyunSecBot/Aliyun 
 AliyunSecBot@service.alibaba.com
@@ -153,9 +151,21 @@ AliyunSecBot/
 User Agents:	AliyunSecBot/Aliyun (AliyunSecBot@service.alibaba.com)
 AliyunSecBot/Nutch-1.21-SNAPSHOT
 Type(s):	HackTool	
-Info:	It's a bot designed to carry out continuous attacks using a customized spider.
+Info:	It's a bot designed to carry out continuous attacks using a customi
 
+................................................
+::::::::::::::::::::::::::::::::::::::::::::::::
+#250604:
+
+PAIN IN THE ASS:
+ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Barkrowler|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SI|Majestic|Rogerbot
+
+ahrefs.com
+ahrefs.net
+
+*bot.*.ahrefs.net
+*bot.*.ahrefs.com
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250526
+Updated: 250605
