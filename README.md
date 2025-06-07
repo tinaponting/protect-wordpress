@@ -87,19 +87,10 @@ Do you need?: wlwmanifest.xml /  /wp-includes
 Wp-admin:
 /wp-admin/install.php
 
-*****VERY IMPORTANT:
-Very important; If you got an older blog!
-On:
-WP-CONFIG.PHP
-define('DB_CHARSET','utf8mb4');  //works well in sweden, somehov:)
-
-******Change it to: 
-define('DB_CHARSET','utf8');
-
+*****VERY IMPORTANT
 *' To protect: wp-includes/js and css from curious! eyes and hackers, take wp-content: index.php and put it there!
 
-**# If you want to annoy scrapers, ai scrapers and other annoying.
-Use both or one of these:
+**# If you want to annoy scrapers, ai scrapers and other annoying. Use both or one of these:
 
 https://wordpress.org/plugins/wp-browser-update/
 http://browserupdate.org/
@@ -115,6 +106,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updates: 250607 - AI Alternative to use - If stubborn:)
 * Updated: 250606  perishablepress.com8g-firewall with MORE AI -no wanted:)
 * Updated: 250605 htaccess1 - More Speed and security)
 * Updated: 250605  perishablepress.com8g-firewall with Latest Aibots - not wanted:)
