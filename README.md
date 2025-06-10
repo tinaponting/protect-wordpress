@@ -106,6 +106,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250610  perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 * Updates: 250607 - AI Alternative to use - If stubborn:)
 * Updated: 250606  perishablepress.com8g-firewall with MORE AI -no wanted:)
 * Updated: 250605 htaccess1 - More Speed and security)
@@ -118,58 +119,8 @@ Love ///  Kristina Sweden  :
 * Updated: 250525 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
 * Updated: 25018 wp-includes, more alternatives to use.
 * Updated: 25016 htaccess1 - More Speed and security)
-* Updated: 250427 htaccess1 - More Speed)
-* Updated: 250512 perishablepress.com8g-firewall with Latest Ai
-* Updated: 250511 htaccess updated.
-* Updated: 250420 perishablepress.com8g-firewall with Latest Ai
-* Updated: 250430 Noway allowed-Do not see - Better security and noway you see!
-* Updated: 250428 htaccess, htaccess1, perishablepress.com8g-firewall + my htaccess2 AI blocked 
-* Updated: 250427 htaccess1 - Better security:)
-* Updated: 250425 htaccess -core htaccess
-* Updated: 250420 htaccess1 + perishablepress.com8g-firewall + Latest Ai
-* Updated: 250418 htaccess1 + perishablepress.com8g-firewall + Latest Ai, perishpress List protection.
-* Updated: 250417 htaccess1 + perishablepress.com8g-firewall + my htaccess2 AI blocked! - updated and gone through and checked with datadome list:)
-* Updated: 250415 htaccess1  - updated:)
-* Updated: 250414 htaccess1  - updated and gone through:)
-* Updated: 250412 -perishablepress.com8g-firewall + my htaccess2 AI blocked!
-* Updated: 250412 - Updated, wp.contet protection.
-* Updated: 250402 perishablepress.com8g-firewall + my htaccess2 AI updated:)
-* Updated: 250402 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Updated:)
-* Added: 250401 - LIST OF common browseers used/hackers, Tzt stealers.txt
-* Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  gone Througt all Ai- uppdated!
-* Updated: 250329 perishablepress.com8g-firewall + my htaccess2 +  Delated GE
-* Updated: 250323 perishablepress.com8g-firewall + my htaccess2 +  new  AI
-* Updated: 250319 htaccess  - updated
-* Updated: 25019 htaccess1 -updated =  security:: Delated, wp.user/json - do not work:(
-* Updated: 250313 perishablepress.com8g-firewall + my htaccess2+  A new AI
-* Updated: 250309 perishablepress.com8g-firewall + my htaccess2+  A new AI
-* Updated: 250308 perishablepress.com8g-firewall + my htaccess2+  A new AI
-* Updated: 250307 perishablepress.com8g-firewall + my htaccess2+ new AI
-* Updated: 250306 perishablepress.com8g-firewall + my htaccess2+ new AI
-* Updated: 250304 htaccess1 -updated = More security:) 
-* Updated: 250225 perishablepress.com8g-firewall Latest Ai someAdjustment in firewall:)
-* Updated: 250218 perishablepress.com8g-firewall Updated:)
-* Updated: 250218 htaccess1 -works well, checked with lynx:) 
-* Updated: 250213 Updated, wp-includes folder protection.
-* Updated: 250210 perishablepress.com8g-firewall Updated my own with Ai.
-* Updated: 250207 htaccess1 -all:) delated some doubles:)
-* Updated: 250206 perishablepress.com8g-firewall Updated, with Old browsers not wanted:)
-* Updated: 250128 perishablepress.com8g-firewall Updated, used by me + Ai block, all updated with new 8G firewall.
-* Updated: 250127 htaccess -with more alternatives for speed.
-* Updated: 250124 perishablepress.com8g-firewall Updated, used by me + Ai block
-* Updated: 250119 htaccess1 -all:) 
-* Updated: 250123 perishablepress.com8g-firewall + new Ai not wanted!
-* Updated: 250119 htaccess1 - my own, i use!
-* Updated: 250115 perishablepress.com8g-firewall + new Ai not wanted!
-* Updated: 250117 maybe.txt
-* Updated: 250114 Updated wp-admin
-* Updated: 250113 htaccess1
-* Updated: 250113 perishablepress.com8g-firewall + new Ai not wanted!
-* Updated: 25009 updated: htaccess1 - one error!:(
-* Updated: Noway allowed-Do not see
-* Updated: 25006 updated: w-includes, but still have smeissues with admin, working on  it:)  But works.
-* Updated: 25006 updated: htaccess1, delated som code not needed year 25:)
-* Updated: 250101 qp-includes protect to the new folders and so on  
+
+* Updated: 250101 - 250431 
 * Updated: 240102 - 2411225 
 * Updated: 230306 - 231220
 * Updated: 230206 - 230505. 
@@ -177,7 +128,7 @@ Love ///  Kristina Sweden  :
 * Updated: 221225 - 221230.
 * Updated: 221225 - 221124.
 * Updated: 220915 - 221124.
-* Updated: 200220 - 2021.
+* Updated: 2020 - 2021.
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
