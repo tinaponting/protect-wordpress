@@ -133,3 +133,27 @@ Love ///  Kristina Sweden  :
 
 VERY IMPORTANT: Core  .htaccess + .htaccess1 for speed and protection  Set: 444 files rights
 in core. No one can write to any files!!
+
+...............................................................
+På Svenska:
+
+Protect Wordpress och andra bloggar med php.
+med htaccess 1 + htaccess2 - om möjligt BBQ Pro - lugin-planet.com/bbq-pro/ som är ett utmärkt plugin och firewall. Inget påverkar fart och cache. Utan fungerar som firewalls:)
+
+...............................................................
+In Enlish:
+Protect Wordpress and other blogs with php.
+with htaccess 1 + htaccess2 - if possible BBQ Pro - lugin-planet.com/bbq-pro/ which is an excellent plugin and firewall. Nothing affects speed and cache. But works like firewalls:)
+
+...............................................................
+En español:
+
+Protege WordPress y otros blogs con PHP.
+Con htaccess 1 + htaccess 2. Si es posible, BBQ Pro (lugin-planet.com/bbq-pro/), que es un excelente plugin y cortafuegos. No afecta la velocidad ni la caché. Pero funciona como un cortafuegos.
+
+...............................................................
+Auf Deutsch:
+Schützen Sie WordPress und andere Blogs mit PHP.
+Mit htaccess 1 + htaccess 2 – wenn möglich BBQ Pro – lugin-planet.com/bbq-pro/. Das ist ein hervorragendes Plugin und eine Firewall. Es beeinträchtigt weder Geschwindigkeit noch Cache. Funktioniert aber wie Firewalls. :)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
