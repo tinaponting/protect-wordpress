@@ -60,7 +60,7 @@ baidu|MicroMessenger
 Weixin QQ|AspiegelBot|bytesdance|Bytespider|
 Mb2345Browser|MQQBrowserLieBaoFast|Datanyze|ByteDance crawler|DingTalkBot|
 QQ Browser Mobile|Sogou|X Browser|115 Browser|
-360 Browser|ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|
+360 Browser|360 Safe Browse|ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|
 ;zh-cn|zh\-CN|zh_CN|zh-CN|ZHCN|zh|zh_CN|Openbot|zh|zh-CN|zh-SG|zh-TW|zh-HK|zh-CHS|zh-CHT|zhi-CN|ZHCN|zh-MO|
 Haosou 360 spider|Sosospider|YisouSpider|YoudaoBot /|Test-Spider|
 
@@ -144,12 +144,14 @@ NetcraftSurveyAgent/1.0    //https://www.netcraft.com/  cybercrime on a swedish 
 Symfony HttpClient (Curl)
 ................................................
 #Very Dangerous: //added Raw file:
+
 AliyunSecBot/Aliyun 
 AliyunSecBot@service.alibaba.com
 
 AliyunSecBot/
 User Agents:	AliyunSecBot/Aliyun (AliyunSecBot@service.alibaba.com)
 AliyunSecBot/Nutch-1.21-SNAPSHOT
+
 Type(s):	HackTool	
 Info:	It's a bot designed to carry out continuous attacks using a customi
 
@@ -168,4 +170,4 @@ ahrefs.net
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250605
+Updated: 250615
