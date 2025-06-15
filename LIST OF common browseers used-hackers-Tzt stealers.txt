@@ -1,59 +1,4 @@
 ..........................................................................................
-### LIST OF common browseers used/hackers, Tzt stealers:  ###
-
-//Android
-android-5.1.1_r38 
-android-5.1.1_r37 
-android-5.1.1_r36 
-android-5.1.1_r35
-android-5.1.1_r34
-android-5.1.1_r33
-android-5.1.1_r30 
-android-5.1.1_r25 
-android-5.1.1_r19
-android-5.1.1_r14 
-android-5.1.1_r9 
-android-5.1.1_r1 
-android-5.1.0_r1 
-android-5.0.2_r1 
-android-5.0.1_r1 
-android-5.0.0_r4.0.1 
-android-4.4.4_r1 
-android-4.4.3_r1
-android-4.4.2_r1 
-android-4.4.1_r1 
-android-4.4_r1.2 
-android-4.3_r1.1 
-android-4.3_r1
-android-4.3_r0.9.1 
-android-4.2.2_r1 
-android-4.2.1_r1.1 
-android-4.2.1_r1 
-android-4.2_r
-Android 07
-Android 11
-
-#commoen used by hackers/content scrapers
-Android 5.1
-Android 7.0
-Android 2.0.1
-Android 4.1
-Android 14
-Android 4.3.1
-Android 4.4
-Android 4.4.1
-Android 4.4.4
-Android 5.0
-Android 5.0.1
-Android 5.0.2
-Android 5.1
-Android 5.1.1
-Android 6.0
-Android 6.0.1
-Android 7.1
-Android 7.1.1
-
-........................
 
 // MacOS - High Sierra
 Macintosh; Intel Mac OS X 10_13
@@ -195,1008 +140,281 @@ Macintosh; U; Intel Mac OS X 10_12_5|
 Macintosh; PPC Mac OS X 10_7_4|
 Macintosh; PPC Mac OS X 10_6_9
 
+...........................
+## SAFARI / Fake.safari:
 
-# Windows NT
-Windows NT 4.0
-Windows NT 3.1	
-Windows NT 3.5	NT 
-Windows NT 3.51	NT 3.
-Windows NT 4.0
-Windows NT 5.1
-Windows NT 6.1
-Windows NT 6.1; WOW64
-Windows NT 6.1; Win64; x64
-Windows NT NT 6.2
-Windows NT NT 6.3
-Windows NT 10.0; Win64; x64
-
-
-# EDGE:
-Edg/100.0.1185.10
-Edg/100.0.1185.29
-Edg/101.0.1210.10
-Edg/101.0.1210.32
-Edg/101.0.1210.47
-Edg/102.0.1245.30
-Edg/102.0.1245.7
-Edg/103.0.1264.13
-Edg/103.0.1264.37
-Edg/104.0.1293.14
-Edg/104.0.1293.47
-Edg/105.0.1343.25
-Edg/105.0.1343.7
-Edg/106.0.1370.15
-Edg/106.0.1370.34
-Edg/107.0.1418.24
-Edg/107.0.1418.26
-Edg/107.0.1418.35
-Edg/107.0.1418.8
-Edg/108.0.1462.15
-Edg/108.0.1462.42
-Edg/109.0.1518.14
-Edg/109.0.1518.49
-Edg/110.0.1587.17
-Edg/110.0.1587.41
-Edg/111.0.1661.15
-Edg/111.0.1661.4
-Edg/111.0.1661.41
-Edg/112.0.1722.11
-Edg/112.0.1722.34
-Edg/112.0.1722.68
-Edg/113.0.1774.3
-Edg/113.0.1774.9
-Edg/114.0.1823.11
-Edg/114.0.1823.37
-Edg/115.0.1901.183
-Edg/115.0.1901.200
-Edg/115.0.1901.203
-Edg/115.0.1901.7
-Edg/116.0.1938.29
-Edg/116.0.1938.54
-Edg/117.0.2045.31
-Edg/117.0.2045.41
-Edg/117.0.2045.9
-Edg/118.0.2088.11
-Edg/118.0.2088.46
-Edg/119.0.2151.12
-Edg/119.0.2151.44
-Edg/119.0.2151.72
-Edg/120.0.1054.29
-Edg/120.0.2210.61
-Edg/120.0.2210.7
-Edg/120.0.2210.91
-Edg/121.0.0.0
-Edg/121.0.2277.106
-Edg/121.0.2277.4
-Edg/121.0.2277.83
-Edg/122.0.0.0
-Edg/122.0.2365.52
-Edg/122.0.2365.66
-Edg/122.0.2365.8
-Edg/122.0.2365.92
-Edg/123.0.2420.10
-Edg/123.0.2420.53
-Edg/123.0.2420.65
-Edg/124.0.2478.10
-Edg/124.0.2478.51
-Edg/124.0.2478.67
-Edg/125.0.2535.13
-Edg/125.0.2535.51
-Edg/125.0.2535.85
-Edg/125.0.2535.92
-Edg/126.0.2592.13
-Edg/126.0.2592.56
-Edg/126.0.2592.68
-Edg/126.0.2592.87
-Edg/127.0.2651.74
-Edg/127.0.2651.86
-Edg/127.0.2651.98
-Edg/128.0.2739.42
-Edg/128.0.2739.5
-Edg/128.0.2739.54
-Edg/128.0.2739.63
-Edg/128.0.2739.67
-Edg/129
-Edg/129.0
-Edg/129.0.2792.12
-Edg/129.0.2792.52
-Edg/130.0.2849.46
-Edg/130.0.2849.5
-Edg/16.16299
-Edg/79.0.309.14
-Edg/79.0.309.63
-Edg/80.0.361.9
-Edg/81.0.416.68
-Edg/87.0.664.75
-Edg/88.0.705.18
-Edg/88.0.705.50
-Edg/89.0.774.18
-Edg/89.0.774.48
-Edg/90.0.818.39
-Edg/90.0.818.8
-Edg/91.0.864.11
-Edg/91.0.864.37
-Edg/92.0.902.55
-Edg/92.0.902.9
-Edg/93.0.961.11
-Edg/93.0.961.38
-Edg/94.0.992.31
-Edg/94.0.992.9
-Edg/95.0.1020.30
-Edg/95.0.1020.9
-Edg/96.0.1054.29
-Edg/96.0.1054.8
-Edg/97.0.1072.21
-Edg/97.0.1072.55
-Edg/98.0.1108.23
-Edg/98.0.1108.43
-Edg/99.0.1150.11
-Edg/99.0.1150.30
-
-# Opera:
-OPR/97.0.4719.26
-OPR/98.0.4759.3|
-OPR/97.0.4719.28
-OPR/98.0.4756.0|
-OPR/97.0.4697.0
-OPR/96.0.4693.20
-OPR/96.0.4693.50
-OPR/98.0.4746.0
-OPR/113.0.0.0
-OPR/97.0.4719.26
-OPR/96.0.4691.0|
-OPR/98.0.4756.0|
-OPR/96.0.4693.31
-OPR/96.0.4693.50
-OPR/96.0.4693.80
-OPR/98.0.4759.3
-OPR/97.0.4719.11
-OPR/97.0.4719.4
-OPR/96.0.4693.80
-OPR/96.0.4674.0
-OPR/98.0.4759.1
-OPR/98.0.4759.15
-OPR/96.0.4674.0
-OPR/96.0.4693.12
-OPR/97.0.4697.0
-OPR/98.0.4759.6
-OPR/98.0.4759.1
-OPR/98.0.4746.0
-OPR/113.0.0.0
-OPR/96.0.4691.0
-OPR/98.0.4756.0               -
-OPR/96.0.4693.31                  -
-OPR/96.0.4693.50                   -
-OPR/96.0.4693.80  
-OPR/96.0.4691.0 
-
-### Firefox (Both false and common:
-Firefox/3.6.1
-Firefox/7.0
-Firefox/10.0
-Firefox/12.0
-Firefox/15.0.1
-Firefox/16.0.1
-Firefox/30
-Firefox/41.0
-Firefox/42.0
-Firefox/46.0
-Firefox/46.0.1
-Firefox/46.8
-Firefox/47.0
-Firefox/47.2
-Firefox/48.0.1
-Firefox/48.0.2
-Firefox/49.0
-Firefox/49.5
-Firefox/49.6
-Firefox/50.0
-Firefox/50.0.1
-Firefox/50.1.0
-Firefox/50.7
-Firefox/50.9
-Firefox/51.0
-Firefox/51.0.1
-Firefox/51.1
-Firefox/51.4
-Firefox/51.7
-Firefox/52.0
-Firefox/52.0.1
-Firefox/52.0.2
-Firefox/52.3
-Firefox/52.8
-Firefox/53.0
-Firefox/53.0.3
-Firefox/53.2
-Firefox/54.0
-Firefox/54.1
-Firefox/55.0
-Firefox/55.0.2
-Firefox/55.0.2
-Firefox/55.0.3
-Firefox/55.8
-Firefox/55.9
-Firefox/56.0
-Firefox/56.0.1
-Firefox/57.0
-Firefox/57.0.1
-Firefox/57.0.4
-Firefox/57.9
-Firefox/58.0
-Firefox/58.1
-Firefox/59.0
-Firefox/59.0.3
-Firefox/59.4
-Firefox/59.7
-Firefox/60.0.1
-Firefox/60.1
-Firefox/60.3
-Firefox/60.9
-Firefox/61.0
-Firefox/61.0.2
-Firefox/61.9
-Firefox/62.0
-Firefox/62.0
-Firefox/62.3
-Firefox/62.6
-Firefox/63.6
-Firefox/64.0
-Firefox/64.1
-Firefox/64.8
-Firefox/65.0
-Firefox/65.2
-Firefox/66.4
-Firefox/66.9
-Firefox/67.0
-Firefox/67.0.3
-Firefox/68.0
-Firefox/68.0.2
-Firefox/68.6
-Firefox/69.0
-Firefox/69.0.1
-Firefox/69.1
-Firefox/69.2
-Firefox/69.3
-Firefox/69.8
-Firefox/71.0
-Firefox/71.8
-Firefox/71.9
-Firefox/72.0
-Firefox/72.0.1
-Firefox/72.4
-Firefox/73.0
-Firefox/73.1
-Firefox/73.8
-Firefox/74.0
-Firefox/74.5
-Firefox/78.0.1
-Firefox/78.0.2
-Firefox/80
-Firefox/81.0
-Firefox/81.0.1
-Firefox/82.0
-Firefox/82.0.1
-Firefox/83.0
-Firefox/84.0
-Firefox/84.0.1
-Firefox/84.0.2
-Firefox/85.0
-Firefox/85.0.2
-Firefox/86.0
-Firefox/86.0.1
-Firefox/87.0
-Firefox/88.0
-Firefox/88.0.1
-Firefox/89.0
-Firefox/89.0.1
-Firefox/89.0.2
-Firefox/90.0
-Firefox/90.0.1
-Firefox/90.0.2
-Firefox/91.0
-Firefox/91.0.1
-Firefox/91.0.2
-Firefox/92.0
-Firefox/92.0.1
-Firefox/92.0.1
-Firefox/93.0
-Firefox/94.0
-Firefox/94.0.1
-Firefox/94.0.2
-Firefox/95.0
-Firefox/95.0.1
-Firefox/95.0.2
-Firefox/96.0
-Firefox/96.0.1
-Firefox/96.0.2
-Firefox/96.0.3
-Firefox/97.0
-Firefox/97.0.1
-Firefox/97.0.2
-Firefox/98.0.1
-Firefox/98.0.2
-Firefox/99.0.1
-Firefox/100
-Firefox/100.0
-Firefox/100.0.1
-Firefox/100.0.2
-Firefox/101.0
-Firefox/101.0.1
-Firefox/102.0
-Firefox/103.0
-Firefox/103.0.2
-Firefox/104.0
-Firefox/104.0.1
-Firefox/105.0
-Firefox/105.0.1
-Firefox/105.0.2
-Firefox/105.0.3
-Firefox/106.0
-Firefox/106.0.1
-Firefox/106.0.2
-Firefox/106.0.4
-Firefox/107.0
-Firefox/108.0
-Firefox/108.0.2
-Firefox/109.0
-Firefox/109.0.1
-Firefox/110.0
-Firefox/111.0
-Firefox/111.0.1
-Firefox/112.0
-Firefox/112.0.1
-Firefox/112.0.2
-Firefox/113.0
-Firefox/113.0.1
-Firefox/113.0.2
-Firefox/114.0
-Firefox/114.0.1
-Firefox/114.0.2
-Firefox/115.0
-Firefox/115.0.1
-Firefox/115.0.2
-Firefox/116.0
-Firefox/116.0.2
-Firefox/116.0.3
-Firefox/117.0
-Firefox/117.0.1
-Firefox/118.0
-Firefox/118.0.1
-Firefox/118.0.2
-Firefox/119.0
-Firefox/119.0.1
-Firefox/120.0
-Firefox/120.0.1
-Firefox/121.0
-Firefox/121.0.1
-Firefox/122.0
-Firefox/122.0.1
-Firefox/123.0
-Firefox/123.0.1
-Firefox/124.0
-Firefox/124.0.2
-Firefox/125.0.1
-Firefox/125.0.2
-Firefox/125.0.3
-Firefox/126.0
-Firefox/126.0.1
-Firefox/127.0
-Firefox/127.0.2
-Firefox/128.0
-Firefox/129.0
-Firefox/129.0.1
-Firefox/129.0.2
-
-#FAKE FIREFOX:
-Firefox/3.6
-Firefox/4.0 
-Firefox/48.0
-Firefox/13.0
-Firefox/106.0
-Firefox/108.0
-Firefox/111.0
-
-
-### Chrome (Both false and common:
-Chrome/15.0.1901.200
-Chrome/27.0.1453.94
-Chrome/30.0.1599.66
-Chrome/34.0.1847.114
-Chrome/45.0.2454.94
-Chrome/46.0.2490.80
-Chrome/47.0.2283.102
-Chrome/48.0.2564.97
-Chrome/49.0.2623.75
-Chrome/50.0.2661
-Chrome/50.0.2661.102
-Chrome/50.0.3232.292
-Chrome/51.0.2160.381
-Chrome/51.0.2329.290
-Chrome/51.0.2704.84
-Chrome/52.0.2315.144
-Chrome/52.0.2743.116
-Chrome/52.0.3133.374
-Chrome/52.0.3748.297
-Chrome/53.0.2785.116
-Chrome/54.0.1107.38
-Chrome/54.0.2840.71
-Chrome/55.0.2660.238
-Chrome/55.0.2883.75
-Chrome/56.0.2924.87
-Chrome/57.0.2987.133
-Chrome/58.0.3029.96
-Chrome/60.0.3112.78
-Chrome/60.0.3112.90
-Chrome/60.0.3112.107
-Chrome/61.0.3163.79
-Chrome/62.0.3202.75
-Chrome/63.0.3239.108
-Chrome/64.0.3282.140
-Chrome/65.0.3325.181
-Chrome/67.0.3396.79
-Chrome/68.0.3440.84
-Chrome/68.0.3440.106
-Chrome/69.0.3497.92
-Chrome/70.0.3538.77
-Chrome/70.0.3538.102
-Chrome/71.0.3578.80
-Chrome/74.0.3729
-Chrome/74.0.3729.169
-Chrome/75.0.3770.80
-Chrome/76.0.3809.100
-Chrome/77.0.3844.0
-Chrome/77.0.3865.116
-Chrome/78.0.3904.70
-Chrome/78.0.3904.97
-Chrome/79.0.309.11
-Chrome/79.0.309.30
-Chrome/79.0.309.65
-Chrome/79.0.309.68
-Chrome/79.0.309.71
-Chrome/79.0.3945.0
-Chrome/79.0.3945.88
-Chrome/79.0.3945.130
-Chrome/80.0.361.45
-Chrome/80.0.361.48
-Chrome/80.0.361.62
-Chrome/80.0.361.109
-Chrome/80.0.3987.0
-Chrome/80.0.3987.132
-Chrome/80.0.3987.149
-Chrome/80.0.3987.163
-Chrome/81.0.416.34
-Chrome/81.0.416.58
-Chrome/81.0.416.62
-Chrome/81.0.416.77
-Chrome/81.0.4044.92
-Chrome/83.0.478.37
-Chrome/83.0.478.58
-Chrome/83.0.478.64
-Chrome/83.0.4103.0
-Chrome/83.0.4103.61
-Chrome/83.0.4103.116
-Chrome/84.0.522.40
-Chrome/84.0.522.52
-Chrome/84.0.522.58
-Chrome/84.0.522.61
-Chrome/84.0.4147.1
-Chrome/84.0.4147.105
-Chrome/84.0.4147.135
-Chrome/85.0.564.44
-Chrome/85.0.4182.0
-Chrome/85.0.4183.102
-Chrome/85.0.4183.121
-Chrome/86.0.622.48
-Chrome/86.0.622.56
-Chrome/86.0.622.61
-Chrome/86.0.622.68
-Chrome/86.0.4240.75
-Chrome/87.0.664.47
-Chrome/87.0.664.52
-Chrome/87.0.4280.14
-Chrome/87.0.4280.88
-Chrome/88.0.4298.0
-Chrome/88.0.4324.0
-Chrome/88.0.4324.186
-Chrome/89.0.774.45
-Chrome/89.0.774.50
-Chrome/89.0.4389.86
-Chrome/89.0.4389.90
-Chrome/90.0.818.42
-Chrome/90.0.818.56
-Chrome/90.0.818.62
-Chrome/90.0.4430.72
-Chrome/90.0.4430.85
-Chrome/91.0.864.53
-Chrome/91.0.864.70
-Chrome/91.0.864.71
-Chrome/91.0.4472.77
-Chrome/91.0.4472.114
-Chrome/91.0.4472.124
-Chrome/92.0.902.55
-Chrome/92.0.4512.0
-Chrome/92.0.4515.107
-Chrome/92.0.4515.159
-Chrome/93.0.4577.0
-Chrome/93.0.4577.82
-Chrome/94.0.992.31
-Chrome/94.0.992.37
-Chrome/94.0.992.50
-Chrome/94.0.4606.61
-Chrome/95.0.1020.53
-Chrome/95.0.4638.54
-Chrome/96.0.1054.41
-Chrome/96.0.1054.53
-Chrome/96.0.4641.0
-Chrome/96.0.4664.45
-Chrome/96.0.4664.110
-Chrome/97.0.1072.55
-Chrome/97.0.1072.62
-Chrome/97.0.1072.69
-Chrome/97.0.4280.67
-Chrome/97.0.4680.0
-Chrome/98.0.1108.6
-Chrome/98.0.1108.43
-Chrome/99.0.1150.46
-Chrome/100.0.1185.36
-Chrome/101.0.1210.4
-Chrome/101.0.4951.41
-Chrome/101.0.4951.64
-Chrome/101.0.4951.67
-Chrome/102.0.1245.30
-Chrome/102.0.1245.44
-Chrome/102.0.5005.63
-Chrome/103.0.0.0
-Chrome/103.0.1264.49
-Chrome/104.0.0.0
-Chrome/104.0.1293.47
-Chrome/104.0.1293.54
-Chrome/104.0.5112.79
-Chrome/104.0.5112.97
-Chrome/104.0.5112.102
-Chrome/105.0.1343.42
-Chrome/105.0.1343.50
-Chrome/105.0.5195.52
-Chrome/105.0.5195.125
-Chrome/106.0.0.0
-Chrome/106.0.1370.34
-Chrome/106.0.1370.47
-Chrome/106.0.5249.30
-Chrome/106.0.5249.62
-Chrome/106.0.5249.91
-Chrome/106.0.5249.119
-Chrome/107.0.0.0
-Chrome/107.0.1418.24
-Chrome/107.0.1418.52
-Chrome/107.0.1418.62
-Chrome/107.0.5304.63
-Chrome/107.0.5304.106
-Chrome/107.0.5304.110
-Chrome/107.0.5304.121
-Chrome/108.0.0.0
-Chrome/108.0.1462.46
-Chrome/108.0.1462.76
-Chrome/108.0.5359.94
-Chrome/108.0.5359.98
-Chrome/109.0.0.0
-Chrome/109.0.1518.52
-Chrome/109.0.1518.61
-Chrome/109.0.1518.70
-Chrome/109.0.5414.46
-Chrome/109.0.5414.119
-Chrome/110.0.0.0
-Chrome/110.0.1587.50
-Chrome/110.0.1587.57
-Chrome/110.0.1587.63
-Chrome/110.0.1587.69
-Chrome/110.0.5481.30
-Chrome/110.0.5481.78
-Chrome/110.0.5481.100
-Chrome/110.0.5481.178
-Chrome/110.0.5481.192
-Chrome/111.0.0.0
-Chrome/111.0.1661.54
-Chrome/111.0.5532.2
-Chrome/111.0.5532.|
-Chrome/111.0.5563.8
-Chrome/111.0.5563.19
-Chrome/111.0.5563.64
-Chrome/111.0.5563.65
-Chrome/112.0.1722.34
-Chrome/112.0.1722.39
-Chrome/112.0.1722.48
-Chrome/112.0.5596.2
-Chrome/112.0.5614.0
-Chrome/112.0.5615.20
-Chrome/112.0.5615.49
-Chrome/112.0.5615.50
-Chrome/112.0.5615.87
-Chrome/112.0.5615.121
-Chrome/112.0.5615.165
-Chrome/113.0.0.0
-Chrome/113.0.1774.35
-Chrome/113.0.1774.57
-Chrome/113.0.5672.64
-Chrome/114.0.1823.37
-Chrome/114.0.1823.43
-Chrome/114.0.1823.55
-Chrome/114.0.1823.67
-Chrome/114.0.1823.82
-Chrome/114.0.5735.91
-Chrome/114.0.5735.133
-Chrome/115.0.1901.203
-Chrome/115.0.5790.24
-Chrome/115.0.5790.98
-Chrome/116.0.5845.0
-Chrome/116.0.5845.82 
-Chrome/117.0.2045.41
-Chrome/117.0.5938.60
-Chrome/117.0.5938.132
-Chrome/117.0.5938.149
-Chrome/118.0.0.0
-Chrome/119.0.2151.72
-Chrome/119.0.6045.9
-Chrome/119.0.6045.9
-Chrome/119.0.6045.123
-Chrome/119.0.6045.159
-Chrome/119.0.6045.199
-Chrome/120.0.0.0
-Chrome/120.0.0.0.0
-Chrome/120.0.2210.91
-Chrome/120.0.6099.28
-Chrome/120.0.6099.109
-Chrome/120.0.6099.129 
-Chrome/120.0.6099.939
-Chrome/121.0.0.0
-Chrome/121.0.0.0 6
-Chrome/121.0.2277.106
-Chrome/121.0.6167.0
-Chrome/121.0.6167.57
-Chrome/121.0.6167.85
-Chrome/121.0.6167.184
-Chrome/122.0.2365.52
-Chrome/122.0.2365.66
-Chrome/122.0.2365.92
-Chrome/122.0.6261.57
-Chrome/122.0.6261.94
-Chrome/123.0.2420.65
-Chrome/123.0.6312.0
-Chrome/123.0.6312.4
-Chrome/123.0.6312.105
-Chrome/124.0.0.0
-Chrome/124.0.2478.67
-Chrome/124.0.6367.78
-Chrome/124.0.6367.91
-Chrome/124.0.6367.92
-Chrome/124.0.6367.118
-Chrome/125.0.
-Chrome/125.0.2535.85
-Chrome/125.0.2535.92
-Chrome/125.0.6422.26
-Chrome/125.0.6422.60
-Chrome/126.0.0.0
-Chrome/126.0.2592.68
-Chrome/126.0.2592.87
-Chrome/126.0.6478.61
-Chrome/126.0.6478.126
-Chrome/126.0.6478.128
-Chrome/126.0.6478.182
-Chrome/127.0.0.0
-Chrome/127.0.2651.86
-Chrome/127.0.2651.98
-Chrome/127.0.6533
-Chrome/127.0.6533.17
-Chrome/127.0.6533.73
-Chrome/127.0.6533.89
-Chrome/127.0.6533.99
-Chrome/127.0.6533.100
-Chrome/127.0.6533.119
-Chrome/127.0.6533.122
-Chrome/128.0.0.0
-Chrome/128.0.6613.18
-Chrome/128.0.6613.84
-Chrome/129.0.0.0
-Chrome/129.0.6668.29
-Chrome/129.0.6668.71
-
-## FAKE CHROME:
-Chrome/74.0.3729.169 
-Chrome/43.0.845.0 
-Chrome/48.0.861.0 
-Chrome/51.0.870.0 
-Chrome/34.0.824.0
-Chrome/30.0.1599.66
-Chrome/90.0.4430.85
-Chrome/98.0.4758.80
-Chrome/104.0.0.0
-Chrome/104.0.5112.79
-Chrome/112.0.5615.50
-Chrome/112.0.5615.87
-Chrome/74.0.3729.169 
-Chrome/68.0.3440.106
-Chrome/66.0.3359.158
-Chrome/60.0.3112.107
-Chrome/18.0.865.0|
-Chrome/60.0.3112.107|
-Chrome/74.0.3729.169|
-Chrome/70.0.3538.77|
-Chrome/129.0.6668.71
-Chrome/90.0.4430.85
-
-:::::::::::::::::::::::::::::::::
-### TEST SCRIPT: ####  Use qhat you need! To block scrapers, false bots trafic.
-
-//Android RAW::
-Android 4.3.1|Android 4.4|Android 4.4.1|Android 4.4.4|Android 5.0|Android 5.0.1|Android 5.0.2|Android 5.1|Android 5.1.1|Android 6.0
-|Android 6.0.1|Android 07|Android 7.1|Android 7.1.1|Android 11; Mobile; rv:89.0)|Android 07|Android 1|Android 5.1|Android 7.0|Android 2.0.1|Android 4.1|Android 14
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Android 4.3.1|Android 4.4|Android 4.4.1|Android 4.4.4|Android 5.0|Android 5.0.1|Android 5.0.2|Android 5.1|Android 5.1.1|Android 6.0
-|Android 6.0.1|Android 07|Android 7.1|Android 7.1.1|Android 11; Mobile; rv:89.0)|Android 07|Android 1|Android 5.1|Android 7.0|Android 2.0.1|Android 4.1|Android 14)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-// MacOS - High Sierra
-Macintosh; Intel Mac OS X 10_13Macintosh; Intel Mac OS X 10_13_1|Macintosh; Intel Mac OS X 10_13_2|Macintosh; Intel Mac OS X 10_13_3|Macintosh; Intel Mac OS X 10_13_4|Macintosh; Intel Mac OS X 10_13_5|Macintosh; Intel Mac OS X 10_13_6
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 10_13Macintosh; Intel Mac OS X 10_13_1|Macintosh; Intel Mac OS X 10_13_2|Macintosh; Intel Mac OS X 10_13_3|Macintosh; Intel Mac OS X 10_13_4|Macintosh; Intel Mac OS X 10_13_5|Macintosh; Intel Mac OS X 10_13_6)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# MacOS - Mojave
-Macintosh; Intel Mac OS X 10_14|Macintosh; Intel Mac OS X 10_14_1|Macintosh; Intel Mac OS X 10_14_2|Macintosh; Intel Mac OS X 10_14_3|Macintosh; Intel Mac OS X 10_14_4|Macintosh; Intel Mac OS X 10_14_5|Macintosh; Intel Mac OS X 10_14_6
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 10_14|Macintosh; Intel Mac OS X 10_14_1|Macintosh; Intel Mac OS X 10_14_2|Macintosh; Intel Mac OS X 10_14_3|Macintosh; Intel Mac OS X 10_14_4|Macintosh; Intel Mac OS X 10_14_5|Macintosh; Intel Mac OS X 10_14_6)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# MacOS - Catalina
-Macintosh; Intel Mac OS X 10_15|Macintosh; Intel Mac OS X 10_15_1|Macintosh; Intel Mac OS X 10_15_2|Macintosh; Intel Mac OS X 10_15_3|Macintosh; Intel Mac OS X 10_15_4|Macintosh; Intel Mac OS X 10_15_5|Macintosh; Intel Mac OS X 10_15_6|Macintosh; Intel Mac OS X 10_15_7
-
-<ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 10_15|Macintosh; Intel Mac OS X 10_15_1|Macintosh; Intel Mac OS X 10_15_2|Macintosh; Intel Mac OS X 10_15_3|Macintosh; Intel Mac OS X 10_15_4|Macintosh; Intel Mac OS X 10_15_5|Macintosh; Intel Mac OS X 10_15_6|Macintosh; Intel Mac OS X 10_15_7)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# MacOS - Big Sur
-Macintosh; Intel Mac OS X 11_0|Macintosh; Intel Mac OS X 11_0_1|Macintosh; Intel Mac OS X 11_1|Macintosh; Intel Mac OS X 11_2|Macintosh; Intel Mac OS X 11_2_1|Macintosh; Intel Mac OS X 11_2_2|Macintosh; Intel Mac OS X 11_2_3|Macintosh; Intel Mac OS X 11_3|Macintosh; Intel Mac OS X 11_3_1|Macintosh; Intel Mac OS X 11_4|Macintosh; Intel Mac OS X 11_5|Macintosh; Intel Mac OS X 11_5_1|Macintosh; Intel Mac OS X 11_5_2|Macintosh; Intel Mac OS X 11_6|Macintosh; Intel Mac OS X 11_6_1|Macintosh; Intel Mac OS X 11_6_2|Macintosh; Intel Mac OS X 11_6_3|Macintosh; Intel Mac OS X 11_6_4|Macintosh; Intel Mac OS X 11_6_5|Macintosh; Intel Mac OS X 11_6_6|Macintosh; Intel Mac OS X 11_6_7|Macintosh; Intel Mac OS X 11_6_8|Macintosh; Intel Mac OS X 11_7|Macintosh; Intel Mac OS X 11_7_1|Macintosh; Intel Mac OS X 11_7_2|Macintosh; Intel Mac OS X 11_7_3|Macintosh; Intel Mac OS X 11_7_4|Macintosh; Intel Mac OS X 11_7_5|Macintosh; Intel Mac OS X 11_7_6|Macintosh; Intel Mac OS X 11.7.7|Macintosh; Intel Mac OS X 11.7.8|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11.7.10|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11_6; rv:106.0
-
-ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 11_0|Macintosh; Intel Mac OS X 11_0_1|Macintosh; Intel Mac OS X 11_1|Macintosh; Intel Mac OS X 11_2|Macintosh; Intel Mac OS X 11_2_1|Macintosh; Intel Mac OS X 11_2_2|Macintosh; Intel Mac OS X 11_2_3|Macintosh; Intel Mac OS X 11_3|Macintosh; Intel Mac OS X 11_3_1|Macintosh; Intel Mac OS X 11_4|Macintosh; Intel Mac OS X 11_5|Macintosh; Intel Mac OS X 11_5_1|Macintosh; Intel Mac OS X 11_5_2|Macintosh; Intel Mac OS X 11_6|Macintosh; Intel Mac OS X 11_6_1|Macintosh; Intel Mac OS X 11_6_2|Macintosh; Intel Mac OS X 11_6_3|Macintosh; Intel Mac OS X 11_6_4|Macintosh; Intel Mac OS X 11_6_5|Macintosh; Intel Mac OS X 11_6_6|Macintosh; Intel Mac OS X 11_6_7|Macintosh; Intel Mac OS X 11_6_8|Macintosh; Intel Mac OS X 11_7|Macintosh; Intel Mac OS X 11_7_1|Macintosh; Intel Mac OS X 11_7_2|Macintosh; Intel Mac OS X 11_7_3|Macintosh; Intel Mac OS X 11_7_4|Macintosh; Intel Mac OS X 11_7_5|Macintosh; Intel Mac OS X 11_7_6|Macintosh; Intel Mac OS X 11.7.7|Macintosh; Intel Mac OS X 11.7.8|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11.7.10|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11_6; rv:106.0)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# MacOS - Monterey + false!
-Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6
-Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|
-
-<ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(
-Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6|Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# RV:
-iPhone; CPU iPhone OS 13_2_3 like Mac OS X|Macintosh; Intel Mac OS X 11_2_1; rv:105.0|Macintosh; Intel Mac OS X 12_4; rv:107.0|Macintosh; Intel Mac OS X 12_0; rv:111.0|Macintosh; Intel Mac OS X 11_7_3; rv:112.0|
-Macintosh; Intel Mac OS X 12_6_4; rv:108.0|Macintosh; Intel Mac OS X 13_0; rv:105.0|Macintosh; Intel Mac OS X 10_15; rv:102.0|Macintosh; Intel Mac OS X 11_6_4; rv:104.0|Macintosh; Intel Mac OS X 13_3_1; rv:105.0|Macintosh; Intel Mac OS X 11_6_1; rv:103.01|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:113.0 
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(iPhone; CPU iPhone OS 13_2_3 like Mac OS X|Macintosh; Intel Mac OS X 11_2_1; rv:105.0|Macintosh; Intel Mac OS X 12_4; rv:107.0|Macintosh; Intel Mac OS X 12_0; rv:111.0|Macintosh; Intel Mac OS X 11_7_3; rv:112.0|Macintosh; Intel Mac OS X 12_6_4; rv:108.0|Macintosh; Intel Mac OS X 13_0; rv:105.0|Macintosh; Intel Mac OS X 10_15; rv:102.0|Macintosh; Intel Mac OS X 11_6_4; rv:104.0|Macintosh; Intel Mac OS X 13_3_1; rv:105.0|Macintosh; Intel Mac OS X 11_6_1; rv:103.01|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:113.0 )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# Opera:
-OPR/79.3.4195.76674|OPR/97.0.4719.11|OPR/98.0.4759.1|Opera/9.61|Opera/8.46|Opera/8.49|Opera/8.55|Opera/9.66|OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
-OPR/97.0.4719.26|OPR/98.0.4759.3|OPR/97.0.4719.28|OPR/98.0.4756.0|OPR/97.0.4697.0|OPR/96.0.4693.20|OPR/96.0.4693.50|OPR/98.0.4746.0|OPR/113.0.0.0||OPR/97.0.4719.26|OPR/96.0.4691.0OPR/98.0.4756.0|OPR/96.0.4693.31|OPR/96.0.4693.50|OPR/96.0.4693.8|OPR/98.0.4759.3|OPR/97.0.4719.11|OPR/97.0.4719.40  
- 
-<ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(OPR/79.3.4195.76674|OPR/97.0.4719.11|OPR/98.0.4759.1|Opera/9.61|Opera/8.46|Opera/8.49|Opera/8.55|Opera/9.66|OPR/96.0.4691.0|OPR/113.0.0.0|OPR/96.0.4691.0|OPR/98.0.4756.0|-OPR/96.0.4693.31|-OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/96.0.4693.80|OPR/96.0.4674.0|OPR/98.0.4759.1|OPR/98.0.4759.15|OPR/96.0.4674.0|OPR/96.0.4693.12|OPR/97.0.4697.0|OPR/98.0.4759.6|OPR/98.0.4759.1|OPR/98.0.4746.0|
-OPR/97.0.4719.26|OPR/98.0.4759.3|OPR/97.0.4719.28|OPR/98.0.4756.0|OPR/97.0.4697.0|OPR/96.0.4693.20|OPR/96.0.4693.50|OPR/98.0.4746.0|OPR/113.0.0.0||OPR/97.0.4719.26|OPR/96.0.4691.0OPR/98.0.4756.0|OPR/96.0.4693.31|OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/98.0.4759.3|OPR/97.0.4719.11|OPR/97.0.4719.4 )"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# MacOS - Ventura
-Macintosh; Intel Mac OS X 13_0|Macintosh; Intel Mac OS X 13_0_1|Macintosh; Intel Mac OS X 13_1|Macintosh; Intel Mac OS X 13_2|Macintosh; Intel Mac OS X 13_2_1 Macintosh; Intel Mac OS X 13_3 Macintosh; Intel Mac OS X 13_3_1|Macintosh; Intel Mac OS X 13.4|Macintosh; Intel Mac OS X 13.4.1| 	 Macintosh; Intel Mac OS X 13.5|Macintosh; Intel Mac OS X 13.5.1|Macintosh; Intel Mac OS X 13.5.2|Macintosh; Intel Mac OS X 3.6|Macintosh; Intel Mac OS X 13.6.1|Macintosh; Intel Mac OS X 13.6.2|Macintosh; Intel Mac OS X 13.6.3| 	Macintosh; Intel Mac OS X 13.6.4| 	Macintosh; Intel Mac OS X 13.6.5|Macintosh; Intel Mac OS X 13.6.6|Macintosh; Intel Mac OS X 13.6.8|Macintosh; Intel Mac OS X 13.6.7|Macintosh; Intel Mac OS X 13.6.8|Macintosh; Intel Mac OS X 13_3_1 	
-
-<ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Macintosh; Intel Mac OS X 13_0|Macintosh; Intel Mac OS X 13_0_1|Macintosh; Intel Mac OS X 13_1|Macintosh; Intel Mac OS X 13_2|Macintosh; Intel Mac OS X 13_2_1 Macintosh; Intel Mac OS X 13_3 Macintosh; Intel Mac OS X 13_3_1|Macintosh; Intel Mac OS X 13.4|Macintosh; Intel Mac OS X 13.4.1|Macintosh; Intel Mac OS X 13.5| 	Macintosh; Intel Mac OS X 13.5.1|Macintosh; Intel Mac OS X 13.5.2|Macintosh; Intel Mac OS X 3.6|Macintosh; Intel Mac OS X 13.6.1|Macintosh; Intel Mac OS X 13.6.2|Macintosh; Intel Mac OS X 13.6.3| 	Macintosh; Intel Mac OS X 13.6.4|Macintosh; Intel Mac OS X 13.6.5|Macintosh; Intel Mac OS X 13.6.6|Macintosh; Intel Mac OS X 13.6.8|Macintosh; Intel Mac OS X 13.6.7|Macintosh; Intel Mac OS X 13.6.8|Macintosh; Intel Mac OS X 13_3_1)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-# Windows NT
-RAW: Windows NT 4.0|Windows NT 3.1|	Windows NT 3.5|Windows NT 3.51|Windows NT 4.0|Windows NT 5.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|
-
-# Windows NT
-<ifModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Windows NT 4.0|Windows NT 3.1|Windows NT 3.5|Windows NT 3.51|Windows NT 4.0|Windows NT 5.1|Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|)"[NC]RewriteRule "^.*$" - [F,L]</IfModule>
-
-#EDGE
-RAW:  
-Edg/100.0.1185.10|Edg/100.0.1185.29|Edg/101.0.1210.10|Edg/101.0.1210.32|Edg/101.0.1210.47|Edg/102.0.1245.30|Edg/102.0.1245.7|Edg/103.0.1264.13|Edg/103.0.1264.37|Edg/104.0.1293.14|Edg/104.0.1293.47|
-Edg/105.0.1343.25|Edg/105.0.1343.7|Edg/106.0.1370.15|Edg/106.0.1370.34|Edg/107.0.1418.35|Edg/107.0.1418.24|Edg/107.0.1418.26|Edg/107.0.1418.35|Edg/107.0.1418.8|Edg/108.0.1462.15|Edg/108.0.1462.42|
-Edg/109.0.1518.14|Edg/109.0.1518.49|Edg/110.0.1587.17|Edg/110.0.1587.41|Edg/111.0.1661.15|Edg/111.0.1661.4|Edg/111.0.1661.41|Edg/112.0.1722.11|Edg/112.0.1722.34|Edg/112.0.1722.68|Edg/113.0.1774.3|
-Edg/113.0.1774.9|Edg/114.0.1823.11|Edg/114.0.1823.37|Edg/115.0.1901.183|Edg/115.0.1901.200|Edg/115.0.1901.203|Edg/115.0.1901.7|Edg/116.0.1938.29|Edg/116.0.1938.54|Edg/117.0.2045.31|Edg/117.0.2045.41|
-Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0.2151.44|Edg/119.0.2151.72|Edg/120.0.1054.29|Edg/120.0.2210.61|Edg/120.0.2210.7|Edg/120.0.2210.91|Edg/121.0.0.0|
-Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
-Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
-Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
-Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
-Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
-
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Edg/100.0.1185.10|Edg/100.0.1185.29|Edg/101.0.1210.10|Edg/101.0.1210.32|Edg/101.0.1210.47|Edg/102.0.1245.30|Edg/102.0.1245.7|Edg/103.0.1264.13|Edg/103.0.1264.37|Edg/104.0.1293.14|Edg/104.0.1293.47|
-Edg/105.0.1343.25|Edg/105.0.1343.7|Edg/106.0.1370.15|Edg/106.0.1370.34|Edg/107.0.1418.35|Edg/107.0.1418.24|Edg/107.0.1418.26|Edg/107.0.1418.35|Edg/107.0.1418.8|Edg/108.0.1462.15|Edg/108.0.1462.42|
-Edg/109.0.1518.14|Edg/109.0.1518.49|Edg/110.0.1587.17|Edg/110.0.1587.41|Edg/111.0.1661.15|Edg/111.0.1661.4|Edg/111.0.1661.41|Edg/112.0.1722.11|Edg/112.0.1722.34|Edg/112.0.1722.68|Edg/113.0.1774.3|
-Edg/113.0.1774.9|Edg/114.0.1823.11|Edg/114.0.1823.37|Edg/115.0.1901.183|Edg/115.0.1901.200|Edg/115.0.1901.203|Edg/115.0.1901.7|Edg/116.0.1938.29|Edg/116.0.1938.54|Edg/117.0.2045.31|Edg/117.0.2045.41|
-Edg/117.0.2045.9|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0.2151.44|Edg/119.0.2151.72|Edg/120.0.1054.29|Edg/120.0.2210.61|Edg/120.0.2210.7|Edg/120.0.2210.91|Edg/121.0.0.0|
-Edg/121.0.2277.106|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/122.0.0.0|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.8|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|
-Edg/124.0.2478.10|Edg/124.0.2478.51|Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
-Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.42|Edg/128.0.2739.5|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|Edg/129.0.2792.12|Edg/129.0.2792.52|
-Edg/130.0.2849.46|Edg/130.0.0.0|Edg/130.0.2849.5|Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|Edg/81.0.416.68|Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.39|Edg/90.0.818.8|Edg/91.0.864.11|Edg/91.0.864.37|Edg/92.0.902.55|Edg/92.0.902.9|Edg/93.0.961.11|
-Edg/93.0.961.38|Edg/94.0.992.31|Edg/94.0.992.9|Edg/95.0.1020.30|Edg/95.0.1020.9Edg/96.0.1054.29|Edg/96.0.1054.8|Edg/97.0.1072.21|Edg/97.0.1072.55|Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-**************
-
-#Firefox RAW:
-Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/48.0|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
-Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|
-Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
-Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
-Firefox/62.0|Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/63.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|Firefox/67.0|Firefox/67.0.3|Firefox/68.0|
-Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|Firefox/71.0|Firefox/71.8|Firefox/71.9|Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|
-Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|Firefox/78.0.1|Firefox/78.0.2|Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|
-Firefox/85.0||Firefox/85.0.2|Firefox/86.0|Firefox/86.0.1Firefox/87.0||Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|Firefox/90.0.2|Firefox/91.0|
-Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|
-Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|
-Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|Firefox/105.0Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|
-Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|Firefox/110.0|Firefox/111.0|Firefox/111.0.1|Firefox/112.0|Firefox/112.0.1|Firefox/112.0.2|Firefox/113.0|
-Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
-Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
-Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
-Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0|Firefox/48.0
-
-
-READY:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Firefox/3.6.1|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/15.0.1|Firefox/16.0.1|Firefox/30|Firefox/48.0|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|Firefox/47.2|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|Firefox/50.0.1|
-Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|
-Firefox/53.0.3|Firefox/53.2|Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|Firefox/57.0|Firefox/57.0.1|
-Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
-Firefox/62.0|Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/63.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|Firefox/67.0|Firefox/67.0.3|Firefox/68.0|
-Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|Firefox/71.0|Firefox/71.8|Firefox/71.9|Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|
-Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|Firefox/78.0.1|Firefox/78.0.2|Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|
-Firefox/85.0||Firefox/85.0.2|Firefox/86.0|Firefox/86.0.1Firefox/87.0||Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|Firefox/90.0.2|Firefox/91.0|
-Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|
-Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|
-Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|Firefox/105.0Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|
-Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|Firefox/110.0|Firefox/111.0|Firefox/111.0.1|Firefox/112.0|Firefox/112.0.1|Firefox/112.0.2|Firefox/113.0|
-Firefox/113.0.1|Firefox/113.0.2|Firefox/114.0|Firefox/114.0.1|Firefox/114.0.|Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|Firefox/117.0|Firefox/117.0.1|
-Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
-Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|
-Firefox/3.6|Firefox/4.0| Firefox/13.0|Firefox/106.0|Firefox/108.0|Firefox/111.0|Firefox/48.0)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-**************
-
-#Chrome  RAW:
-Chrome/15.0.1901.200|Chrome/27.0.1453.94|Chrome/30.0.1599.66|Chrome/34.0.1847.114|Chrome/45.0.2454.94|Chrome/46.0.2490.80|Chrome/47.0.2283.102|Chrome/48.0.2564.97|Chrome/49.0.2623.75|Chrome/50.0.2661|Chrome/50.0.2661.102|Chrome/50.0.3232.292|
-Chrome/51.0.2160.381|Chrome/51.0.2329.290|Chrome/51.0.2704.84|Chrome/52.0.2315.144|Chrome/52.0.2743.116|Chrome/52.0.3133.374|Chrome/52.0.3748.297|Chrome/53.0.2785.116|Chrome/54.0.1107.38|Chrome/54.0.2840.71|Chrome/55.0.2660.238|
-Chrome/55.0.2883.75|Chrome/56.0.2924.87|Chrome/57.0.2987.133|Chrome/58.0.3029.96|Chrome/60.0.3112.78|Chrome/60.0.3112.90|Chrome/60.0.3112.107|Chrome/61.0.3163.79|Chrome/62.0.3202.75|Chrome/63.0.3239.108|Chrome/64.0.3282.140|
-Chrome/65.0.3325.181|Chrome/67.0.3396.79|Chrome/68.0.3440.84|Chrome/68.0.3440.106|Chrome/69.0.3497.92|Chrome/70.0.3538.77|Chrome/70.0.3538.102|Chrome/71.0.3578.80|Chrome/74.0.3729|Chrome/74.0.3729.169|Chrome/75.0.3770.80|
-Chrome/76.0.3809.100|Chrome/77.0.3844.0|Chrome/77.0.3865.116|Chrome/78.0.3904.70|Chrome/78.0.3904.97|Chrome/79.0.309.11|Chrome/79.0.309.30|Chrome/79.0.309.65|Chrome/79.0.309.68|Chrome/79.0.309.71|Chrome/79.0.3945.0|
-Chrome/79.0.3945.88|Chrome/79.0.3945.130|Chrome/80.0.361.45|Chrome/80.0.361.48|Chrome/80.0.361.62|Chrome/80.0.361.109|Chrome/80.0.3987.0|Chrome/80.0.3987.132|Chrome/80.0.3987.149|Chrome/80.0.3987.163|Chrome/81.0.416.34|
-Chrome/81.0.416.58|Chrome/81.0.416.62|Chrome/81.0.416.77|Chrome/81.0.4044.92|Chrome/83.0.478.37|Chrome/83.0.478.58|Chrome/83.0.478.64|Chrome/83.0.4103.0|Chrome/83.0.4103.61|Chrome/83.0.4103.116|
-Chrome/84.0.522.40|Chrome/84.0.522.52|Chrome/84.0.522.58|Chrome/84.0.522.61|Chrome/84.0.4147.1|Chrome/84.0.4147.105|Chrome/84.0.4147.135|Chrome/85.0.564.44|Chrome/85.0.4182.0|Chrome/85.0.4183.102|Chrome/85.0.4183.121|
-Chrome/86.0.622.48|Chrome/86.0.622.56|Chrome/86.0.622.61|Chrome/86.0.622.68|Chrome/86.0.4240.75|Chrome/87.0.664.47|Chrome/87.0.664.52|Chrome/87.0.4280.14|Chrome/87.0.4280.88|Chrome/88.0.4298.0|Chrome/88.0.4324.0|Chrome/88.0.4324.186|
-Chrome/89.0.774.45|Chrome/89.0.774.50|Chrome/89.0.4389.86|Chrome/89.0.4389.90|Chrome/90.0.818.42|Chrome/90.0.818.56|Chrome/90.0.818.62|Chrome/90.0.4430.72|Chrome/90.0.4430.85|Chrome/91.0.864.53|Chrome/91.0.864.70|Chrome/91.0.864.71|Chrome/91.0.4472.77|Chrome/91.0.4472.114|
-Chrome/91.0.4472.124|Chrome/92.0.902.55|Chrome/92.0.4512.0|Chrome/92.0.4515.107|Chrome/92.0.4515.159|Chrome/93.0.4577.0|Chrome/93.0.4577.82|Chrome/94.0.992.31|Chrome/94.0.992.37|Chrome/94.0.992.50|Chrome/94.0.4606.61|
-Chrome/95.0.1020.53|Chrome/95.0.4638.54|Chrome/96.0.1054.41|Chrome/96.0.1054.53|Chrome/96.0.4641.0|Chrome/96.0.4664.45|Chrome/96.0.4664.110|Chrome/97.0.1072.55|Chrome/97.0.1072.62|Chrome/97.0.1072.69|Chrome/97.0.4280.67|Chrome/97.0.4680.0|
-Chrome/98.0.1108.6|Chrome/98.0.1108.43|Chrome/99.0.1150.46|Chrome/100.0.1185.36|Chrome/101.0.1210.4|Chrome/101.0.4951.41|Chrome/101.0.4951.64|Chrome/101.0.4951.67|Chrome/102.0.1245.30|Chrome/102.0.1245.44|Chrome/102.0.5005.63|Chrome/103.0.0.0|Chrome/103.0.1264.49|
-Chrome/104.0.0.0|Chrome/104.0.1293.47|Chrome/104.0.1293.54|Chrome/104.0.5112.79|Chrome/104.0.5112.97|Chrome/104.0.5112.102|Chrome/105.0.1343.42|Chrome/105.0.1343.50|Chrome/105.0.5195.52|Chrome/105.0.5195.125|
-Chrome/106.0.0.0|Chrome/106.0.1370.34|Chrome/106.0.1370.47|Chrome/106.0.5249.30|Chrome/106.0.5249.62|Chrome/106.0.5249.91|Chrome/106.0.5249.119|Chrome/107.0.0.0|Chrome/107.0.1418.24|Chrome/107.0.1418.52|Chrome/107.0.1418.62|Chrome/107.0.5304.63|
-Chrome/107.0.5304.106|Chrome/107.0.5304.110|Chrome/107.0.5304.121|Chrome/108.0.0.0|Chrome/108.0.1462.46|Chrome/108.0.1462.76|Chrome/108.0.5359.94|Chrome/108.0.5359.98|Chrome/109.0.0.0|Chrome/109.0.1518.52|Chrome/109.0.1518.61|
-Chrome/109.0.1518.70|Chrome/109.0.5414.46|Chrome/109.0.5414.119|Chrome/110.0.0.0|Chrome/110.0.1587.50|Chrome/110.0.1587.57|Chrome/110.0.1587.63|Chrome/110.0.1587.69|Chrome/110.0.5481.30|Chrome/110.0.5481.78|Chrome/110.0.5481.100|
-Chrome/110.0.5481.178|Chrome/110.0.5481.192|Chrome/111.0.0.0|Chrome/111.0.1661.54|Chrome/111.0.5532.2|Chrome/111.0.5532.||Chrome/111.0.5563.8|Chrome/111.0.5563.19|Chrome/111.0.5563.64|Chrome/111.0.5563.65|Chrome/112.0.1722.34|
-Chrome/112.0.1722.39|Chrome/112.0.1722.48|Chrome/112.0.5596.2|Chrome/112.0.5614.0|Chrome/112.0.5615.20|Chrome/112.0.5615.49|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/112.0.5615.121|Chrome/112.0.5615.165|
-Chrome/113.0.0.0|Chrome/113.0.1774.35|Chrome/113.0.1774.57|Chrome/113.0.5672.64|Chrome/114.0.1823.37|Chrome/114.0.1823.43|Chrome/114.0.1823.55|Chrome/114.0.1823.67|Chrome/114.0.1823.82|Chrome/114.0.5735.91|Chrome/114.0.5735.133|
-Chrome/115.0.1901.203|Chrome/115.0.5790.24|Chrome/115.0.5790.98|Chrome/116.0.5845.0|Chrome/116.0.5845.82| Chrome/117.0.2045.41|Chrome/117.0.5938.60|Chrome/117.0.5938.132|Chrome/117.0.5938.149|Chrome/118.0.0.0|
-Chrome/119.0.2151.72|Chrome/119.0.6045.9|Chrome/119.0.6045.9|Chrome/119.0.6045.123|Chrome/119.0.6045.159|Chrome/119.0.6045.199|Chrome/120.0.0.0|Chrome/120.0.0.0.0|Chrome/120.0.2210.91|Chrome/120.0.6099.28|Chrome/120.0.6099.109|
-Chrome/120.0.6099.129| Chrome/120.0.6099.939|Chrome/121.0.0.0|Chrome/121.0.0.0 6|Chrome/121.0.2277.106|Chrome/121.0.6167.0|Chrome/121.0.6167.57|Chrome/121.0.6167.85|Chrome/121.0.6167.184|Chrome/122.0.2365.52|
-Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261.94|Chrome/123.0.2420.65|Chrome/123.0.6312.0|Chrome/123.0.6312.4|Chrome/123.0.6312.105|Chrome/124.0.0.0|Chrome/124.0.2478.67|
-Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367.118|Chrome/125.0.|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|
-Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
-Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|
-Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107
-|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71|Chrome/90.0.4430.85
-
-READY:
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(Chrome/15.0.1901.200|Chrome/27.0.1453.94|Chrome/30.0.1599.66|Chrome/34.0.1847.114|Chrome/45.0.2454.94|Chrome/46.0.2490.80|Chrome/47.0.2283.102|Chrome/48.0.2564.97|Chrome/49.0.2623.75|Chrome/50.0.2661|Chrome/50.0.2661.102|Chrome/50.0.3232.292|
-Chrome/51.0.2160.381|Chrome/51.0.2329.290|Chrome/51.0.2704.84|Chrome/52.0.2315.144|Chrome/52.0.2743.116|Chrome/52.0.3133.374|Chrome/52.0.3748.297|Chrome/53.0.2785.116|Chrome/54.0.1107.38|Chrome/54.0.2840.71|Chrome/55.0.2660.238|
-Chrome/55.0.2883.75|Chrome/56.0.2924.87|Chrome/57.0.2987.133|Chrome/58.0.3029.96|Chrome/60.0.3112.78|Chrome/60.0.3112.90|Chrome/60.0.3112.107|Chrome/61.0.3163.79|Chrome/62.0.3202.75|Chrome/63.0.3239.108|Chrome/64.0.3282.140|
-Chrome/65.0.3325.181|Chrome/67.0.3396.79|Chrome/68.0.3440.84|Chrome/68.0.3440.106|Chrome/69.0.3497.92|Chrome/70.0.3538.77|Chrome/70.0.3538.102|Chrome/71.0.3578.80|Chrome/74.0.3729|Chrome/74.0.3729.169|Chrome/75.0.3770.80|
-Chrome/76.0.3809.100|Chrome/77.0.3844.0|Chrome/77.0.3865.116|Chrome/78.0.3904.70|Chrome/78.0.3904.97|Chrome/79.0.309.11|Chrome/79.0.309.30|Chrome/79.0.309.65|Chrome/79.0.309.68|Chrome/79.0.309.71|Chrome/79.0.3945.0|
-Chrome/79.0.3945.88|Chrome/79.0.3945.130|Chrome/80.0.361.45|Chrome/80.0.361.48|Chrome/80.0.361.62|Chrome/80.0.361.109|Chrome/80.0.3987.0|Chrome/80.0.3987.132|Chrome/80.0.3987.149|Chrome/80.0.3987.163|Chrome/81.0.416.34|
-Chrome/81.0.416.58|Chrome/81.0.416.62|Chrome/81.0.416.77|Chrome/81.0.4044.92|Chrome/83.0.478.37|Chrome/83.0.478.58|Chrome/83.0.478.64|Chrome/83.0.4103.0|Chrome/83.0.4103.61|Chrome/83.0.4103.116|
-Chrome/84.0.522.40|Chrome/84.0.522.52|Chrome/84.0.522.58|Chrome/84.0.522.61|Chrome/84.0.4147.1|Chrome/84.0.4147.105|Chrome/84.0.4147.135|Chrome/85.0.564.44|Chrome/85.0.4182.0|Chrome/85.0.4183.102|Chrome/85.0.4183.121|
-Chrome/86.0.622.48|Chrome/86.0.622.56|Chrome/86.0.622.61|Chrome/86.0.622.68|Chrome/86.0.4240.75|Chrome/87.0.664.47|Chrome/87.0.664.52|Chrome/87.0.4280.14|Chrome/87.0.4280.88|Chrome/88.0.4298.0|Chrome/88.0.4324.0|Chrome/88.0.4324.186|
-Chrome/89.0.774.45|Chrome/89.0.774.50|Chrome/89.0.4389.86|Chrome/89.0.4389.90|Chrome/90.0.818.42|Chrome/90.0.818.56|Chrome/90.0.818.62|Chrome/90.0.4430.72|Chrome/90.0.4430.85|Chrome/91.0.864.53|Chrome/91.0.864.70|Chrome/91.0.864.71|Chrome/91.0.4472.77|Chrome/91.0.4472.114|
-Chrome/91.0.4472.124|Chrome/92.0.902.55|Chrome/92.0.4512.0|Chrome/92.0.4515.107|Chrome/92.0.4515.159|Chrome/93.0.4577.0|Chrome/93.0.4577.82|Chrome/94.0.992.31|Chrome/94.0.992.37|Chrome/94.0.992.50|Chrome/94.0.4606.61|
-Chrome/95.0.1020.53|Chrome/95.0.4638.54|Chrome/96.0.1054.41|Chrome/96.0.1054.53|Chrome/96.0.4641.0|Chrome/96.0.4664.45|Chrome/96.0.4664.110|Chrome/97.0.1072.55|Chrome/97.0.1072.62|Chrome/97.0.1072.69|Chrome/97.0.4280.67|Chrome/97.0.4680.0|
-Chrome/98.0.1108.6|Chrome/98.0.1108.43|Chrome/99.0.1150.46|Chrome/100.0.1185.36|Chrome/101.0.1210.4|Chrome/101.0.4951.41|Chrome/101.0.4951.64|Chrome/101.0.4951.67|Chrome/102.0.1245.30|Chrome/102.0.1245.44|Chrome/102.0.5005.63|Chrome/103.0.0.0|Chrome/103.0.1264.49|
-Chrome/104.0.0.0|Chrome/104.0.1293.47|Chrome/104.0.1293.54|Chrome/104.0.5112.79|Chrome/104.0.5112.97|Chrome/104.0.5112.102|Chrome/105.0.1343.42|Chrome/105.0.1343.50|Chrome/105.0.5195.52|Chrome/105.0.5195.125|
-Chrome/106.0.0.0|Chrome/106.0.1370.34|Chrome/106.0.1370.47|Chrome/106.0.5249.30|Chrome/106.0.5249.62|Chrome/106.0.5249.91|Chrome/106.0.5249.119|Chrome/107.0.0.0|Chrome/107.0.1418.24|Chrome/107.0.1418.52|Chrome/107.0.1418.62|Chrome/107.0.5304.63|
-Chrome/107.0.5304.106|Chrome/107.0.5304.110|Chrome/107.0.5304.121|Chrome/108.0.0.0|Chrome/108.0.1462.46|Chrome/108.0.1462.76|Chrome/108.0.5359.94|Chrome/108.0.5359.98|Chrome/109.0.0.0|Chrome/109.0.1518.52|Chrome/109.0.1518.61|
-Chrome/109.0.1518.70|Chrome/109.0.5414.46|Chrome/109.0.5414.119|Chrome/110.0.0.0|Chrome/110.0.1587.50|Chrome/110.0.1587.57|Chrome/110.0.1587.63|Chrome/110.0.1587.69|Chrome/110.0.5481.30|Chrome/110.0.5481.78|Chrome/110.0.5481.100|
-Chrome/110.0.5481.178|Chrome/110.0.5481.192|Chrome/111.0.0.0|Chrome/111.0.1661.54|Chrome/111.0.5532.2|Chrome/111.0.5532.||Chrome/111.0.5563.8|Chrome/111.0.5563.19|Chrome/111.0.5563.64|Chrome/111.0.5563.65|Chrome/112.0.1722.34|
-Chrome/112.0.1722.39|Chrome/112.0.1722.48|Chrome/112.0.5596.2|Chrome/112.0.5614.0|Chrome/112.0.5615.20|Chrome/112.0.5615.49|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/112.0.5615.121|Chrome/112.0.5615.165|
-Chrome/113.0.0.0|Chrome/113.0.1774.35|Chrome/113.0.1774.57|Chrome/113.0.5672.64|Chrome/114.0.1823.37|Chrome/114.0.1823.43|Chrome/114.0.1823.55|Chrome/114.0.1823.67|Chrome/114.0.1823.82|Chrome/114.0.5735.91|Chrome/114.0.5735.133|
-Chrome/115.0.1901.203|Chrome/115.0.5790.24|Chrome/115.0.5790.98|Chrome/116.0.5845.0|Chrome/116.0.5845.82| Chrome/117.0.2045.41|Chrome/117.0.5938.60|Chrome/117.0.5938.132|Chrome/117.0.5938.149|Chrome/118.0.0.0|
-Chrome/119.0.2151.72|Chrome/119.0.6045.9|Chrome/119.0.6045.9|Chrome/119.0.6045.123|Chrome/119.0.6045.159|Chrome/119.0.6045.199|Chrome/120.0.0.0|Chrome/120.0.0.0.0|Chrome/120.0.2210.91|Chrome/120.0.6099.28|Chrome/120.0.6099.109|
-Chrome/120.0.6099.129| Chrome/120.0.6099.939|Chrome/121.0.0.0|Chrome/121.0.0.0 6|Chrome/121.0.2277.106|Chrome/121.0.6167.0|Chrome/121.0.6167.57|Chrome/121.0.6167.85|Chrome/121.0.6167.184|Chrome/122.0.2365.52|
-Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261.94|Chrome/123.0.2420.65|Chrome/123.0.6312.0|Chrome/123.0.6312.4|Chrome/123.0.6312.105|Chrome/124.0.0.0|Chrome/124.0.2478.67|
-Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|Chrome/124.0.6367.118|Chrome/125.0.|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|
-Chrome/126.0.2592.87|Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533|Chrome/127.0.6533.17|Chrome/127.0.6533.73|
-Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/128.0.0.0|Chrome/128.0.6613.18|Chrome/128.0.6613.84|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.71|Chrome/18.0.865.0|Chrome/60.0.3112.107|Chrome/74.0.3729.169|Chrome/70.0.3538.77|Chrome/129.0.6668.71|
-Chrome/74.0.3729.169|Chrome/43.0.845.0|Chrome/48.0.861.0|Chrome/51.0.870.0|Chrome/34.0.824.0|Chrome/30.0.1599.66|Chrome/90.0.4430.85|Chrome/98.0.4758.80|Chrome/104.0.0.0|Chrome/104.0.5112.79|Chrome/112.0.5615.50|Chrome/112.0.5615.87|Chrome/74.0.3729.169| Chrome/68.0.3440.106|Chrome/66.0.3359.158|Chrome/60.0.3112.107|Chrome/90.0.4430.85)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
-
-...................................................................
--------------------------------------------------------------------
-
-## Fake.ios_platform_token():
-'iPad; CPU iPad OS 17_1 like Mac OS X'
-'iPhone; CPU iPhone OS 12_4_8 like Mac OS X'
-'iPad; CPU iPad OS 16_7_7 like Mac OS X'
-'iPad; CPU iPad OS 17_2_1 like Mac OS X'
-'iPad; CPU iPad OS 10_3_4 like Mac OS X'
-# fake.linux_platform_token()
-
-## FAKE:
-'X11; Linux x86_64'
-'X11; Linux x86_64'
-'X11; Linux i686'
-'X11; Linux x86_64'
-'X11; Linux x86_64'
-
-##Fake.linux_processor()
-'x86_64'
-'x86_64'
-'i686'
-'x86_64'
-'x86_64'
-
-## Fake.mac_platform_token()
-'Macintosh; U; PPC Mac OS X 10_11_0'
-'Macintosh; U; Intel Mac OS X 10_12_6'
-'Macintosh; U; Intel Mac OS X 10_12_5'
-'Macintosh; PPC Mac OS X 10_7_4'
-'Macintosh; PPC Mac OS X 10_6_9':
-
-## Fake.mac_processor()
-'U; PPC'
-'U; PPC'
-'Intel'
-'U; Intel'
-'U; PPC'
-
-##Fake.windows_platform_token()
-'Windows NT 11.0
-'Windows NT 5.01
-'Windows NT 10.0
-'Windows NT 5.01
-'Windows 95
-
-## Fake.safari()
 Safari/6534.49.4
 Safari/6535.10.3
 Safari/6531.6.6
 Safari/6534.6.1
 Safari/6534.21.5
 
-##RAW FALSE:
-iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU iPhone OS 12_4_8 like Mac OS X|iPad; CPU iPad OS 16_7_7 like Mac OS X|iPad; CPU iPad OS 17_2_1 like Mac OS X|iPad; CPU iPad OS 10_3_4 like Mac OS X|X11; Linux x86_64|
-X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95|Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5
+RAW:
 
-READY:
+Macintosh; Intel Mac OS X 10_13Macintosh; Intel Mac OS X 10_13_1|Macintosh; Intel Mac OS X 10_13_2|Macintosh; Intel Mac OS X 10_13_3|Macintosh; Intel Mac OS X 10_13_4|Macintosh; Intel Mac OS X 10_13_5|Macintosh; Intel Mac OS X 10_13_6|
+Macintosh; Intel Mac OS X 10_14|Macintosh; Intel Mac OS X 10_14_1|Macintosh; Intel Mac OS X 10_14_2|Macintosh; Intel Mac OS X 10_14_3|Macintosh; Intel Mac OS X 10_14_4|Macintosh; Intel Mac OS X 10_14_5|Macintosh; Intel Mac OS X 10_14_6
+Macintosh; Intel Mac OS X 10_15|Macintosh; Intel Mac OS X 10_15_1|Macintosh; Intel Mac OS X 10_15_2|Macintosh; Intel Mac OS X 10_15_3|Macintosh; Intel Mac OS X 10_15_4|Macintosh; Intel Mac OS X 10_15_5|Macintosh; Intel Mac OS X 10_15_6|Macintosh; Intel Mac OS X 10_15_7|
+Macintosh; Intel Mac OS X 11_0|Macintosh; Intel Mac OS X 11_0_1|Macintosh; Intel Mac OS X 11_1|Macintosh; Intel Mac OS X 11_2|Macintosh; Intel Mac OS X 11_2_1|Macintosh; Intel Mac OS X 11_2_2|Macintosh; Intel Mac OS X 11_2_3|Macintosh; Intel Mac OS X 11_3|Macintosh; Intel Mac OS X 11_3_1|Macintosh; Intel Mac OS X 11_4|Macintosh; Intel Mac OS X 11_5|Macintosh; Intel Mac OS X 11_5_1|Macintosh; Intel Mac OS X 11_5_2|Macintosh; Intel Mac OS X 11_6|Macintosh; Intel Mac OS X 11_6_1|Macintosh; Intel Mac OS X 11_6_2|Macintosh; Intel Mac OS X 11_6_3|Macintosh; Intel Mac OS X 11_6_4|Macintosh; Intel Mac OS X 11_6_5|Macintosh; Intel Mac OS X 11_6_6|Macintosh; Intel Mac OS X 11_6_7|Macintosh; Intel Mac OS X 11_6_8|Macintosh; Intel Mac OS X 11_7|Macintosh; Intel Mac OS X 11_7_1|Macintosh; Intel Mac OS X 11_7_2|Macintosh; Intel Mac OS X 11_7_3|Macintosh; Intel Mac OS X 11_7_4|Macintosh; Intel Mac OS X 11_7_5|Macintosh; Intel Mac OS X 11_7_6|Macintosh; Intel Mac OS X 11.7.7|Macintosh; Intel Mac OS X 11.7.8|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11.7.10|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11_6; rv:106.0|
+Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6
+Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|
+iPhone; CPU iPhone OS 13_2_3 like Mac OS X|Macintosh; Intel Mac OS X 11_2_1; rv:105.0|Macintosh; Intel Mac OS X 12_4; rv:107.0|Macintosh; Intel Mac OS X 12_0; rv:111.0|Macintosh; Intel Mac OS X 11_7_3; rv:112.0|
+Macintosh; Intel Mac OS X 12_6_4; rv:108.0|Macintosh; Intel Mac OS X 13_0; rv:105.0|Macintosh; Intel Mac OS X 10_15; rv:102.0|Macintosh; Intel Mac OS X 11_6_4; rv:104.0|Macintosh; Intel Mac OS X 13_3_1; rv:105.0|Macintosh; Intel Mac OS X 11_6_1; rv:103.01|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:113.0| 
+Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5
+
+---------------------------
+...........................
+# EDGE:
+
+Edg/16.16299|Edg/79.0.309.14|Edg/79.0.309.63|Edg/80.0.361.9|Edg/81.0.416.68|
+Edg/87.0.664.75|Edg/88.0.705.18|Edg/88.0.705.50|Edg/89.0.774.18|Edg/89.0.774.48|Edg/90.0.818.8|Edg/90.0.818.39|Edg/91.0.864.11|Edg/91.0.864.37|
+Edg/92.0.902.9|Edg/92.0.902.55|Edg/93.0.961.11|Edg/93.0.961.38|Edg/94.0.992.9|Edg/94.0.992.31|Edg/95.0.1020.9|Edg/95.0.1020.30|Edg/96.0.1054.8|Edg/96.0.1054.29|
+Edg/97.0.1072.21|Edg/97.0.1072.55Edg/98.0.1108.23|Edg/98.0.1108.43|Edg/99.0.1150.11|Edg/99.0.1150.30|Edg/100.0.1185.10|Edg/100.0.1185.29|Edg/101.0.1210.10|
+Edg/101.0.1210.32|Edg/101.0.1210.47|Edg/102.0.1245.7|Edg/102.0.1245.30|Edg/103.0.1264.13|Edg/103.0.1264.37|Edg/104.0.1293.14|Edg/104.0.1293.47|Edg/105.0.1343.7|
+Edg/105.0.1343.25|Edg/106.0.1370.15|Edg/106.0.1370.34|Edg/107.0.1418.8|Edg/107.0.1418.24|Edg/107.0.1418.26|Edg/107.0.1418.35|Edg/108.0.1462.15|Edg/108.0.1462.42|
+Edg/109.0.1518.14|Edg/109.0.1518.49|Edg/110.0.1587.17|Edg/110.0.1587.41|Edg/111.0.1661.4|Edg/111.0.1661.15|Edg/111.0.1661.41|Edg/112.0.1722.11|Edg/112.0.1722.34|
+Edg/112.0.1722.68|Edg/113.0.1774.3|Edg/113.0.1774.9|Edg/114.0.1823.11|Edg/114.0.1823.37|Edg/115.0.1901.7|Edg/115.0.1901.183|Edg/115.0.1901.200|Edg/115.0.1901.203|
+Edg/116.0.1938.29|Edg/116.0.1938.54|Edg/117.0.2045.9|Edg/117.0.2045.31|Edg/117.0.2045.41|Edg/118.0.2088.11|Edg/118.0.2088.46|Edg/119.0.2151.12|Edg/119.0.2151.44|
+Edg/119.0.2151.72|Edg/120.0.1054.29|Edg/120.0.2210.7|Edg/120.0.2210.61|Edg/120.0.2210.91|Edg/121.0.0.0|Edg/121.0.2277.4|Edg/121.0.2277.83|Edg/121.0.2277.106|
+Edg/122.0.0.0|Edg/122.0.2365.8|Edg/122.0.2365.52|Edg/122.0.2365.66|Edg/122.0.2365.92|Edg/123.0.2420.10|Edg/123.0.2420.53|Edg/123.0.2420.65|Edg/124.0.2478.10|Edg/124.0.2478.51|
+Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.0.2535.92|Edg/126.0.2592.13|Edg/126.0.2592.56|Edg/126.0.2592.68|Edg/126.0.2592.87|
+Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.5|Edg/128.0.2739.42|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|
+Edg/129.0.2792.12|Edg/129.0.2792.52|Edg/130.0.2849.5|Edg/130.0.2849.46|Edg/130.0.2849.56|Edg/131.0.2903.51|Edg/131.0.2903.70|Edg/131.0.2903.146|Edg/132.0.2957.127
+Edg/133.0.3065.59|Edg/133.0.3065.69|Edg/133.0.3065.82|Edg/133.0.3065.92|Edg/134.0.3124.62|Edg/134.0.3124.85|Edg/135.0.3179.54|Edg/135.0.3179.66|Edg/136.0.3240.76
+
+---------------------------
+...........................
+# Opera:
+
+OPR/15.0.1147.130|OPR/15.0.1147.132|OPR/15.0.1147.138|OPR/15.0.1147.141|OPR/15.0.1147.147|OPR/15.0.1147.148|OPR/15.0.1147.153|OPR/16.0.1196.62|OPR/16.0.1196.73|OPR/16.0.1196.80|OPR/17.0.1241.45|
+OPR/17.0.1241.53|OPR/18.0.1284.49|OPR/18.0.1284.63|OPR/18.0.1284.68|OPR/19.0.1326.47|OPR/19.0.1326.56|OPR/19.0.1326.59|OPR/19.0.1326.63|OPR/20.0.1387.64|
+OPR/20.0.1387.77|OPR/20.0.1387.82|OPR/20.0.1387.91|OPR/21.0.1432.57|OPR/21.0.1432.67|OPR/22.0.1471.50|OPR/22.0.1471.70|OPR/23.0.1522.60|OPR/23.0.1522.72|OPR/23.0.1522.75|
+OPR/23.0.1522.77|OPR/24.0.1558.53|OPR/24.0.1558.61|OPR/24.0.1558.64|OPR/25.0.1614.50|OPR/25.0.1614.63|OPR/25.0.1614.68|OPR/25.0.1614.71|OPR/26.0.1656.24|OPR/26.0.1656.32|
+OPR/26.0.1656.60|OPR/27.0.1689.54|OPR/27.0.1689.66|OPR/27.0.1689.69|OPR/27.0.1689.76|OPR/28.0.1750.40|OPR/28.0.1750.48|OPR/28.0.1750.51|OPR/29.0.1795.47|OPR/29.0.1795.60|
+OPR/30.0.1835.52|OPR/30.0.1835.59|OPR/30.0.1835.88|OPR/30.0.1835.125|OPR/31.0.1889.99|OPR/31.0.1889.174|OPR/32.0.1948.25|OPR/32.0.1948.69|OPR/33.0.1990.43|
+OPR/33.0.1990.58|OPR/33.0.1990.115|OPR/34.0.2036.25|OPR/34.0.2036.47|OPR/34.0.2036.50|OPR/35.0.2066.37|OPR/35.0.2066.68|OPR/35.0.2066.82|OPR/35.0.2066.92|OPR/36.0.2130.32|
+OPR/36.0.2130.46|OPR/36.0.2130.65|OPR/37.0.2178.32|OPR/37.0.2178.43|OPR/37.0.2178.54|OPR/38.0.2220.29|OPR/38.0.2220.31|OPR/38.0.2220.41|OPR/39.0.2256.43|OPR/39.0.2256.48|
+OPR/39.0.2256.71|OPR/40.0.2308.54|OPR/40.0.2308.62|OPR/40.0.2308.75|OPR/40.0.2308.81|OPR/40.0.2308.90|OPR/41.0.2353.46|OPR/41.0.2353.56|OPR/41.0.2353.69|OPR/42.0.2393.85|
+OPR/42.0.2393.94|OPR/42.0.2393.137|OPR/42.0.2393.351|OPR/42.0.2393.517|OPR/43.0.2442.806|OPR/43.0.2442.991|OPR/43.0.2442.1144|OPR/43.0.2442.1165|OPR/44.0.2510.857|OPR/44.0.2510.1159|
+OPR/44.0.2510.1218|OPR/44.0.2510.1449|OPR/45.0.2552.635|OPR/45.0.2552.812|OPR/45.0.2552.869|OPR/45.0.2552.881|OPR/45.0.2552.884|OPR/45.0.2552.888|OPR/45.0.2552.892|OPR/45.0.2552.898|
+OPR/46.0.2597.26|OPR/46.0.2597.32|OPR/46.0.2597.39|OPR/46.0.2597.46|OPR/46.0.2597.57|OPR/46.0.2597.61|OPR/47.0.2631.39|OPR/47.0.2631.48|OPR/47.0.2631.55|OPR/47.0.2631.71|
+OPR/47.0.2631.80|OPR/47.0.2631.83|OPR/48.0.2685.32|OPR/48.0.2685.35|OPR/48.0.2685.39|OPR/48.0.2685.50|OPR/48.0.2685.52|OPR/49.0.2725.34|OPR/49.0.2725.39|OPR/49.0.2725.43|
+OPR/49.0.2725.47|OPR/49.0.2725.56|OPR/49.0.2725.64|OPR/50.0.2762.45|OPR/50.0.2762.58|OPR/50.0.2762.67|OPR/51.0.2830.26|OPR/51.0.2830.34|OPR/51.0.2830.40|OPR/51.0.2830.55|
+OPR/51.0.2830.62|OPR/52.0.2871.30|OPR/52.0.2871.37|OPR/52.0.2871.40|OPR/52.0.2871.64|OPR/52.0.2871.97||OPR/52.0.2871.99|OPR/53.0.2907.37|OPR/53.0.2907.57|OPR/53.0.2907.68|
+OPR/53.0.2907.88|OPR/53.0.2907.99|OPR/53.0.2907.106|OPR/53.0.2907.110|OPR/54.0.2952.41|OPR/54.0.2952.46|OPR/54.0.2952.51|OPR/54.0.2952.54|OPR/54.0.2952.60|OPR/54.0.2952.64|
+OPR/54.0.2952.71|OPR/55.0.2994.37|OPR/55.0.2994.44|OPR/55.0.2994.56|OPR/55.0.2994.59|OPR/55.0.2994.61|OPR/56.0.3051.31|OPR/56.0.3051.35|OPR/56.0.3051.36|OPR/56.0.3051.43|
+OPR/56.0.3051.52|OPR/56.0.3051.99|OPR/56.0.3051.102|OPR/56.0.3051.104|OPR/56.0.3051.116|OPR/57.0.3098.76|OPR/57.0.3098.91|OPR/57.0.3098.102|OPR/57.0.3098.106|OPR/57.0.3098.110|
+OPR/57.0.3098.116|OPR/58.0.3135.47|OPR/58.0.3135.53|OPR/58.0.3135.65|OPR/58.0.3135.68|OPR/58.0.3135.79|OPR/58.0.3135.90|OPR/58.0.3135.107|OPR/58.0.3135.117|OPR/58.0.3135.118|
+OPR/58.0.3135.127|OPR/58.0.3135.132|OPR/60.0.3255.27|OPR/60.0.3255.56|OPR/60.0.3255.59|OPR/60.0.3255.70|OPR/60.0.3255.83|OPR/60.0.3255.84|OPR/60.0.3255.95|OPR/60.0.3255.109|
+OPR/60.0.3255.116|OPR/60.0.3255.125|OPR/60.0.3255.141|OPR/60.0.3255.151|OPR/60.0.3255.160|OPR/60.0.3255.170|OPR/62.0.3331.18|OPR/62.0.3331.43|OPR/62.0.3331.66|OPR/62.0.3331.72|
+OPR/62.0.3331.99|OPR/62.0.3331.101|OPR/62.0.3331.116|OPR/62.0.3331.119|OPR/63.0.3368.35|OPR/63.0.3368.43|OPR/63.0.3368.53|OPR/63.0.3368.66|OPR/63.0.3368.71|OPR/63.0.3368.75|
+OPR/63.0.3368.88|OPR/63.0.3368.94|OPR/63.0.3368.107|OPR/64.0.3417.47|OPR/64.0.3417.54|OPR/64.0.3417.61|OPR/64.0.3417.70|OPR/64.0.3417.73|OPR/64.0.3417.83|OPR/64.0.3417.92|
+OPR/64.0.3417.119|OPR/64.0.3417.126|OPR/65.0.3467.38|OPR/65.0.3467.42|OPR/65.0.3467.48|OPR/65.0.3467.62|OPR/65.0.3467.69|OPR/65.0.3467.72|OPR/65.0.3467.78|OPR/66.0.3515.27|
+OPR/66.0.3515.36|OPR/66.0.3515.44|OPR/66.0.3515.60OPR/66.0.3515.72|OPR/66.0.3515.95|OPR/66.0.3515.103|OPR/66.0.3515.115|OPR/67.0.3575.31|OPR/67.0.3575.53|OPR/67.0.3575.79|
+OPR/67.0.3575.97|OPR/67.0.3575.115|OPR/67.0.3575.137|OPR/68.0.3618.46|OPR/68.0.3618.56|OPR/68.0.3618.63|OPR/68.0.3618.91|OPR/68.0.3618.104|OPR/68.0.3618.125|OPR/68.0.3618.165|
+OPR/68.0.3618.173|OPR/69.0.3686.36|OPR/69.0.3686.49|OPR/69.0.3686.57|OPR/69.0.3686.77|OPR/69.0.3686.95|OPR/70.0.3728.71|OPR/70.0.3728.95|OPR/70.0.3728.106|OPR/70.0.3728.119|
+OPR/70.0.3728.133|OPR/70.0.3728.144|OPR/70.0.3728.154|OPR/70.0.3728.178|OPR/70.0.3728.189|OPR/71.0.3770.148|OPR/71.0.3770.171|OPR/71.0.3770.198|OPR/71.0.3770.228|OPR/71.0.3770.271|
+OPR/71.0.3770.284|OPR/72.0.3815.148|OPR/72.0.3815.178|OPR/72.0.3815.186|OPR/72.0.3815.200|OPR/72.0.3815.207|OPR/72.0.3815.211|OPR/72.0.3815.320|OPR/72.0.3815.355|OPR/72.0.3815.371|
+OPR/72.0.3815.378|OPR/72.0.3815.400|OPR/73.0.3856.257|OPR/73.0.3856.284|OPR/73.0.3856.329|OPR/73.0.3856.344|OPR/74.0.3911.75|OPR/74.0.3911.107|OPR/74.0.3911.139|OPR/74.0.3911.144|
+OPR/74.0.3911.154|OPR/74.0.3911.160|OPR/74.0.3911.203|OPR/74.0.3911.218|OPR/74.0.3911.232|OPR/75.0.3969.93|OPR/75.0.3969.141|OPR/75.0.3969.149|OPR/75.0.3969.171|OPR/75.0.3969.218|
+OPR/75.0.3969.243|OPR/75.0.3969.250|OPR/76.0.4017.94|OPR/76.0.4017.107|OPR/76.0.4017.123|OPR/76.0.4017.137|OPR/76.0.4017.154|OPR/76.0.4017.175|OPR/76.0.4017.177|OPR/77.0.4054.60|
+OPR/77.0.4054.64|OPR/77.0.4054.80|OPR/77.0.4054.90|OPR/77.0.4054.146|OPR/77.0.4054.172|OPR/77.0.4054.203|OPR/77.0.4054.254|OPR/77.0.4054.277|OPR/78.0.4093.112|OPR/78.0.4093.147|
+OPR/78.0.4093.184|OPR/78.0.4093.231|OPR/79.0.4143.22|OPR/79.0.4143.50|OPR/79.0.4143.56|OPR/79.0.4143.66|OPR/79.0.4143.72|OPR/80.0.4170.16|OPR/80.0.4170.40|OPR/80.0.4170.63|
+OPR/80.0.4170.72|OPR/81.0.4196.31|OPR/81.0.4196.37|OPR/81.0.4196.54|OPR/81.0.4196.60|OPR/82.0.4227.23|OPR/82.0.4227.33|OPR/82.0.4227.43|OPR/82.0.4227.58|OPR/83.0.4254.19|
+OPR/83.0.4254.27|OPR/83.0.4254.54|OPR/83.0.4254.62|OPR/84.0.4316.14|OPR/84.0.4316.21|OPR/84.0.4316.31|OPR/84.0.4316.42|OPR/85.0.4341.18|OPR/85.0.4341.28|OPR/85.0.4341.39|
+OPR/85.0.4341.47|OPR/85.0.4341.60|OPR/85.0.4341.75|OPR/86.0.4363.23|OPR/86.0.4363.32|OPR/86.0.4363.50|OPR/86.0.4363.59|OPR/87.0.4390.25|OPR/87.0.4390.36|OPR/87.0.4390.45|
+OPR/88.0.4412.27|OPR/88.0.4412.40|OPR/88.0.4412.53|OPR/88.0.4412.74|OPR/89.0.4447.4|OPR/89.0.4447.38|OPR/89.0.4447.51|OPR/89.0.4447.56|OPR/89.0.4447.62|OPR/89.0.4447.63|
+OPR/89.0.4447.71|OPR/89.0.4447.83|OPR/89.0.4447.91|OPR/89.0.4447.101|OPR/90.0.4480.48|OPR/90.0.4480.54|OPR/90.0.4480.80|OPR/90.0.4480.84|OPR/90.0.4480.107|OPR/91.0.4516.16|
+OPR/91.0.4516.20|OPR/91.0.4516.65|OPR/91.0.4516.70|OPR/91.0.4516.77|OPR/91.0.4516.80|OPR/92.0.4561.21|OPR/92.0.4561.30|OPR/92.0.4561.33|OPR/92.0.4561.43|OPR/92.0.4561.47|
+OPR/92.0.4561.50|OPR/92.0.4561.61|OPR/93.0.4585.11|OPR/93.0.4585.21|OPR/93.0.4585.37|OPR/93.0.4585.39|OPR/93.0.4585.64|OPR/93.0.4585.70|OPR/94.0.4606.26|OPR/94.0.4606.38|
+OPR/94.0.4606.54|OPR/94.0.4606.65|OPR/94.0.4606.76|OPR/95.0.4635.25|OPR/95.0.4635.37|OPR/95.0.4635.46|OPR/95.0.4635.80|OPR/95.0.4635.84|OPR/95.0.4635.90|OPR/96.0.4674.0|
+OPR/96.0.4691.0|OPR/96.0.4693.12|OPR/96.0.4693.20|OPR/96.0.4693.31|OPR/96.0.4693.50|OPR/96.0.4693.80|OPR/97.0.4697.0|OPR/97.0.4719.4|OPR/97.0.4719.11|OPR/97.0.4719.26|
+OPR/97.0.4719.28|OPR/97.0.4719.43|OPR/97.0.4719.63|OPR/97.0.4719.83|OPR/98.0.4746.0|OPR/98.0.4759.1|OPR/98.0.4759.3|OPR/98.0.4759.6|OPR/98.0.4759.15|OPR/98.0.4759.39|
+OPR/99.0.4788.9|OPR/99.0.4788.13|OPR/99.0.4788.31|OPR/99.0.4788.47|OPR/99.0.4788.65|OPR/99.0.4788.77|OPR/99.0.4788.88|OPR/100.0.4815.20|OPR/100.0.4815.21|OPR/100.0.4815.30|
+OPR/100.0.4815.47|OPR/100.0.4815.54|OPR/100.0.4815.76|OPR/101.0.4843.25|OPR/101.0.4843.33|OPR/101.0.4843.43|OPR/101.0.4843.58|OPR/102.0.4880.16|OPR/102.0.4880.29|
+OPR/102.0.4880.33|OPR/102.0.4880.40|OPR/102.0.4880.46|OPR/102.0.4880.51|OPR/102.0.4880.56|OPR/102.0.4880.70|OPR/102.0.4880.78|OPR/103.0.4928.16|OPR/103.0.4928.26|OPR/103.0.4928.34|
+OPR/103.0.4928.47|OPR/104.0.4944.23|OPR/104.0.4944.28|OPR/104.0.4944.33|OPR/104.0.4944.36|OPR/104.0.4944.54|OPR/104.0.4944.72|OPR/105.0.4970.13|OPR/105.0.4970.16|OPR/105.0.4970.21|
+OPR/105.0.4970.29|OPR/105.0.4970.34|OPR/105.0.4970.48|OPR/105.0.4970.60|OPR/106.0.4998.16|OPR/106.0.4998.19|OPR/106.0.4998.28|OPR/106.0.4998.41|OPR/106.0.4998.52|OPR/106.0.4998.66|
+OPR/106.0.4998.70|OPR/107.0.5045.15|OPR/107.0.5045.21|OPR/107.0.5045.36|OPR/107.0.5045.71OPR/108.0.5067.20|OPR/108.0.5067.24|OPR/108.0.5067.29|OPR/108.0.5067.40|OPR/109.0.5097.33|
+OPR/109.0.5097.35|OPR/109.0.5097.38|OPR/109.0.5097.45|OPR/109.0.5097.59|OPR/109.0.5097.68|OPR/109.0.5097.80|OPR/110.0.5130.23|OPR/110.0.5130.35|OPR/110.0.5130.39|
+OPR/110.0.5130.49|OPR/110.0.5130.64|OPR/110.0.5130.66|OPR/110.0.5130.82|OPR/111.0.5168.25|OPR/111.0.5168.43|OPR/111.0.5168.55|OPR/111.0.5168.61|OPR/112.0.0.0|OPR/112.0.5197.24|
+OPR/112.0.5197.25|OPR/112.0.5197.30|OPR/112.0.5197.39|OPR/112.0.5197.53|OPR/113.0.0.0|OPR/113.0.5230.31|OPR/113.0.5230.32|OPR/113.0.5230.47|OPR/113.0.5230.55|OPR/113.0.5230.62|
+OPR/113.0.5230.86|OPR/113.0.5230.132|OPR/113.0.5230.136|OPR/113.0.5230.142|OPR/114.0.5282.21|OPR/114.0.5282.86|OPR/114.0.5282.94|OPR/114.0.5282.102|OPR/114.0.5282.115|
+OPR/114.0.5282.144|OPR/114.0.5282.154|OPR/114.0.5282.185|OPR/114.0.5282.222|OPR/114.0.5282.235|OPR/115.0.5322.68|OPR/115.0.5322.77|OPR/115.0.5322.109|OPR/115.0.5322.119|
+OPR/116.0.5366.21|OPR/116.0.5366.35|OPR/116.0.5366.51|OPR/116.0.5366.71|OPR/116.0.5366.127|OPR/117.0.5408.32|OPR/117.0.5408.35|OPR/117.0.5408.39|OPR/117.0.5408.53|
+OPR/117.0.5408.93|OPR/117.0.5408.142|OPR/117.0.5408.154|OPR/117.0.5408.163|OPR/117.0.5408.197|OPR/118.0.5461.41|OPR/118.0.5461.60|OPR/118.0.5461.83|OPR/118.0.5461.104                              
+
+::::::::::::::::::::::::::::::
+### Firefox (Both false and common:
+RAW:
+
+Firefox/3.6|Firefox/3.6.1|Firefox/4.0|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/13.0|Firefox/15.0.1|Firefox/16.0.1|
+Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|
+Firefox/47.2|Firefox/48.0|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|
+Firefox/50.0.1Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|
+Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|Firefox/53.0.3|Firefox/53.2|
+Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|
+Firefox/57.0|Firefox/57.0.1|Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|
+Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
+Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|
+Firefox/67.0|Firefox/67.0.3|Firefox/68.0|Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|
+Firefox/70.0|Firefox/70.0.1|Firefox/71.0|Firefox/71.8|Firefox/71.9|
+Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|
+Firefox/75.0|Firefox/76.0|Firefox/76.0.1|Firefox/77.0|Firefox/77.0.1|Firefox/78.0|Firefox/78.0.1|Firefox/78.0.2|Firefox/78.1.0|
+Firefox/78.2.0|Firefox/78.3.0|Firefox/78.3.1|Firefox/78.4.0|Firefox/78.4.1|Firefox/78.5.0|Firefox/78.6.0|Firefox/78.6.1|Firefox/78.7.0|Firefox/78.7.1|
+Firefox/78.8.0|Firefox/78.9.0|Firefox/78.10.0|Firefox/78.10.1|Firefox/78.11.0|Firefox/78.12.0|Firefox/78.13.0|Firefox/78.14.0|Firefox/78.15.0|Firefox/79.0|
+Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|Firefox/85.0|Firefox/85.0.2|
+Firefox/86.0|Firefox/86.0.1|Firefox/87.0|Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|
+Firefox/90.0.2|Firefox/91.0|Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|
+Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|
+Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|
+Firefox/105.0|Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|
+Firefox/110.0|Firefox/111.0Firefox/111.0.1Firefox/112.0Firefox/112.0.1Firefox/112.0.2Firefox/113.0Firefox/113.0.1Firefox/113.0.2
+Firefox/114.0Firefox/114.0.1Firefox/114.0.2Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|
+Firefox/117.0|Firefox/117.0.1|Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|
+Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
+Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|
+Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|
+Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|Firefox/130.0|Firefox/130.0.1|Firefox/131.0|
+Firefox/131.0.2|Firefox/131.0.3|Firefox/130.0|Firefox/130.0.1|Firefox/132.0|Firefox/132.0.1|Firefox/132.0.2|
+Firefox/133.0|Firefox/133.0.3|Firefox/132.0|Firefox/132.0.11|Firefox/132.0.2|Firefox/134.0|Firefox/134.0.1|Firefox/134.0.2|
+Firefox/135.0|Firefox/135.0.1|Firefox/136.0|Firefox/136.0.1|Firefox/136.0.2|Firefox/136.0.3|Firefox/136.0.4|
+Firefox/137.0|Firefox/137.0.1|Firefox/137.0.2|
+Firefox/138.0|Firefox/138.0.1|Firefox/138.0.3|Firefox/138.0.4
+
+........................................
+### Chrome (Both false and common) - RAW:
+
+Chrome/12.0.742.91|Chrome/12.0.742.112|Chrome/13.0.782.215|Chrome/15.0.1901.200|Chrome/16.0.912.63|Chrome/17.0.963.33|Chrome/17.0.963.56|Chrome/17.0.963.65|Chrome/18.0.865.0|Chrome/18.0.1025.162|Chrome/19.0.1084.46|
+Chrome/19.0.1084.52|Chrome/20.0.1132.39|Chrome/27.0.1453.94|Chrome/28.0.1500|Chrome/29.0.1547.57|Chrome/30.0.1599.66|Chrome/34.0.824.0|Chrome/34.0.1847.114|Chrome/43.0.845.0|
+Chrome/45.0.2454.94|Chrome/46.0.2490.80|Chrome/47.0.2283.102|Chrome/48.0.861.0|Chrome/48.0.2564.97|Chrome/49.0.2623.75|Chrome/50.0.2661|Chrome/50.0.2661.102|Chrome/50.0.3232.292|
+Chrome/51.0.870.0|Chrome/51.0.2160.381|Chrome/51.0.2329.290|Chrome/51.0.2704.84|Chrome/52.0.2315.144|hrome/52.0.2743.116|Chrome/52.0.3133.374|Chrome/52.0.3748.297|Chrome/53.0.2785.116|Chrome/54.0.1107.38|Chrome/54.0.2840.71|
+Chrome/55.0.2660.238|Chrome/55.0.2883.75|Chrome/56.0.2924.87|Chrome/57.0.2987.133|Chrome/58.0.3029.96|Chrome/60.0.3112.78|Chrome/60.0.3112.90|Chrome/60.0.3112.107|Chrome/61.0.3163.79|
+Chrome/62.0.3202.75|Chrome/63.0.3239.108|Chrome/64.0.3282.140|Chrome/65.0.3325.181|Chrome/66.0.3359.158|Chrome/67.0.3396.79|Chrome/68.0.3440.84|Chrome/68.0.3440.106|Chrome/69.0.3497.92|Chrome/70.0.3538.77|
+Chrome/70.0.3538.102|Chrome/71.0.3578.80|Chrome/74.0.3729|Chrome/74.0.3729.169|Chrome/75.0.3770.80|Chrome/76.0.3809.100|Chrome/77.0.3844.0||Chrome/77.0.3865.116|Chrome/78.0.3904.70|
+Chrome/78.0.3904.97|Chrome/79.0.309.11|Chrome/79.0.309.30|Chrome/79.0.309.65|Chrome/79.0.309.68|Chrome/79.0.309.71|Chrome/79.0.3945.0|Chrome/79.0.3945.88|Chrome/79.0.3945.130|
+Chrome/80.0.361.45|Chrome/80.0.361.48|Chrome/80.0.361.62|Chrome/80.0.361.109|Chrome/80.0.3987.0|Chrome/80.0.3987.132|Chrome/80.0.3987.149|Chrome/80.0.3987.163|Chrome/81.0.416.34|
+Chrome/81.0.416.58|Chrome/81.0.416.62|Chrome/81.0.416.77|Chrome/81.0.4044.92|Chrome/83.0.478.37|Chrome/83.0.478.58|Chrome/83.0.478.64|Chrome/83.0.4103.0|Chrome/83.0.4103.61|
+Chrome/83.0.4103.116|Chrome/84.0.522.40|Chrome/84.0.522.52|Chrome/84.0.522.58|Chrome/84.0.522.61|Chrome/84.0.4147.1|Chrome/84.0.4147.105|Chrome/84.0.4147.135|Chrome/85.0.564.44|
+Chrome/85.0.4182.0|Chrome/85.0.4183.102|Chrome/85.0.4183.121|Chrome/86.0.622.48|Chrome/86.0.622.56|Chrome/86.0.622.61|Chrome/86.0.622.68|Chrome/86.0.4240.75|Chrome/87.0.664.47|
+Chrome/87.0.664.52|Chrome/87.0.4280.14|Chrome/87.0.4280.88|Chrome/88.0.4298.0|Chrome/88.0.4324.0|Chrome/88.0.4324.186|Chrome/89.0.774.45|Chrome/89.0.774.50|Chrome/89.0.4389.86|
+Chrome/89.0.4389.90|Chrome/90.0.818.42|Chrome/90.0.818.56|Chrome/90.0.818.62|Chrome/90.0.4430.72|Chrome/90.0.4430.85|Chrome/90.0.4430.85|Chrome/90.0.4430.85|Chrome/91.0.864.53|
+Chrome/91.0.864.70|Chrome/91.0.864.71|Chrome/91.0.4472.77|Chrome/91.0.4472.114|Chrome/91.0.4472.124|Chrome/92.0.902.55|Chrome/92.0.4512.0|Chrome/92.0.4515.107|Chrome/92.0.4515.159|
+Chrome/93.0.4577.0|Chrome/93.0.4577.82Chrome/94.0.992.31|Chrome/94.0.992.37|Chrome/94.0.992.50|Chrome/94.0.4606.61|Chrome/95.0.1020.53|Chrome/95.0.4638.54|Chrome/96.0.1054.41|
+Chrome/96.0.1054.53|Chrome/96.0.4641.0|Chrome/96.0.4664.45|Chrome/96.0.4664.110|Chrome/97.0.1072.55|Chrome/97.0.1072.62|Chrome/97.0.1072.69|Chrome/97.0.4280.67|Chrome/97.0.4680.0|
+Chrome/98.0.1108.6|Chrome/98.0.1108.43|Chrome/98.0.4758.80|Chrome/99.0.1150.46|Chrome/100.0.1185.36|Chrome/101.0.1210.4|Chrome/101.0.4951.41|Chrome/101.0.4951.64|Chrome/101.0.4951.67|
+Chrome/102.0.1245.30|Chrome/102.0.1245.44|Chrome/102.0.5005.63|Chrome/103.0.0.0|Chrome/103.0.1264.49|Chrome/104.0.0.0|Chrome/104.0.0.1|Chrome/104.0.1293.47|Chrome/104.0.1293.54|
+Chrome/104.0.5112.79Chrome/104.0.5112.79|Chrome/104.0.5112.97|Chrome/104.0.5112.102|Chrome/105.0.1343.42|Chrome/105.0.1343.50|Chrome/105.0.5195.52|Chrome/105.0.5195.125|
+Chrome/106.0.0.0|Chrome/106.0.1370.34|Chrome/106.0.1370.47|Chrome/106.0.5249.30|Chrome/106.0.5249.62|Chrome/106.0.5249.91|Chrome/106.0.5249.119|Chrome/107.0.0.0|Chrome/107.0.1418.24|
+Chrome/107.0.1418.52|Chrome/107.0.1418.62|Chrome/107.0.5304.63|Chrome/107.0.5304.106|Chrome/107.0.5304.110|Chrome/107.0.5304.121|Chrome/108.0.0.0|Chrome/108.0.1462.46|
+Chrome/108.0.1462.76|Chrome/108.0.5359.94|Chrome/108.0.5359.98|Chrome/109.0.0.0|Chrome/109.0.1518.52|Chrome/109.0.1518.61|Chrome/109.0.1518.70|Chrome/109.0.5414.46|Chrome/109.0.5414.119|Chrome/110.0.0.0|
+Chrome/110.0.1587.50|Chrome/110.0.1587.57|Chrome/110.0.1587.63|Chrome/110.0.1587.69|Chrome/110.0.5481.30|Chrome/110.0.5481.78|Chrome/110.0.5481.100|Chrome/110.0.5481.178|
+Chrome/110.0.5481.192|Chrome/111.0.0.0|Chrome/111.0.1661.54|Chrome/111.0.5532.0|Chrome/111.0.5532.2|Chrome/111.0.5563.8|Chrome/111.0.5563.19|Chrome/111.0.5563.64|Chrome/111.0.5563.65|
+Chrome/112.0.1722.34|Chrome/112.0.1722.39|Chrome/112.0.1722.48|Chrome/112.0.5596.2|Chrome/112.0.5614.0|Chrome/112.0.5615.20|Chrome/112.0.5615.49|Chrome/112.0.5615.50|
+Chrome/112.0.5615.87|Chrome/112.0.5615.121|Chrome/112.0.5615.165|Chrome/113.0.0.0|Chrome/113.0.1774.35|Chrome/113.0.1774.57|Chrome/113.0.5672.64|Chrome/114.0.1823.37|
+Chrome/114.0.1823.43|Chrome/114.0.1823.55|Chrome/114.0.1823.67|Chrome/114.0.1823.82|Chrome/114.0.5735.91|Chrome/114.0.5735.133|Chrome/115.0.1901.203|Chrome/115.0.5790.24|
+Chrome/115.0.5790.98|Chrome/116.0.5845.0|Chrome/116.0.1938.76|Chrome/116.0.5845.82|Chrome/117.0.2045.41|Chrome/117.0.5938.60|Chrome/117.0.5938.132|Chrome/117.0.5938.149|Chrome/118.0.0.0|
+Chrome/119.0.2151.72|Chrome/119.0.6045.9|Chrome/119.0.6045.9|Chrome/119.0.6045.123|Chrome/119.0.6045.159|Chrome/119.0.6045.199|Chrome/120.0.0.0.0|Chrome/120.0.0.0|Chrome/120.0.2210.91|
+Chrome/120.0.6099.28|Chrome/120.0.6099.109|Chrome/120.0.6099.129|Chrome/120.0.6099.939|Chrome/121.0.0.0 6|Chrome/121.0.0.0|Chrome/121.0.2277.106|Chrome/121.0.6167.0|
+Chrome/121.0.6167.57|Chrome/121.0.6167.85|Chrome/121.0.6167.184|Chrome/122.0.2365.52|Chrome/122.0.2365.66|Chrome/122.0.2365.92|Chrome/122.0.6261.57|Chrome/122.0.6261.94|
+Chrome/123.0.2420.65|Chrome/123.0.6312.0|Chrome/123.0.6312.4|Chrome/123.0.6312.105|Chrome/124.0.0.0|Chrome/124.0.2478.67|Chrome/124.0.6367.78|Chrome/124.0.6367.91|Chrome/124.0.6367.92|
+Chrome/124.0.6367.118|Chrome/125.0.0|Chrome/125.0.2535.85|Chrome/125.0.2535.92|Chrome/125.0.6422.26|Chrome/125.0.6422.60|Chrome/126.0.0.0|Chrome/126.0.2592.68|Chrome/126.0.2592.87|
+Chrome/126.0.6478.61|Chrome/126.0.6478.126|Chrome/126.0.6478.128|Chrome/126.0.6478.182|Chrome/127.0.0.0|Chrome/127.0.0.1|Chrome/127.0.2651.86|Chrome/127.0.2651.98|Chrome/127.0.6533.17|
+Chrome/127.0.6533.73|Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533.100|Chrome/127.0.6533.119|Chrome/127.0.6533.122|Chrome/127.0.6533|Chrome/128.0.0.0|Chrome/128.0.6613.18|
+Chrome/128.0.6613.84|Chrome/128.0.6613.120|Chrome/128.0.6613.138|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.59|Chrome/129.0.6668.71Chrome/129.0.6668.71|Chrome/129.0.6668.90|Chrome/129.0.6668.101|
+Chrome/130.0.6723.70|Chrome/130.0.6723.117|Chrome/130.0.6778.70|Chrome/131.0.6778.86|Chrome/131.0.6778.140|Chrome/131.0.6778.265|Chrome/132.0.6834.111|Chrome/133.0.6943.60|
+Chrome/133.0.6943.127|Chrome/134.0.6998.36|Chrome/134.0.6998.89|Chrome/134.0.6998.118|Chrome/135.0.7049.42|Chrome/135.0.7049.96|Chrome/136.0.7103.93|Chrome/136.0.7103.114
+
+
+*********************************************************************
+...................................................................
+-------------------------------------------------------------------
+
+## Fake.ios_platform_token():
+iPad; CPU iPad OS 17_1 like Mac OS X
+iPhone; CPU iPhone OS 12_4_8 like Mac OS X
+iPad; CPU iPad OS 16_7_7 like Mac OS X
+iPad; CPU iPad OS 17_2_1 like Mac OS X
+iPad; CPU iPad OS 10_3_4 like Mac OS X
+
+## FAKE:
+X11; Linux x86_64
+X11; Linux x86_64
+X11; Linux i686
+X11; Linux x86_64
+X11; Linux x86_64
+
+##Fake.linux_processor()
+x86_64
+x86_64
+i686
+x86_64
+x86_64
+
+## Fake.mac_processor()
+U; PPC
+U; PPC
+Intel
+U; Intel
+U; PPC
+
+##RAW FALSE:
+
+iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU iPhone OS 12_4_8 like Mac OS X|iPad; CPU iPad OS 16_7_7 like Mac OS X|iPad; CPU iPad OS 17_2_1 like Mac OS X|iPad; CPU iPad OS 10_3_4 like Mac OS X|
+X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|i686|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+# Windows NT : (Both fake and NT)
+
+Windows NT 3.1	
+Windows NT 3.5	NT 
+Windows NT 3.51	NT 3.
+Windows NT 4.0
+Windows NT 5.1
+Windows NT 5.01
+Windows NT 6.1
+Windows NT 6.1; WOW64
+Windows NT 6.1; Win64; x64
+Windows NT NT 6.2
+Windows NT NT 6.3
+Windows NT 10.0; Win64; x64
+Windows NT 10.0
+Windows NT 11.0
+
+# RAW:
+
+Windows NT|Windows NT 3.1|Windows NT 3.5	NT|Windows NT 3.51	NT 3|Windows NT 4.0|Windows NT 5.1|
+Windows NT 5.01|Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|Windows NT 10.0|Windows NT 11.0
+
+:::::::::::::::::::::::::::::::::::::::::::
+
+### LIST OF common browseers used/hackers, Tzt stealers:  ###
+//Android ?commoen used by hackers/content scrapers:
+
+# RAW:
+
+Android 1.0|Android 1.1|Android 1.5|Android 1.6|Android 2.0.1|
+Android 4.1|Android 4.3.1|Android 4.4|Android 4.4.1|Android 4.4.4|Android 5.0|Android 5.0.1|Android 5.0.2|Android 5.1|Android 5.1.1|
+android 4.2.1_r1.1|android 4.2.2_r1|android 4.2_r|android 4.3_r0.9.1|android 4.3_r1|
+android 4.3_r1.1|android 4.4.1_r1|android 4.4.2_r1|android 4.4.3_r1|android 4.4.4_r1|android 4.4_r1.2|
+android 5.0|android 5.0.2|android 5.1|android 5.1.1|
+android-5.0.0_r4.0.1|android-5.0.1_r1|android-5.0.2_r1|android-5.1.0_r1|android-5.1.1_r1|android-5.1.1_r9|
+android-5.1.1_r14|android-5.1.1_r19|android-5.1.1_r25|android-5.1.1_r30|android-5.1.1_r33|
+android-5.1.1_r34|android-5.1.1_r35|android-5.1.1_r36|android-5.1.1_r37|android-5.1.1_r38|
+Android 6.0|Android 6.0.1|Android 7.0 24|Android 7.1|Android 7.1.2|Android 8.0 26|Android 8.1|
+Android 07|Android 7.0|Android 7.1|Android 7.1.1|
+Android 8.0|Android 8.1|
+Android 9|Android 10|Android 11|Android 12|Android 12L|Android 13|Android 14|Android 15|	
+Linux; Android 7.0|Linux; Android 7.1.1|Linux; Android 10; Pixel 3|Linux; Android|Linux; Ubuntu
+
+
+:::::::::::::::::::::::::::::::::::::::::::
+...........................................
+#I USE /.htaccess2:
+
 <IfModule mod_rewrite.c>
-RewriteCond%{HTTP_USER_AGENT}"(iPad; CPU iPad OS 17_1 like Mac OS X|iPhone; CPU iPhone OS 12_4_8 like Mac OS X|iPad; CPU iPad OS 16_7_7 like Mac OS X|iPad; CPU iPad OS 17_2_1 like Mac OS X|iPad; CPU iPad OS 10_3_4 like Mac OS X|X11; Linux x86_64|
-X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|x86_64|i686|x86_64|x86_64|U; PPC|U; PPC|Intel|U; Intel|U; PPC|Windows NT 11.0|Windows NT 5.01|Windows NT 10.0|Windows NT 5.01|Windows 95|Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5)"[NC]
+RewriteCond%{HTTP_USER_AGENT}"( PLACE YOUR RAW LIST HERE )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::
+...........................................
+* UPPDATED: 20250615
