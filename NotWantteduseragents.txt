@@ -56,13 +56,10 @@ https://github.com/meetmr/TiktokSpider    //BOGUS Spider!!!!
 ###SEARCH ENGINE CHINA:  //very aggresive:
 
 RAW:
-AliyunSecBotlbaidu|MicroMessenger
-Weixin QQ|AspiegelBot|bytesdance|Bytespider|
-Mb2345Browser|MQQBrowserLieBaoFast|Datanyze|ByteDance crawler|DingTalkBot|
-QQ Browser Mobile|Sogou|X Browser|115 Browser|
-360 Browser|360 Safe Browse|ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|
-;zh-cn|zh\-CN|zh_CN|zh-CN|ZHCN|zh|zh_CN|Openbot|zh|zh-CN|zh-SG|zh-TW|zh-HK|zh-CHS|zh-CHT|zhi-CN|ZHCN|zh-MO|
-Haosou 360 spider|Sosospider|YisouSpider|YoudaoBot /|Test-Spider|
+AliyunSecBot|baidu|MicroMessengerWeixin QQ|MicroMessenger Weixin QQ|AspiegelBot|bytesdance|Bytespider|Mb2345Browser|MQQBrowserLieBaoFast|Datanyze|ByteDance crawler|DingTalkBot|QQ Browser Mobile|Sogou|X Browser|115 Browser|360 Browser|360 Safe Browse|
+ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|;zh-cn|zh\-CN|zh_CN|zh-CN|ZHCN|zh|zh_CN|Openbot|zh|zh-CN|zh-SG|zh-TW|zh-HK|zh-CHS|zh-CHT|zhi-CN|ZHCN|zh-MO|.cn|
+Haosou 360 spider|Sosospider|YisouSpider|YoudaoBot /|Test-Spider|chinamobile.com\.cn|chinamobile.com\.cn|chinatelecom.com\.cn|chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|AliyunSecBot/Nutch-1.21-SNAPSHOT|huawei\.com
+
 
 #Aggresive china Terror:
 
