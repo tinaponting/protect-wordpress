@@ -19,9 +19,9 @@ Python|Pyth|py|PyQ|python|python-http|python-requests|PythonRequests|Python-urll
 Probely|PS_Daily|php|php://input|perl|python-async|PycURL|Python-urllib||phpCrawler|PHP Meterpreter|
 Rogerbot|Rome Client| 
 SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|
-SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|
-SSL/TLS Scan|SSL Scanner|tls-scan|scan|
-SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|Symfony HttpClient (Curl)|
+SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|
+SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|
+SSL/TLS Scan|SSL Scanner|tls-scan|scan|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|Symfony HttpClient (Curl)|
 TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|TikTokSpider|TestURI|test|WPScan|WEB-Scan|
 woorank|WPScan|WebImageCollector|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|webshell|Web shell|
 Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client
@@ -166,4 +166,4 @@ ahrefs.net
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250618
+Updated: 250621
