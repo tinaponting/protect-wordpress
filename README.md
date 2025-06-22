@@ -6,7 +6,7 @@ Protect wordpress with .htaccess
 For us who are paranoid bloggers or use it as CMS, we want to sleep with peace! use these .htacces and adwises and you will be safe! 
 
 * If you want something on the maybe text; downloads add it with, noteplus + or what you use:)
-* works best with Apache, 5.0 + Wordpress, 6,7+
+* works best with Apache, 5.0 + Wordpress, 6,8+
 
 * You can use both htaccess and Perrish Press firewall at the same time with no impact on speed! Name PR to htaccess2 and it is ready to protect.
 WORDPRESS - FORT KNOX:)
@@ -106,6 +106,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250621  htaccess1 added no AI tag:)
 * Updated: 250621  htaccess1 updated:)
 * Updated: 250621 perishablepress.com8g-firewall with Latest Aibots - NO Thanks:)
 * Updated: 250611  htaccess1 updated:)
