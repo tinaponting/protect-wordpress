@@ -4117,14 +4117,39 @@ RewriteRule ^(wp-includes|subdirectory-name-here)\/.*$ ./ [NC,R=301,L]
 
 RewriteRule ^(wp-includes)\/.*$ ./ [NC,R=301,L]
 
-If there are or will be subdirectories of wp-includes/, insert the following code for each one in the same .htaccess configuration file:
+* If there are or will be subdirectories of wp-includes/, insert the following code for each one in the same .htaccess configuration file:
 
 RewriteRule ^(wp-includes|subdirectory-name-here)\/.*$ ./ [NC,R=301,L]
 
 W* wp-content:
 RewriteRule ^/?wp-content/.+?\.php / [NC,L,R=302]
 
+.......................................................................................
+##"WP_Widget" not found error
+
+There's a good chance the Class "WP_Widget" not found error is caused by bot scans courtesy of script kiddies.
+
+As suggested in a response to a question at WordPress, 
+the scanning script will terminate when the following code is inserted at the top of blocks/index.php:
+
+<?php
+if (!defined('ABSPATH') || !defined('WPINC')) {
+    exit;
+}
+
+## OR: in: wp-config.php 
+require_once ABSPATH.'wp-includes/class-wp-widget.php';
+
+
+.......................................................................................
+
+## If there's a particular directory in your site that you do want visitors to browse, 
+simply create a new .htaccess file in that particular folder and add the following:
+
+DirectoryIndex disabled
+
+In all folder by: .htaccess
 
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250512
+Updated: 250527
