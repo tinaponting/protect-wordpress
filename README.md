@@ -106,6 +106,7 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250729  htaccess.
 * Updated: 250621  htaccess1 added no AI tag:)
 * Updated: 250621  htaccess1 updated:)
 * Updated: 250621 perishablepress.com8g-firewall with Latest Aibots - NO Thanks:)
