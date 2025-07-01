@@ -106,8 +106,9 @@ Love ///  Kristina Sweden  :
 
 ***UPDATED FILES AND FOLDERS: *******
 
+* Updated: 250701  htaccess1 + perishablepress.com8g-firewall with Latest Aibot:)
 * Updated: 250729  htaccess.
-* Updated: 250621  htaccess1 added no AI tag:)
+* Updated: 250621  htaccess1:)
 * Updated: 250621  htaccess1 updated:)
 * Updated: 250621 perishablepress.com8g-firewall with Latest Aibots - NO Thanks:)
 * Updated: 250611  htaccess1 updated:)
@@ -122,8 +123,8 @@ Love ///  Kristina Sweden  :
 * Updated: 25027 wp-includes ? wp-admin, more securtity.
 * Updated: 25025 htaccess1 - More Speed and security)
 * Updated: 250525 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
-* Updated: 25018 wp-includes, more alternatives to use.
-* Updated: 25016 htaccess1 - More Speed and security)
+* Updated: 250418 wp-includes, more alternatives to use.
+* Updated: 250416 htaccess1 - More Speed and security)
 
 * Updated: 250101 - 250431 
 * Updated: 240102 - 2411225 
