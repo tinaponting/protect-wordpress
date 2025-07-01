@@ -4,13 +4,13 @@ NOT WANTED BOTS:
 ###RAW FILE:
 
 2ip /|80legs|404checker|
-ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Barkrowler|Apachebench|apache-scanners|
+ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Barkrowler|Apachebench|apache-scanners|Apache Nutch|
 BW/1.3|BW/1.2|BLEXBot/1.0|Barkrowler|
 CensysInspect|
 dotbot|DataForSeoBot|DomainStatsBot|
 Extreme Picture Finder|
 Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping||Go-http-client|Go-http-client/1.1|Go-http-client/2.0|Grabber|InternetMeasurement/1.0|
-HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httplib|http| 
+HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httplib|http|http_get| 
 Fetch|node-fetch|Favicon Fetcher|fetchurl|
 Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libcurl|
 Majestic|MJ12bot|Nikto|Ninja|Nmap Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|NetcraftSurveyAgent/1.0|
@@ -168,4 +168,4 @@ ahrefs.net
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250623
+Updated: 250701
