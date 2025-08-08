@@ -1,0 +1,83 @@
+Add this code:
+
+# <!-- Following code will prevent right click on images place is just above closing </body> tag -->
+<script>
+
+document.oncontextmenu = function(e){
+var target = (typeof e !="undefined")? e.target: event.srcElement
+if (target.tagName == "IMG" || (target.tagName == 'A' && target.firstChild.tagName == 'IMG'))
+return false
+
+}
+
+</script>
+<!-- code to prevent right click ends here -->
+ 
+
+And click on "End of Body" where it asks where the code should be placed. 
+
+
+
+#Alternative:
+
+In the Online Store Dashboard page, go to Website -> Integrations -> Add Custom Header Code -> Add New Code
+Add this code:
+
+ 
+
+<!-- Following code will prevent right click on images place is just above closing </body> tag -->
+<script>
+
+document.oncontextmenu = function(e){
+var target = (typeof e !="undefined")? e.target: event.srcElement
+if (target.tagName == "IMG" || (target.tagName == 'A' && target.firstChild.tagName == 'IMG'))
+return false
+
+}
+
+</script>
+<!-- code to prevent right click ends here -->
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# PROTECT Plugins folder by:
+
+##add the following snippet to your current theme’s functions.php file:
+
+function hide_plugin_trickspanda() {
+  global $wp_list_table;
+  $hidearr = array('plugin-directory/plugin-file.php');
+  $myplugins = $wp_list_table->items;
+  foreach ($myplugins as $key => $val) {
+    if (in_array($key,$hidearr)) {
+      unset($wp_list_table->items[$key]);
+    }
+  }
+}
+
+......................................................................
+
+## MU SITES:
+
+add_action('pre_current_active_plugins', 'hide_plugin_trickspanda');
+Code language: PHP (php)
+
+Replace plugin-directory/plugin-file.php in above code with your plugin’s directory and file name. You can find this info by clicking on edit plugin link from the plugin list.
+If you want to hide the plugin from your WordPress Multisite, then you above snippet will not remove the plugin from the Network admin list. Here’s a snippet that will work on the WordPress Multisite
+
+function mu_hide_plugins_network( $plugins ) {
+    // let's hide akismet
+    if( in_array( 'akismet/akismet.php', array_keys( $plugins ) ) ) {
+        unset( $plugins['akismet/akismet.php'] );
+    }
+    return $plugins;
+}
+
+add_filter( 'all_plugins', 'mu_hide_plugins_network' );
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.........................................................
+Updated 250808
