@@ -4140,7 +4140,6 @@ if (!defined('ABSPATH') || !defined('WPINC')) {
 ## OR: in: wp-config.php 
 require_once ABSPATH.'wp-includes/class-wp-widget.php';
 
-
 .......................................................................................
 
 ## If there's a particular directory in your site that you do want visitors to browse, 
@@ -4154,7 +4153,76 @@ In all folder by: .htaccess
 #More Speed:
 
 Header set Content-Encoding gzip 
+.......................................................................................
+##ALTERNATIVE HEADERS:
+
+Fix broken AcceptEncoding Headers
+Some proxies and security software mangle or strip the Accept-Encoding HTTP header.
+
+<IfModule mod_deflate.c>
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  # Header always set
+  Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
+  # (1) Enable your site for HSTS preload inclusion.
+  # Header always set
+  Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "DENY" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|png|gz|html|woff2|slim.min.js)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  # Header always set
+  Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
+  # (1) Enable your site for HSTS preload inclusion.
+  # Header always set
+  Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
+</IfModule>
+
 
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 2500703
+Updated: 2500808
