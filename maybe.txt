@@ -2200,7 +2200,8 @@ RewriteRule .* - [F,L] </IfModule>
 RewriteCond %{THE_REQUEST}^[A-Z]{3,9}\ /wp-includes/.*$ [NC]
 RewriteCond %{THE_REQUEST}!^[A-Z]{3,9}\ /wp-includes/php/.+/.+\ HTTP/ [NC]
 RewriteCond %{REQUEST_FILENAME} ^.+\.php$
-RewriteRule .? - [F,NS,L]</IfModule>
+RewriteRule .? - [F,NS,L]
+</IfModule>
 
 ........................................................................................
 ........................................................................................
@@ -3335,6 +3336,7 @@ define( 'WP_POST_REVISIONS', false );:
 
 # Changing the Autosave Interval:
 define( 'AUTOSAVE_INTERVAL', 120 ); // Seconds
+
 Trash:
 define('EMPTY_TRASH_DAYS',3);   
 
@@ -3635,7 +3637,7 @@ RewriteRule .* - [F]
 
 # Research scan bot:  A pain in the ass!
 
-RewriteCond%{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
+RewriteCond%{HTTP_USER_AGENT}^research-scan-bot [NC,OR]
 
 ........................................................................................
 # Pure Trash Requests (brute force attacks, etc)
@@ -3715,26 +3717,15 @@ RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^ - [NC,F,L]
 </IfModule>
 
-# I USE THIS: (2500117)
+# I USE THIS: (250812)
 #* Bytespider tries to scrape my content:(  No  thanks!
 
-<IfModule mod_rewrite.c>RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [F] 
-RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [F]
-RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[F]
-RewriteCond%{HTTP_REFERER}amazonaws\.com [NC]  
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [NC] 
+RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [NC]
+RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[NC]
+RewriteCond%{HTTP_REFERER}^amazonaws\.com$ [OR,NC]  
 RewriteCond%{HTTP_REFERER}aws.amazon\.com [NC]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com" [NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com" [NC] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\.compute-2\.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-southeast-1.compute.amazonaws.com [NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
@@ -3750,23 +3741,72 @@ RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
 RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR] 
+RewriteCond%{HTTP_REFERER}amazonbot [NC]
+RewriteCond%{HTTP_REFERER}Claude [NC]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com"[NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com"[NC,OR]
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com"[NC] 
+RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?^amazon.com.au"[NC]
+RewriteCond%{HTTP_REFERER}amazon.com.\au$ [OR,NC]
+RewriteCond%{HTTP_REFERER}amazon.\com [OR,NC]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR]
+RewriteCond%{HTTP_REFERER}^compute-1.amazonaws\.com$ [OR,NC] 
+RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
+RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR]
+RewriteCond %{REMOTE_HOST}^compute-2.amazonaws\.com$ [OR,NC] 
+RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws\.com [NC,OR]
+RewriteCond%{REMOTE_HOST}^.*\.ap-southeast-1.compute.amazonaws.com [NC,OR]
+RewriteCond%{REMOTE_ADDR}!^AS16509)$ [NC,OR]         #IDLIST
+RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]           #ClaudeBot AI
+RewriteCond%{REMOTE_ADDR}!^3\.16.)$ [NC,OR]          #ClaudeBot AI
+RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]          #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.22.)$ [NC,OR]          #Hacker
 RewriteCond%{REMOTE_ADDR}!^3\.6.93.227)$ [NC,OR]      #ClaudeBot AI 
 RewriteCond%{REMOTE_ADDR}!^3\.21.98.184)$ [NC,OR      #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI  
-RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.148.107.103)$ [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^13\.232.214.)$ [NC,OR]     #Image stealer India
-RewriteCond%{REMOTE_ADDR}!^13\.232.214.104)$ [NC,OR]  #Image hacker
-RewriteCond%{REMOTE_ADDR}!^34\.232.23.139)$ [NC,OR]   #SurdotlyBot
+RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.81.)$ [NC,OR]           #Hacker
+RewriteCond%{REMOTE_ADDR}!^3\.90.)$ [NC,OR] 
+RewriteCond%{REMOTE_ADDR}!^3\.107.)$ [NC,OR]         #Linguee Bot 
+RewriteCond%{REMOTE_ADDR}!^3\.133.)$ [NC,OR]         #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]         #ClaudeBot AI  
+RewriteCond%{REMOTE_ADDR}!^3\.147.)$ [NC,OR]         #HACKER] 
+RewriteCond%{REMOTE_ADDR}!^3\.148.107.)$ [NC,OR]       #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^3\.208.)$ [NC,OR] 
+RewriteCond%{REMOTE_ADDR}!^13\.221.)$ [NC,OR]            #Hacker
+RewriteCond%{REMOTE_ADDR}!^3\.238.)$ [NC,OR]             #AI Hacker
+RewriteCond%{REMOTE_ADDR}!^3\.248.)$ [NC,OR]             #AI Hacker
+RewriteCond%{REMOTE_ADDR}!^3\.254.)$ [NC,OR]             #ClaudeBot AI
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.)$ [NC,OR]        #Image stealer India
+RewriteCond%{REMOTE_ADDR}!^13\.232.214.104)$ [NC,OR]     #Image hacker
+RewriteCond%{REMOTE_ADDR}!13\.238.)$ [NC,OR]             #AUSTRAILA HACKER
+RewriteCond%{REMOTE_ADDR}!^18\.210.92.)$ [NC,OR]         #AI Image stealer India
+RewriteCond%{REMOTE_ADDR}!^18\.97.)$ [NC,OR]             #PerplexityBot
+RewriteCond%{REMOTE_ADDR}!^18\.223.)$ [NC,OR]            #PerplexityBot
+RewriteCond%{REMOTE_ADDR}!^34\.232.23.139)$ [NC,OR]      #SurdotlyBot
+RewriteCond%{REMOTE_ADDR}!^34\.235.)$ [NC,OR]            #Scraping
+RewriteCond%{REMOTE_ADDR}!^35\.243.90.21)$ [NC,OR]       #Scraping7
+RewriteCond%{REMOTE_ADDR}!^35\.166.195.)$ [NC,OR]        #Scraping
+RewriteCond%{REMOTE_ADDR}!^45\.251.160.)$ [NC,OR]        #Scraping
+RewriteCond%{REMOTE_ADDR}!^51\.210.214)$ [NC,OR]         #Scraping
+RewriteCond%{REMOTE_ADDR}!^52\.18.177.61)$ [NC,OR]       #Scraping
+RewriteCond%{REMOTE_ADDR}!^54\.160.)$ [NC,OR]            #Hacking
+RewriteCond%{REMOTE_ADDR}!^54\.208.)$ [NC,OR]            #Hacking
+RewriteCond%{REMOTE_ADDR}!^54\.217.11.)$ [NC,OR]         #ClaudeBot AI 
+RewriteCond%{REMOTE_ADDR}!^54\.158.117.)$ [NC,OR]        #ClaudeBot AI
+RewriteCond%{REMOTE_ADDR}!^45\.158.117.225)$ [NC,OR]     #False TwitterBot
 RewriteCond%{REMOTE_ADDR}!^47.128)$ [NC,OR]           #Bytesspider
 RewriteCond%{REMOTE_ADDR}!^47.128.116.87)$ [NC,OR]    #Bytesspider
 RewriteCond%{REMOTE_ADDR}!^47\.128.42.31)$ [NC,OR]    #Bytesspider
 RewriteCond%{REMOTE_ADDR}!^47\.128.27.246)$ [NC,OR]   #Bytesspider
 RewriteCond%{REMOTE_ADDR}!^47\.128.25.)$ [NC,OR]      #Bytesspider
 RewriteCond%{REMOTE_ADDR}!^47\.128.54.92)$ [NC,OR]    #Bytesspider
-RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]RewriteRule ^(.*)$ - [F,L]</IfModule>
+RewriteCond%{REMOTE_ADDR}!^54\.224.)$ [NC,OR]            #Hacking
+RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
+RewriteRule ^(.*)$ - [F,L]</IfModule>
 
 .......................................................................................
 .......................................................................................
@@ -3802,7 +3842,7 @@ RewriteRule ^/wp-content/plugins/plugin name.*$ /index.php
 
 .......................................................................................
 .......................................................................................
-# Stop aggressive doamin:
+# Stop aggressive Domains hackers/scrapers:
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
@@ -4153,6 +4193,9 @@ In all folder by: .htaccess
 #More Speed:
 
 Header set Content-Encoding gzip 
+OR: 
+Header set Content-Encoding: deflate, gzip
+
 .......................................................................................
 ##ALTERNATIVE HEADERS:
 
@@ -4222,7 +4265,17 @@ Some proxies and security software mangle or strip the Accept-Encoding HTTP head
   Header always unset X-Powered-By
 </IfModule>
 
+.......................................................................................
+# Block tentatives to access Wordpress ressources
+RewriteEngine on
+RewriteRule ^(.*)wp-(.*)$ - [F]
+
+.......................................................................................
+#PAIN IN THE ASS:
+User-agent: YaK\/
+Disallow: /
+URL: https://www.spyglasses.io/en/bots/yak-
 
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 2500808
+Updated: 250822
