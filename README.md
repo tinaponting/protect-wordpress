@@ -104,7 +104,6 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 Love ///  Kristina Sweden  :  
 
-*******  💖✞💖 WORKING ON A NEW HTACCESS, 250825 💖✞💖 *******
 *******  💖✞💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖✞💖 *******
 
 * Updated: 2508126  htaccess
