@@ -119,6 +119,17 @@ Macintosh; Intel Mac OS X 13.6.7
 Macintosh; Intel Mac OS X 13.6.8
 Macintosh; Intel Mac OS X 13_3_1
 
+macOS 14 Sonoma:
+Macintosh; Intel  Mac OS X 14_1
+14.0 | 14.1 · 14.1.1 · 2 | 14.2 · 14.2.1 | 14.3 · 14.3.1 | 14.4 · 14.4.1 | 14.5 | 14.6 · 14.6.1 | 14.7 · 14.7.1 · 2 · 3 · 4 · 5 · 6
+
+macOS 15 Sequoia:
+Macintosh; Intel  Mac OS X 15:	
+15.0 · 15.0.1 | 15.1 · 15.1.1 | 15.2 | 15.3 · 15.3.1 · 2 | 15.4 · 15.4.1 | 15.5
+
+macOS 26 (Tahoe) :	26.0
+Macintosh; Intel  Mac OS X 16:	
+
 RV:
 Macintosh; Intel Mac OS X 12_6_4; rv:108.0
 Macintosh; Intel Mac OS X 13_0; rv:105.0
@@ -365,12 +376,17 @@ X11; Linux x86_64|X11; Linux i686|X11; Linux x86_64|x86_64|i686|x86_64|U; PPC|U;
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 # Windows NT : (Both fake and NT)
 
+Windows NT
 Windows NT 3.1	
 Windows NT 3.5	NT 
-Windows NT 3.51	NT 3.
+Windows NT 3.51	NT 3
+Windows NT 3.10	
+Windows NT 3.51
 Windows NT 4.0
+Windows NT 4.5
 Windows NT 5.1
 Windows NT 5.01
+Windows NT 6.0
 Windows NT 6.1
 Windows NT 6.1; WOW64
 Windows NT 6.1; Win64; x64
@@ -380,10 +396,23 @@ Windows NT 10.0; Win64; x64
 Windows NT 10.0
 Windows NT 11.0
 
+## FALSE Versions:
+Windows\NT 3.14.0 
+windows NT 7.0 
+windows NT 8.0 
+windows NT 9.0
+Windows NT 3.52
+
 # RAW:
 
-Windows NT|Windows NT 3.1|Windows NT 3.5	NT|Windows NT 3.51	NT 3|Windows NT 4.0|Windows NT 5.1|
-Windows NT 5.01|Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|Windows NT 10.0; Win64; x64|Windows NT 10.0|Windows NT 11.0
+Windows NT|Windows NT 3.1|	Windowss\NT 3.14.0 Windows NT 3.5	NT| 
+Windows NT 3.51	NT 3|Windows NT 3.10|	Windows NT 3.51|Windows NT 3.52|Windows NT 4.0|Windows NT 4.5|Windows NT 5.1|Windows NT 5.01|Windows NT 6.0|
+Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|
+windows NT 7.0| windows NT 8.0| windows NT 9.0|Windows NT 10.0; Win64; x64|Windows NT 10.0|Windows NT 11.0
+RewriteCond %{HTTP_USER_AGENT} ^.*Windows.* [NC]
+RewriteCond%{HTTP_USER_AGENT(?<=Windows\NT)(\d\.\d)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT(?<=Windows\sNT\s)(\d\.\d)[NC,OR]
+
 
 :::::::::::::::::::::::::::::::::::::::::::
 
@@ -415,6 +444,24 @@ Linux; Android 7.0|Linux; Android 7.1.1|Linux; Android 10; Pixel 3|Linux; Androi
 RewriteCond%{HTTP_USER_AGENT}"( PLACE YOUR RAW LIST HERE )"[NC]
 RewriteRule "^.*$" - [F,L]</IfModule>
 
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"( | | | )"[NC]
+RewriteRule "^.*$" - [F,L]</IfModule>
+
+###* OR:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCon %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCon %{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteCond%{HTTP_USER_AGENT}(EvilBotHere|SpamSpewer|SecretAgentAgent)[NC]
+RewriteRule (.*) - [F,L]
+</IfModule>
+
+**IF NEEDED:
+RewriteRule !^/?robots\.txt$ - [F,L]
+
 :::::::::::::::::::::::::::::::::::::::::::
 ...........................................
-* UPPDATED: 20250615
+* UPPDATED: 250803
