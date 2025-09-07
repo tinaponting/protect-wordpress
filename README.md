@@ -106,6 +106,7 @@ Love ///  Kristina Sweden  :
 
 *******  💖✞💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖✞💖 *******
 
+* Updated: 2500907 perishablepress.com8g- MY: firewall With new AI BOTS! some improvent, they tries to hacks by old Windowns NT:(
 * Updated: 250803 wp-content -updated with more options.
 * Updated: 2500828 perishablepress.com8g- MY: firewall With new AI BOTS!
 * Updated: 2508126  htaccess
