@@ -361,6 +361,10 @@ test.php
 
 #HTML SCRAPING:
 HTML Scraper
+python-boilerpipe
+Boilerpipe's ArticleExtractor
+HTMLFetcher 
+getText
 
 ..................
 #RAW (ABOVE):
@@ -371,7 +375,8 @@ Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch|OkHttp|AutoScraper|
 Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|cURL|Rust|R|Nutch|LangGraph.js|Grobid|HTTP Toolkit|Golang Scraper|Go Web Scraping|
 Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharp|
 go-get|Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
-Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test| test.php|HTML Scraper
+Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|
+Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher| getText
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -496,7 +501,7 @@ Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|C
  
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_REFERER}^https?://[^/]+\.countrycodehere/?[NC]
-RewriteRule ^.* - [F,L]</IfModule>
+RewriteRule .* - [F]</IfModule></IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -510,9 +515,14 @@ RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
-RewriteRule "^.*$" - [F,L]</IfModule>
+RewriteRule .* - [F]</ifModule>
 
-# Extra good BLOCK #:
+#Alternative:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
+RewriteRule "^.*$" - [F]</IfModule>
+
+# Extra good BLOCK #: 
 
 <IfModule mod_rewrite.c>
 RewriteCond%{HTTP_USER_AGENT}( | | | | )[NC,OR]
@@ -579,4 +589,4 @@ GoSpider
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-##  Updated: 250616   ##
+##  Updated: 250908  ##
