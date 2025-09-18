@@ -9,7 +9,7 @@ CensysInspect|copyseeker.net|cURL|curl|dotbot|DataForSeoBot|DomainStatsBot||evc-
 HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Scan|headless.py|HtmlRequestScraper|httpbin.io/headers|httplib|http|harvester|Fetch|node-fetch|Favicon Fetcher|fetchurl|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libcurl|
 Majestic|MJ12bot|Nikto|Ninja|Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|OpenVAS|openvas|Odin|Python|Pyth|py|PyQ|python|python-http|python-requests|PythonRequests|Python-urllib|python aiohttp|python-httpx|Prometheus|php|php://input|perl|python-async|PycURL|Python-urllib||phpCrawler|PHP Meterpreter|ProFaceFinder|SiteimproveBot-Crawler|SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|SF|SemrushBot|SemrushBot-BA|SemrushBot-SA|
 SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-SA|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|SSL/TLS Scan|SSL Scanner|Sec-Fetch-Site|tls-scan|scan|scanner|scraperbot|SiteAuditBot|SplitSignalBot|SeoSiteCheckup|SiteCheckerBotCrawler|seobility|SCAN|serpstatbot|
-TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|test-bot|TestURI|test|TestBot|Test Spider|TikTokSpider|WPScan|WEB-Scan|wp-request||woorank|WPScan|WebImageCollector|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|wordpress-sniffer|webscraper / |Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client)[NC]
+TinEye|TinEye-bot|TinEye-bot-live/1.31|TestNutchBot|test-bot|TestURI|test|TestBot|Test Spider|TikTokSpider|WPScan|WEB-Scan|wp-request||woorank|WPScan|libwww-perl|Wget|wget|WPSec|Web Image Collector|WebSniffer|wordpress-sniffer|webscraper / |Xenu|Zeus|Zgrab|YaK|ZmEu|Zombiebot|Zend_Http_Client)[NC]
 RewriteRule .* - [R=403,L]</IfModule>
 
 ...........................................................
@@ -121,6 +121,69 @@ CN: Domains:  (if needed to block)
 .zj.cn
 .zj.cn
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+## CHINA HELL:
+
+Baidu:	
+Baiduspider	
+baiduspider-*-*-*-*
+.crawl.baidu.com
+
+Sogou:
+sogou spider 
+Sogou web spider	
+sogouspider-*-*-*-*
+.crawl.sogou.com
+
+Byte Dance	
+Bytespider	
+bytespider-*-*-*-*
+.crawl.bytedance.com
+
+Shenma:
+Yisouspider	
+shenmaspider-*-*-*-*
+.crawl.sm.cn
+
+Huawei:
+PetalBot	
+petalbot-*-*-*-*
+.aspiegel.com
+
+LINE (Naver):  (not a danget but in case.....)	
+Linespider	
+crawl.*-*-*-*.
+search.line-apps.com
+
+Naver:	  (not a danget but in case.....)	
+Yeti	
+crawl.*-*-*-*
+.web.naver.com
+
+Cốc 	  (not a danget but in case.....)	
+Cốc	
+coccocbot	
+bot-*-*-*-*
+.coccoc.com
+
+Qwant 	  (not a danget but in case.....)	
+Qwantify	
+qwantbot-*-*-*-*
+.qwant.com
+
+Apple	
+Applebot	
+*-*-*-*.applebot
+.apple.com
+
+Twitter (Now: X but some stilsl tries to hack you with this))	
+Twitterbot	
+r-*-*-*-*.twttr.com
+
+Facebook	
+facebookexternalhit	
+fwdproxy-*-*.fbsv.net
+
 ................................................
 ::::::::::::::::::::::::::::::::::::::::::::::::
 #Sniffer:
@@ -158,4 +221,4 @@ bot.*semrush.com
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 250915
+Updated: 250918
