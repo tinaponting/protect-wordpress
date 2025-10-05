@@ -3406,6 +3406,14 @@ define( 'WP_ALLOW_REPAIR', true );
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 -OR:
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+
+##WORKS very wll:
+
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
+define('WP_DEBUG', false);
+define('WP_DEBUG_DISPLAY', false);
+
 ........................................................................................
 ........................................................................................
 #Admin protect>
@@ -4102,6 +4110,21 @@ SetEnv rate-limit-interval "1800"                    # 1800 seconds = 30 minutes
 SetEnv rate-limit-threshold "1"                      # 1 request per interval
 </IfModule>
 
+
+# ALTERNATIVE:
+
+<IfModule mod_reqtimeout.c>
+RequestReadTimeout header=5-10,MinRate=500 body=10,MinRate=500
+</IfModule>
+
+#OR;
+<IfModule mod_ratelimit.c>
+    <Location /images>
+        SetOutputFilter RATE_LIMIT
+        SetEnv rate-limit 1
+    </Location>
+</IfModule>
+
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ###Chrome Privacy Preserving Prefetch Proxy
@@ -4146,6 +4169,7 @@ RewriteBase /directory_in_question
 RewriteCond %{REQUEST_URI} \.(png!jpg)$
 RewriteCond %{HTTP_COOKIE} !is_logged_in=true [NC]
 RewriteRule ^([^/]+)/?$ /index.php?con=$1 [L,QSA]
+
 ---------------------------------------------------------------------------------------
 #Hide includes
 
@@ -4276,6 +4300,33 @@ User-agent: YaK\/
 Disallow: /
 URL: https://www.spyglasses.io/en/bots/yak-
 
+.......................................................................................
+#SSL:
+# LOCKS Them out:)
+
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "example.com"
+
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "www.example.com"
+ErrorDocument 403 https://www.example.com/admin/
+*
+
+## SSL OPTION IN FOLDERS:
+If they do not respect your folders, like includes, content and so on.
+
+SSLOptions +StrictRequire
+SSLRequireSSL
+SSLRequire %{HTTP_HOST} eq "domainname.com"
+
+##SLL On subfolders:
+<Directory /your-sub-directory> 
+  SSLRequireSSL 
+</Directory> 
+
+
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 250822
+Updated: 251004
