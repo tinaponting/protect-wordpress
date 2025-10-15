@@ -3,49 +3,217 @@ NOT WANTED BOTS:
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ###RAW FILE:
 
-aiohttp|aiohttp/3.12.15|apache-useragent /|Apache-HttpClient|Apache\-HttpClient|apache-json-scanners|apache-scanners|404checker|ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Apache Nutch|apache-scanners|
+aiohttp
+aiohttp/3.12.15
+apache-useragent 
+Apache-HttpClient
+Apache\-HttpClient
+apache-json-scanners
+apache-scanners
+404checker
+ALittle Client
+Amazonbot
+amazonbot
+ahrefsbot
+AhrefsBot
+AhrefsSiteAudit
+AhrefsBot/7.0
+Apache Nutch
+apache-scanners
 
-BLEXBot/1.0|Barkrowler|BUbiNG|BitSightBot/1.0|
+BLEXBot/1.0
+Barkrowler
+BUbiNG
+BitSightBot/1.0
+CensysInspect
+curl
+copyseeker.net
 
-CensysInspect|curl|copyseeker.net|dotbot|DataForSeoBot|DomainStatsBot|
+dotbot
+DataForSeoBot
+DomainStatsBot
+evc-batch
+Extreme Picture Finder
 
-evc-batch|Extreme Picture Finder|
+Guzzle
+GuzzleHttp
+GuzzleHttp/7
+Go
+Go1.1packagehttp
+golang
+Golang Scraper
+Go Web Scraping
+Go-http-client
+Go-http-client/1.1
+Go-http-client/2.0
+Grabber
 
-Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping|Go-http-client|Go-http-client/1.1|Go-http-client/2.0|Grabber|
+HeadlessChrome
+Headless
+Headless scraping
+HeadlessChrome
+Headless
+Headless Edg
+headless.py
+HtmlRequestScraper
+HTTP_Request
+HTTP requests
+HTTP_Request2
+httpbin
+httpbin/headers
+httplib
+http
+HTTPX
 
-HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Headless Edg|headless.py|HtmlRequestScraper|HTTP_Request|HTTP_Request2|httpbin|httpbin/headers|httplib|http|
+Fetch
+node-fetch
+Favicon Fetcher
+fetchurl
+FaceBot
+Fuzz Faster U Fool
+Fuzz Faster U Fool v2.0.0
+Java
+java
+JavaScript
+Java-http-client
+libwww 6.05
+libwww-perl-6.77
+libwww-perl
+libcurl|InternetMeasurement/1.0
 
-Fetch|node-fetch|Favicon Fetcher|fetchurl|FaceBot|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libwww-perl|libcurl|InternetMeasurement/1.0|Java|
+meta-externalagent
+meta-externalagent/1.1
+Majestic
+MJ12bot
+middleware.py
+Nikto
+Ninja
+Nuclei
+Nutch
+Nmap
+mass-scan
+Next.js middleware
+OpenVAS
+openvas
+Odin
 
-meta-externalagent|meta-externalagent/1.1|Majestic|MJ12bot|middleware.py|
+Python
+Pyth
+pyscan
+py
+PyQ
+python
+python-http
+python-requests
+python\-requests
+Python Requests
+python-requests/2.32.3
+PythonRequests
+Python-urllib
+Python\-urllib
+python aiohttp
+python-httpx
+Photon
+Photon/1.0
+Prometheus
+php
+PHP
+php://input
+python-async
+PycURL
+Python-urllib
+phpCrawler
+PHP Meterpreter
+ProFaceFinder
+Python Scrapy
+Python/3.12 aiohttp/3.12.15
 
-Nikto|Ninja|Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|OpenVAS|openvas|Odin|
+SEOkicks
+serpstatbot
+Screaming Frog SEO Spider
+SF
+SemrushBot
+SemrushBot-BA
+SemrushBot-SA
+SemrushBot/7~bl
+SemrushBot-OCOB
+SemrushBot-SWA
+SemrushBot-SISF
+SemrushBot-SI
+SemrushBot-SWA
+SemrushBot-CT
+SemrushBot-BM
+SemrushBot-FT
+SSL/TLS Scan
+SSL Scanner
+Sec-Fetch-Site
+scan
+scanner
+scraperbot
+SQLMap
+sqlmap
+SCAN
+serpstatbot
 
-PEAR|PHP|Python|Pyth|pyscan|py|PyQ|python|python-http|python-requests|python\-requests|Python Requests|python-requests/2.32.3|PythonRequests|Python-urllib|Python\-urllib|python aiohttp|python-httpx|Photon|Photon/1.0|Prometheus|php|php://input|perl|python-async|PycURL|Python-urllib|phpCrawler|PHP Meterpreter|ProFaceFinder|Python Scrapy|
+TinEye
+TinEye-bot
+TestNutchBot
+test-bot
+TestURI
+test
+TestBot
+test-bot
+/test/
+Test Spider
+Timpibot/0.9
+TikTokSpider
 
-SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|SF|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|SSL/TLS Scan|SSL Scanner|scanners|Sec-Fetch-Site|scan|scanner|scraperbot|SQLMap|sqlmap|SCAN|serpstatbot|
+Vulnerability-Scanner /
+WPScan
+WP Scan
+WEB-Scan
+WPScan CLI Scanner
+wp-request
+wordpress-sniffer
+woorank
+Wget
+wget
+WPSec
+Web Image Collector
+WebSniffer
+wordpress-sniffer
+Web shells
+webscraper
+Windows
+Windows NT 10.0; Win64; x64|Windows NT 10.0
 
-TinEye|TinEye-bot|TestNutchBot|test-bot|TestURI|test|TestBot|test-bot|/test/|Test Spider|Timpibot/0.9|TikTokSpider|
-
-Vulnerability-Scanner /|WPScan|WP Scan|WEB-Scan|WPScan CLI Scanner|wp-request|wordpress-sniffer|woorank|Wget|wget|WPSec|Web Image Collector|WebSniffer|wordpress-sniffer|Web shells|webscraper|
-
-Xenu|Zeus|Zgrab|YaK|ZmEu|Zend_Http_Client|Xenu Link Checker
+Urllib
+urllib.request
+Xenu
+Zeus
+Zgrab
+YaK
+ZmEu
+Zend_Http_Client
+Xenu Link Checker
 
 ..............................................................
 ______________________________________________________________
+READY:
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} ^.*(aiohttp|aiohttp/3.12.15|apache-useragent /|Apache-HttpClient|Apache\-HttpClient|apache-json-scanners|apache-scanners|404checker|ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Apache Nutch|apache-scanners|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(BLEXBot/1.0|Barkrowler|BUbiNG|BitSightBot/1.0|CensysInspect|curl|copyseeker.net|dotbot|DataForSeoBot|DomainStatsBot|evc-batch|Extreme Picture Finder|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping|Go-http-client|Go-http-client/1.1|Go-http-client/2.0|Grabber|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(HeadlessChrome|Headless|Headless scraping|HeadlessChrome||Headless|Headless Edg|headless.py|HtmlRequestScraper|HTTP_Request|HTTP_Request2|httpbin|httpbin/headers|httplib|http|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Fetch|node-fetch|Favicon Fetcher|fetchurl|FaceBot|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libwww-perl|libcurl|InternetMeasurement/1.0|Java|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(meta-externalagent|meta-externalagent/1.1|Majestic|MJ12bot|middleware.py|Nikto|Ninja|Nuclei|Nutch|Nicecrawler|Nmap|mass-scan|OpenVAS|openvas|Odin|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(PEAR|PHP|Python|Pyth|pyscan|py|PyQ|python|python-http|python-requests|python\-requests|Python Requests|python-requests/2.32.3|PythonRequests|Python-urllib|Python\-urllib|python aiohttp|python-httpx|Photon|Photon/1.0|Prometheus|php|php://input|perl|python-async|PycURL|Python-urllib|phpCrawler|PHP Meterpreter|ProFaceFinder|Python Scrapy|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(SEOkicks|serpstatbot|Screaming|Screaming Frog SEO Spider|SF|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|Semrush|SemrushBot|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|SSL/TLS Scan|SSL Scanner|scanners|Sec-Fetch-Site|scan|scanner|scraperbot|SQLMap|sqlmap|SCAN|serpstatbot|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(TinEye|TinEye-bot|TestNutchBot|test-bot|TestURI|test|TestBot|test-bot|/test/|Test Spider|Timpibot/0.9|TikTokSpider|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Vulnerability-Scanner /|WPScan|WP Scan|WEB-Scan|WPScan CLI Scanner|wp-request|wordpress-sniffer|woorank|Wget|wget|WPSec|Web Image Collector|WebSniffer|wordpress-sniffer|Web shells|webscraper|).*$ [NC]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Xenu|Zeus|Zgrab|YaK|ZmEu|Zend_Http_Client|Xenu Link Checker).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT}^.*(aiohttp|aiohttp/3.12.15|apache-useragent|Apache-HttpClient|Apache\-HttpClient|apache-json-scanners|apache-scanners|404checker|ALittle Client|Amazonbot|amazonbot|ahrefsbot|AhrefsBot|AhrefsSiteAudit|AhrefsBot/7.0|Apache Nutch|apache-scanners).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(BLEXBot/1.0|Barkrowler|BUbiNG|BitSightBot/1.0|CensysInspect|curl|copyseeker.net|dotbot|DataForSeoBot|DomainStatsBot|evc-batch|Extreme Picture Finder).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Guzzle|GuzzleHttp|GuzzleHttp/7|Go|Go1.1packagehttp|golang|Golang Scraper|Go Web Scraping|Go-http-client|Go-http-client/1.1|Go-http-client/2.0|Grabber).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(HeadlessChrome|Headless|Headless scraping|HeadlessChrome|Headless|Headless Edg|headless.py|HtmlRequestScraper|HTTP_Request|HTTP requests|HTTP_Request2|httpbin|httpbin/headers|httplib|http|HTTPX).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Fetch|node-fetch|Favicon Fetcher|fetchurl|FaceBot|Fuzz Faster U Fool|Fuzz Faster U Fool v2.0.0|Java|java|JavaScript|Java-http-client|libwww 6.05|libwww-perl-6.77|libwww-perl|libcurl|InternetMeasurement/1.0).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(meta-externalagent|meta-externalagent/1.1|Majestic|MJ12bot|middleware.py|Nikto|Ninja|Nuclei|Nutch|Nmap|mass-scan|Next.js middleware|OpenVAS|openvas|Odin).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Python|Pyth|pyscan|py|PyQ|python|python-http|python-requests|python\-requests|Python Requests|python-requests/2.32.3|PythonRequests|Python-urllib|Python\-urllib|python aiohttp|python-httpx|Photon|Photon/1.0|Prometheus|PHP|php|php://input|python-async|PycURL|Python-urllib|phpCrawler|PHP Meterpreter|ProFaceFinder|Python Scrapy|Python/3.12 aiohttp/3.12.15).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(SEOkicks|serpstatbot|Screaming Frog SEO Spider|SF|SemrushBot|SemrushBot-BA|SemrushBot-SA|SemrushBot/7~bl|SemrushBot-OCOB|SemrushBot-SWA|SemrushBot-SISF|SemrushBot-SI|SemrushBot-SI|SemrushBot-SWA|SemrushBot-CT|SemrushBot-BM|SemrushBot-FT|SSL/TLS Scan|SSL Scanner|Sec-Fetch-Site|scan|scanner|scraperbot|SQLMap|sqlmap|SCAN|serpstatbot).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(TinEye|TinEye-bot|TestNutchBot|test-bot|TestURI|test|TestBot|test-bot|/test/|Test Spider|Timpibot/0.9|TikTokSpider).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Vulnerability-Scanner /|WPScan|WP Scan|WEB-Scan|WPScan CLI Scanner|wp-request|wordpress-sniffer|woorank|Wget|wget|WPSec|Web Image Collector|WebSniffer|wordpress-sniffer|Web shells|webscraper).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Urllib|urllib.request|Xenu|Zeus|Zgrab|YaK|ZmEu|Zend_Http_Client|Xenu Link Checker).*$ [NC]
 RewriteRule .* - [F,L]
+
 
 ..................................................................................
 #  I USE:  ( .htaccess: )
@@ -77,6 +245,15 @@ chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com|uc browser/mobile/Andr
 huawei\.com| Haosou 360 spider|Sosospider|YisouSpider|YoudaoBot /|Test-Spider|chinamobile.com\.cn|chinamobile.com\.cn|chinatelecom.com\.cn|
 chinaunicom\.com|chinaunicom\.cn|aliyun\.com|alibaba\.com
 
+##READY:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}^.*(AliyunSecBot/|AliyunAliyun|AliyunSecBot/Nutch-1.21-SNAPSHOT|apnic\.net|alibabacloud\.com|alibaba\.com|aliyun\.com).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(MicroMessenger|Weixin QQ|bytesdance|BytespiderZeus.*82900.Baiduspider-image|COSBrowser|Mb2345Browser|MQQBrowserLieBaoFast|Datanyze).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(ByteDance crawler|DingTalkBot|digitalocean\.com|QQ Browser Mobile|Sogou|X Browser|115 Browser|360 Browser|360 Safe Browse).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(ChinaClaw|360Spider|petalbot|petalSearch|PetalBot|;zh-cn|zh\-CN|zh_CN|zh-CN|ZHCN|zh|zh_CN|zh|zh-CN|zh-SG|zh-TW|zh-HK|zh-CHS|zh-CHT|zhi-CN|ZHCN|zh-MO|.cn|Openbot).*$ [NC]
+RewriteCond%{HTTP_USER_AGENT}^.*(Test-Spider|TestBot|tencent /|tencent\.com|tencent.com|bot.tensent.com|kingsoft\.com|kingsoft /).*$ [NC]
+RewriteRule .* - [F,L]
 ...................................
 #Aggresive china Terror:
 
@@ -251,4 +428,4 @@ bot.*semrush.com
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .................................................................
-Updated: 251012
+Updated: 251015
