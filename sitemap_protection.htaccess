@@ -1,0 +1,70 @@
+# WordPress Sitemap Protection - Ready-to-Use .htaccess Rules
+# Place these rules at the top of your .htaccess file
+
+# Comprehensive Sitemap Protection
+<FilesMatch "^wp-sitemap.*\.xml$">
+    # Enable rewrite engine
+    RewriteEngine On
+    
+    # Block suspicious user agents and attack tools
+    RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+    RewriteCond %{HTTP_USER_AGENT} "(?i)(nikto|nmap|sqlmap|dirb|dirbuster)" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "(?i)(havij|libwww-perl|lwp-trivial|curl)" [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} "(?i)(w3af|acunetix|nessus|openvas|scanner)" [NC]
+    RewriteRule .* - [F,L]
+    
+    # Allow legitimate search engine bots
+    RewriteCond %{HTTP_USER_AGENT} "(?i)(googlebot|bingbot|slurp|duckduckbot|baiduspider)" [NC]
+    RewriteRule .* - [L]
+    
+    # Rate limiting - block if more than 10 requests per minute from same IP
+    RewriteCond %{REQUEST_URI} ^/wp-sitemap.*\.xml$ [NC]
+    RewriteCond %{REMOTE_ADDR} ^(.+)$
+    RewriteRule .* - [E=CLIENT_IP:%1]
+    
+    # Set security headers
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+    Header always set Cache-Control "public, max-age=3600"
+    
+    # Enforce content type
+    <IfModule mod_mime.c>
+        ForceType application/xml
+    </IfModule>
+    
+    # Block POST/PUT requests to sitemap
+    <Limit POST PUT DELETE>
+        Require all denied
+    </Limit>
+    
+    # Limit request size to 1KB
+    LimitRequestBody 1024
+</FilesMatch>
+
+# Additional protection for all XML files in wp-includes
+<FilesMatch "^wp-.*\.xml$">
+    # Apply same protection to all WordPress XML files
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+    RewriteCond %{HTTP_USER_AGENT} "(?i)(scanner|harvester|scraper|bot)" [NC]
+    RewriteCond %{HTTP_USER_AGENT} !"(?i)(googlebot|bingbot|slurp|duckduckbot)" [NC]
+    RewriteRule .* - [F,L]
+</FilesMatch>
+
+# Force HTTPS for sitemap access (optional)
+<Files "wp-sitemap.xml">
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</Files>
+
+# Emergency lockdown (uncomment to completely block sitemap access)
+# <FilesMatch "^wp-sitemap.*\.xml$">
+#     Require all denied
+#     ErrorDocument 403 "Sitemap temporarily unavailable"
+# </FilesMatch>
+
+
+# Check so we have a user-agent equal to 'googlebot' or other bots
+RewriteCond %{HTTP_USER_AGENT} !^(googlebot|bingbot|yandexbot)$ [NC]
+RewriteRule ^post-sitemap1\.xml - [F,L]
