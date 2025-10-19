@@ -19,8 +19,11 @@ Add this after this:
 * define('WP_DEBUG',false);
 
 define('DISALLOW_FILE_EDIT',true); 
+
 define('DISALLOW_FILE_MODS',true);
+
 define('DISABLE_WP_CRON',true);
+
 ob_start();?>
 
 Set to: 444 in wp.config.php Also gets some speed!  //important!!
