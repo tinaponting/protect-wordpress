@@ -4087,7 +4087,7 @@ SetEnv rate-limit 100
 SetEnv rate-initial-burst 200
 </IfModule>
 
-#Alternative:
+#POST:
 
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_URI} !^/Post/
@@ -4326,7 +4326,19 @@ SSLRequire %{HTTP_HOST} eq "domainname.com"
   SSLRequireSSL 
 </Directory> 
 
+.......................................................................................
+#Another way to snich site:
+
+site:example.com filetype:pdf
+python2 snitch.py -C "site:whitehouse.gov filetype:pdf" -P 100
+index="document_metadata" Author="*"
+index="document_metadata"
+index="document_metadata" Keywords!=""
+index="document_metadata" Comments!=""
+index="document_metadata"
+index="document_metadata" CreateDate="*" 
+index="document_metadata" ModifyDate="*" 
 
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 251004
+Updated: 251022
