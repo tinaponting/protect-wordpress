@@ -82,7 +82,9 @@ Torch
 Haystack
 OnionLinks
 Wade X
-
+Stagehand
+lightpanda
+Zombie.js
 -------------------
 RAW ABOVE: 
 ## HEADLESS Browsers:
@@ -90,9 +92,9 @@ RAW ABOVE:
 Headful|Headless Client|Splash|Headless|
 selenium:headless:chromium|selenium:headful :chromium|selenium:headless:firefox| selenium:headful :firefox|playwright:headless:chromium|playwright:headful :chromium|
 playwright:headless:firefox|playwright:headful :firefox|PlaywrightPython|Selenium Stealth|Splash/Lua|HtmlUnit/Java|Chromedp /Golang|Cypress /JavaScript|	
-Nimble Browser|Cypress|chromedp|browserless|gologin|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|SamuraiWTF|
+Nimble Browser|Cypress|chromedp|browserless|gologin|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|lightpanda|OpenBSD|Stagehand|Solaris|IRIX|Samurai Web Testing Framework|SamuraiWTF|
 Network Security Toolkit|NST|BlackArch |Tor2Web|TOR browser|tor|TOR Exit Nodes|ssh|ssh-tunnel|ike|ipsec-esp|http-proxy|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|
-GreyNoise|ZoomEye|Censys|Hunter|MSIE|Nyxt|SimpleBrowser|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|UCBrowser|UR Browser|Utopia|Ahmia|Torch|Haystack|OnionLinks|Wade X
+GreyNoise|ZoomEye|Censys|Hunter|MSIE|Nyxt|SimpleBrowser|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|UCBrowser|UR Browser|Utopia|Ahmia|Torch|Haystack|OnionLinks|Wade X|Zombie.js
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -185,7 +187,8 @@ Gobuster|Dirsearch|FeroxBuster|Nessus|Nexpose|Arch Linux|StormCrawler|GoSpider
 Cypress
 Cyberfox  
 chrome|py
-gocolly|colly
+gocolly
+colly
 OpenWave
 SimpleBrowser
 Splash
@@ -231,7 +234,7 @@ retire.js
 
 ............................
 #RAW:
-Cypress|Cyberfox|chrome|py|gocolly|colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|
+Cypress|Cyberfox|chrome|py|gocolly|colly|Go Colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|
 Trident/4.0|TrileFejs|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|WOW64|rv:48.0|WhatWeb|Wappalyzer Scan|WordPress Security Scan|
 Knoppix x64|retire.js|Greenbone CE 22.04.14|data-requests|TypeScript|Empty TypeScript|Standby TypeScript|Bun|Apache Nutch|ALittle Client|
 litserve|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint|React| Angular|Vue.js|Graphql|Zig|Knoppix x64|retire.js
@@ -376,7 +379,7 @@ Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fe
 Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharp|
 go-get|Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
 Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|
-Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher| getText
+Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher|getText
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -494,7 +497,14 @@ Proxy SwitchyOmega| Undetectable|lazys3|Webscreenshot|EyeWitness|Nuclei|SQLNinja
 HackBar|Wappalyzer|Cache killer|Open port check tool|Request maker|Proxy SwitchyOmega|Note anywhere|d3coder|Tamper Data|Data Scraper|Invicti|WebInspect|
 Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|Censys|Hunter|DIRB|Metasploitable 2|meterpreter|Java's HttpUrlConnection
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#PROXY BLOCKING
+
+RAW:
+AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies
+|ISP Proxies|proxy|VPN/Proxy
+
 .............................................................
 .............................................................
 #HATE that country:
@@ -519,6 +529,7 @@ RewriteRule .* - [F]</ifModule>
 
 #Alternative:
 <IfModule mod_rewrite.c>
+
 RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
 RewriteRule "^.*$" - [F]</IfModule>
 
@@ -529,6 +540,15 @@ RewriteCond%{HTTP_USER_AGENT}( | | | | )[NC,OR]
 RewriteCond%{QUERY_STRING}( | | | )\:[NC,OR]
 RewriteCond%{HTTP_USER_AGENT}^.*( | | ).*[NC]
 RewriteRule .* - [F]</ifModule>
+
+
+#### Another one - I use this:
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*(ChatGPT-User|ClaudeBot|PerplexityBot).*$ [NC]
+RewriteRule .* - [F,L]
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -589,4 +609,4 @@ GoSpider
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-##  Updated: 250908  ##
+##  Updated: 251104  ##
