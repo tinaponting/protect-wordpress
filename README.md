@@ -111,10 +111,11 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated: 25114 perishablepress.com8g- MY: firewall With Laest AI protection:)
 * Updated: 251026  wp-conten foldershtaccess - Updated
 * Updated: 251026  Core htaccess - Updated
 * Updated: 251016  htaccess1 - Updated
-* Updated: 2501014 perishablepress.com8g- MY: firewall With Ltest AI.
+* Updated: 2501014 perishablepress.com8g- MY: firewall With Lest AI.
 * Updated: 2510913 Noway allowed-Do not see Updated:)
 * Updated: 2500919 perishablepress.com8g- MY: firewall small error.
 * Updated: 2500915 perishablepress.com8g- MY: firewall With new Latest Ai protection.
