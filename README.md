@@ -111,43 +111,8 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
-* Updated: 251201 htaccess2, no impact on speed:) With NO AI!
-* Updated: 251201 perishablepress.com8g- MY:Ai moved to haccess2 with Perrish:)
-* Updated: 251114 perishablepress.com8g- MY: firewall With Laest AI protection:)
-* Updated: 251026  wp-conten foldershtaccess - Updated
-* Updated: 251026  Core htaccess - Updated
-* Updated: 251016  htaccess1 - Updated
-* Updated: 2501014 perishablepress.com8g- MY: firewall With Lest AI.
-* Updated: 2510913 Noway allowed-Do not see Updated:)
-* Updated: 2500919 perishablepress.com8g- MY: firewall small error.
-* Updated: 2500915 perishablepress.com8g- MY: firewall With new Latest Ai protection.
-* Updated: 2500907 perishablepress.com8g- MY: firewall With new AI BOTS! some improvent, they tries to hacks by old Windowns NT:(
-* Updated: 250803 wp-content -updated with more options.
-* Updated: 2500828 perishablepress.com8g- MY: firewall With new AI BOTS!
-* Updated: 2508126  htaccess
-* Updated: 2500810 perishablepress.com8g-firewall With new AI BOTS!
-* Updated: 2500729 perishablepress.com8g-firewall with Latest Aibots!
-* Updated: 250727  htaccess1
-* Updated: 250704  htaccess.  Gone through, took away som very old stuff, added Latest:)
-* Updated: 250701  htaccess1 + perishablepress.com8g-firewall with Latest Aibot:)
-* Updated: 250621  htaccess1:)
-* Updated: 250621  htaccess1 updated:)
-* Updated: 250621 perishablepress.com8g-firewall with Latest Aibots - NO Thanks:)
-* Updated: 250611  htaccess1 updated:)
-* Updated: 250610  perishablepress.com8g-firewall with Latest Aibots - not wanted:)
-* Updates: 250607 - AI Alternative to use - If stubborn:)
-* Updated: 250606  perishablepress.com8g-firewall with MORE AI -no wanted:)
-* Updated: 250605 htaccess1 - More Speed and security)
-* Updated: 250605  perishablepress.com8g-firewall with Latest Aibots - not wanted:)
-* Updated: 250527 wp-includes - wp-admin, ERROR  on my I  use..
-* Updated: 250531 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
-* Updated: 25027 wp-content, more speed.
-* Updated: 25027 wp-includes ? wp-admin, more securtity.
-* Updated: 25025 htaccess1 - More Speed and security)
-* Updated: 250525 perishablepress.com8g-firewall with Latest Aibots - not wanted:)
-* Updated: 250418 wp-includes, more alternatives to use.
-* Updated: 250416 htaccess1 - More Speed and security)
-
+* Updated: 251221 wp-icludes folder updated.
+* Updated: 250416 -251201
 * Updated: 250101 - 250431 
 * Updated: 240102 - 2411225 
 * Updated: 230306 - 231220
