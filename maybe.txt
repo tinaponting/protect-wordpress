@@ -28,9 +28,7 @@ RewriteCond %{HTTP_USER_AGENT} ^= [OR]
 RewriteCond %{HTTP_USER_AGENT} ^\.$ [OR]
 RewriteCond %{HTTP_USER_AGENT} ^\\$ [OR]
 RewriteCond %{HTTP_USER_AGENT} ^\d [OR]
-RewriteCond %{HTTP_USER_AGENT} "^Chrome" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "^Empty" [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} "^Firefox" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "^IE" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "^Internet\ Explorer" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "^MSIE" [NC,OR]
@@ -237,7 +235,28 @@ RewriteCond %{REMOTE_ADDR} !^131\.253\.25\.
 # Redirect during the testing period:
 RewriteRule .* /strangebrowser.html? [R=307,L]
 RewriteRule ^.*$ - [F,L]
+................................................
 
+# Block Firefox versions 1 through 144
+
+RewriteCond %{HTTP_USER_AGENT} ^Firefox/(1[0-3][0-9]|14[0-4]|[1-9][0-9]?)\. [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Firefox/([1-9]|[1-9][0-9]|[1-3][0-9][0-9]|14[0-4])\. 
+RewriteRule - [L,R=403,E=Firefox]
+
+Simpler alternatives:
+# Block any Firefox version starting with 1-144
+RewriteCond %{HTTP_USER_AGENT} ^Firefox/(1[0-3][0-9]|14[0-4]|[1-9][0-9]?)\. [NC]
+RewriteRule - [L,R=403,E=Firefox]
+
+# Or using a more flexible pattern
+Firefox:
+
+RewriteCond %{HTTP_USER_AGENT} ^Firefox/[1-9][0-9]{0,2}\. [NC]
+RewriteRule - [L,R=403,E=Firefox]
+
+Android:
+RewriteCond %{HTTP_USER_AGENT} ^Windows NT/(0[1-11][0-9]|14[0-4]|[1-9][0-9]?)\. [NC]
+RewriteRule - [L,R=403,E=Windows NT]
 ...........................................................
 # Bad bots:
 
@@ -255,50 +274,7 @@ RewriteCond %{HTTP_USER_AGENT} ^.*(PPC\ Mac).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(SeaMonkey).*$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^.*(Windows\ NT\ [3-5]\[0-9]|Windows\ NT\ 6\.0).*$ [NC,OR]
 
-# User agents of other bad bots:
-RewriteCond %{HTTP_USER_AGENT} ^.*(2345Explorer|360Spider|4147\.135|6899browser).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(acapbot|aiohttp|Adsbot|AHC\alexibot|AliApp|ALittle\ Client).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(AskTb|AspiegelBot|aylienbot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(attackbot|AwarioSmartBot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(backdorbot|BaiduClient|becomebot|BegunAdvertising|betabot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(BIDUBrowser|binlar|bitvore|blackwidow|blowfish).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(BoBrowser|BoogleBot|bsala|burpcollaborator).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Buck|bullseye|bunnys|butterfly|bytespider).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(centurybot|Campaign|clark-crawler|curl).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(datacha|DataForSeoBot|Datanyze|demon|devworx).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(diavol|Diffbot|Digincore|DingTalk|discobot|dittospyder).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(DomainAppender|DOWNLOADED|dotbot|dotnetdotcom|dumbot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Edition|evc-batch|evc-batch).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Framafox).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Go-http-client|GreenBrowser|Gregarius|GRequests).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Headless|Scan).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(icarus6j).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Java|Jersey|JuziBrowser).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(K-Ninja|Kinza|kmccrew).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(LanaiBot|LieBaoFast|Lightspeed|LMY47V|ltx71).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(MANAGED|Manzama|MauiBot|Mb2345Browser|MetaSr|MegaIndex).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(MicroMessenger|Moreover|MoodleBot|MQQBrowser).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(NameOfAgent|Namoroka|Netscape|newspaper).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(node\-fetch|Nuclei|null|Nutch).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(OcIdWebView|octopus|okhttp|OPPO|orgprobe|OWASMIME).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(PageFreezer|PaperLiBot|Pcore|PetalBot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(PostmanRuntime|PR-CY\.RU|pshtt|Pubmatic|python\-requests).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(QIHU\ 360SE|QQBrowser|queryn|queryseeker|QupZilla).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Re\-re|Readability|Riddler|robots|Ruby|ruby).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(SabsimBot|scpitspi).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Seekport|SeoBotM6|seocharger|SEOkicks|serpstatbot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Shuame|SlimBrowser|Sogou|SonyEricssonW660|spaziodati|splash).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(TencentTraveler|TheWorld|TkBot|ToBeFilledByOEM).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(UBrowser|UCBrowser|UNKNOWN|UserAgent\-Cube).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(vampire|VelenPublicWebCrawler|vikspider|voideye|vuhuvBot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(webleacher|webreaper|webstripper|webvac|webviewer|webwhacker).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(Wget|winhttp|wwwoffle|woxbot).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(x\.x\.x|xaldon|xenu|xxxyy).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(YaBrowser|YandexBot|yamanalab|yioopbot|YisouSpider|youda).*$ [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^.*(zeus|zgrab|zh\-CN|zh_CN|ZHCN|zmeu|zune|zyborg).*$ [NC]
-RewriteRule ^(.*)$ - [R=403,L]
-
--------------------------------------------------------------------------------------------
+..........................................................................
 
 RewriteCond %"{HTTP_USER_AGENT}" "gecko/20060728" [OR,NC]
 RewriteCond %"{HTTP_USER_AGENT}" "ltx71" [OR,NC]
@@ -326,7 +302,6 @@ RewriteCond %{HTTP_USER_AGENT} ^User-Agent
 RewriteCond %{HTTP_USER_AGENT} Java.*
 
 ----
-
 # Alternative: Just add it above!
 Here we assume certain MSIE 6.0 agents are from linkscanner #redirect these requests back to avg in the hope they’ll see their silliness!
 
@@ -3725,97 +3700,6 @@ RewriteCond %{HTTP_REFERER} amazon\.com
 RewriteRule ^ - [NC,F,L]
 </IfModule>
 
-# I USE THIS: (250812)
-#* Bytespider tries to scrape my content:(  No  thanks!
-
-<IfModule mod_rewrite.c>
-RewriteCond%{HTTP_REFERER}^https://.*amazonaws\.com [NC] 
-RewriteCond%{HTTP_REFERER}^https://.*amazon\.com [NC]
-RewriteCond%{HTTP_REFERER}^https://(([^.]+\.)+)?amazonaws\.com[NC]
-RewriteCond%{HTTP_REFERER}^amazonaws\.com$ [OR,NC]  
-RewriteCond%{HTTP_REFERER}aws.amazon\.com [NC]
-RewriteCond%{HTTP_USER_AGENT}"AISearchBot"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Alexa"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"AlexaTM"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot/0.1"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazon-kendra"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Textract"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"Amazon Comprehend"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"amazonbot"[NC,OR]   
-RewriteCond%{HTTP_USER_AGENT}"Amazonbot"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazon Silk"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"AMAZON-02"[NC,OR]  
-RewriteCond%{HTTP_USER_AGENT}"Amazon Bedrock"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon SageMaker"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon: AWS"[NC,OR]
-RewriteCond%{HTTP_USER_AGENT}"AWS Trainium"[NC,OR] 
-RewriteCond%{HTTP_USER_AGENT}"Amazon Kendra"[NC,OR] 
-RewriteCond%{HTTP_REFERER}amazonbot [NC]
-RewriteCond%{HTTP_REFERER}Claude [NC]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazonaws\.com"[NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?amazon\.com"[NC,OR]
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?Amazon\.com"[NC] 
-RewriteCond%{HTTP_REFERER}"^https?://(?:[^/]+\.)?^amazon.com.au"[NC]
-RewriteCond%{HTTP_REFERER}amazon.com.\au$ [OR,NC]
-RewriteCond%{HTTP_REFERER}amazon.\com [OR,NC]
-RewriteCond%{REMOTE_HOST}^.*\.compute-1\.amazonaws\.com [NC,OR]
-RewriteCond%{HTTP_REFERER}^compute-1.amazonaws\.com$ [OR,NC] 
-RewriteCond%{REMOTE_HOST}^.*\1.compute.amazonaws\.com [NC,OR] 
-RewriteCond%{REMOTE_HOST}^.*\2.compute.amazonaws\.com [NC,OR]
-RewriteCond %{REMOTE_HOST}^compute-2.amazonaws\.com$ [OR,NC] 
-RewriteCond%{REMOTE_HOST}^.*\.us-west-2.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.eu-west-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-south-1.compute.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.compute-1.amazonaws\.com [NC,OR]
-RewriteCond%{REMOTE_HOST}^.*\.ap-southeast-1.compute.amazonaws.com [NC,OR]
-RewriteCond%{REMOTE_ADDR}!^AS16509)$ [NC,OR]         #IDLIST
-RewriteCond%{REMOTE_ADDR}!^3\.6.)$ [NC,OR]           #ClaudeBot AI
-RewriteCond%{REMOTE_ADDR}!^3\.16.)$ [NC,OR]          #ClaudeBot AI
-RewriteCond%{REMOTE_ADDR}!^3\.21.)$ [NC,OR]          #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.22.)$ [NC,OR]          #Hacker
-RewriteCond%{REMOTE_ADDR}!^3\.6.93.227)$ [NC,OR]      #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.21.98.184)$ [NC,OR      #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.145.103.169)$ [NC,OR]   #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.81.)$ [NC,OR]           #Hacker
-RewriteCond%{REMOTE_ADDR}!^3\.90.)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^3\.107.)$ [NC,OR]         #Linguee Bot 
-RewriteCond%{REMOTE_ADDR}!^3\.133.)$ [NC,OR]         #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.145.)$ [NC,OR]         #ClaudeBot AI  
-RewriteCond%{REMOTE_ADDR}!^3\.147.)$ [NC,OR]         #HACKER] 
-RewriteCond%{REMOTE_ADDR}!^3\.148.107.)$ [NC,OR]       #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^3\.208.)$ [NC,OR] 
-RewriteCond%{REMOTE_ADDR}!^13\.221.)$ [NC,OR]            #Hacker
-RewriteCond%{REMOTE_ADDR}!^3\.238.)$ [NC,OR]             #AI Hacker
-RewriteCond%{REMOTE_ADDR}!^3\.248.)$ [NC,OR]             #AI Hacker
-RewriteCond%{REMOTE_ADDR}!^3\.254.)$ [NC,OR]             #ClaudeBot AI
-RewriteCond%{REMOTE_ADDR}!^13\.232.214.)$ [NC,OR]        #Image stealer India
-RewriteCond%{REMOTE_ADDR}!^13\.232.214.104)$ [NC,OR]     #Image hacker
-RewriteCond%{REMOTE_ADDR}!13\.238.)$ [NC,OR]             #AUSTRAILA HACKER
-RewriteCond%{REMOTE_ADDR}!^18\.210.92.)$ [NC,OR]         #AI Image stealer India
-RewriteCond%{REMOTE_ADDR}!^18\.97.)$ [NC,OR]             #PerplexityBot
-RewriteCond%{REMOTE_ADDR}!^18\.223.)$ [NC,OR]            #PerplexityBot
-RewriteCond%{REMOTE_ADDR}!^34\.232.23.139)$ [NC,OR]      #SurdotlyBot
-RewriteCond%{REMOTE_ADDR}!^34\.235.)$ [NC,OR]            #Scraping
-RewriteCond%{REMOTE_ADDR}!^35\.243.90.21)$ [NC,OR]       #Scraping7
-RewriteCond%{REMOTE_ADDR}!^35\.166.195.)$ [NC,OR]        #Scraping
-RewriteCond%{REMOTE_ADDR}!^45\.251.160.)$ [NC,OR]        #Scraping
-RewriteCond%{REMOTE_ADDR}!^51\.210.214)$ [NC,OR]         #Scraping
-RewriteCond%{REMOTE_ADDR}!^52\.18.177.61)$ [NC,OR]       #Scraping
-RewriteCond%{REMOTE_ADDR}!^54\.160.)$ [NC,OR]            #Hacking
-RewriteCond%{REMOTE_ADDR}!^54\.208.)$ [NC,OR]            #Hacking
-RewriteCond%{REMOTE_ADDR}!^54\.217.11.)$ [NC,OR]         #ClaudeBot AI 
-RewriteCond%{REMOTE_ADDR}!^54\.158.117.)$ [NC,OR]        #ClaudeBot AI
-RewriteCond%{REMOTE_ADDR}!^45\.158.117.225)$ [NC,OR]     #False TwitterBot
-RewriteCond%{REMOTE_ADDR}!^47.128)$ [NC,OR]           #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^47.128.116.87)$ [NC,OR]    #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^47\.128.42.31)$ [NC,OR]    #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^47\.128.27.246)$ [NC,OR]   #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^47\.128.25.)$ [NC,OR]      #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^47\.128.54.92)$ [NC,OR]    #Bytesspider
-RewriteCond%{REMOTE_ADDR}!^54\.224.)$ [NC,OR]            #Hacking
-RewriteCond%{HTTP_USER_AGENT}"Nutch"[NC]
-RewriteRule ^(.*)$ - [F,L]</IfModule>
-
 .......................................................................................
 .......................................................................................
 # If needed: https:// on:
@@ -3983,6 +3867,7 @@ RewriteRule .* - [F]
 Header add Access-Control-Allow-Methods "POST"
 
 3:  / did not work on my blog: but try:
+
 <LimitExcept POST>
 order deny,allow
 deny from all
@@ -4235,25 +4120,18 @@ Some proxies and security software mangle or strip the Accept-Encoding HTTP head
   </IfModule>
 </IfModule>
 
-
 <IfModule mod_headers.c>
-  # Header always set
   Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
-  # (1) Enable your site for HSTS preload inclusion.
-  # Header always set
   Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
 </IfModule>
-
 
 <IfModule mod_headers.c>
   Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
 </IfModule>
 
-
 <IfModule mod_headers.c>
   Header always set X-Frame-Options "DENY" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
 </IfModule>
-
 
 <IfModule mod_headers.c>
 	Header set Access-Control-Allow-Origin "*"
@@ -4265,11 +4143,9 @@ Some proxies and security software mangle or strip the Accept-Encoding HTTP head
   </FilesMatch>
 </IfModule>
 
-
 <IfModule mod_headers.c>
   Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
 </IfModule>
-
 
 <IfModule mod_headers.c>
   # Header always set
@@ -4339,6 +4215,49 @@ index="document_metadata"
 index="document_metadata" CreateDate="*" 
 index="document_metadata" ModifyDate="*" 
 
+.......................................................................................
+## BLOCK BAD SITES IN 3 WAYS: #
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER}^https?://([^.]+\.)*tumblr\.com [NC]
+
+RewriteCond%{REMOTE_HOST}^.*\.u1host\.com [NC]
+
+RewriteCond %{HTTP_REFERER} \.ru [NC]
+RewriteRule .* - [F]
+</IfModule>
+
+.......................................................................................
+#BLOCK Everithing exept Posts Requests: #
+
+In header, htaccess:
+
+Header add Access-Control-Allow-Methods "POST"
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule .* - [R=403,L]
+</IfModule>
+
+.......................................................................................
+IndexIgnore *
+tells apache to Hide all files and dirs from the directory listing.
+
+ IndexIgnore */*
+The line above tells apache to hide a spacific file or dir from the listing.
+
+Examples :
+
+ * = All files a dirs.
+ */* = Hides the root dir.
+ *foo.php* = hides /foo.php
+Wildcard expression :
+
+* = matches Any chars
+*foo = matches a string starting with any chars followed by "foo".
+file.* = matches a string starting with "file." followed by any chars.
+
+Stolen from: https://stackoverflow.com/
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 251022
+Updated: 260104
