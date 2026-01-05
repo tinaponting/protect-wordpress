@@ -4258,6 +4258,13 @@ Wildcard expression :
 file.* = matches a string starting with "file." followed by any chars.
 
 Stolen from: https://stackoverflow.com/
+
+
+# Block mail.mil domain
+RewriteCond %{HTTP_HOST} \.mil$ [NC]
+RewriteCond %{HTTP_HOST} ^mail\.mil [NC,OR]
+RewriteCond %{HTTP_HOST} ^.+\.mail\.mil [NC]
+RewriteRule ^ - [F,L]
 ---------------------------------------------------------------------------------------
 .......................................................................................
-Updated: 260104
+Updated: 260105
