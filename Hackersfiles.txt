@@ -1,0 +1,2380 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+###HEADLESS Browsers:
+Headful
+Headless Client
+Splash
+Headless
+Firefox Headless
+Headless Chrome
+Headless Linux
+Headless
+Headless Chromium
+Browserless
+Browser-Use
+HeadlessChrome
+Headless Edge
+Headless Chromium
+HeadlessChrome/Linux
+HeadlessChrome/Ubuntu
+Firefox Headless
+Headless|Headless
+Linux|Headful
+Headful|Linux
+Headful
+selenium:headless:chromium
+selenium:headful :chromium
+selenium:headless:firefox
+selenium:headful :firefox
+playwright:headless:chromium
+playwright:headful :chromium
+playwright:headless:firefox
+playwright:headful :firefox
+
+#MOST USED HEADLESS BROWSERS:
+PlaywrightPython
+Selenium Stealth
+Splash/Lua
+HtmlUnit/Java
+Chromedp /Golang
+Cypress /JavaScript
+Nimble Browser
+Cypress
+chromedp
+browserless
+gologin
+
+#OS:
+Parrot OS
+BackBox
+Dracos Linux
+DemonLinux
+CAINE
+FreeBSD
+OpenBSD
+Solaris
+IRIX
+Samurai Web Testing Framework
+SamuraiWTF
+Network Security Toolkit
+NST
+BlackArch
+
+#TOR:
+Tor2Web
+TOR browser
+tor
+TOR Exit Nodes
+ssh
+ssh-tunnel
+ike
+ipsec-esp
+OnionLinks
+OnionLand
+
+#OTHERS (HACKERS DELIGHT)
+Ghost Browser
+Nstbrowser
+Crt.sh
+Shodan
+searchcode.com
+GreyNoise
+ZoomEye
+Censys
+Hunter
+MSIE
+Nyxt
+SimpleBrowser
+GNOME Web
+Basilisk
+Flow browser
+I2P
+Windows NT
+UCBrowser
+UR Browser
+Utopia
+
+#DARK WEB: (use by hackers):
+Ahmia
+Torch
+Haystack
+Wade X
+Stagehand
+lightpanda
+Zombie.js
+Freenet
+Tails OS
+Not Evil
+DarkSearch
+DeepSearch
+
+OTHER HEADLESS:
+AngleSharp
+Awesomium
+benv
+Browserjet
+BrowserKit
+browser-launcher
+browser.rb
+CasperJS
+casperJS 
+cdp4j 
+C++, .NET
+Chrome PHP
+Chromeless
+Chrome-remote-interface cyrus
+Chromium drivers
+Chromium Embedded
+Chromy
+DalekJS
+DamonJS
+Erik
+Geb G
+Ghostbuster
+ghost.py
+Grope
+grope
+Guillotine
+Headless Edge
+Headless Firefox
+HeadlessBrowser
+Horseman
+HtmlUnit
+Jabba-Webkit
+Jasmine-Headless-Webkit
+Jaunt
+jBrowserDriver
+Jedi-crawler
+jedi-crawler
+Litium headless
+Lotte
+MechanicalSoup
+mechanize
+Nightmare
+Node.js
+PhantomJS
+PhantomJsCloud
+PhantomJS drivers
+Phantompy
+Playwright
+Playwright-dotnet
+Playwright-go
+Playwright-python
+Puppeteer
+Puppeteer Sharp
+Python-Webkit
+RoboBrowser
+Selenium
+SlimerJS
+SpecterJS
+Splash Browser
+Splinter
+Spynner
+SST
+stanislaw
+Surf
+trifleJS
+twill
+WatiN
+Watir
+Watir-WebDriver
+Webloop
+Wendigo
+wkhtmltopdf
+WKZombie
+WKZombie D
+X-RAY
+.Net
+
+-------------------
+## HEADLESS Browsers:
+
+Headful|Headless Client|Headless|Headless Chromium|HeadlessChrome|Headless Edge|Headless Chromium|HeadlessChrome/Linux|HeadlessChrome/Ubuntu|Browserless|Browser-Use|
+Firefox Headless|Headless Linux|Headless|Headless|Headful|Linux|Headful|
+selenium:headless:chromium|selenium:headful :chromium|selenium:headless:firefox|selenium:headful :firefox|playwright:headless:chromium|playwright:headful :chromium|playwright:headless:firefox|
+playwright:headful :firefox|PlaywrightPython|Selenium Stealth|Splash/Lua|HtmlUnit/Java|Chromedp /Golang|Cypress /JavaScript|
+Nimble Browser|Cypress|chromedp|browserless|gologin|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|
+FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|SamuraiWTF|Network Security Toolkit|NST|BlackArch|Tor2Web|TOR browser|tor|TOR Exit Nodes|ssh|ssh-tunnel|
+ike|ipsec-esp|OnionLinks|OnionLand|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|GreyNois|eZoomEye|Censys|Hunter|
+MSIE|Nyxt|SimpleBrowser|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|UCBrowser|UR Browser|Utopia|Ahmia|
+Torch|Haystack|Wade X|Stagehand|lightpanda|Zombie.js|Freenet|Tails OS|Not Evil|DarkSearch|DeepSearch|AngleSharp|Awesomium|
+benv|Browserjet|BrowserKit|browser-launcher|browser.rb|
+CasperJS|casperJS |cdp4j| Chrome PHP|Chromeless|Chrome-remote-interface cyrus|Chromium drivers|Chromium Embedded|Chromy|C++, .NET|
+DalekJS|DamonJS|Erik|Geb G|Ghostbuster|ghost.py|Grope|grope|Guillotine|Headless Edge|Headless Firefox|HeadlessBrowser|Horseman|HtmlUnit|
+Jabba-Webkit|Jasmine-Headless-Webkit|Jaunt|jBrowserDriver|Jedi-crawler|jedi-crawler|Litium headless|Lotte|MechanicalSoup|mechanize|Nightmare|Node.js|
+PhantomJS|PhantomJS drivers|phantompy|Playwright|Playwright-dotnet|Playwright-go|Playwright-pythonPuppeteer|Puppeteer Sharp|Python-Webkit|RoboBrowser|
+Selenium|SlimerJS|SpecterJS|Splash Browser|Splinter|Spynner|SST|stanislaw|Surf|Splash|trifleJS|twill|PhantomJsCloud|
+WatiN|Watir|Watir-WebDriver|Webloop|Wendigo|wkhtmltopdf|WKZombie|WKZombie D|X-RAY|.Net
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+....................................................
+#HACKING TOOLS: 
+
+Metaspoilt
+Kali Linux
+Parrot Security OS
+BlackArch Linux
+BackBox Linux
+Arch Linux
+ZAP
+OSV-Scanner
+sqlmap
+
+#Scrapers bypassing:
+Objective C
+Scala
+Kotlin
+Javascript
+SSL Scanner
+
+#CYBERCRIME:  (WP)
+WPXStrike
+hydra
+Octopus Scanner
+Angry IP Scanner
+Gitpaste-12
+Imgur
+Burp Suite
+Wireshark
+Reverse Shell
+
+#PW CRACKERS:
+Hashcat
+
+# Bypass:
+/wp-json/oembed/1.0/proxy - SSRF
+php shell
+
+Tcpdump
+Snort
+Metasploit
+Hydra
+QualysGuard
+GFI LanGuard
+Acunetix
+Xenotix XSS Exploit Framework
+SpiderFoot
+Wapiti
+Nmap 
+Wireshark
+Angry IP Scanner
+Zenmap
+Masscan
+Tenable Nessus
+OpenVASVT
+OPENVASVT::SOAP  
+OpenVAS
+OWASP ZAP  
+Netcat
+Superscan
+Aircrack-ng
+Hping
+Unicornscan
+Burp Suite 
+Homemade Scripts
+Nikto
+Gobuster
+Dirsearch
+FeroxBuster
+Nessus
+Nexpose
+Arch Linux
+StormCrawler
+GoSpider
+
+-------------------
+#HACKING TOOLS
+Metaspoilt|Kali Linux|Parrot Security OS|BlackArch Linux|BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin|Javascript|SSL Scanner|WPXStrike|
+hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|Hashcat|/wp-json/oembed/1.0/proxy - SSRF|php shell|
+Tcpdump|Snort|Metasploit|Hydra|QualysGuard|GFI LanGuard|Acunetix|Xenotix XSS Exploit Framework|SpiderFoot|Wapiti|Nmap|Wireshark|Angry IP Scanner|
+Zenmap|Masscan|Tenable Nessus|OpenVASVT|OPENVASVT::SOAP|OpenVAS|OWASP ZAP|Netcat|Superscan|Aircrack-ng|Hping|Unicornscan|Burp Suite|Homemade Scripts|Nikto|
+Gobuster|Dirsearch|FeroxBuster|Nessus|Nexpose|Arch Linux|StormCrawler|GoSpider
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+....................................................
+#PAIN IN THE ASS-SCRAPERS/Ai-HACKERS: 
+
+Cypress
+Cyberfox  
+chrome|py
+gocolly
+colly
+OpenWave
+SimpleBrowser
+Splash
+SlimerJS
+SSL/TLS Scan
+PhantomJS 
+RV
+Trident/4.0
+TrileFejs
+X11|Fedora
+x11u; linux
+X11 Linux
+X11; Ubuntu
+X11; Ubuntu|Linux
+ZombieJS
+WOW64|rv:48.0
+WhatWeb
+Wappalyzer Scan
+WordPress Security Scan
+
+##NON SORTED:
+Knoppix x64
+retire.js
+Greenbone CE 22.04.14
+data-requests
+TypeScript
+Empty TypeScript
+Standby TypeScript
+Bun
+Apache Nutch
+ALittle Client
+litserve
+TLS Fingerprinting
+Request Header Fingerprint
+JavaScript fingerprint
+React|
+Angular
+Vue.js
+Graphql
+Zig
+Knoppix x64
+retire.js
+
+............................
+#PAIN IN THE ASS-SCRAPERS/Ai-HACKERS
+Cypress|Cyberfox|chrome|py|gocolly|colly|Go Colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|
+Trident/4.0|TrileFejs|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|WOW64|rv:48.0|WhatWeb|Wappalyzer Scan|WordPress Security Scan|
+Knoppix x64|retire.js|Greenbone CE 22.04.14|data-requests|TypeScript|Empty TypeScript|Standby TypeScript|Bun|Apache Nutch|ALittle Client|
+litserve|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint|React| Angular|Vue.js|Graphql|Zig|Knoppix x64|retire.js
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+....................................................
+##SCRAPING TOOLS:
+
+ASM
+C#
+C 
+C++ 
+C# 
+COBOL
+Elixir
+Go 
+Java 
+JavaScript 
+Kotlin 
+Lua 
+Perl 
+Python
+Ruby 
+Rust 
+Pip3
+CreepJS 
+SeleniumBase
+PowerShell
+Cloudscraper
+R Selenium
+Imperva 
+Incapsula
+Undetected ChromeDriver 
+Selenium Stealth
+Hrequests
+Geziyor
+Roach PHP
+Curl_cffi
+Botright
+Scrapy Splash
+Superagent
+Fetch
+Watir
+Haskell
+MechanicalSoup
+Jsoup
+Nodriver
+Node Fetch 
+OkHttp
+AutoScraper
+Httpx
+Urllib Headers
+Curl
+Curl Impersonate
+Dart
+ChromeDriver
+Python Lxml
+Panther PHP
+Goutte PHP
+Pyppeteer
+Splash
+Cheerio
+Metasploit
+Botasaurus
+BBScan
+Fetch API
+Zig/Javascript
+node js
+Ruby
+cURL
+Rust
+R
+Nutch
+LangGraph.js
+Grobid
+HTTP Toolkit
+Golang Scraper
+Go Web Scraping
+Request-Promise-Native
+Unirest
+Puppeteer
+Osmosis
+okhttp
+cpp-httplib
+Curlpp
+Boost.Asio
+Selenium
+libcurl
+Poco
+got-scraping
+PowerShell
+.NET SDK
+.NET
+Scraper API
+HTML
+AngleSharp
+go-get
+Go HTTP
+go-away
+Raw HTML Scraper
+Proxies/API
+RESTful API
+
+#PYTHON scrapers:
+webscraper.py
+scraper.py
+
+#SCRAPER:
+Scraper Api
+Proxy Scraper
+Web Scraper
+Image Scraper
+Content Crawler
+Axios Proxy 
+Curl Proxy
+Python Requests Proxy
+Data Scraper
+Proxyscrape
+Java Web Scraper
+Scraper 
+Scraper /
+JS Web Scraper
+Python Curl
+Instant Data Scraper
+
+#TEST if....
+Playwright Test 
+test.php
+
+#HTML SCRAPING:
+HTML Scraper
+python-boilerpipe
+Boilerpipe's ArticleExtractor
+HTMLFetcher 
+getText
+Go HTTP
+go-away
+
+..................
+##SCRAPING TOOLS:
+
+ASM|C#C|C++|C#|COBOL|Elixir|Go|Java|JavaScript|Kotlin|Lua|Perl|Python|Ruby| Rust|Pip3|CreepJS |SeleniumBase|
+PowerShell|Cloudscraper|R Selenium|Imperva|Incapsula|Undetected ChromeDriver|Selenium Stealth|Hrequests|Geziyor|Roach PHP|Curl_cffi|Botright|Scrapy Splash|Superagent|
+Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch|OkHttp|AutoScraper|Httpx|Urllib Headers|Curl|Curl Impersonate|Dart|ChromeDriver|Python Lxml|
+Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|cURL|Rust|R|Nutch|LangGraph.js|Grobid|HTTP Toolkit|Golang Scraper|Go Web Scraping|
+Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharp|
+go-get|Go HTTP|go-away|
+Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
+Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|
+Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher|getText
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+....................................................
+#OTHERS HACKING:
+
+4D_HTTP_Client
+android-async-http
+axios
+andyhttp
+Aplix
+akka-http
+attohttpc
+CakePHP
+Cowblog
+DAP/NetHTTP
+Dispatch
+fasthttp
+FireEyeHttpScan
+Gree_HTTP_Loader
+hyp_http_request
+HTTPConnect
+http generic
+Httparty
+HTTPing
+http-ping
+http.rb/
+HTTPREAD
+Java-http-client
+Jodd HTTP
+raynette_httprequest
+java/
+kurl
+Laminas_Http_Client
+libsoup
+lua-resty-http
+nghttp2
+mio_httpc
+Miro-HttpClient
+php/
+phpscraper
+PHX HTTP
+PHX HTTP Client
+restful
+rpm-bot
+RxnetHttp
+scalaj-http
+SP-Http-Client
+Stilo OMHTTP
+tiehttp
+Valve/Steam
+WP-URLDetails
+
+# Other CRAP:
+Incogniton
+Dataskrapa
+Dolphin
+d3coder     
+Open port check tool
+Proxy SwitchyOmega
+Undetectable 
+lazys3
+Webscreenshot
+EyeWitness
+Nuclei
+SQLNinja
+
+# Login (web):
+GoLogin
+MoreLogin
+MultiLogin
+
+#Fingerprinting:
+JA3 Fingerprint
+HTTP/2 fingerprint
+PHP cURL
+
+HackBar
+Wappalyzer
+Site Spider, Mark II 
+Cache killer
+Open port check tool  
+Request maker
+Proxy SwitchyOmega 
+Note anywhere
+d3coder
+Tamper Data
+Data Scraper
+Invicti
+WebInspect
+Netsparker
+Intruder
+John the Ripper
+LiveAction
+Zenmap
+Crt.sh
+GreyNoise
+ZoomEye
+Censys
+Hunter
+DIRB
+Metasploitable 2
+meterpreter
+
+#Connection with your site:  
+Java's HttpUrlConnection
+
+Node.js /Blocked by Perrishpress - my own with AI:
+https://scrapeops.io/nodejs-web-scraping-playbook/nodejs-fake-user-agents/
+
+URL: https://github.com/particle-iot/node-simplecrawler
+User-agent: Node/simplecrawler
+
+# https://www.zenrows.com/blog/gospider
+How to Use GoSpider for Web Crawling
+
+
+# https://www.zenrows.com/blog/pyspider
+How to Use Pyspider for Web Crawling?
+
+https://www.zenrows.com/blog/stormcrawler
+StormCrawler
+
+StormCrawler
+GoSpider
+
+#Other tools:
+TLS / 
+JA3
+JA3S
+JA3 Realism
+JA3 Fingerprinting
+JARM
+.....................
+#OTHERS HACKING:
+
+4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
+hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|
+kurl|Laminas_Http_Client|libsoup|lua-resty-http|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|
+TLS /| JA3|JA3S|JA3 Realism|JA3 Fingerprinting|JARM|StormCrawler|GoSpider|Node/simplecrawler|
+RxnetHttp|scalaj-http|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam|WP-URLDetails|Incogniton|Dataskrapa|Dolphin|d3coder|Open port check tool|
+Proxy SwitchyOmega| Undetectable|lazys3|Webscreenshot|EyeWitness|Nuclei|SQLNinja|GoLogin|MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|
+HackBar|Wappalyzer|Cache killer|Open port check tool|Request maker|Proxy SwitchyOmega|Note anywhere|d3coder|Tamper Data|Data Scraper|Invicti|WebInspect|
+Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|Censys|Hunter|DIRB|Metasploitable 2|meterpreter|Java's HttpUrlConnection
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#UNDTECTIBLE
+
+Chromedriver|undetected\chromedriver|Chrome\Undetectable|Edge\Undetectable|Undetectable\Browser|undetectable-fingerprint-browser|Firefox/User-Agent Switcher|File Viewer|NET CLR|PhantomJsCloud|Quark|MALNJS|RV:10 UBrowser|SM-J111F
+Firefox/User-Agent Switcher
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#PROXY BLOCKING:
+
+AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|http-proxy|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies
+|ISP Proxies|proxy|VPN/Proxy|Proxies|Virgin proxies|Proxy Servers|SeaMonkey|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN|Proxies
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#Dangerous port scanner:
+RewriteCond%{HTTP_USER_AGENT}"^Noxious/Nuisible/вредоносный Host$"[NC]
+
+#others:
+Advanced IP Scanner
+Angry IP Scanner
+ACK Scan
+Null scan
+FIN scan
+NetCat
+TCP SYN Scans
+TCP Connect Scan
+UDP Scanning
+Xmas scan
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#NEW:
+GoogleAppsScript|dirbuster|gobuster|ffuf|dirsearch|nmap|zmap|angry.ip|ipscan|nucleinikto|nessus|openvas|acunetix|wpscanNmap XML Parser|laravel|PHP\ Scraper|PHP\ web\ crawler
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+###SCRIPSS TO USE FOR BLOCKING::  #####
+# Common way:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}( )[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}( )[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}( )[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}( )[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(  )[NC]
+RewriteRule (.*) - [F,L]</IfModule>
+
+#Alternative:
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
+RewriteRule "^.*$" - [F]</IfModule>
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+# OLD Useragents scrapers use:] 
+RewriteCond %{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+
+# Some still use:
+RewriteCond %{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+
+# Sometimes:
+RewriteCond %{HTTP_USER_AGENT}^.*Pale Moon\/[32.0.0- 32.5.1]\\.*[OR,NC]
+:
+# OLD servers used by scraper:
+RewriteCond %{HTTP_USER_AGENT}^.*Windows NT\/[3.1-6.3]\\.*[OR,NC]
+RewriteCond %{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+
+# Common Search engine old uses:
+RewriteCond%{HTTP_USER_AGENT}^.*Chrome\/[1-119]\\.*[OR,NC]                             
+RewriteCond%{HTTP_USER_AGENT}^.*Edge\/[1-119]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Firefox\/[1-120]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Safari\/[1-16]\\.*[NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Opera\/[1-105]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Mozilla\/[1-4]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Internet Explorer\/[1-11]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*MSIE\/[1-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*lynx\/[2.8-09]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Konqueror\/[2.2- 23.04.3]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows NT\/[3.1-9]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*macOS \/[10-13.6.2]\\.*[OR,NC]
+RewriteCond%{HTTP_USER_AGENT}^.*Windows\sNT*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Windows\sNT\s[1-9][0-9.][0-9.]*[NC]
+RewriteCond%{HTTP_USER_AGENT}!^.*Linux;\Android[2.3.2][2023.3.][0-9.]*[NC]
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+#HACKERS BLOCK - READY LIST:
+
+<IfModule mod_rewrite.c>
+RewriteCond%{HTTP_USER_AGENT}(Headful|Headless Client|Headless|Headless Chromium|HeadlessChrome|Headless Edge|Headless Chromium|HeadlessChrome/Linux|HeadlessChrome/Ubuntu|Browserless|Browser-Use|Firefox Headless|Headless Linux|Headless|Headless|Headful|Linux|Headful|
+selenium:headless:chromium|selenium:headful :chromium|selenium:headless:firefox|selenium:headful :firefox|playwright:headless:chromium|playwright:headful :chromium|playwright:headless:firefox|playwright:headful :firefox|PlaywrightPython|Selenium Stealth|Splash/Lua|HtmlUnit/Java|Chromedp /Golang|Cypress /JavaScript|
+Nimble Browser|Cypress|chromedp|browserless|gologin|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|SamuraiWTF|Network Security Toolkit|NST|BlackArch|Tor2Web|TOR browser|tor|TOR Exit Nodes|ssh|ssh-tunnel|
+ike|ipsec-esp|OnionLinks|OnionLand|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|GreyNois|eZoomEye|Censys|Hunter|MSIE|Nyxt|SimpleBrowser|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|UCBrowser|UR Browser|Utopia|Ahmia|Torch|Haystack|Wade X|Stagehand|lightpanda|Zombie.js|Freenet|Tails OS|Not Evil|DarkSearch|DeepSearch|AngleSharp|Awesomium|
+benv|Browserjet|BrowserKit|browser-launcher|browser.rb|CasperJS|casperJS |cdp4j| Chrome PHP|Chromeless|Chrome-remote-interface cyrus|Chromium drivers|Chromium Embedded|Chromy|C++, .NET|DalekJS|DamonJS|Erik|Geb G|Ghostbuster|ghost.py|Grope|grope|Guillotine|Headless Edge|Headless Firefox|HeadlessBrowser|Horseman|HtmlUnit|
+Jabba-Webkit|Jasmine-Headless-Webkit|Jaunt|jBrowserDriver|Jedi-crawler|jedi-crawler|Litium headless|Lotte|MechanicalSoup|mechanize|Nightmare|Node.js|PhantomJS|PhantomJS drivers|phantompy|Playwright|Playwright-dotnet|Playwright-go|Playwright-pythonPuppeteer|Puppeteer Sharp|Python-Webkit|RoboBrowser|
+Selenium|SlimerJS|SpecterJS|Splash Browser|Splinter|Spynner|SST|stanislaw|Surf|Splash|trifleJS|twill|PhantomJsCloud|WatiN|Watir|Watir-WebDriver|Webloop|Wendigo|wkhtmltopdf|WKZombie|WKZombie D|X-RAY|.Net)[NC]
+
+RewriteCond%{HTTP_USER_AGENT}(Metaspoilt|Kali Linux|Parrot Security OS|BlackArch Linux|BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin|Javascript|SSL Scanner|WPXStrike|hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|Hashcat|/wp-json/oembed/1.0/proxy - SSRF|php shell|Tcpdump|Snort|Metasploit|Hydra|QualysGuard|GFI LanGuard|Acunetix|Xenotix XSS Exploit Framework|SpiderFoot|Wapiti|Nmap|Wireshark|Angry IP Scanner|
+Zenmap|Masscan|Tenable Nessus|OpenVASVT|OPENVASVT::SOAP|OpenVAS|OWASP ZAP|Netcat|Superscan|Aircrack-ng|Hping|Unicornscan|Burp Suite|Homemade Scripts|Nikto|Gobuster|Dirsearch|FeroxBuster|Nessus|Nexpose|Arch Linux|StormCrawler|GoSpider)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(Cypress|Cyberfox|chrome|py|gocolly|colly|Go Colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|Trident/4.0|TrileFejs|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|WOW64|rv:48.0|WhatWeb|Wappalyzer Scan|WordPress Security Scan|
+Knoppix x64|retire.js|Greenbone CE 22.04.14|data-requests|TypeScript|Empty TypeScript|Standby TypeScript|Bun|Apache Nutch|ALittle Client|litserve|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint|React| Angular|Vue.js|Graphql|Zig|Knoppix x64|retire.js)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(ASM|C#C|C++|C#|COBOL|Elixir|Go|Java|JavaScript|Kotlin|Lua|Perl|Python|Ruby| Rust|Pip3|CreepJS |SeleniumBase|PowerShell|Cloudscraper|R Selenium|Imperva|Incapsula|Undetected ChromeDriver|Selenium Stealth|Hrequests|Geziyor|Roach PHP|Curl_cffi|Botright|Scrapy Splash|Superagent|Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch|OkHttp|AutoScraper|Httpx|Urllib Headers|Curl|Curl Impersonate|Dart|ChromeDriver|Python Lxml|
+Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|cURL|Rust|R|Nutch|LangGraph.js|Grobid|HTTP Toolkit|Golang Scraper|Go Web Scraping|
+Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharp|go-get|Go HTTP|go-away|Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
+Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher|getText)[NC,OR]
+RewriteCond%{HTTP_USER_AGENT}(4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
+hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|kurl|Laminas_Http_Client|libsoup|lua-resty-http|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|TLS /| JA3|JA3S|JA3 Realism|JA3 Fingerprinting|JARM|StormCrawler|GoSpider|Node/simplecrawler|
+RxnetHttp|scalaj-http|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam|WP-URLDetails|Incogniton|Dataskrapa|Dolphin|d3coder|Open port check tool|Proxy SwitchyOmega| Undetectable|lazys3|Webscreenshot|EyeWitness|Nuclei|SQLNinja|GoLogin|MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|
+HackBar|Wappalyzer|Cache killer|Open port check tool|Request maker|Proxy SwitchyOmega|Note anywhere|d3coder|Tamper Data|Data Scraper|Invicti|WebInspect|Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|Censys|Hunter|DIRB|Metasploitable 2|meterpreter|Java's HttpUrlConnection)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|http-proxy|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN/Proxy|Proxies|Virgin proxies|Proxy Servers|SeaMonkey|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN|Proxies)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(Chromedriver|undetected\chromedriver|Chrome\Undetectable|Edge\Undetectable|Undetectable\Browser|undetectable-fingerprint-browser|Firefox/User-Agent Switcher|File Viewer|View HTML|NET CLR|PhantomJsCloud|Quark|MALNJS|RV:10 UBrowser|SM-J111FFirefox/User-Agent Switcher)[NC,OR]
+
+RewriteCond%{HTTP_USER_AGENT}(GoogleAppsScript|dirbuster|gobuster|ffuf|dirsearch|nmap|zmap|angry.ip|ipscan|nucleinikto|nessus|openvas|acunetix|wpscanNmap XML Parser|laravel|PHP\ Scraper|PHP\ web\ crawler)[NC]
+RewriteRule (.*) - [F,L]</IfModule>
+
+
+#ALTERNATIVE TO USE:
+============================================================================
+<IfModule mod_setenvif.c>
+# Block generic headless browser identifiers
+SetEnvIf User-Agent "^Headless" BLOCK_HEADLESS
+SetEnvIf User-Agent "^Headful" BLOCK_HEADLESS
+SetEnvIf User-Agent "^Headless Chromium" BLOCK_HEADLESS
+SetEnvIf User-Agent "^HeadlessChrome" BLOCK_HEADLESS
+SetEnvIf User-Agent "^Firefox Headless" BLOCK_HEADLESS
+SetEnvIf User-Agent "^Headless Linux" BLOCK_HEADLESS
+
+# Block Selenium-based browsers (automation framework)
+SetEnvIf User-Agent "selenium:headless:chromium" BLOCK_SELENIUM
+SetEnvIf User-Agent "selenium:headful:chromium" BLOCK_SELENIUM
+SetEnvIf User-Agent "selenium:headless:firefox" BLOCK_SELENIUM
+SetEnvIf User-Agent "selenium:headful:firefox" BLOCK_SELENIUM
+
+# Block Playwright-based browsers (automation framework)
+SetEnvIf User-Agent "playwright:headless:chromium" BLOCK_PLAYWRIGHT
+SetEnvIf User-Agent "playwright:headful:chromium" BLOCK_PLAYWRIGHT
+SetEnvIf User-Agent "playwright:headless:firefox" BLOCK_PLAYWRIGHT
+SetEnvIf User-Agent "playwright:headful:firefox" BLOCK_PLAYWRIGHT
+SetEnvIf User-Agent "PlaywrightPython" BLOCK_PLAYWRIGHT
+
+# Block Selenium Stealth and similar anti-detection tools
+SetEnvIf User-Agent "Selenium Stealth" BLOCK_STEALTH
+
+# Block Splash Lua browser (JavaScript rendering scraper)
+SetEnvIf User-Agent "Splash/Lua" BLOCK_SPLASH
+
+# Block HtmlUnit Java browser
+SetEnvIf User-Agent "HtmlUnit/Java" BLOCK_HTMLUNIT
+
+# Block Chromedp Go library (headless Chrome automation)
+SetEnvIf User-Agent "Chromedp /Golang" BLOCK_CHROMEDP
+
+# Block Cypress testing framework
+SetEnvIf User-Agent "Cypress /JavaScript" BLOCK_CYPRESS
+SetEnvIf User-Agent "^Cypress$" BLOCK_CYPRESS
+
+# Block Nimble Browser
+SetEnvIf User-Agent "Nimble Browser" BLOCK_NIMBLE
+
+# Block CasperJS (headless PhantomJS wrapper)
+SetEnvIf User-Agent "CasperJS" BLOCK_CASPER
+SetEnvIf User-Agent "casperJS" BLOCK_CASPER
+
+# Block cdp4j (Chrome DevTools Protocol Java library)
+SetEnvIf User-Agent "cdp4j" BLOCK_CDP4J
+
+# Block Chrome PHP
+SetEnvIf User-Agent "Chrome PHP" BLOCK_CHROME_PHP
+
+# Block Chromeless
+SetEnvIf User-Agent "Chromeless" BLOCK_CHROMELESS
+
+# Block Chrome Remote Interface
+SetEnvIf User-Agent "Chrome-remote-interface" BLOCK_CHROME_REMOTE
+
+# Block various Chromium variants
+SetEnvIf User-Agent "Chromium drivers" BLOCK_CHROMIUM
+SetEnvIf User-Agent "Chromium Embedded" BLOCK_CHROMIUM
+
+# Block Ghost.py
+SetEnvIf User-Agent "ghost.py" BLOCK_GHOST
+
+# Block Horseman (Node.js headless browser)
+SetEnvIf User-Agent "Horseman" BLOCK_HORSEMAN
+
+# Block Jabba-Webkit
+SetEnvIf User-Agent "Jabba-Webkit" BLOCK_JABBA
+
+# Block Jasmine-Headless-Webkit
+SetEnvIf User-Agent "Jasmine-Headless-Webkit" BLOCK_JASMINE
+
+# Block Jaunt
+SetEnvIf User-Agent "Jaunt" BLOCK_JAUNT
+
+# Block jBrowserDriver
+SetEnvIf User-Agent "jBrowserDriver" BLOCK_JBROWSER
+
+# Block Litium headless
+SetEnvIf User-Agent "Litium headless" BLOCK_LITIUM
+
+# Block MechanicalSoup
+SetEnvIf User-Agent "MechanicalSoup" BLOCK_MECHANICALSOUP
+
+# Block Nightmare
+SetEnvIf User-Agent "Nightmare" BLOCK_NIGHTMARE
+
+# Block PhantomJS and variants
+SetEnvIf User-Agent "PhantomJS" BLOCK_PHANTOM
+SetEnvIf User-Agent "PhantomJS drivers" BLOCK_PHANTOM
+SetEnvIf User-Agent "phantompy" BLOCK_PHANTOM
+SetEnvIf User-Agent "PhantomJsCloud" BLOCK_PHANTOM
+
+# Block Puppeteer variants
+SetEnvIf User-Agent "Puppeteer" BLOCK_PUPPETEER
+SetEnvIf User-Agent "Puppeteer Sharp" BLOCK_PUPPETEER
+
+# Block SlimerJS (Gecko-based headless browser)
+SetEnvIf User-Agent "SlimerJS" BLOCK_SLIMER
+
+# Block SpecterJS
+SetEnvIf User-Agent "SpecterJS" BLOCK_SPECTER
+
+# Block Splash Browser
+SetEnvIf User-Agent "Splash Browser" BLOCK_SPLASH_BROWSER
+SetEnvIf User-Agent "^Splash$" BLOCK_SPLASH_BROWSER
+
+# Block Splinter
+SetEnvIf User-Agent "Splinter" BLOCK_SPLINTER
+
+# Block Spynner
+SetEnvIf User-Agent "Spynner" BLOCK_SPYNNER
+
+# Block SST (Simple State Tester)
+SetEnvIf User-Agent "SST" BLOCK_SST
+
+# Block trifleJS
+SetEnvIf User-Agent "trifleJS" BLOCK_TRIFLE
+
+# Block Twill
+SetEnvIf User-Agent "twill" BLOCK_TWILL
+
+# Block WATIR variants
+SetEnvIf User-Agent "WatiN" BLOCK_WATIN
+SetEnvIf User-Agent "Watir" BLOCK_WATIR
+SetEnvIf User-Agent "Watir-WebDriver" BLOCK_WATIR
+
+# Block Webloop
+SetEnvIf User-Agent "Webloop" BLOCK_WEBLOOP
+
+# Block Wendigo
+SetEnvIf User-Agent "Wendigo" BLOCK_WENDIGO
+
+# Block wkhtmltopdf (PDF generator often used for scraping)
+SetEnvIf User-Agent "wkhtmltopdf" BLOCK_WKHTMLTOPDF
+
+# Block WKZombie
+SetEnvIf User-Agent "WKZombie" BLOCK_WKZOMBIE
+
+# Block X-RAY
+SetEnvIf User-Agent "X-RAY" BLOCK_XRAY
+
+# Block Zombie.js
+SetEnvIf User-Agent "Zombie.js" BLOCK_ZOMBIE
+
+# Block benv (browser environment)
+SetEnvIf User-Agent "benv" BLOCK_BENV
+
+# Block Browserjet
+SetEnvIf User-Agent "Browserjet" BLOCK_BROWSERJET
+
+# Block BrowserKit
+SetEnvIf User-Agent "BrowserKit" BLOCK_BROWSERKIT
+
+# Block browser-launcher
+SetEnvIf User-Agent "browser-launcher" BLOCK_BROWSER_LAUNCHER
+
+# Block browser.rb
+SetEnvIf User-Agent "browser.rb" BLOCK_BROWSER_RB
+
+# Block DalekJS
+SetEnvIf User-Agent "DalekJS" BLOCK_DALEK
+
+# Block DamonJS
+SetEnvIf User-Agent "DamonJS" BLOCK_DAMON
+
+# Block Erik
+SetEnvIf User-Agent "Erik" BLOCK_ERIK
+
+# Block Geb
+SetEnvIf User-Agent "Geb" BLOCK_GEB
+
+# Block Ghostbuster
+SetEnvIf User-Agent "Ghostbuster" BLOCK_GHOSTBUSTER
+
+# Block Grope
+SetEnvIf User-Agent "Grope" BLOCK_GROPE
+SetEnvIf User-Agent "grope" BLOCK_GROPE
+
+# Block Guillotine
+SetEnvIf User-Agent "Guillotine" BLOCK_GUILLOTINE
+
+# Block Headless Edge
+SetEnvIf User-Agent "Headless Edge" BLOCK_HEADLESS_EDGE
+
+# Block Headless Firefox
+SetEnvIf User-Agent "Headless Firefox" BLOCK_HEADLESS_FF
+SetEnvIf User-Agent "HeadlessBrowser" BLOCK_HEADLESS_BROWSER
+
+# Block Lotte
+SetEnvIf User-Agent "Lotte" BLOCK_LOTTE
+
+# Block Miro-HttpClient
+SetEnvIf User-Agent "Miro-HttpClient" BLOCK_MIRO
+
+# Block RoboBrowser
+SetEnvIf User-Agent "RoboBrowser" BLOCK_ROBOG
+
+# Block stanislaw
+SetEnvIf User-Agent "stanislaw" BLOCK_STANISLAW
+
+# Block Surf
+SetEnvIf User-Agent "Surf" BLOCK_SURF
+
+# Block Anglesharp
+SetEnvIf User-Agent "AngleSharp" BLOCK_ANGLESHARP
+
+# Block Awesomium
+SetEnvIf User-Agent "Awesomium" BLOCK_AWESOMIUM
+
+# ============================================================================
+# SECTION 3: BLOCK TOR AND ANONYMIZING TOOLS
+# These rules block Tor browser, anonymizers, and privacy-evading tools
+# ============================================================================
+
+# Block Tor Browser
+SetEnvIf User-Agent "TOR browser" BLOCK_TOR
+SetEnvIf User-Agent "tor" BLOCK_TOR
+SetEnvIf User-Agent "TOR" BLOCK_TOR
+SetEnvIf User-Agent "TOR Exit Nodes" BLOCK_TOR
+
+# Block Tor2Web and Onion links access
+SetEnvIf User-Agent "Tor2Web" BLOCK_TOR2WEB
+
+# Block OnionLand search engine
+SetEnvIf User-Agent "OnionLand" BLOCK_ONIONLAND
+
+# Block Tails OS (live USB OS often used for attacks)
+SetEnvIf User-Agent "Tails OS" BLOCK_TAILS
+
+# Block SSH and SSH tunneling tools
+SetEnvIf User-Agent "ssh" BLOCK_SSH
+SetEnvIf User-Agent "ssh-tunnel" BLOCK_SSH
+
+# Block Freenet
+SetEnvIf User-Agent "Freenet" BLOCK_FREENET
+
+# ============================================================================
+# SECTION 4: BLOCK SECURITY SCANNING AND HACKING TOOLS
+# These rules block known security scanning tools, exploit frameworks, and pen-testing tools
+# ============================================================================
+
+# Block Metasploit framework
+SetEnvIf User-Agent "Metasploit" BLOCK_METASPLOIT
+
+# Block Kali Linux (penetration testing distro)
+SetEnvIf User-Agent "Kali Linux" BLOCK_KALI
+
+# Block Parrot Security OS
+SetEnvIf User-Agent "Parrot Security OS" BLOCK_PARROT
+
+# Block BlackArch Linux
+SetEnvIf User-Agent "BlackArch Linux" BLOCK_BLACKARCH
+
+# Block BackBox Linux
+SetEnvIf User-Agent "BackBox Linux" BLOCK_BACKBOX
+
+# Block ZAP (OWASP Zed Attack Proxy)
+SetEnvIf User-Agent "ZAP" BLOCK_ZAP
+SetEnvIf User-Agent "OWASP ZAP" BLOCK_ZAP
+
+# Block SQLMap (SQL injection tool)
+SetEnvIf User-Agent "sqlmap" BLOCK_SQLMAP
+
+# Block WP-JSON SSRF proxy attempts
+SetEnvIf User-Agent "/wp-json/oembed/1.0/proxy" BLOCK_SSRF
+
+# Block PHP shells
+SetEnvIf User-Agent "php shell" BLOCK_PHPSHELL
+
+# Block Tcpdump
+SetEnvIf User-Agent "Tcpdump" BLOCK_TCPDUMP
+
+# Block Snort
+SetEnvIf User-Agent "Snort" BLOCK_SNORT
+
+# Block Hydra (password brute-force tool)
+SetEnvIf User-Agent "hydra" BLOCK_HYDRA
+SetEnvIf User-Agent "Hydra" BLOCK_HYDRA
+
+# Block QualysGuard
+SetEnvIf User-Agent "QualysGuard" BLOCK_QUALYS
+
+# Block GFI LanGuard
+SetEnvIf User-Agent "GFI LanGuard" BLOCK_GFI
+
+# Block Acunetix (web vulnerability scanner)
+SetEnvIf User-Agent "Acunetix" BLOCK_ACUNETIX
+
+# Block Xenotix XSS Exploit Framework
+SetEnvIf User-Agent "Xenotix" BLOCK_XENOTIX
+
+# Block SpiderFoot (OSINT reconnaissance tool)
+SetEnvIf User-Agent "SpiderFoot" BLOCK_SPIDERFOOT
+
+# Block Wapiti (web vulnerability scanner)
+SetEnvIf User-Agent "Wapiti" BLOCK_WAPITI
+
+# Block Nmap (network scanner)
+SetEnvIf User-Agent "nmap" BLOCK_NMAP
+SetEnvIf User-Agent "Nmap" BLOCK_NMAP
+
+# Block Angry IP Scanner
+SetEnvIf User-Agent "Angry IP Scanner" BLOCK_ANGRY_IP
+
+# Block Zenmap (Nmap GUI)
+SetEnvIf User-Agent "Zenmap" BLOCK_ZENMAP
+
+# Block Masscan (fast network scanner)
+SetEnvIf User-Agent "Masscan" BLOCK_MASSCAN
+
+# Block Tenable Nessus
+SetEnvIf User-Agent "Nessus" BLOCK_NESSUS
+SetEnvIf User-Agent "Tenable Nessus" BLOCK_NESSUS
+
+# Block Nexpose
+SetEnvIf User-Agent "Nexpose" BLOCK_NEXPOSE
+
+# Block OpenVAS (vulnerability scanner)
+SetEnvIf User-Agent "OpenVAS" BLOCK_OPENVAS
+SetEnvIf User-Agent "OPENVASVT" BLOCK_OPENVAS
+SetEnvIf User-Agent "OPENVASVT::SOAP" BLOCK_OPENVAS
+
+# Block Netcat
+SetEnvIf User-Agent "Netcat" BLOCK_NETCUT
+SetEnvIf User-Agent "^nc " BLOCK_NETCUT
+
+# Block Superscan
+SetEnvIf User-Agent "Superscan" BLOCK_SUPERSCAN
+
+# Block Aircrack-ng (WiFi cracking tool)
+SetEnvIf User-Agent "Aircrack-ng" BLOCK_AIRCRACK
+
+# Block Hping
+SetEnvIf User-Agent "Hping" BLOCK_HPING
+
+# Block Unicornscan
+SetEnvIf User-Agent "Unicornscan" BLOCK_UNICORN
+
+# Block Burp Suite (web proxy/vulnerability scanner)
+SetEnvIf User-Agent "Burp Suite" BLOCK_BURP
+
+# Block Nikto (web server scanner)
+SetEnvIf User-Agent "Nikto" BLOCK_NIKTO
+
+# Block Gobuster (directory/file enumeration)
+SetEnvIf User-Agent "Gobuster" BLOCK_GOBUSTER
+
+# Block Dirsearch
+SetEnvIf User-Agent "Dirsearch" BLOCK_DIRSEARCH
+
+# Block FeroxBuster
+SetEnvIf User-Agent "FeroxBuster" BLOCK_FEROX
+
+# Block StormCrawler
+SetEnvIf User-Agent "StormCrawler" BLOCK_STORM
+
+# Block GoSpider
+SetEnvIf User-Agent "GoSpider" BLOCK_GOSPIDER
+
+# Block Wireshark
+SetEnvIf User-Agent "Wireshark" BLOCK_WIRESHARK
+
+# Block Hashcat (password cracker)
+SetEnvIf User-Agent "Hashcat" BLOCK_HASHCAT
+
+# Block Reverse Shell tools
+SetEnvIf User-Agent "Reverse Shell" BLOCK_REVERSE_SHELL
+
+# Block SSL Scanner
+SetEnvIf User-Agent "SSL Scanner" BLOCK_SSL_SCAN
+SetEnvIf User-Agent "SSL/TLS Scan" BLOCK_SSL_SCAN
+
+# Block WPXStrike
+SetEnvIf User-Agent "WPXStrike" BLOCK_WPXSTRIKE
+
+# Block Octopus Scanner
+SetEnvIf User-Agent "Octopus Scanner" BLOCK_OCTOPUS
+
+# Block Gitpaste-12 (malicious paste)
+SetEnvIf User-Agent "Gitpaste-12" BLOCK_GITPASTE
+
+# Block Imgur (image hosting abuse)
+SetEnvIf User-Agent "Imgur" BLOCK_IMGUR
+
+# Block Homemade Scripts
+SetEnvIf User-Agent "Homemade Scripts" BLOCK_HOMEMADE
+
+# Block Incapsula circumvention
+SetEnvIf User-Agent "Incapsula" BLOCK_INCAPSULA
+
+# Block Nuclei (vulnerability scanner)
+SetEnvIf User-Agent "Nuclei" BLOCK_NUCLEI
+
+# Block SQLNinja
+SetEnvIf User-Agent "SQLNinja" BLOCK_SQLNINJA
+
+# Block Meterpreter
+SetEnvIf User-Agent "meterpreter" BLOCK_METERPRETER
+
+# Block John the Ripper
+SetEnvIf User-Agent "John the Ripper" BLOCK_JOHN
+
+# Block Intruder
+SetEnvIf User-Agent "Intruder" BLOCK_INTRUDER
+
+# Block Netsparker
+SetEnvIf User-Agent "Netsparker" BLOCK_NETSPARKER
+
+# Block WebInspect
+SetEnvIf User-Agent "WebInspect" BLOCK_WEBINSPECT
+
+# Block Invicti (formerly Netsparker)
+SetEnvIf User-Agent "Invicti" BLOCK_INVICTI
+
+# Block LiveAction
+SetEnvIf User-Agent "LiveAction" BLOCK_LIVEACTION
+
+# Block Metasploitable 2 target detection
+SetEnvIf User-Agent "Metasploitable 2" BLOCK_METASPLOITABLE
+
+# ============================================================================
+# SECTION 5: BLOCK SCRAPING AND DATA COLLECTION TOOLS
+# These rules block known scraping libraries, bots, and data harvesting tools
+# ============================================================================
+
+# Block WhatWeb (web technology scanner)
+SetEnvIf User-Agent "WhatWeb" BLOCK_WHATWEB
+
+# Block Wappalyzer (technology profiler)
+SetEnvIf User-Agent "Wappalyzer" BLOCK_WAPPALYZER
+SetEnvIf User-Agent "Wappalyzer Scan" BLOCK_WAPPALYZER
+
+# Block retire.js (vulnerability scanner)
+SetEnvIf User-Agent "retire.js" BLOCK_RETIRE
+
+# Block Greenbone CE (vulnerability scanner)
+SetEnvIf User-Agent "Greenbone CE" BLOCK_GREENBONE
+
+# Block Apache Nutch (web crawler)
+SetEnvIf User-Agent "Apache Nutch" BLOCK_NUTCH
+
+# Block litserve (ML serving library)
+SetEnvIf User-Agent "litserve" BLOCK_LITSERVE
+
+# Block OpenWav
+SetEnvIf User-Agent "OpenWav" BLOCK_OPENWAV
+
+# Block eSimpleBrowser
+SetEnvIf User-Agent "eSimpleBrowser" BLOCK_ESIMPLE
+
+# Block SSL/TLS fingerprinting tools
+SetEnvIf User-Agent "TLS Fingerprinting" BLOCK_TLS_FP
+
+# Block Request Header Fingerprint
+SetEnvIf User-Agent "Request Header Fingerprint" BLOCK_REQ_FP
+
+# Block JavaScript fingerprint
+SetEnvIf User-Agent "JavaScript fingerprint" BLOCK_JS_FP
+
+# Block Scrapy variants
+SetEnvIf User-Agent "Scrapy" BLOCK_SCRAPY
+SetEnvIf User-Agent "Scrapy Splash" BLOCK_SCRAPY
+
+# Block Go Colly
+SetEnvIf User-Agent "colly" BLOCK_COLLY
+SetEnvIf User-Agent "Go Colly" BLOCK_COLLY
+
+# Block gocolly
+SetEnvIf User-Agent "gocolly" BLOCK_GOCOLLY
+
+# Block Superagent
+SetEnvIf User-Agent "Superagent" BLOCK_SUPERAGENT
+
+# Block Fetch API tools
+SetEnvIf User-Agent "Fetch API" BLOCK_FETCH_API
+SetEnvIf User-Agent "Fetch" BLOCK_FETCH
+
+# Block Haskell HTTP libraries
+SetEnvIf User-Agent "Haskell" BLOCK_HASKELL
+
+# Block Jsoup (Java HTML parser)
+SetEnvIf User-Agent "Jsoup" BLOCK_JSOUP
+
+# Block Nodriver
+SetEnvIf User-Agent "Nodriver" BLOCK_NODRIVER
+
+# Block Node Fetch
+SetEnvIf User-Agent "Node Fetch" BLOCK_NODE_FETCH
+
+# Block OkHttp
+SetEnvIf User-Agent "OkHttp" BLOCK_OKHTTP
+
+# Block AutoScraper
+SetEnvIf User-Agent "AutoScraper" BLOCK_AUTOSCRAPER
+
+# Block Httpx
+SetEnvIf User-Agent "Httpx" BLOCK_HTTPX
+
+# Block Urllib Headers
+SetEnvIf User-Agent "Urllib Headers" BLOCK_URLLIB
+
+# Block Curl variants
+SetEnvIf User-Agent "curl" BLOCK_CURL
+SetEnvIf User-Agent "Curl" BLOCK_CURL
+SetEnvIf User-Agent "Curl Impersonate" BLOCK_CURL
+
+# Block Dart HTTP
+SetEnvIf User-Agent "Dart" BLOCK_DART
+
+# Block Python Lxml
+SetEnvIf User-Agent "Python Lxml" BLOCK_LXML
+
+# Block Panther PHP
+SetEnvIf User-Agent "Panther PHP" BLOCK_PANTHER
+
+# Block Goutte PHP
+SetEnvIf User-Agent "Goutte PHP" BLOCK_GOUTTE
+
+# Block Pyppeteer
+SetEnvIf User-Agent "Pyppeteer" BLOCK_PYPPETEER
+
+# Block Cheerio
+SetEnvIf User-Agent "Cheerio" BLOCK_CHEERIO
+
+# Block Botasaurus
+SetEnvIf User-Agent "Botasaurus" BLOCK_BOTASAURUS
+
+# Block BBScan
+SetEnvIf User-Agent "BBScan" BLOCK_BBSCAN
+
+# Block Axios Proxy
+SetEnvIf User-Agent "Axios Proxy" BLOCK_AXIOS
+
+# Block Python Requests Proxy
+SetEnvIf User-Agent "Python Requests Proxy" BLOCK_REQ_PROXY
+
+# Block Java Web Scraper
+SetEnvIf User-Agent "Java Web Scraper" BLOCK_JAVA_SCRAPER
+
+# Block Scrapy Splash
+SetEnvIf User-Agent "Scrapy Splash" BLOCK_SCRAPY
+
+# Block Web Scraper
+SetEnvIf User-Agent "Web Scraper" BLOCK_WEB_SCRAPER
+SetEnvIf User-Agent "webscraper.py" BLOCK_WEB_SCRAPER
+SetEnvIf User-Agent "scraper.py" BLOCK_WEB_SCRAPER
+
+# Block Image Scraper
+SetEnvIf User-Agent "Image Scraper" BLOCK_IMG_SCRAPER
+
+# Block Content Crawler
+SetEnvIf User-Agent "Content Crawler" BLOCK_CONTENT_CRAWLER
+
+# Block Instant Data Scraper
+SetEnvIf User-Agent "Instant Data Scraper" BLOCK_INSTANT
+
+# Block HTML Scraper
+SetEnvIf User-Agent "HTML Scraper" BLOCK_HTML_SCRAPER
+
+# Block Boilerpipe
+SetEnvIf User-Agent "Boilerpipe" BLOCK_BOILERPIPE
+SetEnvIf User-Agent "python-boilerpipe" BLOCK_BOILERPIPE
+
+# Block HTMLFetcher
+SetEnvIf User-Agent "HTMLFetcher" BLOCK_HTMLFETCHER
+
+# Block getText
+SetEnvIf User-Agent "getText" BLOCK_GETTEXT
+
+# Block Undetected ChromeDriver
+SetEnvIf User-Agent "Undetected ChromeDriver" BLOCK_UNDETECTED_CDP
+
+# Block Cloudscraper
+SetEnvIf User-Agent "Cloudscraper" BLOCK_CLOUDSCRAPER
+
+# Block Imperva circumvention
+SetEnvIf User-Agent "Imperva" BLOCK_IMPERVA
+
+# Block Botright
+SetEnvIf User-Agent "Botright" BLOCK_BOTRIGHT
+
+# Block Geziyor
+SetEnvIf User-Agent "Geziyor" BLOCK_GEZIYOR
+
+# Block Roach PHP
+SetEnvIf User-Agent "Roach PHP" BLOCK_ROACH
+
+# Block Curl_cffi
+SetEnvIf User-Agent "Curl_cffi" BLOCK_CURL_CFFI
+
+# Block got-scraping
+SetEnvIf User-Agent "got-scraping" BLOCK_GOT
+
+# Block HTTP Toolkit
+SetEnvIf User-Agent "HTTP Toolkit" BLOCK_HTTP_TOOLKIT
+
+# Block Grobid (PDF processing)
+SetEnvIf User-Agent "Grobid" BLOCK_GROBID
+
+# Block Go HTTP scrapers
+SetEnvIf User-Agent "Go HTTP" BLOCK_GO_HTTP
+SetEnvIf User-Agent "go-get" BLOCK_GO_HTTP
+SetEnvIf User-Agent "go-away" BLOCK_GO_HTTP
+SetEnvIf User-Agent "Golang Scraper" BLOCK_GO_SCRAPER
+SetEnvIf User-Agent "Go Web Scraping" BLOCK_GO_SCRAPER
+
+# Block Request-Promise-Native
+SetEnvIf User-Agent "Request-Promise-Native" BLOCK_REQ_PROMISE
+
+# Block Unirest
+SetEnvIf User-Agent "Unirest" BLOCK_UNIREST
+
+# Block Osmosis
+SetEnvIf User-Agent "Osmosis" BLOCK_OSMOSIS
+
+# Block cpp-httplib
+SetEnvIf User-Agent "cpp-httplib" BLOCK_CPP_HTTP
+
+# Block Curlpp
+SetEnvIf User-Agent "Curlpp" BLOCK_CURLPP
+
+# Block Boost.Asio
+SetEnvIf User-Agent "Boost.Asio" BLOCK_BOOST
+
+# Block libcurl variants
+SetEnvIf User-Agent "libcurl" BLOCK_LIBCURL
+
+# Block Poco
+SetEnvIf User-Agent "Poco" BLOCK_POCO
+
+# Block Scraping API services
+SetEnvIf User-Agent "Scraper API" BLOCK_SCRAPER_API
+SetEnvIf User-Agent "Scraper Api" BLOCK_SCRAPER_API
+
+# Block Proxy Scraper
+SetEnvIf User-Agent "Proxy Scraper" BLOCK_PROXY_SCRAPER
+
+# Block Raw HTML Scraper
+SetEnvIf User-Agent "Raw HTML Scraper" BLOCK_RAW_SCRAPER
+
+# Block Python Requests
+SetEnvIf User-Agent "python-requests" BLOCK_REQUESTS
+
+# Block R Selenium
+SetEnvIf User-Agent "R Selenium" BLOCK_R_SELENIUM
+
+# Block Hrequests
+SetEnvIf User-Agent "Hrequests" BLOCK_HREQUESTS
+
+# Block ASM
+SetEnvIf User-Agent "ASM" BLOCK_ASM
+
+# Block CreepJS
+SetEnvIf User-Agent "CreepJS" BLOCK_CREEPJS
+
+# Block SeleniumBase
+SetEnvIf User-Agent "SeleniumBase" BLOCK_SELENIUM_BASE
+
+# Block PowerShell
+SetEnvIf User-Agent "PowerShell" BLOCK_POWERSHELL
+
+# Block .NET SDK
+SetEnvIf User-Agent ".NET SDK" BLOCK_DOTNET_SDK
+SetEnvIf User-Agent ".NET" BLOCK_DOTNET
+
+# Block Curl Proxy
+SetEnvIf User-Agent "Curl Proxy" BLOCK_CURL_PROXY
+
+# Block Data Scraper
+SetEnvIf User-Agent "Data Scraper" BLOCK_DATA_SCRAPER
+SetEnvIf User-Agent "Scraper Scraper" BLOCK_DATA_SCRAPER
+
+# Block JS Web Scraper
+SetEnvIf User-Agent "JS Web Scraper" BLOCK_JS_SCRAPER
+
+# Block Python Curl
+SetEnvIf User-Agent "Python Curl" BLOCK_PY_CURL
+
+# Block Playwright Test
+SetEnvIf User-Agent "Playwright Test" BLOCK_PW_TEST
+
+# Block test.php
+SetEnvIf User-Agent "test.php" BLOCK_TEST_PHP
+
+# ============================================================================
+# SECTION 6: BLOCK PROGRAMMING LANGUAGES AND HTTP LIBRARIES
+# These rules block various programming languages and HTTP libraries often used for scraping
+# ============================================================================
+
+# Block Python and pip
+SetEnvIf User-Agent "Python" BLOCK_PYTHON
+SetEnvIf User-Agent "pip3" BLOCK_PIP
+
+# Block Ruby
+SetEnvIf User-Agent "Ruby" BLOCK_RUBY
+
+# Block Java
+SetEnvIf User-Agent "Java" BLOCK_JAVA
+
+# Block JavaScript/Node.js
+SetEnvIf User-Agent "JavaScript" BLOCK_JS
+SetEnvIf User-Agent "Node.js" BLOCK_NODE
+SetEnvIf User-Agent "node js" BLOCK_NODE
+
+# Block Go language
+SetEnvIf User-Agent "Golang" BLOCK_GOLANG
+
+# Block Rust
+SetEnvIf User-Agent "Rust" BLOCK_RUST
+
+# Block PHP
+SetEnvIf User-Agent "php" BLOCK_PHP
+SetEnvIf User-Agent "PHP" BLOCK_PHP
+
+# Block C# and C++
+SetEnvIf User-Agent "C#" BLOCK_CSHARP
+SetEnvIf User-Agent "C++" BLOCK_CPP
+SetEnvIf User-Agent "C#" BLOCK_CSHARP
+
+# Block Perl
+SetEnvIf User-Agent "Perl" BLOCK_PERL
+
+# Block Lua
+SetEnvIf User-Agent "Lua" BLOCK_LUA
+
+# Block Haskell
+SetEnvIf User-Agent "Haskell" BLOCK_HASKELL
+
+# Block Scala
+SetEnvIf User-Agent "Scala" BLOCK_SCALA
+
+# Block Kotlin
+SetEnvIf User-Agent "Kotlin" BLOCK_KOTLIN
+
+# Block Objective C
+SetEnvIf User-Agent "Objective C" BLOCK_OBJC
+
+# Block Elixir
+SetEnvIf User-Agent "Elixir" BLOCK_ELIXIR
+
+# Block COBOL
+SetEnvIf User-Agent "COBOL" BLOCK_COBOL
+
+# Block R language
+SetEnvIf User-Agent "R " BLOCK_R
+SetEnvIf User-Agent "|R|" BLOCK_R
+
+# Block .Net framework
+SetEnvIf User-Agent ".Net" BLOCK_DOTNET
+
+# Block Apache HttpClient
+SetEnvIf User-Agent "Apache-HttpClient" BLOCK_APACHE_HTTP
+
+# Block OkHttp Java
+SetEnvIf User-Agent "okhttp" BLOCK_OKHTTP_JAVA
+
+# Block REST frameworks
+SetEnvIf User-Agent "RESTful API" BLOCK_REST_API
+
+# Block Go HTTP libraries
+SetEnvIf User-Agent "go-http" BLOCK_GO_HTTP
+
+# Block Got scraping library
+SetEnvIf User-Agent "got" BLOCK_GOT
+
+# Block HTTPX
+SetEnvIf User-Agent "HTTPX" BLOCK_HTTPX
+
+# Block Aiohttp
+SetEnvIf User-Agent "aiohttp" BLOCK_AIOHTTP
+
+# Block Faraday
+SetEnvIf User-Agent "Faraday" BLOCK_FARADAY
+
+# Block Typhoeus
+SetEnvIf User-Agent "Typhoeus" BLOCK_TYPOHEUS
+
+# Block Httparty
+SetEnvIf User-Agent "httparty" BLOCK_HTTPARTY
+
+# Block RestSharp
+SetEnvIf User-Agent "RestSharp" BLOCK_RESTSHARP
+
+# Block Python urllib
+SetEnvIf User-Agent "urllib" BLOCK_URLLIB
+
+# Block PHP cURL
+SetEnvIf User-Agent "PHP cURL" BLOCK_PHP_CURL
+
+# ============================================================================
+# SECTION 7: BLOCK PROXY AND VPN SERVICES
+# These rules block known proxy services, VPNs, and anonymizer networks
+# ============================================================================
+
+# Block AI Proxy
+SetEnvIf User-Agent "AI proxy" BLOCK_AI_PROXY
+
+# Block API Proxy
+SetEnvIf User-Agent "API Proxy" BLOCK_API_PROXY
+
+# Block HTTP Proxies
+SetEnvIf User-Agent "HTTP Proxies" BLOCK_HTTP_PROXY
+
+# Block Forward Proxy
+SetEnvIf User-Agent "forward proxy" BLOCK_FORWARD_PROXY
+
+# Block Server proxies
+SetEnvIf User-Agent "Server proxies" BLOCK_SERVER_PROXY
+
+# Block Residential proxies
+SetEnvIf User-Agent "residential proxies" BLOCK_RES_PROXY
+
+# Block Reverse proxy
+SetEnvIf User-Agent "reverse proxy" BLOCK_REVERSE_PROXY
+
+# Block http-proxy
+SetEnvIf User-Agent "http-proxy" BLOCK_HTTP_PROXY
+
+# Block IPv4/IPv6 proxies
+SetEnvIf User-Agent "IPv4 Proxies" BLOCK_IP_PROXY
+SetEnvIf User-Agent "IPv6 Proxies" BLOCK_IP_PROXY
+
+# Block Mobile proxies
+SetEnvIf User-Agent "Mobile Proxies" BLOCK_MOBILE_PROXY
+
+# Block Virgin proxies
+SetEnvIf User-Agent "Virgin proxies" BLOCK_VIRGIN_PROXY
+
+# Block Proxy Servers
+SetEnvIf User-Agent "Proxy Servers" BLOCK_PROXY_SERVERS
+
+# Block Static ISP Proxies
+SetEnvIf User-Agent "Static ISP Proxies" BLOCK_ISP_PROXY
+
+# Block ISP Proxies
+SetEnvIf User-Agent "ISP Proxies" BLOCK_ISP_PROXY
+
+# Block Generic proxy
+SetEnvIf User-Agent " proxy" BLOCK_GENERIC_PROXY
+SetEnvIf User-Agent "^proxy" BLOCK_GENERIC_PROXY
+
+# Block VPN/Proxy
+SetEnvIf User-Agent "VPN/Proxy" BLOCK_VPN_PROXY
+SetEnvIf User-Agent "VPN" BLOCK_VPN
+
+# Block Proxies (generic)
+SetEnvIf User-Agent " Proxies" BLOCK_PROXIES
+
+# Block sproxies service
+SetEnvIf User-Agent "sproxies" BLOCK_SPROXIES
+
+# Block GoLogin
+SetEnvIf User-Agent "GoLogin" BLOCK_GOLOGIN
+
+# Block MoreLogin
+SetEnvIf User-Agent "MoreLogin" BLOCK_MORELOGIN
+
+# Block MultiLogin
+SetEnvIf User-Agent "MultiLogin" BLOCK_MULTILOGIN
+
+# Block Undetectable browser
+SetEnvIf User-Agent "Undetectable" BLOCK_UNDETECTABLE
+
+# Block Incogniton
+SetEnvIf User-Agent "Incogniton" BLOCK_INCOGNITON
+
+# Block Proxy SwitchyOmega
+SetEnvIf User-Agent "Proxy SwitchyOmega" BLOCK_SWITCHY
+
+# Block Dataskrapa
+SetEnvIf User-Agent "Dataskrapa" BLOCK_DATASKRAPA
+
+# Block Dolphin (browser)
+SetEnvIf User-Agent "Dolphin" BLOCK_DOLPHIN
+
+# ============================================================================
+# SECTION 8: BLOCK UNDETECTABLE/ANTI-DETECTION BROWSERS
+# These rules block browsers and tools designed to evade detection
+# ============================================================================
+
+# Block ChromeDriver
+SetEnvIf User-Agent "Chromedriver" BLOCK_CHROMEDRIVER
+
+# Block Undetected Chromedriver
+SetEnvIf User-Agent "undetected-chromedriver" BLOCK_UNDETECTED_CDP
+SetEnvIf User-Agent "Chrome\\Undetectable" BLOCK_UNDETECTED_CDP
+
+# Block Undetectable Browser
+SetEnvIf User-Agent "Undetectable\\Browser" BLOCK_UNDETECTABLE
+SetEnvIf User-Agent "Undetectable Browser" BLOCK_UNDETECTABLE
+
+# Block Undetectable fingerprint browser
+SetEnvIf User-Agent "undetectable-fingerprint-browser" BLOCK_UNDETECTABLE
+
+# Block Firefox User-Agent Switcher
+SetEnvIf User-Agent "Firefox/User-Agent Switcher" BLOCK_UA_SWITCHER
+
+# Block Edge Undetectable
+SetEnvIf User-Agent "Edge\\Undetectable" BLOCK_UNDETECTED_EDGE
+
+# Block PhantomJsCloud
+SetEnvIf User-Agent "PhantomJsCloud" BLOCK_PHANTOM_CLOUD
+
+# Block Quark
+SetEnvIf User-Agent "Quark" BLOCK_QUARK
+
+# Block MALNJS
+SetEnvIf User-Agent "MALNJS" BLOCK_MALNJS
+
+# Block UBrowser variants
+SetEnvIf User-Agent "UBrowser" BLOCK_UBROWSER
+SetEnvIf User-Agent "rv:10 UBrowser" BLOCK_UBROWSER
+
+# Block Samsung devices trying to appear as mobile
+SetEnvIf User-Agent "SM-J111F" BLOCK_SAMSUNG_FAKE
+
+# ============================================================================
+# SECTION 9: BLOCK PORT SCANNERS AND NETWORK TOOLS
+# These rules block dangerous port scanning and network reconnaissance tools
+# ============================================================================
+
+# Block Noxious/Nuisible/вредоносный Host (malicious host)
+SetEnvIf User-Agent "Noxious" BLOCK_NOXIOUS
+SetEnvIf User-Agent "Nuisible" BLOCK_NOXIOUS
+SetEnvIf User-Agent "вредоносный Host" BLOCK_MALICIOUS_HOST
+
+# Block Advanced IP Scanner
+SetEnvIf User-Agent "Advanced IP Scanner" BLOCK_ADVANCED_IP
+
+# Block ACK Scan
+SetEnvIf User-Agent "ACK Scan" BLOCK_ACK_SCAN
+
+# Block Null scan
+SetEnvIf User-Agent "Null scan" BLOCK_NULL_SCAN
+
+# Block FIN scan
+SetEnvIf User-Agent "FIN scan" BLOCK_FIN_SCAN
+
+# Block NetCat
+SetEnvIf User-Agent "NetCat" BLOCK_NETCUT
+
+# Block TCP SYN Scans
+SetEnvIf User-Agent "TCP SYN Scans" BLOCK_TCP_SYN
+
+# Block TCP Connect Scan
+SetEnvIf User-Agent "TCP Connect Scan" BLOCK_TCP_CONNECT
+
+# Block UDP Scanning
+SetEnvIf User-Agent "UDP Scanning" BLOCK_UDP_SCAN
+
+# Block Xmas scan
+SetEnvIf User-Agent "Xmas scan" BLOCK_XMAS_SCAN
+
+# ============================================================================
+# SECTION 10: BLOCK ADDITIONAL SECURITY AND HACKING TOOLS
+# These rules block various other security-related tools and scanners
+# ============================================================================
+
+# Block 4D_HTTP_Client
+SetEnvIf User-Agent "4D_HTTP_Client" BLOCK_4D_HTTP
+
+# Block android-async-http
+SetEnvIf User-Agent "android-async-http" BLOCK_ANDROID_HTTP
+
+# Block axios
+SetEnvIf User-Agent "axios" BLOCK_AXIOS
+
+# Block akka-http
+SetEnvIf User-Agent "akka-http" BLOCK_AKKA
+
+# Block CakePHP
+SetEnvIf User-Agent "CakePHP" BLOCK_CAKEPHP
+
+# Block Cowblog
+SetEnvIf User-Agent "Cowblog" BLOCK_COWBLOG
+
+# Block fasthttp
+SetEnvIf User-Agent "fasthttp" BLOCK_FASTHTTP
+
+# Block FireEye detection
+SetEnvIf User-Agent "FireEyeHttpScan" BLOCK_FIREEYE
+
+# Block HTTP generic clients
+SetEnvIf User-Agent "http generic" BLOCK_HTTP_GENERIC
+
+# Block HTTPing
+SetEnvIf User-Agent "HTTPing" BLOCK_HTTPING
+
+# Block http.rb
+SetEnvIf User-Agent "http.rb" BLOCK_HTTP_RB
+
+# Block HTTPREAD
+SetEnvIf User-Agent "HTTPREAD" BLOCK_HTTPREAD
+
+# Block Java HTTP clients
+SetEnvIf User-Agent "Java-http-client" BLOCK_JAVA_HTTP
+SetEnvIf User-Agent "Java's HttpUrlConnection" BLOCK_JAVA_URLCONN
+SetEnvIf User-Agent "java/" BLOCK_JAVA_GENERIC
+
+# Block kurl
+SetEnvIf User-Agent "kurl" BLOCK_KURL
+
+# Block libsoup
+SetEnvIf User-Agent "libsoup" BLOCK_LIBSOUP
+
+# Block lua-resty-http
+SetEnvIf User-Agent "lua-resty-http" BLOCK_LUA_RESTY
+
+# Block nghttp2
+SetEnvIf User-Agent "nghttp2" BLOCK_NGHTTP2
+
+# Block phpscraper
+SetEnvIf User-Agent "phpscraper" BLOCK_PHPSCRAPER
+
+# Block restful
+SetEnvIf User-Agent "restful" BLOCK_RESTFUL
+
+# Block rpm-bot
+SetEnvIf User-Agent "rpm-bot" BLOCK_RPM_BOT
+
+# Block scalaj-http
+SetEnvIf User-Agent "scalaj-http" BLOCK_SCALA_HTTP
+
+# Block SP-Http-Client
+SetEnvIf User-Agent "SP-Http-Client" BLOCK_SP_HTTP
+
+# Block Stilo OMHTTP
+SetEnvIf User-Agent "Stilo OMHTTP" BLOCK_OMHTTP
+
+# Block tiehttp
+SetEnvIf User-Agent "tiehttp" BLOCK_TIEHTTP
+
+# Block Valve/Steam
+SetEnvIf User-Agent "Valve/Steam" BLOCK_STEAM
+
+# Block WP-URLDetails
+SetEnvIf User-Agent "WP-URLDetails" BLOCK_WP_URL
+
+# Block JA3 Fingerprint
+SetEnvIf User-Agent "JA3 Fingerprint" BLOCK_JA3
+
+# Block HTTP/2 fingerprint
+SetEnvIf User-Agent "HTTP/2 fingerprint" BLOCK_HTTP2_FP
+
+# Block HackBar
+SetEnvIf User-Agent "HackBar" BLOCK_HACKBAR
+
+# Block Cache killer
+SetEnvIf User-Agent "Cache killer" BLOCK_CACHE_KILLER
+
+# Block Open port check tool
+SetEnvIf User-Agent "Open port check tool" BLOCK_PORT_CHECK
+
+# Block Request maker
+SetEnvIf User-Agent "Request maker" BLOCK_REQ_MAKER
+
+# Block Note anywhere
+SetEnvIf User-Agent "Note anywhere" BLOCK_NOTE_ANYWHERE
+
+# Block d3coder
+SetEnvIf User-Agent "d3coder" BLOCK_D3CODER
+
+# Block Tamper Data
+SetEnvIf User-Agent "Tamper Data" BLOCK_TAMPER_DATA
+
+# Block Netsparker
+SetEnvIf User-Agent "Netsparker" BLOCK_NETSPARKER
+
+# Block WebInspect
+SetEnvIf User-Agent "WebInspect" BLOCK_WEBINSPECT
+
+# Block LiveAction
+SetEnvIf User-Agent "LiveAction" BLOCK_LIVEACTION
+
+# Block GreyNoise
+SetEnvIf User-Agent "GreyNoise" BLOCK_GREYNOISE
+
+# Block ZoomEye
+SetEnvIf User-Agent "ZoomEye" BLOCK_ZOOMEYE
+
+# Block Censys
+SetEnvIf User-Agent "Censys" BLOCK_CENSYS
+
+# Block Hunter (email finder)
+SetEnvIf User-Agent "Hunter" BLOCK_HUNTER
+
+# Block DIRB
+SetEnvIf User-Agent "DIRB" BLOCK_DIRB
+
+# Block lazys3
+SetEnvIf User-Agent "lazys3" BLOCK_LAZYS3
+
+# Block Webscreenshot
+SetEnvIf User-Agent "Webscreenshot" BLOCK_WEBSCREENSHOT
+
+# Block EyeWitness
+SetEnvIf User-Agent "EyeWitness" BLOCK_EYEWITNESS
+
+# ============================================================================
+# SECTION 11: BLOCK SEARCH ENGINES AND OSINT TOOLS
+# These rules block search engines and reconnaissance tools
+# ============================================================================
+
+# Block Not Evil
+SetEnvIf User-Agent "Not Evil" BLOCK_NOT_EVIL
+
+# Block DarkSearch
+SetEnvIf User-Agent "DarkSearch" BLOCK_DARKSEARCH
+
+# Block DeepSearch
+SetEnvIf User-Agent "DeepSearch" BLOCK_DEEPSEARCH
+
+# Block Ahmia
+SetEnvIf User-Agent "Ahmia" BLOCK_AHMIA
+
+# Block Torch
+SetEnvIf User-Agent "Torch" BLOCK_TORCH
+
+# Block Haystack
+SetEnvIf User-Agent "Haystack" BLOCK_HAYSTACK
+
+# Block Wade X
+SetEnvIf User-Agent "Wade X" BLOCK_WADEX
+
+# Block Stagehand
+SetEnvIf User-Agent "Stagehand" BLOCK_STAGEHAND
+
+# Block lightpanda
+SetEnvIf User-Agent "lightpanda" BLOCK_LIGHTPANDA
+
+# Block Shodan
+SetEnvIf User-Agent "Shodan" BLOCK_SHODAN
+
+# Block searchcode.com
+SetEnvIf User-Agent "searchcode.com" BLOCK_SEARCHCODE
+
+# Block GreyNois
+SetEnvIf User-Agent "GreyNois" BLOCK_GREYNOIS
+
+# Block eZoomEye
+SetEnvIf User-Agent "eZoomEye" BLOCK_EZOOMEYE
+
+# Block Censys
+SetEnvIf User-Agent "Censys" BLOCK_CENSYS
+
+# Block Hunter
+SetEnvIf User-Agent "Hunter" BLOCK_HUNTER
+
+# Block Crt.sh
+SetEnvIf User-Agent "Crt.sh" BLOCK_CRT_SH
+
+# ============================================================================
+# SECTION 12: BLOCK SPECIALIZED AND OBSCURE BROWSERS/TOOLS
+# These rules block less common but still unwanted browsers and tools
+# ============================================================================
+
+# Block MSIE (outdated Internet Explorer)
+SetEnvIf User-Agent "MSIE" BLOCK_MSIE
+
+# Block Nyxt browser
+SetEnvIf User-Agent "Nyxt" BLOCK_NYXT
+
+# Block SimpleBrowser
+SetEnvIf User-Agent "SimpleBrowser" BLOCK_SIMPLE
+
+# Block GNOME Web
+SetEnvIf User-Agent "GNOME Web" BLOCK_GNOME_WEB
+
+# Block Basilisk browser
+SetEnvIf User-Agent "Basilisk" BLOCK_BASILISK
+
+# Block Flow browser
+SetEnvIf User-Agent "Flow browser" BLOCK_FLOW
+
+# Block I2P browser
+SetEnvIf User-Agent "I2P" BLOCK_I2P
+
+# Block UCBrowser
+SetEnvIf User-Agent "UCBrowser" BLOCK_UCBROWSER
+
+# Block UR Browser
+SetEnvIf User-Agent "UR Browser" BLOCK_UR_BROWSER
+
+# Block Utopia browser
+SetEnvIf User-Agent "Utopia" BLOCKUTOPIA
+
+# Block Windows NT detection
+SetEnvIf User-Agent "Windows NT" BLOCK_WINDOWS_NT
+
+# Block Nstbrowser
+SetEnvIf User-Agent "Nstbrowser" BLOCK_NSTBROWSER
+
+# Block Ghost Browser
+SetEnvIf User-Agent "Ghost Browser" BLOCK_GHOST_BROWSER
+
+# Block BlackArch
+SetEnvIf User-Agent "BlackArch" BLOCK_BLACKARCH
+
+# Block Network Security Toolkit
+SetEnvIf User-Agent "Network Security Toolkit" BLOCK_NST
+
+# Block Samurai Web Testing Framework
+SetEnvIf User-Agent "Samurai Web Testing Framework" BLOCK_SAMURAI
+SetEnvIf User-Agent "SamuraiWTF" BLOCK_SAMURAI
+
+# Block various Linux distributions (security-focused)
+SetEnvIf User-Agent "BackBox" BLOCK_BACKBOX
+SetEnvIf User-Agent "Dracos Linux" BLOCK_DRACOS
+SetEnvIf User-Agent "DemonLinux" BLOCK_DEMON
+SetEnvIf User-Agent "CAINE" BLOCK_CAINE
+
+# Block BSD variants
+SetEnvIf User-Agent "FreeBSD" BLOCK_FREEBSD
+SetEnvIf User-Agent "OpenBSD" BLOCK_OPENBSD
+
+# Block Solaris
+SetEnvIf User-Agent "Solaris" BLOCK_SOLARIS
+
+# Block IRIX
+SetEnvIf User-Agent "IRIX" BLOCK_IRIX
+
+# Block ike and ipsec-esp
+SetEnvIf User-Agent "ike" BLOCK_IKE
+SetEnvIf User-Agent "ipsec-esp" BLOCK_IPSEC
+
+</IfModule>
+
+# ============================================================================
+# SECTION 13: APACHE ACCESS CONTROL - DENY BLOCKED USER AGENTS
+# This section applies the blocking rules defined above
+# ============================================================================
+
+# Deny access to all blocked user agents
+# Order: Process deny rules first, then allow
+Order Deny,Allow
+<IfModule !mod_authz_core.c>
+Order allow,deny
+Allow from all
+
+# Deny all env variables that match our blocking patterns
+Deny from env=BLOCK_HEADLESS
+Deny from env=BLOCK_SELENIUM
+Deny from env=BLOCK_PLAYWRIGHT
+Deny from env=BLOCK_STEALTH
+Deny from env=BLOCK_SPLASH
+Deny from env=BLOCK_HTMLUNIT
+Deny from env=BLOCK_CHROMEDP
+Deny from env=BLOCK_CYPRESS
+Deny from env=BLOCK_NIMBLE
+Deny from env=BLOCK_CASPER
+Deny from env=BLOCK_CDP4J
+Deny from env=BLOCK_CHROME_PHP
+Deny from env=BLOCK_CHROMELESS
+Deny from env=BLOCK_CHROME_REMOTE
+Deny from env=BLOCK_CHROMIUM
+Deny from env=BLOCK_GHOST
+Deny from env=BLOCK_HORSEMAN
+Deny from env=BLOCK_JABBA
+Deny from env=BLOCK_JASMINE
+Deny from env=BLOCK_JAUNT
+Deny from env=BLOCK_JBROWSER
+Deny from env=BLOCK_LITIUM
+Deny from env=BLOCK_MECHANICALSOUP
+Deny from env=BLOCK_NIGHTMARE
+Deny from env=BLOCK_PHANTOM
+Deny from env=BLOCK_PUPPETEER
+Deny from env=BLOCK_SLIMER
+Deny from env=BLOCK_SPECTER
+Deny from env=BLOCK_SPLASH_BROWSER
+Deny from env=BLOCK_SPLINTER
+Deny from env=BLOCK_SPYNNER
+Deny from env=BLOCK_SST
+Deny from env=BLOCK_TRIFLE
+Deny from env=BLOCK_TWILL
+Deny from env=BLOCK_WATIN
+Deny from env=BLOCK_WATIR
+Deny from env=BLOCK_WEBLOOP
+Deny from env=BLOCK_WENDIGO
+Deny from env=BLOCK_WKHTMLTOPDF
+Deny from env=BLOCK_WKZOMBIE
+Deny from env=BLOCK_XRAY
+Deny from env=BLOCK_ZOMBIE
+Deny from env=BLOCK_BENV
+Deny from env=BLOCK_BROWSERJET
+Deny from env=BLOCK_BROWSERKIT
+Deny from env=BLOCK_BROWSER_LAUNCHER
+Deny from env=BLOCK_BROWSER_RB
+Deny from env=BLOCK_DALEK
+Deny from env=BLOCK_DAMON
+Deny from env=BLOCK_ERIK
+Deny from env=BLOCK_GEB
+Deny from env=BLOCK_GHOSTBUSTER
+Deny from env=BLOCK_GROPE
+Deny from env=BLOCK_GUILLOTINE
+Deny from env=BLOCK_HEADLESS_EDGE
+Deny from env=BLOCK_HEADLESS_FF
+Deny from env=BLOCK_HEADLESS_BROWSER
+Deny from env=BLOCK_LOTTE
+Deny from env=BLOCK_MIRO
+Deny from env=BLOCK_ROBOG
+Deny from env=BLOCK_STANISLAW
+Deny from env=BLOCK_SURF
+Deny from env=BLOCK_ANGLESHARP
+Deny from env=BLOCK_AWESOMIUM
+Deny from env=BLOCK_TOR
+Deny from env=BLOCK_TOR2WEB
+Deny from env=BLOCK_ONIONLAND
+Deny from env=BLOCK_TAILS
+Deny from env=BLOCK_SSH
+Deny from env=BLOCK_FREENET
+Deny from env=BLOCK_METASPLOIT
+Deny from env=BLOCK_KALI
+Deny from env=BLOCK_PARROT
+Deny from env=BLOCK_BLACKARCH
+Deny from env=BLOCK_BACKBOX
+Deny from env=BLOCK_ZAP
+Deny from env=BLOCK_SQLMAP
+Deny from env=BLOCK_SSRF
+Deny from env=BLOCK_PHPSHELL
+Deny from env=BLOCK_TCPDUMP
+Deny from env=BLOCK_SNORT
+Deny from env=BLOCK_HYDRA
+Deny from env=BLOCK_QUALYS
+Deny from env=BLOCK_GFI
+Deny from env=BLOCK_ACUNETIX
+Deny from env=BLOCK_XENOTIX
+Deny from env=BLOCK_SPIDERFOOT
+Deny from env=BLOCK_WAPITI
+Deny from env=BLOCK_NMAP
+Deny from env=BLOCK_ANGRY_IP
+Deny from env=BLOCK_ZENMAP
+Deny from env=BLOCK_MASSCAN
+Deny from env=BLOCK_NESSUS
+Deny from env=BLOCK_NEXPOSE
+Deny from env=BLOCK_OPENVAS
+Deny from env=BLOCK_NETCUT
+Deny from env=BLOCK_SUPERSCAN
+Deny from env=BLOCK_AIRCRACK
+Deny from env=BLOCK_HPING
+Deny from env=BLOCK_UNICORN
+Deny from env=BLOCK_BURP
+Deny from env=BLOCK_NIKTO
+Deny from env=BLOCK_GOBUSTER
+Deny from env=BLOCK_DIRSEARCH
+Deny from env=BLOCK_FEROX
+Deny from env=BLOCK_STORM
+Deny from env=BLOCK_GOSPIDER
+Deny from env=BLOCK_WIRESHARK
+Deny from env=BLOCK_HASHCAT
+Deny from env=BLOCK_REVERSE_SHELL
+Deny from env=BLOCK_SSL_SCAN
+Deny from env=BLOCK_WPXSTRIKE
+Deny from env=BLOCK_OCTOPUS
+Deny from env=BLOCK_GITPASTE
+Deny from env=BLOCK_IMGUR
+Deny from env=BLOCK_HOMEMADE
+Deny from env=BLOCK_INCAPSULA
+Deny from env=BLOCK_NUCLEI
+Deny from env=BLOCK_SQLNINJA
+Deny from env=BLOCK_METERPRETER
+Deny from env=BLOCK_JOHN
+Deny from env=BLOCK_INTRUDER
+Deny from env=BLOCK_NETSPARKER
+Deny from env=BLOCK_WEBINSPECT
+Deny from env=BLOCK_INVICTI
+Deny from env=BLOCK_LIVEACTION
+Deny from env=BLOCK_METASPLOITABLE
+Deny from env=BLOCK_WHATWEB
+Deny from env=BLOCK_WAPPALYZER
+Deny from env=BLOCK_RETIRE
+Deny from env=BLOCK_GREENBONE
+Deny from env=BLOCK_NUTCH
+Deny from env=BLOCK_LITSERVE
+Deny from env=BLOCK_OPENWAV
+Deny from env=BLOCK_ESIMPLE
+Deny from env=BLOCK_TLS_FP
+Deny from env=BLOCK_REQ_FP
+Deny from env=BLOCK_JS_FP
+Deny from env=BLOCK_SCRAPY
+Deny from env=BLOCK_COLLY
+Deny from env=BLOCK_GOCOLLY
+Deny from env=BLOCK_SUPERAGENT
+Deny from env=BLOCK_FETCH_API
+Deny from env=BLOCK_FETCH
+Deny from env=BLOCK_HASKELL
+Deny from env=BLOCK_JSOUP
+Deny from env=BLOCK_NODRIVER
+Deny from env=BLOCK_NODE_FETCH
+Deny from env=BLOCK_OKHTTP
+Deny from env=BLOCK_AUTOSCRAPER
+Deny from env=BLOCK_HTTPX
+Deny from env=BLOCK_URLLIB
+Deny from env=BLOCK_CURL
+Deny from env=BLOCK_DART
+Deny from env=BLOCK_LXML
+Deny from env=BLOCK_PANTHER
+Deny from env=BLOCK_GOUTTE
+Deny from env=BLOCK_PYPPETEER
+Deny from env=BLOCK_CHEERIO
+Deny from env=BLOCK_BOTASAURUS
+Deny from env=BLOCK_BBSCAN
+Deny from env=BLOCK_AXIOS
+Deny from env=BLOCK_REQ_PROXY
+Deny from env=BLOCK_JAVA_SCRAPER
+Deny from env=BLOCK_WEB_SCRAPER
+Deny from env=BLOCK_IMG_SCRAPER
+Deny from env=BLOCK_CONTENT_CRAWLER
+Deny from env=BLOCK_INSTANT
+Deny from env=BLOCK_HTML_SCRAPER
+Deny from env=BLOCK_BOILERPIPE
+Deny from env=BLOCK_HTMLFETCHER
+Deny from env=BLOCK_GETTEXT
+Deny from env=BLOCK_UNDETECTED_CDP
+Deny from env=BLOCK_CLOUDSCRAPER
+Deny from env=BLOCK_IMPERVA
+Deny from env=BLOCK_BOTRIGHT
+Deny from env=BLOCK_GEZIYOR
+Deny from env=BLOCK_ROACH
+Deny from env=BLOCK_CURL_CFFI
+Deny from env=BLOCK_GOT
+Deny from env=BLOCK_HTTP_TOOLKIT
+Deny from env=BLOCK_GROBID
+Deny from env=BLOCK_GO_HTTP
+Deny from env=BLOCK_GO_SCRAPER
+Deny from env=BLOCK_REQ_PROMISE
+Deny from env=BLOCK_UNIREST
+Deny from env=BLOCK_OSMOSIS
+Deny from env=BLOCK_CPP_HTTP
+Deny from env=BLOCK_CURLPP
+Deny from env=BLOCK_BOOST
+Deny from env=BLOCK_LIBCURL
+Deny from env=BLOCK_POCO
+Deny from env=BLOCK_SCRAPER_API
+Deny from env=BLOCK_PROXY_SCRAPER
+Deny from env=BLOCK_RAW_SCRAPER
+Deny from env=BLOCK_REQUESTS
+Deny from env=BLOCK_R_SELENIUM
+Deny from env=BLOCK_HREQUESTS
+Deny from env=BLOCK_ASM
+Deny from env=BLOCK_CREEPJS
+Deny from env=BLOCK_SELENIUM_BASE
+Deny from env=BLOCK_POWERSHELL
+Deny from env=BLOCK_DOTNET_SDK
+Deny from env=BLOCK_DOTNET
+Deny from env=BLOCK_CURL_PROXY
+Deny from env=BLOCK_DATA_SCRAPER
+Deny from env=BLOCK_JS_SCRAPER
+Deny from env=BLOCK_PY_CURL
+Deny from env=BLOCK_PW_TEST
+Deny from env=BLOCK_TEST_PHP
+Deny from env=BLOCK_PYTHON
+Deny from env=BLOCK_PIP
+Deny from env=BLOCK_RUBY
+Deny from env=BLOCK_JAVA
+Deny from env=BLOCK_JS
+Deny from env=BLOCK_NODE
+Deny from env=BLOCK_GOLANG
+Deny from env=BLOCK_RUST
+Deny from env=BLOCK_PHP
+Deny from env=BLOCK_CSHARP
+Deny from env=BLOCK_CPP
+Deny from env=BLOCK_PERL
+Deny from env=BLOCK_LUA
+Deny from env=BLOCK_SCALA
+Deny from env=BLOCK_KOTLIN
+Deny from env=BLOCK_OBJC
+Deny from env=BLOCK_ELIXIR
+Deny from env=BLOCK_COBOL
+Deny from env=BLOCK_R
+Deny from env=BLOCK_APACHE_HTTP
+Deny from env=BLOCK_OKHTTP_JAVA
+Deny from env=BLOCK_REST_API
+Deny from env=BLOCK_GOT
+Deny from env=BLOCK_HTTPX
+Deny from env=BLOCK_FARADAY
+Deny from env=BLOCK_TYPOHEUS
+Deny from env=BLOCK_HTTPARTY
+Deny from env=BLOCK_RESTSHARP
+Deny from env=BLOCK_PHP_CURL
+Deny from env=BLOCK_AI_PROXY
+Deny from env=BLOCK_API_PROXY
+Deny from env=BLOCK_HTTP_PROXY
+Deny from env=BLOCK_FORWARD_PROXY
+Deny from env=BLOCK_SERVER_PROXY
+Deny from env=BLOCK_RES_PROXY
+Deny from env=BLOCK_REVERSE_PROXY
+Deny from env=BLOCK_IP_PROXY
+Deny from env=BLOCK_MOBILE_PROXY
+Deny from env=BLOCK_VIRGIN_PROXY
+Deny from env=BLOCK_PROXY_SERVERS
+Deny from env=BLOCK_ISP_PROXY
+Deny from env=BLOCK_GENERIC_PROXY
+Deny from env=BLOCK_VPN_PROXY
+Deny from env=BLOCK_VPN
+Deny from env=BLOCK_PROXIES
+Deny from env=BLOCK_SPROXIES
+Deny from env=BLOCK_GOLOGIN
+Deny from env=BLOCK_MORELOGIN
+Deny from env=BLOCK_MULTILOGIN
+Deny from env=BLOCK_UNDETECTABLE
+Deny from env=BLOCK_INCOGNITON
+Deny from env=BLOCK_SWITCHY
+Deny from env=BLOCK_DATASKRAPA
+Deny from env=BLOCK_DOLPHIN
+Deny from env=BLOCK_CHROMEDRIVER
+Deny from env=BLOCK_UA_SWITCHER
+Deny from env=BLOCK_UNDETECTED_EDGE
+Deny from env=BLOCK_PHANTOM_CLOUD
+Deny from env=BLOCK_QUARK
+Deny from env=BLOCK_MALNJS
+Deny from env=BLOCK_UBROWSER
+Deny from env=BLOCK_SAMSUNG_FAKE
+Deny from env=BLOCK_NOXIOUS
+Deny from env=BLOCK_MALICIOUS_HOST
+Deny from env=BLOCK_ADVANCED_IP
+Deny from env=BLOCK_ACK_SCAN
+Deny from env=BLOCK_NULL_SCAN
+Deny from env=BLOCK_FIN_SCAN
+Deny from env=BLOCK_TCP_SYN
+Deny from env=BLOCK_TCP_CONNECT
+Deny from env=BLOCK_UDP_SCAN
+Deny from env=BLOCK_XMAS_SCAN
+Deny from env=BLOCK_4D_HTTP
+Deny from env=BLOCK_ANDROID_HTTP
+Deny from env=BLOCK_AXIOS
+Deny from env=BLOCK_AKKA
+Deny from env=BLOCK_CAKEPHP
+Deny from env=BLOCK_COWBLOG
+Deny from env=BLOCK_FASTHTTP
+Deny from env=BLOCK_FIREEYE
+Deny from env=BLOCK_HTTP_GENERIC
+Deny from env=BLOCK_HTTPING
+Deny from env=BLOCK_HTTP_RB
+Deny from env=BLOCK_HTTPREAD
+Deny from env=BLOCK_JAVA_HTTP
+Deny from env=BLOCK_JAVA_URLCONN
+Deny from env=BLOCK_JAVA_GENERIC
+Deny from env=BLOCK_KURL
+Deny from env=BLOCK_LIBSOUP
+Deny from env=BLOCK_LUA_RESTY
+Deny from env=BLOCK_NGHTTP2
+Deny from env=BLOCK_PHPSCRAPER
+Deny from env=BLOCK_RESTFUL
+Deny from env=BLOCK_RPM_BOT
+Deny from env=BLOCK_SCALA_HTTP
+Deny from env=BLOCK_SP_HTTP
+Deny from env=BLOCK_OMHTTP
+Deny from env=BLOCK_TIEHTTP
+Deny from env=BLOCK_STEAM
+Deny from env=BLOCK_WP_URL
+Deny from env=BLOCK_JA3
+Deny from env=BLOCK_HTTP2_FP
+Deny from env=BLOCK_HACKBAR
+Deny from env=BLOCK_CACHE_KILLER
+Deny from env=BLOCK_PORT_CHECK
+Deny from env=BLOCK_REQ_MAKER
+Deny from env=BLOCK_NOTE_ANYWHERE
+Deny from env=BLOCK_D3CODER
+Deny from env=BLOCK_TAMPER_DATA
+Deny from env=BLOCK_GREYNOISE
+Deny from env=BLOCK_ZOOMEYE
+Deny from env=BLOCK_CENSYS
+Deny from env=BLOCK_HUNTER
+Deny from env=BLOCK_DIRB
+Deny from env=BLOCK_LAZYS3
+Deny from env=BLOCK_WEBSCREENSHOT
+Deny from env=BLOCK_EYEWITNESS
+Deny from env=BLOCK_NOT_EVIL
+Deny from env=BLOCK_DARKSEARCH
+Deny from env=BLOCK_DEEPSEARCH
+Deny from env=BLOCK_AHMIA
+Deny from env=BLOCK_TORCH
+Deny from env=BLOCK_HAYSTACK
+Deny from env=BLOCK_WADEX
+Deny from env=BLOCK_STAGEHAND
+Deny from env=BLOCK_LIGHTPANDA
+Deny from env=BLOCK_SHODAN
+Deny from env=BLOCK_SEARCHCODE
+Deny from env=BLOCK_GREYNOIS
+Deny from env=BLOCK_EZOOMEYE
+Deny from env=BLOCK_CRT_SH
+Deny from env=BLOCK_MSIE
+Deny from env=BLOCK_NYXT
+Deny from env=BLOCK_SIMPLE
+Deny from env=BLOCK_GNOME_WEB
+Deny from env=BLOCK_BASILISK
+Deny from env=BLOCK_FLOW
+Deny from env=BLOCK_I2P
+Deny from env=BLOCK_UCBROWSER
+Deny from env=BLOCK_UR_BROWSER
+Deny from env=BLOCKUTOPIA
+Deny from env=BLOCK_WINDOWS_NT
+Deny from env=BLOCK_NSTBROWSER
+Deny from env=BLOCK_GHOST_BROWSER
+Deny from env=BLOCK_BLACKARCH
+Deny from env=BLOCK_NST
+Deny from env=BLOCK_SAMURAI
+Deny from env=BLOCK_DRACOS
+Deny from env=BLOCK_DEMON
+Deny from env=BLOCK_CAINE
+Deny from env=BLOCK_FREEBSD
+Deny from env=BLOCK_OPENBSD
+Deny from env=BLOCK_SOLARIS
+Deny from env=BLOCK_IRIX
+Deny from env=BLOCK_IKE
+Deny from env=BLOCK_IPSEC
+</IfModule>
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+.............................................................
+##  Updated: 250114 ##
