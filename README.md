@@ -111,6 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260210,wpadminprotectfromhell -works great:)
 * Updated:260121, Inside wellknown folder
 * Updated:260708, Hackers.txt
 * Updated: 250416 -25121
