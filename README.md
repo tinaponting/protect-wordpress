@@ -113,6 +113,7 @@ Love ///  Kristina Sweden::
 
 * Updated:260210,wpadminprotectfromhell -works great:)
 
+* Updated:260217, wpcontentfolders -Updated, then The images in uploads were not displayed! Now it works??:::
 * Updated:260214, NotWantteduseragents.txt
 * Updated:260121, Inside wellknown folder
 * Updated:260708, Hackers.txt
