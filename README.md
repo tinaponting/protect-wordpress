@@ -111,8 +111,9 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260214,htaccess2 .my own changed + AI new list!
+* Updated:260214,htaccess1 .my own changed.
 * Updated:260210,wpadminprotectfromhell -works great:)
-
 * Updated:260217, wpcontentfolders -Updated, then The images in uploads were not displayed! Now it works??:::
 * Updated:260214, NotWantteduseragents.txt
 * Updated:260121, Inside wellknown folder
