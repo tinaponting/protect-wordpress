@@ -111,7 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
-
+* Updated:260303, htaccess2 .my own changed + AI new list!
 * Updated:260302, Hackersfiles.txt
 * Updated:260214, htaccess2 .my own changed + AI new list!
 * Updated:260214, htaccess1 .my own changed.
