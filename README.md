@@ -111,6 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:26030, If you only wants some useragents visits
 * Updated:260327, perishablepress.com8g-firewall
 * Updated:260303, htaccess2 .my own changed + AI new list!
 * Updated:260302, Hackersfiles.txt
