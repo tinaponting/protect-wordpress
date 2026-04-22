@@ -110,6 +110,8 @@ Love ///  Kristina Sweden::
 * 🎀😝 ᴜᴘᴅᴀᴛᴇᴅ ᴘʟᴜɢɪɴ 😲✎ BY ME: disable-json-api worsks phph 8and rechecked:)
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
+
+* Updated:2604222,htaccess1, checkedsyntax and not working f´things with Claude + MiniMax:)  So It works As it should be!
 * Updated:260420,fuckdevtools -copyproofs
 * Updated:260230, If you only wants some useragents visits
 * Updated:260327, perishablepress.com8g-firewall
