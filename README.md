@@ -16,7 +16,7 @@ Wp.config.php file:  //Se also my core - single user or wp addon on here:)
 
 require_once(ABSPATH.'wp-settings.php');  
 Add this after this:
-* define('WP_DEBUG',false);
+** define('WP_DEBUG',false);
 
 define('DISALLOW_FILE_EDIT',true); 
 
