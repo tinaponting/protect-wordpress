@@ -165,12 +165,19 @@ RAW:
 Macintosh; Intel Mac OS X 10_13Macintosh; Intel Mac OS X 10_13_1|Macintosh; Intel Mac OS X 10_13_2|Macintosh; Intel Mac OS X 10_13_3|Macintosh; Intel Mac OS X 10_13_4|Macintosh; Intel Mac OS X 10_13_5|Macintosh; Intel Mac OS X 10_13_6|
 Macintosh; Intel Mac OS X 10_14|Macintosh; Intel Mac OS X 10_14_1|Macintosh; Intel Mac OS X 10_14_2|Macintosh; Intel Mac OS X 10_14_3|Macintosh; Intel Mac OS X 10_14_4|Macintosh; Intel Mac OS X 10_14_5|Macintosh; Intel Mac OS X 10_14_6
 Macintosh; Intel Mac OS X 10_15|Macintosh; Intel Mac OS X 10_15_1|Macintosh; Intel Mac OS X 10_15_2|Macintosh; Intel Mac OS X 10_15_3|Macintosh; Intel Mac OS X 10_15_4|Macintosh; Intel Mac OS X 10_15_5|Macintosh; Intel Mac OS X 10_15_6|Macintosh; Intel Mac OS X 10_15_7|
-Macintosh; Intel Mac OS X 11_0|Macintosh; Intel Mac OS X 11_0_1|Macintosh; Intel Mac OS X 11_1|Macintosh; Intel Mac OS X 11_2|Macintosh; Intel Mac OS X 11_2_1|Macintosh; Intel Mac OS X 11_2_2|Macintosh; Intel Mac OS X 11_2_3|Macintosh; Intel Mac OS X 11_3|Macintosh; Intel Mac OS X 11_3_1|Macintosh; Intel Mac OS X 11_4|Macintosh; Intel Mac OS X 11_5|Macintosh; Intel Mac OS X 11_5_1|Macintosh; Intel Mac OS X 11_5_2|Macintosh; Intel Mac OS X 11_6|Macintosh; Intel Mac OS X 11_6_1|Macintosh; Intel Mac OS X 11_6_2|Macintosh; Intel Mac OS X 11_6_3|Macintosh; Intel Mac OS X 11_6_4|Macintosh; Intel Mac OS X 11_6_5|Macintosh; Intel Mac OS X 11_6_6|Macintosh; Intel Mac OS X 11_6_7|Macintosh; Intel Mac OS X 11_6_8|Macintosh; Intel Mac OS X 11_7|Macintosh; Intel Mac OS X 11_7_1|Macintosh; Intel Mac OS X 11_7_2|Macintosh; Intel Mac OS X 11_7_3|Macintosh; Intel Mac OS X 11_7_4|Macintosh; Intel Mac OS X 11_7_5|Macintosh; Intel Mac OS X 11_7_6|Macintosh; Intel Mac OS X 11.7.7|Macintosh; Intel Mac OS X 11.7.8|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11.7.10|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11_6; rv:106.0|
-Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6
+Macintosh; Intel Mac OS X 11_0|Macintosh; Intel Mac OS X 11_0_1|Macintosh; Intel Mac OS X 11_1|Macintosh; Intel Mac OS X 11_2|Macintosh; Intel Mac OS X 11_2_1|Macintosh; Intel Mac OS X 11_2_2|Macintosh; Intel Mac OS X 11_2_3|Macintosh; Intel Mac OS X 11_3|Macintosh; Intel Mac OS X 11_3_1|
+Macintosh; Intel Mac OS X 11_4|Macintosh; Intel Mac OS X 11_5|Macintosh; Intel Mac OS X 11_5_1|Macintosh; Intel Mac OS X 11_5_2|Macintosh; Intel Mac OS X 11_6|Macintosh; Intel Mac OS X 11_6_1|Macintosh; Intel Mac OS X 11_6_2|Macintosh; Intel Mac OS X 11_6_3|Macintosh; Intel Mac OS X 11_6_4|
+Macintosh; Intel Mac OS X 11_6_5|Macintosh; Intel Mac OS X 11_6_6|Macintosh; Intel Mac OS X 11_6_7|Macintosh; Intel Mac OS X 11_6_8|Macintosh; Intel Mac OS X 11_7|Macintosh; Intel Mac OS X 11_7_1|Macintosh; Intel Mac OS X 11_7_2|
+Macintosh; Intel Mac OS X 11_7_3|Macintosh; Intel Mac OS X 11_7_4|Macintosh; Intel Mac OS X 11_7_5|
+Macintosh; Intel Mac OS X 11_7_6|Macintosh; Intel Mac OS X 11.7.7|Macintosh; Intel Mac OS X 11.7.8|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11.7.10|Macintosh; Intel Mac OS X 11.7.9|Macintosh; Intel Mac OS X 11_6; rv:106.0|
+Macintosh; Intel Mac OS X 12_0|Macintosh; Intel Mac OS X 12_0_1|Macintosh; Intel Mac OS X 12_1|Macintosh; Intel Mac OS X 12_2|Macintosh; Intel Mac OS X 12_2_1|Macintosh; Intel Mac OS X 12_3|Macintosh; Intel Mac OS X 12_3_1|Macintosh; Intel Mac OS X 12_4|Macintosh; Intel Mac OS X 12_5|
+Macintosh; Intel Mac OS X 12_5_1|Macintosh; Intel Mac OS X 12_6Macintosh; Intel Mac OS X 12_6|_1|Macintosh; Intel Mac OS X 12_6_2|Macintosh; Intel Mac OS X 12_6_3|Macintosh; Intel Mac OS X 12_6_4|Macintosh; Intel Mac OS X 12_6_5|Macintosh; Intel Mac OS X 12.6.6|
+Macintosh; Intel Mac OS X 12.6.7|Macintosh; Intel Mac OS X 12.6.8|Macintosh; Intel Mac OS X 12.6.9|Macintosh; Intel Mac OS X 12.7|Macintosh; Intel Mac OS X 12.7.1|Macintosh; Intel Mac OS X 12.7.2|Macintosh; Intel Mac OS X 12.7.3|Macintosh; Intel Mac OS X 12.7.4|Macintosh; Intel Mac OS X 12.7.5|Macintosh; Intel Mac OS X 12.7.6
 Macintosh; U; PPC Mac OS X 10_11_0|Macintosh; U; Intel Mac OS X 10_12_6|Macintosh; U; Intel Mac OS X 10_12_5|Macintosh; PPC Mac OS X 10_7_4|Macintosh; PPC Mac OS X 10_6_9|
 iPhone; CPU iPhone OS 13_2_3 like Mac OS X|Macintosh; Intel Mac OS X 11_2_1; rv:105.0|Macintosh; Intel Mac OS X 12_4; rv:107.0|Macintosh; Intel Mac OS X 12_0; rv:111.0|Macintosh; Intel Mac OS X 11_7_3; rv:112.0|
 Macintosh; Intel Mac OS X 12_6_4; rv:108.0|Macintosh; Intel Mac OS X 13_0; rv:105.0|Macintosh; Intel Mac OS X 10_15; rv:102.0|Macintosh; Intel Mac OS X 11_6_4; rv:104.0|Macintosh; Intel Mac OS X 13_3_1; rv:105.0|Macintosh; Intel Mac OS X 11_6_1; rv:103.01|Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:113.0| 
 Safari/6534.49.4|Safari/6535.10.3|Safari/6531.6.6|Safari/6534.6.1|Safari/6534.21.5
+
 
 ---------------------------
 ...........................
@@ -191,11 +198,58 @@ Edg/124.0.2478.67|Edg/125.0.2535.13|Edg/125.0.2535.51|Edg/125.0.2535.85|Edg/125.
 Edg/127.0.2651.74|Edg/127.0.2651.86|Edg/127.0.2651.98|Edg/128.0.2739.5|Edg/128.0.2739.42|Edg/128.0.2739.54|Edg/128.0.2739.63|Edg/128.0.2739.67|Edg/129|Edg/129.0|
 Edg/129.0.2792.12|Edg/129.0.2792.52|Edg/130.0.2849.5|Edg/130.0.2849.46|Edg/130.0.2849.56|Edg/131.0.2903.51|Edg/131.0.2903.70|Edg/131.0.2903.146|Edg/132.0.2957.127|
 Edg/133.0.3065.59|Edg/133.0.3065.69|Edg/133.0.3065.82|Edg/133.0.3065.92|Edg/134.0.3124.62|Edg/134.0.3124.85|Edg/135.0.3179.54|Edg/135.0.3179.66|Edg/136.0.3240.76|
-137.0.3296.62|137.0.3296.68|138.0.3351.77|138.0.3351.83|138.0.3351.95|138.0.3351.109|139.0.3405.86|139.0.3405.111|140.0.3485.54|141.0.3537.71|141.0.3537.99|142.0.3595.53|
-142.0.3595.65|142.0.3595.80|142.0.3595.90|142.0.3595.94
+Edg/137.0.3296.62|Edg/137.0.3296.68|Edg/138.0.3351.77|Edg/138.0.3351.83|Edg/138.0.3351.95|Edg/138.0.3351.109|Edg/139.0.3405.86|Edg/139.0.3405.111|
+Edg/140.0.3485.54|Edg/141.0.3537.71|Edg/141.0.3537.99||Edg/142.0.3595.53|Edg/142.0.3595.65|Edg/142.0.3595.80Edg/|142.0.3595.90|Edg/142.0.3595.94|Edg/143.0.3650.96|
+Edg/143.0.3650.80||Edg/143.0.3650.139||Edg/143.0.3650.75||Edg/143.0.3650.66||Edg/144.0.3719.115||Edg/144.0.3719.128|Edg/144.0.3719.10|Edg/144.0.3719.92|
+Edg/144.0.3719.82|Edg/145.0.3800.58|Edg/145.0.3800.65|Edg/145.0.3800.70|Edg/145.0.3800.82|Edg/145.0.3800.97|Edg/146.0.3856.97|Edg/146.0.3856.109|Edg/146.0.3856.78|
+Edg/146.0.3856.84|Edg/146.0.3856.62|Edg/146.0.3856.72|Edg/147.0.3912.98|Edg/147.0.3912.86|Edg/147.0.3912.60|Edg/147.0.3912.98|Edg/147.0.3912.72
 
 ---------------------------
 ...........................
+### Firefox (Both false and common:
+
+Firefox/3.6|Firefox/3.6.1|Firefox/4.0|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/13.0|Firefox/15.0.1|Firefox/16.0.1|
+Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|
+Firefox/47.2|Firefox/48.0|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|
+Firefox/50.0.1Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|
+Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|Firefox/53.0.3|Firefox/53.2|
+Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|
+Firefox/57.0|Firefox/57.0.1|Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|
+Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
+Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|
+Firefox/67.0|Firefox/67.0.3|Firefox/68.0|Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|
+Firefox/70.0|Firefox/70.0.1|Firefox/71.0|Firefox/71.8|Firefox/71.9|
+Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|
+Firefox/75.0|Firefox/76.0|Firefox/76.0.1|Firefox/77.0|Firefox/77.0.1|Firefox/78.0|Firefox/78.0.1|Firefox/78.0.2|Firefox/78.1.0|
+Firefox/78.2.0|Firefox/78.3.0|Firefox/78.3.1|Firefox/78.4.0|Firefox/78.4.1|Firefox/78.5.0|Firefox/78.6.0|Firefox/78.6.1|Firefox/78.7.0|Firefox/78.7.1|
+Firefox/78.8.0|Firefox/78.9.0|Firefox/78.10.0|Firefox/78.10.1|Firefox/78.11.0|Firefox/78.12.0|Firefox/78.13.0|Firefox/78.14.0|Firefox/78.15.0|Firefox/79.0|
+Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|Firefox/85.0|Firefox/85.0.2|
+Firefox/86.0|Firefox/86.0.1|Firefox/87.0|Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|
+Firefox/90.0.2|Firefox/91.0|Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|
+Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|
+Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|
+Firefox/105.0|Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|
+Firefox/110.0|Firefox/111.0Firefox/111.0.1Firefox/112.0Firefox/112.0.1Firefox/112.0.2Firefox/113.0Firefox/113.0.1Firefox/113.0.2
+Firefox/114.0Firefox/114.0.1Firefox/114.0.2Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|
+Firefox/117.0|Firefox/117.0.1|Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|
+Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
+Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|
+Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|Firefox/130.0|Firefox/130.0.1|Firefox/131.0|
+Firefox/131.0.2|Firefox/131.0.3|Firefox/130.0|Firefox/130.0.1|Firefox/132.0|Firefox/132.0.1|Firefox/132.0.2|
+Firefox/133.0|Firefox/133.0.3|Firefox/132.0|Firefox/132.0.11|Firefox/132.0.2|Firefox/134.0|Firefox/134.0.1|Firefox/134.0.2|
+Firefox/135.0|Firefox/135.0.1|Firefox/136.0|Firefox/136.0.1|Firefox/136.0.2|Firefox/136.0.3|Firefox/136.0.4|
+Firefox/137.0|Firefox/137.0.1|Firefox/137.0.2|Firefox/138.0|Firefox/138.0.1|Firefox/138.0.3|Firefox/138.0.4|Firefox/139.0|Firefox/139.0.1139.0.4|Firefox/140.0|
+Firefox/140.0.1|Firefox/137.0|Firefox/140.0.2|Firefox/140.0.4|Firefox/140.1.0|Firefox/140.2.0|Firefox/140.3.0|
+Firefox/140.3.1|Firefox/140.4.0|Firefox/140.5.0|Firefox/141.0|Firefox/141.0.2Firefox/141.0.3|Firefox/142.0|Firefox/142.0.1|
+Firefox/143.0|Firefox/143.0.|Firefox/143.0.3|Firefox/143.0.4|Firefox/144.0|Firefox/144.0.2|Firefox/145.0.2|
+Firefox/147.0|Firefox/147.0.3|Firefox/148.0.2|Firefox/148.0.1|Firefox/148.0|Firefox/150.0
+
+---------------------------
+...........................
+
+
+
+
 # Opera:
 
 OPR/15.0.1147.130|OPR/15.0.1147.132|OPR/15.0.1147.138|OPR/15.0.1147.141|OPR/15.0.1147.147|OPR/15.0.1147.148|OPR/15.0.1147.153|OPR/16.0.1196.62|OPR/16.0.1196.73|OPR/16.0.1196.80|OPR/17.0.1241.45|
@@ -258,45 +312,9 @@ OPR/117.0.5408.93|OPR/117.0.5408.142|OPR/117.0.5408.154|OPR/117.0.5408.163|OPR/1
 119.0.5497.110|119.0.5497.131|119.0.5497.141|119.0.5497.29|119.0.5497.38|119.0.5497.40|119.0.5497.56|119.0.5497.70|119.0.5497.88|120.0.5543.128|120.0.5543.161|120.0.5543.201|                                 
 120.0.5543.38|120.0.5543.61|120.0.5543.93|121.0.5600.38|121.0.5600.50|122.0.5643.142|122.0.5643.150|122.0.5643.17|122.0.5643.24|122.0.5643.51|122.0.5643.71|122.0.5643.92|123.0.5669.23|123.0.5669.47|124.0.5705.15|124.0.5705.42
  
-::::::::::::::::::::::::::::::
-### Firefox (Both false and common:
-RAW:
 
-Firefox/3.6|Firefox/3.6.1|Firefox/4.0|Firefox/7.0|Firefox/10.0|Firefox/12.0|Firefox/13.0|Firefox/15.0.1|Firefox/16.0.1|
-Firefox/30|Firefox/41.0|Firefox/42.0|Firefox/46.0|Firefox/46.0.1|Firefox/46.8|Firefox/47.0|
-Firefox/47.2|Firefox/48.0|Firefox/48.0.1|Firefox/48.0.2|Firefox/49.0|Firefox/49.5|Firefox/49.6|Firefox/50.0|
-Firefox/50.0.1Firefox/50.1.0|Firefox/50.7|Firefox/50.9|Firefox/51.0|Firefox/51.0.1|Firefox/51.1|Firefox/51.4|Firefox/51.7|
-Firefox/52.0|Firefox/52.0.1|Firefox/52.0.2|Firefox/52.3|Firefox/52.8|Firefox/53.0|Firefox/53.0.3|Firefox/53.2|
-Firefox/54.0|Firefox/54.1|Firefox/55.0|Firefox/55.0.2|Firefox/55.0.2|Firefox/55.0.3|Firefox/55.8|Firefox/55.9|Firefox/56.0|Firefox/56.0.1|
-Firefox/57.0|Firefox/57.0.1|Firefox/57.0.4|Firefox/57.9|Firefox/58.0|Firefox/58.1|Firefox/59.0|Firefox/59.0.3|Firefox/59.4|Firefox/59.7|
-Firefox/60.0.1|Firefox/60.1|Firefox/60.3|Firefox/60.9|Firefox/61.0|Firefox/61.0.2|Firefox/61.9|
-Firefox/62.0|Firefox/62.3|Firefox/62.6|Firefox/64.0|Firefox/64.1|Firefox/64.8|Firefox/65.0|Firefox/65.2|Firefox/66.4|Firefox/66.9|
-Firefox/67.0|Firefox/67.0.3|Firefox/68.0|Firefox/68.0.2|Firefox/68.6|Firefox/69.0|Firefox/69.0.1|Firefox/69.1|Firefox/69.2|Firefox/69.3|Firefox/69.8|
-Firefox/70.0|Firefox/70.0.1|Firefox/71.0|Firefox/71.8|Firefox/71.9|
-Firefox/72.0|Firefox/72.0.1|Firefox/72.4|Firefox/73.0|Firefox/73.1|Firefox/73.8|Firefox/74.0|Firefox/74.5|
-Firefox/75.0|Firefox/76.0|Firefox/76.0.1|Firefox/77.0|Firefox/77.0.1|Firefox/78.0|Firefox/78.0.1|Firefox/78.0.2|Firefox/78.1.0|
-Firefox/78.2.0|Firefox/78.3.0|Firefox/78.3.1|Firefox/78.4.0|Firefox/78.4.1|Firefox/78.5.0|Firefox/78.6.0|Firefox/78.6.1|Firefox/78.7.0|Firefox/78.7.1|
-Firefox/78.8.0|Firefox/78.9.0|Firefox/78.10.0|Firefox/78.10.1|Firefox/78.11.0|Firefox/78.12.0|Firefox/78.13.0|Firefox/78.14.0|Firefox/78.15.0|Firefox/79.0|
-Firefox/80|Firefox/81.0|Firefox/81.0.1|Firefox/82.0|Firefox/82.0.1|Firefox/83.0|Firefox/84.0|Firefox/84.0.1|Firefox/84.0.2|Firefox/85.0|Firefox/85.0.2|
-Firefox/86.0|Firefox/86.0.1|Firefox/87.0|Firefox/88.0|Firefox/88.0.1|Firefox/89.0|Firefox/89.0.1|Firefox/89.0.2|Firefox/90.0|Firefox/90.0.1|
-Firefox/90.0.2|Firefox/91.0|Firefox/91.0.1|Firefox/91.0.2|Firefox/92.0|Firefox/92.0.1|Firefox/92.0.1|Firefox/93.0|Firefox/94.0|Firefox/94.0.1|Firefox/94.0.2|
-Firefox/95.0|Firefox/95.0.1|Firefox/95.0.2|Firefox/96.0|Firefox/96.0.1|Firefox/96.0.2|Firefox/96.0.3|Firefox/97.0|Firefox/97.0.1|Firefox/97.0.2|Firefox/98.0.1|Firefox/98.0.2|Firefox/99.0.1|
-Firefox/100|Firefox/100.0|Firefox/100.0.1|Firefox/100.0.2|Firefox/101.0|Firefox/101.0.1|Firefox/102.0|Firefox/103.0|Firefox/103.0.2|Firefox/104.0|Firefox/104.0.1|
-Firefox/105.0|Firefox/105.0.1|Firefox/105.0.2|Firefox/105.0.3|Firefox/106.0|Firefox/106.0.1|Firefox/106.0.2|Firefox/106.0.4|Firefox/107.0|Firefox/108.0|Firefox/108.0.2|Firefox/109.0|Firefox/109.0.1|
-Firefox/110.0|Firefox/111.0Firefox/111.0.1Firefox/112.0Firefox/112.0.1Firefox/112.0.2Firefox/113.0Firefox/113.0.1Firefox/113.0.2
-Firefox/114.0Firefox/114.0.1Firefox/114.0.2Firefox/115.0|Firefox/115.0.1|Firefox/115.0.2|Firefox/116.0|Firefox/116.0.2|Firefox/116.0.3|
-Firefox/117.0|Firefox/117.0.1|Firefox/118.0|Firefox/118.0.1|Firefox/118.0.2|Firefox/119.0|Firefox/119.0.1|
-Firefox/120.0|Firefox/120.0.1|Firefox/121.0|Firefox/121.0.1|Firefox/122.0|Firefox/122.0.1|Firefox/123.0|Firefox/123.0.1|
-Firefox/124.0|Firefox/124.0.2|Firefox/125.0.1|Firefox/125.0.2|Firefox/125.0.3|
-Firefox/126.0|Firefox/126.0.1|Firefox/127.0|Firefox/127.0.2|Firefox/128.0|
-Firefox/129.0|Firefox/129.0.1|Firefox/129.0.2|Firefox/130.0|Firefox/130.0.1|Firefox/131.0|
-Firefox/131.0.2|Firefox/131.0.3|Firefox/130.0|Firefox/130.0.1|Firefox/132.0|Firefox/132.0.1|Firefox/132.0.2|
-Firefox/133.0|Firefox/133.0.3|Firefox/132.0|Firefox/132.0.11|Firefox/132.0.2|Firefox/134.0|Firefox/134.0.1|Firefox/134.0.2|
-Firefox/135.0|Firefox/135.0.1|Firefox/136.0|Firefox/136.0.1|Firefox/136.0.2|Firefox/136.0.3|Firefox/136.0.4|
-Firefox/137.0|Firefox/137.0.1|Firefox/137.0.2|
-Firefox/138.0|Firefox/138.0.1|Firefox/138.0.3|Firefox/138.0.4|139.0|139.0.1139.0.4|140.0|
-140.0.1140.0.2140.0.4140.1.0140.2.0140.3.0140.3.1140.4.0140.5.0141.0|141.0.2141.0.3|142.0|142.0.1143.0|143.0.1143.0.3143.0.4|
-144.0|144.0.2
+
+
 
 ........................................
 ### Chrome (Both false and common) - RAW:
@@ -340,8 +358,13 @@ Chrome/127.0.6533.73|Chrome/127.0.6533.89|Chrome/127.0.6533.99|Chrome/127.0.6533
 Chrome/128.0.6613.84|Chrome/128.0.6613.120|Chrome/128.0.6613.138|Chrome/129.0.0.0|Chrome/129.0.6668.29|Chrome/129.0.6668.59|Chrome/129.0.6668.71Chrome/129.0.6668.71|Chrome/129.0.6668.90|Chrome/129.0.6668.101|
 Chrome/130.0.6723.70|Chrome/130.0.6723.117|Chrome/130.0.6778.70|Chrome/131.0.6778.86|Chrome/131.0.6778.140|Chrome/131.0.6778.265|Chrome/132.0.6834.111|Chrome/133.0.6943.60|
 Chrome/133.0.6943.127|Chrome/134.0.6998.36|Chrome/134.0.6998.89|Chrome/134.0.6998.118|Chrome/135.0.7049.42|Chrome/135.0.7049.96|Chrome/136.0.7103.93|Chrome/136.0.7103.114|
-Chrome/136.0.7103.59|Chrome/136.0.7103.92|Chrome/136.0.7103.113|Chrome/137.0.7151.55|Chrome/137.0.7151.68|Chrome/137.0.7151.103|Chrome/137.0.7151.119|Chrome/138.0.7204.49|Chrome/138.0.7204.92|Chrome/138.0.7204.96|Chrome/138.0.7204.157|Chrome/138.0.7204.168|Chrome/138.0.7204.183|138.0.7194.0|138.0.7194.0|138.0.7194.0|138.0.7204.97|
-141.0.7340.0|141.0.7376.0|141.0.7390.55|142.0.7416.0|142.0.7444.60|142.0.7444.135|142.0.7444.163|142.0.7444.176
+Chrome/136.0.7103.59|Chrome/136.0.7103.92|Chrome/136.0.7103.113|Chrome/137.0.7151.55|Chrome/137.0.7151.68|Chrome/137.0.7151.103|Chrome/137.0.7151.119|Chrome/138.0.7204.49|
+Chrome/138.0.7204.92|Chrome/138.0.7204.96|Chrome/138.0.7204.157|Chrome/138.0.7204.168|Chrome/138.0.7204.183|138.0.7194.0|138.0.7194.0|138.0.7194.0|138.0.7204.97|Chrome/141.0.7340.0|
+Chrome/141.0.7376.0|Chrome/141.0.7390.55|Chrome/142.0.7416.0|Chrome/142.0.7444.60|Chrome/142.0.7444.135|Chrome/142.0.7444.163|Chrome/142.0.7444.176|Chrome/1143.0.7499.193|
+Chrome/143.0.7499.147|Chrome/1143.0.7499.170|Chrome/143.0.7499.110|Chrome/143.0.7499.41|Chrome/144.0.7559.110|Chrome/144.0.7559.97|Chrome/144.0.7559.60|Chrome/144.0.7559.133|
+Chrome/144.0.7547.0|Chrome/144.0.7559.133|Chrome/145.0.7632.117|Chrome/145.0.7632.110|Chrome/145.0.7632.76|Chrome/147.0.7727.56|Chrome/147.0.7683.0|Chrome/148.0.7730.0|
+Chrome/148.0.7778.97|
+
 
 
 *********************************************************************
@@ -412,7 +435,6 @@ windows NT 9.0
 Windows NT 3.52
 
 # RAW:
-
 Windows NT|Windows NT 3.1|	Windowss\NT 3.14.0 Windows NT 3.5	NT| 
 Windows NT 3.51	NT 3|Windows NT 3.10|	Windows NT 3.51|Windows NT 3.52|Windows NT 4.0|Windows NT 4.5|Windows NT 5.1|Windows NT 5.01|Windows NT 6.0|
 Windows NT 6.1|Windows NT 6.1; WOW64|Windows NT 6.1; Win64; x64|Windows NT NT 6.2|Windows NT NT 6.3|
@@ -439,11 +461,43 @@ android-5.0.0_r4.0.1|android-5.0.1_r1|android-5.0.2_r1|android-5.1.0_r1|android-
 android-5.1.1_r14|android-5.1.1_r19|android-5.1.1_r25|android-5.1.1_r30|android-5.1.1_r33|
 android-5.1.1_r34|android-5.1.1_r35|android-5.1.1_r36|android-5.1.1_r37|android-5.1.1_r38|
 Android 6.0|Android 6.0.1|Android 7.0 24|Android 7.1|Android 7.1.2|Android 8.0 26|Android 8.1|
-Android 07|Android 7.0|Android 7.1|Android 7.1.1|
-Android 8.0|Android 8.1|
+Android 07|Android 7.0|Android 7.1|Android 7.1.1|Android 8.0|Android 8.1|
 Android 9|Android 10|Android 11|Android 12|Android 12L|Android 13|Android 14|Android 15|	
-Linux; Android 7.0|Linux; Android 7.1.1|Linux; Android 10; Pixel 3|Linux; Android|Linux; Ubuntu
+Linux; Android 10; Pixel 3|Linux; Ubuntu
 
+
+##Linux android:
+Linux; Android
+Linux; Android 1.0
+Linux; Android 1.1	
+Linux; Android 1.5	
+Linux; Android 1.6	
+Linux; Android 2.0
+Linux; Android 2.1	
+Linux; Android 2.2
+Linux; Android 2.3	
+Linux; Android 3.0
+Linux; Android 3.2
+Linux; Android 4.0	
+Linux; Android 4.1
+Linux; Android 4.3	
+Linux; Android 4.4
+Linux; Android 5.0
+Linux; Android 6.0	
+Linux; Android 7.0
+Linux; Android 7.0
+Linux; Android 7.1
+Linux; Android 7.1.1	
+Linux; Android 8.0
+Linux; Android 8.1	
+Linux; Android 9	
+Linux; Android 10	
+Linux; Android 11	
+Linux; Android 12	
+Linux; Android 13	
+Linux; Android 14	
+Linux; Android 15
+Linux; Android 16
 
 :::::::::::::::::::::::::::::::::::::::::::
 ...........................................
@@ -473,4 +527,4 @@ RewriteRule !^/?robots\.txt$ - [F,L]
 
 :::::::::::::::::::::::::::::::::::::::::::
 ...........................................
-* UPPDATED: 251123
+* UPPDATED: 260526
