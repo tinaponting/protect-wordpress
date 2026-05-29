@@ -1,6 +1,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-###HEADLESS Browsers:
+### HEADLESS Browsers:
+
 Headful
 Headless Client
 Splash
@@ -18,7 +19,7 @@ Headless Chromium
 HeadlessChrome/Linux
 HeadlessChrome/Ubuntu
 Firefox Headless
-Headless|Headless
+Headless
 Linux|Headful
 Headful|Linux
 Headful
@@ -34,6 +35,25 @@ Litium Headless
 Puppeteer headless 
 Stealth Headless
 headless Pi 
+Headless Chrome Selenium
+Headless Chrome Puppeteer
+Headless Chrome docker
+Headless Chrome Python
+Headless Chrome meaning
+Headless Chrome download
+Headless chrome Playwright
+Headless Chrome Rust
+Headless Java
+Headless JavaScript
+Headless CSharp
+Headless Ruby
+Headless Python
+Headless Chrome Node.js
+Headless‑Browser C
+
+Lightpanda
+Obscura
+Stagehand 
 
 #MOST USED HEADLESS BROWSERS:
 PlaywrightPython
@@ -194,59 +214,329 @@ Zombie.js
 
 -------------------
 ## HEADLESS Browsers:
+##HTACCESS: 
 
-Headful|Headless Client|Headless|Headless Chromium|HeadlessChrome|Headless Edge|Headless Chromium|HeadlessChrome/Linux|HeadlessChrome/Ubuntu|Browserless|Browser-Use|
-Firefox Headless|Headless Linux|Headless|Headless|Headful|Linux|Headful|Litium Headless|Puppeteer headless|Stealth Headless|Headless CMS|headless Pi|
-selenium:headless:chromium|selenium:headful :chromium|selenium:headless:firefox|selenium:headful :firefox|playwright:headless:chromium|playwright:headful :chromium|playwright:headless:firefox|
-playwright:headful :firefox|PlaywrightPython|Selenium Stealth|Splash/Lua|HtmlUnit/Java|Chromedp /Golang|Cypress /JavaScript|
-Nimble Browser|Cypress|chromedp|browserless|gologin|Parrot OS|BackBox|Dracos Linux|DemonLinux|CAINE|
-FreeBSD|OpenBSD|Solaris|IRIX|Samurai Web Testing Framework|SamuraiWTF|Network Security Toolkit|NST|BlackArch|Tor2Web|TOR browser|tor|TOR Exit Nodes|ssh|ssh-tunnel|
-ike|ipsec-esp|OnionLinks|OnionLand|Ghost Browser|Nstbrowser|Crt.sh|Shodan|searchcode.com|GreyNois|eZoomEye|Censys|Hunter|
-MSIE|Nyxt|SimpleBrowser|GNOME Web|Basilisk|Flow browser|I2P|Windows NT|UCBrowser|UR Browser|Utopia|Ahmia|
-Torch|Haystack|Wade X|Stagehand|lightpanda|Zombie.js|Freenet|Tails OS|Not Evil|DarkSearch|DeepSearch|AngleSharp|Awesomium|
-benv|Browserjet|BrowserKit|browser-launcher|browser.rb|
-CasperJS|casperJS |cdp4j| Chrome PHP|Chromeless|Chrome-remote-interface cyrus|Chromium drivers|Chromium Embedded|Chromy|C++, .NET|
-DalekJS|DamonJS|Erik|Geb G|Ghostbuster|ghost.py|Grope|grope|Guillotine|Headless Edge|Headless Firefox|HeadlessBrowser|Horseman|HtmlUnit|
-Jabba-Webkit|Jasmine-Headless-Webkit|Jaunt|jBrowserDriver|Jedi-crawler|jedi-crawler|Litium headless|Lotte|MechanicalSoup|mechanize|Nightmare|Node.js|
-PhantomJS|PhantomJS drivers|phantompy|Playwright|Playwright-dotnet|Playwright-go|Playwright-pythonPuppeteer|Puppeteer Sharp|Python-Webkit|RoboBrowser|
-Selenium|SlimerJS|SpecterJS|Splash Browser|Splinter|Spynner|SST|stanislaw|Surf|Splash|trifleJS|twill|PhantomJsCloud|
-WatiN|Watir|Watir-WebDriver|Webloop|Wendigo|wkhtmltopdf|WKZombie|WKZombie D|X-RAY|.Net|Zombie.js
-
-##HTACCESS: (ADDED: in htacces2)
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_USER_AGENT} Headful|Headless [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} HeadlessChrome|HeadlessBrowser [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Headless\ Edge|Headless\ Firefox|Headless\ Chrome [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Headless\ Chromium|Browserless|Browser-Use [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Firefox\ Headless|Headless\ Linux [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Litium\ Headless|Puppeteer|Stealth\ Headless [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} selenium|playwright|PlaywrightPython [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Splash|HtmlUnit|chromedp|Cypress [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Nimble\ Browser|gologin|backbox|dracos [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} CAINE|FreeBSD|OpenBSD|Solaris|IRIX [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Samurai|NST|BlackArch|Tor2Web|tor [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ssh-tunnel|Ghost\ Browser|Nstbrowser [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Shodan|searchcode|GreyNois|eZoomEye|Censys|Hunter [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} MSIE|Nyxt|SimpleBrowser|GNOME\ Web|Basilisk [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Flow\ browser|I2P|UCBrowser|UR\ Browser|Utopia [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Torch|Haystack|Wade|Stagehand|lightpanda|Zombie [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Freenet|Tails\ OS|DarkSearch|DeepSearch|AngleSharp [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Awesomium|benv|Browserjet|BrowserKit|CasperJS [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} cdp4j|Chrome\ PHP|Chromeless|Chrome-remote|Chromy [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} DalekJS|DamonJS|Erik|Geb|Ghostbuster|ghost\.py [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Grope|Guillotine|Horseman|HtmlUnit|Jabba-Webkit [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Jasmine|Jaunt|jBrowserDriver|Jedi|Lotte [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} MechanicalSoup|mechanize|Nightmare|PhantomJS|phantompy [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Playwright|Puppeteer|Python-Webkit|RoboBrowser [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Selenium|SlimerJS|SpecterJS|Splinter|Spynner|SST [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Surf|trifleJS|twill|WatiN|Watir|Webloop [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} Wendigo|wkhtmltopdf|WKZombie|X-RAY   
-RewriteRule ^ - [F]
-</IfModule>
+RewriteCond %{HTTP_USER_AGENT} "Ahmia" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ahmia" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Awesomium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "BackBox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "backbox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Basilisk" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "basilisk" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Benv" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "benv" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "BlackArch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "blackarch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Browserjet" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "BrowserKit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Browserless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "browser-kit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "browser-launcher" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Browser-Use" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "browser\.rb" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "BSD" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CAINE" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "caine" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CasperJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "casperJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "casperjs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CDP4j" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "cdp4j" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CefSharp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "cef" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "CensysScanner" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Censys" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "censys" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Censys-Healthy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Certspotter" [NC,OR
+RewriteCond %{HTTP_USER_AGENT} "ChromeDP" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "chromedp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chromeless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "chromeless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ChromeRemoteInterface" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chrome-remote-interface" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chrome\ PHP" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chromium\ Embedded" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Chromy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "chromy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "crtsh" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Crt\.sh" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Cypress" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "cypress" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Cypress\/JavaScript" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "C#" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "c#" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "C\+\+" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "c\+\+" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "DalekJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "DamonJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "DarkSearch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "darksearch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "DeepSearch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "deepsearch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "DemonLinux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "demonlinux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "dracos" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Dracos\ Linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Electron" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "electron" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Erik" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Fetch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "FlowBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Flow\ browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "FreeBSD" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "freebsd" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Freenet" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "freenet" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Geb" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "GhostBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ghostbrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Ghostbuster" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Ghost\ Browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Ghost\.py" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ghost\.py" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "GNOME\ Web" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "GoLogin" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "gologin" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Gologin" [NC]"
+RewriteCond %{HTTP_USER_AGENT} "Go" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "go" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "GreyNoise" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "greynoise" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "GreyNoise\ Intelligence" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Grope" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "grope" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Guillotine" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Haystack" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "haystack" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headful" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HeadlessChrome" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HeadlessChrome\/Linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HeadlessChrome\/Ubuntu" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HeadlessChrome\/[\d\.]+" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*Chrome" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*Chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*CMS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*Edge" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*Firefox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Headless\s*Linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Horseman" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HtmlUnitDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "HtmlUnit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "htmlunit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "httpie" [NC,OR
+RewriteCond %{HTTP_USER_AGENT} "HTTPie" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Hunter" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "hunter" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "hunter\.io" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "I2P" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "i2p" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "IKE" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ike" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "IPSec" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ipsec" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ipsec-esp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "IRIX" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "irix" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Jabba-Webkit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Jasmine-Headless-Webkit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "jasmine-headless-webkit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Jaunt" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Java" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "java" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "JBrowserDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "jBrowserDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Kali" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "kali" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "libcurl" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "libwww" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Lightpanda" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "lightpanda" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Litium\ Headless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Litium\ headless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Lotte" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "MechanicalSoup" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "mechanicalsoup" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "mechanize" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\.NET" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\.Net" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "\.net" [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} "Network\ Security\ Toolkit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "NightmareJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Nightmare" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "NimbleBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nimblebrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Nimble" [NC]
+RewriteCond %{HTTP_USER_AGENT} "Nimble\ Browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nodejs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Node" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Node\.js" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "NotEvil" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "notevil" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Not\ Evil" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "NstBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Nstbrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nstbrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "NST" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nst" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Nyxt" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nyxt" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Obscura" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "obscura" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "OnionLand" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "OnionLinks" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "OnionRouter" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Onion" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "OpenBSD" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "openbsd" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ParrotOS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Parrot\ OS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Parrot\ Sec" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Perl" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "perl" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PhantomJsCloud" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PhantomJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PhantomJs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PhantomJS\ drivers" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Phantompy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Phantom" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PHP" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "php" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "PlaywrightPython" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Playwright" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "playwright" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Playwright-dotnet" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Playwright-go" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Playwright-python" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "playwright:headful\s*:chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "playwright:headful\s*:firefox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "playwright:headless:chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "playwright:headless:firefox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Proxy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "proxy" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Puppeteer" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "puppeteer" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "puppeteer-sharp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Puppeteer\ Sharp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Python" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "python" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Python-Webkit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Requests" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "requests" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "RoboBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "RoboBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "robobrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Ruby" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ruby" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Rust" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "rust" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SamuraiWTF" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "samurai" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Samurai\ Web\ Testing\ Framework" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Samurai\ WTF" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SearchCode" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "searchcode" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "searchcode\.com" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SeleniumStealth" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Selenium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "selenium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "selenium:headful\s*:chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "selenium:headless:chromium" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Selenium\ Stealth" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ShodanBot" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Shodan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "shodan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SimpleBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "simplebrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SlimerJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Slimer" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Solaris" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "solaris" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SpecterJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Splash" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "splash" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Splash/Lua" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Splash\ Browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Splinter" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "splinter" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Spynner" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SSHTunnel" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SSH" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ssh" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ssh-tunnel" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "SST" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Stagehand" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "stagehand" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "stanislaw" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "StealthHeadless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Stealth" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Stealth\s*Headless" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Surf" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Surf" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tailsos" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Tails" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tails" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Tails\ OS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Tor2Web" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tor2web" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "TorBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Torch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "torch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "TOR" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Tor" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tor" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tor-exit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "TOR\ browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "TOR\ Exit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "TrifleJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "trifleJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "twill" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "UCBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ucbrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "UC\ Browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "URBrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Urllib" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "urllib" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "UR\ Browser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Utopia" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "utopia" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "VPN" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "vpn" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Wade" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wade" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Wade\ X" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WatiN" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WatirWebDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Watir" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Watir-WebDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WebDriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "webdriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "webdriver" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Webloop" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Wendigo" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wkhtmltoimage" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wkhtmltopdf" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WKZombie D" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "WKZombie" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wkzombie" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "X-RAY" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x-ray" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ZombieJS" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Zombie" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Zombie\.js" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ZoomEyeBot" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ZoomEye" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Zoomeye" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "zoomeye" [NC]
+RewriteRule ^ - [F]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
-#HACKING TOOLS: 
+### HACKING TOOLS: 
 
 Metasploit
 Kali Linux
@@ -265,7 +555,7 @@ Kotlin
 Javascript
 SSL Scanner
 
-#CYBERCRIME:  (WP)
+#CYBERCRIME: (WP)
 WPXStrike
 hydra
 Octopus Scanner
@@ -315,21 +605,97 @@ Dirsearch
 FeroxBuster
 Nessus
 Nexpose
-Arch Linux
 StormCrawler
 GoSpider
+Apache Nutch
+Nutch
+http clients
+httpx
+requests
+jsoup
+got
+unirest
 
 -------------------
 #HACKING TOOLS
-Metasploit|Kali Linux|Parrot Security OS|BlackArch Linux|BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin|Javascript|SSL Scanner|WPXStrike|
-hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|Hashcat|/wp-json/oembed/1.0/proxy - SSRF|php shell|
-Tcpdump|Snort|Metasploit|Hydra|QualysGuard|GFI LanGuard|Acunetix|Xenotix XSS Exploit Framework|SpiderFoot|Wapiti|Nmap|Wireshark|Angry IP Scanner|
-Zenmap|Masscan|Tenable Nessus|OpenVASVT|OPENVASVT::SOAP|OpenVAS|OWASP ZAP|Netcat|Superscan|Aircrack-ng|Hping|Unicornscan|Burp Suite|Homemade Scripts|Nikto|
-Gobuster|Dirsearch|FeroxBuster|Nessus|Nexpose|Arch Linux|StormCrawler|GoSpider
-
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(Metasploit|Kali Linux|Parrot Security OS|BlackArch Linux|BackBox Linux|Arch Linux|ZAP|OSV-Scanner|sqlmap|Objective C|Scala|Kotlin|Javascript|SSL Scanner|WPXStrike|hydra|Octopus Scanner|Angry IP Scanner|Gitpaste-12|Imgur|Burp Suite|Wireshark|Reverse Shell|Hashcat|php shell|Tcpdump|Snort|QualysGuard|GFI LanGuard|Acunetix|Xenotix XSS Exploit Framework|SpiderFoot|Wapiti|Nmap|Zenmap|Masscan|Tenable Nessus|OpenVAS|OWASP ZAP|Netcat|Superscan|Aircrack-ng|Hping|Unicornscan|Homemade Scripts|Nikto|Gobuster|Dirsearch|FeroxBuster|Nessus|Nexpose|StormCrawler|GoSpider)" [NC]RewriteRule ^ - [F,L]</IfModule>
-<IfModule mod_rewrite.c>RewriteCond %{REQUEST_URI} /wp-json/oembed/1.0/proxy [NC]RewriteRule ^ - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} "acunetix" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "aircrack" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "angry" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "backbox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "binaryedge" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "blackarch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "burp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "burpsuite" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "censys" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "dirbuster" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "dirsearch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "exploit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "feroxbuster" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "fingerprint" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "fofa" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "gitpaste" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "go-http-client" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "gobuster" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "gospider" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "grabber" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "hashcat" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "hping" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "httptool" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "httpx" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "hydra" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "imgur" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "java/" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "jsoup" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "lanwatch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "libwww" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "masscan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "metasploit" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nessus" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "netcat" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nexpose" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nikto" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nmap" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "nutch" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "octopus" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "onyphe" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "openvas" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "owasp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "parrot" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "python-requests" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "quake" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "qualys" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "reverseshell" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "scalable" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "scanner" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "shell" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "shodan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "snort" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "spider" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "spiderfoot" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "sqlmap" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "sslscan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "stormcrawler" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "superscan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Tcpdump" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tcpdump" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "test" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "unicornscan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "unirest" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wapiti" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wget" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wireshark" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wireshark" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wpxstrike" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "xenotix" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "zap" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "zenmap" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "Zoomeye" [NC,OR]
+RewriteCond %{QUERY_STRING} ".*oembed.*" [NC]
+RewriteCond %{QUERY_STRING} ".*proxy.*" [NC]
+RewriteRule ^ - [F,L]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -359,8 +725,6 @@ WOW64|rv:48.0
 WhatWeb
 Wappalyzer Scan
 WordPress Security Scan
-
-##NON SORTED:
 Knoppix x64
 retire.js
 Greenbone CE 22.04.14
@@ -369,7 +733,6 @@ TypeScript
 Empty TypeScript
 Standby TypeScript
 Bun
-Apache Nutch
 ALittle Client
 litserve
 TLS Fingerprinting
@@ -382,18 +745,54 @@ Graphql
 Zig
 Knoppix x64
 retire.js
-
 ............................
 #PAIN IN THE ASS-SCRAPERS/Ai-HACKERS
-Cypress|Cyberfox|chrome|py|gocolly|colly|Go Colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|
-Trident/4.0|TrileFejs|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|WOW64|rv:48.0|WhatWeb|Wappalyzer Scan|WordPress Security Scan|
-Knoppix x64|retire.js|Greenbone CE 22.04.14|data-requests|TypeScript|Empty TypeScript|Standby TypeScript|Bun|Apache Nutch|ALittle Client|
-litserve|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint|React| Angular|Vue.js|Graphql|Zig|Knoppix x64|retire.js
-
 ###HTACCESS:
 
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(Cypress|Cyberfox|chrome|py|gocolly|colly|Go Colly|OpenWav|eSimpleBrowser|Splash|SlimerJS|SSL/TLS Scan|PhantomJS|RV|Trident/4.0|TrileFejs|X11|Fedora|x11u; linux|X11 Linux|X11; Ubuntu|X11; Ubuntu|Linux|ZombieJS|WOW64|rv:48.0|WhatWeb|Wappalyzer Scan|WordPress Security Scan|
-Knoppix x64|retire.js|Greenbone CE 22.04.14|data-requests|TypeScript|Empty TypeScript|Standby TypeScript|Bun|Apache Nutch|ALittle Client|litserve|TLS Fingerprinting|Request Header Fingerprint|JavaScript fingerprint|React| Angular|Vue.js|Graphql|Zig|Knoppix x64|retire.js)" [NC]RewriteRule ^ - [F,L]</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} "cypress" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "cyberfox" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "chrome|py" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "gocolly" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "colly" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "openwave" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "simplebrowser" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "splash" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "slimerjs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "ssl/tls scan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "phantomjs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "rv" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "trident/4\.0" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "trilefejs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x11|fedora" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x11u; linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x11 linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x11; ubuntu" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "x11; ubuntu|linux" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "zombiejs" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wow64|rv:48\.0" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "whatweb" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wappalyzer scan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wordpress security scan" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "knoppix x64" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "retire\.js" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "greenbone ce" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "data-requests" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "typescript" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "empty typescript" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "standby typescript" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "bun" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "alittle client" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "litserve" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "tls fingerprinting" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "request header fingerprint" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "javascript fingerprint" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "react" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "angular" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "vue\.js" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "graphql" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "zig" [NC]
+RewriteRule ^ - [F]</IfModule>
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -448,6 +847,7 @@ Curl Impersonate
 Dart
 ChromeDriver
 Python Lxml
+Lxml
 Panther PHP
 Goutte PHP
 Pyppeteer
@@ -531,21 +931,9 @@ go-away
 
 ..................
 ##SCRAPING TOOLS:
-
-ASM|C#C|C++|C#|COBOL|Elixir|Go|Java|JavaScript|Kotlin|Lua|Perl|Python|Ruby| Rust|Pip3|CreepJS |SeleniumBase|
-PowerShell|Cloudscraper|R Selenium|Imperva|Incapsula|Undetected ChromeDriver|Selenium Stealth|Hrequests|Geziyor|Roach PHP|Curl_cffi|Botright|Scrapy Splash|Superagent|
-Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch|OkHttp|AutoScraper|Httpx|Urllib Headers|Curl|Curl Impersonate|Dart|ChromeDriver|Python Lxml|
-Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|cURL|Rust|R|Nutch|LangGraph.js|Grobid|HTTP Toolkit|Golang Scraper|Go Web Scraping|
-Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharp|
-go-get|Go HTTP|go-away|Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
-Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|
-Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher|getText
-
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(ASM|C#C|C++|C#|COBOL|Elixir|Go|Java|JavaScript|Kotlin|Lua|Perl|Python|Ruby| Rust|Pip3|CreepJS |SeleniumBase|PowerShell|Cloudscraper|R Selenium|Imperva|Incapsula|Undetected ChromeDriver|Selenium Stealth|Hrequests|Geziyor|Roach PHP|Curl_cffi|Botright|Scrapy Splash|Superagent|
-Fetch|Watir|Haskell|MechanicalSoup|Jsoup|Nodriver|Node Fetch|OkHttp|AutoScraper|Httpx|Urllib Headers|Curl|Curl Impersonate|Dart|ChromeDriver|Python Lxml|Panther PHP|Goutte PHP|Pyppeteer||Splash|Cheerio|Metasploit|Botasaurus|BBScan|Fetch API|Zig/Javascript|node js|Ruby|cURL|Rust|R|Nutch|LangGraph.js|Grobid|HTTP Toolkit|Golang Scraper|Go Web Scraping|
-Request-Promise-Native|Unirest|Puppeteer|Osmosis|okhttp|cpp-httplib|Curlpp|Boost.Asio|Selenium|libcurl|Poco|got-scraping|PowerShell|.NET SDK|.NET|Scraper API|HTML|AngleSharpgo-get|Go HTTP|go-away|Raw HTML Scraper|Proxies/API|RESTful API|webscraper.py|scraper.py|Scraper Api|Proxy Scraper|Web Scraper|Image Scraper|Content Crawler|Axios Proxy|Curl Proxy|
-Python Requests Proxy|Data Scraper|Proxyscrape|Java Web Scraper|Scraper Scraper /|JS Web Scraper|Python Curl|Instant Data Scraper|Playwright Test|test.php|HTML Scraper|Scraper|python-boilerpipe|Boilerpipe's ArticleExtractor|HTMLFetcher|getText)" [NC]RewriteRule ^ - [F,L]</IfModule>
+
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 ....................................................
@@ -564,6 +952,7 @@ DAP/NetHTTP
 Dispatch
 fasthttp
 FireEyeHttpScan
+Elisa
 Gree_HTTP_Loader
 hyp_http_request
 HTTPConnect
@@ -680,42 +1069,22 @@ JA3 Fingerprinting
 JARM
 .....................
 #OTHERS HACKING:
-
-4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|
-hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|
-kurl|Laminas_Http_Client|libsoup|lua-resty-http|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|
-TLS /| JA3|JA3S|JA3 Realism|JA3 Fingerprinting|JARM|StormCrawler|GoSpider|Node/simplecrawler|
-RxnetHttp|scalaj-http|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam|WP-URLDetails|Incogniton|Dataskrapa|Dolphin|d3coder|Open port check tool|
-Proxy SwitchyOmega| Undetectable|lazys3|Webscreenshot|EyeWitness|Nuclei|SQLNinja|GoLogin|MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|
-HackBar|Wappalyzer|Cache killer|Open port check tool|Request maker|Proxy SwitchyOmega|Note anywhere|d3coder|Tamper Data|Data Scraper|Invicti|WebInspect|
-Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|Censys|Hunter|DIRB|Metasploitable 2|meterpreter|Java's HttpUrlConnection
-
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(4D_HTTP_Client|android-async-http|axios|andyhttp|Aplix|akka-http|attohttpc|CakePHP|Cowblog|DAP/NetHTTP|Dispatch|fasthttp|FireEyeHttpScan|Gree_HTTP_Loader|hyp_http_request|HTTPConnect|http generic|Httparty|HTTPing|http-ping|http.rb/|HTTPREAD|Java-http-client|Jodd HTTP|raynette_httprequest|java/|
-kurl|Laminas_Http_Client|libsoup|lua-resty-http|nghttp2|mio_httpc|Miro-HttpClient|php/|phpscraper|PHX HTTP|PHX HTTP Client|restful|rpm-bot|TLS /| JA3|JA3S|JA3 Realism|JA3 Fingerprinting|JARM|StormCrawler|GoSpider|Node/simplecrawler|
-RxnetHttp|scalaj-http|SP-Http-Client|Stilo OMHTTP|tiehttp|Valve/Steam|WP-URLDetails|Incogniton|Dataskrapa|Dolphin|d3coder|Open port check tool|Proxy SwitchyOmega| Undetectable|lazys3|Webscreenshot|EyeWitness|Nuclei|SQLNinja|GoLogin|MoreLogin|MultiLogin|JA3 Fingerprint|HTTP/2 fingerprint|PHP cURL|
-HackBar|Wappalyzer|Cache killer|Open port check tool|Request maker|Proxy SwitchyOmega|Note anywhere|d3coder|Tamper Data|Data Scraper|Invicti|WebInspect|Netsparker|Intruder|John the Ripper|LiveAction|Zenmap|Crt.sh|GreyNoise|ZoomEye|Censys|Hunter|DIRB|Metasploitable 2|meterpreter|Java's HttpUrlConnection)" [NC]RewriteRule ^ - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
 #UNDTECTIBLE
-
-Chromedriver|undetected\chromedriver|Chrome\Undetectable|Edge\Undetectable|Undetectable\Browser|undetectable-fingerprint-browser|Firefox/User-Agent Switcher|File Viewer|NET CLR|PhantomJsCloud|Quark|MALNJS|RV:10 UBrowser|SM-J111F
-Firefox/User-Agent Switcher
-
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(Chromedriver|undetected\chromedriver|Chrome\Undetectable|Edge\Undetectable|Undetectable\Browser|undetectable-fingerprint-browser|Firefox/User-Agent Switcher|File Viewer|NET CLR|PhantomJsCloud|Quark|MALNJS|RV:10 UBrowser|SM-J111FFirefox/User-Agent Switcher)" [NC]RewriteRule ^ - [F,L]</IfModule>
+
+<IfModule mod_rewrite.cRewriteCond %{HTTP_USER_AGENT}(Chromedriver|undetected\ chromedriver|Chrome\ Undetectable|Edge\ Undetectable|Undetectable\ Browser|undetectable-fingerprint-browser|Firefox/User-Agent Switcher|File Viewer|NET CLR|PhantomJsCloud|Quark|MALNJS|RV:10 UBrowser|SM-J111FFirefox/User-Agent Switcher)[NC]RewriteRule (.*) - [F,L]</IfModule>
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
 #PROXY BLOCKING:
-
-AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|http-proxy|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies
-|ISP Proxies|proxy|VPN/Proxy|Proxies|Virgin proxies|Proxy Servers|SeaMonkey|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN|Proxies
-
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|http-proxy|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies
-|ISP Proxies|proxy|VPN/Proxy|Proxies|Virgin proxies|Proxy Servers|SeaMonkey|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN|Proxies)" [NC]RewriteRule ^ - [F,L]</IfModule>
+
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(AI proxy|API Proxy|HTTP Proxies|forward proxy|Server proxies|residential proxies|reverse proxy|proxy request|http-proxy|IPv4 Proxies|IPv6 Proxies|Mobile Proxies|Virgin proxies|Proxy Servers|sproxies|Static ISP Proxies|ISP Proxies|proxy|VPN/Proxy|Proxies|SeaMonkey)[NC]RewriteRule (.*) - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -738,7 +1107,6 @@ UDP Scanning
 Xmas scan
 
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(Noxious|Nuisible|вредоносный Host|Advanced IP Scanner|Angry IP Scanner|ACK Scan|Null scan|FIN scan|NetCat|TCP SYN Scans|TCP Connect Scan|UDP Scanning|Xmas scan)" [NC]RewriteRule ^ - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -747,7 +1115,22 @@ Xmas scan
 GoogleAppsScript|dirbuster|gobuster|ffuf|dirsearch|nmap|zmap|angry.ip|ipscan|nucleinikto|nessus|openvas|acunetix|wpscanNmap XML Parser|laravel|PHP\ Scraper|PHP\ web\ crawler
 
 ##HTACCESS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "(GoogleAppsScript|dirbuster|gobuster|ffuf|dirsearch|nmap|zmap|angry.ip|ipscan|nucleinikto|nessus|openvas|acunetix|wpscanNmap XML Parser|laravel|PHP\ Scraper|PHP\ web\ crawler)" [NC]RewriteRule ^ - [F,L]</IfModule>
+
+##OTHER SCRAPING
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(GoogleAppsScript|dirbuster|gobuster|ffuf|dirsearch|nmap|zmap|angry.ip|ipscan|nuclei|nikto|nessus|openvas|acunetix|wpscanNmap XML Parser|laravel|PHP\ Scraper|PHP\ web\ crawler)[NC]RewriteRule (.*) - [F,L]</IfModule>
+
+##NEW ONES NOT LISTED
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT}(HTTP Header Fingerprinting|Go HTTP client|Camoufox|Cloudscraper|Goutte|Extract|FastHTTP|fasthttp|Fasthttp|golang|Nmap ScriptingEngine|Nodriver|Nutch|n8n|PhantomJS|libweb-scraper-perl|sqlmap|nikto|havij|Roach|TypeScript|PHP php-spider|Web fetch)[NC]RewriteRule (.*) - [F,L]</IfModule>
+
+##SHELL HELL
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_USER_AGENT} (Web shell upload|Web shell admin|Web shell content|Web shell includes|dirbuster|nikto|SF|sqlmap|fimap|nessus|whatweb|Openvas|jbrofuzz|libwhisker|webshag) [NC]RewriteRule (.*) - [F,L]</IfModule>
+
+#Downloader hell . notb in Lists for now
+
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} (Google-HTTP-Java-Client|Apache-HttpClient|Symfony HttpClient|PostmanRuntime|Go-http-client|scalaj-http|http%20client|Python-urllib|HttpMonitor|TLSProber|WinHTTP|JNLP|okhttp|aihttp|reqwest|axios|unirest-(?:java|python|ruby|nodejs|php|net)|MSIECrawler|OAI-SearchBot)RewriteRule ^.*$ - [F,L]
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} \b(WindowsPowerShell|Microsoft-CryptoAPI|SophosUpdateManager|SophosAgent|Debian APT-HTTP|Ubuntu APT-HTTP|libcurl-agent|libwww-perl|urlgrabber|curl|PycURL|Wget|wget2|aria2|Axel|OpenBSD ftp|lftp|insomnia|fetch libfetch|akka-http|got|ReactorNetty|axios|Jersey|Vert\.x-WebClient|Apache-CXF|Go-CF-client|go-resty|AHC|HTTPie)(?:[ /](\d+)(?:\.(\d+)|)(?:\.(\d+)|)|)$RewriteRule ^.*$ - [F,L]
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -768,7 +1151,8 @@ RewriteCond%{HTTP_USER_AGENT}"(PLACE THE RAW FILE HERE)"[NC]
 RewriteRule "^.*$" - [F]</IfModule>
 
 ##IUSE THIS:
-<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "( MY LIST HERE)" [NC]RewriteRule ^ - [F,L]</IfModule>
+<IfModule mod_rewrite.c>RewriteCond %{HTTP_USER_AGENT} "( MY LIST HERE)" [NC]
+RewriteRule ^ - [F,L]</IfModule>
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
@@ -2388,5 +2772,5 @@ Deny from env=BLOCK_IPSEC
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-##  Updated: 260302 ##
+##  Updated: 260529 ##
 
