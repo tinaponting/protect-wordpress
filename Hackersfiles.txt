@@ -616,6 +616,14 @@ jsoup
 got
 unirest
 
+zgrab
+zmap
+morfeus
+wpscan
+ffuf
+wfuzz
+pre-filter
+
 -------------------
 #HACKING TOOLS
 ##HTACCESS:
@@ -664,6 +672,7 @@ RewriteCond %{HTTP_USER_AGENT} "onyphe" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "openvas" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "owasp" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "parrot" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "pre-filter" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "python-requests" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "quake" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "qualys" [NC,OR]
@@ -693,6 +702,12 @@ RewriteCond %{HTTP_USER_AGENT} "xenotix" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "zap" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "zenmap" [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} "Zoomeye" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ffuf [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} wfuzz [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} morfeus [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} wpscan [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} zgrab [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} zmap [NC,OR]
 RewriteCond %{QUERY_STRING} ".*oembed.*" [NC]
 RewriteCond %{QUERY_STRING} ".*proxy.*" [NC]
 RewriteRule ^ - [F,L]</IfModule>
@@ -2772,5 +2787,5 @@ Deny from env=BLOCK_IPSEC
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 .............................................................
-##  Updated: 260529 ##
+##  Updated: 260603 ##
 
