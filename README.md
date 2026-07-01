@@ -111,6 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260701, wpincludesfolders
 * Updated:260630, wpcontentfolders - updated
 * Updated:260618, If you only wants some useragents visits
 * Updated:260503, updated htaccess1+ 2 (my used one) 
