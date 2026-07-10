@@ -107,10 +107,11 @@ AI SCRAPERS HERE: https://github.com/tinaponting/ai-robots-scrapers
 
 Love ///  Kristina Sweden:: 
 
-* 🎀😝 ᴜᴘᴅᴀᴛᴇᴅ ᴘʟᴜɢɪɴ 😲✎ BY ME: disable-json-api worsks phph 8and rechecked:)
+* 🎀😝 ᴜᴘᴅᴀᴛᴇᴅ ᴘʟᴜɢɪɴ 😲✎ BY ME:)
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260503, updated htaccess1+ -good security
 * Updated:26001, wpadminprotectfromhell -works great:)
 * Updated:260701, wpincludesfolders
 * Updated:260630, wpcontentfolders - updated
