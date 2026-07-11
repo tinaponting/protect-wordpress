@@ -111,7 +111,8 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
-* Updated:260503, updated htaccess1+ -good security
+* Updated:260503, updated htaccess12
+* Updated:260503, updated htaccess1
 * Updated:26001, wpadminprotectfromhell -works great:)
 * Updated:260701, wpincludesfolders
 * Updated:260630, wpcontentfolders - updated
