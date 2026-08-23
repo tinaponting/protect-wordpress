@@ -111,6 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260823,htaccess1 - Checked with 2 code checkers for syntax errors:)
 * Updated:260814, wpcontentfolders - updated
 * Updated:260503, updated htaccess12
 * Updated:260503, updated htaccess1
