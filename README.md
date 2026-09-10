@@ -111,6 +111,7 @@ Love ///  Kristina Sweden::
 
 *******  💖💖 𝕌ℙ𝔻𝔸𝕋𝔼𝔻 𝔽𝕀𝕃𝔼𝕊 𝔸ℕ𝔻 𝔽𝕆𝕃𝔻𝔼ℝ𝕊 💖💖 *******
 
+* Updated:260910 a,htaccess1 + htaccess2 - updated and checked for errors = corrercted
 * Updated:260905,htaccess2 - Updated
 * Updated:260828,htaccess1
 * Updated:260823,htaccess1 - Checked with 2 code checkers for syntax errors:)
