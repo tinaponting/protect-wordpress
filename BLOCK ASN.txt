@@ -1,0 +1,55 @@
+.................................................................
+#BLOCK ASN .htaccess##
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Check if the GeoIP environment variable matches the bad ASN
+RewriteCond %{ENV:GEOIP_ASN} ^(16276|12345|67890)$ [NC]
+RewriteRule ^ - [F,L]
+</IfModule>	
+
+.................................................................
+
+#ALT:2
+RewriteEngine On
+# Skicka alla förfrågningar genom vårt blockeringsskript (förutom själva skriptet)
+RewriteCond %{REQUEST_URI} !^/block-asn\.php$
+RewriteRule ^(.*)$ block-asn.php [L]
+
+.................................................................
+
+### Skapa en fil på din server som heter block-asn.php och klistra in följande kod:php<?php
+$user_ip = $_SERVER['REMOTE_ADDR'];
+
+// Hämta IP-info från ett gratis API (t.ex. ipapi.co eller ip-api.com)
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "http://ip-api.com" . $user_ip . "?fields=as");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = json_decode(curl_exec($ch), true);
+curl_init();
+
+if (isset($response['as'])) {
+    // Definiera de ASN-nummer du vill blockera (t.ex. AS16276, AS15169)
+    $blocked_asns = ['AS16276', 'AS12345']; 
+    
+    foreach ($blocked_asns as $asn) {
+        if (strpos($response['as'], $asn) !== false) {
+            // Skicka 403 Forbidden och stoppa laddningen av sidan
+            header('HTTP/1.0 403 Forbidden');
+            echo "Access denied.";
+            exit;
+        }
+    }
+}
+
+.................................................................
+
+I USE THIS:: 
+
+<IfModule mod_rewrite.c>
+RewriteCond %{ENV:ASN}S16276
+RewriteRule .* - [F,L]
+</IfModule>
+
+
+.................................................................
