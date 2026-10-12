@@ -1,4 +1,9 @@
 #### protect-wordpress  For Paranoid bloggers on wordpress.
+
+## MY PLUGINS:
+🎀  𝒟𝒾𝓈𝒶𝒷𝓁𝑒 𝒿𝓈o𝓃 𝒶𝓃𝒹 𝓇𝑒𝓈𝓉 𝓅𝓇o  🎀  ｡🌠
+* Disable json and rest pro. Prtocect json and rest, for wordpress, easy to add or delate:) 
+
 Protect wordpress with .htaccess
 * AI ROBOTS/SCRAPERS:  https://github.com/tinaponting/ai-robots-scrapers
 
