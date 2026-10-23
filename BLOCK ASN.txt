@@ -1,13 +1,5 @@
 .................................................................
 #BLOCK ASN .htaccess##
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-# Check if the GeoIP environment variable matches the bad ASN
-RewriteCond %{ENV:GEOIP_ASN} ^(16276|12345|67890)$ [NC]
-RewriteRule ^ - [F,L]
-</IfModule>	
-
 .................................................................
 
 #ALT:2
@@ -16,7 +8,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/block-asn\.php$
 RewriteRule ^(.*)$ block-asn.php [L]
 
-.................................................................
+:-
 
 ### Skapa en fil på din server som heter block-asn.php och klistra in följande kod:php<?php
 $user_ip = $_SERVER['REMOTE_ADDR'];
@@ -53,3 +45,46 @@ RewriteRule .* - [F,L]
 
 
 .................................................................
+# OR THIS:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{ENV:IPASN} ^AS1234$ [OR]
+RewriteCond %{ENV:IPASN} ^AS5678$
+RewriteRule ^ - [F]
+</IfModule>
+
+.................................................................
+# OR THIS:
+
+<IfModule mod_rewrite.c>
+RewriteCond %{ENV:GEOIP_ASN} ^(16276|12345|67890)$ [NC]
+RewriteRule ^ - [F,L]
+</IfModule>	
+
+## OR: (I use this)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{ENV:ASN} ^A?S?(16276|12345|67890 )$ [OR]
+RewriteRule .* - [F,L]
+</IfModule>
+
+.................................................................
+Domain endings block:
+
+RewriteCond %{HTTP_REFERER} \.ru [NC]
+
+##OR:
+
+RewriteCond %{HTTP_REFERER} \.ru$ [NC,OR]
+RewriteCond %{HTTP_REFERER} \.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} \.ua$ [NC,OR]
+RewriteCond %{HTTP_REFERER} \.ua/ [NC,OR]
+RewriteCond %{HTTP_REFERER} hol\.es [NC,OR]
+RewriteCond %{HTTP_REFERER} hys\.cz [NC,OR]
+RewriteRule ^(.*)$ - [F,L]
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Updated: 261023
+OBS! the number are only for demo!
